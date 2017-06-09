@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-06-02T09:04:37.885Z</updated>
+  <updated>2017-06-09T10:31:39.235Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -14,6 +14,209 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>First-Ever Data Stealing Malware Found Using Intel AMT Tool to Bypass Firewall</title>
+    <link href="https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/"/>
+    <id>https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/</id>
+    <published>2017-06-09T00:00:00.000Z</published>
+    <updated>2017-06-09T10:31:39.235Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="First-Ever-Data-Stealing-Malware-Found-Using-Intel-AMT-Tool-to-Bypass-Firewall"><a href="#First-Ever-Data-Stealing-Malware-Found-Using-Intel-AMT-Tool-to-Bypass-Firewall" class="headerlink" title="First-Ever Data Stealing Malware Found Using Intel AMT Tool to Bypass Firewall"></a>First-Ever Data Stealing Malware Found Using Intel AMT Tool to Bypass Firewall</h1><p><img src="http://img2.tuicool.com/uIZV7rq.png!web" alt=""></p>
+<p>It’s not hard for a well-funded state-sponsored hacking group to break into corporate networks and compromise systems with malware, but what’s challenging for them is to keep that backdoor and its communication undetectable from a firewall and other network monitoring applications.</p>
+<p>However, a<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">cyber-espionage group</a>known as “<strong>Platinum</strong>,” that is actively targeting governmental organisations, defense institutes, and telecommunication providers since at least 2009, has found a way to hide its malicious activities from host-based protection mechanisms.</p>
+<p>Microsoft has recently<a href="https://blogs.technet.microsoft.com/mmpc/2017/06/07/platinum-continues-to-evolve-find-ways-to-maintain-invisibility/" target="_blank" rel="external">discovered</a>that the cyber-espionage group is now leveraging Intel’s Active Management Technology (AMT) Serial-over-LAN (SOL) channel as a file-transfer tool to steal data from the targeted computers without detection.</p>
+<p>Intel-based chip sets come with an embedded technology, called AMT, which is designed to allow IT administrators to remotely manage and repair PCs, workstations, and servers of their organisations.</p>
+<p>The Intel AMT technology operates independently of the operating system and works even when the system is turned off, as long as the platform is connected to a line power and a network cable.</p>
+<p>That means, when AMT is enabled, any packet sent to the PC’s wired network port will be redirected to the Management Engine and passed on to AMT – the operating system, as well as network monitoring applications installed on a system, never knows what’s going around.</p>
+<p><img src="http://img0.tuicool.com/nyA3InU.png!web" alt=""></p>
+<p>Moreover, Linux systems with Intel’s chips and AMT enabled may also be exposed to Platinum’s malware.</p>
+<p>“As this embedded processor is separate from the primary Intel processor, it can execute even when the main processor is powered off and is, therefore, able to provide out-of-band (OOB) remote administration capabilities such as remote power-cycling and keyboard, video, and mouse control (KVM),” Microsoft said.</p>
+<p>“Furthermore, as the SOL traffic bypasses the host networking stack, it cannot be blocked by firewall applications running on the host device. To enable SOL functionality, the device AMT must be provisioned.”</p>
+<p>Unlike the<a href="http://thehackernews.com/2017/05/intel-server-chipsets.html" target="_blank" rel="external">remote authentication flaw</a>discovered last month that enabled hackers to take over<a href="http://thehackernews.com/2017/05/intel-amt-vulnerability.html" target="_blank" rel="external">full control of a system</a>by using AMT features without the need of any password, Platinum does not exploit any flaw in AMT, instead, requires AMT to be enabled on infected systems.</p>
+<p>Microsoft notes that SOL session requires a username and password, so either the hacking group is using stolen credentials to make its malware remotely communicate with the C&amp;C servers, or”during the provisioning process, PLATINUM could select whichever username and password they wish.”</p>
+<p>The Platinum hacking group has been using zero-day exploits,<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">hot patching technique</a>and other advanced tactics to penetrate in their target systems and networks in South Asian countries, but this is the first time someone is abusing legitimate management tools to evade detection.</p>
+<p>Microsoft said it has already updated its own Windows Defender Advanced Threat Protection software that will alert network administrators of any malicious attempts at using AMT SOL, but only for systems running Windows operating system.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;First-Ever-Data-Stealing-Malware-Found-Using-Intel-AMT-Tool-to-Bypass-Firewall&quot;&gt;&lt;a href=&quot;#First-Ever-Data-Stealing-Malware-Found-Usi
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Papers for Teaching Undergraduate Data Science</title>
+    <link href="https://gmagon.com/blog/2017/06/09/papers-for-teaching-undergraduate-data-science/"/>
+    <id>https://gmagon.com/blog/2017/06/09/papers-for-teaching-undergraduate-data-science/</id>
+    <published>2017-06-09T00:00:00.000Z</published>
+    <updated>2017-06-09T10:31:39.240Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Papers-for-Teaching-Undergraduate-Data-Science"><a href="#Papers-for-Teaching-Undergraduate-Data-Science" class="headerlink" title="Papers for Teaching Undergraduate Data Science"></a>Papers for Teaching Undergraduate Data Science</h1><p>2017-06-08 21:47:19</p>
+<p><a href="http://www.tuicool.com/sites/eammyu" target="_blank" rel="external">Data Science 101</a></p>
+<p><a href="http://www.tuicool.com/articles/hit/AJRFFj2" target="_blank" rel="external">http://101.datascience.community/2017/06/08/papers-for-teaching-undergraduate-data-science/</a></p>
+<p>If you work at a university and are considering starting an undergraduate program in data science, then today’s post is for you.</p>
+<ul>
+<li><a href="https://arxiv.org/ftp/arxiv/papers/1612/1612.07140.pdf" target="_blank" rel="external">A Guide to Teaching Data Science [2016]</a><br>– focuses on increasing 3 skills (create, connect, compute) within Statistics departments to develop data science</li>
+<li><a href="https://arxiv.org/ftp/arxiv/papers/1512/1512.04456.pdf" target="_blank" rel="external">Teaching the Foundations of Data Science: An Interdisciplinary Approach [2016]</a><br>– A study and analysis of teaching an introductory course on data science with a cooperation between MIS and CS.</li>
+<li><p><a href="https://arxiv.org/pdf/1503.05570.pdf" target="_blank" rel="external">A Data Science Course for Undergraduates: Thinking with Data [2015]</a><br>– Overview of an undergraduate course in a liberal arts</p>
+<p>environment that provides students with the tools necessary to apply data science. very detailed many great topics plus R and SQL</p>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1607.00858.pdf" target="_blank" rel="external">Embracing Data Science [2016]</a><br>– Statistics needs to learn from data science to make courses more relevant</p>
+</li>
+</ul>
+<p>If you know of any other papers, please leave a comment below.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Papers-for-Teaching-Undergraduate-Data-Science&quot;&gt;&lt;a href=&quot;#Papers-for-Teaching-Undergraduate-Data-Science&quot; class=&quot;headerlink&quot; title=&quot;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Are stops important in the world of location tracking?</title>
+    <link href="https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/"/>
+    <id>https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/</id>
+    <published>2017-06-09T00:00:00.000Z</published>
+    <updated>2017-06-09T10:35:51.340Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Are-stops-important-in-the-world-of-location-tracking"><a href="#Are-stops-important-in-the-world-of-location-tracking" class="headerlink" title="Are stops important in the world of location tracking?"></a>Are stops important in the world of location tracking?</h1><p>We had trips on our mind when we first built HyperTrack. We assumed that developers would start tracking a user when they expected the user to be on their way to get some place and stop when they had reached. The assumption failed. Obvious in hindsight, developers expected us to tell them (and not the other way around) when the user was on the way and when they had stopped. All they wanted to do was switch us on or off, and hand over control to HyperTrack to automatically figure out trips and stops in the life of the user. They would keep HyperTrack on through the day, through the week, or just switch it on and leave it on forever. HyperTrack was expected to notify developers about the start and end of these trips and stops, besides other useful events along the way. This led to a re-architecture of our stack that we rolled out with HyperTrack v3 in March.</p>
+<p>All you need to do now is plug in SDK into your app and call our startTracking method, say when the user logs in. That’s it. You would now get all the trips and stops that your user makes, arranged in a<em><strong>placeline</strong></em>. For every stop your user makes, you would get to know the place and duration of the stop.</p>
+<p><img src="http://img0.tuicool.com/IvUrUzr.png!web" alt=""></p>
+<p>User placeline with trips &amp; stops</p>
+<h2 id="Why-are-Stops-important"><a href="#Why-are-Stops-important" class="headerlink" title="Why are Stops important?"></a>Why are Stops important?</h2><p>When building a real time location tracking stack, it is important to distinguish between trips and stops for multiple reasons.</p>
+<h3 id="Battery-Efficiency"><a href="#Battery-Efficiency" class="headerlink" title="Battery Efficiency"></a><strong>Battery Efficiency</strong></h3><p><img src="http://img2.tuicool.com/ZRRfay7.png!web" alt="">Distinguishing between trips and stops has helped us significantly reduce the battery used by our SDK. Our SDK hibernates when the user stops and spares the receiver and transmitter until the user is moving or on their way again. An average user is on the move for 5-6 hours or less than 25% of the day. That trims down battery usage by a straight 75%.</p>
+<h3 id="Location-accuracy"><a href="#Location-accuracy" class="headerlink" title="Location accuracy"></a><strong>Location accuracy</strong></h3><p>Distinguishing between trips and stops helps filter out noise in the location data. An average user is indoor when at a stop, say inside a building. Fused location points received from the device go haywire due to flaky GPS connectivity and strong WiFi connectivity. The Operating System prefers WiFi locations over GPS due to higher confidence. However, high confidence locations from multiple WiFi networks creates a different type of noise in the data. See the image below for locations received during an hour long stop at 100 Bush St. in San Francisco.</p>
+<p>Now imagine using these high confidence location points to compute mileage of distance traveled by the user! Detecting a stop using activity data is an effective way to eliminate this noise.</p>
+<p><img src="http://img2.tuicool.com/iI3UVrM.png!web" alt=""></p>
+<p>Raw location points at a stop</p>
+<h2 id="How-do-we-automatically-detect-stops"><a href="#How-do-we-automatically-detect-stops" class="headerlink" title="How do we automatically detect stops?"></a>How do we automatically detect stops?</h2><p>Activity sensors in smartphones help detect stops in conjunction with location sensors. The smartphone Operating Systems provide raw sensor data from the accelerometer and gyroscope, as well as fused activity/motion data through their own algorithms in the chipset or system software. Similarly, the OS provides raw location data from GPS, WiFi and cellular network sensors, as well as fused location data through APIs such as Visit in iOS and Geofence in Android. Making these two data sets work in tandem helps us interpret stops automatically and reliably. A more in-depth analysis coming up in a separate post.</p>
+<h2 id="How-do-our-customers-use-stops"><a href="#How-do-our-customers-use-stops" class="headerlink" title="How do our customers use stops?"></a>How do our customers use stops?</h2><p>Here are a few unique stories of how of our customers use Stops that are automatically detected by HyperTrack.</p>
+<h3 id="Measuring-stop-durations"><a href="#Measuring-stop-durations" class="headerlink" title="Measuring stop durations"></a><strong>Measuring stop durations</strong></h3><p>A service aggregator who uses HyperTrack for location tracking provides services like beauty, auto mechanic, home cleaning, plumbing, and handyman delivered at users’ homes. One of their biggest problems is to know whether these service professionals visited the expected place at the expected time. If so, how much time did they spend at the consumer’s location. Professional services are often billed by time and resolving disputes between the consumer and service professional often comes down to figuring out the actual time spent on site. The aggregator plugged in the HyperTrack SDK and created a stopover<em><strong>action</strong></em> for each service visit. You create an<em><strong>action</strong></em> in HyperTrack for an action that the user performs in the app and that you want to track. The operations team can now seethe actual time spent by the service professional at that stop.</p>
+<p><img src="http://img0.tuicool.com/MjYjMvI.png!web" alt=""></p>
+<p>Stops in context of an action</p>
+<h3 id="Profiling-frequently-visited-places"><a href="#Profiling-frequently-visited-places" class="headerlink" title="Profiling frequently visited places"></a><strong>Profiling frequently visited places</strong></h3><p>A travel app wanted to provide local recommendations to her users. Right after she plugged the SDK in the app, HyperTrack started generating a heatmap of places where users were spending most time. This data of most frequented places became the core data set for local recommendations in the app.</p>
+<p><img src="http://img2.tuicool.com/2yaiUzJ.png!web" alt=""></p>
+<p>Places heatmap</p>
+<h3 id="Getting-geofence-alerts-for-places-of-interest"><a href="#Getting-geofence-alerts-for-places-of-interest" class="headerlink" title="Getting geofence alerts for places of interest"></a><strong>Getting geofence alerts for places of interest</strong></h3><p>A fleet of real estate agents wanted to get alerted when an agent visited one of the tens of thousands of properties in the company database. They wanted to make sure that these alerts were sent only when the agent stopped at a property, rather than personal visits and other locations. The default geofencing features provided by the OS severely limit the number of locations you may register for geofencing visits (e.g.,<a href="https://developer.android.com/training/location/geofencing.html" target="_blank" rel="external">100 geofences/device on Android</a>).</p>
+<p>This customer used HyperTrack to get alerts for visits. They <a href="https://docs.hypertrack.com/events/webhook.html" target="_blank" rel="external">received webhook events</a>when the agent visited a property and then used to to send a mobile notifications to their agents.</p>
+<p><img src="http://img2.tuicool.com/JBzq6nM.png!web" alt=""></p>
+<p>Notifications powered via geofence alerts</p>
+<h3 id="Getting-delay-alerts-with-unexpected-stops"><a href="#Getting-delay-alerts-with-unexpected-stops" class="headerlink" title="Getting delay alerts with unexpected stops"></a><strong>Getting delay alerts with unexpected stops</strong></h3><p>A customer who had builtorder tracking with HyperTrack now wanted to get an alert when an order was getting delayed by over 10 mins. In the alert, they wanted to know the reason for delay. Turned out that many delays were related to unexpected stops by the rider. They set up <a href="https://docs.hypertrack.com/events/slack.html" target="_blank" rel="external">real-time Slack alerts</a> sent to the respective fleet channels when the rider made an unexpected stop.</p>
+<p><img src="http://img0.tuicool.com/fIJrYfj.png!web" alt=""></p>
+<p>Unexpected stops on your Slack channel</p>
+<p>These are just a few stories of how developers have used stops to build better location-based services for business efficiency and product experience. We discover new stories every day as more developers start using HyperTrack in their apps. We are excited to see how you use stops in  your product. Do ping us at<a href="mailto:help@hypertrack.io" target="_blank" rel="external">help@hypertrack.io</a> and we would love to feature your story on our blog!</p>
+<p>In case you haven’t started yet, visit<a href="http://www.hypertrack.com/" target="_blank" rel="external">www.hypertrack.com</a>now to plug in the SDK into your app. It takes just a few minutes to start building your location features.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Are-stops-important-in-the-world-of-location-tracking&quot;&gt;&lt;a href=&quot;#Are-stops-important-in-the-world-of-location-tracking&quot; class=&quot;heade
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The 5 best visual regression testing tools</title>
+    <link href="https://gmagon.com/blog/2017/06/09/the-5-best-visual-regression-testing-tools/"/>
+    <id>https://gmagon.com/blog/2017/06/09/the-5-best-visual-regression-testing-tools/</id>
+    <published>2017-06-09T00:00:00.000Z</published>
+    <updated>2017-06-09T09:56:42.722Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="The-5-best-visual-regression-testing-tools"><a href="#The-5-best-visual-regression-testing-tools" class="headerlink" title="The 5 best visual regression testing tools"></a>The 5 best visual regression testing tools</h1><p>2017-06-08 21:03:22</p>
+<p><a href="http://www.tuicool.com/sites/JfUNza" target="_blank" rel="external">Creative Bloq</a></p>
+<p><strong>Source:</strong></p>
+<p><a href="http://www.tuicool.com/articles/hit/QBFZfmF" target="_blank" rel="external">http://www.creativebloq.com/features/the-5-best-visual-regression-testing-tools</a></p>
+<p><strong>Themes:</strong></p>
+<p>regression testing</p>
+<p>Over the past several years, I’ve noticed the term ‘visual regression testing’ cropping up in web development conversations more and more… and for good reason. It promises to provide tremendous value for those who are tired of manually checking their sites for style issues.</p>
+<p>With this growing popularity, it seems like every month there’s a new tool released, each promising to provide awesome visual regression testing automation. Unfortunately, I’ve found most to be more dream than reality, the truth being that these types of tests are deceptively complicated.</p>
+<p>There are, however, a few that stand out from the crowd. While each has its benefits and drawbacks, I believe every tool in this list is worth a look.</p>
+<p><img src="http://img0.tuicool.com/2aEJVj3.jpg!web" alt=""></p>
+<p>A quick chart looking at the major features of five of the most popular visual regression tools out there [click the icon to enlarge]</p>
+<h3 id="01-Wraith"><a href="#01-Wraith" class="headerlink" title="01.Wraith"></a>01.<a href="http://bbc-news.github.io/wraith/" target="_blank" rel="external">Wraith</a></h3><p>Wraith has been around for several years. It was one of the first tools on the scene, and it continues to see enhancements in functionality, with over 200 pull requests closed in its GitHub repo. It’s the go-to tool for anyone developing in Ruby.</p>
+<h3 id="Try-it-out"><a href="#Try-it-out" class="headerlink" title="Try it out"></a>Try it out</h3><p>From your project directory, run<strong>wraith setup</strong>. Then run<strong>wraith capture configs/config.yaml</strong>. This will run a set of tests on two different versions of the BBC homepage. After completing your test run, check out your screenshot gallery by opening the newly created<strong>shots/gallery.html</strong>page in your browser of choice.</p>
+<p>You can also customise your tests. In the<strong>configs/config.yaml</strong>file you can update the sites and pages to test, along with setting screen widths and diff mode.</p>
+<h3 id="Pros-and-cons"><a href="#Pros-and-cons" class="headerlink" title="Pros and cons"></a>Pros and cons</h3><ul>
+<li>YAML configuration file is simple to work with</li>
+<li>You can compare two different URLs</li>
+<li>Installation can be tricky if you’re not familiar with Ruby</li>
+<li>Running interactions specific to individual pages can be difficult</li>
+</ul>
+<h3 id="02-PhantomCSS"><a href="#02-PhantomCSS" class="headerlink" title="02.PhantomCSS"></a>02.<a href="https://github.com/Huddle/PhantomCSS" target="_blank" rel="external">PhantomCSS</a></h3><p>Another veteran option, PhantomCSS has been a popular choice among frontend developers. Its familiarity and functionality make PhantomCSS a great choice for frontend folks looking to stretch their legs in terms of website testing. Built on top of PhantomJS/CasperJS, PhantomCSS adds to the fantastic functionality provided by those two tools.</p>
+<h3 id="Try-it-out-1"><a href="#Try-it-out-1" class="headerlink" title="Try it out"></a>Try it out</h3><p>Create a new JavaScript file with the following code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">casper.start(</div><div class="line">&apos;http://the-internet.herokuapp.com/checkboxes&apos;</div><div class="line">)</div><div class="line">    .</div><div class="line">then</div><div class="line">(</div><div class="line">function</div><div class="line">()</div><div class="line">&#123;</div><div class="line">        phantomcss.screenshot(</div><div class="line">&apos;#checkboxes&apos;</div><div class="line">, </div><div class="line">&apos;before click&apos;</div><div class="line">);</div><div class="line">        casper.click(</div><div class="line">&apos;#checkboxes input:first-child&apos;</div><div class="line">);</div><div class="line">        phantomcss.screenshot(</div><div class="line">&apos;#checkboxes&apos;</div><div class="line">, </div><div class="line">&apos;after click&apos;</div><div class="line">);</div><div class="line">    &#125;);</div></pre></td></tr></table></figure>
+<p>Then run your file via the CapserJS CLI:<strong>casperjs test myfile.js</strong>. Your script will run in the background and your images will be saved to the<strong>screenshots</strong>folder.</p>
+<h3 id="Pros-and-cons-1"><a href="#Pros-and-cons-1" class="headerlink" title="Pros and cons"></a>Pros and cons</h3><ul>
+<li>Many tutorials and presentations on it</li>
+<li>Built on top of CasperJS, allowing integration of page actions into tests</li>
+<li>Tests limited to PhantomJS</li>
+<li>No interface for reviewing/managing screenshots</li>
+</ul>
+<h3 id="03-Gemini"><a href="#03-Gemini" class="headerlink" title="03.Gemini"></a>03.<a href="https://gemini-testing.github.io/" target="_blank" rel="external">Gemini</a></h3><p>I find Gemini appealing because it packages traditional Selenium testing in an interface that isn’t too complicated. As with PhantomCSS, you can define custom actions around your screengrabs. Unlike PhantomCSS, Gemini goes several steps further by providing ‘test suites’ that can help organise your code.</p>
+<h3 id="Try-it-out-2"><a href="#Try-it-out-2" class="headerlink" title="Try it out"></a>Try it out</h3><p>Create a<strong>.gemini.yml</strong>file with the following contents (replacing the URL to your Selenium grid server):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">rootUrl</div><div class="line">: </div><div class="line">http</div><div class="line">:</div><div class="line">//the-internet.herokuapp.com/checkboxes</div><div class="line">gridUrl</div><div class="line">: </div><div class="line">http</div><div class="line">:</div><div class="line">//localhost:4444/wd/hub</div><div class="line">browsers</div><div class="line">:</div><div class="line"></div><div class="line">chrome</div><div class="line">:</div><div class="line"></div><div class="line">desiredCapabilities</div><div class="line">:</div><div class="line"></div><div class="line">browserName</div><div class="line">: chrome</div></pre></td></tr></table></figure>
+<p>Then create a test file, and put it into the<strong>gemini</strong>folder in the root of your project. The file can be as simple as:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">gemini.suite(</div><div class="line">&apos;yandex-search&apos;</div><div class="line">, </div><div class="line">function</div><div class="line">(suite)</div><div class="line"> &#123;</div><div class="line">    suite.setUrl(</div><div class="line">&apos;/checkboxes&apos;</div><div class="line">)</div><div class="line">        .setCaptureElements(</div><div class="line">&apos;#checkboxes&apos;</div><div class="line">)</div><div class="line">        .capture(</div><div class="line">&apos;before click&apos;</div><div class="line">)</div><div class="line">        .capture(</div><div class="line">&apos;after click&apos;</div><div class="line">, </div><div class="line">function</div><div class="line">(actions, find)</div><div class="line"> &#123;</div><div class="line">                actions.click(</div><div class="line">&apos;#checkboxes input:first-child&apos;</div><div class="line">);</div><div class="line">        &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Next, create your baseline images by running<strong>gemini update</strong>. You should see one test passed. You can run a regression test via<strong>gemini test</strong>, which will compare the new images with the ones stored inside the<strong>gemini/screens</strong>directory.</p>
+<h3 id="Pros-and-cons-2"><a href="#Pros-and-cons-2" class="headerlink" title="Pros and cons"></a>Pros and cons</h3><ul>
+<li>Selenium integration allows you to test on a wide variety of browsers and devices</li>
+<li>Well-documented site with various examples</li>
+<li>Provides a framework for sorting tests into suites</li>
+<li>No direct access to Selenium, limiting the type of actions you can take on a page</li>
+<li>Running the same test on multiple resolutions requires advanced configuration</li>
+</ul>
+<h3 id="04-WebdriverCSS"><a href="#04-WebdriverCSS" class="headerlink" title="04.WebdriverCSS"></a>04.<a href="https://github.com/webdriverio/webdrivercss" target="_blank" rel="external">WebdriverCSS</a></h3><p>First, a caveat: the future of WebdriverCSS is uncertain, as there are efforts to replace it with a more up-to-date module. That said, I think it’s still worth mentioning, as the same basic structure will carry on to the next implementation.</p>
+<p>Like Gemini, WebdriverCSS hooks into Selenium for its functionality. It also sits on top of another tool: WebdriverIO. Because it is part of the WebdriverIO ecosystem, it benefits from everything that framework has to provide. This includes hundreds of commands you can send to the browser, before and after taking screenshots.</p>
+<p>WebdriverCSS also integrates well with test frameworks like Mocha, Jasmine and Cucumber.js. Add in connectivity with cloud Selenium services like Sauce Labs and Browserstack and you’ve got a full-featured functional test suite with visual regression testing as the cherry on the top.</p>
+<h3 id="Try-it-out-3"><a href="#Try-it-out-3" class="headerlink" title="Try it out"></a>Try it out</h3><p>Create a new JavaScript file (<strong>test.js</strong>) in your project with the following content:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">var client = require(</div><div class="line">&apos;webdriverio&apos;</div><div class="line">).remote(&#123;desiredCapabilities:&#123;browserName: </div><div class="line">&apos;chrome&apos;</div><div class="line">&#125;&#125;)</div><div class="line">require(</div><div class="line">&apos;webdrivercss&apos;</div><div class="line">).init(client, &#123; screenWidth: [</div><div class="line">640</div><div class="line">,</div><div class="line">1024</div><div class="line">] &#125;);</div><div class="line">var screenshotElement = [&#123; name: </div><div class="line">&apos;checkboxes&apos;</div><div class="line">, elem: </div><div class="line">&apos;#checkboxes&apos;</div><div class="line"> &#125;];</div><div class="line"></div><div class="line">client.init()</div><div class="line">    .url(</div><div class="line">&apos;http://the-internet.herokuapp.com/checkboxes&apos;</div><div class="line">)</div><div class="line">    .webdrivercss(</div><div class="line">&apos;before-click&apos;</div><div class="line">, screenshotElement)</div><div class="line">    .click(</div><div class="line">&apos;#checkboxes input:first-child&apos;</div><div class="line">)</div><div class="line">    .webdrivercss(</div><div class="line">&apos;after-click&apos;</div><div class="line">, screenshotElement)</div><div class="line">.</div><div class="line">end</div><div class="line">();</div></pre></td></tr></table></figure>
+<p>Run the test by typing this command into your command line:<strong>$ node test.js</strong>. Validate the images that were created by checking the<strong>webdrivercss</strong>folder. If you run your test again and the screenshots change, you’ll notice a<strong>diff</strong>folder will be added and the respective diff images will be inside of it.</p>
+<h3 id="Pros-and-cons-3"><a href="#Pros-and-cons-3" class="headerlink" title="Pros and cons"></a>Pros and cons</h3><ul>
+<li>Since it uses WebdriverIO, you can take advantage of all the features that framework provides</li>
+<li>Quick configuration of different screen resolutions</li>
+<li>Enables you to hide/mask certain areas of the screenshot</li>
+<li>Future uncertain as this specific plugin is no longer officially maintained</li>
+<li>Requires you to learn how to use WebdriverIO</li>
+</ul>
+<h3 id="05-Spectre"><a href="#05-Spectre" class="headerlink" title="05.Spectre"></a>05.<a href="https://github.com/wearefriday/spectre" target="_blank" rel="external">Spectre</a></h3><p>Unlike the other tools on this list, Spectre doesn’t run tests. Instead, it focuses on providing image comparison capabilities, along with an admin interface for managing screenshots.</p>
+<p>In normal use, you’d pair Spectre up with a tool like WebdriverIO or PhantomJS. The latter would do the work of capturing the screenshots, while Spectre would manage storing and processing of images. I’m a fan of this, as the separation of concerns makes it easier as a community to have a testing tool of our choice, but also build out a common admin interface.</p>
+<h3 id="Try-it-out-4"><a href="#Try-it-out-4" class="headerlink" title="Try it out"></a>Try it out</h3><p>On your Spectre website, open up the path<strong>/tests/new/</strong>. From there you can customise the test information and upload an initial screenshot. After submitting your test, go to the main page of your site where you’ll see a ‘Test Project’ created, along with a notification of 1 passed. You can click on any of the links on that page for further details on the test.</p>
+<p>Next, go back to the<strong>/tests/new</strong>page and upload a new image. When completed, return to the main page and you’ll see that Spectre ran the comparison and is now reporting a failing test.</p>
+<h3 id="Pros-and-cons-4"><a href="#Pros-and-cons-4" class="headerlink" title="Pros and cons"></a>Pros and cons</h3><ul>
+<li>Clean, friendly interface for managing screenshots</li>
+<li>Doesn’t try to do too many things, focusing efforts on a specific area of the testing landscape</li>
+<li>Requires knowledge of Ruby server setup</li>
+<li>Requires you to know how to send data/screenshots via a REST API</li>
+</ul>
+<h3 id="Honourable-mentions"><a href="#Honourable-mentions" class="headerlink" title="Honourable mentions"></a>Honourable mentions</h3><p>There are a few tools that I feel are worth mentioning, even if they didn’t get a featured spot in the list above. They are:</p>
+<ul>
+<li><a href="http://galenframework.com/" target="_blank" rel="external">Galen Framework</a></li>
+<li><a href="http://shoov.io/" target="_blank" rel="external">Shoov</a></li>
+<li><a href="https://github.com/garris/BackstopJS" target="_blank" rel="external">BackstopJS</a></li>
+</ul>
+<p>For a comprehensive list of tools and articles on the subject, check out<a href="https://visualregressiontesting.com/" target="_blank" rel="external">visualregressiontesting.com</a>.</p>
+<h3 id="What-next"><a href="#What-next" class="headerlink" title="What next?"></a>What next?</h3><p>‘That list is great, but can’t you just tell me which tool to use?’ I hear you ask. Well … no, because it greatly depends on what you’re testing. If you’re checking a fairly simple site, Wraith or Gemini are great options. But if you need to mimic user actions, then WebdriverCSS or PhantomCSS would be a better fit. If you’re unsure, don’t worry. Just pick one and try it out. No matter which tool you choose, you’ll learn valuable lessons about frontend testing and just how powerful (albeit complicated) it can be.</p>
+<p><em>This article originally appeared in</em><a href="http://www.creativebloq.com/net-magazine" target="_blank" rel="external"><em>net magazine</em></a><em>issue 290;</em><a href="https://www.myfavouritemagazines.co.uk/design/net-magazine-back-issues/net-march-2017-issue-290/" target="_blank" rel="external"><em>buy it here</em></a><em>!</em></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;The-5-best-visual-regression-testing-tools&quot;&gt;&lt;a href=&quot;#The-5-best-visual-regression-testing-tools&quot; class=&quot;headerlink&quot; title=&quot;The 5 be
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Men&#39;s Deep Voice</title>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-06-09T10:31:39.235Z</updated>
+  <updated>2017-06-12T02:59:42.599Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -16,32 +16,211 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>First-Ever Data Stealing Malware Found Using Intel AMT Tool to Bypass Firewall</title>
-    <link href="https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/"/>
-    <id>https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/</id>
-    <published>2017-06-09T00:00:00.000Z</published>
-    <updated>2017-06-09T10:31:39.235Z</updated>
+    <title>Organizing your marketing tech stack</title>
+    <link href="https://gmagon.com/blog/2017/06/12/organizing-your-marketing-tech-stack/"/>
+    <id>https://gmagon.com/blog/2017/06/12/organizing-your-marketing-tech-stack/</id>
+    <published>2017-06-12T00:00:00.000Z</published>
+    <updated>2017-06-12T02:59:42.599Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="First-Ever-Data-Stealing-Malware-Found-Using-Intel-AMT-Tool-to-Bypass-Firewall"><a href="#First-Ever-Data-Stealing-Malware-Found-Using-Intel-AMT-Tool-to-Bypass-Firewall" class="headerlink" title="First-Ever Data Stealing Malware Found Using Intel AMT Tool to Bypass Firewall"></a>First-Ever Data Stealing Malware Found Using Intel AMT Tool to Bypass Firewall</h1><p><img src="http://img2.tuicool.com/uIZV7rq.png!web" alt=""></p>
-<p>It’s not hard for a well-funded state-sponsored hacking group to break into corporate networks and compromise systems with malware, but what’s challenging for them is to keep that backdoor and its communication undetectable from a firewall and other network monitoring applications.</p>
-<p>However, a<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">cyber-espionage group</a>known as “<strong>Platinum</strong>,” that is actively targeting governmental organisations, defense institutes, and telecommunication providers since at least 2009, has found a way to hide its malicious activities from host-based protection mechanisms.</p>
-<p>Microsoft has recently<a href="https://blogs.technet.microsoft.com/mmpc/2017/06/07/platinum-continues-to-evolve-find-ways-to-maintain-invisibility/" target="_blank" rel="external">discovered</a>that the cyber-espionage group is now leveraging Intel’s Active Management Technology (AMT) Serial-over-LAN (SOL) channel as a file-transfer tool to steal data from the targeted computers without detection.</p>
-<p>Intel-based chip sets come with an embedded technology, called AMT, which is designed to allow IT administrators to remotely manage and repair PCs, workstations, and servers of their organisations.</p>
-<p>The Intel AMT technology operates independently of the operating system and works even when the system is turned off, as long as the platform is connected to a line power and a network cable.</p>
-<p>That means, when AMT is enabled, any packet sent to the PC’s wired network port will be redirected to the Management Engine and passed on to AMT – the operating system, as well as network monitoring applications installed on a system, never knows what’s going around.</p>
-<p><img src="http://img0.tuicool.com/nyA3InU.png!web" alt=""></p>
-<p>Moreover, Linux systems with Intel’s chips and AMT enabled may also be exposed to Platinum’s malware.</p>
-<p>“As this embedded processor is separate from the primary Intel processor, it can execute even when the main processor is powered off and is, therefore, able to provide out-of-band (OOB) remote administration capabilities such as remote power-cycling and keyboard, video, and mouse control (KVM),” Microsoft said.</p>
-<p>“Furthermore, as the SOL traffic bypasses the host networking stack, it cannot be blocked by firewall applications running on the host device. To enable SOL functionality, the device AMT must be provisioned.”</p>
-<p>Unlike the<a href="http://thehackernews.com/2017/05/intel-server-chipsets.html" target="_blank" rel="external">remote authentication flaw</a>discovered last month that enabled hackers to take over<a href="http://thehackernews.com/2017/05/intel-amt-vulnerability.html" target="_blank" rel="external">full control of a system</a>by using AMT features without the need of any password, Platinum does not exploit any flaw in AMT, instead, requires AMT to be enabled on infected systems.</p>
-<p>Microsoft notes that SOL session requires a username and password, so either the hacking group is using stolen credentials to make its malware remotely communicate with the C&amp;C servers, or”during the provisioning process, PLATINUM could select whichever username and password they wish.”</p>
-<p>The Platinum hacking group has been using zero-day exploits,<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">hot patching technique</a>and other advanced tactics to penetrate in their target systems and networks in South Asian countries, but this is the first time someone is abusing legitimate management tools to evade detection.</p>
-<p>Microsoft said it has already updated its own Windows Defender Advanced Threat Protection software that will alert network administrators of any malicious attempts at using AMT SOL, but only for systems running Windows operating system.</p>
+    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/bMVVva3.jpg!web" alt=""></p>
+<p>Kobie FullerContributor</p>
+<p>More posts by this contributor:</p>
+<ul>
+<li><a href="https://techcrunch.com/2014/08/20/startup-marketing-how-emotion-drives-customer-action/" target="_blank" rel="external">Startup Marketing And How Emotion Drives Customer Action</a></li>
+</ul>
+<p>Figuring out how to organize your marketing stack is almost like putting together a 1,000 piece blank jigsaw puzzle — impossible.</p>
+<p>A Q1 ‘17 survey by<a href="https://www.cmocouncil.org/" target="_blank" rel="external">CMO Council</a>and<a href="http://www.redpoint.net/" target="_blank" rel="external">RedPoint Global</a>revealed only 3% of respondents felt all of their automation, engagement and deployment tools were fully connected, with data, metrics and insights traveling freely between different technologies.</p>
+<p>This stat was staggering to me. Rather than just sit on my hands I’ve put together this infographic, which will help marketers better make sense on how to potentially organize these tools and get closer to achieving cross-channel marketing nirvana.</p>
+<p><img src="http://img1.tuicool.com/vU3AZ3f.png!web" alt=""></p>
+<p><strong>Organize and focus your team:</strong></p>
+<p>You need a team that is organized and led at the level of the New England Patriots. Both your quant marketers and creative teams need systems and processes that help foster trust, harmony, commitment, accountability and orientation towards results (check out<a href="https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team" target="_blank" rel="external">The 5 Dysfunctions of Team</a>for more). Marketing specific collaboration tools are taking stabs at addressing these needs and should be incorporated into how you organize your teams.</p>
+<p><strong>Know your message:</strong></p>
+<p>It’s very easy to get lost in all the process and organization of marketing and totally lose track of the appropriate message you should be communicating to your target customer. Don’t fall into this trap! Put content first as all the effort you put into everything else will be wasted if you fail in crafting the right message. There are a lot of tools that can help you work through the content creation process.</p>
+<p>Establish an Intelligence Hub:</p>
+<p>_Create one centralized view of the customer and apply analytics, data science and orchestration against it_so you can enable advanced communication.<strong>This is the heart of integrating most of your tools.</strong>Create sophisticated automation orchestrating messages within and across channels. Keep in mind your approach should allow for 1 to 1, 1 to many and 1 to all forms of messaging.</p>
+<p>At Upfront,<a href="https://finance.yahoo.com/news/cordial-secures-6m-series-upfront-133238559.html" target="_blank" rel="external">we recently invested in Cordial</a>which aims to take this approach allowing marketers to take disparate data sources and create advanced marketing automation campaigns across all the dominant messaging channels in this type of manner. It’s something that’s been incredibly difficult to do with legacy systems until now.</p>
+<p><strong>Master the basic channels first:</strong></p>
+<p>While there are many exciting new types of marketing campaigns to drive growth, core channels such as<strong>email</strong>,<strong>social</strong>,<strong>web, search</strong>and<strong>offline</strong>still should be the main centers of focus for marketers. Be careful about getting distracted by next gen tactics like chatbots or VR if you haven’t even figured out the simple channels of reach.</p>
+<p><strong>Always be testing:</strong></p>
+<p>Invest in tools that test and optimize the performance of existing channels. You should always be searching for incremental lift in every tactic and tool you employ. If you fail in creating a test driven culture it will be very difficult to understand whether some of your new initiatives are really helping or hurting.</p>
+<h2 id="Related-Articles"><a href="#Related-Articles" class="headerlink" title="Related Articles"></a>Related Articles</h2><p><a href="https://techcrunch.com/2017/02/27/cordial-raises-6-million-for-its-customized-automated-email-marketing-service/" target="_blank" rel="external">Cordial raises $6 million for its customized, automated email marketing service</a></p>
+<p><a href="https://techcrunch.com/2016/06/21/to-compete-with-google-think-small/" target="_blank" rel="external">To compete with Google, think small</a></p>
+<p><a href="https://techcrunch.com/2017/04/11/sprinklr-launches-major-push-into-customer-experience/" target="_blank" rel="external">Sprinklr launches major push into customer experience</a></p>
+<p><a href="https://techcrunch.com/2015/11/02/sprinklr-acquires-booshaka/" target="_blank" rel="external">Sprinklr Acquires Booshaka For Smarter Audience Targeting</a></p>
+<p><a href="https://techcrunch.com/2015/05/28/gumgum-series-c/" target="_blank" rel="external">In-Image Ad Company GumGum Raises $26M</a></p>
+<p><a href="https://techcrunch.com/2017/05/02/mailchimps-marketing-automation-tools-are-now-available-for-free/" target="_blank" rel="external">Mailchimp’s marketing automation tools are now available for free</a></p>
+<p><strong>Wow the customer:</strong></p>
+<p>Focus on the customer experience and strive to make it a magical one. Leverage all data and insights available in order to delight the customer. However, don’t be afraid from time to time to take radical chances by throwing all customer feedback out the door and surprise them with something transformational that they never would expect. Its those types of moments that separate good marketers from great ones.</p>
+<p>Keep in mind that this survey is just that — a survey (it’s a lot in some places and over-simplified in others). How you will digest all of this information will, in part, depend upon your expertise. If you’re just starting out, take it slow and don’t get overwhelmed. If you’re an expert, send along some feedback on how this can be improved (there’s an interactive version coming!).</p>
+<p>What’s important to remember is that there has never been a more exciting time to be a marketer — and technology is playing a pivotal part in fostering better relationships with customers.</p>
+<p>Featured Image: FeelPic/Getty Images</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/VFfQFnN" target="_blank" rel="external">https://techcrunch.com/2017/06/11/organizing-your-marketing-tech-stack/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;First-Ever-Data-Stealing-Malware-Found-Using-Intel-AMT-Tool-to-Bypass-Firewall&quot;&gt;&lt;a href=&quot;#First-Ever-Data-Stealing-Malware-Found-Usi
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/bMVVva3.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Kobie FullerContributor&lt;/p&gt;
+&lt;p&gt;More posts by this contributor:&lt;/p&gt;
+&lt;ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Malware downloader infects your PC without a mouse click</title>
+    <link href="https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/"/>
+    <id>https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/</id>
+    <published>2017-06-12T00:00:00.000Z</published>
+    <updated>2017-06-12T03:46:50.231Z</updated>
+    
+    <content type="html"><![CDATA[<p>The downloader installs a banking Trojan into your PC the moment your mouse pointer hovers over it.</p>
+<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fdims-shared%2Fdims3%2FGLOB%2Fcrop%2F5656x3744%2B0%2B0%2Fresize%2F1600x1059%21%2Fformat%2Fjpg%2Fquality%2F85%2Fhttp%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F2938118e33f0e37c828171941a41d88e%2F205362959%2Finternet-virus-picture-id101377891&amp;client=cbc79c14efcebee57402&amp;signature=27a09c8410ec298ef3e9f9ca4a72ca9a8b061f6a" alt=""></p>
+<p>Joerg Habermeier via Getty Images</p>
+<p>You think you’re safe from malware since you never click suspicious-looking links, then somebody finds a way to infect your PC anyway. Security researchers have<a href="http://blog.trendmicro.com/trendlabs-security-intelligence/mouseover-otlard-gootkit/" target="_blank" rel="external">discovered</a>that cybercriminals have recently started using a malware downloader that installs a<a href="https://www.engadget.com/2013/04/16/watch-out-most-game-hacks-are-actually-malware/" target="_blank" rel="external">banking Trojan</a>to your computer even if you don’t click anything. All it takes to trigger the download is to hover your mouse pointer over a hyperlink in a carrier PowerPoint file.</p>
+<p>According to researchers from Trend Micro and<a href="https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/" target="_blank" rel="external">Dodge This Security</a>the technique was used by a recent spam email campaign targeting companies and organizations in Europe, the Middle East and Africa. The emails’ subjects were mostly finance-related, such as “Invoice” and “Order #,” with an attached PowerPoint presentation.</p>
+<p><img src="https://s.aolcdn.com/hss/storage/midas/cb4d93a4905500a6e4fdaa2847e1ae8d/205363154/powerpoint-downloader02.jpg" alt=""></p>
+<p>[Image credit: Trend Micro]</p>
+<p>The PowerPoint file has a single hyperlink in the center that says “Loading… please wait” that has an embedded malicious PowerShell script. When you hover your mouse pointer over the link, it executes the script. If you’re running a newer version of Microsoft Office, though, you’ll still need to approve the malware’s download before it infects your PC.</p>
+<p>That’s because the more modern versions of the suite has Protected View, which will show a prompt warning you about a “potential security concern” when the script starts running. Just click Disable, and you’ll be fine. However, older versions of the suite don’t have that extra layer of security. The downloader can install a Trojan virus into your system to steal your credentials and bank account information the moment your mouse pointer hovers over the link.</p>
+<p><img src="https://s.aolcdn.com/hss/storage/midas/1530e0c39e52788a796980e61b13f057/205363172/powerpoint-downloader01.jpg" alt=""></p>
+<p>[Image credit: Trend Micro]</p>
+<p>The good news is that the spam emails died down back on May 29th after peaking on the 25th with 1,444 detections by Trend Micro. Still, it’s better to steer clear of similar emails, since it’s always possible that the campaign in May was just a test run for a bigger one.</p>
+<p>Via:</p>
+<p><a href="https://arstechnica.com/security/2017/06/malicious-powerpoint-files-can-infect-targets-when-hovering-over-hyperlinks/" target="_blank" rel="external">Ars Technica</a></p>
+<p>Source:</p>
+<p><a href="http://blog.trendmicro.com/trendlabs-security-intelligence/mouseover-otlard-gootkit/" target="_blank" rel="external">Trend Micro</a>,</p>
+<p><a href="https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/" target="_blank" rel="external">Dodge This Security</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The downloader installs a banking Trojan into your PC the moment your mouse pointer hovers over it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Google Chrome might have broken your tests without you even knowing about it</title>
+    <link href="https://gmagon.com/blog/2017/06/12/google-chrome-might-have-broken-your-tests-without-you-even-knowing-about-it/"/>
+    <id>https://gmagon.com/blog/2017/06/12/google-chrome-might-have-broken-your-tests-without-you-even-knowing-about-it/</id>
+    <published>2017-06-12T00:00:00.000Z</published>
+    <updated>2017-06-12T02:59:42.597Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/zYNraum.jpg!web" alt=""></p>
+<p>My colleague just discovered that Chrome 58 (released April 19th) has silently muted all console.debug() output in their Chrome Dev Tools.</p>
+<p>How? By making changes to the<strong>Console UI</strong>, from filtering based on type of console method to filtering based on levels.</p>
+<p>Introducing levels is not a bad thing in and of itself. But Google also chose to stop showing all console output by default. Now you can only see level “Info” and below.</p>
+<p><img src="http://img0.tuicool.com/zYRFNrZ.png!web" alt=""></p>
+<p>Depending on your project, it might also be a big deal to no longer be able to filter by showing only one console method’s output.</p>
+<p>For example only<code>console.log()</code>. This is particularly troublesome if you’re working on a larger project with hundreds of different types of output mixed together.</p>
+<p>As you can see from the comments section<a href="https://developers.google.com/web/updates/2017/03/devtools-release-notes" target="_blank" rel="external">in the release notes</a>, this has not been received well by developers.</p>
+<p><img src="http://img2.tuicool.com/UnyyMzj.png!web" alt=""></p>
+<h3 id="Failing-Tests"><a href="#Failing-Tests" class="headerlink" title="Failing Tests"></a>Failing Tests</h3><p>This means that if your app or project relies on<code>console.debug()</code>level output for testing, your tests might have been failing for over a month without you even noticing.</p>
+<p>All without so much as a pop-up warning from Google.</p>
+<p>By making logging non-verbose by default, I believe Google has broken with best practice here, and made a huge mistake.</p>
+<p>Also, removing the ability to only show output based on a specific console method has resulted in a worsened workflow for many developers.</p>
+<h3 id="Test-it-out-for-yourself"><a href="#Test-it-out-for-yourself" class="headerlink" title="Test it out for yourself"></a>Test it out for yourself</h3><p>I did some testing with the following console methods in Chrome Dev Tools:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line">console</div><div class="line">.assert(</div><div class="line">true</div><div class="line">, &#123;</div><div class="line">assert</div><div class="line">: </div><div class="line">&quot;assert&quot;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">console</div><div class="line">.count(</div><div class="line">&apos;count&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.debug(</div><div class="line">&apos;debug&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.dir(&#123;</div><div class="line">dir</div><div class="line">: </div><div class="line">&quot;dir&quot;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">console</div><div class="line">.error(</div><div class="line">&apos;error&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.info(</div><div class="line">&apos;info&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.log(</div><div class="line">&apos;log&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.profile(</div><div class="line">&apos;profile&apos;</div><div class="line">);</div><div class="line">setTimeout(</div><div class="line">function</div><div class="line">(</div><div class="line">)</div><div class="line">&#123; </div><div class="line">console</div><div class="line">.profileEnd(</div><div class="line">&apos;profile&apos;</div><div class="line">); &#125;, </div><div class="line">1000</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.table(</div><div class="line">&apos;table&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.time(</div><div class="line">&apos;time&apos;</div><div class="line">);</div><div class="line">setTimeout(</div><div class="line">function</div><div class="line">(</div><div class="line">)</div><div class="line">&#123; </div><div class="line">console</div><div class="line">.timeEnd(</div><div class="line">&apos;time&apos;</div><div class="line">); &#125;, </div><div class="line">1000</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.timeStamp(</div><div class="line">&apos;timeStamp&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.trace(</div><div class="line">&apos;trace&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.warn(</div><div class="line">&apos;warn&apos;</div><div class="line">);</div></pre></td></tr></table></figure>
+<p>You can simply copy paste this into the console in Chrome Dev Tools, hit enter, and change the filter level to see what is displayed in which level.</p>
+<h3 id="Some-Screenshots-To-Illustrate"><a href="#Some-Screenshots-To-Illustrate" class="headerlink" title="Some Screenshots To Illustrate"></a>Some Screenshots To Illustrate</h3><p>Here are some screenshots to illustrate the differences between levels. Notice especially the first screenshot of default “Info” level, and the fact that “3 items are hidden.”</p>
+<p><img src="http://img0.tuicool.com/yUbyM37.png!web" alt=""></p>
+<p>Chrome 58, Chrome Dev Tools Console output, level “Info”.</p>
+<p><img src="http://img2.tuicool.com/RNZvmav.png!web" alt=""></p>
+<p>Chrome 58, Chrome Dev Tools Console output, level “Verbose”.</p>
+<p><img src="http://img2.tuicool.com/Jz6vMvR.png!web" alt=""></p>
+<p>Chrome 58, Chrome Dev Tools Console output, level “Warnings”.</p>
+<p><img src="http://img0.tuicool.com/VzA3qiM.png!web" alt=""></p>
+<p>Chrome 58, Chrome Dev Tools Console output, level “Errors”.</p>
+<h3 id="Have-Any-Thoughts"><a href="#Have-Any-Thoughts" class="headerlink" title="Have Any Thoughts?"></a>Have Any Thoughts?</h3><p>What do you think about this change? Was Google in the wrong for making this change? Or do you think it was an improvement to the “Console UI” overall? Please leave a comment below.</p>
+<p><em>This article was originally published on</em><a href="http://helloilovecode.com/" target="_blank" rel="external"><em>“Hello, I Love Code”</em></a><em>and is written by</em><a href="http://rob.ee/" target="_blank" rel="external"><em>Robert Axelsen</em></a><em>, who is a JavaScript Developer, Meetup Organizer and Open Source enthusiast based in Austria, Europe.</em></p>
+<p><em>You can connect with Robert on</em><a href="https://twitter.com/Robert_Axelsen" target="_blank" rel="external"><em>Twitter</em></a><em>, or get to know him better by</em><a href="http://rob.ee/" target="_blank" rel="external"><em>visiting his website.</em></a></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/fEBZVvA" target="_blank" rel="external">https://medium.freecodecamp.com/google-chrome-might-have-broken-your-tests-without-you-even-knowing-about-it-9d9130a6fd0c?gi=3e6645ec9ced</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/zYNraum.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;My colleague just discovered that Chrome 58 (released April 19th) has s
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>9 Essential Design Tools for Non-Designers</title>
+    <link href="https://gmagon.com/blog/2017/06/12/9-essential-design-tools-for-non-designers/"/>
+    <id>https://gmagon.com/blog/2017/06/12/9-essential-design-tools-for-non-designers/</id>
+    <published>2017-06-12T00:00:00.000Z</published>
+    <updated>2017-06-12T03:48:47.375Z</updated>
+    
+    <content type="html"><![CDATA[<p>Content and design work better together - in fact, your content marketing efforts really won’t achieve optimal success if they don’t include a<a href="http://www.rightsourcemarketing.com/content-creation/cant-win-content-marketing-without-good-design/" target="_blank" rel="external">solid design component</a>to bring your words to life.</p>
+<p>Not convinced your content needs design? Here are some recent stats that prove otherwise:</p>
+<ul>
+<li>37% of marketers said visual marketing was the most important form of content for their business, second only to blogging (38%). (<br><a href="https://www.socialmediaexaminer.com/wp-content/uploads/2016/05/SocialMediaMarketingIndustryReport2016.pdf" target="_blank" rel="external">Source</a><br>)</li>
+<li>Given 15 minutes to consume content, two-thirds of people prefer to read something beautifully designed (as opposed to something plain). (<br><a href="http://wwwimages.adobe.com/content/dam/Adobe/en/max/2015/pdfs/state-of-content-oct.pdf" target="_blank" rel="external">Source</a><br>)</li>
+<li>If the content or layout of a website is unattractive, 38% of people will stop engaging with it. (<br><a href="http://wwwimages.adobe.com/content/dam/Adobe/en/max/2015/pdfs/state-of-content-oct.pdf" target="_blank" rel="external">Source</a><br>)</li>
+<li>When people hear information, they usually only remember about 10% of that information three days later. But if a relevant image is paired with that same information, people will remember 65% of the information three days later. (<br><a href="http://www.brainrules.net/vision" target="_blank" rel="external">Source</a><br>)</li>
+<li>Tweets with images receive 150% more retweets than tweets without images. (<br><a href="https://blog.bufferapp.com/the-power-of-twitters-new-expanded-images-and-how-to-make-the-most-of-it" target="_blank" rel="external">Source</a><br>)</li>
+<li>Not getting enough likes? Facebook posts with images get 2.3 times more engagement vs. those without images. (<br><a href="http://buzzsumo.com/blog/how-to-massively-boost-your-blog-traffic-with-these-5-awesome-image-stats/" target="_blank" rel="external">Source</a><br>)</li>
+</ul>
+<p>But what to do with those little design projects that pop up, but seem too small to send to your designer - or need to be done too quickly to schedule? We all know what happens when people who aren’t designers try to be… well, graphic designers. You can end up with garish color palettes, no white space, and a jumble of shapes that look more like an abstract painting than an infographic.</p>
+<p>But the fact is that even if you_aren’t_trained as a graphic designer, in many companies, your job in marketing is going to require you to dabble in a little design here and there, whether it’s to save time, or money, or both.</p>
+<p>As such, a little design knowledge can go a long way, no matter your official title or department. You never know when a small-but-urgent project might come up while your official designer is swamped, or when a proposal will come across your desk featuring art created by your sales person. Or maybe you’re a part of an internal marketing department and routinely try to tackle the small stuff in house so you can send the larger projects to your creative team.</p>
+<p>Regardless, you’ll need to work on a design project at some point, and there’s no need for you to look like an amateur when you do it. Here are nine easy-to-use tools that can help any non-designer accomplish common design tasks:</p>
+<h2 id="How-to-create-a-quote-Recite"><a href="#How-to-create-a-quote-Recite" class="headerlink" title="How to create a quote:Recite"></a>How to create a quote:<a href="http://recite.com/" target="_blank" rel="external">Recite</a></h2><p><img src="http://img0.tuicool.com/i6FrQvE.jpg!web" alt="">This browser-based tool makes it simple to create and share a quote, fast. Just type in your quote and it will populate into dozens of pre-made templates. You can post directly to Facebook, Twitter, Pinterest, Tumblr, and StumbleUpon from the Recite website, or download the image directly to share later.</p>
+<h2 id="How-to-create-social-media-and-blog-graphics-Canva"><a href="#How-to-create-social-media-and-blog-graphics-Canva" class="headerlink" title="How to create social media and blog graphics:Canva"></a>How to create social media and blog graphics:<a href="https://www.canva.com/" target="_blank" rel="external">Canva</a></h2><p>​<img src="http://img2.tuicool.com/u6FJNv7.png!web" alt="">Canva offers a browser-based account, as well as iPhone and iPad apps. You do have to create an account in order to use it, but a regular Canva subscription is free (Canva for Work, which offers more robust features and support, requires a monthly fee). The tool offers lots of pre-sized templates that make it easy to design to certain specifications, such as social media posts, posters, letterhead, and more. You can choose from Canva’s native layouts, icons, and graphics - some are free, and some aren’t - or upload your own to keep things on brand.</p>
+<h2 id="How-to-make-charts-and-graphs-Beam"><a href="#How-to-make-charts-and-graphs-Beam" class="headerlink" title="How to make charts and graphs:Beam"></a>How to make charts and graphs:<a href="https://beam.venngage.com/" target="_blank" rel="external">Beam</a></h2><p><img src="http://img1.tuicool.com/jaYBZvr.jpg!web" alt="">Beam is a free online chart maker offered by infographic platform Venngage. You don’t need an account to make and save a chart using Beam’s mini website, but you will need to enter your name and email address in order to download your data visualization (you can also opt to embed it, or share it on Facebook and Twitter). Beam enables you to choose from several different types of graphs and color palettes, and you can edit the data in a spreadsheet, similar to PowerPoint - but the end result will be much prettier than a regular old slide deck.</p>
+<h2 id="How-to-edit-photos-Pixlr"><a href="#How-to-edit-photos-Pixlr" class="headerlink" title="How to edit photos:Pixlr"></a>How to edit photos:<a href="https://pixlr.com/editor/" target="_blank" rel="external">Pixlr</a></h2><p>​<img src="http://img0.tuicool.com/YvmyUfz.jpg!web" alt="">Need to edit a picture, and your smartphone or computer’s photo program just isn’t cutting it? Then turn to Pixlr, which is basically Photoshop in web browser form, but without the hefty price tag. The functionality is pretty similar to Photoshop, so familiarity with the popular Adobe program will help, but you can pick it up even if you’re never touched Photoshop in your life.</p>
+<h2 id="How-to-create-icons-LogoGarden"><a href="#How-to-create-icons-LogoGarden" class="headerlink" title="How to create icons:LogoGarden"></a>How to create icons:<a href="https://www.logogarden.com/" target="_blank" rel="external">LogoGarden</a></h2><p><img src="http://img0.tuicool.com/NjU3iqj.jpg!web" alt="">Yes, the word “logo” is in the name of this website - but don’t actually use it to make logos. That’s work best left to professionals, however, this website is useful if you need to pull together a suite of little icons for a blog, list, etc. and want to customize the color quickly.</p>
+<h2 id="How-to-find-icons-Iconfinder"><a href="#How-to-find-icons-Iconfinder" class="headerlink" title="How to find icons:Iconfinder"></a>How to find icons:<a href="https://www.iconfinder.com/" target="_blank" rel="external">Iconfinder</a></h2><p><img src="http://img0.tuicool.com/nMjQBjI.jpg!web" alt="">On the other hand, sometimes you need pre-made icons - say, social media icons - that all have a similar aesthetic. In that case, look to a website like Iconfinder instead of trying to make your own. They offer a mix of free and paid icons, as well as subscriptions, so there are various options to fit your budget.</p>
+<h2 id="How-to-get-color-palette-inspiration-Coolors-co"><a href="#How-to-get-color-palette-inspiration-Coolors-co" class="headerlink" title="How to get color palette inspiration:Coolors.co"></a>How to get color palette inspiration:<a href="https://coolors.co/" target="_blank" rel="external">Coolors.co</a></h2><p><img src="http://img2.tuicool.com/6vQZjaB.jpg!web" alt="">You’ve created that basic postcard, but it needs more color. So where in the Pantone universe do you start? Whether you’re taking your cues from an existing palette or building them from scratch, Coolors offers inspiration via a website, iOS app, Adobe add-on, and Chrome extension. Its strangely addicting color palette generator changes out swatches at the simple touch of a space bar, and you can input your existing brand colors to get complementary suggestions. You can also browse pre-created color palettes in a different tab.</p>
+<h2 id="How-to-figure-out-a-color-code-ColorZilla"><a href="#How-to-figure-out-a-color-code-ColorZilla" class="headerlink" title="How to figure out a color code:ColorZilla"></a>How to figure out a color code:<a href="http://www.colorzilla.com/" target="_blank" rel="external">ColorZilla</a></h2><p><img src="http://img1.tuicool.com/AvUJ3iz.jpg!web" alt="">This extension for Chrome and Firefox will tell you the precise six-number hex code for any pixel on a website. It even saves the history of color swatches you’ve picked, which is very helpful if you’re browsing the web and see a color you like that you want to save quickly.</p>
+<h2 id="How-to-figure-out-a-font-WhatFont"><a href="#How-to-figure-out-a-font-WhatFont" class="headerlink" title="How to figure out a font:WhatFont"></a>How to figure out a font:<a href="http://whatfontapp.com/" target="_blank" rel="external">WhatFont</a></h2><p><img src="http://img2.tuicool.com/Vbuq6fA.jpg!web" alt="">Similar to how ColorZilla lets you select a pixel and tells you the color code, WhatFont lets you hover over a font anywhere on a website page, and it will automatically pull the font name from the HTML code. You can add it as extension to Chrome and Safari or download the bookmarklet; it’s also available as an iPhone and iPad app.</p>
+<p>And finally, one bonus piece of design wisdom…</p>
+<h2 id="When-to-hire-a-designer"><a href="#When-to-hire-a-designer" class="headerlink" title="When to hire a designer"></a>When to hire a designer</h2><p>You might be able to make passable little graphics on your own if you already have brand guidelines, color codes, fonts, etc. in place. But trust me, to create a consistent look for your brand - not to mention design larger, more complex pieces like eBooks, infographics, print collateral, or interactive content - hire an experienced designer to make you look polished. The big jobs require<a href="http://www.rightsourcemarketing.com/content-creation/6-ways-get-best-work-design-team/" target="_blank" rel="external">talented designers</a>, and you’ll just frustrate yourself if you try to take on more complicated projects without the proper training.</p>
+<p>In a pinch, these nine tools will help you create small but quality design projects, even if you’re not a designer. Just be sure to turn to your graphic designer for larger jobs, or you’ll regret it.</p>
+<p>Source: “<a href="http://www.tuicool.com/articles/hit/nyYVvaN" target="_blank" rel="external">http://www.socialmediatoday.com/marketing/9-essential-design-tools-non-designers</a>“</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Content and design work better together - in fact, your content marketing efforts really won’t achieve optimal success if they don’t incl
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>A visual overview of Apple’s essential design principles</title>
+    <link href="https://gmagon.com/blog/2017/06/12/a-visual-overview-of-apples-essential-design-principles/"/>
+    <id>https://gmagon.com/blog/2017/06/12/a-visual-overview-of-apples-essential-design-principles/</id>
+    <published>2017-06-12T00:00:00.000Z</published>
+    <updated>2017-06-12T02:48:34.600Z</updated>
+    
+    <content type="html"><![CDATA[<p>Apple’s Human Interface Guidelines have been the core of the company’s design philosophy ever since the Macintosh in 1978. Apple design evangelist Mike Stern gave an overview of the ever-evolving guidelines during a Wednesday session at the company’s Worldwide Developers Conference.</p>
+<p>The session, entitled “</p>
+<p><a href="https://developer.apple.com/videos/play/wwdc2017/802/" target="_blank" rel="external">Essential Design Principles</a></p>
+<p>,” is one of my favorites, in large part because I’m a designer myself. I’ve distilled the essential Apple design principles he talked about in the sketchnotes above.</p>
+<h3 id="Apple-design-An-emphasis-on-‘human’"><a href="#Apple-design-An-emphasis-on-‘human’" class="headerlink" title="Apple design: An emphasis on ‘human’"></a>Apple design: An emphasis on ‘human’</h3><p>Apple choses “human interface” rather than the more frequently used term “user interface” for a reason. “Human” is the expression of our highest and most noble qualities.</p>
+<p>Many of these Apple design principles might seem obvious, yet they often get neglected. We see this failure in apps that do not meet our expectations. The apps that ignore essential design principles are the ones that get used once and then deleted.</p>
+<p>Apple wants to change that. The company increased the number of design sessions at WWDC this year, illustrating a deep commitment to helping developers create well-designed apps.</p>
+<p>The Essential Design Principles session provided real-world experiences to reinforce the concepts discussed. The examples showed how decisions affect app design.</p>
+<h3 id="Well-designed-apps-create-a-delightful-experience"><a href="#Well-designed-apps-create-a-delightful-experience" class="headerlink" title="Well-designed apps create a delightful experience"></a>Well-designed apps create a delightful experience</h3><p>Apps with simple workflows, clear interfaces and helpful information create a delightful experience.</p>
+<p>The collection of Apple Human Interface Guidelines for all of the company’s operating systems (macOS, watchOS, iOS and tvOS) can be found on the<a href="https://developer.apple.com/design/" target="_blank" rel="external">Apple Developer website</a>. You can download design resources for Adobe Photoshop and Sketch in<a href="https://developer.apple.com/design/resources/" target="_blank" rel="external">Apple’s design resources section</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/NNBvQn" target="_blank" rel="external">http://www.cultofmac.com/486340/apple-design-principles-sketchnotes/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Apple’s Human Interface Guidelines have been the core of the company’s design philosophy ever since the Macintosh in 1978. Apple design e
     
     </summary>
     
@@ -74,51 +253,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;Papers-for-Teaching-Undergraduate-Data-Science&quot;&gt;&lt;a href=&quot;#Papers-for-Teaching-Undergraduate-Data-Science&quot; class=&quot;headerlink&quot; title=&quot;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Are stops important in the world of location tracking?</title>
-    <link href="https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/"/>
-    <id>https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/</id>
-    <published>2017-06-09T00:00:00.000Z</published>
-    <updated>2017-06-09T10:35:51.340Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Are-stops-important-in-the-world-of-location-tracking"><a href="#Are-stops-important-in-the-world-of-location-tracking" class="headerlink" title="Are stops important in the world of location tracking?"></a>Are stops important in the world of location tracking?</h1><p>We had trips on our mind when we first built HyperTrack. We assumed that developers would start tracking a user when they expected the user to be on their way to get some place and stop when they had reached. The assumption failed. Obvious in hindsight, developers expected us to tell them (and not the other way around) when the user was on the way and when they had stopped. All they wanted to do was switch us on or off, and hand over control to HyperTrack to automatically figure out trips and stops in the life of the user. They would keep HyperTrack on through the day, through the week, or just switch it on and leave it on forever. HyperTrack was expected to notify developers about the start and end of these trips and stops, besides other useful events along the way. This led to a re-architecture of our stack that we rolled out with HyperTrack v3 in March.</p>
-<p>All you need to do now is plug in SDK into your app and call our startTracking method, say when the user logs in. That’s it. You would now get all the trips and stops that your user makes, arranged in a<em><strong>placeline</strong></em>. For every stop your user makes, you would get to know the place and duration of the stop.</p>
-<p><img src="http://img0.tuicool.com/IvUrUzr.png!web" alt=""></p>
-<p>User placeline with trips &amp; stops</p>
-<h2 id="Why-are-Stops-important"><a href="#Why-are-Stops-important" class="headerlink" title="Why are Stops important?"></a>Why are Stops important?</h2><p>When building a real time location tracking stack, it is important to distinguish between trips and stops for multiple reasons.</p>
-<h3 id="Battery-Efficiency"><a href="#Battery-Efficiency" class="headerlink" title="Battery Efficiency"></a><strong>Battery Efficiency</strong></h3><p><img src="http://img2.tuicool.com/ZRRfay7.png!web" alt="">Distinguishing between trips and stops has helped us significantly reduce the battery used by our SDK. Our SDK hibernates when the user stops and spares the receiver and transmitter until the user is moving or on their way again. An average user is on the move for 5-6 hours or less than 25% of the day. That trims down battery usage by a straight 75%.</p>
-<h3 id="Location-accuracy"><a href="#Location-accuracy" class="headerlink" title="Location accuracy"></a><strong>Location accuracy</strong></h3><p>Distinguishing between trips and stops helps filter out noise in the location data. An average user is indoor when at a stop, say inside a building. Fused location points received from the device go haywire due to flaky GPS connectivity and strong WiFi connectivity. The Operating System prefers WiFi locations over GPS due to higher confidence. However, high confidence locations from multiple WiFi networks creates a different type of noise in the data. See the image below for locations received during an hour long stop at 100 Bush St. in San Francisco.</p>
-<p>Now imagine using these high confidence location points to compute mileage of distance traveled by the user! Detecting a stop using activity data is an effective way to eliminate this noise.</p>
-<p><img src="http://img2.tuicool.com/iI3UVrM.png!web" alt=""></p>
-<p>Raw location points at a stop</p>
-<h2 id="How-do-we-automatically-detect-stops"><a href="#How-do-we-automatically-detect-stops" class="headerlink" title="How do we automatically detect stops?"></a>How do we automatically detect stops?</h2><p>Activity sensors in smartphones help detect stops in conjunction with location sensors. The smartphone Operating Systems provide raw sensor data from the accelerometer and gyroscope, as well as fused activity/motion data through their own algorithms in the chipset or system software. Similarly, the OS provides raw location data from GPS, WiFi and cellular network sensors, as well as fused location data through APIs such as Visit in iOS and Geofence in Android. Making these two data sets work in tandem helps us interpret stops automatically and reliably. A more in-depth analysis coming up in a separate post.</p>
-<h2 id="How-do-our-customers-use-stops"><a href="#How-do-our-customers-use-stops" class="headerlink" title="How do our customers use stops?"></a>How do our customers use stops?</h2><p>Here are a few unique stories of how of our customers use Stops that are automatically detected by HyperTrack.</p>
-<h3 id="Measuring-stop-durations"><a href="#Measuring-stop-durations" class="headerlink" title="Measuring stop durations"></a><strong>Measuring stop durations</strong></h3><p>A service aggregator who uses HyperTrack for location tracking provides services like beauty, auto mechanic, home cleaning, plumbing, and handyman delivered at users’ homes. One of their biggest problems is to know whether these service professionals visited the expected place at the expected time. If so, how much time did they spend at the consumer’s location. Professional services are often billed by time and resolving disputes between the consumer and service professional often comes down to figuring out the actual time spent on site. The aggregator plugged in the HyperTrack SDK and created a stopover<em><strong>action</strong></em> for each service visit. You create an<em><strong>action</strong></em> in HyperTrack for an action that the user performs in the app and that you want to track. The operations team can now seethe actual time spent by the service professional at that stop.</p>
-<p><img src="http://img0.tuicool.com/MjYjMvI.png!web" alt=""></p>
-<p>Stops in context of an action</p>
-<h3 id="Profiling-frequently-visited-places"><a href="#Profiling-frequently-visited-places" class="headerlink" title="Profiling frequently visited places"></a><strong>Profiling frequently visited places</strong></h3><p>A travel app wanted to provide local recommendations to her users. Right after she plugged the SDK in the app, HyperTrack started generating a heatmap of places where users were spending most time. This data of most frequented places became the core data set for local recommendations in the app.</p>
-<p><img src="http://img2.tuicool.com/2yaiUzJ.png!web" alt=""></p>
-<p>Places heatmap</p>
-<h3 id="Getting-geofence-alerts-for-places-of-interest"><a href="#Getting-geofence-alerts-for-places-of-interest" class="headerlink" title="Getting geofence alerts for places of interest"></a><strong>Getting geofence alerts for places of interest</strong></h3><p>A fleet of real estate agents wanted to get alerted when an agent visited one of the tens of thousands of properties in the company database. They wanted to make sure that these alerts were sent only when the agent stopped at a property, rather than personal visits and other locations. The default geofencing features provided by the OS severely limit the number of locations you may register for geofencing visits (e.g.,<a href="https://developer.android.com/training/location/geofencing.html" target="_blank" rel="external">100 geofences/device on Android</a>).</p>
-<p>This customer used HyperTrack to get alerts for visits. They <a href="https://docs.hypertrack.com/events/webhook.html" target="_blank" rel="external">received webhook events</a>when the agent visited a property and then used to to send a mobile notifications to their agents.</p>
-<p><img src="http://img2.tuicool.com/JBzq6nM.png!web" alt=""></p>
-<p>Notifications powered via geofence alerts</p>
-<h3 id="Getting-delay-alerts-with-unexpected-stops"><a href="#Getting-delay-alerts-with-unexpected-stops" class="headerlink" title="Getting delay alerts with unexpected stops"></a><strong>Getting delay alerts with unexpected stops</strong></h3><p>A customer who had builtorder tracking with HyperTrack now wanted to get an alert when an order was getting delayed by over 10 mins. In the alert, they wanted to know the reason for delay. Turned out that many delays were related to unexpected stops by the rider. They set up <a href="https://docs.hypertrack.com/events/slack.html" target="_blank" rel="external">real-time Slack alerts</a> sent to the respective fleet channels when the rider made an unexpected stop.</p>
-<p><img src="http://img0.tuicool.com/fIJrYfj.png!web" alt=""></p>
-<p>Unexpected stops on your Slack channel</p>
-<p>These are just a few stories of how developers have used stops to build better location-based services for business efficiency and product experience. We discover new stories every day as more developers start using HyperTrack in their apps. We are excited to see how you use stops in  your product. Do ping us at<a href="mailto:help@hypertrack.io" target="_blank" rel="external">help@hypertrack.io</a> and we would love to feature your story on our blog!</p>
-<p>In case you haven’t started yet, visit<a href="http://www.hypertrack.com/" target="_blank" rel="external">www.hypertrack.com</a>now to plug in the SDK into your app. It takes just a few minutes to start building your location features.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Are-stops-important-in-the-world-of-location-tracking&quot;&gt;&lt;a href=&quot;#Are-stops-important-in-the-world-of-location-tracking&quot; class=&quot;heade
     
     </summary>
     
@@ -219,6 +353,85 @@
   </entry>
   
   <entry>
+    <title>Are stops important in the world of location tracking?</title>
+    <link href="https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/"/>
+    <id>https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/</id>
+    <published>2017-06-09T00:00:00.000Z</published>
+    <updated>2017-06-09T10:35:51.340Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Are-stops-important-in-the-world-of-location-tracking"><a href="#Are-stops-important-in-the-world-of-location-tracking" class="headerlink" title="Are stops important in the world of location tracking?"></a>Are stops important in the world of location tracking?</h1><p>We had trips on our mind when we first built HyperTrack. We assumed that developers would start tracking a user when they expected the user to be on their way to get some place and stop when they had reached. The assumption failed. Obvious in hindsight, developers expected us to tell them (and not the other way around) when the user was on the way and when they had stopped. All they wanted to do was switch us on or off, and hand over control to HyperTrack to automatically figure out trips and stops in the life of the user. They would keep HyperTrack on through the day, through the week, or just switch it on and leave it on forever. HyperTrack was expected to notify developers about the start and end of these trips and stops, besides other useful events along the way. This led to a re-architecture of our stack that we rolled out with HyperTrack v3 in March.</p>
+<p>All you need to do now is plug in SDK into your app and call our startTracking method, say when the user logs in. That’s it. You would now get all the trips and stops that your user makes, arranged in a<em><strong>placeline</strong></em>. For every stop your user makes, you would get to know the place and duration of the stop.</p>
+<p><img src="http://img0.tuicool.com/IvUrUzr.png!web" alt=""></p>
+<p>User placeline with trips &amp; stops</p>
+<h2 id="Why-are-Stops-important"><a href="#Why-are-Stops-important" class="headerlink" title="Why are Stops important?"></a>Why are Stops important?</h2><p>When building a real time location tracking stack, it is important to distinguish between trips and stops for multiple reasons.</p>
+<h3 id="Battery-Efficiency"><a href="#Battery-Efficiency" class="headerlink" title="Battery Efficiency"></a><strong>Battery Efficiency</strong></h3><p><img src="http://img2.tuicool.com/ZRRfay7.png!web" alt="">Distinguishing between trips and stops has helped us significantly reduce the battery used by our SDK. Our SDK hibernates when the user stops and spares the receiver and transmitter until the user is moving or on their way again. An average user is on the move for 5-6 hours or less than 25% of the day. That trims down battery usage by a straight 75%.</p>
+<h3 id="Location-accuracy"><a href="#Location-accuracy" class="headerlink" title="Location accuracy"></a><strong>Location accuracy</strong></h3><p>Distinguishing between trips and stops helps filter out noise in the location data. An average user is indoor when at a stop, say inside a building. Fused location points received from the device go haywire due to flaky GPS connectivity and strong WiFi connectivity. The Operating System prefers WiFi locations over GPS due to higher confidence. However, high confidence locations from multiple WiFi networks creates a different type of noise in the data. See the image below for locations received during an hour long stop at 100 Bush St. in San Francisco.</p>
+<p>Now imagine using these high confidence location points to compute mileage of distance traveled by the user! Detecting a stop using activity data is an effective way to eliminate this noise.</p>
+<p><img src="http://img2.tuicool.com/iI3UVrM.png!web" alt=""></p>
+<p>Raw location points at a stop</p>
+<h2 id="How-do-we-automatically-detect-stops"><a href="#How-do-we-automatically-detect-stops" class="headerlink" title="How do we automatically detect stops?"></a>How do we automatically detect stops?</h2><p>Activity sensors in smartphones help detect stops in conjunction with location sensors. The smartphone Operating Systems provide raw sensor data from the accelerometer and gyroscope, as well as fused activity/motion data through their own algorithms in the chipset or system software. Similarly, the OS provides raw location data from GPS, WiFi and cellular network sensors, as well as fused location data through APIs such as Visit in iOS and Geofence in Android. Making these two data sets work in tandem helps us interpret stops automatically and reliably. A more in-depth analysis coming up in a separate post.</p>
+<h2 id="How-do-our-customers-use-stops"><a href="#How-do-our-customers-use-stops" class="headerlink" title="How do our customers use stops?"></a>How do our customers use stops?</h2><p>Here are a few unique stories of how of our customers use Stops that are automatically detected by HyperTrack.</p>
+<h3 id="Measuring-stop-durations"><a href="#Measuring-stop-durations" class="headerlink" title="Measuring stop durations"></a><strong>Measuring stop durations</strong></h3><p>A service aggregator who uses HyperTrack for location tracking provides services like beauty, auto mechanic, home cleaning, plumbing, and handyman delivered at users’ homes. One of their biggest problems is to know whether these service professionals visited the expected place at the expected time. If so, how much time did they spend at the consumer’s location. Professional services are often billed by time and resolving disputes between the consumer and service professional often comes down to figuring out the actual time spent on site. The aggregator plugged in the HyperTrack SDK and created a stopover<em><strong>action</strong></em> for each service visit. You create an<em><strong>action</strong></em> in HyperTrack for an action that the user performs in the app and that you want to track. The operations team can now seethe actual time spent by the service professional at that stop.</p>
+<p><img src="http://img0.tuicool.com/MjYjMvI.png!web" alt=""></p>
+<p>Stops in context of an action</p>
+<h3 id="Profiling-frequently-visited-places"><a href="#Profiling-frequently-visited-places" class="headerlink" title="Profiling frequently visited places"></a><strong>Profiling frequently visited places</strong></h3><p>A travel app wanted to provide local recommendations to her users. Right after she plugged the SDK in the app, HyperTrack started generating a heatmap of places where users were spending most time. This data of most frequented places became the core data set for local recommendations in the app.</p>
+<p><img src="http://img2.tuicool.com/2yaiUzJ.png!web" alt=""></p>
+<p>Places heatmap</p>
+<h3 id="Getting-geofence-alerts-for-places-of-interest"><a href="#Getting-geofence-alerts-for-places-of-interest" class="headerlink" title="Getting geofence alerts for places of interest"></a><strong>Getting geofence alerts for places of interest</strong></h3><p>A fleet of real estate agents wanted to get alerted when an agent visited one of the tens of thousands of properties in the company database. They wanted to make sure that these alerts were sent only when the agent stopped at a property, rather than personal visits and other locations. The default geofencing features provided by the OS severely limit the number of locations you may register for geofencing visits (e.g.,<a href="https://developer.android.com/training/location/geofencing.html" target="_blank" rel="external">100 geofences/device on Android</a>).</p>
+<p>This customer used HyperTrack to get alerts for visits. They <a href="https://docs.hypertrack.com/events/webhook.html" target="_blank" rel="external">received webhook events</a>when the agent visited a property and then used to to send a mobile notifications to their agents.</p>
+<p><img src="http://img2.tuicool.com/JBzq6nM.png!web" alt=""></p>
+<p>Notifications powered via geofence alerts</p>
+<h3 id="Getting-delay-alerts-with-unexpected-stops"><a href="#Getting-delay-alerts-with-unexpected-stops" class="headerlink" title="Getting delay alerts with unexpected stops"></a><strong>Getting delay alerts with unexpected stops</strong></h3><p>A customer who had builtorder tracking with HyperTrack now wanted to get an alert when an order was getting delayed by over 10 mins. In the alert, they wanted to know the reason for delay. Turned out that many delays were related to unexpected stops by the rider. They set up <a href="https://docs.hypertrack.com/events/slack.html" target="_blank" rel="external">real-time Slack alerts</a> sent to the respective fleet channels when the rider made an unexpected stop.</p>
+<p><img src="http://img0.tuicool.com/fIJrYfj.png!web" alt=""></p>
+<p>Unexpected stops on your Slack channel</p>
+<p>These are just a few stories of how developers have used stops to build better location-based services for business efficiency and product experience. We discover new stories every day as more developers start using HyperTrack in their apps. We are excited to see how you use stops in  your product. Do ping us at<a href="mailto:help@hypertrack.io" target="_blank" rel="external">help@hypertrack.io</a> and we would love to feature your story on our blog!</p>
+<p>In case you haven’t started yet, visit<a href="http://www.hypertrack.com/" target="_blank" rel="external">www.hypertrack.com</a>now to plug in the SDK into your app. It takes just a few minutes to start building your location features.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Are-stops-important-in-the-world-of-location-tracking&quot;&gt;&lt;a href=&quot;#Are-stops-important-in-the-world-of-location-tracking&quot; class=&quot;heade
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>First-Ever Data Stealing Malware Found Using Intel AMT Tool to Bypass Firewall</title>
+    <link href="https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/"/>
+    <id>https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/</id>
+    <published>2017-06-09T00:00:00.000Z</published>
+    <updated>2017-06-12T03:50:55.396Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/uIZV7rq.png!web" alt=""></p>
+<p>It’s not hard for a well-funded state-sponsored hacking group to break into corporate networks and compromise systems with malware, but what’s challenging for them is to keep that backdoor and its communication undetectable from a firewall and other network monitoring applications.</p>
+<p>However, a<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">cyber-espionage group</a>known as “<strong>Platinum</strong>,” that is actively targeting governmental organisations, defense institutes, and telecommunication providers since at least 2009, has found a way to hide its malicious activities from host-based protection mechanisms.</p>
+<p>Microsoft has recently<a href="https://blogs.technet.microsoft.com/mmpc/2017/06/07/platinum-continues-to-evolve-find-ways-to-maintain-invisibility/" target="_blank" rel="external">discovered</a>that the cyber-espionage group is now leveraging Intel’s Active Management Technology (AMT) Serial-over-LAN (SOL) channel as a file-transfer tool to steal data from the targeted computers without detection.</p>
+<p>Intel-based chip sets come with an embedded technology, called AMT, which is designed to allow IT administrators to remotely manage and repair PCs, workstations, and servers of their organisations.</p>
+<p>The Intel AMT technology operates independently of the operating system and works even when the system is turned off, as long as the platform is connected to a line power and a network cable.</p>
+<p>That means, when AMT is enabled, any packet sent to the PC’s wired network port will be redirected to the Management Engine and passed on to AMT – the operating system, as well as network monitoring applications installed on a system, never knows what’s going around.</p>
+<p><img src="http://img0.tuicool.com/nyA3InU.png!web" alt=""></p>
+<p>Moreover, Linux systems with Intel’s chips and AMT enabled may also be exposed to Platinum’s malware.</p>
+<p>“As this embedded processor is separate from the primary Intel processor, it can execute even when the main processor is powered off and is, therefore, able to provide out-of-band (OOB) remote administration capabilities such as remote power-cycling and keyboard, video, and mouse control (KVM),” Microsoft said.</p>
+<p>“Furthermore, as the SOL traffic bypasses the host networking stack, it cannot be blocked by firewall applications running on the host device. To enable SOL functionality, the device AMT must be provisioned.”</p>
+<p>Unlike the<a href="http://thehackernews.com/2017/05/intel-server-chipsets.html" target="_blank" rel="external">remote authentication flaw</a>discovered last month that enabled hackers to take over<a href="http://thehackernews.com/2017/05/intel-amt-vulnerability.html" target="_blank" rel="external">full control of a system</a>by using AMT features without the need of any password, Platinum does not exploit any flaw in AMT, instead, requires AMT to be enabled on infected systems.</p>
+<p>Microsoft notes that SOL session requires a username and password, so either the hacking group is using stolen credentials to make its malware remotely communicate with the C&amp;C servers, or”during the provisioning process, PLATINUM could select whichever username and password they wish.”</p>
+<p>The Platinum hacking group has been using zero-day exploits,<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">hot patching technique</a>and other advanced tactics to penetrate in their target systems and networks in South Asian countries, but this is the first time someone is abusing legitimate management tools to evade detection.</p>
+<p>Microsoft said it has already updated its own Windows Defender Advanced Threat Protection software that will alert network administrators of any malicious attempts at using AMT SOL, but only for systems running Windows operating system.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/uIZV7rq.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;It’s not hard for a well-funded state-sponsored hacking group to break 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Men&#39;s Deep Voice</title>
     <link href="https://gmagon.com/blog/2017/06/02/men-s-deep-voice/"/>
     <id>https://gmagon.com/blog/2017/06/02/men-s-deep-voice/</id>
@@ -249,42 +462,6 @@
     <summary type="html">
     
       &lt;h3 id=&quot;How-do-you-enjoy-your-spare-time&quot;&gt;&lt;a href=&quot;#How-do-you-enjoy-your-spare-time&quot; class=&quot;headerlink&quot; title=&quot;How do you  enjoy your spare
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Tape Rewind</title>
-    <link href="https://gmagon.com/blog/2017/05/27/tape-rewind/"/>
-    <id>https://gmagon.com/blog/2017/05/27/tape-rewind/</id>
-    <published>2017-05-27T00:00:00.000Z</published>
-    <updated>2017-06-02T09:04:37.882Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="tumblr_inline_oqgbku5CfS1um1hre_540.jpg" alt=""></p>
-
-<audio id="audio-player" src="https://res.cloudinary.com/gmagonshare/video/upload/v1496219810/Colbie_Caillat_-_Try_v0sobx.mp3" type="audio/mp3" controls="controls" autoplay="autoplay"></audio>
-
-<p><strong>On rainy day</strong><br><strong>Finding a  quiet place.</strong><br><strong>With  A cop of coffee; A book; A song  </strong><br><strong>Recalling the past, thinking about the future.</strong><br><strong>Yesterday, Today, Tomorrow.</strong><br><strong>Day after day.</strong><br><strong>A history of recurrent after another.</strong></p>
-<p>I am the one who like recalling, one of my friends said when you began to recall, it means you are old…Maybe, ha ha…</p>
-<p>When it comes to memory, you may notice that I have mentioned Walk Man in my previous essay,  but can’t find it for a long time, then began to search in internet , find an interesting video “KIDS REACT TO WALKMAN (Portable Cassette Players)”</p>
-
-<iframe class="post-item-video" width="560" height="315" src="https://www.youtube.com/embed/Uk_vV-JRZ6E" frameborder="0" allowfullscreen></iframe>
-
-<p><strong>Below the video , I notice some interesting comments ：</strong></p>
-<p><em>1.Considering most of children in the video were born in the 2000’s, they should’ve seen VCRs and VHS tapes and cassette players.﻿ What a sad thing it is .</em></p>
-<p><em>2.I’m only 12, but I think old technology is so cool. Without it, there would be no iPhones, iPads, laptops, or anything like that. All of these things like cassette tapes started all of this. I think more people need to appreciate things like this. I’m not hating, I’m just saying people need to appreciate this.﻿</em></p>
-<p><em>3.Don’t feel sorry for us growing up in the 90’s ( Also for me in 80’s ). I feel sorry for kids growing up now, everything is to easy today. I still prefer my old NES with the original Super Mario and Zelda over today’s ps3/4 and those new call of duty games… Growing up in the 90’s was one of the greatest thing I can imagine!﻿</em></p>
-<p>After seeing these , my memory turns back to the time when I am in school, I remember that every classmate carried Walk Man in their backpack everyday,  every night we have to charge the batteries,(or it will be power off) ,then next day equipped Walk Man with them, put a tape which has nice songs into Walk Man , listened the songs , if you want to listen the song twice , you can rewind the tape; Years later we had MP3 , it is more convenient, we can charge the MP3 directly,  download music in the Internet ,and can listen to a song recycling many times …</p>
-<p>In this rainy day, listening the song “Try “again and again…<br>I love the feelings that headphone in my ears with beautiful sounds. <strong>Just enjoy…</strong></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;tumblr_inline_oqgbku5CfS1um1hre_540.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-
-&lt;audio id=&quot;audio-player&quot; src=&quot;https://res.cloudinary.com/gmagonshare/vide
     
     </summary>
     
@@ -324,6 +501,42 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;tumblr_inline_oqdwxuhPEC1um1hre_540.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;audio id=&quot;audio-player&quot; src=&quot;https://res.cloudinary.com/gmagonshare/vide
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tape Rewind</title>
+    <link href="https://gmagon.com/blog/2017/05/27/tape-rewind/"/>
+    <id>https://gmagon.com/blog/2017/05/27/tape-rewind/</id>
+    <published>2017-05-27T00:00:00.000Z</published>
+    <updated>2017-06-02T09:04:37.882Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="tumblr_inline_oqgbku5CfS1um1hre_540.jpg" alt=""></p>
+
+<audio id="audio-player" src="https://res.cloudinary.com/gmagonshare/video/upload/v1496219810/Colbie_Caillat_-_Try_v0sobx.mp3" type="audio/mp3" controls="controls" autoplay="autoplay"></audio>
+
+<p><strong>On rainy day</strong><br><strong>Finding a  quiet place.</strong><br><strong>With  A cop of coffee; A book; A song  </strong><br><strong>Recalling the past, thinking about the future.</strong><br><strong>Yesterday, Today, Tomorrow.</strong><br><strong>Day after day.</strong><br><strong>A history of recurrent after another.</strong></p>
+<p>I am the one who like recalling, one of my friends said when you began to recall, it means you are old…Maybe, ha ha…</p>
+<p>When it comes to memory, you may notice that I have mentioned Walk Man in my previous essay,  but can’t find it for a long time, then began to search in internet , find an interesting video “KIDS REACT TO WALKMAN (Portable Cassette Players)”</p>
+
+<iframe class="post-item-video" width="560" height="315" src="https://www.youtube.com/embed/Uk_vV-JRZ6E" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>Below the video , I notice some interesting comments ：</strong></p>
+<p><em>1.Considering most of children in the video were born in the 2000’s, they should’ve seen VCRs and VHS tapes and cassette players.﻿ What a sad thing it is .</em></p>
+<p><em>2.I’m only 12, but I think old technology is so cool. Without it, there would be no iPhones, iPads, laptops, or anything like that. All of these things like cassette tapes started all of this. I think more people need to appreciate things like this. I’m not hating, I’m just saying people need to appreciate this.﻿</em></p>
+<p><em>3.Don’t feel sorry for us growing up in the 90’s ( Also for me in 80’s ). I feel sorry for kids growing up now, everything is to easy today. I still prefer my old NES with the original Super Mario and Zelda over today’s ps3/4 and those new call of duty games… Growing up in the 90’s was one of the greatest thing I can imagine!﻿</em></p>
+<p>After seeing these , my memory turns back to the time when I am in school, I remember that every classmate carried Walk Man in their backpack everyday,  every night we have to charge the batteries,(or it will be power off) ,then next day equipped Walk Man with them, put a tape which has nice songs into Walk Man , listened the songs , if you want to listen the song twice , you can rewind the tape; Years later we had MP3 , it is more convenient, we can charge the MP3 directly,  download music in the Internet ,and can listen to a song recycling many times …</p>
+<p>In this rainy day, listening the song “Try “again and again…<br>I love the feelings that headphone in my ears with beautiful sounds. <strong>Just enjoy…</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;tumblr_inline_oqgbku5CfS1um1hre_540.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
 &lt;audio id=&quot;audio-player&quot; src=&quot;https://res.cloudinary.com/gmagonshare/vide
     

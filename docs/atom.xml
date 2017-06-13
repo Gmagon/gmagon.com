@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-06-12T02:59:42.599Z</updated>
+  <updated>2017-06-13T09:37:14.046Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -14,6 +14,342 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Lessons I’ve Learned from Three Million App Downloads</title>
+    <link href="https://gmagon.com/blog/2017/06/13/Lessons-I%E2%80%99ve-Learned-from-Three-Million-App-Downloads/"/>
+    <id>https://gmagon.com/blog/2017/06/13/Lessons-I’ve-Learned-from-Three-Million-App-Downloads/</id>
+    <published>2017-06-13T00:00:00.000Z</published>
+    <updated>2017-06-13T09:37:14.046Z</updated>
+    
+    <content type="html"><![CDATA[<p>In January 2011 I was on summer break, but instead of getting a day job, or socializing, I spent a lot of time holed up in my room writing the first version of an iOS app called<a href="https://itunes.apple.com/nz/app/class-timetable/id425121147?mt=8" target="_blank" rel="external">Class Timetable</a>. The year before, I’d been looking for a simple, easy to use timetable app, and nothing on the App Store quite fit the bill - everything was too complicated and hard to use. The idea was to create a no fuss, straight forward solution, something that was easier and more convenient than a paper timetable/schedule. Over a few months, I spent about 500 hours designing and coding it. Fast forward to today, and the app has had more than three million downloads, a lot of positive App Store ratings, and at times has been my primary source of income. Haven’t heard of the app? Yeah, it hasn’t taken off yet in the US, but is reasonably popular in Aus/NZ/UK, at least among college and school students.</p>
+<p><img src="http://img2.tuicool.com/32Evqin.jpg!web" alt=""></p>
+<p>I’ve read a bunch of blogs recently about people that hit the jackpot, got their app featured, and were looking at figures like 100,000 downloads a day. In comparison, I’ve only been moderately successful. Class Timetable has never made the App Store #1 position, I didn’t become rich overnight, and I’ve failed more times than I’ve succeeded. I’ve invested a lot of time, probably thousands of hours all up, unlike some hit apps that were created in a weekend. Sure, three million downloads is a lot, but that’s happened over more than six years.</p>
+<p><img src="http://img2.tuicool.com/mMvUFrR.jpg!web" alt=""></p>
+<p>Instead, my ‘moderate success’ story is closer to one of hard work, and slow, steady progress. It’s probably more true to real life than other success stories, because let’s face it: not everyone is going to wind up creating the next Flappy Bird. Instead of being a viral hit, Class Timetable has been doing moderately well for more than six years, which is a little special in itself - many #1 apps can’t claim a lifespan that long. I’d like to share a few things I’ve learned over the last few years, so hopefully there’s something here you’ll find useful, no matter how much success you have, or haven’t (yet) seen.</p>
+<h3 id="Before-writing-an-app-that-‘made-it’-I-wrote-plenty-that-didn’t-make-it"><a href="#Before-writing-an-app-that-‘made-it’-I-wrote-plenty-that-didn’t-make-it" class="headerlink" title="Before writing an app that ‘made it’, I wrote plenty that didn’t make it."></a>Before writing an app that ‘made it’, I wrote plenty that didn’t make it.</h3><p>I still think some of them were great ideas - perhaps they just needed some great marketing, or a little luck. There was one called ‘Ginge-O-Meter’ that I put a lot of work into. The concept: take a photo of someone, and find out how ginger their hair is. It used real image recognition and color analysis techniques to deliver an answer, and it actually worked (most of the time). Unfortunately, the idea didn’t catch… I think I made about $50. It was my big shot, and to be quite honest I was pretty dismayed at how much work I put in to see it fail. But I didn’t stop there, and Class Timetable went on to become what it is today. Anyway, my point here is not to hedge your bets.If your winning idea doesn’t succeed: get up and try again, and again… and again, because for all you know your next idea could be the one that makes it.</p>
+<h3 id="Design-everything-around-the-first-time-user"><a href="#Design-everything-around-the-first-time-user" class="headerlink" title="Design everything around the first time user."></a>Design everything around the first time user.</h3><p>Imagine getting an email in all caps, telling you that you that your app is stuck ‘installing’ and that you need to fix it… pretty frustrating, right? After a few emails like this, you realize that you can never make your product simple enough to use. What I’ve learned (aside from sucking it up, and sending a kind, helpful response) is: design your product as if it was going to be used by people that are a software literacy step below the target user. Keep it simple, make it idiot proof - design everything around the first time user experience. Make sure there’s nowhere people can get tripped up, and that every task has a straight forward, simple workflow. Less time will be spent on support, people will be happier in general with your product, and your ratings will go up. When Class Timetable first started getting thousands of downloads a day, I’d average around twenty emails a week. I’m sure there were other users with the same issues that couldn’t be bothered sending an email, and instead would simply stop using the app. By refining the product areas that led to these emails, I’m now down to an email every two or three days - and most of these are things that aren’t real issues, like feature suggestions, or the occasional fan email (really).</p>
+<h3 id="Listen-to-your-critics-but-don’t-do-what-they-say"><a href="#Listen-to-your-critics-but-don’t-do-what-they-say" class="headerlink" title="Listen to your critics, but don’t do what they say."></a>Listen to your critics, but don’t do what they say.</h3><p>I must have had hundreds of feature request emails from customers, ranging from really good, to very questionable. Now, if I implemented all of those features, the app would be a confusing mess, with 17 background choices, 72 different things vying for your attention on screen, and a settings option for just about everything. Heck, even if I just implemented every sensible idea, the result wouldn’t be too much different. The problem is that even when users can see a genuine product issue, they can’t always see the best solution. So what can we do instead? Listen to your users -<em>to their real, underlying problems</em>- and solve them in a way that takes the product as a whole forward. Sometimes, a great feature suggestion might have downsides for the product as a whole, which means letting it go. This would often happen with Class Timetable: one of its primary features is simplicity and ease of use. While many features have been added to it over the years, a lot of feature suggestions would have made the product as a whole more complicated. Sometimes that was OK, but more often than not I opted for simplicity, the feature that kept it unique.</p>
+<h3 id="A-great-product-is-better-than-a-viral-gimmick"><a href="#A-great-product-is-better-than-a-viral-gimmick" class="headerlink" title="A great product is better than a viral gimmick."></a>A great product is better than a viral gimmick.</h3><p>Class Timetable has never made the App Store front page, or had 100,000 downloads in a day - but that doesn’t matter to me. Some apps reach the #1 spot on the charts, only to become wastelands not even a year later. Perhaps they had a funny quip, viral marketing strategy, or just got lucky - but ultimately, they didn’t have any substance, and they didn’t solve a real world problem in a useful way. By making a genuinely great product, you’re designing something that your users keep coming back to again and again. Put in effort where people might not even notice. Focus on solving real problems, and making a product that is so genuinely useful that your users are coming back and bringing others with them.Returning users is a great sign that your product is healthy.As a bonus, there’s a small viral effect that every active user has, and it’s always great to know that your next customer isn’t just replacing someone that left.</p>
+<h3 id="Be-generous"><a href="#Be-generous" class="headerlink" title="Be generous."></a>Be generous.</h3><p>When Class Timetable first went on the App Store, it was a paid $1 download. I figured that for the amount of effort I had put in (~500 hours), $1 was a steal. Anyway, in the first week, 4 people bought the app, and the next week, even less than that. Not sure what it feels like to hit the jackpot, but this didn’t quite feel like it. 500 hours is a lot of time to throw down the drain! I could have left it to die a slow death earning $1 a week, but instead I decided to make the app free. I’d created it to solve a real problem, and I figured that others would find it genuinely useful. Almost straight away, downloads started to pick up. 50 downloads a day, then 100, 1000… wow. Had I held onto the amount of hours I put in and not been generous, I very much doubt that downloads would ever have picked up. Soon after, I added an in app purchase enabling extra features, which now has quite a reasonable uptake. Much higher than a few dollars a week anyway. So, don’t be stingy: a product with no paying users is (usually) better than a paid product with no users.It’s much easier to upsell to an existing customer than it is to find an entirely new paying customer.</p>
+<h3 id="Take-a-step-back-often"><a href="#Take-a-step-back-often" class="headerlink" title="Take a step back, often."></a>Take a step back, often.</h3><p>Sometimes you’re stuck on a problem, and there just don’t seem to be any great solutions: maybe it’s related to a piece of code you’re writing, or decisions around how you’re going to market your app. Then, you start thinking about the problem from a wider perspective. You realize that you won’t need to even write the tricky piece of code if you architect it the right way, and that the marketing decision is one your friend (who has a knack for that sort of problem) would know how to tackle. You could sum it up as ‘taking a step back’ from the problem. In my entire software career, there’s not a second I’ve spent doing this that I’ve regretted. There’s been plenty of times, especially early on, that I wish I did this and never did. I learned the hard way with Class Timetable: with version 1.0, I spent a lot of time just ‘getting stuck in’ and coding it. I solved tricky problems by cutting corners and ‘making it happen’, instead of taking a step back. As long as users never knew, it was fine right? A year or two later, I had to rewrite the entire codebase from scratch - for so many reasons - which was a massive undertaking. Take a step back! It’s worth it.</p>
+<p>Today, Class Timetable continues to do well. I’m always looking to the future, whether that means the next iOS upgrade, or a bigger picture of what Class Timetable could evolve into. If you’re studying at school or college, feel free to<a href="https://itunes.apple.com/nz/app/class-timetable/id425121147?mt=8" target="_blank" rel="external">give it a go</a>- I hope you find it genuinely useful.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/BfmUNv2" target="_blank" rel="external">http://jordansmith.io/lessons-ive-learned-from-three-million-downloads/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In January 2011 I was on summer break, but instead of getting a day job, or socializing, I spent a lot of time holed up in my room writin
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The Most Efficient Way to Use Icons If You&#39;re A Designer or Developer.</title>
+    <link href="https://gmagon.com/blog/2017/06/13/the-most-efficient-way-to-use-icons-if-youre-a-designer-or-developer/"/>
+    <id>https://gmagon.com/blog/2017/06/13/the-most-efficient-way-to-use-icons-if-youre-a-designer-or-developer/</id>
+    <published>2017-06-13T00:00:00.000Z</published>
+    <updated>2017-06-13T10:06:54.158Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/bmea222.png!web" alt=""></p>
+<h4 id="Sketch-Tutorials"><a href="#Sketch-Tutorials" class="headerlink" title="Sketch Tutorials"></a>Sketch Tutorials</h4><h2 id="The-Most-Efficient-Way-to-Use-Icons-If-You’re-A-Designer-or-Developer"><a href="#The-Most-Efficient-Way-to-Use-Icons-If-You’re-A-Designer-or-Developer" class="headerlink" title="The Most Efficient Way to Use Icons If You’re A Designer or Developer."></a>The Most Efficient Way to Use Icons If You’re A Designer or Developer.</h2><h2 id="Not-just-how-to-do-it-but-WHY-it’s-better-than-any-other-way"><a href="#Not-just-how-to-do-it-but-WHY-it’s-better-than-any-other-way" class="headerlink" title="Not just how to do it, but WHY it’s better than any other way."></a>Not just how to do it, but WHY it’s better than any other way.</h2><p><strong>Confession:</strong>This article is intentionally polarizing so that someone will write an angry comment and give me a more efficient solution.</p>
+<p>Maybe it’s manipulation. I call it<a href="https://en.wikipedia.org/wiki/Ward_Cunningham#Cunningham.27s_Law" target="_blank" rel="external">The Predictability of the Internet</a><em>:wink:</em></p>
+<h4 id="Icons-are-a-huge-pain-in-my-ass"><a href="#Icons-are-a-huge-pain-in-my-ass" class="headerlink" title="Icons are a huge pain in my ass:"></a>Icons are a huge pain in my ass:</h4><ul>
+<li>They have to look homogenous (similar visual style)</li>
+<li>They have to have bounding boxes</li>
+<li>They have to work when they’re<br><strong>really big</strong><br>and<br><em>really small</em></li>
+<li>They have to be easy to design with</li>
+<li>They have to be easy to code with</li>
+<li>They have to be performant (side note:Peter Nowell isthe<br><a href="https://medium.com/sketch-app-sources/how-designers-should-think-about-svg-b2b92efc4d77" target="_blank" rel="external">king</a><br><a href="https://medium.com/@pnowelldesign/stuff-at-the-top-of-an-svg-f3ad198eb54e" target="_blank" rel="external">of</a><br><a href="https://medium.com/sketch-app-sources/svgito-little-optimizations-for-svgs-22114af9fdc9" target="_blank" rel="external">SVGs</a><br>)</li>
+<li>They have to not piss off your design team</li>
+<li>They have to not piss off your development team</li>
+</ul>
+<h4 id="Okay-so-what-about-icon-fonts"><a href="#Okay-so-what-about-icon-fonts" class="headerlink" title="Okay, so what about icon fonts?"></a>Okay, so what about icon fonts?</h4><p>Icon fonts like FontAwesome came out as a way to soften the agony of working with icons, but they still aren’t perfect.<strong>Designing</strong>with them is just…<em>okay</em>; you still have to go look up the glyph, copy it, and paste it into the text layer. You can’t really symbolize them, and if you do, changing their color requires some text symbol trickery.<strong>Developing</strong>with icon fonts is simple, but not without issues. If the browser fails to load the icon font, then you’re up shit creek without a paddle. And you’re alone. In a kayak.<em>Sad.</em></p>
+<p><img src="http://img0.tuicool.com/V7nami.png!web" alt=""></p>
+<p>Well…now what?</p>
+<h4 id="So…use-SVGs-then"><a href="#So…use-SVGs-then" class="headerlink" title="So…use SVGs then?"></a>So…use SVGs then?</h4><p>Well for<strong>designers</strong>, SVGs are certainly easier to symbolize in Sketch, but it can be kind of a pain to change their color._So just don’t make them symbols, right? Then you can use layer styles to make them different colors!_But what if you want to update the little dropdown arrow from a caret to a triangle? Well good luck finding all 398 occurrences of that little arrow and updating them one-by-one. So that’s…well,<em>not great</em>. And I know from experience that<strong>developers</strong>love nothing more than using standalone SVGs for each and every icon in my design. Don’t worry guys, there are only 207 unique icons. That shouldn’t affect page load. I promise. /s</p>
+<h4 id="Ugh-then-what"><a href="#Ugh-then-what" class="headerlink" title="Ugh, then what?!"></a>Ugh, then what?!</h4><p>Keep reading, knucklehead �� And before we dive in, here’s something free. This will help you follow along with the rest of the tutorial.</p>
+<h3 id="My-Workflow"><a href="#My-Workflow" class="headerlink" title="My Workflow"></a>My Workflow</h3><p>My approach is divided into two parts:<strong>What I Do for Design</strong>and<strong>What I Do for Development</strong>. Neither technique is completely perfect, but it’s been successful so far, and makes the most people happy along the way.</p>
+<p>That’s important!</p>
+<h3 id="What-I-Do-For-Designers"><a href="#What-I-Do-For-Designers" class="headerlink" title="What I Do For Designers"></a>What I Do For Designers</h3><p>I<strong>absolutely love</strong>the Nucleo icon set. There are 8,300+ icons available in all kinds of different styles (outlined, solid, mini, full color, two-toned), and they’ve even included those pesky social icons that you need on pretty much every project. You can grab those below ($49 for a year, $129 for life).</p>
+<p><a href="https://nucleoapp.com/?ref=cmbeck82" target="_blank" rel="external">Nucleo - 8000+ Vector icons for iOS, Android and web_Nucleo is a library of 8000+ vector icons, in different styles and formats, as well as a web application to manage…_nucleoapp.com</a></p>
+<p>The absolute fastest and most sustainable way to use icons in Sketch is by using<strong>color symbols and masks</strong>. You’ve seen this technique before thanks to my palFrancesco, but here’s a quick refresher:</p>
+<p><a href="https://freeandwilling.com/fbmore?go=Sketch-Tint-Icons-Using-Nested-Symbols-UX-PowerTools" target="_blank" rel="external">Sketch: Tint icons using nested symbols - Design&amp;Prototype - Medium_I always wanted to create a single version of an icon and apply different colors to, or tint it, to indicate its state…_freeandwilling.com</a></p>
+<p>Step 1:Make symbols for the fill colors you want to use for your icons. Make sure every color symbol artboard is the same size.</p>
+<p><img src="http://img2.tuicool.com/yMfyi2v.png!web" alt=""></p>
+<p>Step 2:Make a new artboard for your icon symbol. Paste your icon onto your new artboard. If you’re using the<a href="https://freeandwilling.com/Jon?go=icon-article-nucleo" target="_blank" rel="external">Nucleo Icon</a>desktop app, just drag the icon directly into Sketch, then put it on your new artboard.</p>
+<p><img src="http://img1.tuicool.com/rYzeMjy.gif" alt=""></p>
+<p>Step 3:Make sure your icon is a single shape, and set it as a mask. If your icon isn’t a single shape, then select the different paths and union them.</p>
+<p><img src="http://img0.tuicool.com/AbmUZ3f.png!web" alt=""></p>
+<p>Step 4:Insert any of the color symbols on top of your icon mask and resize it to the size of your artboard. You’ll be able to override this color whenever you add an instance of your icon!</p>
+<p><img src="http://img2.tuicool.com/qERrQzN.png!web" alt=""></p>
+<p>Step 5 (Optional):If your icon is a logo (see above), set the mask fill to the brand color of the app. It’s easy to quickly find official brand colors over on<a href="https://brandcolors.net/" target="_blank" rel="external">brandcolors.net</a>. This saves you from having to create color symbols for a bunch of different app colors — if you ever want to use the brand color, just turn OFF the color symbol override:</p>
+<p><img src="http://img1.tuicool.com/mEf22ai.gif" alt=""></p>
+<p><strong>Warning:</strong></p>
+<p>If you have color symbols with semi-transparent fills, you’ll be able to see the mask fill through the transparency. So if you want 25% black to be an available color, don’t use a fill on the mask.</p>
+<h4 id="Why-This-Works-for-Designers"><a href="#Why-This-Works-for-Designers" class="headerlink" title="Why This Works for Designers"></a>Why This Works for Designers</h4><ul>
+<li>All of my icons are symbols, so if I ever want to update them, I can do it in one place and immediately see it update across all of my designs.</li>
+<li>I can quickly override the color from the inspector.</li>
+<li>If I update a color symbol, it will update all icons that use that color.</li>
+<li>I can nest icons inside of other symbols and quickly swap them out.</li>
+</ul>
+<h4 id="Why-This-Doesn’t-Work-for-Developers"><a href="#Why-This-Doesn’t-Work-for-Developers" class="headerlink" title="Why This Doesn’t Work for Developers"></a>Why This Doesn’t Work for Developers</h4><ul>
+<li>Zeplin and InVision don’t read color overrides, so they’ll only ever show you the color you used in the base symbol.</li>
+<li>The color symbol + mask technique adds some bloat to the SVG file size.</li>
+<li>They’re all individual SVGs, so devs will want to jump off a bridge.</li>
+</ul>
+<p><strong>Side note:</strong>All of the icons in<a href="https://www.uxpower.tools/" target="_blank" rel="external">UX Power Tools</a>are constructed this way. It’s super fast to swap colors, and even easier to swap icons inside of elements like buttons, fields, and notifications.</p>
+<h3 id="What-I-Do-For-Developers"><a href="#What-I-Do-For-Developers" class="headerlink" title="What I Do For Developers"></a>What I Do For Developers</h3><p>Zeplin works incredibly well for layout, color, and typography, but isn’t terribly efficient for assets. Instead of having devs pull icons directly from Zeplin (or sending them a zip of SVGs), I use<a href="https://freeandwilling.com/Jon?go=icon-article-nucleo" target="_blank" rel="external">Nucleo</a>to build an SVG sprite, then send that to developers. Not to brag, but they :heart: me for it :relieved:</p>
+<p>Step 1:Create a new project in the Nucleo web app.</p>
+<p>Step 2:Add icons to your Nucleo project that you intend to use (or have already used) in your designs.</p>
+<p><img src="http://img2.tuicool.com/qEN7bi7.png!web" alt=""></p>
+<p>Step 3:Open the project, select all icons in the right panel, and click<em>Download</em>.</p>
+<p><img src="http://img0.tuicool.com/vUFFRvY.png!web" alt=""></p>
+<p>Step 4:Choose your export preferences. “Export as Symbol” uses_xlink:href<em>which will be<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:href" target="_blank" rel="external">deprecated in SVG 2</a>(not out yet). That being said, it’s just the</em>“xlink”_portion that will no longer be needed, so “Export as Symbol” is still a safe option. I usually choose “Export CSS”, which creates a single SVG sprite, then creates a CSS file with classes for each icon.</p>
+<p>But wait, that’s not even the best part!</p>
+<p>Along with the SVG sprite and generated CSS, Nucleo also creates an HTML page showing off each icon, and the CSS class for using that icon in code.</p>
+<p><img src="http://img0.tuicool.com/qUFNB3E.png!web" alt=""></p>
+<h4 id="Why-This-Works-for-Designers-1"><a href="#Why-This-Works-for-Designers-1" class="headerlink" title="Why This Works for Designers"></a>Why This Works for Designers</h4><ul>
+<li>You don’t have to change your design process</li>
+<li>There’s a beautiful GUI for choosing icons</li>
+<li>Adding new icons is simple for both parties</li>
+</ul>
+<h4 id="Why-This-Works-for-Developers"><a href="#Why-This-Works-for-Developers" class="headerlink" title="Why This Works for Developers"></a>Why This Works for Developers</h4><ul>
+<li>It generates a single SVG sprite and the correct CSS</li>
+<li>It gives developers a GUI for finding icons and copying the code</li>
+<li>They can change the icon color and size in code. Hallelujah!</li>
+</ul>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>There are fast ways to_<strong>design</strong><em>with icons, and fast ways to</em><strong>develop</strong>_with them. It’s a little extra work to make things optimal for both parties, but it will make everyone’s lives easier.</p>
+<p>If you’re not using<a href="https://freeandwilling.com/Jon?go=icon-article-nucleo" target="_blank" rel="external">Nucleo</a>, you can find lots of services like<a href="https://iconizr.com/" target="_blank" rel="external">Iconizr</a>that will help you generate an SVG sprite. If you’re lucky enough to have your own icon designer(s), then you’ll have to do this anyway since everything will be custom! You lucky dog.</p>
+<p>Check out<a href="https://www.uxpower.tools/" target="_blank" rel="external"><strong>UX Power Tools</strong></a>to see how you can use these icons in all kinds of sophisticated nested symbols. It’s truly the fastest way to design.</p>
+<p><img src="http://img1.tuicool.com/3ArEv2r.png!web" alt=""></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/UJRZv2a" target="_blank" rel="external">https://medium.com/ux-power-tools/the-most-efficient-way-to-use-icons-if-youre-a-designer-or-developer-5ce3954c146c</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/bmea222.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;Sketch-Tutorials&quot;&gt;&lt;a href=&quot;#Sketch-Tutorials&quot; class=&quot;headerlink&quot; t
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Bad volume sliders are a masterclass in terrible UI design</title>
+    <link href="https://gmagon.com/blog/2017/06/13/bad-volume-sliders-are-a-masterclass-in-terrible-ui-design/"/>
+    <id>https://gmagon.com/blog/2017/06/13/bad-volume-sliders-are-a-masterclass-in-terrible-ui-design/</id>
+    <published>2017-06-13T00:00:00.000Z</published>
+    <updated>2017-06-13T10:06:54.156Z</updated>
+    
+    <content type="html"><![CDATA[<p>We’ve all been faced with egregious examples of UI design at times. They’re infuriating if you actually have to deal with them. But if they’re not actively preventing you from doing something they can be entertaining, and can even provide useful tips on how not to do things.</p>
+<p>So, what happens when coders and designers deliberately set out to create staggeringly bad UI? Well, that’s exactly what’s been happening recently over on Reddit.</p>
+<p>It started with an innocent enough post in r/ProgrammerHumor, asking, “<a href="https://www.reddit.com/r/ProgrammerHumor/comments/6evbfd/who_can_make_the_best_volume_slider/" target="_blank" rel="external">Who can make the best volume slider?</a>“ and accompanied by this fantastic GIF:</p>
+<p><img src="http://img0.tuicool.com/2myUNv3.gif" alt=""></p>
+<p>Oh. Oh my word. Who could possibly top this?</p>
+<p>This being the internet, things got swiftly out of hand, as this cavalcade of crimes against usability will attest.</p>
+<p><img src="http://img1.tuicool.com/77Vnim6.gif" alt=""></p>
+<p>‘Hold my beer’</p>
+<p><img src="http://img1.tuicool.com/2yABFrn.gif" alt=""></p>
+<p>Actual genius</p>
+<p><img src="http://img1.tuicool.com/y2QJFr2.jpg!web" alt=""></p>
+<p>Actually, yeah, why not?</p>
+<p><img src="http://img2.tuicool.com/MBVzM3m.gif" alt=""></p>
+<p>There’s probably a ‘dicey’ pun in this one</p>
+<p><img src="http://img0.tuicool.com/EFBJNzN.gif" alt=""></p>
+<p>Fun for all the family</p>
+<p><img src="http://img2.tuicool.com/nmYJJrr.gif" alt=""></p>
+<p>Literally pumping up the volume</p>
+<p><img src="http://img0.tuicool.com/yE3AbeF.jpg!web" alt=""></p>
+<p>10/10, would definitely use</p>
+<p><img src="http://img2.tuicool.com/bYJ36vz.gif" alt=""></p>
+<p>It’s the bad colour choice that really make this one pop</p>
+<p><img src="http://img0.tuicool.com/2me2Afy.jpg!web" alt=""></p>
+<p>But what if you want a volume of more than 90?</p>
+<p>Not content with merely creating images and animated GIFs, someone’s even gone to the trouble of making a (sort of) working version of one of our favourites – click and hold the speaker icon to play.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;We’ve all been faced with egregious examples of UI design at times. They’re infuriating if you actually have to deal with them. But if th
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>To keep players happy, first seek understanding</title>
+    <link href="https://gmagon.com/blog/2017/06/13/to-keep-players-happy-first-seek-understanding/"/>
+    <id>https://gmagon.com/blog/2017/06/13/to-keep-players-happy-first-seek-understanding/</id>
+    <published>2017-06-13T00:00:00.000Z</published>
+    <updated>2017-06-13T10:06:54.160Z</updated>
+    
+    <content type="html"><![CDATA[<p>Presented by Akamai</p>
+<p>[Me]: To keep your players happy – you need to understand why they’re not.</p>
+<p>[You]: Uh, yeah obviously. Thanks. So what?</p>
+<p>Actually, I have a lot to say on the topic of keeping players happy. A few months back I wrote a quick post about<a href="https://blogs.akamai.com/2017/02/friction-hurts-especially-in-gaming.html" target="_blank" rel="external">Friction</a>.</p>
+<p>Friction,as I defined it, is anything that prompts your player to leave your game and look elsewhere. And you know the scare stats (right?): 95 percent of players leave a game within its first 30 days.</p>
+<p>Fear mongering aside; I think it’s a topic so important that I even wrote an entire<a href="https://content.akamai.com/am-en-pg9012-frictionless-ebook.html" target="_blank" rel="external">book</a>about it. Today I’d like to dive a bit more into what friction means, and why it’s worth your time to read more about it.</p>
+<p>I settled on the term Friction, and the grid below, to help you build a framework to think about how best to keep your players happy. A lot of your work already goes into creating cool, fun, delightful experiences, but I’d argue that the obstacles are just as critical as the delight. Everything that gets in the way of the cool and the fun will kill the player experience.</p>
+<h2 id="Seeking-understanding"><a href="#Seeking-understanding" class="headerlink" title="Seeking understanding"></a>Seeking understanding</h2><p>Understanding Frictions means understanding the myriad points of contact with your players, and mapping out problem areas well in advance. This starts with game design, and goes all the way through marketing and post-launch. It helps to think about frictions in terms of consequences and outcomes.</p>
+<p>Given enough sources or intensities of friction, players will quit. And once they’re gone, it can be very difficult to get them back. That abandonment can affect not only the specific game but the studio’s reputation and future projects for years to come.</p>
+<p><img src="http://img0.tuicool.com/AZrERzj.png!web" alt=""></p>
+<p>To make it easy, I’ve laid out a straightforward way to conceptualize frictions in the grid below. This will help you to understand where they fall, how they intersect and interact, and what they mean to you.<a href="https://content.akamai.com/am-en-pg9012-frictionless-ebook.html" target="_blank" rel="external">Frictionless</a>goes deeper into helping you prepare for and manage them as they arise during your development cycles and throughout community-building and engagement, from announcement to launch and beyond.</p>
+<p>The grid is broken up into quadrants along two axes. “Harmful” and “Beneficial” along the X-axis, and “Avoidable” and “Unavoidable” along the Y-axis. Most frictions leech player satisfaction and disrupt immersion, although some can, as noted on the grid, be good for you. Your job is to recognize the different kinds of frictions, then manage and solve for them.</p>
+<p>So what are some examples of frictions? Consider the following:</p>
+<ul>
+<li>Cost</li>
+<li>Payment Method</li>
+<li>Game Difficulty</li>
+<li>Customization</li>
+<li>Hardware</li>
+<li>Language</li>
+<li>Time-to-play</li>
+<li>Accessibility Issues</li>
+</ul>
+<p>Once you really get into mapping out frictions, you’ll find that many of them can end up in multiple places on the grid. Aha.<em>There’s the rub</em>(that’s a friction joke in case you missed it). You goal is to identify those that end up on the “harmful” side of the grid, and figure out how to flip them over to beneficial.</p>
+<p>Is this a really difficult game (a la_Dark Souls)?_Market it as such. You obviously have to get players to pay for your game. Make sure the price is right, or make sure it’s folded naturally into a solid freemium design.</p>
+<p>Are your cutscenes unskippable? Fix that before launch, or patch ASAP post-launch.</p>
+<p>Looking back at our list again — it’s a bit of a hodge-podge. It would help to add further organization. In the book, I’ve broken down sources of Friction into three different source types:</p>
+<ol>
+<li>Player Frictions</li>
+<li>Game Frictions</li>
+<li>Publisher Frictions</li>
+</ol>
+<p>If we reorganize our list, we come up with:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Player Frictions</strong></th>
+<th style="text-align:left"><strong>Game Frictions</strong></th>
+<th style="text-align:left"><strong>Publisher Frictions</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Accessibility Issues</td>
+<td style="text-align:left">Difficulty</td>
+<td style="text-align:left">Cost</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">Graphics/Style</td>
+<td style="text-align:left">Payment Method</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">Multi-player</td>
+<td style="text-align:left">Hardware</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">Customizability</td>
+<td style="text-align:left">Language</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">Repetitive Download</td>
+<td style="text-align:left">Time-to-play</td>
+</tr>
+</tbody>
+</table>
+<p>I’m sure just by looking at this rough grid, you’re already coming up with a host of missing items; and you’re likely already categorizing them. Good! Keep going.</p>
+<p><em>For a good deal more detail on Friction, and on how to make it easy for players to find, play, and fall in love with your game; check out my book:</em><a href="https://content.akamai.com/am-en-pg9012-frictionless-ebook.html" target="_blank" rel="external"><em>Frictionless</em></a><em>.</em></p>
+<p>Sponsored posts are content produced by a company that is either paying for the post or has a business relationship with VentureBeat, and they’re always clearly marked. Content produced by our editorial team is never influenced by advertisers or sponsors in any way. For more information, contact<a href="mailto:sales@venturebeat.com" target="_blank" rel="external">sales@venturebeat.com</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/aYraAvM" target="_blank" rel="external">https://venturebeat.com/2017/06/12/to-keep-players-happy-first-seek-understanding/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Presented by Akamai&lt;/p&gt;
+&lt;p&gt;[Me]: To keep your players happy – you need to understand why they’re not.&lt;/p&gt;
+&lt;p&gt;[You]: Uh, yeah obviously. T
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>A Web Designer’s Education Never Stops</title>
+    <link href="https://gmagon.com/blog/2017/06/13/a-web-designers-education-never-stops/"/>
+    <id>https://gmagon.com/blog/2017/06/13/a-web-designers-education-never-stops/</id>
+    <published>2017-06-13T00:00:00.000Z</published>
+    <updated>2017-06-13T10:06:54.152Z</updated>
+    
+    <content type="html"><![CDATA[<p>One of the unique parts of being a web designer is that the job never stops evolving. From static HTML all the way to Content Management Systems – the way we bring functionality to the web is always moving forward. And the actual practice of design marches through various trends and techniques as well.</p>
+<p>Beyond that, there are a plethora of languages that we use to bring form and function together. Think of the many<a href="https://speckyboy.com/top-50-javascript/" target="_blank" rel="external">JavaScript frameworks</a>we’re using, ever-evolving CSS or even PHP. Sometimes it feels like this is the career equivalent of hitting a moving target.</p>
+<p>Keeping up with it all isn’t easy. For one, learning takes time – which is often difficult to find. Plus, there are simply too many things to know. It can be hard to determine which skills to pick up and which to save for a later date.</p>
+<p>Frankly, the whole thing can feel a bit overwhelming. But it doesn’t have to be. Here are some things to keep in mind when it comes to learning and sharpening your skills.</p>
+<p><img src="http://img2.tuicool.com/eu6vMzE.jpg!web" alt=""></p>
+<h2 id="Learning-is-What-You-Make-of-it"><a href="#Learning-is-What-You-Make-of-it" class="headerlink" title="Learning is What You Make of it"></a>Learning is What You Make of it</h2><p>When you’ve been at this for awhile, it’s easy to get comfortable with what you know and how you do things. That’s a completely natural philosophy, though. You’re simply leaning on your existing knowledge and calling on your past experience – all in the name of getting things done.</p>
+<p>But, with the rapid pace of change in this industry, sitting in your easy chair means falling behind. Do that for too long and, before you know it, things have passed you by.</p>
+<p>For me, motivation has always been a bit difficult to find when it comes to learning. I was never one to enjoy traditional schooling. Most of the skills I’ve picked up have been a result of tinkering with projects and learning only when I needed to.</p>
+<p>Part of the challenge is that we often tell ourselves that we don’t have the time or energy to make the commitment. Between work and the rest of life’s duties, it’s quite understandable. That said, you can do it with the right approach.</p>
+<p>It’s imperative that you make time to further your skills. The good news is that it doesn’t mean you have to quit your job to attend classes. Because of the sheer number of learning options (many of them available online and for free), you have the ability to learn on your own schedule and at your own pace.</p>
+<p>The happy truth is that you don’t have to commit an enormous amount of time. Even if you can only squeeze in a 20 minute learning session a few times per week, you’re making progress. Once you realize that you can do this in bite-size portions, it starts to feel like much less of a burden.</p>
+<p><img src="http://img1.tuicool.com/r67F73R.jpg!web" alt=""></p>
+<h2 id="Choosing-a-Skill"><a href="#Choosing-a-Skill" class="headerlink" title="Choosing a Skill"></a>Choosing a Skill</h2><p>Another dilemma we face is figuring out just what it is that we should commit to learning. Again, the choices can feel overwhelming.</p>
+<p>There are so many “next big thing” types of languages and techniques being hyped. It almost feels like you’re obliged to learn them, even if they’re not particularly exciting or relevant to you.</p>
+<p>The great thing here is that you really can choose anything you want. Perhaps you’re struggling with a particular aspect of your job and see an opportunity to improve. Or maybe there’s just something out there that really interests you. There really is no right or wrong answer.</p>
+<p>In my own path, I’ve realized that I’m a bit over my head when it comes to certain tasks inPHP. So I decided to do something about it by taking an online course. I’m getting up early and putting in a few hours per week. It’s nothing earth-shattering, and I may never become a full-on expert. But I actually feel better building upon the skills I already had.</p>
+<p>The point is that you get to make a personal decision on what is worth your time and effort. Regardless of what anyone else says is worthwhile; it’s ultimately up to you to decide.</p>
+<p><img src="http://img2.tuicool.com/MFruqyV.jpg!web" alt=""></p>
+<h2 id="Improve-Yourself-and-Your-Career"><a href="#Improve-Yourself-and-Your-Career" class="headerlink" title="Improve Yourself and Your Career"></a>Improve Yourself and Your Career</h2><p>Another benefit of learning is that it can be great for your self-confidence. The first time you get to use what you’ve learned makes you feel on top of the world. Plus, having that new or improved skill in hand may just convince you to bid on a project that you wouldn’t have before.</p>
+<p>It’s really cool to see the snowball effect this all has. You can go from being a bit timid about your ability to accomplish something to actually accomplishing it. And, once you start seeing the real-world benefits of self-improvement, you’ll want to keep on rolling. That can lead you to bigger and better places.</p>
+<p>Continuing to educate yourself and improving your skills as a web designer is very much a worthwhile endeavor. And we’re fortunate that our particular industry is full ofresources to help us along the way.</p>
+<p>Take advantage of the opportunity to learn. You might be amazed at what it can do for you and your career.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/3aeIJva" target="_blank" rel="external">https://speckyboy.com/web-designers-education/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;One of the unique parts of being a web designer is that the job never stops evolving. From static HTML all the way to Content Management 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Malware downloader infects your PC without a mouse click</title>
+    <link href="https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/"/>
+    <id>https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/</id>
+    <published>2017-06-12T00:00:00.000Z</published>
+    <updated>2017-06-12T03:46:50.231Z</updated>
+    
+    <content type="html"><![CDATA[<p>The downloader installs a banking Trojan into your PC the moment your mouse pointer hovers over it.</p>
+<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fdims-shared%2Fdims3%2FGLOB%2Fcrop%2F5656x3744%2B0%2B0%2Fresize%2F1600x1059%21%2Fformat%2Fjpg%2Fquality%2F85%2Fhttp%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F2938118e33f0e37c828171941a41d88e%2F205362959%2Finternet-virus-picture-id101377891&amp;client=cbc79c14efcebee57402&amp;signature=27a09c8410ec298ef3e9f9ca4a72ca9a8b061f6a" alt=""></p>
+<p>Joerg Habermeier via Getty Images</p>
+<p>You think you’re safe from malware since you never click suspicious-looking links, then somebody finds a way to infect your PC anyway. Security researchers have<a href="http://blog.trendmicro.com/trendlabs-security-intelligence/mouseover-otlard-gootkit/" target="_blank" rel="external">discovered</a>that cybercriminals have recently started using a malware downloader that installs a<a href="https://www.engadget.com/2013/04/16/watch-out-most-game-hacks-are-actually-malware/" target="_blank" rel="external">banking Trojan</a>to your computer even if you don’t click anything. All it takes to trigger the download is to hover your mouse pointer over a hyperlink in a carrier PowerPoint file.</p>
+<p>According to researchers from Trend Micro and<a href="https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/" target="_blank" rel="external">Dodge This Security</a>the technique was used by a recent spam email campaign targeting companies and organizations in Europe, the Middle East and Africa. The emails’ subjects were mostly finance-related, such as “Invoice” and “Order #,” with an attached PowerPoint presentation.</p>
+<p><img src="https://s.aolcdn.com/hss/storage/midas/cb4d93a4905500a6e4fdaa2847e1ae8d/205363154/powerpoint-downloader02.jpg" alt=""></p>
+<p>[Image credit: Trend Micro]</p>
+<p>The PowerPoint file has a single hyperlink in the center that says “Loading… please wait” that has an embedded malicious PowerShell script. When you hover your mouse pointer over the link, it executes the script. If you’re running a newer version of Microsoft Office, though, you’ll still need to approve the malware’s download before it infects your PC.</p>
+<p>That’s because the more modern versions of the suite has Protected View, which will show a prompt warning you about a “potential security concern” when the script starts running. Just click Disable, and you’ll be fine. However, older versions of the suite don’t have that extra layer of security. The downloader can install a Trojan virus into your system to steal your credentials and bank account information the moment your mouse pointer hovers over the link.</p>
+<p><img src="https://s.aolcdn.com/hss/storage/midas/1530e0c39e52788a796980e61b13f057/205363172/powerpoint-downloader01.jpg" alt=""></p>
+<p>[Image credit: Trend Micro]</p>
+<p>The good news is that the spam emails died down back on May 29th after peaking on the 25th with 1,444 detections by Trend Micro. Still, it’s better to steer clear of similar emails, since it’s always possible that the campaign in May was just a test run for a bigger one.</p>
+<p>Via:</p>
+<p><a href="https://arstechnica.com/security/2017/06/malicious-powerpoint-files-can-infect-targets-when-hovering-over-hyperlinks/" target="_blank" rel="external">Ars Technica</a></p>
+<p>Source:</p>
+<p><a href="http://blog.trendmicro.com/trendlabs-security-intelligence/mouseover-otlard-gootkit/" target="_blank" rel="external">Trend Micro</a>,</p>
+<p><a href="https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/" target="_blank" rel="external">Dodge This Security</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The downloader installs a banking Trojan into your PC the moment your mouse pointer hovers over it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Organizing your marketing tech stack</title>
@@ -70,35 +406,73 @@
   </entry>
   
   <entry>
-    <title>Malware downloader infects your PC without a mouse click</title>
-    <link href="https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/"/>
-    <id>https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/</id>
+    <title>A visual overview of Apple’s essential design principles</title>
+    <link href="https://gmagon.com/blog/2017/06/12/a-visual-overview-of-apples-essential-design-principles/"/>
+    <id>https://gmagon.com/blog/2017/06/12/a-visual-overview-of-apples-essential-design-principles/</id>
     <published>2017-06-12T00:00:00.000Z</published>
-    <updated>2017-06-12T03:46:50.231Z</updated>
+    <updated>2017-06-12T02:48:34.600Z</updated>
     
-    <content type="html"><![CDATA[<p>The downloader installs a banking Trojan into your PC the moment your mouse pointer hovers over it.</p>
-<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fdims-shared%2Fdims3%2FGLOB%2Fcrop%2F5656x3744%2B0%2B0%2Fresize%2F1600x1059%21%2Fformat%2Fjpg%2Fquality%2F85%2Fhttp%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F2938118e33f0e37c828171941a41d88e%2F205362959%2Finternet-virus-picture-id101377891&amp;client=cbc79c14efcebee57402&amp;signature=27a09c8410ec298ef3e9f9ca4a72ca9a8b061f6a" alt=""></p>
-<p>Joerg Habermeier via Getty Images</p>
-<p>You think you’re safe from malware since you never click suspicious-looking links, then somebody finds a way to infect your PC anyway. Security researchers have<a href="http://blog.trendmicro.com/trendlabs-security-intelligence/mouseover-otlard-gootkit/" target="_blank" rel="external">discovered</a>that cybercriminals have recently started using a malware downloader that installs a<a href="https://www.engadget.com/2013/04/16/watch-out-most-game-hacks-are-actually-malware/" target="_blank" rel="external">banking Trojan</a>to your computer even if you don’t click anything. All it takes to trigger the download is to hover your mouse pointer over a hyperlink in a carrier PowerPoint file.</p>
-<p>According to researchers from Trend Micro and<a href="https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/" target="_blank" rel="external">Dodge This Security</a>the technique was used by a recent spam email campaign targeting companies and organizations in Europe, the Middle East and Africa. The emails’ subjects were mostly finance-related, such as “Invoice” and “Order #,” with an attached PowerPoint presentation.</p>
-<p><img src="https://s.aolcdn.com/hss/storage/midas/cb4d93a4905500a6e4fdaa2847e1ae8d/205363154/powerpoint-downloader02.jpg" alt=""></p>
-<p>[Image credit: Trend Micro]</p>
-<p>The PowerPoint file has a single hyperlink in the center that says “Loading… please wait” that has an embedded malicious PowerShell script. When you hover your mouse pointer over the link, it executes the script. If you’re running a newer version of Microsoft Office, though, you’ll still need to approve the malware’s download before it infects your PC.</p>
-<p>That’s because the more modern versions of the suite has Protected View, which will show a prompt warning you about a “potential security concern” when the script starts running. Just click Disable, and you’ll be fine. However, older versions of the suite don’t have that extra layer of security. The downloader can install a Trojan virus into your system to steal your credentials and bank account information the moment your mouse pointer hovers over the link.</p>
-<p><img src="https://s.aolcdn.com/hss/storage/midas/1530e0c39e52788a796980e61b13f057/205363172/powerpoint-downloader01.jpg" alt=""></p>
-<p>[Image credit: Trend Micro]</p>
-<p>The good news is that the spam emails died down back on May 29th after peaking on the 25th with 1,444 detections by Trend Micro. Still, it’s better to steer clear of similar emails, since it’s always possible that the campaign in May was just a test run for a bigger one.</p>
-<p>Via:</p>
-<p><a href="https://arstechnica.com/security/2017/06/malicious-powerpoint-files-can-infect-targets-when-hovering-over-hyperlinks/" target="_blank" rel="external">Ars Technica</a></p>
-<p>Source:</p>
-<p><a href="http://blog.trendmicro.com/trendlabs-security-intelligence/mouseover-otlard-gootkit/" target="_blank" rel="external">Trend Micro</a>,</p>
-<p><a href="https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/" target="_blank" rel="external">Dodge This Security</a></p>
+    <content type="html"><![CDATA[<p>Apple’s Human Interface Guidelines have been the core of the company’s design philosophy ever since the Macintosh in 1978. Apple design evangelist Mike Stern gave an overview of the ever-evolving guidelines during a Wednesday session at the company’s Worldwide Developers Conference.</p>
+<p>The session, entitled “</p>
+<p><a href="https://developer.apple.com/videos/play/wwdc2017/802/" target="_blank" rel="external">Essential Design Principles</a></p>
+<p>,” is one of my favorites, in large part because I’m a designer myself. I’ve distilled the essential Apple design principles he talked about in the sketchnotes above.</p>
+<h3 id="Apple-design-An-emphasis-on-‘human’"><a href="#Apple-design-An-emphasis-on-‘human’" class="headerlink" title="Apple design: An emphasis on ‘human’"></a>Apple design: An emphasis on ‘human’</h3><p>Apple choses “human interface” rather than the more frequently used term “user interface” for a reason. “Human” is the expression of our highest and most noble qualities.</p>
+<p>Many of these Apple design principles might seem obvious, yet they often get neglected. We see this failure in apps that do not meet our expectations. The apps that ignore essential design principles are the ones that get used once and then deleted.</p>
+<p>Apple wants to change that. The company increased the number of design sessions at WWDC this year, illustrating a deep commitment to helping developers create well-designed apps.</p>
+<p>The Essential Design Principles session provided real-world experiences to reinforce the concepts discussed. The examples showed how decisions affect app design.</p>
+<h3 id="Well-designed-apps-create-a-delightful-experience"><a href="#Well-designed-apps-create-a-delightful-experience" class="headerlink" title="Well-designed apps create a delightful experience"></a>Well-designed apps create a delightful experience</h3><p>Apps with simple workflows, clear interfaces and helpful information create a delightful experience.</p>
+<p>The collection of Apple Human Interface Guidelines for all of the company’s operating systems (macOS, watchOS, iOS and tvOS) can be found on the<a href="https://developer.apple.com/design/" target="_blank" rel="external">Apple Developer website</a>. You can download design resources for Adobe Photoshop and Sketch in<a href="https://developer.apple.com/design/resources/" target="_blank" rel="external">Apple’s design resources section</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/NNBvQn" target="_blank" rel="external">http://www.cultofmac.com/486340/apple-design-principles-sketchnotes/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;The downloader installs a banking Trojan into your PC the moment your mouse pointer hovers over it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com
+      &lt;p&gt;Apple’s Human Interface Guidelines have been the core of the company’s design philosophy ever since the Macintosh in 1978. Apple design e
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>9 Essential Design Tools for Non-Designers</title>
+    <link href="https://gmagon.com/blog/2017/06/12/9-essential-design-tools-for-non-designers/"/>
+    <id>https://gmagon.com/blog/2017/06/12/9-essential-design-tools-for-non-designers/</id>
+    <published>2017-06-12T00:00:00.000Z</published>
+    <updated>2017-06-12T03:48:47.375Z</updated>
+    
+    <content type="html"><![CDATA[<p>Content and design work better together - in fact, your content marketing efforts really won’t achieve optimal success if they don’t include a<a href="http://www.rightsourcemarketing.com/content-creation/cant-win-content-marketing-without-good-design/" target="_blank" rel="external">solid design component</a>to bring your words to life.</p>
+<p>Not convinced your content needs design? Here are some recent stats that prove otherwise:</p>
+<ul>
+<li>37% of marketers said visual marketing was the most important form of content for their business, second only to blogging (38%). (<br><a href="https://www.socialmediaexaminer.com/wp-content/uploads/2016/05/SocialMediaMarketingIndustryReport2016.pdf" target="_blank" rel="external">Source</a><br>)</li>
+<li>Given 15 minutes to consume content, two-thirds of people prefer to read something beautifully designed (as opposed to something plain). (<br><a href="http://wwwimages.adobe.com/content/dam/Adobe/en/max/2015/pdfs/state-of-content-oct.pdf" target="_blank" rel="external">Source</a><br>)</li>
+<li>If the content or layout of a website is unattractive, 38% of people will stop engaging with it. (<br><a href="http://wwwimages.adobe.com/content/dam/Adobe/en/max/2015/pdfs/state-of-content-oct.pdf" target="_blank" rel="external">Source</a><br>)</li>
+<li>When people hear information, they usually only remember about 10% of that information three days later. But if a relevant image is paired with that same information, people will remember 65% of the information three days later. (<br><a href="http://www.brainrules.net/vision" target="_blank" rel="external">Source</a><br>)</li>
+<li>Tweets with images receive 150% more retweets than tweets without images. (<br><a href="https://blog.bufferapp.com/the-power-of-twitters-new-expanded-images-and-how-to-make-the-most-of-it" target="_blank" rel="external">Source</a><br>)</li>
+<li>Not getting enough likes? Facebook posts with images get 2.3 times more engagement vs. those without images. (<br><a href="http://buzzsumo.com/blog/how-to-massively-boost-your-blog-traffic-with-these-5-awesome-image-stats/" target="_blank" rel="external">Source</a><br>)</li>
+</ul>
+<p>But what to do with those little design projects that pop up, but seem too small to send to your designer - or need to be done too quickly to schedule? We all know what happens when people who aren’t designers try to be… well, graphic designers. You can end up with garish color palettes, no white space, and a jumble of shapes that look more like an abstract painting than an infographic.</p>
+<p>But the fact is that even if you_aren’t_trained as a graphic designer, in many companies, your job in marketing is going to require you to dabble in a little design here and there, whether it’s to save time, or money, or both.</p>
+<p>As such, a little design knowledge can go a long way, no matter your official title or department. You never know when a small-but-urgent project might come up while your official designer is swamped, or when a proposal will come across your desk featuring art created by your sales person. Or maybe you’re a part of an internal marketing department and routinely try to tackle the small stuff in house so you can send the larger projects to your creative team.</p>
+<p>Regardless, you’ll need to work on a design project at some point, and there’s no need for you to look like an amateur when you do it. Here are nine easy-to-use tools that can help any non-designer accomplish common design tasks:</p>
+<h2 id="How-to-create-a-quote-Recite"><a href="#How-to-create-a-quote-Recite" class="headerlink" title="How to create a quote:Recite"></a>How to create a quote:<a href="http://recite.com/" target="_blank" rel="external">Recite</a></h2><p><img src="http://img0.tuicool.com/i6FrQvE.jpg!web" alt="">This browser-based tool makes it simple to create and share a quote, fast. Just type in your quote and it will populate into dozens of pre-made templates. You can post directly to Facebook, Twitter, Pinterest, Tumblr, and StumbleUpon from the Recite website, or download the image directly to share later.</p>
+<h2 id="How-to-create-social-media-and-blog-graphics-Canva"><a href="#How-to-create-social-media-and-blog-graphics-Canva" class="headerlink" title="How to create social media and blog graphics:Canva"></a>How to create social media and blog graphics:<a href="https://www.canva.com/" target="_blank" rel="external">Canva</a></h2><p>​<img src="http://img2.tuicool.com/u6FJNv7.png!web" alt="">Canva offers a browser-based account, as well as iPhone and iPad apps. You do have to create an account in order to use it, but a regular Canva subscription is free (Canva for Work, which offers more robust features and support, requires a monthly fee). The tool offers lots of pre-sized templates that make it easy to design to certain specifications, such as social media posts, posters, letterhead, and more. You can choose from Canva’s native layouts, icons, and graphics - some are free, and some aren’t - or upload your own to keep things on brand.</p>
+<h2 id="How-to-make-charts-and-graphs-Beam"><a href="#How-to-make-charts-and-graphs-Beam" class="headerlink" title="How to make charts and graphs:Beam"></a>How to make charts and graphs:<a href="https://beam.venngage.com/" target="_blank" rel="external">Beam</a></h2><p><img src="http://img1.tuicool.com/jaYBZvr.jpg!web" alt="">Beam is a free online chart maker offered by infographic platform Venngage. You don’t need an account to make and save a chart using Beam’s mini website, but you will need to enter your name and email address in order to download your data visualization (you can also opt to embed it, or share it on Facebook and Twitter). Beam enables you to choose from several different types of graphs and color palettes, and you can edit the data in a spreadsheet, similar to PowerPoint - but the end result will be much prettier than a regular old slide deck.</p>
+<h2 id="How-to-edit-photos-Pixlr"><a href="#How-to-edit-photos-Pixlr" class="headerlink" title="How to edit photos:Pixlr"></a>How to edit photos:<a href="https://pixlr.com/editor/" target="_blank" rel="external">Pixlr</a></h2><p>​<img src="http://img0.tuicool.com/YvmyUfz.jpg!web" alt="">Need to edit a picture, and your smartphone or computer’s photo program just isn’t cutting it? Then turn to Pixlr, which is basically Photoshop in web browser form, but without the hefty price tag. The functionality is pretty similar to Photoshop, so familiarity with the popular Adobe program will help, but you can pick it up even if you’re never touched Photoshop in your life.</p>
+<h2 id="How-to-create-icons-LogoGarden"><a href="#How-to-create-icons-LogoGarden" class="headerlink" title="How to create icons:LogoGarden"></a>How to create icons:<a href="https://www.logogarden.com/" target="_blank" rel="external">LogoGarden</a></h2><p><img src="http://img0.tuicool.com/NjU3iqj.jpg!web" alt="">Yes, the word “logo” is in the name of this website - but don’t actually use it to make logos. That’s work best left to professionals, however, this website is useful if you need to pull together a suite of little icons for a blog, list, etc. and want to customize the color quickly.</p>
+<h2 id="How-to-find-icons-Iconfinder"><a href="#How-to-find-icons-Iconfinder" class="headerlink" title="How to find icons:Iconfinder"></a>How to find icons:<a href="https://www.iconfinder.com/" target="_blank" rel="external">Iconfinder</a></h2><p><img src="http://img0.tuicool.com/nMjQBjI.jpg!web" alt="">On the other hand, sometimes you need pre-made icons - say, social media icons - that all have a similar aesthetic. In that case, look to a website like Iconfinder instead of trying to make your own. They offer a mix of free and paid icons, as well as subscriptions, so there are various options to fit your budget.</p>
+<h2 id="How-to-get-color-palette-inspiration-Coolors-co"><a href="#How-to-get-color-palette-inspiration-Coolors-co" class="headerlink" title="How to get color palette inspiration:Coolors.co"></a>How to get color palette inspiration:<a href="https://coolors.co/" target="_blank" rel="external">Coolors.co</a></h2><p><img src="http://img2.tuicool.com/6vQZjaB.jpg!web" alt="">You’ve created that basic postcard, but it needs more color. So where in the Pantone universe do you start? Whether you’re taking your cues from an existing palette or building them from scratch, Coolors offers inspiration via a website, iOS app, Adobe add-on, and Chrome extension. Its strangely addicting color palette generator changes out swatches at the simple touch of a space bar, and you can input your existing brand colors to get complementary suggestions. You can also browse pre-created color palettes in a different tab.</p>
+<h2 id="How-to-figure-out-a-color-code-ColorZilla"><a href="#How-to-figure-out-a-color-code-ColorZilla" class="headerlink" title="How to figure out a color code:ColorZilla"></a>How to figure out a color code:<a href="http://www.colorzilla.com/" target="_blank" rel="external">ColorZilla</a></h2><p><img src="http://img1.tuicool.com/AvUJ3iz.jpg!web" alt="">This extension for Chrome and Firefox will tell you the precise six-number hex code for any pixel on a website. It even saves the history of color swatches you’ve picked, which is very helpful if you’re browsing the web and see a color you like that you want to save quickly.</p>
+<h2 id="How-to-figure-out-a-font-WhatFont"><a href="#How-to-figure-out-a-font-WhatFont" class="headerlink" title="How to figure out a font:WhatFont"></a>How to figure out a font:<a href="http://whatfontapp.com/" target="_blank" rel="external">WhatFont</a></h2><p><img src="http://img2.tuicool.com/Vbuq6fA.jpg!web" alt="">Similar to how ColorZilla lets you select a pixel and tells you the color code, WhatFont lets you hover over a font anywhere on a website page, and it will automatically pull the font name from the HTML code. You can add it as extension to Chrome and Safari or download the bookmarklet; it’s also available as an iPhone and iPad app.</p>
+<p>And finally, one bonus piece of design wisdom…</p>
+<h2 id="When-to-hire-a-designer"><a href="#When-to-hire-a-designer" class="headerlink" title="When to hire a designer"></a>When to hire a designer</h2><p>You might be able to make passable little graphics on your own if you already have brand guidelines, color codes, fonts, etc. in place. But trust me, to create a consistent look for your brand - not to mention design larger, more complex pieces like eBooks, infographics, print collateral, or interactive content - hire an experienced designer to make you look polished. The big jobs require<a href="http://www.rightsourcemarketing.com/content-creation/6-ways-get-best-work-design-team/" target="_blank" rel="external">talented designers</a>, and you’ll just frustrate yourself if you try to take on more complicated projects without the proper training.</p>
+<p>In a pinch, these nine tools will help you create small but quality design projects, even if you’re not a designer. Just be sure to turn to your graphic designer for larger jobs, or you’ll regret it.</p>
+<p>Source: “<a href="http://www.tuicool.com/articles/hit/nyYVvaN" target="_blank" rel="external">http://www.socialmediatoday.com/marketing/9-essential-design-tools-non-designers</a>“</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Content and design work better together - in fact, your content marketing efforts really won’t achieve optimal success if they don’t incl
     
     </summary>
     
@@ -154,105 +528,78 @@
   </entry>
   
   <entry>
-    <title>9 Essential Design Tools for Non-Designers</title>
-    <link href="https://gmagon.com/blog/2017/06/12/9-essential-design-tools-for-non-designers/"/>
-    <id>https://gmagon.com/blog/2017/06/12/9-essential-design-tools-for-non-designers/</id>
-    <published>2017-06-12T00:00:00.000Z</published>
-    <updated>2017-06-12T03:48:47.375Z</updated>
-    
-    <content type="html"><![CDATA[<p>Content and design work better together - in fact, your content marketing efforts really won’t achieve optimal success if they don’t include a<a href="http://www.rightsourcemarketing.com/content-creation/cant-win-content-marketing-without-good-design/" target="_blank" rel="external">solid design component</a>to bring your words to life.</p>
-<p>Not convinced your content needs design? Here are some recent stats that prove otherwise:</p>
-<ul>
-<li>37% of marketers said visual marketing was the most important form of content for their business, second only to blogging (38%). (<br><a href="https://www.socialmediaexaminer.com/wp-content/uploads/2016/05/SocialMediaMarketingIndustryReport2016.pdf" target="_blank" rel="external">Source</a><br>)</li>
-<li>Given 15 minutes to consume content, two-thirds of people prefer to read something beautifully designed (as opposed to something plain). (<br><a href="http://wwwimages.adobe.com/content/dam/Adobe/en/max/2015/pdfs/state-of-content-oct.pdf" target="_blank" rel="external">Source</a><br>)</li>
-<li>If the content or layout of a website is unattractive, 38% of people will stop engaging with it. (<br><a href="http://wwwimages.adobe.com/content/dam/Adobe/en/max/2015/pdfs/state-of-content-oct.pdf" target="_blank" rel="external">Source</a><br>)</li>
-<li>When people hear information, they usually only remember about 10% of that information three days later. But if a relevant image is paired with that same information, people will remember 65% of the information three days later. (<br><a href="http://www.brainrules.net/vision" target="_blank" rel="external">Source</a><br>)</li>
-<li>Tweets with images receive 150% more retweets than tweets without images. (<br><a href="https://blog.bufferapp.com/the-power-of-twitters-new-expanded-images-and-how-to-make-the-most-of-it" target="_blank" rel="external">Source</a><br>)</li>
-<li>Not getting enough likes? Facebook posts with images get 2.3 times more engagement vs. those without images. (<br><a href="http://buzzsumo.com/blog/how-to-massively-boost-your-blog-traffic-with-these-5-awesome-image-stats/" target="_blank" rel="external">Source</a><br>)</li>
-</ul>
-<p>But what to do with those little design projects that pop up, but seem too small to send to your designer - or need to be done too quickly to schedule? We all know what happens when people who aren’t designers try to be… well, graphic designers. You can end up with garish color palettes, no white space, and a jumble of shapes that look more like an abstract painting than an infographic.</p>
-<p>But the fact is that even if you_aren’t_trained as a graphic designer, in many companies, your job in marketing is going to require you to dabble in a little design here and there, whether it’s to save time, or money, or both.</p>
-<p>As such, a little design knowledge can go a long way, no matter your official title or department. You never know when a small-but-urgent project might come up while your official designer is swamped, or when a proposal will come across your desk featuring art created by your sales person. Or maybe you’re a part of an internal marketing department and routinely try to tackle the small stuff in house so you can send the larger projects to your creative team.</p>
-<p>Regardless, you’ll need to work on a design project at some point, and there’s no need for you to look like an amateur when you do it. Here are nine easy-to-use tools that can help any non-designer accomplish common design tasks:</p>
-<h2 id="How-to-create-a-quote-Recite"><a href="#How-to-create-a-quote-Recite" class="headerlink" title="How to create a quote:Recite"></a>How to create a quote:<a href="http://recite.com/" target="_blank" rel="external">Recite</a></h2><p><img src="http://img0.tuicool.com/i6FrQvE.jpg!web" alt="">This browser-based tool makes it simple to create and share a quote, fast. Just type in your quote and it will populate into dozens of pre-made templates. You can post directly to Facebook, Twitter, Pinterest, Tumblr, and StumbleUpon from the Recite website, or download the image directly to share later.</p>
-<h2 id="How-to-create-social-media-and-blog-graphics-Canva"><a href="#How-to-create-social-media-and-blog-graphics-Canva" class="headerlink" title="How to create social media and blog graphics:Canva"></a>How to create social media and blog graphics:<a href="https://www.canva.com/" target="_blank" rel="external">Canva</a></h2><p>​<img src="http://img2.tuicool.com/u6FJNv7.png!web" alt="">Canva offers a browser-based account, as well as iPhone and iPad apps. You do have to create an account in order to use it, but a regular Canva subscription is free (Canva for Work, which offers more robust features and support, requires a monthly fee). The tool offers lots of pre-sized templates that make it easy to design to certain specifications, such as social media posts, posters, letterhead, and more. You can choose from Canva’s native layouts, icons, and graphics - some are free, and some aren’t - or upload your own to keep things on brand.</p>
-<h2 id="How-to-make-charts-and-graphs-Beam"><a href="#How-to-make-charts-and-graphs-Beam" class="headerlink" title="How to make charts and graphs:Beam"></a>How to make charts and graphs:<a href="https://beam.venngage.com/" target="_blank" rel="external">Beam</a></h2><p><img src="http://img1.tuicool.com/jaYBZvr.jpg!web" alt="">Beam is a free online chart maker offered by infographic platform Venngage. You don’t need an account to make and save a chart using Beam’s mini website, but you will need to enter your name and email address in order to download your data visualization (you can also opt to embed it, or share it on Facebook and Twitter). Beam enables you to choose from several different types of graphs and color palettes, and you can edit the data in a spreadsheet, similar to PowerPoint - but the end result will be much prettier than a regular old slide deck.</p>
-<h2 id="How-to-edit-photos-Pixlr"><a href="#How-to-edit-photos-Pixlr" class="headerlink" title="How to edit photos:Pixlr"></a>How to edit photos:<a href="https://pixlr.com/editor/" target="_blank" rel="external">Pixlr</a></h2><p>​<img src="http://img0.tuicool.com/YvmyUfz.jpg!web" alt="">Need to edit a picture, and your smartphone or computer’s photo program just isn’t cutting it? Then turn to Pixlr, which is basically Photoshop in web browser form, but without the hefty price tag. The functionality is pretty similar to Photoshop, so familiarity with the popular Adobe program will help, but you can pick it up even if you’re never touched Photoshop in your life.</p>
-<h2 id="How-to-create-icons-LogoGarden"><a href="#How-to-create-icons-LogoGarden" class="headerlink" title="How to create icons:LogoGarden"></a>How to create icons:<a href="https://www.logogarden.com/" target="_blank" rel="external">LogoGarden</a></h2><p><img src="http://img0.tuicool.com/NjU3iqj.jpg!web" alt="">Yes, the word “logo” is in the name of this website - but don’t actually use it to make logos. That’s work best left to professionals, however, this website is useful if you need to pull together a suite of little icons for a blog, list, etc. and want to customize the color quickly.</p>
-<h2 id="How-to-find-icons-Iconfinder"><a href="#How-to-find-icons-Iconfinder" class="headerlink" title="How to find icons:Iconfinder"></a>How to find icons:<a href="https://www.iconfinder.com/" target="_blank" rel="external">Iconfinder</a></h2><p><img src="http://img0.tuicool.com/nMjQBjI.jpg!web" alt="">On the other hand, sometimes you need pre-made icons - say, social media icons - that all have a similar aesthetic. In that case, look to a website like Iconfinder instead of trying to make your own. They offer a mix of free and paid icons, as well as subscriptions, so there are various options to fit your budget.</p>
-<h2 id="How-to-get-color-palette-inspiration-Coolors-co"><a href="#How-to-get-color-palette-inspiration-Coolors-co" class="headerlink" title="How to get color palette inspiration:Coolors.co"></a>How to get color palette inspiration:<a href="https://coolors.co/" target="_blank" rel="external">Coolors.co</a></h2><p><img src="http://img2.tuicool.com/6vQZjaB.jpg!web" alt="">You’ve created that basic postcard, but it needs more color. So where in the Pantone universe do you start? Whether you’re taking your cues from an existing palette or building them from scratch, Coolors offers inspiration via a website, iOS app, Adobe add-on, and Chrome extension. Its strangely addicting color palette generator changes out swatches at the simple touch of a space bar, and you can input your existing brand colors to get complementary suggestions. You can also browse pre-created color palettes in a different tab.</p>
-<h2 id="How-to-figure-out-a-color-code-ColorZilla"><a href="#How-to-figure-out-a-color-code-ColorZilla" class="headerlink" title="How to figure out a color code:ColorZilla"></a>How to figure out a color code:<a href="http://www.colorzilla.com/" target="_blank" rel="external">ColorZilla</a></h2><p><img src="http://img1.tuicool.com/AvUJ3iz.jpg!web" alt="">This extension for Chrome and Firefox will tell you the precise six-number hex code for any pixel on a website. It even saves the history of color swatches you’ve picked, which is very helpful if you’re browsing the web and see a color you like that you want to save quickly.</p>
-<h2 id="How-to-figure-out-a-font-WhatFont"><a href="#How-to-figure-out-a-font-WhatFont" class="headerlink" title="How to figure out a font:WhatFont"></a>How to figure out a font:<a href="http://whatfontapp.com/" target="_blank" rel="external">WhatFont</a></h2><p><img src="http://img2.tuicool.com/Vbuq6fA.jpg!web" alt="">Similar to how ColorZilla lets you select a pixel and tells you the color code, WhatFont lets you hover over a font anywhere on a website page, and it will automatically pull the font name from the HTML code. You can add it as extension to Chrome and Safari or download the bookmarklet; it’s also available as an iPhone and iPad app.</p>
-<p>And finally, one bonus piece of design wisdom…</p>
-<h2 id="When-to-hire-a-designer"><a href="#When-to-hire-a-designer" class="headerlink" title="When to hire a designer"></a>When to hire a designer</h2><p>You might be able to make passable little graphics on your own if you already have brand guidelines, color codes, fonts, etc. in place. But trust me, to create a consistent look for your brand - not to mention design larger, more complex pieces like eBooks, infographics, print collateral, or interactive content - hire an experienced designer to make you look polished. The big jobs require<a href="http://www.rightsourcemarketing.com/content-creation/6-ways-get-best-work-design-team/" target="_blank" rel="external">talented designers</a>, and you’ll just frustrate yourself if you try to take on more complicated projects without the proper training.</p>
-<p>In a pinch, these nine tools will help you create small but quality design projects, even if you’re not a designer. Just be sure to turn to your graphic designer for larger jobs, or you’ll regret it.</p>
-<p>Source: “<a href="http://www.tuicool.com/articles/hit/nyYVvaN" target="_blank" rel="external">http://www.socialmediatoday.com/marketing/9-essential-design-tools-non-designers</a>“</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Content and design work better together - in fact, your content marketing efforts really won’t achieve optimal success if they don’t incl
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>A visual overview of Apple’s essential design principles</title>
-    <link href="https://gmagon.com/blog/2017/06/12/a-visual-overview-of-apples-essential-design-principles/"/>
-    <id>https://gmagon.com/blog/2017/06/12/a-visual-overview-of-apples-essential-design-principles/</id>
-    <published>2017-06-12T00:00:00.000Z</published>
-    <updated>2017-06-12T02:48:34.600Z</updated>
-    
-    <content type="html"><![CDATA[<p>Apple’s Human Interface Guidelines have been the core of the company’s design philosophy ever since the Macintosh in 1978. Apple design evangelist Mike Stern gave an overview of the ever-evolving guidelines during a Wednesday session at the company’s Worldwide Developers Conference.</p>
-<p>The session, entitled “</p>
-<p><a href="https://developer.apple.com/videos/play/wwdc2017/802/" target="_blank" rel="external">Essential Design Principles</a></p>
-<p>,” is one of my favorites, in large part because I’m a designer myself. I’ve distilled the essential Apple design principles he talked about in the sketchnotes above.</p>
-<h3 id="Apple-design-An-emphasis-on-‘human’"><a href="#Apple-design-An-emphasis-on-‘human’" class="headerlink" title="Apple design: An emphasis on ‘human’"></a>Apple design: An emphasis on ‘human’</h3><p>Apple choses “human interface” rather than the more frequently used term “user interface” for a reason. “Human” is the expression of our highest and most noble qualities.</p>
-<p>Many of these Apple design principles might seem obvious, yet they often get neglected. We see this failure in apps that do not meet our expectations. The apps that ignore essential design principles are the ones that get used once and then deleted.</p>
-<p>Apple wants to change that. The company increased the number of design sessions at WWDC this year, illustrating a deep commitment to helping developers create well-designed apps.</p>
-<p>The Essential Design Principles session provided real-world experiences to reinforce the concepts discussed. The examples showed how decisions affect app design.</p>
-<h3 id="Well-designed-apps-create-a-delightful-experience"><a href="#Well-designed-apps-create-a-delightful-experience" class="headerlink" title="Well-designed apps create a delightful experience"></a>Well-designed apps create a delightful experience</h3><p>Apps with simple workflows, clear interfaces and helpful information create a delightful experience.</p>
-<p>The collection of Apple Human Interface Guidelines for all of the company’s operating systems (macOS, watchOS, iOS and tvOS) can be found on the<a href="https://developer.apple.com/design/" target="_blank" rel="external">Apple Developer website</a>. You can download design resources for Adobe Photoshop and Sketch in<a href="https://developer.apple.com/design/resources/" target="_blank" rel="external">Apple’s design resources section</a>.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/NNBvQn" target="_blank" rel="external">http://www.cultofmac.com/486340/apple-design-principles-sketchnotes/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Apple’s Human Interface Guidelines have been the core of the company’s design philosophy ever since the Macintosh in 1978. Apple design e
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Papers for Teaching Undergraduate Data Science</title>
-    <link href="https://gmagon.com/blog/2017/06/09/papers-for-teaching-undergraduate-data-science/"/>
-    <id>https://gmagon.com/blog/2017/06/09/papers-for-teaching-undergraduate-data-science/</id>
+    <title>Are stops important in the world of location tracking?</title>
+    <link href="https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/"/>
+    <id>https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/</id>
     <published>2017-06-09T00:00:00.000Z</published>
-    <updated>2017-06-09T10:31:39.240Z</updated>
+    <updated>2017-06-09T10:35:51.340Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Papers-for-Teaching-Undergraduate-Data-Science"><a href="#Papers-for-Teaching-Undergraduate-Data-Science" class="headerlink" title="Papers for Teaching Undergraduate Data Science"></a>Papers for Teaching Undergraduate Data Science</h1><p>2017-06-08 21:47:19</p>
-<p><a href="http://www.tuicool.com/sites/eammyu" target="_blank" rel="external">Data Science 101</a></p>
-<p><a href="http://www.tuicool.com/articles/hit/AJRFFj2" target="_blank" rel="external">http://101.datascience.community/2017/06/08/papers-for-teaching-undergraduate-data-science/</a></p>
-<p>If you work at a university and are considering starting an undergraduate program in data science, then today’s post is for you.</p>
-<ul>
-<li><a href="https://arxiv.org/ftp/arxiv/papers/1612/1612.07140.pdf" target="_blank" rel="external">A Guide to Teaching Data Science [2016]</a><br>– focuses on increasing 3 skills (create, connect, compute) within Statistics departments to develop data science</li>
-<li><a href="https://arxiv.org/ftp/arxiv/papers/1512/1512.04456.pdf" target="_blank" rel="external">Teaching the Foundations of Data Science: An Interdisciplinary Approach [2016]</a><br>– A study and analysis of teaching an introductory course on data science with a cooperation between MIS and CS.</li>
-<li><p><a href="https://arxiv.org/pdf/1503.05570.pdf" target="_blank" rel="external">A Data Science Course for Undergraduates: Thinking with Data [2015]</a><br>– Overview of an undergraduate course in a liberal arts</p>
-<p>environment that provides students with the tools necessary to apply data science. very detailed many great topics plus R and SQL</p>
-</li>
-<li><p><a href="https://arxiv.org/pdf/1607.00858.pdf" target="_blank" rel="external">Embracing Data Science [2016]</a><br>– Statistics needs to learn from data science to make courses more relevant</p>
-</li>
-</ul>
-<p>If you know of any other papers, please leave a comment below.</p>
+    <content type="html"><![CDATA[<h1 id="Are-stops-important-in-the-world-of-location-tracking"><a href="#Are-stops-important-in-the-world-of-location-tracking" class="headerlink" title="Are stops important in the world of location tracking?"></a>Are stops important in the world of location tracking?</h1><p>We had trips on our mind when we first built HyperTrack. We assumed that developers would start tracking a user when they expected the user to be on their way to get some place and stop when they had reached. The assumption failed. Obvious in hindsight, developers expected us to tell them (and not the other way around) when the user was on the way and when they had stopped. All they wanted to do was switch us on or off, and hand over control to HyperTrack to automatically figure out trips and stops in the life of the user. They would keep HyperTrack on through the day, through the week, or just switch it on and leave it on forever. HyperTrack was expected to notify developers about the start and end of these trips and stops, besides other useful events along the way. This led to a re-architecture of our stack that we rolled out with HyperTrack v3 in March.</p>
+<p>All you need to do now is plug in SDK into your app and call our startTracking method, say when the user logs in. That’s it. You would now get all the trips and stops that your user makes, arranged in a<em><strong>placeline</strong></em>. For every stop your user makes, you would get to know the place and duration of the stop.</p>
+<p><img src="http://img0.tuicool.com/IvUrUzr.png!web" alt=""></p>
+<p>User placeline with trips &amp; stops</p>
+<h2 id="Why-are-Stops-important"><a href="#Why-are-Stops-important" class="headerlink" title="Why are Stops important?"></a>Why are Stops important?</h2><p>When building a real time location tracking stack, it is important to distinguish between trips and stops for multiple reasons.</p>
+<h3 id="Battery-Efficiency"><a href="#Battery-Efficiency" class="headerlink" title="Battery Efficiency"></a><strong>Battery Efficiency</strong></h3><p><img src="http://img2.tuicool.com/ZRRfay7.png!web" alt="">Distinguishing between trips and stops has helped us significantly reduce the battery used by our SDK. Our SDK hibernates when the user stops and spares the receiver and transmitter until the user is moving or on their way again. An average user is on the move for 5-6 hours or less than 25% of the day. That trims down battery usage by a straight 75%.</p>
+<h3 id="Location-accuracy"><a href="#Location-accuracy" class="headerlink" title="Location accuracy"></a><strong>Location accuracy</strong></h3><p>Distinguishing between trips and stops helps filter out noise in the location data. An average user is indoor when at a stop, say inside a building. Fused location points received from the device go haywire due to flaky GPS connectivity and strong WiFi connectivity. The Operating System prefers WiFi locations over GPS due to higher confidence. However, high confidence locations from multiple WiFi networks creates a different type of noise in the data. See the image below for locations received during an hour long stop at 100 Bush St. in San Francisco.</p>
+<p>Now imagine using these high confidence location points to compute mileage of distance traveled by the user! Detecting a stop using activity data is an effective way to eliminate this noise.</p>
+<p><img src="http://img2.tuicool.com/iI3UVrM.png!web" alt=""></p>
+<p>Raw location points at a stop</p>
+<h2 id="How-do-we-automatically-detect-stops"><a href="#How-do-we-automatically-detect-stops" class="headerlink" title="How do we automatically detect stops?"></a>How do we automatically detect stops?</h2><p>Activity sensors in smartphones help detect stops in conjunction with location sensors. The smartphone Operating Systems provide raw sensor data from the accelerometer and gyroscope, as well as fused activity/motion data through their own algorithms in the chipset or system software. Similarly, the OS provides raw location data from GPS, WiFi and cellular network sensors, as well as fused location data through APIs such as Visit in iOS and Geofence in Android. Making these two data sets work in tandem helps us interpret stops automatically and reliably. A more in-depth analysis coming up in a separate post.</p>
+<h2 id="How-do-our-customers-use-stops"><a href="#How-do-our-customers-use-stops" class="headerlink" title="How do our customers use stops?"></a>How do our customers use stops?</h2><p>Here are a few unique stories of how of our customers use Stops that are automatically detected by HyperTrack.</p>
+<h3 id="Measuring-stop-durations"><a href="#Measuring-stop-durations" class="headerlink" title="Measuring stop durations"></a><strong>Measuring stop durations</strong></h3><p>A service aggregator who uses HyperTrack for location tracking provides services like beauty, auto mechanic, home cleaning, plumbing, and handyman delivered at users’ homes. One of their biggest problems is to know whether these service professionals visited the expected place at the expected time. If so, how much time did they spend at the consumer’s location. Professional services are often billed by time and resolving disputes between the consumer and service professional often comes down to figuring out the actual time spent on site. The aggregator plugged in the HyperTrack SDK and created a stopover<em><strong>action</strong></em> for each service visit. You create an<em><strong>action</strong></em> in HyperTrack for an action that the user performs in the app and that you want to track. The operations team can now seethe actual time spent by the service professional at that stop.</p>
+<p><img src="http://img0.tuicool.com/MjYjMvI.png!web" alt=""></p>
+<p>Stops in context of an action</p>
+<h3 id="Profiling-frequently-visited-places"><a href="#Profiling-frequently-visited-places" class="headerlink" title="Profiling frequently visited places"></a><strong>Profiling frequently visited places</strong></h3><p>A travel app wanted to provide local recommendations to her users. Right after she plugged the SDK in the app, HyperTrack started generating a heatmap of places where users were spending most time. This data of most frequented places became the core data set for local recommendations in the app.</p>
+<p><img src="http://img2.tuicool.com/2yaiUzJ.png!web" alt=""></p>
+<p>Places heatmap</p>
+<h3 id="Getting-geofence-alerts-for-places-of-interest"><a href="#Getting-geofence-alerts-for-places-of-interest" class="headerlink" title="Getting geofence alerts for places of interest"></a><strong>Getting geofence alerts for places of interest</strong></h3><p>A fleet of real estate agents wanted to get alerted when an agent visited one of the tens of thousands of properties in the company database. They wanted to make sure that these alerts were sent only when the agent stopped at a property, rather than personal visits and other locations. The default geofencing features provided by the OS severely limit the number of locations you may register for geofencing visits (e.g.,<a href="https://developer.android.com/training/location/geofencing.html" target="_blank" rel="external">100 geofences/device on Android</a>).</p>
+<p>This customer used HyperTrack to get alerts for visits. They <a href="https://docs.hypertrack.com/events/webhook.html" target="_blank" rel="external">received webhook events</a>when the agent visited a property and then used to to send a mobile notifications to their agents.</p>
+<p><img src="http://img2.tuicool.com/JBzq6nM.png!web" alt=""></p>
+<p>Notifications powered via geofence alerts</p>
+<h3 id="Getting-delay-alerts-with-unexpected-stops"><a href="#Getting-delay-alerts-with-unexpected-stops" class="headerlink" title="Getting delay alerts with unexpected stops"></a><strong>Getting delay alerts with unexpected stops</strong></h3><p>A customer who had builtorder tracking with HyperTrack now wanted to get an alert when an order was getting delayed by over 10 mins. In the alert, they wanted to know the reason for delay. Turned out that many delays were related to unexpected stops by the rider. They set up <a href="https://docs.hypertrack.com/events/slack.html" target="_blank" rel="external">real-time Slack alerts</a> sent to the respective fleet channels when the rider made an unexpected stop.</p>
+<p><img src="http://img0.tuicool.com/fIJrYfj.png!web" alt=""></p>
+<p>Unexpected stops on your Slack channel</p>
+<p>These are just a few stories of how developers have used stops to build better location-based services for business efficiency and product experience. We discover new stories every day as more developers start using HyperTrack in their apps. We are excited to see how you use stops in  your product. Do ping us at<a href="mailto:help@hypertrack.io" target="_blank" rel="external">help@hypertrack.io</a> and we would love to feature your story on our blog!</p>
+<p>In case you haven’t started yet, visit<a href="http://www.hypertrack.com/" target="_blank" rel="external">www.hypertrack.com</a>now to plug in the SDK into your app. It takes just a few minutes to start building your location features.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Papers-for-Teaching-Undergraduate-Data-Science&quot;&gt;&lt;a href=&quot;#Papers-for-Teaching-Undergraduate-Data-Science&quot; class=&quot;headerlink&quot; title=&quot;
+      &lt;h1 id=&quot;Are-stops-important-in-the-world-of-location-tracking&quot;&gt;&lt;a href=&quot;#Are-stops-important-in-the-world-of-location-tracking&quot; class=&quot;heade
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>First-Ever Data Stealing Malware Found Using Intel AMT Tool to Bypass Firewall</title>
+    <link href="https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/"/>
+    <id>https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/</id>
+    <published>2017-06-09T00:00:00.000Z</published>
+    <updated>2017-06-12T04:01:23.188Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/uIZV7rq.png!web" alt=""></p>
+<p>It’s not hard for a well-funded state-sponsored hacking group to break into corporate networks and compromise systems with malware, but what’s challenging for them is to keep that backdoor and its communication undetectable from a firewall and other network monitoring applications.</p>
+<p>However, a<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">cyber-espionage group</a>known as “<strong>Platinum</strong>,” that is actively targeting governmental organisations, defense institutes, and telecommunication providers since at least 2009, has found a way to hide its malicious activities from host-based protection mechanisms.</p>
+<p>Microsoft has recently<a href="https://blogs.technet.microsoft.com/mmpc/2017/06/07/platinum-continues-to-evolve-find-ways-to-maintain-invisibility/" target="_blank" rel="external">discovered</a>that the cyber-espionage group is now leveraging Intel’s Active Management Technology (AMT) Serial-over-LAN (SOL) channel as a file-transfer tool to steal data from the targeted computers without detection.</p>
+<p>Intel-based chip sets come with an embedded technology, called AMT, which is designed to allow IT administrators to remotely manage and repair PCs, workstations, and servers of their organisations.</p>
+<p>The Intel AMT technology operates independently of the operating system and works even when the system is turned off, as long as the platform is connected to a line power and a network cable.</p>
+<p>That means, when AMT is enabled, any packet sent to the PC’s wired network port will be redirected to the Management Engine and passed on to AMT – the operating system, as well as network monitoring applications installed on a system, never knows what’s going around.</p>
+<p><img src="http://img0.tuicool.com/nyA3InU.png!web" alt=""></p>
+<p>Moreover, Linux systems with Intel’s chips and AMT enabled may also be exposed to Platinum’s malware.</p>
+<p>“As this embedded processor is separate from the primary Intel processor, it can execute even when the main processor is powered off and is, therefore, able to provide out-of-band (OOB) remote administration capabilities such as remote power-cycling and keyboard, video, and mouse control (KVM),” Microsoft said.</p>
+<p>“Furthermore, as the SOL traffic bypasses the host networking stack, it cannot be blocked by firewall applications running on the host device. To enable SOL functionality, the device AMT must be provisioned.”</p>
+<p>Unlike the<a href="http://thehackernews.com/2017/05/intel-server-chipsets.html" target="_blank" rel="external">remote authentication flaw</a>discovered last month that enabled hackers to take over<a href="http://thehackernews.com/2017/05/intel-amt-vulnerability.html" target="_blank" rel="external">full control of a system</a>by using AMT features without the need of any password, Platinum does not exploit any flaw in AMT, instead, requires AMT to be enabled on infected systems.</p>
+<p>Microsoft notes that SOL session requires a username and password, so either the hacking group is using stolen credentials to make its malware remotely communicate with the C&amp;C servers, or”during the provisioning process, PLATINUM could select whichever username and password they wish.”</p>
+<p>The Platinum hacking group has been using zero-day exploits,<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">hot patching technique</a>and other advanced tactics to penetrate in their target systems and networks in South Asian countries, but this is the first time someone is abusing legitimate management tools to evade detection.</p>
+<p>Microsoft said it has already updated its own Windows Defender Advanced Threat Protection software that will alert network administrators of any malicious attempts at using AMT SOL, but only for systems running Windows operating system.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/uIZV7rq.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;It’s not hard for a well-funded state-sponsored hacking group to break 
     
     </summary>
     
@@ -353,78 +700,31 @@
   </entry>
   
   <entry>
-    <title>Are stops important in the world of location tracking?</title>
-    <link href="https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/"/>
-    <id>https://gmagon.com/blog/2017/06/09/are-stops-important-in-the-world-of-location-tracking/</id>
+    <title>Papers for Teaching Undergraduate Data Science</title>
+    <link href="https://gmagon.com/blog/2017/06/09/papers-for-teaching-undergraduate-data-science/"/>
+    <id>https://gmagon.com/blog/2017/06/09/papers-for-teaching-undergraduate-data-science/</id>
     <published>2017-06-09T00:00:00.000Z</published>
-    <updated>2017-06-09T10:35:51.340Z</updated>
+    <updated>2017-06-09T10:31:39.240Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Are-stops-important-in-the-world-of-location-tracking"><a href="#Are-stops-important-in-the-world-of-location-tracking" class="headerlink" title="Are stops important in the world of location tracking?"></a>Are stops important in the world of location tracking?</h1><p>We had trips on our mind when we first built HyperTrack. We assumed that developers would start tracking a user when they expected the user to be on their way to get some place and stop when they had reached. The assumption failed. Obvious in hindsight, developers expected us to tell them (and not the other way around) when the user was on the way and when they had stopped. All they wanted to do was switch us on or off, and hand over control to HyperTrack to automatically figure out trips and stops in the life of the user. They would keep HyperTrack on through the day, through the week, or just switch it on and leave it on forever. HyperTrack was expected to notify developers about the start and end of these trips and stops, besides other useful events along the way. This led to a re-architecture of our stack that we rolled out with HyperTrack v3 in March.</p>
-<p>All you need to do now is plug in SDK into your app and call our startTracking method, say when the user logs in. That’s it. You would now get all the trips and stops that your user makes, arranged in a<em><strong>placeline</strong></em>. For every stop your user makes, you would get to know the place and duration of the stop.</p>
-<p><img src="http://img0.tuicool.com/IvUrUzr.png!web" alt=""></p>
-<p>User placeline with trips &amp; stops</p>
-<h2 id="Why-are-Stops-important"><a href="#Why-are-Stops-important" class="headerlink" title="Why are Stops important?"></a>Why are Stops important?</h2><p>When building a real time location tracking stack, it is important to distinguish between trips and stops for multiple reasons.</p>
-<h3 id="Battery-Efficiency"><a href="#Battery-Efficiency" class="headerlink" title="Battery Efficiency"></a><strong>Battery Efficiency</strong></h3><p><img src="http://img2.tuicool.com/ZRRfay7.png!web" alt="">Distinguishing between trips and stops has helped us significantly reduce the battery used by our SDK. Our SDK hibernates when the user stops and spares the receiver and transmitter until the user is moving or on their way again. An average user is on the move for 5-6 hours or less than 25% of the day. That trims down battery usage by a straight 75%.</p>
-<h3 id="Location-accuracy"><a href="#Location-accuracy" class="headerlink" title="Location accuracy"></a><strong>Location accuracy</strong></h3><p>Distinguishing between trips and stops helps filter out noise in the location data. An average user is indoor when at a stop, say inside a building. Fused location points received from the device go haywire due to flaky GPS connectivity and strong WiFi connectivity. The Operating System prefers WiFi locations over GPS due to higher confidence. However, high confidence locations from multiple WiFi networks creates a different type of noise in the data. See the image below for locations received during an hour long stop at 100 Bush St. in San Francisco.</p>
-<p>Now imagine using these high confidence location points to compute mileage of distance traveled by the user! Detecting a stop using activity data is an effective way to eliminate this noise.</p>
-<p><img src="http://img2.tuicool.com/iI3UVrM.png!web" alt=""></p>
-<p>Raw location points at a stop</p>
-<h2 id="How-do-we-automatically-detect-stops"><a href="#How-do-we-automatically-detect-stops" class="headerlink" title="How do we automatically detect stops?"></a>How do we automatically detect stops?</h2><p>Activity sensors in smartphones help detect stops in conjunction with location sensors. The smartphone Operating Systems provide raw sensor data from the accelerometer and gyroscope, as well as fused activity/motion data through their own algorithms in the chipset or system software. Similarly, the OS provides raw location data from GPS, WiFi and cellular network sensors, as well as fused location data through APIs such as Visit in iOS and Geofence in Android. Making these two data sets work in tandem helps us interpret stops automatically and reliably. A more in-depth analysis coming up in a separate post.</p>
-<h2 id="How-do-our-customers-use-stops"><a href="#How-do-our-customers-use-stops" class="headerlink" title="How do our customers use stops?"></a>How do our customers use stops?</h2><p>Here are a few unique stories of how of our customers use Stops that are automatically detected by HyperTrack.</p>
-<h3 id="Measuring-stop-durations"><a href="#Measuring-stop-durations" class="headerlink" title="Measuring stop durations"></a><strong>Measuring stop durations</strong></h3><p>A service aggregator who uses HyperTrack for location tracking provides services like beauty, auto mechanic, home cleaning, plumbing, and handyman delivered at users’ homes. One of their biggest problems is to know whether these service professionals visited the expected place at the expected time. If so, how much time did they spend at the consumer’s location. Professional services are often billed by time and resolving disputes between the consumer and service professional often comes down to figuring out the actual time spent on site. The aggregator plugged in the HyperTrack SDK and created a stopover<em><strong>action</strong></em> for each service visit. You create an<em><strong>action</strong></em> in HyperTrack for an action that the user performs in the app and that you want to track. The operations team can now seethe actual time spent by the service professional at that stop.</p>
-<p><img src="http://img0.tuicool.com/MjYjMvI.png!web" alt=""></p>
-<p>Stops in context of an action</p>
-<h3 id="Profiling-frequently-visited-places"><a href="#Profiling-frequently-visited-places" class="headerlink" title="Profiling frequently visited places"></a><strong>Profiling frequently visited places</strong></h3><p>A travel app wanted to provide local recommendations to her users. Right after she plugged the SDK in the app, HyperTrack started generating a heatmap of places where users were spending most time. This data of most frequented places became the core data set for local recommendations in the app.</p>
-<p><img src="http://img2.tuicool.com/2yaiUzJ.png!web" alt=""></p>
-<p>Places heatmap</p>
-<h3 id="Getting-geofence-alerts-for-places-of-interest"><a href="#Getting-geofence-alerts-for-places-of-interest" class="headerlink" title="Getting geofence alerts for places of interest"></a><strong>Getting geofence alerts for places of interest</strong></h3><p>A fleet of real estate agents wanted to get alerted when an agent visited one of the tens of thousands of properties in the company database. They wanted to make sure that these alerts were sent only when the agent stopped at a property, rather than personal visits and other locations. The default geofencing features provided by the OS severely limit the number of locations you may register for geofencing visits (e.g.,<a href="https://developer.android.com/training/location/geofencing.html" target="_blank" rel="external">100 geofences/device on Android</a>).</p>
-<p>This customer used HyperTrack to get alerts for visits. They <a href="https://docs.hypertrack.com/events/webhook.html" target="_blank" rel="external">received webhook events</a>when the agent visited a property and then used to to send a mobile notifications to their agents.</p>
-<p><img src="http://img2.tuicool.com/JBzq6nM.png!web" alt=""></p>
-<p>Notifications powered via geofence alerts</p>
-<h3 id="Getting-delay-alerts-with-unexpected-stops"><a href="#Getting-delay-alerts-with-unexpected-stops" class="headerlink" title="Getting delay alerts with unexpected stops"></a><strong>Getting delay alerts with unexpected stops</strong></h3><p>A customer who had builtorder tracking with HyperTrack now wanted to get an alert when an order was getting delayed by over 10 mins. In the alert, they wanted to know the reason for delay. Turned out that many delays were related to unexpected stops by the rider. They set up <a href="https://docs.hypertrack.com/events/slack.html" target="_blank" rel="external">real-time Slack alerts</a> sent to the respective fleet channels when the rider made an unexpected stop.</p>
-<p><img src="http://img0.tuicool.com/fIJrYfj.png!web" alt=""></p>
-<p>Unexpected stops on your Slack channel</p>
-<p>These are just a few stories of how developers have used stops to build better location-based services for business efficiency and product experience. We discover new stories every day as more developers start using HyperTrack in their apps. We are excited to see how you use stops in  your product. Do ping us at<a href="mailto:help@hypertrack.io" target="_blank" rel="external">help@hypertrack.io</a> and we would love to feature your story on our blog!</p>
-<p>In case you haven’t started yet, visit<a href="http://www.hypertrack.com/" target="_blank" rel="external">www.hypertrack.com</a>now to plug in the SDK into your app. It takes just a few minutes to start building your location features.</p>
+    <content type="html"><![CDATA[<h1 id="Papers-for-Teaching-Undergraduate-Data-Science"><a href="#Papers-for-Teaching-Undergraduate-Data-Science" class="headerlink" title="Papers for Teaching Undergraduate Data Science"></a>Papers for Teaching Undergraduate Data Science</h1><p>2017-06-08 21:47:19</p>
+<p><a href="http://www.tuicool.com/sites/eammyu" target="_blank" rel="external">Data Science 101</a></p>
+<p><a href="http://www.tuicool.com/articles/hit/AJRFFj2" target="_blank" rel="external">http://101.datascience.community/2017/06/08/papers-for-teaching-undergraduate-data-science/</a></p>
+<p>If you work at a university and are considering starting an undergraduate program in data science, then today’s post is for you.</p>
+<ul>
+<li><a href="https://arxiv.org/ftp/arxiv/papers/1612/1612.07140.pdf" target="_blank" rel="external">A Guide to Teaching Data Science [2016]</a><br>– focuses on increasing 3 skills (create, connect, compute) within Statistics departments to develop data science</li>
+<li><a href="https://arxiv.org/ftp/arxiv/papers/1512/1512.04456.pdf" target="_blank" rel="external">Teaching the Foundations of Data Science: An Interdisciplinary Approach [2016]</a><br>– A study and analysis of teaching an introductory course on data science with a cooperation between MIS and CS.</li>
+<li><p><a href="https://arxiv.org/pdf/1503.05570.pdf" target="_blank" rel="external">A Data Science Course for Undergraduates: Thinking with Data [2015]</a><br>– Overview of an undergraduate course in a liberal arts</p>
+<p>environment that provides students with the tools necessary to apply data science. very detailed many great topics plus R and SQL</p>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1607.00858.pdf" target="_blank" rel="external">Embracing Data Science [2016]</a><br>– Statistics needs to learn from data science to make courses more relevant</p>
+</li>
+</ul>
+<p>If you know of any other papers, please leave a comment below.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Are-stops-important-in-the-world-of-location-tracking&quot;&gt;&lt;a href=&quot;#Are-stops-important-in-the-world-of-location-tracking&quot; class=&quot;heade
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>First-Ever Data Stealing Malware Found Using Intel AMT Tool to Bypass Firewall</title>
-    <link href="https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/"/>
-    <id>https://gmagon.com/blog/2017/06/09/first-ever-data-stealing-malware-found-using-intel-amt-tool-to-bypass-firewall/</id>
-    <published>2017-06-09T00:00:00.000Z</published>
-    <updated>2017-06-12T03:50:55.396Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/uIZV7rq.png!web" alt=""></p>
-<p>It’s not hard for a well-funded state-sponsored hacking group to break into corporate networks and compromise systems with malware, but what’s challenging for them is to keep that backdoor and its communication undetectable from a firewall and other network monitoring applications.</p>
-<p>However, a<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">cyber-espionage group</a>known as “<strong>Platinum</strong>,” that is actively targeting governmental organisations, defense institutes, and telecommunication providers since at least 2009, has found a way to hide its malicious activities from host-based protection mechanisms.</p>
-<p>Microsoft has recently<a href="https://blogs.technet.microsoft.com/mmpc/2017/06/07/platinum-continues-to-evolve-find-ways-to-maintain-invisibility/" target="_blank" rel="external">discovered</a>that the cyber-espionage group is now leveraging Intel’s Active Management Technology (AMT) Serial-over-LAN (SOL) channel as a file-transfer tool to steal data from the targeted computers without detection.</p>
-<p>Intel-based chip sets come with an embedded technology, called AMT, which is designed to allow IT administrators to remotely manage and repair PCs, workstations, and servers of their organisations.</p>
-<p>The Intel AMT technology operates independently of the operating system and works even when the system is turned off, as long as the platform is connected to a line power and a network cable.</p>
-<p>That means, when AMT is enabled, any packet sent to the PC’s wired network port will be redirected to the Management Engine and passed on to AMT – the operating system, as well as network monitoring applications installed on a system, never knows what’s going around.</p>
-<p><img src="http://img0.tuicool.com/nyA3InU.png!web" alt=""></p>
-<p>Moreover, Linux systems with Intel’s chips and AMT enabled may also be exposed to Platinum’s malware.</p>
-<p>“As this embedded processor is separate from the primary Intel processor, it can execute even when the main processor is powered off and is, therefore, able to provide out-of-band (OOB) remote administration capabilities such as remote power-cycling and keyboard, video, and mouse control (KVM),” Microsoft said.</p>
-<p>“Furthermore, as the SOL traffic bypasses the host networking stack, it cannot be blocked by firewall applications running on the host device. To enable SOL functionality, the device AMT must be provisioned.”</p>
-<p>Unlike the<a href="http://thehackernews.com/2017/05/intel-server-chipsets.html" target="_blank" rel="external">remote authentication flaw</a>discovered last month that enabled hackers to take over<a href="http://thehackernews.com/2017/05/intel-amt-vulnerability.html" target="_blank" rel="external">full control of a system</a>by using AMT features without the need of any password, Platinum does not exploit any flaw in AMT, instead, requires AMT to be enabled on infected systems.</p>
-<p>Microsoft notes that SOL session requires a username and password, so either the hacking group is using stolen credentials to make its malware remotely communicate with the C&amp;C servers, or”during the provisioning process, PLATINUM could select whichever username and password they wish.”</p>
-<p>The Platinum hacking group has been using zero-day exploits,<a href="http://thehackernews.com/2016/04/windows-hotpatching-malware.html" target="_blank" rel="external">hot patching technique</a>and other advanced tactics to penetrate in their target systems and networks in South Asian countries, but this is the first time someone is abusing legitimate management tools to evade detection.</p>
-<p>Microsoft said it has already updated its own Windows Defender Advanced Threat Protection software that will alert network administrators of any malicious attempts at using AMT SOL, but only for systems running Windows operating system.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/uIZV7rq.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;It’s not hard for a well-funded state-sponsored hacking group to break 
+      &lt;h1 id=&quot;Papers-for-Teaching-Undergraduate-Data-Science&quot;&gt;&lt;a href=&quot;#Papers-for-Teaching-Undergraduate-Data-Science&quot; class=&quot;headerlink&quot; title=&quot;
     
     </summary>
     

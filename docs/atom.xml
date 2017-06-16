@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-06-15T03:35:28.514Z</updated>
+  <updated>2017-06-16T06:14:18.537Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -14,6 +14,216 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The worst volume control UI in the world</title>
+    <link href="https://gmagon.com/blog/2017/06/16/the-worst-volume-control-ui-in-the-world/"/>
+    <id>https://gmagon.com/blog/2017/06/16/the-worst-volume-control-ui-in-the-world/</id>
+    <published>2017-06-16T00:00:00.000Z</published>
+    <updated>2017-06-16T06:14:18.537Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/mm2amy7.gif" alt=""></p>
+<p><img src="http://img2.tuicool.com/EBz6be.png!web" alt=""></p>
+<p><img src="http://img0.tuicool.com/FZFVnur.gif" alt=""></p>
+<p><img src="http://img1.tuicool.com/bEZfeu7.jpg!web" alt=""></p>
+<h3 id="About-“wants”-“cans”-“needs”-and-“shoulds”"><a href="#About-“wants”-“cans”-“needs”-and-“shoulds”" class="headerlink" title="About “wants”, “cans”, “needs”, and “shoulds”"></a>About “wants”, “cans”, “needs”, and “shoulds”</h3><p>The original<a href="https://www.reddit.com/r/ProgrammerHumor/search?q=volume&amp;restrict_sr=on" target="_blank" rel="external">reddit post</a>has now hundreds of examples of terrible volume UI, and it keeps growing — a fun exercise/joke, that can strengthen one’s creative muscles and ability to think outside of the box. People have been participating simply for the fun of coming up with the most absurd and weird interactions and interface elements.</p>
+<p>But there’s definitely a reflection point about the state our industry here.</p>
+<p>I’m sure a lot of people reading this has, at some point in their careers,<strong>felt that urge of innovating no matter what</strong>. An uncontrollable desire of redesigning something that hasn’t been redesigned for too long. It_has_to be recreated. And it_has_to be innovative. Right?</p>
+<p>That’s where the wants, cans, needs, and shoulds story comes in.</p>
+<ul>
+<li>Everybody<br><strong>wants</strong><br>to innovate. The design industry keeps nudging us to be creative, innovative, and to deliver design solutions that have never been thought of before. Pressure is on us. We are bombarded with messages telling us that, in order to be considered a solid designer, we<br><em>have</em><br>to innovate at any cost.</li>
+<li>A lot of people<br><strong>can</strong><br>innovate. I definitely<br><em>can</em><br>redesign the volume control UI. All it takes is a bit of creativity and moderate design skills. Prototyping tools are becoming increasingly accessible, as well as other technologies that allow to bring to fruition whatever idea comes to mind. A few hours in front of Principle or Framer lets you create an extremely refined prototype of the interaction you are envisioning. You can also decide to create an app/site/chatbot to solve that same issue. You<br><em>can</em><br>.</li>
+<li>No one<br><strong>needs</strong><br>to. Let’s be honest: the volume control design pattern has been around for decades, works pretty well for the majority of users, and is incredibly familiar to a lot of people. You don’t<br><em>need</em><br>to reinvent it.</li>
+</ul>
+<p>But then there’s the<strong>should</strong>.</p>
+<p>ShouldI redesign the volume control UI?</p>
+<p>Shouldis interesting because of its subjectiveness. It’s a question that only makes sense to be asked in first person. And you_have_to know about much more than just design to be able to answer it — you have to understand about business, technology, culture, people. Answering the<strong>should</strong>question is a skill you only get after many, many years answering questions alike.</p>
+<p>We can try to quantify or measure the should, which makes sense some of the time. But part of it is, and will ever be, intuition. How is yours?</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/ANF3i2N" target="_blank" rel="external">https://uxdesign.cc/the-worst-volume-control-ui-in-the-world-60713dc86950?gi=218b56ad5cdc</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/mm2amy7.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/EBz6be.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How To Automatically Change The System Volume On Wake On macOS</title>
+    <link href="https://gmagon.com/blog/2017/06/16/how-to-automatically-change-the-system-volume-on-wake-on-macos/"/>
+    <id>https://gmagon.com/blog/2017/06/16/how-to-automatically-change-the-system-volume-on-wake-on-macos/</id>
+    <published>2017-06-16T00:00:00.000Z</published>
+    <updated>2017-06-16T06:14:18.527Z</updated>
+    
+    <content type="html"><![CDATA[<p>When a system goes to sleep, it preserves the state it was in. If you had apps and files open on your desktop, they will still be there when you get back. Everything from your work setup to your system configurations is stored. When you wake your system, you can pick up work where you left it off. macOS is no different. When it wakes from sleep, everything is exactly where you left it which is a good thing except in the case of your system’s volume. The volume is one thing that you might want to reset when you wake your system. If you left the volume high because you were playing music, it might startle you when you wake your system from sleep. Here’s how you can change the system volume on wake on macOS.</p>
+<p>To change the system volume on wake, you need an app called<strong>AutoVolume</strong>. It’s a free open source macOS app that well reset the system volume when you wake your Mac from sleep.</p>
+<p>Download and run AutoVolume. The app has a very basic interface. You set the volume you want your Mac to reset to when it wakes from sleep and enable it. Once you’ve set the volume, enable the app and close it. Be careful you don’t click the ‘Quit’ button. Quitting the app is different from closing it. If you quit the app, it will not change the system volume on Wake.</p>
+<p><a href="http://www.addictivetips.com/mac-os/change-the-system-volume-on-wake-macos/attachment/autovolume/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/04/AutoVolume.jpg" alt=""></a></p>
+<p>After you set the volume level, you can forget about the app. You won’t see any indication of the app running. It doesn’t so much as have a Menu bar icon. When you’re done, either put your Mac to sleep or let it enter sleep automatically.</p>
+<h3 id="RECOMMENDED-FOR-YOU"><a href="#RECOMMENDED-FOR-YOU" class="headerlink" title="RECOMMENDED FOR YOU"></a>RECOMMENDED FOR YOU</h3><p><a href="http://www.addictivetips.com/windows-tips/how-to-reset-the-system-volume-on-startup/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/02/Start-Volume-100x100.png" alt="" title="How To Reset The System Volume On Startup \[Windows\]"></a></p>
+<p><a href="http://www.addictivetips.com/category/windows-tips/" target="_blank" rel="external">Windows</a></p>
+<p><a href="http://www.addictivetips.com/windows-tips/how-to-reset-the-system-volume-on-startup/" target="_blank" rel="external">How To Reset The System Volume On Startup [Windows]</a></p>
+<p><a href="http://www.addictivetips.com/mac-os/change-the-behavior-of-the-function-keys-based-on-active-app/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/01/fluor-pref-100x100.jpg" alt="" title="Change The Behavior Of The Function Keys Based On Active App \[macOS\]"></a></p>
+<p><a href="http://www.addictivetips.com/category/mac-os/" target="_blank" rel="external">Mac OS X</a></p>
+<p><a href="http://www.addictivetips.com/mac-os/change-the-behavior-of-the-function-keys-based-on-active-app/" target="_blank" rel="external">Change The Behavior Of The Function Keys Based On Active App [macOS]</a></p>
+<p>When you wake your Mac to use it the next time around, the volume will have changed to the one you set in AutoVolume.</p>
+<p>Although you can set AutoVolume to run at start up, it doesn’t change the system volume when you boot your Mac. This app in its current state is meant to work only when you wake your Mac. If you normally let your Mac go to sleep instead of shutting it down at the end of each day, AutoVolume will ensure you or your co-workers aren’t blasted with loud audio notifications or music.</p>
+<p>The app is still under development and it has an interesting list of requested features so, even if it isn’t feature rich at the moment, it’s an app you want to keep your eye on.</p>
+<p><a href="http://www.jesseclaven.com/projects/AutoVolume/" target="_blank" rel="external">Download AutoVolume</a></p>
+<p><strong>RECOMMENDED:</strong><a href="http://www.addictivetips.com/go/fix-pc-errors/" target="_blank" rel="external"><strong>Click here to fix Windows errors and improve system performance</strong></a></p>
+<p>#### </p>
+<p>Source: <a href="http://www.addictivetips.com/mac-os/change-the-system-volume-on-wake-macos/" target="_blank" rel="external">http://www.addictivetips.com/mac-os/change-the-system-volume-on-wake-macos/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;When a system goes to sleep, it preserves the state it was in. If you had apps and files open on your desktop, they will still be there w
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>5 Former Design Trends That Aren’t Cool Anymore (So Stop Using Them)</title>
+    <link href="https://gmagon.com/blog/2017/06/16/5-former-design-trends-that-arent-cool-anymore-so-stop-using-them/"/>
+    <id>https://gmagon.com/blog/2017/06/16/5-former-design-trends-that-arent-cool-anymore-so-stop-using-them/</id>
+    <published>2017-06-16T00:00:00.000Z</published>
+    <updated>2017-06-16T06:14:18.523Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="5-Former-Design-Trends-That-Aren’t-Cool-Anymore-So-Stop-Using-Them"><a href="#5-Former-Design-Trends-That-Aren’t-Cool-Anymore-So-Stop-Using-Them" class="headerlink" title="5 Former Design Trends That Aren’t Cool Anymore (So Stop Using Them)"></a>5 Former Design Trends That Aren’t Cool Anymore (So Stop Using Them)</h2><p>If you’re like me, looking at your own design work from a few years ago can often result in some laughable or even cringe-worthy moments. Design styles have been steadily evolving and most of us can’t help but be affected by these changes. Who among us hasn’t piled on the cheesy Photoshop layer effects, all the while thinking the result was downright awesome?</p>
+<p>However, some of us are a little slower to evolve than others. Today we’ll be taking a walk down memory lane and looking at five design trends that used to be super cool, but now simply tend to make your design look outdated and even ugly. If you’re currently still stuck on these trends, it might be time to move along! We’ll help you out with some modern alternative practices that you can use to bring your design skills into the current year in a hurry.</p>
+<h2 id="Let’s-Make-Fun-of-Design"><a href="#Let’s-Make-Fun-of-Design" class="headerlink" title="Let’s Make Fun of Design"></a>Let’s Make Fun of Design</h2><p>We designers tend to take ourselves far too seriously. A post like this could easily lead to derogatory finger pointing and superiority complexes, but let’s go ahead and admit up front that we’ve all flirted with at least a few of these trends, many of us have jumped on board every single one of them.</p>
+<p>The only way to escape this fact is to be a new designer, then all you’re doing is jumping on the trends of today. Don’t worry, you won’t regret or perhaps even acknowledge these decisions for at least another three to five years.</p>
+<h3 id="What-Are-Design-Trends-Good-For"><a href="#What-Are-Design-Trends-Good-For" class="headerlink" title="What Are Design Trends Good For?"></a>What Are Design Trends Good For?</h3><p>The key to analyzing design trends is to remember that they aren’t inherently good or bad. Instead, they merely serve as a way to observe and remember the collective tastes of bygone eras.</p>
+<p>By examining which design practices seem out of style and dated, you can avoid being that guy who still wears tie dye t-shirts on a first date.</p>
+<p>In this way, they’re a fantastic history lesson on how styles have evolved over the years. Try to think of past design trends like fashion, something that was cool when you are young will eventually become deplorable, but don’t worry, by the time you’re old it’ll probably see a resurgence.</p>
+<p>The practical lesson here is that by examining which design practices seem out of style and dated, you can avoid being that guy who still wears tie dye t-shirts on a first date. Is it the case that you should absolutely abandon all of the practices on this list forever? Absolutely not. Just like with that tie dye shirt, you can probably find a time or two where these seem appropriate, even if only ironically. And who knows? They could come back and become cool again before long!</p>
+<h2 id="Bevel-and-Emboss"><a href="#Bevel-and-Emboss" class="headerlink" title="Bevel and Emboss"></a>Bevel and Emboss</h2><p>I know it’s tempting. You open up that Photoshop Effects window and_Bevel and Emboss_is like a siren calling from the rocks, pleading with you to add a touch of realism to your design. Before you know it, you’re staring at something like this:</p>
+<p><img src="http://img2.tuicool.com/IZ7FVb3.jpg!web" alt=""></p>
+<p>There’s almost nothing that screams late 90s/early 2000s design like a good old bevel treatment. We went crazy with these things and put them on everything we touched. Even beloved, age old brand logos weren’t safe from the far reaching effects of this trend.</p>
+<p>Like that picture of you on Facebook with the skinny jeans, we now look back on this trend with a “what was I thinking?” attitude. Don’t knockout it though, you’ll do the exact same thing in ten years to whatever you’re working on today!</p>
+<h3 id="Do-This-Instead"><a href="#Do-This-Instead" class="headerlink" title="Do This Instead"></a>Do This Instead</h3><p>These days the trend across the board is much more minimalistic that it was ten years ago. We’ve gone past faux realistic bevels and, for the most part, dropped them completely. Now objects tend to have simple, uniform edges with almost no effects apart from the occasional subtle shadow.<a href="http://adrians.info/" target="_blank" rel="external">The World of Adrian Le Bas</a>is a prime example:</p>
+<p><img src="http://img0.tuicool.com/aMnEvmA.jpg!web" alt=""></p>
+<h2 id="Web-2-0-Gloss"><a href="#Web-2-0-Gloss" class="headerlink" title="Web 2.0 Gloss"></a>Web 2.0 Gloss</h2><p>The bevel and emboss trend wasn’t suddenly abandoned one day in favor of minimalism. Instead, it had to evolve into something even more ornate before we decided to run in the completely opposite direction.</p>
+<p>Bevels alone tend to give an almost clay-like look to an object. Add in some shine though and you’ve suddenly got some fancy plastic and glass effects:</p>
+<p><img src="http://img0.tuicool.com/7vQB32Q.jpg!web" alt=""></p>
+<p>This one still hasn’t effectively been killed off, you need not travel far to find its influences. I’ll even gloss up a button or two myself from time to time, though certainly not to this extreme. The problem is of course that stylistically, designers have largely dropped this and are moving once again towards more subtle choices. Implementing a heavily glossed web 2.0 style on your site is a surefire way to make a brand new site seem like it’s already due for a design refresh.</p>
+<h3 id="Do-This-Instead-1"><a href="#Do-This-Instead-1" class="headerlink" title="Do This Instead"></a>Do This Instead</h3><p>The good news is that “attractive” buttons are even easier to make these days. All you need is a little border-radius and a slight drop-shadow or gradient. The effect is a nice button style that stands out without being too flashy. Check out this example from<a href="http://www.shopify.com/" target="_blank" rel="external">Shopify</a>.</p>
+<p><img src="http://img0.tuicool.com/eYfumqq.jpg!web" alt=""></p>
+<p>It’s interesting to note how technology affects design trends. The Photoshop-centric effects of yesterday are giving way to CSS3 styles of today. You can expect this to continue as new possibilities come to light with pure code-driven design.</p>
+<h2 id="Lots-of-Cursive-Text"><a href="#Lots-of-Cursive-Text" class="headerlink" title="Lots of Cursive Text"></a>Lots of Cursive Text</h2><p><img src="http://img1.tuicool.com/JRVZR3a.jpg!web" alt=""></p>
+<p>This one is a possible exception to my earlier statement about design trends being neither good nor bad from a purely objective standpoint. If a trend actually stands in the way of the success of a design, then it’s easy to argue that it is in fact an example of “bad” design.</p>
+<p>I find this to be the case with big blocks of cursive text. For some reason, this is a trend that simply refuses to die. Following this trend is a double whammy of ugly design. Not only does it make your site uncomfortable to browse and read through, it also tends to reflect many of the typeface woes of the 1990s. If there’s one thing you_don’t_currently want someone to say about your site, it’s that it looks like something from when developers with no real design experience were first beginning to apply basic styles to websites.</p>
+<h3 id="Do-This-Instead-2"><a href="#Do-This-Instead-2" class="headerlink" title="Do This Instead"></a>Do This Instead</h3><p>Instead of hitting your visitors over the head with overuse of that fancy typeface that you found free online, try instead sprinkling it in extremely selectively. Elementary school taught you that cursive is for professional communication; they lied. In design it should be used very selectively as an occasional accent to more readable alternatives.</p>
+<p>There are dozens of<a href="https://designshack.net/articles/inspiration/100-beautiful-script-brush-calligraphy-fonts/" target="_blank" rel="external">beautiful script and calligraphy fonts</a>that have popped up in recent years from independent artists. The key is to choose one that’s readable, and don’t over-use it!</p>
+<p><img src="http://img2.tuicool.com/B7bemyB.jpg!web" alt=""></p>
+<h2 id="The-Burst"><a href="#The-Burst" class="headerlink" title="The Burst"></a>The Burst</h2><p>This one has roots dating back to the early days of even print design. The burst is a tried and true way to grab your viewer’s attention. It says “hey, here’s some important information!” in a easy to implement and instantly recognizable way. The problem: it’s ugly and makes your design look like a marketing professor threw up on it.</p>
+<p><img src="http://img2.tuicool.com/Ibi22yj.jpg!web" alt=""></p>
+<p>My main problem with this is that it reflects a complete lack of thought and imagination. Instead of considering how to effectively integrate a logical and appropriate break into the design pattern, the designers who use this simply use the very first idea that pops into their heads. It would also be the very first idea of every non-designer as well, making it the most uncreative design element you could possibly use.</p>
+<h3 id="Do-This-Instead-3"><a href="#Do-This-Instead-3" class="headerlink" title="Do This Instead"></a>Do This Instead</h3><p>The simple solution here is to put a_tiny bit_more thought into creating an element that fits with your overall design theme but still violates the page enough to grab attention. While there’s nothing worse than an invasive pop-over to promote a sale or discount, putting some thought into a stylish and well-designed solution can work well.<a href="https://www.pixelunion.net/apps/pixelpop/" target="_blank" rel="external">PixelPop</a>is a tool that does this perfectly, with thoughtful design and simple templates.</p>
+<p><img src="http://img0.tuicool.com/NbMRvaQ.jpg!web" alt=""></p>
+<h3 id="Retro-Redemption"><a href="#Retro-Redemption" class="headerlink" title="Retro Redemption"></a>Retro Redemption</h3><p>The real key to mastering design trends is to know what they suggest. Don’t implement a certain style just because you feel good about it today, instead analyze what it is that you want to achieve and what will work for and/or against that idea.</p>
+<p>For instance, if you’re trying to create a modern e-commerce site that reflects current style choices in web design, you should avoid bursts like they’re an 80s rock-a-mullet. However, if you’re_intentionally_creating a retro look, then suddenly bursts once again become a perfectly legitimate and even attractive choice. Check out the<a href="http://www.tomanddan.com/" target="_blank" rel="external">Tom and Dan Show site</a>below to see this idea in action:</p>
+<p><img src="http://img2.tuicool.com/ayMFzim.jpg!web" alt=""></p>
+<h2 id="Dramatic-Drop-Shadows"><a href="#Dramatic-Drop-Shadows" class="headerlink" title="Dramatic Drop Shadows"></a>Dramatic Drop Shadows</h2><p>The story here is the same as that of the bevel. That Photoshop “Drop Shadow” layer style is just begging to be played with. If you start by tweaking the default effect, you’re likely to come up with something like this:</p>
+<p><img src="http://img2.tuicool.com/ZbYrMf7.jpg!web" alt=""></p>
+<p>This shadow is big, soft, has plenty of distance and has a color that contrasts heavily with the background. Unfortunately, the result is a design that instantly reeks of cheesy fake lighting effects.</p>
+<h3 id="Do-This-Instead-4"><a href="#Do-This-Instead-4" class="headerlink" title="Do This Instead"></a>Do This Instead</h3><p>There are still a million different popular ways to use drop shadows, the above example simply isn’t one of them. If you like the soft, feathered edge look, try blending the shadow in with the background so that it serves to make the text a tad more realistic without being a major distraction.</p>
+<p><img src="http://img1.tuicool.com/aQFrimz.jpg!web" alt=""></p>
+<p>Another shadow treatment that’s popular right now harkens back to the days before it was common to use soft shadows. This effect uses a non-feathered drop shadow that has a little bit more of a retro feel.</p>
+<p><img src="http://img2.tuicool.com/raQNVzU.jpg!web" alt=""></p>
+<p>You can take this a step further by layering the shadow with a knock section in between the shadow and the text. Once again, this is leaning towards a refined aged feel.</p>
+<p><img src="http://img0.tuicool.com/zqiMJjA.jpg!web" alt=""></p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>The examples above should serve to illustrate the idea that following antiquated trends can in fact have a negative effect on your designs and the impressions they leave on your viewers. Once again, the main principal I’m trying to communicate is<em>intentionality</em>. As long as you know what it is your design style of choice is communicating, and that concept or time period is exactly what you’re going for, then you’re on the right track.</p>
+<p>Also keep in mind that design trends wouldn’t evolve at all without pioneers that go against what’s currently popular and blaze their own trail. Don’t be too eager to jump onto the overused tricks bandwagon if you’re working on a project that merits some innovative thought. Go your own way and let everyone follow you!</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/RzUNNrJ" target="_blank" rel="external">https://designshack.net/articles/graphics/5-former-design-trends-that-arent-cool-anymore-so-stop-using-them/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;5-Former-Design-Trends-That-Aren’t-Cool-Anymore-So-Stop-Using-Them&quot;&gt;&lt;a href=&quot;#5-Former-Design-Trends-That-Aren’t-Cool-Anymore-So-Sto
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>10 Signs of a Great Company, Listed in Order of Importance</title>
+    <link href="https://gmagon.com/blog/2017/06/16/10-signs-of-a-great-company-listed-in-order-of-importance/"/>
+    <id>https://gmagon.com/blog/2017/06/16/10-signs-of-a-great-company-listed-in-order-of-importance/</id>
+    <published>2017-06-16T00:00:00.000Z</published>
+    <updated>2017-06-16T06:14:18.517Z</updated>
+    
+    <content type="html"><![CDATA[<p>Greatness is hard to define and even harder to attain.</p>
+<p>Still, we know greatness when we see it. Sometimes, it’s a<a href="https://madeby.google.com/home" target="_blank" rel="external">brilliant new gadget</a>. Or maybe it’s a book that<a href="https://www.amazon.com/But-What-If-Were-Wrong/dp/0399184139/ref=asap_bc?ie=UTF8" target="_blank" rel="external">rises above the rest</a>. A football star like Tom Brady, even at 39, is great because of who he is and his<a href="https://www.theguardian.com/sport/2017/feb/05/new-england-patriots-super-bowl-51-champions-atlanta-falcons" target="_blank" rel="external">accomplishments</a>.</p>
+<p>When a company stands out, you know because there are certain traits and attributes you can identify, sometimes just by paying closer attention. They are widespread and hard to ignore, You can look for these signs by listening closely to what people say in a meeting or when they banter in the cafeteria or after work.</p>
+<p>Here are the signs, in order of importance leading up to the most critical attribute:</p>
+<h2 id="1-Everyone-is-having-fun"><a href="#1-Everyone-is-having-fun" class="headerlink" title="1. Everyone is having fun"></a>1. Everyone is having fun</h2><p>This is the ultimate entry-point for greatness. It starts here. It’s just fun to be around companies where everyone knows how to do all of the other things on my list below. You want to be there. You feel encouraged and motivated. It’s a great place to hang out, even after work or on weekends. Fun radiates out of the place, and it is that_allure_that attracts even more talented employees one after the other. Without a sense of fun and creativity, forget ever achieving any level of greatness. To be great, you have to be a beacon.</p>
+<h2 id="2-No-one-is-pedantic"><a href="#2-No-one-is-pedantic" class="headerlink" title="2. No one is pedantic"></a>2. No one is pedantic</h2><p>Why am I using such a specific word here? How is it related to great companies? For 26 years, I’ve been involved in multiple organizations and volunteered at many different entities both small and large, and the one thing that seems to kill all progress and creativity is a lack of respect. The sure sign that respect is not common in a company culture is when everyone acts like they know everything. Sure, the mantra “be curious” is important. You can’t be_curious_and_pedantic_at the same time. When the company is filled with people who want to learn new things, it becomes a great place.</p>
+<h2 id="3-Empathy-abounds"><a href="#3-Empathy-abounds" class="headerlink" title="3. Empathy abounds"></a>3. Empathy abounds</h2><p>Empathy is an ability to see another point-of-view. When everyone seems to have that ability, look out–that company is going to excel. It’s going to blow the roof off, in fact. We all need each other to help us grow, and empathy is an engine for that. I’m going to help you, you’re going to help me–that’s called<em>teamwork</em>. Sadly, empathy is not that common. Tied closely with that sense of pride and a know-it-all-attitude is a closed mentality that is more about self advancement. I’ve visited hundreds and hundreds of companies, and the one trait that seems to stick out when there’s a bad one is when everyone is trying to advance their own career. Empathy is in short supply, and so is greatness.</p>
+<h2 id="4-Expectations-are-crystal-clear-to-everyone"><a href="#4-Expectations-are-crystal-clear-to-everyone" class="headerlink" title="4. Expectations are crystal clear to everyone"></a>4. Expectations are crystal clear to everyone</h2><p>Years ago, I had a boss who never bothered to explain what we were doing or why. Then, he became critical when we didn’t do what he wanted. Huh? Every employee was shooting in the dark with a pop gun. We didn’t know where to aim, when to shoot, or why we were even in the room. As humans, we all want to know<em>why</em>–what’s the vision here? Where are we even going? Why are we doing these things? If that’s crystal clear, then it creates a great company because the entire organization becomes unified. Even more importantly, the goals are clear to everyone involved. It’s not a well-kept secret.</p>
+<h2 id="5-Grace-is-prevalent"><a href="#5-Grace-is-prevalent" class="headerlink" title="5. Grace is prevalent"></a>5. Grace is prevalent</h2><p>What happens when employees miss their goals? What if you know where you’re going as an organization but you don’t quite end up getting there in the end? This is where grace is important. I’m convinced that showing grace instead of a demeaning, belittling attitude is what makes a company even greater. I’ll say it’s even more important than having fun. Why is that? Because grace is a license to fail, and being free to try new things and fail at times is what makes people work hard and want to stick around. A culture of criticism kills momentum. A culture of grace, encouragement, understanding, and excitement will turn any organization into a<em>giant</em>.</p>
+<h2 id="6-Roles-are-clearly-defined"><a href="#6-Roles-are-clearly-defined" class="headerlink" title="6. Roles are clearly defined"></a>6. Roles are clearly defined</h2><p>“I never know what I’m doing” is a tough predicament for any employee. Employees feel anxious and awkward. You have to set expectations about the<em>why</em>. However, even more important as a starting point for greatness is the idea of role definition. Employee need to feel empowered, and that’s where clear roles come into play. A role is a reason. It’s a way to define why that employee is even at the company and the scope of their involvement. You can’t make expectations until you have informed the employee about how much power he or she can wield. Then, set them loose. Greatness will happen.</p>
+<h2 id="7-Everyone-sees-and-rewards-hard-work"><a href="#7-Everyone-sees-and-rewards-hard-work" class="headerlink" title="7. Everyone sees and rewards hard work"></a>7. Everyone sees and rewards hard work</h2><p>I’ve been involved with companies that really know how to recognize employees. On Slack, they’re praising each other all day–in a real way that shows true pride in the accomplishments of others. We communicated! We discussed! We resolved! It’s a team exercise writ large (and in digital form), one that involves frequent pats on the back when there’s a milestone. It’s crazy to think some companies don’t do this. They only acknowledge hard work in rare instances. Most of the time, they are treating employees like cattle that need to be herded–and kicked if they get out of line.</p>
+<h2 id="8-Every-employee-is-happy"><a href="#8-Every-employee-is-happy" class="headerlink" title="8. Every employee is happy"></a>8. Every employee is happy</h2><p>Here’s a great way to define happiness at work: An employee is happy when they are perfectly suited to their role. They are challenged enough, placed into the proper department, encouraged constantly to achieve great things, and know their expectations. A happy group of employees creates a dynamic environment. An unhappy group causes constant conflict and stress, which makes the company sink like a stone.</p>
+<h2 id="9-Mentoring-is-more-important-than-performance"><a href="#9-Mentoring-is-more-important-than-performance" class="headerlink" title="9. Mentoring is more important than performance"></a>9. Mentoring is more important than performance</h2><p>You know, most of us will figure it out and do great work. Beaten into submission by an angry boss won’t work. Mentoring will. I wanted to list this one as the most important attribute of a great company, but it does fall into second place. (Only a great leader can mentor effectively, so that has to be number one.) Yet, it’s so critical. It’s a way to hand down tacit knowledge. Great companies know how to do that. Great employees know how to mentor one another. They are highly motivated to train others because they know that’s what creates greatness. In fact, that’s really the definition to remember: A great company is one where the most important knowledge is handed down from one employee to the next in a way that’s built on the foundation of<em>individual relationships</em>.</p>
+<h2 id="10-There’s-a-great-leader"><a href="#10-There’s-a-great-leader" class="headerlink" title="10. There’s a great leader"></a>10. There’s a great leader</h2><p>I’ve written about this before, but behind every great company there is a great leader. Call it the trickle-down effect of management. Someone at the top practices all of the attributes listed above and demonstrates what it means to show empathy, recognize hard work, and promote mentoring. Greatness happens. A great leader has an attitude that generates enthusiasm and happiness among the staff. It’s contagious.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/B3uU73y" target="_blank" rel="external">https://www.inc.com/john-brandon/10-signs-of-a-great-company-listed-in-or</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Greatness is hard to define and even harder to attain.&lt;/p&gt;
+&lt;p&gt;Still, we know greatness when we see it. Sometimes, it’s a&lt;a href=&quot;https://
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How To Get Bed Time Alerts Based On When You Need To Wake Up</title>
+    <link href="https://gmagon.com/blog/2017/06/16/how-to-get-bed-time-alerts-based-on-when-you-need-to-wake-up/"/>
+    <id>https://gmagon.com/blog/2017/06/16/how-to-get-bed-time-alerts-based-on-when-you-need-to-wake-up/</id>
+    <published>2017-06-16T00:00:00.000Z</published>
+    <updated>2017-06-16T06:14:18.532Z</updated>
+    
+    <content type="html"><![CDATA[<p>Apple added a new feature in the<a href="https://www.addictivetips.com/ios/how-to-set-up-the-bedtime-alarm-in-ios-10/" target="_blank" rel="external">iOS clock app called Bed Time</a>. The feature helps you get 7-8 hours of sleep everyday. It asks you what time it is you have to wake up the next day, and then tells you when to go to bed. It’s useful considering most people use their phones as an alarm. The only thing is, if you’re awake and working, the device you’re looking at is going to be a desktop, not your phone.<strong>Sandman</strong>is a desktop app available for Windows, Mac, and Linux that does something similar to the iOS clock app. It gives you bed time alerts that ensure you get 7-8 hours of sleep.</p>
+<p>Sandman looks at two things when it gives you bed time alerts; your working hours, and when you need to wake up. The app was designed with developers in mind who are prone to working long hours and missing essential sleep. The app learns what times a user works and tells them when enough is enough and they should go to bed.</p>
+<p>Open Sandman. When you start out, it doesn’t know what your work schedule is. All you can do is tell the app when you need to wake up. It will work with that until it knows you schedule better.</p>
+<p><a href="http://www.addictivetips.com/windows-tips/get-bed-time-alerts-based/attachment/sandman/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/06/sandman.jpg" alt=""></a></p>
+<p>When it’s time for bed, Sandman will give you an alert. You can dismiss it if you don’t like sleep, or you can use the Shutdown button on the alert to turn your system off and hit the hay.</p>
+<p><a href="http://www.addictivetips.com/windows-tips/get-bed-time-alerts-based/attachment/sandman-alert/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/06/sandman-alert.jpg" alt=""></a></p>
+<h3 id="RECOMMENDED-FOR-YOU"><a href="#RECOMMENDED-FOR-YOU" class="headerlink" title="RECOMMENDED FOR YOU"></a>RECOMMENDED FOR YOU</h3><p><a href="http://www.addictivetips.com/mac-os/change-the-system-volume-on-wake-macos/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/04/AutoVolume-100x100.jpg" alt="" title="How To Automatically Change The System Volume On Wake On macOS"></a></p>
+<p><a href="http://www.addictivetips.com/category/mac-os/" target="_blank" rel="external">Mac OS X</a></p>
+<p><a href="http://www.addictivetips.com/mac-os/change-the-system-volume-on-wake-macos/" target="_blank" rel="external">How To Automatically Change The System Volume On Wake On macOS</a></p>
+<p><a href="http://www.addictivetips.com/ios/how-to-fix-alerts-not-dismissing-automatically-in-ios-10/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2016/10/ios-alerts-100x100.png" alt="" title="How To Fix Alerts Not Dismissing Automatically In iOS 10"></a></p>
+<p><a href="http://www.addictivetips.com/category/ios/" target="_blank" rel="external">iOS</a></p>
+<p><a href="http://www.addictivetips.com/ios/how-to-fix-alerts-not-dismissing-automatically-in-ios-10/" target="_blank" rel="external">How To Fix Alerts Not Dismissing Automatically In iOS 10</a></p>
+<p>Sandman is pretty smart. It takes into account how long you need to fall asleep. Some people fall asleep almost immediately. Other people stay awake for a few hours contemplating the meaning of life. Sandman’s bed time alerts can factor that time in. To configure how long it takes to for you to fall asleep, go to Sandman’s preferences via the Ctrl+P  shortcut.</p>
+<p>Set how long it takes you to fall asleep. Sandman can also alert you when you’ve been working for twelve hours straight though you can customize this time slot to make it shorter or longer. Additionally, you can switch from the 12 hour format to the 24 hour format if you like.</p>
+<p><a href="http://www.addictivetips.com/windows-tips/get-bed-time-alerts-based/attachment/sandmand-preferences/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/06/sandmand-preferences.jpg" alt=""></a></p>
+<p>If you lose track of time when you’re working then consider using Sandman. Work is important but doing it in a sleep deprived state is hardly good for you.</p>
+<p>You can dismiss an alert from Sandman if you’re not ready to go to bed, but don’t make a habit of it. Try and get the required sleep you need everyday.</p>
+<p><a href="https://github.com/alexanderepstein/Sandman" target="_blank" rel="external">Download Sandman</a></p>
+<p>Source: <a href="http://www.addictivetips.com/windows-tips/get-bed-time-alerts-based/" target="_blank" rel="external">http://www.addictivetips.com/windows-tips/get-bed-time-alerts-based/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Apple added a new feature in the&lt;a href=&quot;https://www.addictivetips.com/ios/how-to-set-up-the-bedtime-alarm-in-ios-10/&quot; target=&quot;_blank&quot; re
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>The 10 Best Offline Games for iOS</title>
@@ -89,43 +299,6 @@
   </entry>
   
   <entry>
-    <title>How To Store Or Remove Your Apple ID Password For Free Purchases [macOS]</title>
-    <link href="https://gmagon.com/blog/2017/06/15/how-to-store-or-remove-your-apple-id-password-for-free-purchases-macos/"/>
-    <id>https://gmagon.com/blog/2017/06/15/how-to-store-or-remove-your-apple-id-password-for-free-purchases-macos/</id>
-    <published>2017-06-15T00:00:00.000Z</published>
-    <updated>2017-06-15T03:35:28.503Z</updated>
-    
-    <content type="html"><![CDATA[<p>The Mac App Store and the iTunes App Store both ask for your password when you download an app. You will be asked to enter your Apple ID password regardless if you’re buying an app or downloading a free one. This is done in part to prevent unauthorized purchases. It’s also a good deterrent for when the kids go wild on the App Store. The only problem is that it can get annoying. If you don’t want to enter your password for free app downloads, you can save it. Likewise, if you’re regretting this decision, you can remove your Apple ID password for free purchases. Here’s how you can store or remove your Apple ID password for free purchases in macOS.</p>
-<h3 id="Store-Apple-ID-Password-For-Free-Purchases"><a href="#Store-Apple-ID-Password-For-Free-Purchases" class="headerlink" title="Store Apple ID Password For Free Purchases"></a>Store Apple ID Password For Free Purchases</h3><p>There are two ways to go about this. One, open the Mac App Store app and look for a free app. Click the ‘Get’ button and enter your Apple ID password when prompted.</p>
-<p>The Mac App Store app will prompt you to save your password for future free purchases. It’s very much like your browser asking to store login credentials for a website.</p>
-<p>When you see the ‘Save Password for Free Items’ prompt, click ‘Yes’.</p>
-<p><a href="http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/attachment/app-store-macos-password/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/03/app-store-macos-password.jpg" alt=""></a></p>
-<h3 id="RECOMMENDED-FOR-YOU"><a href="#RECOMMENDED-FOR-YOU" class="headerlink" title="RECOMMENDED FOR YOU"></a>RECOMMENDED FOR YOU</h3><p><a href="http://www.addictivetips.com/ios/how-to-change-the-country-region-for-your-apple-id/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/01/apple-id-country-region-100x100.jpg" alt="" title="How To Change The Country Or Region For Your Apple ID"></a></p>
-<p><a href="http://www.addictivetips.com/category/ios/" target="_blank" rel="external">iOS</a></p>
-<p><a href="http://www.addictivetips.com/ios/how-to-change-the-country-region-for-your-apple-id/" target="_blank" rel="external">How To Change The Country Or Region For Your Apple ID</a></p>
-<p><a href="http://www.addictivetips.com/web/get-an-alert-when-airpods-are-in-stock-at-your-nearest-apple-store/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2016/12/is-in-stock-100x100.png" alt="" title="Get An Alert When AirPods Are In Stock At Your Nearest Apple Store"></a></p>
-<p><a href="http://www.addictivetips.com/category/web/" target="_blank" rel="external">Web</a></p>
-<p><a href="http://www.addictivetips.com/web/get-an-alert-when-airpods-are-in-stock-at-your-nearest-apple-store/" target="_blank" rel="external">Get An Alert When AirPods Are In Stock At Your Nearest Apple Store</a></p>
-<p>If the prompt doesn’t appear, you can use the second method.</p>
-<p>Open the System Preferences app. Click the App Store preference. At the very bottom is an option called ‘Free Downloads’. Open the drop-down next to it and select ‘Save Password’. macOS might prompt you to enter your Apple ID password. This will not affect paid app downloads. You will still be asked to enter your password when you buy an app.</p>
-<p><a href="http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/attachment/system-preferences-for-macos/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/03/system-preferences-for-macos.jpg" alt=""></a></p>
-<h3 id="Remove-Apple-ID-Password-For-Free-Purchases"><a href="#Remove-Apple-ID-Password-For-Free-Purchases" class="headerlink" title="Remove Apple ID Password For Free Purchases"></a>Remove Apple ID Password For Free Purchases</h3><p>Open System Preferences and select ‘App Store’. At the bottom of this preference pane open the Free Downloads drop-down. Select the ‘Require Password’ option. The next time you download a free app from the Mac App Store, you will have to enter you Apple ID password.</p>
-<p><a href="http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/attachment/remove-app-store-password-for-free-apps/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/03/remove-app-store-password-for-free-apps.jpg" alt=""></a></p>
-<p>This option has its pros and cons. The pro here is that you don’t need to verify your identity when you download a free app. A free app, by and large, will not create a problem for you. The con is that even free apps can be problematic in terms of content. If you don’t want to save your Apple ID password for free apps to protect minors who might use your Mac, consider using parental controls instead of removing your Apple ID password.</p>
-<p><strong>RECOMMENDED:</strong><a href="http://www.addictivetips.com/go/fix-pc-errors/" target="_blank" rel="external"><strong>Click here to fix Windows errors and improve system performance</strong></a></p>
-<p>Source: <a href="http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/" target="_blank" rel="external">http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;The Mac App Store and the iTunes App Store both ask for your password when you download an app. You will be asked to enter your Apple ID 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>How To Open Recently Quit Apps On macOS</title>
     <link href="https://gmagon.com/blog/2017/06/15/how-to-open-recently-quit-apps-on-macos/"/>
     <id>https://gmagon.com/blog/2017/06/15/how-to-open-recently-quit-apps-on-macos/</id>
@@ -163,39 +336,36 @@
   </entry>
   
   <entry>
-    <title>How To Get Google Assistant On macOS</title>
-    <link href="https://gmagon.com/blog/2017/06/15/how-to-get-google-assistant-on-macos/"/>
-    <id>https://gmagon.com/blog/2017/06/15/how-to-get-google-assistant-on-macos/</id>
+    <title>How To Store Or Remove Your Apple ID Password For Free Purchases [macOS]</title>
+    <link href="https://gmagon.com/blog/2017/06/15/how-to-store-or-remove-your-apple-id-password-for-free-purchases-macos/"/>
+    <id>https://gmagon.com/blog/2017/06/15/how-to-store-or-remove-your-apple-id-password-for-free-purchases-macos/</id>
     <published>2017-06-15T00:00:00.000Z</published>
-    <updated>2017-06-15T03:35:28.487Z</updated>
+    <updated>2017-06-15T03:35:28.503Z</updated>
     
-    <content type="html"><![CDATA[<p>Google Assistant is Google’s answer to Siri, or Cortana. Google Assistant is the company’s attempt at a virtual assistant app. Unlike Apple though, Google isn’t restricting it to just Android. There’s already a Google Assistant iOS app which is limited compared to its Android counterpart but it’s there. You won’t see a Siri app for Android any time soon. While Google has made the Google Assistant app available on iOS of its own volition, it hasn’t released a desktop app for it. This is why you can’t get Google Assistant on macOS or Windows the same way you can get Siri and Cortana respectively.</p>
-<p>The good news is, the developer community is on it.<strong>MacAssistant</strong>is a free open-source Mac app that lets you use Google Assistant on macOS. The app is still in beta but it works reasonably well.</p>
-<p>Download MacAssistant. The developer isn’t verified so if you’re running the latest version of macOS, you won’t be able to run the app by just double-clicking it. Instead, open it Finder. Hold down the Ctrl key and then click the app. Select ‘Open’ from the context menu and the app will open.</p>
-<p><a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/attachment/open-app-unidentified-dev/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/open-app-unidentified-dev.jpg" alt=""></a></p>
-<p>MacAssistant runs from the Menu bar. Click the app icon in the Menu bar and sign in to your Google account.</p>
-<p><a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/attachment/macassistant-sign-in/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/MacAssistant-sign-in.jpg" alt=""></a></p>
-<h3 id="RECOMMENDED-FOR-YOU"><a href="#RECOMMENDED-FOR-YOU" class="headerlink" title="RECOMMENDED FOR YOU"></a>RECOMMENDED FOR YOU</h3><p><a href="http://www.addictivetips.com/android/get-google-assistant-android-phone/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/03/google-assistant-settings-100x100.jpg" alt="" title="How To Get Google Assistant On Your Android Phone"></a></p>
-<p><a href="http://www.addictivetips.com/category/android/" target="_blank" rel="external">Android</a></p>
-<p><a href="http://www.addictivetips.com/android/get-google-assistant-android-phone/" target="_blank" rel="external">How To Get Google Assistant On Your Android Phone</a></p>
-<p><a href="http://www.addictivetips.com/ios/get-google-assistant-on-ios/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/Google-Assistant-Coffee-Shops-100x100.png" alt="" title="How To Get Google Assistant On iOS"></a></p>
+    <content type="html"><![CDATA[<p>The Mac App Store and the iTunes App Store both ask for your password when you download an app. You will be asked to enter your Apple ID password regardless if you’re buying an app or downloading a free one. This is done in part to prevent unauthorized purchases. It’s also a good deterrent for when the kids go wild on the App Store. The only problem is that it can get annoying. If you don’t want to enter your password for free app downloads, you can save it. Likewise, if you’re regretting this decision, you can remove your Apple ID password for free purchases. Here’s how you can store or remove your Apple ID password for free purchases in macOS.</p>
+<h3 id="Store-Apple-ID-Password-For-Free-Purchases"><a href="#Store-Apple-ID-Password-For-Free-Purchases" class="headerlink" title="Store Apple ID Password For Free Purchases"></a>Store Apple ID Password For Free Purchases</h3><p>There are two ways to go about this. One, open the Mac App Store app and look for a free app. Click the ‘Get’ button and enter your Apple ID password when prompted.</p>
+<p>The Mac App Store app will prompt you to save your password for future free purchases. It’s very much like your browser asking to store login credentials for a website.</p>
+<p>When you see the ‘Save Password for Free Items’ prompt, click ‘Yes’.</p>
+<p><a href="http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/attachment/app-store-macos-password/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/03/app-store-macos-password.jpg" alt=""></a></p>
+<h3 id="RECOMMENDED-FOR-YOU"><a href="#RECOMMENDED-FOR-YOU" class="headerlink" title="RECOMMENDED FOR YOU"></a>RECOMMENDED FOR YOU</h3><p><a href="http://www.addictivetips.com/ios/how-to-change-the-country-region-for-your-apple-id/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/01/apple-id-country-region-100x100.jpg" alt="" title="How To Change The Country Or Region For Your Apple ID"></a></p>
 <p><a href="http://www.addictivetips.com/category/ios/" target="_blank" rel="external">iOS</a></p>
-<p><a href="http://www.addictivetips.com/ios/get-google-assistant-on-ios/" target="_blank" rel="external">How To Get Google Assistant On iOS</a></p>
-<p>We should warn you now that this app will have broad control over your Google account. It’s not something to worry about given the app is open source.</p>
-<p>After you sign in, click the Menu bar button again. In the pop-up that opens, click the mic button and<a href="https://www.addictivetips.com/android/get-google-assistant-android-phone/" target="_blank" rel="external">Google Assistant</a>will ‘listen’ for your command. You don’t need to give the app additional access to your mic as it already has access to it.</p>
-<p><a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/attachment/google-assistant-on-macos/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/google-assistant-on-macOS.jpg" alt=""></a></p>
-<p>Commands at present are limited but you can ask it general questions like what the weather’s like outside.</p>
-<p><a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/attachment/google-assistant-2/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/google-assistant-1.jpg" alt=""></a></p>
-<p>The answer to whatever you ask Google Assistant is spoken back to you. There’s no UI for it just now. If you have the volume turned down, you won’t be able to use MacAssistant in its present form.</p>
-<p>Like the earlier versions of Google Assistant, MacAssistant works only with voice input. Unlike the app on Android which now lets you<a href="http://www.addictivetips.com/android/input-text-in-google-assistant/" target="_blank" rel="external">input text in Google Assistant</a>, MacAssistant works only with voice commands. The app is still in its infancy so while we may have a wishlist of features, it’s not really fair to bring it up considering the app’s only been around for a week. It’s in active development so you can expect it to improve exponentially.</p>
-<p><a href="https://github.com/vanshg/MacAssistant" target="_blank" rel="external">Download MacAssistant </a></p>
+<p><a href="http://www.addictivetips.com/ios/how-to-change-the-country-region-for-your-apple-id/" target="_blank" rel="external">How To Change The Country Or Region For Your Apple ID</a></p>
+<p><a href="http://www.addictivetips.com/web/get-an-alert-when-airpods-are-in-stock-at-your-nearest-apple-store/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2016/12/is-in-stock-100x100.png" alt="" title="Get An Alert When AirPods Are In Stock At Your Nearest Apple Store"></a></p>
+<p><a href="http://www.addictivetips.com/category/web/" target="_blank" rel="external">Web</a></p>
+<p><a href="http://www.addictivetips.com/web/get-an-alert-when-airpods-are-in-stock-at-your-nearest-apple-store/" target="_blank" rel="external">Get An Alert When AirPods Are In Stock At Your Nearest Apple Store</a></p>
+<p>If the prompt doesn’t appear, you can use the second method.</p>
+<p>Open the System Preferences app. Click the App Store preference. At the very bottom is an option called ‘Free Downloads’. Open the drop-down next to it and select ‘Save Password’. macOS might prompt you to enter your Apple ID password. This will not affect paid app downloads. You will still be asked to enter your password when you buy an app.</p>
+<p><a href="http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/attachment/system-preferences-for-macos/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/03/system-preferences-for-macos.jpg" alt=""></a></p>
+<h3 id="Remove-Apple-ID-Password-For-Free-Purchases"><a href="#Remove-Apple-ID-Password-For-Free-Purchases" class="headerlink" title="Remove Apple ID Password For Free Purchases"></a>Remove Apple ID Password For Free Purchases</h3><p>Open System Preferences and select ‘App Store’. At the bottom of this preference pane open the Free Downloads drop-down. Select the ‘Require Password’ option. The next time you download a free app from the Mac App Store, you will have to enter you Apple ID password.</p>
+<p><a href="http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/attachment/remove-app-store-password-for-free-apps/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/03/remove-app-store-password-for-free-apps.jpg" alt=""></a></p>
+<p>This option has its pros and cons. The pro here is that you don’t need to verify your identity when you download a free app. A free app, by and large, will not create a problem for you. The con is that even free apps can be problematic in terms of content. If you don’t want to save your Apple ID password for free apps to protect minors who might use your Mac, consider using parental controls instead of removing your Apple ID password.</p>
 <p><strong>RECOMMENDED:</strong><a href="http://www.addictivetips.com/go/fix-pc-errors/" target="_blank" rel="external"><strong>Click here to fix Windows errors and improve system performance</strong></a></p>
-<p>Sourece: <a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/" target="_blank" rel="external">http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/</a></p>
+<p>Source: <a href="http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/" target="_blank" rel="external">http://www.addictivetips.com/mac-os/apple-id-password-for-free-purchases-macos/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Google Assistant is Google’s answer to Siri, or Cortana. Google Assistant is the company’s attempt at a virtual assistant app. Unlike App
+      &lt;p&gt;The Mac App Store and the iTunes App Store both ask for your password when you download an app. You will be asked to enter your Apple ID 
     
     </summary>
     
@@ -243,6 +413,46 @@
     <summary type="html">
     
       &lt;p&gt;Apple released macOS Sierra in 2016 and the major feature in this version was the inclusion of Siri on the desktop. Plenty of other small
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How To Get Google Assistant On macOS</title>
+    <link href="https://gmagon.com/blog/2017/06/15/how-to-get-google-assistant-on-macos/"/>
+    <id>https://gmagon.com/blog/2017/06/15/how-to-get-google-assistant-on-macos/</id>
+    <published>2017-06-15T00:00:00.000Z</published>
+    <updated>2017-06-15T03:35:28.487Z</updated>
+    
+    <content type="html"><![CDATA[<p>Google Assistant is Google’s answer to Siri, or Cortana. Google Assistant is the company’s attempt at a virtual assistant app. Unlike Apple though, Google isn’t restricting it to just Android. There’s already a Google Assistant iOS app which is limited compared to its Android counterpart but it’s there. You won’t see a Siri app for Android any time soon. While Google has made the Google Assistant app available on iOS of its own volition, it hasn’t released a desktop app for it. This is why you can’t get Google Assistant on macOS or Windows the same way you can get Siri and Cortana respectively.</p>
+<p>The good news is, the developer community is on it.<strong>MacAssistant</strong>is a free open-source Mac app that lets you use Google Assistant on macOS. The app is still in beta but it works reasonably well.</p>
+<p>Download MacAssistant. The developer isn’t verified so if you’re running the latest version of macOS, you won’t be able to run the app by just double-clicking it. Instead, open it Finder. Hold down the Ctrl key and then click the app. Select ‘Open’ from the context menu and the app will open.</p>
+<p><a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/attachment/open-app-unidentified-dev/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/open-app-unidentified-dev.jpg" alt=""></a></p>
+<p>MacAssistant runs from the Menu bar. Click the app icon in the Menu bar and sign in to your Google account.</p>
+<p><a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/attachment/macassistant-sign-in/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/MacAssistant-sign-in.jpg" alt=""></a></p>
+<h3 id="RECOMMENDED-FOR-YOU"><a href="#RECOMMENDED-FOR-YOU" class="headerlink" title="RECOMMENDED FOR YOU"></a>RECOMMENDED FOR YOU</h3><p><a href="http://www.addictivetips.com/android/get-google-assistant-android-phone/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/03/google-assistant-settings-100x100.jpg" alt="" title="How To Get Google Assistant On Your Android Phone"></a></p>
+<p><a href="http://www.addictivetips.com/category/android/" target="_blank" rel="external">Android</a></p>
+<p><a href="http://www.addictivetips.com/android/get-google-assistant-android-phone/" target="_blank" rel="external">How To Get Google Assistant On Your Android Phone</a></p>
+<p><a href="http://www.addictivetips.com/ios/get-google-assistant-on-ios/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/Google-Assistant-Coffee-Shops-100x100.png" alt="" title="How To Get Google Assistant On iOS"></a></p>
+<p><a href="http://www.addictivetips.com/category/ios/" target="_blank" rel="external">iOS</a></p>
+<p><a href="http://www.addictivetips.com/ios/get-google-assistant-on-ios/" target="_blank" rel="external">How To Get Google Assistant On iOS</a></p>
+<p>We should warn you now that this app will have broad control over your Google account. It’s not something to worry about given the app is open source.</p>
+<p>After you sign in, click the Menu bar button again. In the pop-up that opens, click the mic button and<a href="https://www.addictivetips.com/android/get-google-assistant-android-phone/" target="_blank" rel="external">Google Assistant</a>will ‘listen’ for your command. You don’t need to give the app additional access to your mic as it already has access to it.</p>
+<p><a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/attachment/google-assistant-on-macos/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/google-assistant-on-macOS.jpg" alt=""></a></p>
+<p>Commands at present are limited but you can ask it general questions like what the weather’s like outside.</p>
+<p><a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/attachment/google-assistant-2/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/05/google-assistant-1.jpg" alt=""></a></p>
+<p>The answer to whatever you ask Google Assistant is spoken back to you. There’s no UI for it just now. If you have the volume turned down, you won’t be able to use MacAssistant in its present form.</p>
+<p>Like the earlier versions of Google Assistant, MacAssistant works only with voice input. Unlike the app on Android which now lets you<a href="http://www.addictivetips.com/android/input-text-in-google-assistant/" target="_blank" rel="external">input text in Google Assistant</a>, MacAssistant works only with voice commands. The app is still in its infancy so while we may have a wishlist of features, it’s not really fair to bring it up considering the app’s only been around for a week. It’s in active development so you can expect it to improve exponentially.</p>
+<p><a href="https://github.com/vanshg/MacAssistant" target="_blank" rel="external">Download MacAssistant </a></p>
+<p><strong>RECOMMENDED:</strong><a href="http://www.addictivetips.com/go/fix-pc-errors/" target="_blank" rel="external"><strong>Click here to fix Windows errors and improve system performance</strong></a></p>
+<p>Sourece: <a href="http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/" target="_blank" rel="external">http://www.addictivetips.com/mac-os/get-google-assistant-on-macos/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Google Assistant is Google’s answer to Siri, or Cortana. Google Assistant is the company’s attempt at a virtual assistant app. Unlike App
     
     </summary>
     
@@ -310,6 +520,61 @@
     <summary type="html">
     
       &lt;p&gt;Learn todesign for the future, while balancing your design with your users’ present stage of skills andmindset. This is called theMAYA Pr
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>10 Things You Need to Know for Your Company Rebrand</title>
+    <link href="https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/"/>
+    <id>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</id>
+    <published>2017-06-14T00:00:00.000Z</published>
+    <updated>2017-06-14T03:43:53.556Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/vUbeAjN.jpg!web" alt=""></p>
+<p>Rebranding is an incredible challenge for any company, and the uniqueness of the task guarantees there will always be new things to learn. You might say that some of the lessons are well-known, but how they apply – and how they impact you – can offer refreshing insight.</p>
+<p>As a company president who is currently leading an organization through a rebrand, I’m hoping to pass on a few tips for how entrepreneurs, businessleadersand managers can navigate similar waters without fear of capsizing.</p>
+<p>Related: 3 Crucial Tips to Undergo a Brand Makeover and Make the Changes Stick</p>
+<p>The company, which was founded with the name Allied Trade Group, started as several websites that all rolled in to the same business, originally branded as ATGStores.com. But, as the home furnishings industry changed, it became clear to us that “ATG” would have to change, too. Here are 10 things we learned in becoming The Mine – now a premier online destination for unique fine furnishings and décor.</p>
+<h2 id="1-Changing-your-company-name-isn’t-going-to-solve-all-your-problems"><a href="#1-Changing-your-company-name-isn’t-going-to-solve-all-your-problems" class="headerlink" title="1. Changing your company name isn’t going to solve all your problems."></a>1. Changing your company name isn’t going to solve all your problems.</h2><p>When we first started to talk about rebranding the company, we knew our name wasn’t our only issue, but it was part of the puzzle. We knew the ATG acronym was confusing and hard for customers to remember; however, a new name wasn’t going to be a magic Band-Aid that resulted<a href="https://www.marketingweek.com/2016/06/30/how-to-create-a-sticky-brand/&#39;" target="_blank" rel="external">in instant organic traffic and a sticky brand</a>.</p>
+<p>Before you rebrand your company, you need to reevaluate your overall strategy and offering.</p>
+<p>We used data and customer insights to accomplish several things: We redefined<a href="https://www.marketingweek.com/2016/06/30/how-to-create-a-sticky-brand/&#39;" target="_blank" rel="external">our target audience</a>, established a new strategy for our products and services, and created a plan to overhaul the look and feel of the website. It took us two years to take our offering from 4 million to 1 million items, and refine the selection with a focus on high-quality, design-forward brands.</p>
+<p>Related: This Once-Per-Century Rebranding Is a Case Study in Marketing Done Right</p>
+<p>We also added and improved services to support those brands. We now offer one-on-one service through our personal concierge team, professional installation and assembly services, more robust pro services and access to design partners who provide original content and designinspiration. Once we had that in place, we felt confident we were ready to reintroduce ourselves as The Mine.</p>
+<h2 id="2-Finding-the-perfect-name-requires-a-process-of-exploration-and-elimination"><a href="#2-Finding-the-perfect-name-requires-a-process-of-exploration-and-elimination" class="headerlink" title="2. Finding the perfect name requires a process of exploration and elimination."></a>2. Finding the perfect name requires a process of exploration and elimination.</h2><p>It’s best to know what names aren’t available for sale or aren’t within your budget before you start planning. Brainstorming is great, but it’s also good to focus that effort in ways that will result in a usable concept.</p>
+<p>I think people probably imagine a very creative process, and it is, but it’s also very methodical. Or, it probably should be to make sure you’ve uncovered and considered every available option.</p>
+<h2 id="3-Don’t-put-too-many-cooks-in-the-kitchen"><a href="#3-Don’t-put-too-many-cooks-in-the-kitchen" class="headerlink" title="3. Don’t put too many cooks in the kitchen."></a>3. Don’t put too many cooks in the kitchen.</h2><p>Choosing a new name isn’t easy. It’s important to have a team involved in the selection process, but you have to be strategic about it. Having both internal and external players helps gain perspective, but less is often more in this kind of situation.</p>
+<p>Related: 5 Signs It’s Time to Rebrand</p>
+<h2 id="4-Give-your-team-as-much-info-as-you-can-as-soon-as-you-can"><a href="#4-Give-your-team-as-much-info-as-you-can-as-soon-as-you-can" class="headerlink" title="4. Give your team as much info as you can, as soon as you can."></a>4. Give your team as much info as you can, as soon as you can.</h2><p>Once you’re ready to share with your team, be sure to explain why, how and when you’re rebranding, and maybe do it sooner rather than later.</p>
+<p>We announced ourrebrandingas The Mine to the team about two months prior to launch, and we learned right away that we should’ve given them more time with the concept. The rebranding team felt very familiar with it because they’d been working on it for so long, but the extended team was surprised by the news. They had a lot of questions, and we learned we needed to more thoroughly explain the “why’s” moving forward.</p>
+<h2 id="5-It’s-important-to-realize-you’ll-never-be-100-percent-ready"><a href="#5-It’s-important-to-realize-you’ll-never-be-100-percent-ready" class="headerlink" title="5. It’s important to realize you’ll never be 100 percent ready."></a>5. It’s important to realize you’ll never be 100 percent ready.</h2><p>There are always going to be more projects and ongoing improvements, and you’ll keep thinking,Let’s just check one more box before we rebrand. It’s important to draw a clear line in the sand and to go for it, knowing there will always be more items you’ll want to complete. If you wait until you’re 100 percent ready to rebrand, you’ll end up waiting forever.</p>
+<h2 id="6-Getting-team-buy-in-is-critical-to-the-success-of-a-rebrand"><a href="#6-Getting-team-buy-in-is-critical-to-the-success-of-a-rebrand" class="headerlink" title="6. Getting team buy-in is critical to the success of a rebrand."></a>6. Getting team buy-in is critical to the success of a rebrand.</h2><p>Every rebrand has an internal and external component, and they’re both equally important. We received a lot of feedback from team members who were unsure about the rebrand; they liked ATG, and they were proud to be a part of that.</p>
+<p>Of course, loved hearing that, and we realized we needed to find a way to let people know that they were a part of it, and that – at the end of the day – we weren’t changing as a family. So, we call ourselves The Minds Behind The Mine. We all have a part, and each is as valued as the next.</p>
+<p>Related: 15 Tips for Livening Things Up When Your Brand Is Getting Stale</p>
+<ol>
+<li>When you’re trying to establish name recognition, sometimes it helps to partner with someone who already has a recognizable name.</li>
+</ol>
+<p>We invited Alexa Hampton, design icon and owner of the Manhattan-based design firm Mark Hampton LLC, to be our creative director early on in the rebrand, and she has been an invaluable resource.</p>
+<p>She participated directly in the creative process, which helped give her some ownership in that. And so, when it came time to promote it, she was ready with plenty of stories to tell. It was great for us, because she’s a respected member of the design community, and it was good for her because she got to help shape the destiny of a company – kind of a big deal.</p>
+<h2 id="8-You-should-be-willing-to-let-the-process-take-you-in-unexpected-directions"><a href="#8-You-should-be-willing-to-let-the-process-take-you-in-unexpected-directions" class="headerlink" title="8. You should be willing to let the process take you in unexpected directions."></a>8. You should be willing to let the process take you in unexpected directions.</h2><p>We hired abrandingfirm to make sure we didn’t get stuck in a rut with our thinking, and they helped us decide on a look for the logo and lettering by creating three different buckets: “bold,” “unexpected” and “traditional.”</p>
+<p>It was incredibly helpful, because once we saw our options (and there were hundreds) we knew right away we weren’t going traditional. The firm pulled from several different industries, and our style definitely borrows from fashion and beauty, perhaps even more than furniture, but that’s what makes sense for The Mine.</p>
+<p>Related: How to Rebrand With Customer Perceptions in Mind</p>
+<h2 id="9-Consider-the-possibility-that-less-is-more-in-your-design"><a href="#9-Consider-the-possibility-that-less-is-more-in-your-design" class="headerlink" title="9. Consider the possibility that less is more in your design."></a>9. Consider the possibility that less is more in your design.</h2><p>In the beginning, there was a feeling that we had to include an image of some kind in our logo messaging, just to make sure people understood exactly what we were about. But, after much research and testing, we decided we didn’t want to oversell it, or make it look like we were trying too hard.</p>
+<p>And, that ended up being a great call. Now, we have a name and logo with more versatility, and it invites our customers to explore a little bit. It’s also got a more exclusive feel, which can be hard to convey once you start using imagery.</p>
+<h2 id="10-Rebranding-is-hard-work-and-it’s-important-to-celebrate-your-victories"><a href="#10-Rebranding-is-hard-work-and-it’s-important-to-celebrate-your-victories" class="headerlink" title="10. Rebranding is hard work and it’s important to celebrate your victories."></a>10. Rebranding is hard work and it’s important to celebrate your victories.</h2><p>Once it’s time to go public, be sure to celebrate as a team, internally, and as a brand, publicly. Go for it, own it and make sure your team has fun doing it!</p>
+<p>The Minds Behind the Mine are so excited to announce our rebrand and hear what the world has to say. We want to welcome everyone to<a href="https://www.themine.com/" target="_blank" rel="external">The Mine</a>so we can share our hard work with our audience, and show them how we make it easy to get the home you crave.  </p>
+<p><img src="http://img2.tuicool.com/FVbeQvu.jpg!web" alt=""></p>
+<h2 id="Michelle-Newbery"><a href="#Michelle-Newbery" class="headerlink" title="Michelle Newbery"></a>Michelle Newbery</h2><p>Michelle Newbery serves as president of The Mine, a Seattle-based online home furnishings company that combines one-on-one personal concierge service with a “killer selection” of high-quality products. Newbery joined The Mine in 2011, and h…</p>
+<p><a href="https://www.entrepreneur.com/author/michelle-newbery" target="_blank" rel="external">Read more</a></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/vqQfMvA" target="_blank" rel="external">https://www.entrepreneur.com/article/295561</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/vUbeAjN.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Rebranding is an incredible challenge for any company, and the uniquene
     
     </summary>
     
@@ -440,61 +705,6 @@
   </entry>
   
   <entry>
-    <title>10 Things You Need to Know for Your Company Rebrand</title>
-    <link href="https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/"/>
-    <id>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</id>
-    <published>2017-06-14T00:00:00.000Z</published>
-    <updated>2017-06-14T03:43:53.556Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/vUbeAjN.jpg!web" alt=""></p>
-<p>Rebranding is an incredible challenge for any company, and the uniqueness of the task guarantees there will always be new things to learn. You might say that some of the lessons are well-known, but how they apply – and how they impact you – can offer refreshing insight.</p>
-<p>As a company president who is currently leading an organization through a rebrand, I’m hoping to pass on a few tips for how entrepreneurs, businessleadersand managers can navigate similar waters without fear of capsizing.</p>
-<p>Related: 3 Crucial Tips to Undergo a Brand Makeover and Make the Changes Stick</p>
-<p>The company, which was founded with the name Allied Trade Group, started as several websites that all rolled in to the same business, originally branded as ATGStores.com. But, as the home furnishings industry changed, it became clear to us that “ATG” would have to change, too. Here are 10 things we learned in becoming The Mine – now a premier online destination for unique fine furnishings and décor.</p>
-<h2 id="1-Changing-your-company-name-isn’t-going-to-solve-all-your-problems"><a href="#1-Changing-your-company-name-isn’t-going-to-solve-all-your-problems" class="headerlink" title="1. Changing your company name isn’t going to solve all your problems."></a>1. Changing your company name isn’t going to solve all your problems.</h2><p>When we first started to talk about rebranding the company, we knew our name wasn’t our only issue, but it was part of the puzzle. We knew the ATG acronym was confusing and hard for customers to remember; however, a new name wasn’t going to be a magic Band-Aid that resulted<a href="https://www.marketingweek.com/2016/06/30/how-to-create-a-sticky-brand/&#39;" target="_blank" rel="external">in instant organic traffic and a sticky brand</a>.</p>
-<p>Before you rebrand your company, you need to reevaluate your overall strategy and offering.</p>
-<p>We used data and customer insights to accomplish several things: We redefined<a href="https://www.marketingweek.com/2016/06/30/how-to-create-a-sticky-brand/&#39;" target="_blank" rel="external">our target audience</a>, established a new strategy for our products and services, and created a plan to overhaul the look and feel of the website. It took us two years to take our offering from 4 million to 1 million items, and refine the selection with a focus on high-quality, design-forward brands.</p>
-<p>Related: This Once-Per-Century Rebranding Is a Case Study in Marketing Done Right</p>
-<p>We also added and improved services to support those brands. We now offer one-on-one service through our personal concierge team, professional installation and assembly services, more robust pro services and access to design partners who provide original content and designinspiration. Once we had that in place, we felt confident we were ready to reintroduce ourselves as The Mine.</p>
-<h2 id="2-Finding-the-perfect-name-requires-a-process-of-exploration-and-elimination"><a href="#2-Finding-the-perfect-name-requires-a-process-of-exploration-and-elimination" class="headerlink" title="2. Finding the perfect name requires a process of exploration and elimination."></a>2. Finding the perfect name requires a process of exploration and elimination.</h2><p>It’s best to know what names aren’t available for sale or aren’t within your budget before you start planning. Brainstorming is great, but it’s also good to focus that effort in ways that will result in a usable concept.</p>
-<p>I think people probably imagine a very creative process, and it is, but it’s also very methodical. Or, it probably should be to make sure you’ve uncovered and considered every available option.</p>
-<h2 id="3-Don’t-put-too-many-cooks-in-the-kitchen"><a href="#3-Don’t-put-too-many-cooks-in-the-kitchen" class="headerlink" title="3. Don’t put too many cooks in the kitchen."></a>3. Don’t put too many cooks in the kitchen.</h2><p>Choosing a new name isn’t easy. It’s important to have a team involved in the selection process, but you have to be strategic about it. Having both internal and external players helps gain perspective, but less is often more in this kind of situation.</p>
-<p>Related: 5 Signs It’s Time to Rebrand</p>
-<h2 id="4-Give-your-team-as-much-info-as-you-can-as-soon-as-you-can"><a href="#4-Give-your-team-as-much-info-as-you-can-as-soon-as-you-can" class="headerlink" title="4. Give your team as much info as you can, as soon as you can."></a>4. Give your team as much info as you can, as soon as you can.</h2><p>Once you’re ready to share with your team, be sure to explain why, how and when you’re rebranding, and maybe do it sooner rather than later.</p>
-<p>We announced ourrebrandingas The Mine to the team about two months prior to launch, and we learned right away that we should’ve given them more time with the concept. The rebranding team felt very familiar with it because they’d been working on it for so long, but the extended team was surprised by the news. They had a lot of questions, and we learned we needed to more thoroughly explain the “why’s” moving forward.</p>
-<h2 id="5-It’s-important-to-realize-you’ll-never-be-100-percent-ready"><a href="#5-It’s-important-to-realize-you’ll-never-be-100-percent-ready" class="headerlink" title="5. It’s important to realize you’ll never be 100 percent ready."></a>5. It’s important to realize you’ll never be 100 percent ready.</h2><p>There are always going to be more projects and ongoing improvements, and you’ll keep thinking,Let’s just check one more box before we rebrand. It’s important to draw a clear line in the sand and to go for it, knowing there will always be more items you’ll want to complete. If you wait until you’re 100 percent ready to rebrand, you’ll end up waiting forever.</p>
-<h2 id="6-Getting-team-buy-in-is-critical-to-the-success-of-a-rebrand"><a href="#6-Getting-team-buy-in-is-critical-to-the-success-of-a-rebrand" class="headerlink" title="6. Getting team buy-in is critical to the success of a rebrand."></a>6. Getting team buy-in is critical to the success of a rebrand.</h2><p>Every rebrand has an internal and external component, and they’re both equally important. We received a lot of feedback from team members who were unsure about the rebrand; they liked ATG, and they were proud to be a part of that.</p>
-<p>Of course, loved hearing that, and we realized we needed to find a way to let people know that they were a part of it, and that – at the end of the day – we weren’t changing as a family. So, we call ourselves The Minds Behind The Mine. We all have a part, and each is as valued as the next.</p>
-<p>Related: 15 Tips for Livening Things Up When Your Brand Is Getting Stale</p>
-<ol>
-<li>When you’re trying to establish name recognition, sometimes it helps to partner with someone who already has a recognizable name.</li>
-</ol>
-<p>We invited Alexa Hampton, design icon and owner of the Manhattan-based design firm Mark Hampton LLC, to be our creative director early on in the rebrand, and she has been an invaluable resource.</p>
-<p>She participated directly in the creative process, which helped give her some ownership in that. And so, when it came time to promote it, she was ready with plenty of stories to tell. It was great for us, because she’s a respected member of the design community, and it was good for her because she got to help shape the destiny of a company – kind of a big deal.</p>
-<h2 id="8-You-should-be-willing-to-let-the-process-take-you-in-unexpected-directions"><a href="#8-You-should-be-willing-to-let-the-process-take-you-in-unexpected-directions" class="headerlink" title="8. You should be willing to let the process take you in unexpected directions."></a>8. You should be willing to let the process take you in unexpected directions.</h2><p>We hired abrandingfirm to make sure we didn’t get stuck in a rut with our thinking, and they helped us decide on a look for the logo and lettering by creating three different buckets: “bold,” “unexpected” and “traditional.”</p>
-<p>It was incredibly helpful, because once we saw our options (and there were hundreds) we knew right away we weren’t going traditional. The firm pulled from several different industries, and our style definitely borrows from fashion and beauty, perhaps even more than furniture, but that’s what makes sense for The Mine.</p>
-<p>Related: How to Rebrand With Customer Perceptions in Mind</p>
-<h2 id="9-Consider-the-possibility-that-less-is-more-in-your-design"><a href="#9-Consider-the-possibility-that-less-is-more-in-your-design" class="headerlink" title="9. Consider the possibility that less is more in your design."></a>9. Consider the possibility that less is more in your design.</h2><p>In the beginning, there was a feeling that we had to include an image of some kind in our logo messaging, just to make sure people understood exactly what we were about. But, after much research and testing, we decided we didn’t want to oversell it, or make it look like we were trying too hard.</p>
-<p>And, that ended up being a great call. Now, we have a name and logo with more versatility, and it invites our customers to explore a little bit. It’s also got a more exclusive feel, which can be hard to convey once you start using imagery.</p>
-<h2 id="10-Rebranding-is-hard-work-and-it’s-important-to-celebrate-your-victories"><a href="#10-Rebranding-is-hard-work-and-it’s-important-to-celebrate-your-victories" class="headerlink" title="10. Rebranding is hard work and it’s important to celebrate your victories."></a>10. Rebranding is hard work and it’s important to celebrate your victories.</h2><p>Once it’s time to go public, be sure to celebrate as a team, internally, and as a brand, publicly. Go for it, own it and make sure your team has fun doing it!</p>
-<p>The Minds Behind the Mine are so excited to announce our rebrand and hear what the world has to say. We want to welcome everyone to<a href="https://www.themine.com/" target="_blank" rel="external">The Mine</a>so we can share our hard work with our audience, and show them how we make it easy to get the home you crave.  </p>
-<p><img src="http://img2.tuicool.com/FVbeQvu.jpg!web" alt=""></p>
-<h2 id="Michelle-Newbery"><a href="#Michelle-Newbery" class="headerlink" title="Michelle Newbery"></a>Michelle Newbery</h2><p>Michelle Newbery serves as president of The Mine, a Seattle-based online home furnishings company that combines one-on-one personal concierge service with a “killer selection” of high-quality products. Newbery joined The Mine in 2011, and h…</p>
-<p><a href="https://www.entrepreneur.com/author/michelle-newbery" target="_blank" rel="external">Read more</a></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/vqQfMvA" target="_blank" rel="external">https://www.entrepreneur.com/article/295561</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/vUbeAjN.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Rebranding is an incredible challenge for any company, and the uniquene
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Is the keyboard faster than the mouse?</title>
     <link href="https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/"/>
     <id>https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/</id>
@@ -556,6 +766,129 @@
     
       &lt;p&gt;&lt;strong&gt;Is the keyboard faster than the mouse?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Which is faster, keyboard or mouse? A large number of programmers believe 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The Most Efficient Way to Use Icons If You&#39;re A Designer or Developer.</title>
+    <link href="https://gmagon.com/blog/2017/06/13/the-most-efficient-way-to-use-icons-if-youre-a-designer-or-developer/"/>
+    <id>https://gmagon.com/blog/2017/06/13/the-most-efficient-way-to-use-icons-if-youre-a-designer-or-developer/</id>
+    <published>2017-06-13T00:00:00.000Z</published>
+    <updated>2017-06-13T10:06:54.158Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/bmea222.png!web" alt=""></p>
+<h4 id="Sketch-Tutorials"><a href="#Sketch-Tutorials" class="headerlink" title="Sketch Tutorials"></a>Sketch Tutorials</h4><h2 id="The-Most-Efficient-Way-to-Use-Icons-If-You’re-A-Designer-or-Developer"><a href="#The-Most-Efficient-Way-to-Use-Icons-If-You’re-A-Designer-or-Developer" class="headerlink" title="The Most Efficient Way to Use Icons If You’re A Designer or Developer."></a>The Most Efficient Way to Use Icons If You’re A Designer or Developer.</h2><h2 id="Not-just-how-to-do-it-but-WHY-it’s-better-than-any-other-way"><a href="#Not-just-how-to-do-it-but-WHY-it’s-better-than-any-other-way" class="headerlink" title="Not just how to do it, but WHY it’s better than any other way."></a>Not just how to do it, but WHY it’s better than any other way.</h2><p><strong>Confession:</strong>This article is intentionally polarizing so that someone will write an angry comment and give me a more efficient solution.</p>
+<p>Maybe it’s manipulation. I call it<a href="https://en.wikipedia.org/wiki/Ward_Cunningham#Cunningham.27s_Law" target="_blank" rel="external">The Predictability of the Internet</a><em>:wink:</em></p>
+<h4 id="Icons-are-a-huge-pain-in-my-ass"><a href="#Icons-are-a-huge-pain-in-my-ass" class="headerlink" title="Icons are a huge pain in my ass:"></a>Icons are a huge pain in my ass:</h4><ul>
+<li>They have to look homogenous (similar visual style)</li>
+<li>They have to have bounding boxes</li>
+<li>They have to work when they’re<br><strong>really big</strong><br>and<br><em>really small</em></li>
+<li>They have to be easy to design with</li>
+<li>They have to be easy to code with</li>
+<li>They have to be performant (side note:Peter Nowell isthe<br><a href="https://medium.com/sketch-app-sources/how-designers-should-think-about-svg-b2b92efc4d77" target="_blank" rel="external">king</a><br><a href="https://medium.com/@pnowelldesign/stuff-at-the-top-of-an-svg-f3ad198eb54e" target="_blank" rel="external">of</a><br><a href="https://medium.com/sketch-app-sources/svgito-little-optimizations-for-svgs-22114af9fdc9" target="_blank" rel="external">SVGs</a><br>)</li>
+<li>They have to not piss off your design team</li>
+<li>They have to not piss off your development team</li>
+</ul>
+<h4 id="Okay-so-what-about-icon-fonts"><a href="#Okay-so-what-about-icon-fonts" class="headerlink" title="Okay, so what about icon fonts?"></a>Okay, so what about icon fonts?</h4><p>Icon fonts like FontAwesome came out as a way to soften the agony of working with icons, but they still aren’t perfect.<strong>Designing</strong>with them is just…<em>okay</em>; you still have to go look up the glyph, copy it, and paste it into the text layer. You can’t really symbolize them, and if you do, changing their color requires some text symbol trickery.<strong>Developing</strong>with icon fonts is simple, but not without issues. If the browser fails to load the icon font, then you’re up shit creek without a paddle. And you’re alone. In a kayak.<em>Sad.</em></p>
+<p><img src="http://img0.tuicool.com/V7nami.png!web" alt=""></p>
+<p>Well…now what?</p>
+<h4 id="So…use-SVGs-then"><a href="#So…use-SVGs-then" class="headerlink" title="So…use SVGs then?"></a>So…use SVGs then?</h4><p>Well for<strong>designers</strong>, SVGs are certainly easier to symbolize in Sketch, but it can be kind of a pain to change their color._So just don’t make them symbols, right? Then you can use layer styles to make them different colors!_But what if you want to update the little dropdown arrow from a caret to a triangle? Well good luck finding all 398 occurrences of that little arrow and updating them one-by-one. So that’s…well,<em>not great</em>. And I know from experience that<strong>developers</strong>love nothing more than using standalone SVGs for each and every icon in my design. Don’t worry guys, there are only 207 unique icons. That shouldn’t affect page load. I promise. /s</p>
+<h4 id="Ugh-then-what"><a href="#Ugh-then-what" class="headerlink" title="Ugh, then what?!"></a>Ugh, then what?!</h4><p>Keep reading, knucklehead �� And before we dive in, here’s something free. This will help you follow along with the rest of the tutorial.</p>
+<h3 id="My-Workflow"><a href="#My-Workflow" class="headerlink" title="My Workflow"></a>My Workflow</h3><p>My approach is divided into two parts:<strong>What I Do for Design</strong>and<strong>What I Do for Development</strong>. Neither technique is completely perfect, but it’s been successful so far, and makes the most people happy along the way.</p>
+<p>That’s important!</p>
+<h3 id="What-I-Do-For-Designers"><a href="#What-I-Do-For-Designers" class="headerlink" title="What I Do For Designers"></a>What I Do For Designers</h3><p>I<strong>absolutely love</strong>the Nucleo icon set. There are 8,300+ icons available in all kinds of different styles (outlined, solid, mini, full color, two-toned), and they’ve even included those pesky social icons that you need on pretty much every project. You can grab those below ($49 for a year, $129 for life).</p>
+<p><a href="https://nucleoapp.com/?ref=cmbeck82" target="_blank" rel="external">Nucleo - 8000+ Vector icons for iOS, Android and web_Nucleo is a library of 8000+ vector icons, in different styles and formats, as well as a web application to manage…_nucleoapp.com</a></p>
+<p>The absolute fastest and most sustainable way to use icons in Sketch is by using<strong>color symbols and masks</strong>. You’ve seen this technique before thanks to my palFrancesco, but here’s a quick refresher:</p>
+<p><a href="https://freeandwilling.com/fbmore?go=Sketch-Tint-Icons-Using-Nested-Symbols-UX-PowerTools" target="_blank" rel="external">Sketch: Tint icons using nested symbols - Design&amp;Prototype - Medium_I always wanted to create a single version of an icon and apply different colors to, or tint it, to indicate its state…_freeandwilling.com</a></p>
+<p>Step 1:Make symbols for the fill colors you want to use for your icons. Make sure every color symbol artboard is the same size.</p>
+<p><img src="http://img2.tuicool.com/yMfyi2v.png!web" alt=""></p>
+<p>Step 2:Make a new artboard for your icon symbol. Paste your icon onto your new artboard. If you’re using the<a href="https://freeandwilling.com/Jon?go=icon-article-nucleo" target="_blank" rel="external">Nucleo Icon</a>desktop app, just drag the icon directly into Sketch, then put it on your new artboard.</p>
+<p><img src="http://img1.tuicool.com/rYzeMjy.gif" alt=""></p>
+<p>Step 3:Make sure your icon is a single shape, and set it as a mask. If your icon isn’t a single shape, then select the different paths and union them.</p>
+<p><img src="http://img0.tuicool.com/AbmUZ3f.png!web" alt=""></p>
+<p>Step 4:Insert any of the color symbols on top of your icon mask and resize it to the size of your artboard. You’ll be able to override this color whenever you add an instance of your icon!</p>
+<p><img src="http://img2.tuicool.com/qERrQzN.png!web" alt=""></p>
+<p>Step 5 (Optional):If your icon is a logo (see above), set the mask fill to the brand color of the app. It’s easy to quickly find official brand colors over on<a href="https://brandcolors.net/" target="_blank" rel="external">brandcolors.net</a>. This saves you from having to create color symbols for a bunch of different app colors — if you ever want to use the brand color, just turn OFF the color symbol override:</p>
+<p><img src="http://img1.tuicool.com/mEf22ai.gif" alt=""></p>
+<p><strong>Warning:</strong></p>
+<p>If you have color symbols with semi-transparent fills, you’ll be able to see the mask fill through the transparency. So if you want 25% black to be an available color, don’t use a fill on the mask.</p>
+<h4 id="Why-This-Works-for-Designers"><a href="#Why-This-Works-for-Designers" class="headerlink" title="Why This Works for Designers"></a>Why This Works for Designers</h4><ul>
+<li>All of my icons are symbols, so if I ever want to update them, I can do it in one place and immediately see it update across all of my designs.</li>
+<li>I can quickly override the color from the inspector.</li>
+<li>If I update a color symbol, it will update all icons that use that color.</li>
+<li>I can nest icons inside of other symbols and quickly swap them out.</li>
+</ul>
+<h4 id="Why-This-Doesn’t-Work-for-Developers"><a href="#Why-This-Doesn’t-Work-for-Developers" class="headerlink" title="Why This Doesn’t Work for Developers"></a>Why This Doesn’t Work for Developers</h4><ul>
+<li>Zeplin and InVision don’t read color overrides, so they’ll only ever show you the color you used in the base symbol.</li>
+<li>The color symbol + mask technique adds some bloat to the SVG file size.</li>
+<li>They’re all individual SVGs, so devs will want to jump off a bridge.</li>
+</ul>
+<p><strong>Side note:</strong>All of the icons in<a href="https://www.uxpower.tools/" target="_blank" rel="external">UX Power Tools</a>are constructed this way. It’s super fast to swap colors, and even easier to swap icons inside of elements like buttons, fields, and notifications.</p>
+<h3 id="What-I-Do-For-Developers"><a href="#What-I-Do-For-Developers" class="headerlink" title="What I Do For Developers"></a>What I Do For Developers</h3><p>Zeplin works incredibly well for layout, color, and typography, but isn’t terribly efficient for assets. Instead of having devs pull icons directly from Zeplin (or sending them a zip of SVGs), I use<a href="https://freeandwilling.com/Jon?go=icon-article-nucleo" target="_blank" rel="external">Nucleo</a>to build an SVG sprite, then send that to developers. Not to brag, but they :heart: me for it :relieved:</p>
+<p>Step 1:Create a new project in the Nucleo web app.</p>
+<p>Step 2:Add icons to your Nucleo project that you intend to use (or have already used) in your designs.</p>
+<p><img src="http://img2.tuicool.com/qEN7bi7.png!web" alt=""></p>
+<p>Step 3:Open the project, select all icons in the right panel, and click<em>Download</em>.</p>
+<p><img src="http://img0.tuicool.com/vUFFRvY.png!web" alt=""></p>
+<p>Step 4:Choose your export preferences. “Export as Symbol” uses_xlink:href<em>which will be<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:href" target="_blank" rel="external">deprecated in SVG 2</a>(not out yet). That being said, it’s just the</em>“xlink”_portion that will no longer be needed, so “Export as Symbol” is still a safe option. I usually choose “Export CSS”, which creates a single SVG sprite, then creates a CSS file with classes for each icon.</p>
+<p>But wait, that’s not even the best part!</p>
+<p>Along with the SVG sprite and generated CSS, Nucleo also creates an HTML page showing off each icon, and the CSS class for using that icon in code.</p>
+<p><img src="http://img0.tuicool.com/qUFNB3E.png!web" alt=""></p>
+<h4 id="Why-This-Works-for-Designers-1"><a href="#Why-This-Works-for-Designers-1" class="headerlink" title="Why This Works for Designers"></a>Why This Works for Designers</h4><ul>
+<li>You don’t have to change your design process</li>
+<li>There’s a beautiful GUI for choosing icons</li>
+<li>Adding new icons is simple for both parties</li>
+</ul>
+<h4 id="Why-This-Works-for-Developers"><a href="#Why-This-Works-for-Developers" class="headerlink" title="Why This Works for Developers"></a>Why This Works for Developers</h4><ul>
+<li>It generates a single SVG sprite and the correct CSS</li>
+<li>It gives developers a GUI for finding icons and copying the code</li>
+<li>They can change the icon color and size in code. Hallelujah!</li>
+</ul>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>There are fast ways to_<strong>design</strong><em>with icons, and fast ways to</em><strong>develop</strong>_with them. It’s a little extra work to make things optimal for both parties, but it will make everyone’s lives easier.</p>
+<p>If you’re not using<a href="https://freeandwilling.com/Jon?go=icon-article-nucleo" target="_blank" rel="external">Nucleo</a>, you can find lots of services like<a href="https://iconizr.com/" target="_blank" rel="external">Iconizr</a>that will help you generate an SVG sprite. If you’re lucky enough to have your own icon designer(s), then you’ll have to do this anyway since everything will be custom! You lucky dog.</p>
+<p>Check out<a href="https://www.uxpower.tools/" target="_blank" rel="external"><strong>UX Power Tools</strong></a>to see how you can use these icons in all kinds of sophisticated nested symbols. It’s truly the fastest way to design.</p>
+<p><img src="http://img1.tuicool.com/3ArEv2r.png!web" alt=""></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/UJRZv2a" target="_blank" rel="external">https://medium.com/ux-power-tools/the-most-efficient-way-to-use-icons-if-youre-a-designer-or-developer-5ce3954c146c</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/bmea222.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;Sketch-Tutorials&quot;&gt;&lt;a href=&quot;#Sketch-Tutorials&quot; class=&quot;headerlink&quot; t
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Lessons I’ve Learned from Three Million App Downloads</title>
+    <link href="https://gmagon.com/blog/2017/06/13/Lessons-I%E2%80%99ve-Learned-from-Three-Million-App-Downloads/"/>
+    <id>https://gmagon.com/blog/2017/06/13/Lessons-I’ve-Learned-from-Three-Million-App-Downloads/</id>
+    <published>2017-06-13T00:00:00.000Z</published>
+    <updated>2017-06-13T09:37:14.046Z</updated>
+    
+    <content type="html"><![CDATA[<p>In January 2011 I was on summer break, but instead of getting a day job, or socializing, I spent a lot of time holed up in my room writing the first version of an iOS app called<a href="https://itunes.apple.com/nz/app/class-timetable/id425121147?mt=8" target="_blank" rel="external">Class Timetable</a>. The year before, I’d been looking for a simple, easy to use timetable app, and nothing on the App Store quite fit the bill - everything was too complicated and hard to use. The idea was to create a no fuss, straight forward solution, something that was easier and more convenient than a paper timetable/schedule. Over a few months, I spent about 500 hours designing and coding it. Fast forward to today, and the app has had more than three million downloads, a lot of positive App Store ratings, and at times has been my primary source of income. Haven’t heard of the app? Yeah, it hasn’t taken off yet in the US, but is reasonably popular in Aus/NZ/UK, at least among college and school students.</p>
+<p><img src="http://img2.tuicool.com/32Evqin.jpg!web" alt=""></p>
+<p>I’ve read a bunch of blogs recently about people that hit the jackpot, got their app featured, and were looking at figures like 100,000 downloads a day. In comparison, I’ve only been moderately successful. Class Timetable has never made the App Store #1 position, I didn’t become rich overnight, and I’ve failed more times than I’ve succeeded. I’ve invested a lot of time, probably thousands of hours all up, unlike some hit apps that were created in a weekend. Sure, three million downloads is a lot, but that’s happened over more than six years.</p>
+<p><img src="http://img2.tuicool.com/mMvUFrR.jpg!web" alt=""></p>
+<p>Instead, my ‘moderate success’ story is closer to one of hard work, and slow, steady progress. It’s probably more true to real life than other success stories, because let’s face it: not everyone is going to wind up creating the next Flappy Bird. Instead of being a viral hit, Class Timetable has been doing moderately well for more than six years, which is a little special in itself - many #1 apps can’t claim a lifespan that long. I’d like to share a few things I’ve learned over the last few years, so hopefully there’s something here you’ll find useful, no matter how much success you have, or haven’t (yet) seen.</p>
+<h3 id="Before-writing-an-app-that-‘made-it’-I-wrote-plenty-that-didn’t-make-it"><a href="#Before-writing-an-app-that-‘made-it’-I-wrote-plenty-that-didn’t-make-it" class="headerlink" title="Before writing an app that ‘made it’, I wrote plenty that didn’t make it."></a>Before writing an app that ‘made it’, I wrote plenty that didn’t make it.</h3><p>I still think some of them were great ideas - perhaps they just needed some great marketing, or a little luck. There was one called ‘Ginge-O-Meter’ that I put a lot of work into. The concept: take a photo of someone, and find out how ginger their hair is. It used real image recognition and color analysis techniques to deliver an answer, and it actually worked (most of the time). Unfortunately, the idea didn’t catch… I think I made about $50. It was my big shot, and to be quite honest I was pretty dismayed at how much work I put in to see it fail. But I didn’t stop there, and Class Timetable went on to become what it is today. Anyway, my point here is not to hedge your bets.If your winning idea doesn’t succeed: get up and try again, and again… and again, because for all you know your next idea could be the one that makes it.</p>
+<h3 id="Design-everything-around-the-first-time-user"><a href="#Design-everything-around-the-first-time-user" class="headerlink" title="Design everything around the first time user."></a>Design everything around the first time user.</h3><p>Imagine getting an email in all caps, telling you that you that your app is stuck ‘installing’ and that you need to fix it… pretty frustrating, right? After a few emails like this, you realize that you can never make your product simple enough to use. What I’ve learned (aside from sucking it up, and sending a kind, helpful response) is: design your product as if it was going to be used by people that are a software literacy step below the target user. Keep it simple, make it idiot proof - design everything around the first time user experience. Make sure there’s nowhere people can get tripped up, and that every task has a straight forward, simple workflow. Less time will be spent on support, people will be happier in general with your product, and your ratings will go up. When Class Timetable first started getting thousands of downloads a day, I’d average around twenty emails a week. I’m sure there were other users with the same issues that couldn’t be bothered sending an email, and instead would simply stop using the app. By refining the product areas that led to these emails, I’m now down to an email every two or three days - and most of these are things that aren’t real issues, like feature suggestions, or the occasional fan email (really).</p>
+<h3 id="Listen-to-your-critics-but-don’t-do-what-they-say"><a href="#Listen-to-your-critics-but-don’t-do-what-they-say" class="headerlink" title="Listen to your critics, but don’t do what they say."></a>Listen to your critics, but don’t do what they say.</h3><p>I must have had hundreds of feature request emails from customers, ranging from really good, to very questionable. Now, if I implemented all of those features, the app would be a confusing mess, with 17 background choices, 72 different things vying for your attention on screen, and a settings option for just about everything. Heck, even if I just implemented every sensible idea, the result wouldn’t be too much different. The problem is that even when users can see a genuine product issue, they can’t always see the best solution. So what can we do instead? Listen to your users -<em>to their real, underlying problems</em>- and solve them in a way that takes the product as a whole forward. Sometimes, a great feature suggestion might have downsides for the product as a whole, which means letting it go. This would often happen with Class Timetable: one of its primary features is simplicity and ease of use. While many features have been added to it over the years, a lot of feature suggestions would have made the product as a whole more complicated. Sometimes that was OK, but more often than not I opted for simplicity, the feature that kept it unique.</p>
+<h3 id="A-great-product-is-better-than-a-viral-gimmick"><a href="#A-great-product-is-better-than-a-viral-gimmick" class="headerlink" title="A great product is better than a viral gimmick."></a>A great product is better than a viral gimmick.</h3><p>Class Timetable has never made the App Store front page, or had 100,000 downloads in a day - but that doesn’t matter to me. Some apps reach the #1 spot on the charts, only to become wastelands not even a year later. Perhaps they had a funny quip, viral marketing strategy, or just got lucky - but ultimately, they didn’t have any substance, and they didn’t solve a real world problem in a useful way. By making a genuinely great product, you’re designing something that your users keep coming back to again and again. Put in effort where people might not even notice. Focus on solving real problems, and making a product that is so genuinely useful that your users are coming back and bringing others with them.Returning users is a great sign that your product is healthy.As a bonus, there’s a small viral effect that every active user has, and it’s always great to know that your next customer isn’t just replacing someone that left.</p>
+<h3 id="Be-generous"><a href="#Be-generous" class="headerlink" title="Be generous."></a>Be generous.</h3><p>When Class Timetable first went on the App Store, it was a paid $1 download. I figured that for the amount of effort I had put in (~500 hours), $1 was a steal. Anyway, in the first week, 4 people bought the app, and the next week, even less than that. Not sure what it feels like to hit the jackpot, but this didn’t quite feel like it. 500 hours is a lot of time to throw down the drain! I could have left it to die a slow death earning $1 a week, but instead I decided to make the app free. I’d created it to solve a real problem, and I figured that others would find it genuinely useful. Almost straight away, downloads started to pick up. 50 downloads a day, then 100, 1000… wow. Had I held onto the amount of hours I put in and not been generous, I very much doubt that downloads would ever have picked up. Soon after, I added an in app purchase enabling extra features, which now has quite a reasonable uptake. Much higher than a few dollars a week anyway. So, don’t be stingy: a product with no paying users is (usually) better than a paid product with no users.It’s much easier to upsell to an existing customer than it is to find an entirely new paying customer.</p>
+<h3 id="Take-a-step-back-often"><a href="#Take-a-step-back-often" class="headerlink" title="Take a step back, often."></a>Take a step back, often.</h3><p>Sometimes you’re stuck on a problem, and there just don’t seem to be any great solutions: maybe it’s related to a piece of code you’re writing, or decisions around how you’re going to market your app. Then, you start thinking about the problem from a wider perspective. You realize that you won’t need to even write the tricky piece of code if you architect it the right way, and that the marketing decision is one your friend (who has a knack for that sort of problem) would know how to tackle. You could sum it up as ‘taking a step back’ from the problem. In my entire software career, there’s not a second I’ve spent doing this that I’ve regretted. There’s been plenty of times, especially early on, that I wish I did this and never did. I learned the hard way with Class Timetable: with version 1.0, I spent a lot of time just ‘getting stuck in’ and coding it. I solved tricky problems by cutting corners and ‘making it happen’, instead of taking a step back. As long as users never knew, it was fine right? A year or two later, I had to rewrite the entire codebase from scratch - for so many reasons - which was a massive undertaking. Take a step back! It’s worth it.</p>
+<p>Today, Class Timetable continues to do well. I’m always looking to the future, whether that means the next iOS upgrade, or a bigger picture of what Class Timetable could evolve into. If you’re studying at school or college, feel free to<a href="https://itunes.apple.com/nz/app/class-timetable/id425121147?mt=8" target="_blank" rel="external">give it a go</a>- I hope you find it genuinely useful.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/BfmUNv2" target="_blank" rel="external">http://jordansmith.io/lessons-ive-learned-from-three-million-downloads/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In January 2011 I was on summer break, but instead of getting a day job, or socializing, I spent a lot of time holed up in my room writin
     
     </summary>
     
@@ -697,129 +1030,6 @@
   </entry>
   
   <entry>
-    <title>Lessons I’ve Learned from Three Million App Downloads</title>
-    <link href="https://gmagon.com/blog/2017/06/13/Lessons-I%E2%80%99ve-Learned-from-Three-Million-App-Downloads/"/>
-    <id>https://gmagon.com/blog/2017/06/13/Lessons-I’ve-Learned-from-Three-Million-App-Downloads/</id>
-    <published>2017-06-13T00:00:00.000Z</published>
-    <updated>2017-06-13T09:37:14.046Z</updated>
-    
-    <content type="html"><![CDATA[<p>In January 2011 I was on summer break, but instead of getting a day job, or socializing, I spent a lot of time holed up in my room writing the first version of an iOS app called<a href="https://itunes.apple.com/nz/app/class-timetable/id425121147?mt=8" target="_blank" rel="external">Class Timetable</a>. The year before, I’d been looking for a simple, easy to use timetable app, and nothing on the App Store quite fit the bill - everything was too complicated and hard to use. The idea was to create a no fuss, straight forward solution, something that was easier and more convenient than a paper timetable/schedule. Over a few months, I spent about 500 hours designing and coding it. Fast forward to today, and the app has had more than three million downloads, a lot of positive App Store ratings, and at times has been my primary source of income. Haven’t heard of the app? Yeah, it hasn’t taken off yet in the US, but is reasonably popular in Aus/NZ/UK, at least among college and school students.</p>
-<p><img src="http://img2.tuicool.com/32Evqin.jpg!web" alt=""></p>
-<p>I’ve read a bunch of blogs recently about people that hit the jackpot, got their app featured, and were looking at figures like 100,000 downloads a day. In comparison, I’ve only been moderately successful. Class Timetable has never made the App Store #1 position, I didn’t become rich overnight, and I’ve failed more times than I’ve succeeded. I’ve invested a lot of time, probably thousands of hours all up, unlike some hit apps that were created in a weekend. Sure, three million downloads is a lot, but that’s happened over more than six years.</p>
-<p><img src="http://img2.tuicool.com/mMvUFrR.jpg!web" alt=""></p>
-<p>Instead, my ‘moderate success’ story is closer to one of hard work, and slow, steady progress. It’s probably more true to real life than other success stories, because let’s face it: not everyone is going to wind up creating the next Flappy Bird. Instead of being a viral hit, Class Timetable has been doing moderately well for more than six years, which is a little special in itself - many #1 apps can’t claim a lifespan that long. I’d like to share a few things I’ve learned over the last few years, so hopefully there’s something here you’ll find useful, no matter how much success you have, or haven’t (yet) seen.</p>
-<h3 id="Before-writing-an-app-that-‘made-it’-I-wrote-plenty-that-didn’t-make-it"><a href="#Before-writing-an-app-that-‘made-it’-I-wrote-plenty-that-didn’t-make-it" class="headerlink" title="Before writing an app that ‘made it’, I wrote plenty that didn’t make it."></a>Before writing an app that ‘made it’, I wrote plenty that didn’t make it.</h3><p>I still think some of them were great ideas - perhaps they just needed some great marketing, or a little luck. There was one called ‘Ginge-O-Meter’ that I put a lot of work into. The concept: take a photo of someone, and find out how ginger their hair is. It used real image recognition and color analysis techniques to deliver an answer, and it actually worked (most of the time). Unfortunately, the idea didn’t catch… I think I made about $50. It was my big shot, and to be quite honest I was pretty dismayed at how much work I put in to see it fail. But I didn’t stop there, and Class Timetable went on to become what it is today. Anyway, my point here is not to hedge your bets.If your winning idea doesn’t succeed: get up and try again, and again… and again, because for all you know your next idea could be the one that makes it.</p>
-<h3 id="Design-everything-around-the-first-time-user"><a href="#Design-everything-around-the-first-time-user" class="headerlink" title="Design everything around the first time user."></a>Design everything around the first time user.</h3><p>Imagine getting an email in all caps, telling you that you that your app is stuck ‘installing’ and that you need to fix it… pretty frustrating, right? After a few emails like this, you realize that you can never make your product simple enough to use. What I’ve learned (aside from sucking it up, and sending a kind, helpful response) is: design your product as if it was going to be used by people that are a software literacy step below the target user. Keep it simple, make it idiot proof - design everything around the first time user experience. Make sure there’s nowhere people can get tripped up, and that every task has a straight forward, simple workflow. Less time will be spent on support, people will be happier in general with your product, and your ratings will go up. When Class Timetable first started getting thousands of downloads a day, I’d average around twenty emails a week. I’m sure there were other users with the same issues that couldn’t be bothered sending an email, and instead would simply stop using the app. By refining the product areas that led to these emails, I’m now down to an email every two or three days - and most of these are things that aren’t real issues, like feature suggestions, or the occasional fan email (really).</p>
-<h3 id="Listen-to-your-critics-but-don’t-do-what-they-say"><a href="#Listen-to-your-critics-but-don’t-do-what-they-say" class="headerlink" title="Listen to your critics, but don’t do what they say."></a>Listen to your critics, but don’t do what they say.</h3><p>I must have had hundreds of feature request emails from customers, ranging from really good, to very questionable. Now, if I implemented all of those features, the app would be a confusing mess, with 17 background choices, 72 different things vying for your attention on screen, and a settings option for just about everything. Heck, even if I just implemented every sensible idea, the result wouldn’t be too much different. The problem is that even when users can see a genuine product issue, they can’t always see the best solution. So what can we do instead? Listen to your users -<em>to their real, underlying problems</em>- and solve them in a way that takes the product as a whole forward. Sometimes, a great feature suggestion might have downsides for the product as a whole, which means letting it go. This would often happen with Class Timetable: one of its primary features is simplicity and ease of use. While many features have been added to it over the years, a lot of feature suggestions would have made the product as a whole more complicated. Sometimes that was OK, but more often than not I opted for simplicity, the feature that kept it unique.</p>
-<h3 id="A-great-product-is-better-than-a-viral-gimmick"><a href="#A-great-product-is-better-than-a-viral-gimmick" class="headerlink" title="A great product is better than a viral gimmick."></a>A great product is better than a viral gimmick.</h3><p>Class Timetable has never made the App Store front page, or had 100,000 downloads in a day - but that doesn’t matter to me. Some apps reach the #1 spot on the charts, only to become wastelands not even a year later. Perhaps they had a funny quip, viral marketing strategy, or just got lucky - but ultimately, they didn’t have any substance, and they didn’t solve a real world problem in a useful way. By making a genuinely great product, you’re designing something that your users keep coming back to again and again. Put in effort where people might not even notice. Focus on solving real problems, and making a product that is so genuinely useful that your users are coming back and bringing others with them.Returning users is a great sign that your product is healthy.As a bonus, there’s a small viral effect that every active user has, and it’s always great to know that your next customer isn’t just replacing someone that left.</p>
-<h3 id="Be-generous"><a href="#Be-generous" class="headerlink" title="Be generous."></a>Be generous.</h3><p>When Class Timetable first went on the App Store, it was a paid $1 download. I figured that for the amount of effort I had put in (~500 hours), $1 was a steal. Anyway, in the first week, 4 people bought the app, and the next week, even less than that. Not sure what it feels like to hit the jackpot, but this didn’t quite feel like it. 500 hours is a lot of time to throw down the drain! I could have left it to die a slow death earning $1 a week, but instead I decided to make the app free. I’d created it to solve a real problem, and I figured that others would find it genuinely useful. Almost straight away, downloads started to pick up. 50 downloads a day, then 100, 1000… wow. Had I held onto the amount of hours I put in and not been generous, I very much doubt that downloads would ever have picked up. Soon after, I added an in app purchase enabling extra features, which now has quite a reasonable uptake. Much higher than a few dollars a week anyway. So, don’t be stingy: a product with no paying users is (usually) better than a paid product with no users.It’s much easier to upsell to an existing customer than it is to find an entirely new paying customer.</p>
-<h3 id="Take-a-step-back-often"><a href="#Take-a-step-back-often" class="headerlink" title="Take a step back, often."></a>Take a step back, often.</h3><p>Sometimes you’re stuck on a problem, and there just don’t seem to be any great solutions: maybe it’s related to a piece of code you’re writing, or decisions around how you’re going to market your app. Then, you start thinking about the problem from a wider perspective. You realize that you won’t need to even write the tricky piece of code if you architect it the right way, and that the marketing decision is one your friend (who has a knack for that sort of problem) would know how to tackle. You could sum it up as ‘taking a step back’ from the problem. In my entire software career, there’s not a second I’ve spent doing this that I’ve regretted. There’s been plenty of times, especially early on, that I wish I did this and never did. I learned the hard way with Class Timetable: with version 1.0, I spent a lot of time just ‘getting stuck in’ and coding it. I solved tricky problems by cutting corners and ‘making it happen’, instead of taking a step back. As long as users never knew, it was fine right? A year or two later, I had to rewrite the entire codebase from scratch - for so many reasons - which was a massive undertaking. Take a step back! It’s worth it.</p>
-<p>Today, Class Timetable continues to do well. I’m always looking to the future, whether that means the next iOS upgrade, or a bigger picture of what Class Timetable could evolve into. If you’re studying at school or college, feel free to<a href="https://itunes.apple.com/nz/app/class-timetable/id425121147?mt=8" target="_blank" rel="external">give it a go</a>- I hope you find it genuinely useful.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/BfmUNv2" target="_blank" rel="external">http://jordansmith.io/lessons-ive-learned-from-three-million-downloads/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;In January 2011 I was on summer break, but instead of getting a day job, or socializing, I spent a lot of time holed up in my room writin
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>The Most Efficient Way to Use Icons If You&#39;re A Designer or Developer.</title>
-    <link href="https://gmagon.com/blog/2017/06/13/the-most-efficient-way-to-use-icons-if-youre-a-designer-or-developer/"/>
-    <id>https://gmagon.com/blog/2017/06/13/the-most-efficient-way-to-use-icons-if-youre-a-designer-or-developer/</id>
-    <published>2017-06-13T00:00:00.000Z</published>
-    <updated>2017-06-13T10:06:54.158Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/bmea222.png!web" alt=""></p>
-<h4 id="Sketch-Tutorials"><a href="#Sketch-Tutorials" class="headerlink" title="Sketch Tutorials"></a>Sketch Tutorials</h4><h2 id="The-Most-Efficient-Way-to-Use-Icons-If-You’re-A-Designer-or-Developer"><a href="#The-Most-Efficient-Way-to-Use-Icons-If-You’re-A-Designer-or-Developer" class="headerlink" title="The Most Efficient Way to Use Icons If You’re A Designer or Developer."></a>The Most Efficient Way to Use Icons If You’re A Designer or Developer.</h2><h2 id="Not-just-how-to-do-it-but-WHY-it’s-better-than-any-other-way"><a href="#Not-just-how-to-do-it-but-WHY-it’s-better-than-any-other-way" class="headerlink" title="Not just how to do it, but WHY it’s better than any other way."></a>Not just how to do it, but WHY it’s better than any other way.</h2><p><strong>Confession:</strong>This article is intentionally polarizing so that someone will write an angry comment and give me a more efficient solution.</p>
-<p>Maybe it’s manipulation. I call it<a href="https://en.wikipedia.org/wiki/Ward_Cunningham#Cunningham.27s_Law" target="_blank" rel="external">The Predictability of the Internet</a><em>:wink:</em></p>
-<h4 id="Icons-are-a-huge-pain-in-my-ass"><a href="#Icons-are-a-huge-pain-in-my-ass" class="headerlink" title="Icons are a huge pain in my ass:"></a>Icons are a huge pain in my ass:</h4><ul>
-<li>They have to look homogenous (similar visual style)</li>
-<li>They have to have bounding boxes</li>
-<li>They have to work when they’re<br><strong>really big</strong><br>and<br><em>really small</em></li>
-<li>They have to be easy to design with</li>
-<li>They have to be easy to code with</li>
-<li>They have to be performant (side note:Peter Nowell isthe<br><a href="https://medium.com/sketch-app-sources/how-designers-should-think-about-svg-b2b92efc4d77" target="_blank" rel="external">king</a><br><a href="https://medium.com/@pnowelldesign/stuff-at-the-top-of-an-svg-f3ad198eb54e" target="_blank" rel="external">of</a><br><a href="https://medium.com/sketch-app-sources/svgito-little-optimizations-for-svgs-22114af9fdc9" target="_blank" rel="external">SVGs</a><br>)</li>
-<li>They have to not piss off your design team</li>
-<li>They have to not piss off your development team</li>
-</ul>
-<h4 id="Okay-so-what-about-icon-fonts"><a href="#Okay-so-what-about-icon-fonts" class="headerlink" title="Okay, so what about icon fonts?"></a>Okay, so what about icon fonts?</h4><p>Icon fonts like FontAwesome came out as a way to soften the agony of working with icons, but they still aren’t perfect.<strong>Designing</strong>with them is just…<em>okay</em>; you still have to go look up the glyph, copy it, and paste it into the text layer. You can’t really symbolize them, and if you do, changing their color requires some text symbol trickery.<strong>Developing</strong>with icon fonts is simple, but not without issues. If the browser fails to load the icon font, then you’re up shit creek without a paddle. And you’re alone. In a kayak.<em>Sad.</em></p>
-<p><img src="http://img0.tuicool.com/V7nami.png!web" alt=""></p>
-<p>Well…now what?</p>
-<h4 id="So…use-SVGs-then"><a href="#So…use-SVGs-then" class="headerlink" title="So…use SVGs then?"></a>So…use SVGs then?</h4><p>Well for<strong>designers</strong>, SVGs are certainly easier to symbolize in Sketch, but it can be kind of a pain to change their color._So just don’t make them symbols, right? Then you can use layer styles to make them different colors!_But what if you want to update the little dropdown arrow from a caret to a triangle? Well good luck finding all 398 occurrences of that little arrow and updating them one-by-one. So that’s…well,<em>not great</em>. And I know from experience that<strong>developers</strong>love nothing more than using standalone SVGs for each and every icon in my design. Don’t worry guys, there are only 207 unique icons. That shouldn’t affect page load. I promise. /s</p>
-<h4 id="Ugh-then-what"><a href="#Ugh-then-what" class="headerlink" title="Ugh, then what?!"></a>Ugh, then what?!</h4><p>Keep reading, knucklehead �� And before we dive in, here’s something free. This will help you follow along with the rest of the tutorial.</p>
-<h3 id="My-Workflow"><a href="#My-Workflow" class="headerlink" title="My Workflow"></a>My Workflow</h3><p>My approach is divided into two parts:<strong>What I Do for Design</strong>and<strong>What I Do for Development</strong>. Neither technique is completely perfect, but it’s been successful so far, and makes the most people happy along the way.</p>
-<p>That’s important!</p>
-<h3 id="What-I-Do-For-Designers"><a href="#What-I-Do-For-Designers" class="headerlink" title="What I Do For Designers"></a>What I Do For Designers</h3><p>I<strong>absolutely love</strong>the Nucleo icon set. There are 8,300+ icons available in all kinds of different styles (outlined, solid, mini, full color, two-toned), and they’ve even included those pesky social icons that you need on pretty much every project. You can grab those below ($49 for a year, $129 for life).</p>
-<p><a href="https://nucleoapp.com/?ref=cmbeck82" target="_blank" rel="external">Nucleo - 8000+ Vector icons for iOS, Android and web_Nucleo is a library of 8000+ vector icons, in different styles and formats, as well as a web application to manage…_nucleoapp.com</a></p>
-<p>The absolute fastest and most sustainable way to use icons in Sketch is by using<strong>color symbols and masks</strong>. You’ve seen this technique before thanks to my palFrancesco, but here’s a quick refresher:</p>
-<p><a href="https://freeandwilling.com/fbmore?go=Sketch-Tint-Icons-Using-Nested-Symbols-UX-PowerTools" target="_blank" rel="external">Sketch: Tint icons using nested symbols - Design&amp;Prototype - Medium_I always wanted to create a single version of an icon and apply different colors to, or tint it, to indicate its state…_freeandwilling.com</a></p>
-<p>Step 1:Make symbols for the fill colors you want to use for your icons. Make sure every color symbol artboard is the same size.</p>
-<p><img src="http://img2.tuicool.com/yMfyi2v.png!web" alt=""></p>
-<p>Step 2:Make a new artboard for your icon symbol. Paste your icon onto your new artboard. If you’re using the<a href="https://freeandwilling.com/Jon?go=icon-article-nucleo" target="_blank" rel="external">Nucleo Icon</a>desktop app, just drag the icon directly into Sketch, then put it on your new artboard.</p>
-<p><img src="http://img1.tuicool.com/rYzeMjy.gif" alt=""></p>
-<p>Step 3:Make sure your icon is a single shape, and set it as a mask. If your icon isn’t a single shape, then select the different paths and union them.</p>
-<p><img src="http://img0.tuicool.com/AbmUZ3f.png!web" alt=""></p>
-<p>Step 4:Insert any of the color symbols on top of your icon mask and resize it to the size of your artboard. You’ll be able to override this color whenever you add an instance of your icon!</p>
-<p><img src="http://img2.tuicool.com/qERrQzN.png!web" alt=""></p>
-<p>Step 5 (Optional):If your icon is a logo (see above), set the mask fill to the brand color of the app. It’s easy to quickly find official brand colors over on<a href="https://brandcolors.net/" target="_blank" rel="external">brandcolors.net</a>. This saves you from having to create color symbols for a bunch of different app colors — if you ever want to use the brand color, just turn OFF the color symbol override:</p>
-<p><img src="http://img1.tuicool.com/mEf22ai.gif" alt=""></p>
-<p><strong>Warning:</strong></p>
-<p>If you have color symbols with semi-transparent fills, you’ll be able to see the mask fill through the transparency. So if you want 25% black to be an available color, don’t use a fill on the mask.</p>
-<h4 id="Why-This-Works-for-Designers"><a href="#Why-This-Works-for-Designers" class="headerlink" title="Why This Works for Designers"></a>Why This Works for Designers</h4><ul>
-<li>All of my icons are symbols, so if I ever want to update them, I can do it in one place and immediately see it update across all of my designs.</li>
-<li>I can quickly override the color from the inspector.</li>
-<li>If I update a color symbol, it will update all icons that use that color.</li>
-<li>I can nest icons inside of other symbols and quickly swap them out.</li>
-</ul>
-<h4 id="Why-This-Doesn’t-Work-for-Developers"><a href="#Why-This-Doesn’t-Work-for-Developers" class="headerlink" title="Why This Doesn’t Work for Developers"></a>Why This Doesn’t Work for Developers</h4><ul>
-<li>Zeplin and InVision don’t read color overrides, so they’ll only ever show you the color you used in the base symbol.</li>
-<li>The color symbol + mask technique adds some bloat to the SVG file size.</li>
-<li>They’re all individual SVGs, so devs will want to jump off a bridge.</li>
-</ul>
-<p><strong>Side note:</strong>All of the icons in<a href="https://www.uxpower.tools/" target="_blank" rel="external">UX Power Tools</a>are constructed this way. It’s super fast to swap colors, and even easier to swap icons inside of elements like buttons, fields, and notifications.</p>
-<h3 id="What-I-Do-For-Developers"><a href="#What-I-Do-For-Developers" class="headerlink" title="What I Do For Developers"></a>What I Do For Developers</h3><p>Zeplin works incredibly well for layout, color, and typography, but isn’t terribly efficient for assets. Instead of having devs pull icons directly from Zeplin (or sending them a zip of SVGs), I use<a href="https://freeandwilling.com/Jon?go=icon-article-nucleo" target="_blank" rel="external">Nucleo</a>to build an SVG sprite, then send that to developers. Not to brag, but they :heart: me for it :relieved:</p>
-<p>Step 1:Create a new project in the Nucleo web app.</p>
-<p>Step 2:Add icons to your Nucleo project that you intend to use (or have already used) in your designs.</p>
-<p><img src="http://img2.tuicool.com/qEN7bi7.png!web" alt=""></p>
-<p>Step 3:Open the project, select all icons in the right panel, and click<em>Download</em>.</p>
-<p><img src="http://img0.tuicool.com/vUFFRvY.png!web" alt=""></p>
-<p>Step 4:Choose your export preferences. “Export as Symbol” uses_xlink:href<em>which will be<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:href" target="_blank" rel="external">deprecated in SVG 2</a>(not out yet). That being said, it’s just the</em>“xlink”_portion that will no longer be needed, so “Export as Symbol” is still a safe option. I usually choose “Export CSS”, which creates a single SVG sprite, then creates a CSS file with classes for each icon.</p>
-<p>But wait, that’s not even the best part!</p>
-<p>Along with the SVG sprite and generated CSS, Nucleo also creates an HTML page showing off each icon, and the CSS class for using that icon in code.</p>
-<p><img src="http://img0.tuicool.com/qUFNB3E.png!web" alt=""></p>
-<h4 id="Why-This-Works-for-Designers-1"><a href="#Why-This-Works-for-Designers-1" class="headerlink" title="Why This Works for Designers"></a>Why This Works for Designers</h4><ul>
-<li>You don’t have to change your design process</li>
-<li>There’s a beautiful GUI for choosing icons</li>
-<li>Adding new icons is simple for both parties</li>
-</ul>
-<h4 id="Why-This-Works-for-Developers"><a href="#Why-This-Works-for-Developers" class="headerlink" title="Why This Works for Developers"></a>Why This Works for Developers</h4><ul>
-<li>It generates a single SVG sprite and the correct CSS</li>
-<li>It gives developers a GUI for finding icons and copying the code</li>
-<li>They can change the icon color and size in code. Hallelujah!</li>
-</ul>
-<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>There are fast ways to_<strong>design</strong><em>with icons, and fast ways to</em><strong>develop</strong>_with them. It’s a little extra work to make things optimal for both parties, but it will make everyone’s lives easier.</p>
-<p>If you’re not using<a href="https://freeandwilling.com/Jon?go=icon-article-nucleo" target="_blank" rel="external">Nucleo</a>, you can find lots of services like<a href="https://iconizr.com/" target="_blank" rel="external">Iconizr</a>that will help you generate an SVG sprite. If you’re lucky enough to have your own icon designer(s), then you’ll have to do this anyway since everything will be custom! You lucky dog.</p>
-<p>Check out<a href="https://www.uxpower.tools/" target="_blank" rel="external"><strong>UX Power Tools</strong></a>to see how you can use these icons in all kinds of sophisticated nested symbols. It’s truly the fastest way to design.</p>
-<p><img src="http://img1.tuicool.com/3ArEv2r.png!web" alt=""></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/UJRZv2a" target="_blank" rel="external">https://medium.com/ux-power-tools/the-most-efficient-way-to-use-icons-if-youre-a-designer-or-developer-5ce3954c146c</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/bmea222.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h4 id=&quot;Sketch-Tutorials&quot;&gt;&lt;a href=&quot;#Sketch-Tutorials&quot; class=&quot;headerlink&quot; t
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Bad volume sliders are a masterclass in terrible UI design</title>
     <link href="https://gmagon.com/blog/2017/06/13/bad-volume-sliders-are-a-masterclass-in-terrible-ui-design/"/>
     <id>https://gmagon.com/blog/2017/06/13/bad-volume-sliders-are-a-masterclass-in-terrible-ui-design/</id>
@@ -856,218 +1066,6 @@
     <summary type="html">
     
       &lt;p&gt;We’ve all been faced with egregious examples of UI design at times. They’re infuriating if you actually have to deal with them. But if th
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Malware downloader infects your PC without a mouse click</title>
-    <link href="https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/"/>
-    <id>https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/</id>
-    <published>2017-06-12T00:00:00.000Z</published>
-    <updated>2017-06-12T03:46:50.231Z</updated>
-    
-    <content type="html"><![CDATA[<p>The downloader installs a banking Trojan into your PC the moment your mouse pointer hovers over it.</p>
-<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fdims-shared%2Fdims3%2FGLOB%2Fcrop%2F5656x3744%2B0%2B0%2Fresize%2F1600x1059%21%2Fformat%2Fjpg%2Fquality%2F85%2Fhttp%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F2938118e33f0e37c828171941a41d88e%2F205362959%2Finternet-virus-picture-id101377891&amp;client=cbc79c14efcebee57402&amp;signature=27a09c8410ec298ef3e9f9ca4a72ca9a8b061f6a" alt=""></p>
-<p>Joerg Habermeier via Getty Images</p>
-<p>You think you’re safe from malware since you never click suspicious-looking links, then somebody finds a way to infect your PC anyway. Security researchers have<a href="http://blog.trendmicro.com/trendlabs-security-intelligence/mouseover-otlard-gootkit/" target="_blank" rel="external">discovered</a>that cybercriminals have recently started using a malware downloader that installs a<a href="https://www.engadget.com/2013/04/16/watch-out-most-game-hacks-are-actually-malware/" target="_blank" rel="external">banking Trojan</a>to your computer even if you don’t click anything. All it takes to trigger the download is to hover your mouse pointer over a hyperlink in a carrier PowerPoint file.</p>
-<p>According to researchers from Trend Micro and<a href="https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/" target="_blank" rel="external">Dodge This Security</a>the technique was used by a recent spam email campaign targeting companies and organizations in Europe, the Middle East and Africa. The emails’ subjects were mostly finance-related, such as “Invoice” and “Order #,” with an attached PowerPoint presentation.</p>
-<p><img src="https://s.aolcdn.com/hss/storage/midas/cb4d93a4905500a6e4fdaa2847e1ae8d/205363154/powerpoint-downloader02.jpg" alt=""></p>
-<p>[Image credit: Trend Micro]</p>
-<p>The PowerPoint file has a single hyperlink in the center that says “Loading… please wait” that has an embedded malicious PowerShell script. When you hover your mouse pointer over the link, it executes the script. If you’re running a newer version of Microsoft Office, though, you’ll still need to approve the malware’s download before it infects your PC.</p>
-<p>That’s because the more modern versions of the suite has Protected View, which will show a prompt warning you about a “potential security concern” when the script starts running. Just click Disable, and you’ll be fine. However, older versions of the suite don’t have that extra layer of security. The downloader can install a Trojan virus into your system to steal your credentials and bank account information the moment your mouse pointer hovers over the link.</p>
-<p><img src="https://s.aolcdn.com/hss/storage/midas/1530e0c39e52788a796980e61b13f057/205363172/powerpoint-downloader01.jpg" alt=""></p>
-<p>[Image credit: Trend Micro]</p>
-<p>The good news is that the spam emails died down back on May 29th after peaking on the 25th with 1,444 detections by Trend Micro. Still, it’s better to steer clear of similar emails, since it’s always possible that the campaign in May was just a test run for a bigger one.</p>
-<p>Via:</p>
-<p><a href="https://arstechnica.com/security/2017/06/malicious-powerpoint-files-can-infect-targets-when-hovering-over-hyperlinks/" target="_blank" rel="external">Ars Technica</a></p>
-<p>Source:</p>
-<p><a href="http://blog.trendmicro.com/trendlabs-security-intelligence/mouseover-otlard-gootkit/" target="_blank" rel="external">Trend Micro</a>,</p>
-<p><a href="https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/" target="_blank" rel="external">Dodge This Security</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;The downloader installs a banking Trojan into your PC the moment your mouse pointer hovers over it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Google Chrome might have broken your tests without you even knowing about it</title>
-    <link href="https://gmagon.com/blog/2017/06/12/google-chrome-might-have-broken-your-tests-without-you-even-knowing-about-it/"/>
-    <id>https://gmagon.com/blog/2017/06/12/google-chrome-might-have-broken-your-tests-without-you-even-knowing-about-it/</id>
-    <published>2017-06-12T00:00:00.000Z</published>
-    <updated>2017-06-12T02:59:42.597Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/zYNraum.jpg!web" alt=""></p>
-<p>My colleague just discovered that Chrome 58 (released April 19th) has silently muted all console.debug() output in their Chrome Dev Tools.</p>
-<p>How? By making changes to the<strong>Console UI</strong>, from filtering based on type of console method to filtering based on levels.</p>
-<p>Introducing levels is not a bad thing in and of itself. But Google also chose to stop showing all console output by default. Now you can only see level “Info” and below.</p>
-<p><img src="http://img0.tuicool.com/zYRFNrZ.png!web" alt=""></p>
-<p>Depending on your project, it might also be a big deal to no longer be able to filter by showing only one console method’s output.</p>
-<p>For example only<code>console.log()</code>. This is particularly troublesome if you’re working on a larger project with hundreds of different types of output mixed together.</p>
-<p>As you can see from the comments section<a href="https://developers.google.com/web/updates/2017/03/devtools-release-notes" target="_blank" rel="external">in the release notes</a>, this has not been received well by developers.</p>
-<p><img src="http://img2.tuicool.com/UnyyMzj.png!web" alt=""></p>
-<h3 id="Failing-Tests"><a href="#Failing-Tests" class="headerlink" title="Failing Tests"></a>Failing Tests</h3><p>This means that if your app or project relies on<code>console.debug()</code>level output for testing, your tests might have been failing for over a month without you even noticing.</p>
-<p>All without so much as a pop-up warning from Google.</p>
-<p>By making logging non-verbose by default, I believe Google has broken with best practice here, and made a huge mistake.</p>
-<p>Also, removing the ability to only show output based on a specific console method has resulted in a worsened workflow for many developers.</p>
-<h3 id="Test-it-out-for-yourself"><a href="#Test-it-out-for-yourself" class="headerlink" title="Test it out for yourself"></a>Test it out for yourself</h3><p>I did some testing with the following console methods in Chrome Dev Tools:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line">console</div><div class="line">.assert(</div><div class="line">true</div><div class="line">, &#123;</div><div class="line">assert</div><div class="line">: </div><div class="line">&quot;assert&quot;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">console</div><div class="line">.count(</div><div class="line">&apos;count&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.debug(</div><div class="line">&apos;debug&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.dir(&#123;</div><div class="line">dir</div><div class="line">: </div><div class="line">&quot;dir&quot;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">console</div><div class="line">.error(</div><div class="line">&apos;error&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.info(</div><div class="line">&apos;info&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.log(</div><div class="line">&apos;log&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.profile(</div><div class="line">&apos;profile&apos;</div><div class="line">);</div><div class="line">setTimeout(</div><div class="line">function</div><div class="line">(</div><div class="line">)</div><div class="line">&#123; </div><div class="line">console</div><div class="line">.profileEnd(</div><div class="line">&apos;profile&apos;</div><div class="line">); &#125;, </div><div class="line">1000</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.table(</div><div class="line">&apos;table&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.time(</div><div class="line">&apos;time&apos;</div><div class="line">);</div><div class="line">setTimeout(</div><div class="line">function</div><div class="line">(</div><div class="line">)</div><div class="line">&#123; </div><div class="line">console</div><div class="line">.timeEnd(</div><div class="line">&apos;time&apos;</div><div class="line">); &#125;, </div><div class="line">1000</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.timeStamp(</div><div class="line">&apos;timeStamp&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.trace(</div><div class="line">&apos;trace&apos;</div><div class="line">);</div><div class="line"></div><div class="line">console</div><div class="line">.warn(</div><div class="line">&apos;warn&apos;</div><div class="line">);</div></pre></td></tr></table></figure>
-<p>You can simply copy paste this into the console in Chrome Dev Tools, hit enter, and change the filter level to see what is displayed in which level.</p>
-<h3 id="Some-Screenshots-To-Illustrate"><a href="#Some-Screenshots-To-Illustrate" class="headerlink" title="Some Screenshots To Illustrate"></a>Some Screenshots To Illustrate</h3><p>Here are some screenshots to illustrate the differences between levels. Notice especially the first screenshot of default “Info” level, and the fact that “3 items are hidden.”</p>
-<p><img src="http://img0.tuicool.com/yUbyM37.png!web" alt=""></p>
-<p>Chrome 58, Chrome Dev Tools Console output, level “Info”.</p>
-<p><img src="http://img2.tuicool.com/RNZvmav.png!web" alt=""></p>
-<p>Chrome 58, Chrome Dev Tools Console output, level “Verbose”.</p>
-<p><img src="http://img2.tuicool.com/Jz6vMvR.png!web" alt=""></p>
-<p>Chrome 58, Chrome Dev Tools Console output, level “Warnings”.</p>
-<p><img src="http://img0.tuicool.com/VzA3qiM.png!web" alt=""></p>
-<p>Chrome 58, Chrome Dev Tools Console output, level “Errors”.</p>
-<h3 id="Have-Any-Thoughts"><a href="#Have-Any-Thoughts" class="headerlink" title="Have Any Thoughts?"></a>Have Any Thoughts?</h3><p>What do you think about this change? Was Google in the wrong for making this change? Or do you think it was an improvement to the “Console UI” overall? Please leave a comment below.</p>
-<p><em>This article was originally published on</em><a href="http://helloilovecode.com/" target="_blank" rel="external"><em>“Hello, I Love Code”</em></a><em>and is written by</em><a href="http://rob.ee/" target="_blank" rel="external"><em>Robert Axelsen</em></a><em>, who is a JavaScript Developer, Meetup Organizer and Open Source enthusiast based in Austria, Europe.</em></p>
-<p><em>You can connect with Robert on</em><a href="https://twitter.com/Robert_Axelsen" target="_blank" rel="external"><em>Twitter</em></a><em>, or get to know him better by</em><a href="http://rob.ee/" target="_blank" rel="external"><em>visiting his website.</em></a></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/fEBZVvA" target="_blank" rel="external">https://medium.freecodecamp.com/google-chrome-might-have-broken-your-tests-without-you-even-knowing-about-it-9d9130a6fd0c?gi=3e6645ec9ced</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/zYNraum.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;My colleague just discovered that Chrome 58 (released April 19th) has s
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>9 Essential Design Tools for Non-Designers</title>
-    <link href="https://gmagon.com/blog/2017/06/12/9-essential-design-tools-for-non-designers/"/>
-    <id>https://gmagon.com/blog/2017/06/12/9-essential-design-tools-for-non-designers/</id>
-    <published>2017-06-12T00:00:00.000Z</published>
-    <updated>2017-06-12T03:48:47.375Z</updated>
-    
-    <content type="html"><![CDATA[<p>Content and design work better together - in fact, your content marketing efforts really won’t achieve optimal success if they don’t include a<a href="http://www.rightsourcemarketing.com/content-creation/cant-win-content-marketing-without-good-design/" target="_blank" rel="external">solid design component</a>to bring your words to life.</p>
-<p>Not convinced your content needs design? Here are some recent stats that prove otherwise:</p>
-<ul>
-<li>37% of marketers said visual marketing was the most important form of content for their business, second only to blogging (38%). (<br><a href="https://www.socialmediaexaminer.com/wp-content/uploads/2016/05/SocialMediaMarketingIndustryReport2016.pdf" target="_blank" rel="external">Source</a><br>)</li>
-<li>Given 15 minutes to consume content, two-thirds of people prefer to read something beautifully designed (as opposed to something plain). (<br><a href="http://wwwimages.adobe.com/content/dam/Adobe/en/max/2015/pdfs/state-of-content-oct.pdf" target="_blank" rel="external">Source</a><br>)</li>
-<li>If the content or layout of a website is unattractive, 38% of people will stop engaging with it. (<br><a href="http://wwwimages.adobe.com/content/dam/Adobe/en/max/2015/pdfs/state-of-content-oct.pdf" target="_blank" rel="external">Source</a><br>)</li>
-<li>When people hear information, they usually only remember about 10% of that information three days later. But if a relevant image is paired with that same information, people will remember 65% of the information three days later. (<br><a href="http://www.brainrules.net/vision" target="_blank" rel="external">Source</a><br>)</li>
-<li>Tweets with images receive 150% more retweets than tweets without images. (<br><a href="https://blog.bufferapp.com/the-power-of-twitters-new-expanded-images-and-how-to-make-the-most-of-it" target="_blank" rel="external">Source</a><br>)</li>
-<li>Not getting enough likes? Facebook posts with images get 2.3 times more engagement vs. those without images. (<br><a href="http://buzzsumo.com/blog/how-to-massively-boost-your-blog-traffic-with-these-5-awesome-image-stats/" target="_blank" rel="external">Source</a><br>)</li>
-</ul>
-<p>But what to do with those little design projects that pop up, but seem too small to send to your designer - or need to be done too quickly to schedule? We all know what happens when people who aren’t designers try to be… well, graphic designers. You can end up with garish color palettes, no white space, and a jumble of shapes that look more like an abstract painting than an infographic.</p>
-<p>But the fact is that even if you_aren’t_trained as a graphic designer, in many companies, your job in marketing is going to require you to dabble in a little design here and there, whether it’s to save time, or money, or both.</p>
-<p>As such, a little design knowledge can go a long way, no matter your official title or department. You never know when a small-but-urgent project might come up while your official designer is swamped, or when a proposal will come across your desk featuring art created by your sales person. Or maybe you’re a part of an internal marketing department and routinely try to tackle the small stuff in house so you can send the larger projects to your creative team.</p>
-<p>Regardless, you’ll need to work on a design project at some point, and there’s no need for you to look like an amateur when you do it. Here are nine easy-to-use tools that can help any non-designer accomplish common design tasks:</p>
-<h2 id="How-to-create-a-quote-Recite"><a href="#How-to-create-a-quote-Recite" class="headerlink" title="How to create a quote:Recite"></a>How to create a quote:<a href="http://recite.com/" target="_blank" rel="external">Recite</a></h2><p><img src="http://img0.tuicool.com/i6FrQvE.jpg!web" alt="">This browser-based tool makes it simple to create and share a quote, fast. Just type in your quote and it will populate into dozens of pre-made templates. You can post directly to Facebook, Twitter, Pinterest, Tumblr, and StumbleUpon from the Recite website, or download the image directly to share later.</p>
-<h2 id="How-to-create-social-media-and-blog-graphics-Canva"><a href="#How-to-create-social-media-and-blog-graphics-Canva" class="headerlink" title="How to create social media and blog graphics:Canva"></a>How to create social media and blog graphics:<a href="https://www.canva.com/" target="_blank" rel="external">Canva</a></h2><p>​<img src="http://img2.tuicool.com/u6FJNv7.png!web" alt="">Canva offers a browser-based account, as well as iPhone and iPad apps. You do have to create an account in order to use it, but a regular Canva subscription is free (Canva for Work, which offers more robust features and support, requires a monthly fee). The tool offers lots of pre-sized templates that make it easy to design to certain specifications, such as social media posts, posters, letterhead, and more. You can choose from Canva’s native layouts, icons, and graphics - some are free, and some aren’t - or upload your own to keep things on brand.</p>
-<h2 id="How-to-make-charts-and-graphs-Beam"><a href="#How-to-make-charts-and-graphs-Beam" class="headerlink" title="How to make charts and graphs:Beam"></a>How to make charts and graphs:<a href="https://beam.venngage.com/" target="_blank" rel="external">Beam</a></h2><p><img src="http://img1.tuicool.com/jaYBZvr.jpg!web" alt="">Beam is a free online chart maker offered by infographic platform Venngage. You don’t need an account to make and save a chart using Beam’s mini website, but you will need to enter your name and email address in order to download your data visualization (you can also opt to embed it, or share it on Facebook and Twitter). Beam enables you to choose from several different types of graphs and color palettes, and you can edit the data in a spreadsheet, similar to PowerPoint - but the end result will be much prettier than a regular old slide deck.</p>
-<h2 id="How-to-edit-photos-Pixlr"><a href="#How-to-edit-photos-Pixlr" class="headerlink" title="How to edit photos:Pixlr"></a>How to edit photos:<a href="https://pixlr.com/editor/" target="_blank" rel="external">Pixlr</a></h2><p>​<img src="http://img0.tuicool.com/YvmyUfz.jpg!web" alt="">Need to edit a picture, and your smartphone or computer’s photo program just isn’t cutting it? Then turn to Pixlr, which is basically Photoshop in web browser form, but without the hefty price tag. The functionality is pretty similar to Photoshop, so familiarity with the popular Adobe program will help, but you can pick it up even if you’re never touched Photoshop in your life.</p>
-<h2 id="How-to-create-icons-LogoGarden"><a href="#How-to-create-icons-LogoGarden" class="headerlink" title="How to create icons:LogoGarden"></a>How to create icons:<a href="https://www.logogarden.com/" target="_blank" rel="external">LogoGarden</a></h2><p><img src="http://img0.tuicool.com/NjU3iqj.jpg!web" alt="">Yes, the word “logo” is in the name of this website - but don’t actually use it to make logos. That’s work best left to professionals, however, this website is useful if you need to pull together a suite of little icons for a blog, list, etc. and want to customize the color quickly.</p>
-<h2 id="How-to-find-icons-Iconfinder"><a href="#How-to-find-icons-Iconfinder" class="headerlink" title="How to find icons:Iconfinder"></a>How to find icons:<a href="https://www.iconfinder.com/" target="_blank" rel="external">Iconfinder</a></h2><p><img src="http://img0.tuicool.com/nMjQBjI.jpg!web" alt="">On the other hand, sometimes you need pre-made icons - say, social media icons - that all have a similar aesthetic. In that case, look to a website like Iconfinder instead of trying to make your own. They offer a mix of free and paid icons, as well as subscriptions, so there are various options to fit your budget.</p>
-<h2 id="How-to-get-color-palette-inspiration-Coolors-co"><a href="#How-to-get-color-palette-inspiration-Coolors-co" class="headerlink" title="How to get color palette inspiration:Coolors.co"></a>How to get color palette inspiration:<a href="https://coolors.co/" target="_blank" rel="external">Coolors.co</a></h2><p><img src="http://img2.tuicool.com/6vQZjaB.jpg!web" alt="">You’ve created that basic postcard, but it needs more color. So where in the Pantone universe do you start? Whether you’re taking your cues from an existing palette or building them from scratch, Coolors offers inspiration via a website, iOS app, Adobe add-on, and Chrome extension. Its strangely addicting color palette generator changes out swatches at the simple touch of a space bar, and you can input your existing brand colors to get complementary suggestions. You can also browse pre-created color palettes in a different tab.</p>
-<h2 id="How-to-figure-out-a-color-code-ColorZilla"><a href="#How-to-figure-out-a-color-code-ColorZilla" class="headerlink" title="How to figure out a color code:ColorZilla"></a>How to figure out a color code:<a href="http://www.colorzilla.com/" target="_blank" rel="external">ColorZilla</a></h2><p><img src="http://img1.tuicool.com/AvUJ3iz.jpg!web" alt="">This extension for Chrome and Firefox will tell you the precise six-number hex code for any pixel on a website. It even saves the history of color swatches you’ve picked, which is very helpful if you’re browsing the web and see a color you like that you want to save quickly.</p>
-<h2 id="How-to-figure-out-a-font-WhatFont"><a href="#How-to-figure-out-a-font-WhatFont" class="headerlink" title="How to figure out a font:WhatFont"></a>How to figure out a font:<a href="http://whatfontapp.com/" target="_blank" rel="external">WhatFont</a></h2><p><img src="http://img2.tuicool.com/Vbuq6fA.jpg!web" alt="">Similar to how ColorZilla lets you select a pixel and tells you the color code, WhatFont lets you hover over a font anywhere on a website page, and it will automatically pull the font name from the HTML code. You can add it as extension to Chrome and Safari or download the bookmarklet; it’s also available as an iPhone and iPad app.</p>
-<p>And finally, one bonus piece of design wisdom…</p>
-<h2 id="When-to-hire-a-designer"><a href="#When-to-hire-a-designer" class="headerlink" title="When to hire a designer"></a>When to hire a designer</h2><p>You might be able to make passable little graphics on your own if you already have brand guidelines, color codes, fonts, etc. in place. But trust me, to create a consistent look for your brand - not to mention design larger, more complex pieces like eBooks, infographics, print collateral, or interactive content - hire an experienced designer to make you look polished. The big jobs require<a href="http://www.rightsourcemarketing.com/content-creation/6-ways-get-best-work-design-team/" target="_blank" rel="external">talented designers</a>, and you’ll just frustrate yourself if you try to take on more complicated projects without the proper training.</p>
-<p>In a pinch, these nine tools will help you create small but quality design projects, even if you’re not a designer. Just be sure to turn to your graphic designer for larger jobs, or you’ll regret it.</p>
-<p>Source: “<a href="http://www.tuicool.com/articles/hit/nyYVvaN" target="_blank" rel="external">http://www.socialmediatoday.com/marketing/9-essential-design-tools-non-designers</a>“</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Content and design work better together - in fact, your content marketing efforts really won’t achieve optimal success if they don’t incl
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>A visual overview of Apple’s essential design principles</title>
-    <link href="https://gmagon.com/blog/2017/06/12/a-visual-overview-of-apples-essential-design-principles/"/>
-    <id>https://gmagon.com/blog/2017/06/12/a-visual-overview-of-apples-essential-design-principles/</id>
-    <published>2017-06-12T00:00:00.000Z</published>
-    <updated>2017-06-12T02:48:34.600Z</updated>
-    
-    <content type="html"><![CDATA[<p>Apple’s Human Interface Guidelines have been the core of the company’s design philosophy ever since the Macintosh in 1978. Apple design evangelist Mike Stern gave an overview of the ever-evolving guidelines during a Wednesday session at the company’s Worldwide Developers Conference.</p>
-<p>The session, entitled “</p>
-<p><a href="https://developer.apple.com/videos/play/wwdc2017/802/" target="_blank" rel="external">Essential Design Principles</a></p>
-<p>,” is one of my favorites, in large part because I’m a designer myself. I’ve distilled the essential Apple design principles he talked about in the sketchnotes above.</p>
-<h3 id="Apple-design-An-emphasis-on-‘human’"><a href="#Apple-design-An-emphasis-on-‘human’" class="headerlink" title="Apple design: An emphasis on ‘human’"></a>Apple design: An emphasis on ‘human’</h3><p>Apple choses “human interface” rather than the more frequently used term “user interface” for a reason. “Human” is the expression of our highest and most noble qualities.</p>
-<p>Many of these Apple design principles might seem obvious, yet they often get neglected. We see this failure in apps that do not meet our expectations. The apps that ignore essential design principles are the ones that get used once and then deleted.</p>
-<p>Apple wants to change that. The company increased the number of design sessions at WWDC this year, illustrating a deep commitment to helping developers create well-designed apps.</p>
-<p>The Essential Design Principles session provided real-world experiences to reinforce the concepts discussed. The examples showed how decisions affect app design.</p>
-<h3 id="Well-designed-apps-create-a-delightful-experience"><a href="#Well-designed-apps-create-a-delightful-experience" class="headerlink" title="Well-designed apps create a delightful experience"></a>Well-designed apps create a delightful experience</h3><p>Apps with simple workflows, clear interfaces and helpful information create a delightful experience.</p>
-<p>The collection of Apple Human Interface Guidelines for all of the company’s operating systems (macOS, watchOS, iOS and tvOS) can be found on the<a href="https://developer.apple.com/design/" target="_blank" rel="external">Apple Developer website</a>. You can download design resources for Adobe Photoshop and Sketch in<a href="https://developer.apple.com/design/resources/" target="_blank" rel="external">Apple’s design resources section</a>.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/NNBvQn" target="_blank" rel="external">http://www.cultofmac.com/486340/apple-design-principles-sketchnotes/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Apple’s Human Interface Guidelines have been the core of the company’s design philosophy ever since the Macintosh in 1978. Apple design e
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Organizing your marketing tech stack</title>
-    <link href="https://gmagon.com/blog/2017/06/12/organizing-your-marketing-tech-stack/"/>
-    <id>https://gmagon.com/blog/2017/06/12/organizing-your-marketing-tech-stack/</id>
-    <published>2017-06-12T00:00:00.000Z</published>
-    <updated>2017-06-12T02:59:42.599Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/bMVVva3.jpg!web" alt=""></p>
-<p>Kobie FullerContributor</p>
-<p>More posts by this contributor:</p>
-<ul>
-<li><a href="https://techcrunch.com/2014/08/20/startup-marketing-how-emotion-drives-customer-action/" target="_blank" rel="external">Startup Marketing And How Emotion Drives Customer Action</a></li>
-</ul>
-<p>Figuring out how to organize your marketing stack is almost like putting together a 1,000 piece blank jigsaw puzzle — impossible.</p>
-<p>A Q1 ‘17 survey by<a href="https://www.cmocouncil.org/" target="_blank" rel="external">CMO Council</a>and<a href="http://www.redpoint.net/" target="_blank" rel="external">RedPoint Global</a>revealed only 3% of respondents felt all of their automation, engagement and deployment tools were fully connected, with data, metrics and insights traveling freely between different technologies.</p>
-<p>This stat was staggering to me. Rather than just sit on my hands I’ve put together this infographic, which will help marketers better make sense on how to potentially organize these tools and get closer to achieving cross-channel marketing nirvana.</p>
-<p><img src="http://img1.tuicool.com/vU3AZ3f.png!web" alt=""></p>
-<p><strong>Organize and focus your team:</strong></p>
-<p>You need a team that is organized and led at the level of the New England Patriots. Both your quant marketers and creative teams need systems and processes that help foster trust, harmony, commitment, accountability and orientation towards results (check out<a href="https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team" target="_blank" rel="external">The 5 Dysfunctions of Team</a>for more). Marketing specific collaboration tools are taking stabs at addressing these needs and should be incorporated into how you organize your teams.</p>
-<p><strong>Know your message:</strong></p>
-<p>It’s very easy to get lost in all the process and organization of marketing and totally lose track of the appropriate message you should be communicating to your target customer. Don’t fall into this trap! Put content first as all the effort you put into everything else will be wasted if you fail in crafting the right message. There are a lot of tools that can help you work through the content creation process.</p>
-<p>Establish an Intelligence Hub:</p>
-<p>_Create one centralized view of the customer and apply analytics, data science and orchestration against it_so you can enable advanced communication.<strong>This is the heart of integrating most of your tools.</strong>Create sophisticated automation orchestrating messages within and across channels. Keep in mind your approach should allow for 1 to 1, 1 to many and 1 to all forms of messaging.</p>
-<p>At Upfront,<a href="https://finance.yahoo.com/news/cordial-secures-6m-series-upfront-133238559.html" target="_blank" rel="external">we recently invested in Cordial</a>which aims to take this approach allowing marketers to take disparate data sources and create advanced marketing automation campaigns across all the dominant messaging channels in this type of manner. It’s something that’s been incredibly difficult to do with legacy systems until now.</p>
-<p><strong>Master the basic channels first:</strong></p>
-<p>While there are many exciting new types of marketing campaigns to drive growth, core channels such as<strong>email</strong>,<strong>social</strong>,<strong>web, search</strong>and<strong>offline</strong>still should be the main centers of focus for marketers. Be careful about getting distracted by next gen tactics like chatbots or VR if you haven’t even figured out the simple channels of reach.</p>
-<p><strong>Always be testing:</strong></p>
-<p>Invest in tools that test and optimize the performance of existing channels. You should always be searching for incremental lift in every tactic and tool you employ. If you fail in creating a test driven culture it will be very difficult to understand whether some of your new initiatives are really helping or hurting.</p>
-<h2 id="Related-Articles"><a href="#Related-Articles" class="headerlink" title="Related Articles"></a>Related Articles</h2><p><a href="https://techcrunch.com/2017/02/27/cordial-raises-6-million-for-its-customized-automated-email-marketing-service/" target="_blank" rel="external">Cordial raises $6 million for its customized, automated email marketing service</a></p>
-<p><a href="https://techcrunch.com/2016/06/21/to-compete-with-google-think-small/" target="_blank" rel="external">To compete with Google, think small</a></p>
-<p><a href="https://techcrunch.com/2017/04/11/sprinklr-launches-major-push-into-customer-experience/" target="_blank" rel="external">Sprinklr launches major push into customer experience</a></p>
-<p><a href="https://techcrunch.com/2015/11/02/sprinklr-acquires-booshaka/" target="_blank" rel="external">Sprinklr Acquires Booshaka For Smarter Audience Targeting</a></p>
-<p><a href="https://techcrunch.com/2015/05/28/gumgum-series-c/" target="_blank" rel="external">In-Image Ad Company GumGum Raises $26M</a></p>
-<p><a href="https://techcrunch.com/2017/05/02/mailchimps-marketing-automation-tools-are-now-available-for-free/" target="_blank" rel="external">Mailchimp’s marketing automation tools are now available for free</a></p>
-<p><strong>Wow the customer:</strong></p>
-<p>Focus on the customer experience and strive to make it a magical one. Leverage all data and insights available in order to delight the customer. However, don’t be afraid from time to time to take radical chances by throwing all customer feedback out the door and surprise them with something transformational that they never would expect. Its those types of moments that separate good marketers from great ones.</p>
-<p>Keep in mind that this survey is just that — a survey (it’s a lot in some places and over-simplified in others). How you will digest all of this information will, in part, depend upon your expertise. If you’re just starting out, take it slow and don’t get overwhelmed. If you’re an expert, send along some feedback on how this can be improved (there’s an interactive version coming!).</p>
-<p>What’s important to remember is that there has never been a more exciting time to be a marketer — and technology is playing a pivotal part in fostering better relationships with customers.</p>
-<p>Featured Image: FeelPic/Getty Images</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/VFfQFnN" target="_blank" rel="external">https://techcrunch.com/2017/06/11/organizing-your-marketing-tech-stack/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/bMVVva3.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Kobie FullerContributor&lt;/p&gt;
-&lt;p&gt;More posts by this contributor:&lt;/p&gt;
-&lt;ul&gt;
     
     </summary>
     

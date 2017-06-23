@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-06-23T07:53:27.168Z</updated>
+  <updated>2017-06-23T15:14:51.000Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -16,13 +16,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="https://gmagon.com/blog/2017/06/23/the-gif-is-30-years-old-now-is-it-stillpopular/"/>
+    <id>https://gmagon.com/blog/2017/06/23/the-gif-is-30-years-old-now-is-it-stillpopular/</id>
+    <published>2017-06-23T15:14:51.000Z</published>
+    <updated>2017-06-23T15:14:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>YouTube has 1.5 billion logged-in monthly users watching a ton of mobile video</title>
     <link href="https://gmagon.com/blog/2017/06/23/youtube-has-15-billion-logged-in-monthly-users-watching-a-ton-of-mobile-video/"/>
     <id>https://gmagon.com/blog/2017/06/23/youtube-has-15-billion-logged-in-monthly-users-watching-a-ton-of-mobile-video/</id>
     <published>2017-06-23T00:00:00.000Z</published>
-    <updated>2017-06-23T07:53:27.168Z</updated>
+    <updated>2017-06-23T15:14:51.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://img0.tuicool.com/FN7BjyZ.jpg!web" alt=""></p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="http://img0.tuicool.com/FN7BjyZ.jpg!web" alt=""></p>
 <p>This year at VidCon, YouTube shared some new metrics that really drive home how much its dominating mobile video usage and how quickly its service is gaining viewers on TVs.</p>
 <p>The highlight was the fact that there are now 1.5 billion logged-in users visiting the site every month. The distinction is important as there are undoubtedly still quite a few folks hopping on YouTube that aren’t necessarily using Google Accounts to do so.</p>
 <p>The site announced it hit 1 billion monthly active users in 2013, though that number assumedly related to all visitors, logged-in and not.</p>
@@ -35,8 +53,44 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/FN7BjyZ.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;This year at VidCon, YouTube shared some new metrics that really drive 
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/FN7BjyZ.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This year at VidCon, 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Search an element in an unsorted array using minimum number of comparisons</title>
+    <link href="https://gmagon.com/blog/2017/06/23/search-an-element-in-an-unsorted-array-using-minimum-number-of-comparisons/"/>
+    <id>https://gmagon.com/blog/2017/06/23/search-an-element-in-an-unsorted-array-using-minimum-number-of-comparisons/</id>
+    <published>2017-06-23T00:00:00.000Z</published>
+    <updated>2017-06-23T15:14:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Given an array of <strong>n </strong>distinct integers and an element <strong>x</strong>. Search the element <strong>x </strong>in the array using minimum number of comparisons. Any sort of comparison will contribute 1 to the count of comparisons. For example, the condition used to terminate a loop, will also contribute 1 to the count of comparisons each time it gets executed. Expressions like <strong>while (n) {n–;} </strong>also contribute to the count of comparisons as value of <strong>n </strong>is being compared internally so as to decide whether or not to terminate the loop.</p>
+<p>Examples:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">Input :</div><div class="line"> arr[] = &#123;</div><div class="line">4</div><div class="line">, </div><div class="line">6</div><div class="line">, </div><div class="line">1</div><div class="line">, </div><div class="line">5</div><div class="line">, </div><div class="line">8</div><div class="line">&#125;, </div><div class="line">        x = </div><div class="line">1</div><div class="line">Output :</div><div class="line"> Found</div><div class="line"></div><div class="line"></div><div class="line">Input :</div><div class="line"> arr[] = &#123;</div><div class="line">10</div><div class="line">, </div><div class="line">3</div><div class="line">, </div><div class="line">12</div><div class="line">, </div><div class="line">7</div><div class="line">, </div><div class="line">2</div><div class="line">, </div><div class="line">11</div><div class="line">, </div><div class="line">9</div><div class="line">&#125;, </div><div class="line">        x = </div><div class="line">15</div><div class="line">Output :</div><div class="line"> Not Found</div></pre></td></tr></table></figure>
+<p>Asked in Adobe Interview</p>
+<h2 id="Recommended-Please-try-your-approach-on-IDE-first-before-moving-on-to-the-solution"><a href="#Recommended-Please-try-your-approach-on-IDE-first-before-moving-on-to-the-solution" class="headerlink" title="Recommended: Please try your approach on{IDE}first, before moving on to the solution."></a><a href="http://ide.geeksforgeeks.org/" target="_blank" rel="external">Recommended: Please try your approach on<strong>{IDE}</strong>first, before moving on to the solution.</a></h2><p>Below simple method to search requires<strong>2n + 1</strong>comparisons in worst case.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">for</div><div class="line"> (i = </div><div class="line">0</div><div class="line">; i </div><div class="line">&lt;</div><div class="line"> n; i++)  </div><div class="line">// Worst case n+1</div><div class="line">if</div><div class="line"> (arr[i] == x)  </div><div class="line">// Worst case n</div><div class="line">return</div><div class="line"> i;</div></pre></td></tr></table></figure>
+<p>How to reduce number of comparisons?</p>
+<p>The idea is to copy x (element to be searched) to last location so that one last comparison when x is not present in arr[] is saved.</p>
+<p><strong>Algorithm:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">search(arr, n, x)</div><div class="line"></div><div class="line">if</div><div class="line"> arr[n</div><div class="line">-1</div><div class="line">] == x  </div><div class="line">// 1 comparison</div><div class="line">return</div><div class="line">&quot;true&quot;</div><div class="line"></div><div class="line">    backup = arr[n</div><div class="line">-1</div><div class="line">]</div><div class="line">    arr[n</div><div class="line">-1</div><div class="line">] = x</div><div class="line"></div><div class="line"></div><div class="line">for</div><div class="line"> i=</div><div class="line">0</div><div class="line">, i++ </div><div class="line">// no termination condition</div><div class="line">if</div><div class="line"> arr[i] == x </div><div class="line">// execute at most n times</div><div class="line">// that is at-most n comparisons</div><div class="line"></div><div class="line">            arr[n</div><div class="line">-1</div><div class="line">] = backup</div><div class="line"></div><div class="line">return</div><div class="line"> (i </div><div class="line">&lt;</div><div class="line"> n</div><div class="line">-1</div><div class="line">) </div><div class="line">// 1 comparison</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div></pre></td><td class="code"><pre><div class="line">// C++ implementation to search an element in</div><div class="line">// the unsorted array using minimum number of</div><div class="line">// comparisons</div><div class="line">#</div><div class="line">include</div><div class="line">&lt;</div><div class="line">bits/stdc++.h</div><div class="line">&gt;</div><div class="line">using</div><div class="line">namespace</div><div class="line">std</div><div class="line">;</div><div class="line"></div><div class="line"></div><div class="line">// function to search an element in</div><div class="line">// minimum number of comparisons</div><div class="line">string</div><div class="line">search</div><div class="line">(</div><div class="line">int</div><div class="line"> arr[], </div><div class="line">int</div><div class="line"> n, </div><div class="line">int</div><div class="line"> x)</div><div class="line">&#123;</div><div class="line"></div><div class="line">// 1st comparison</div><div class="line">if</div><div class="line"> (arr[n</div><div class="line">-1</div><div class="line">] == x)</div><div class="line"></div><div class="line">return</div><div class="line">&quot;Found&quot;</div><div class="line">;</div><div class="line"></div><div class="line"></div><div class="line">int</div><div class="line"> backup = arr[n</div><div class="line">-1</div><div class="line">];</div><div class="line">    arr[n</div><div class="line">-1</div><div class="line">] = x;</div><div class="line"></div><div class="line"></div><div class="line">// no termination condition and thus</div><div class="line">// no comparison</div><div class="line">for</div><div class="line"> (</div><div class="line">int</div><div class="line"> i = </div><div class="line">0</div><div class="line">; ;i++)</div><div class="line">    &#123;</div><div class="line"></div><div class="line">// this would be executed at-most n times</div><div class="line">// and therefore at-most n comparisons</div><div class="line">if</div><div class="line"> (arr[i] == x)</div><div class="line">        &#123;</div><div class="line"></div><div class="line">// replace arr[n-1] with its actual element</div><div class="line">// as in original &apos;arr[]&apos;</div><div class="line"></div><div class="line">            arr[n</div><div class="line">-1</div><div class="line">] = backup;</div><div class="line"></div><div class="line"></div><div class="line">// if &apos;x&apos; is found before the &apos;(n-1)th&apos;</div><div class="line">// index, then it is present in the array</div><div class="line">// final comparison</div><div class="line">if</div><div class="line"> (i </div><div class="line">&lt;</div><div class="line"> n</div><div class="line">-1</div><div class="line">)</div><div class="line"></div><div class="line">return</div><div class="line">&quot;Found&quot;</div><div class="line">;</div><div class="line"></div><div class="line"></div><div class="line">// else not present in the array</div><div class="line">return</div><div class="line">&quot;Not Found&quot;</div><div class="line">;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">// Driver program to test above</div><div class="line">int</div><div class="line">main</div><div class="line">()</div><div class="line">&#123;</div><div class="line"></div><div class="line">int</div><div class="line"> arr[] = &#123;</div><div class="line">4</div><div class="line">, </div><div class="line">6</div><div class="line">, </div><div class="line">1</div><div class="line">, </div><div class="line">5</div><div class="line">, </div><div class="line">8</div><div class="line">&#125;;</div><div class="line"></div><div class="line">int</div><div class="line"> n = </div><div class="line">sizeof</div><div class="line">(arr) / </div><div class="line">sizeof</div><div class="line">(arr[</div><div class="line">0</div><div class="line">]);</div><div class="line"></div><div class="line">int</div><div class="line"> x = </div><div class="line">1</div><div class="line">;</div><div class="line"></div><div class="line">cout</div><div class="line">&lt;</div><div class="line">&lt;</div><div class="line"> search(arr, n, x);</div><div class="line"></div><div class="line">return</div><div class="line">0</div><div class="line">;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Output:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Found</div></pre></td></tr></table></figure>
+<p>Time Complexity: O(n)</p>
+<p>Number of Comparisons: atmost<strong>(n+2)</strong>comparisons</p>
+<p>This article is contributed by<strong>Ayush Jauhari</strong>. If you like GeeksforGeeks and would like to contribute, you can also write an article using<a href="http://www.contribute.geeksforgeeks.org/" target="_blank" rel="external">contribute.geeksforgeeks.org</a>or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/iQrQvm3" target="_blank" rel="external">http://www.geeksforgeeks.org/search-element-unsorted-array-using-minimum-number-comparisons/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Given an array of &lt;strong&gt;n &lt;/strong&gt;distinct integers and an element &lt;strong&gt;x&lt;/strong
     
     </summary>
     
@@ -48,9 +102,9 @@
     <link href="https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/"/>
     <id>https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/</id>
     <published>2017-06-23T00:00:00.000Z</published>
-    <updated>2017-06-23T09:54:32.282Z</updated>
+    <updated>2017-06-23T15:14:51.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 which stands a big step up from its old black-and-white graphics. </p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 which stands a big step up from its old black-and-white graphics. </p>
 <p>Maybe you cannot comprehend what actually GIF is, but you must familiar with this: </p>
 <p><img src="/assets/bXQNq_s-200x150.gif" alt=""></p>
 <p>That’s right, memes in your phone is made of GIF format, which you always use when talking with someone in your social network and can’t stop using it, just as following:</p>
@@ -70,47 +124,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 whi
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>12 Factors to Cloud Success</title>
-    <link href="https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/"/>
-    <id>https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/</id>
-    <published>2017-06-23T00:00:00.000Z</published>
-    <updated>2017-06-23T07:53:27.158Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/3AZNviN.png!web" alt=""></p>
-<h2 id="12-Factors-to-Cloud-Success"><a href="#12-Factors-to-Cloud-Success" class="headerlink" title="12 Factors to Cloud Success"></a>12 Factors to Cloud Success</h2><p>Posted byRafael Benevides onJune 22, 2017June 19, 2017</p>
-<p>Hey, developers! Do you care about using the best practices to apply your application to the cloud? If so then you should be using<a href="https://12factor.net/" target="_blank" rel="external">The 12-factor App</a>, which is a methodology for building software-as-a-service. Today I like to talk about the 12-factor App, which I had presented to a group at the Red Hat Summit last month.</p>
-<p>Every developer that is moving their application to the cloud will face a different environment than what they are used to, their datacenter or own premise and that’s why they should care about the 12-factor methodology. This 12 step methodology was created by Heroku, which is a cloud provider who found a common solution to most of what their customers were experiencing and decided to release these solutions as a methodology. These 12 factors are intended to solve problems related to applications running in the cloud. If there was one key takeaway from my session it was not the idea to have the audience memorize these 12 factors but to have an understanding of why each one is important.</p>
-<ol>
-<li><strong>Codebase</strong><br>– use version control, one codebase tracked in revision control for many deployments.</li>
-<li><strong>Dependencies</strong><br>– use a package manager and don’t commit dependencies in the codebase repository.</li>
-<li><strong>Config</strong><br>– store the config in Environment Variable, if you have to repackage your application, you’re doing it wrong.</li>
-<li><strong>Backing Services</strong><br>– a<br><a href="https://12factor.net/codebase" target="_blank" rel="external">deploy</a><br>of the twelve-factor app should be able to swap out a local MySQL database with one managed by a third party (such as<br><a href="http://aws.amazon.com/rds/" target="_blank" rel="external">Amazon RDS</a><br>) without any changes to the app’s code.</li>
-<li><strong>Build, Release, Run</strong><br>– the twelve-factor app uses strict separation between the build, release, and run stages. Every release should always have a unique release ID and releases should allow rollback.</li>
-<li><strong>Processes</strong><br>– execute the app as one or more stateless processes, the Twelve-factor processes are stateless and<br><a href="http://en.wikipedia.org/wiki/Shared_nothing_architecture" target="_blank" rel="external">share-nothing</a><br>.</li>
-<li><strong>Port Binding</strong><br>– export services via port binding, The twelve-factor app is completely self-contained.</li>
-<li><strong>Concurrency</strong><br>– scale out via the process model. Each process should be individually scaled, with Factor 6 (Stateless), it is easy to scale the services.</li>
-<li><strong>Disposability</strong><br>– maximize robustness with fast startup and graceful shutdown, we can achieve this with containers.</li>
-<li><strong>Dev/Prod Parity</strong><br>– Keep development, staging, and production as similar as possible, the twelve-factor app is designed for<br><a href="http://www.avc.com/a_vc/2011/02/continuous-deployment.html" target="_blank" rel="external">continuous deployment</a><br>by keeping the gap between development and production small.</li>
-<li><strong>Logs</strong><br>– treat logs as event streams, a twelve-factor app never concerns itself with routing or storage of its output stream.</li>
-<li><strong>Admin Processes</strong><br>– run admin/management tasks as one-off processes.</li>
-</ol>
-<p>The 12-factor App methodology is technology and language agnostic but satisfied by<a href="https://developers.redhat.com/containers/" target="_blank" rel="external">Containers</a>,<a href="https://developers.redhat.com/microservices/" target="_blank" rel="external">Microservices</a>, and CI/CD Pipelines with a focus on<a href="https://developers.redhat.com/devops/" target="_blank" rel="external">DevOps</a>.You can access more information on The 12-factor Appat<a href="https://12factor.net/" target="_blank" rel="external">https://12factor.net/</a>.</p>
-<p><strong>Whether you are new to Containers or have experience, downloading this</strong><a href="https://developers.redhat.com/promotions/docker-cheatsheet/" target="_blank" rel="external"><strong>cheat sheet</strong></a><strong>can assist you when encountering tasks you haven’t done lately.</strong></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/qqa2yyN" target="_blank" rel="external">https://developers.redhat.com/blog/2017/06/22/12-factors-to-cloud-success/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/3AZNviN.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;12-Factors-to-Cloud-Success&quot;&gt;&lt;a href=&quot;#12-Factors-to-Cloud-Success
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Several days ago,  Facebook has been celebrated the 30 years birthday to the most popul
     
     </summary>
     
@@ -122,9 +136,9 @@
     <link href="https://gmagon.com/blog/2017/06/23/face-recognition-in-r/"/>
     <id>https://gmagon.com/blog/2017/06/23/face-recognition-in-r/</id>
     <published>2017-06-23T00:00:00.000Z</published>
-    <updated>2017-06-23T07:53:27.161Z</updated>
+    <updated>2017-06-23T15:14:51.000Z</updated>
     
-    <content type="html"><![CDATA[<p>(This article was first published on<a href="https://www.stoltzmaniac.com/facial-recognition-in-r/" target="_blank" rel="external"><strong>R-Projects – Stoltzmaniac</strong></a>, and kindly contributed toR-bloggers)</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>(This article was first published on<a href="https://www.stoltzmaniac.com/facial-recognition-in-r/" target="_blank" rel="external"><strong>R-Projects – Stoltzmaniac</strong></a>, and kindly contributed toR-bloggers)</p>
 <h3 id="Face-Recognition-in-R"><a href="#Face-Recognition-in-R" class="headerlink" title="Face Recognition in R"></a>Face Recognition in R</h3><p>OpenCV is an incredibly powerful tool to have in your toolbox. I have had a lot of success using it in Python but very little success in R. I haven’t done too much other than searching Google but it seems as if “imager” and “videoplayR” provide a lot of the functionality but not all of it.</p>
 <p>I have never actually called Python functions from R before. Initially, I tried the “rPython” library – that has a lot of advantages, but was completely unnecessary for me so system() worked absolutely fine. While this example is extremely simple, it should help to illustrate how easy it is to utilize the power of Python from within R. I need to give credit to Harrison Kinsley for all of his efforts and work at<a href="https://www.pythonprogramming.net/" target="_blank" rel="external">PythonProgramming.net</a>– I used a lot of his code and ideas for this post (especially the Python portion).</p>
 <p>Using videoplayR I created a function which would take a picture with my webcam and save it as “originalWebcamShot.png”</p>
@@ -186,7 +200,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;(This article was first published on&lt;a href=&quot;https://www.stoltzmaniac.com/facial-recognition-in-r/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;stron
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;(This article was first published on&lt;a href=&quot;https://www.stoltzmaniac.com/facial-recogn
     
     </summary>
     
@@ -194,35 +208,213 @@
   </entry>
   
   <entry>
-    <title>Search an element in an unsorted array using minimum number of comparisons</title>
-    <link href="https://gmagon.com/blog/2017/06/23/search-an-element-in-an-unsorted-array-using-minimum-number-of-comparisons/"/>
-    <id>https://gmagon.com/blog/2017/06/23/search-an-element-in-an-unsorted-array-using-minimum-number-of-comparisons/</id>
+    <title>12 Factors to Cloud Success</title>
+    <link href="https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/"/>
+    <id>https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/</id>
     <published>2017-06-23T00:00:00.000Z</published>
-    <updated>2017-06-23T07:53:27.164Z</updated>
+    <updated>2017-06-23T15:14:51.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Given an array of <strong>n </strong>distinct integers and an element <strong>x</strong>. Search the element <strong>x </strong>in the array using minimum number of comparisons. Any sort of comparison will contribute 1 to the count of comparisons. For example, the condition used to terminate a loop, will also contribute 1 to the count of comparisons each time it gets executed. Expressions like <strong>while (n) {n–;} </strong>also contribute to the count of comparisons as value of <strong>n </strong>is being compared internally so as to decide whether or not to terminate the loop.</p>
-<p>Examples:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">Input :</div><div class="line"> arr[] = &#123;</div><div class="line">4</div><div class="line">, </div><div class="line">6</div><div class="line">, </div><div class="line">1</div><div class="line">, </div><div class="line">5</div><div class="line">, </div><div class="line">8</div><div class="line">&#125;, </div><div class="line">        x = </div><div class="line">1</div><div class="line">Output :</div><div class="line"> Found</div><div class="line"></div><div class="line"></div><div class="line">Input :</div><div class="line"> arr[] = &#123;</div><div class="line">10</div><div class="line">, </div><div class="line">3</div><div class="line">, </div><div class="line">12</div><div class="line">, </div><div class="line">7</div><div class="line">, </div><div class="line">2</div><div class="line">, </div><div class="line">11</div><div class="line">, </div><div class="line">9</div><div class="line">&#125;, </div><div class="line">        x = </div><div class="line">15</div><div class="line">Output :</div><div class="line"> Not Found</div></pre></td></tr></table></figure>
-<p>Asked in Adobe Interview</p>
-<h2 id="Recommended-Please-try-your-approach-on-IDE-first-before-moving-on-to-the-solution"><a href="#Recommended-Please-try-your-approach-on-IDE-first-before-moving-on-to-the-solution" class="headerlink" title="Recommended: Please try your approach on{IDE}first, before moving on to the solution."></a><a href="http://ide.geeksforgeeks.org/" target="_blank" rel="external">Recommended: Please try your approach on<strong>{IDE}</strong>first, before moving on to the solution.</a></h2><p>Below simple method to search requires<strong>2n + 1</strong>comparisons in worst case.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">for</div><div class="line"> (i = </div><div class="line">0</div><div class="line">; i </div><div class="line">&lt;</div><div class="line"> n; i++)  </div><div class="line">// Worst case n+1</div><div class="line">if</div><div class="line"> (arr[i] == x)  </div><div class="line">// Worst case n</div><div class="line">return</div><div class="line"> i;</div></pre></td></tr></table></figure>
-<p>How to reduce number of comparisons?</p>
-<p>The idea is to copy x (element to be searched) to last location so that one last comparison when x is not present in arr[] is saved.</p>
-<p><strong>Algorithm:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">search(arr, n, x)</div><div class="line"></div><div class="line">if</div><div class="line"> arr[n</div><div class="line">-1</div><div class="line">] == x  </div><div class="line">// 1 comparison</div><div class="line">return</div><div class="line">&quot;true&quot;</div><div class="line"></div><div class="line">    backup = arr[n</div><div class="line">-1</div><div class="line">]</div><div class="line">    arr[n</div><div class="line">-1</div><div class="line">] = x</div><div class="line"></div><div class="line"></div><div class="line">for</div><div class="line"> i=</div><div class="line">0</div><div class="line">, i++ </div><div class="line">// no termination condition</div><div class="line">if</div><div class="line"> arr[i] == x </div><div class="line">// execute at most n times</div><div class="line">// that is at-most n comparisons</div><div class="line"></div><div class="line">            arr[n</div><div class="line">-1</div><div class="line">] = backup</div><div class="line"></div><div class="line">return</div><div class="line"> (i </div><div class="line">&lt;</div><div class="line"> n</div><div class="line">-1</div><div class="line">) </div><div class="line">// 1 comparison</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div></pre></td><td class="code"><pre><div class="line">// C++ implementation to search an element in</div><div class="line">// the unsorted array using minimum number of</div><div class="line">// comparisons</div><div class="line">#</div><div class="line">include</div><div class="line">&lt;</div><div class="line">bits/stdc++.h</div><div class="line">&gt;</div><div class="line">using</div><div class="line">namespace</div><div class="line">std</div><div class="line">;</div><div class="line"></div><div class="line"></div><div class="line">// function to search an element in</div><div class="line">// minimum number of comparisons</div><div class="line">string</div><div class="line">search</div><div class="line">(</div><div class="line">int</div><div class="line"> arr[], </div><div class="line">int</div><div class="line"> n, </div><div class="line">int</div><div class="line"> x)</div><div class="line">&#123;</div><div class="line"></div><div class="line">// 1st comparison</div><div class="line">if</div><div class="line"> (arr[n</div><div class="line">-1</div><div class="line">] == x)</div><div class="line"></div><div class="line">return</div><div class="line">&quot;Found&quot;</div><div class="line">;</div><div class="line"></div><div class="line"></div><div class="line">int</div><div class="line"> backup = arr[n</div><div class="line">-1</div><div class="line">];</div><div class="line">    arr[n</div><div class="line">-1</div><div class="line">] = x;</div><div class="line"></div><div class="line"></div><div class="line">// no termination condition and thus</div><div class="line">// no comparison</div><div class="line">for</div><div class="line"> (</div><div class="line">int</div><div class="line"> i = </div><div class="line">0</div><div class="line">; ;i++)</div><div class="line">    &#123;</div><div class="line"></div><div class="line">// this would be executed at-most n times</div><div class="line">// and therefore at-most n comparisons</div><div class="line">if</div><div class="line"> (arr[i] == x)</div><div class="line">        &#123;</div><div class="line"></div><div class="line">// replace arr[n-1] with its actual element</div><div class="line">// as in original &apos;arr[]&apos;</div><div class="line"></div><div class="line">            arr[n</div><div class="line">-1</div><div class="line">] = backup;</div><div class="line"></div><div class="line"></div><div class="line">// if &apos;x&apos; is found before the &apos;(n-1)th&apos;</div><div class="line">// index, then it is present in the array</div><div class="line">// final comparison</div><div class="line">if</div><div class="line"> (i </div><div class="line">&lt;</div><div class="line"> n</div><div class="line">-1</div><div class="line">)</div><div class="line"></div><div class="line">return</div><div class="line">&quot;Found&quot;</div><div class="line">;</div><div class="line"></div><div class="line"></div><div class="line">// else not present in the array</div><div class="line">return</div><div class="line">&quot;Not Found&quot;</div><div class="line">;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">// Driver program to test above</div><div class="line">int</div><div class="line">main</div><div class="line">()</div><div class="line">&#123;</div><div class="line"></div><div class="line">int</div><div class="line"> arr[] = &#123;</div><div class="line">4</div><div class="line">, </div><div class="line">6</div><div class="line">, </div><div class="line">1</div><div class="line">, </div><div class="line">5</div><div class="line">, </div><div class="line">8</div><div class="line">&#125;;</div><div class="line"></div><div class="line">int</div><div class="line"> n = </div><div class="line">sizeof</div><div class="line">(arr) / </div><div class="line">sizeof</div><div class="line">(arr[</div><div class="line">0</div><div class="line">]);</div><div class="line"></div><div class="line">int</div><div class="line"> x = </div><div class="line">1</div><div class="line">;</div><div class="line"></div><div class="line">cout</div><div class="line">&lt;</div><div class="line">&lt;</div><div class="line"> search(arr, n, x);</div><div class="line"></div><div class="line">return</div><div class="line">0</div><div class="line">;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Output:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Found</div></pre></td></tr></table></figure>
-<p>Time Complexity: O(n)</p>
-<p>Number of Comparisons: atmost<strong>(n+2)</strong>comparisons</p>
-<p>This article is contributed by<strong>Ayush Jauhari</strong>. If you like GeeksforGeeks and would like to contribute, you can also write an article using<a href="http://www.contribute.geeksforgeeks.org/" target="_blank" rel="external">contribute.geeksforgeeks.org</a>or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
-<p>Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/iQrQvm3" target="_blank" rel="external">http://www.geeksforgeeks.org/search-element-unsorted-array-using-minimum-number-comparisons/</a></p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="http://img1.tuicool.com/3AZNviN.png!web" alt=""></p>
+<h2 id="12-Factors-to-Cloud-Success"><a href="#12-Factors-to-Cloud-Success" class="headerlink" title="12 Factors to Cloud Success"></a>12 Factors to Cloud Success</h2><p>Posted byRafael Benevides onJune 22, 2017June 19, 2017</p>
+<p>Hey, developers! Do you care about using the best practices to apply your application to the cloud? If so then you should be using<a href="https://12factor.net/" target="_blank" rel="external">The 12-factor App</a>, which is a methodology for building software-as-a-service. Today I like to talk about the 12-factor App, which I had presented to a group at the Red Hat Summit last month.</p>
+<p>Every developer that is moving their application to the cloud will face a different environment than what they are used to, their datacenter or own premise and that’s why they should care about the 12-factor methodology. This 12 step methodology was created by Heroku, which is a cloud provider who found a common solution to most of what their customers were experiencing and decided to release these solutions as a methodology. These 12 factors are intended to solve problems related to applications running in the cloud. If there was one key takeaway from my session it was not the idea to have the audience memorize these 12 factors but to have an understanding of why each one is important.</p>
+<ol>
+<li><strong>Codebase</strong><br>– use version control, one codebase tracked in revision control for many deployments.</li>
+<li><strong>Dependencies</strong><br>– use a package manager and don’t commit dependencies in the codebase repository.</li>
+<li><strong>Config</strong><br>– store the config in Environment Variable, if you have to repackage your application, you’re doing it wrong.</li>
+<li><strong>Backing Services</strong><br>– a<br><a href="https://12factor.net/codebase" target="_blank" rel="external">deploy</a><br>of the twelve-factor app should be able to swap out a local MySQL database with one managed by a third party (such as<br><a href="http://aws.amazon.com/rds/" target="_blank" rel="external">Amazon RDS</a><br>) without any changes to the app’s code.</li>
+<li><strong>Build, Release, Run</strong><br>– the twelve-factor app uses strict separation between the build, release, and run stages. Every release should always have a unique release ID and releases should allow rollback.</li>
+<li><strong>Processes</strong><br>– execute the app as one or more stateless processes, the Twelve-factor processes are stateless and<br><a href="http://en.wikipedia.org/wiki/Shared_nothing_architecture" target="_blank" rel="external">share-nothing</a><br>.</li>
+<li><strong>Port Binding</strong><br>– export services via port binding, The twelve-factor app is completely self-contained.</li>
+<li><strong>Concurrency</strong><br>– scale out via the process model. Each process should be individually scaled, with Factor 6 (Stateless), it is easy to scale the services.</li>
+<li><strong>Disposability</strong><br>– maximize robustness with fast startup and graceful shutdown, we can achieve this with containers.</li>
+<li><strong>Dev/Prod Parity</strong><br>– Keep development, staging, and production as similar as possible, the twelve-factor app is designed for<br><a href="http://www.avc.com/a_vc/2011/02/continuous-deployment.html" target="_blank" rel="external">continuous deployment</a><br>by keeping the gap between development and production small.</li>
+<li><strong>Logs</strong><br>– treat logs as event streams, a twelve-factor app never concerns itself with routing or storage of its output stream.</li>
+<li><strong>Admin Processes</strong><br>– run admin/management tasks as one-off processes.</li>
+</ol>
+<p>The 12-factor App methodology is technology and language agnostic but satisfied by<a href="https://developers.redhat.com/containers/" target="_blank" rel="external">Containers</a>,<a href="https://developers.redhat.com/microservices/" target="_blank" rel="external">Microservices</a>, and CI/CD Pipelines with a focus on<a href="https://developers.redhat.com/devops/" target="_blank" rel="external">DevOps</a>.You can access more information on The 12-factor Appat<a href="https://12factor.net/" target="_blank" rel="external">https://12factor.net/</a>.</p>
+<p><strong>Whether you are new to Containers or have experience, downloading this</strong><a href="https://developers.redhat.com/promotions/docker-cheatsheet/" target="_blank" rel="external"><strong>cheat sheet</strong></a><strong>can assist you when encountering tasks you haven’t done lately.</strong></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/qqa2yyN" target="_blank" rel="external">https://developers.redhat.com/blog/2017/06/22/12-factors-to-cloud-success/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Given an array of &lt;strong&gt;n &lt;/strong&gt;distinct integers and an element &lt;strong&gt;x&lt;/strong&gt;. Search the element &lt;strong&gt;x &lt;/strong&gt;in the ar
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/3AZNviN.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;12-Factors-to-Cl
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>We Get It Facebook, You Want Us To Post More</title>
+    <link href="https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/"/>
+    <id>https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/</id>
+    <published>2017-06-22T00:00:00.000Z</published>
+    <updated>2017-06-23T15:14:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="It-only-works-if-you-share-stuff-inside-it"><a href="#It-only-works-if-you-share-stuff-inside-it" class="headerlink" title="It only works if you share stuff inside it."></a>It only works if you share stuff inside it.</h2><p><img src="http://img0.tuicool.com/UJbiM3m.png!web" alt=""></p>
+<h2 id="No-sharing-no-Facebook"><a href="#No-sharing-no-Facebook" class="headerlink" title="No sharing, no Facebook"></a>No sharing, no Facebook</h2><p><img src="http://img1.tuicool.com/QjiIBja.png!web" alt=""></p>
+<h2 id="Yes-sharing-happy-Facebook"><a href="#Yes-sharing-happy-Facebook" class="headerlink" title="Yes sharing, happy Facebook"></a>Yes sharing, happy Facebook</h2><p><img src="http://img2.tuicool.com/JZbamiB.jpg!web" alt=""></p>
+<h2 id="So-Facebook-really-wants-us-post-stuff"><a href="#So-Facebook-really-wants-us-post-stuff" class="headerlink" title="So Facebook really wants us post stuff."></a>So Facebook really wants us post stuff.</h2><p><img src="http://img2.tuicool.com/eUZraii.jpg!web" alt=""></p>
+<p>And it started doing this new thing where it tells you how many days in a row you’ve shared.</p>
+<p><img src="http://img2.tuicool.com/uIjY3qa.jpg!web" alt=""></p>
+<h2 id="To-encourage-you-to-feed-its-feed"><a href="#To-encourage-you-to-feed-its-feed" class="headerlink" title="To encourage you to feed its feed"></a>To encourage you to feed its feed</h2><p><img src="http://img2.tuicool.com/AfMFzmZ.jpg!web" alt=""></p>
+<h3 id="Okay-Facebook-We-get-it"><a href="#Okay-Facebook-We-get-it" class="headerlink" title="Okay, Facebook. We get it."></a>Okay, Facebook. We get it.</h3><p><img src="http://img0.tuicool.com/uI3aEvR.png!web" alt=""></p>
+<h2 id="Thanks-for-the-reminder-I-guess"><a href="#Thanks-for-the-reminder-I-guess" class="headerlink" title="Thanks for the reminder, I guess?"></a>Thanks for the reminder, I guess?</h2><p><img src="http://img1.tuicool.com/RjArmeI.png!web" alt=""></p>
+<h2 id="Lord-Have-Mercy"><a href="#Lord-Have-Mercy" class="headerlink" title="Lord. Have. Mercy."></a>Lord. Have. Mercy.</h2><p><img src="http://img0.tuicool.com/iQ3aIrM.png!web" alt=""></p>
+<h2 id="People-are-certainly-uhhh-responding"><a href="#People-are-certainly-uhhh-responding" class="headerlink" title="People are certainly, uhhh, responding."></a>People are certainly, uhhh, responding.</h2><p><img src="http://img0.tuicool.com/yaUNRzv.png!web" alt=""></p>
+<p><img src="http://img1.tuicool.com/zEryMb2.png!web" alt=""></p>
+<p><img src="http://img2.tuicool.com/fAfyE3R.png!web" alt=""></p>
+<p><img src="http://img0.tuicool.com/ZfmqmiU.png!web" alt=""></p>
+<p>Facebook is also letting our friends know when we post — probably so they engage and make us feel better about posting, so we post more.</p>
+<p><img src="http://img0.tuicool.com/V3UZVbR.png!web" alt=""></p>
+<p><img src="http://img1.tuicool.com/N3IzyyU.jpg!web" alt=""></p>
+<p><a href="https://twitter.com/ashleyfeinberg" target="_blank" rel="external">Ashley Feinberg</a><a href="https://twitter.com/ashleyfeinberg" target="_blank" rel="external">@ashleyfeinberg</a></p>
+<p>Really proud of my friend @hamiltonnolan today</p>
+<p><a href="https://twitter.com/ashleyfeinberg/status/877197470840889348" target="_blank" rel="external">04:12 PM - 20 Jun 2017</a></p>
+<p><a href="https://twitter.com/intent/retweet?tweet_id=877197470840889348" target="_blank" rel="external">Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=877197470840889348" target="_blank" rel="external">Favorite</a></p>
+<h2 id="Yeeeesh"><a href="#Yeeeesh" class="headerlink" title="Yeeeesh"></a>Yeeeesh</h2><p><img src="http://img2.tuicool.com/u6Rriyf.png!web" alt=""></p>
+<h2 id="Other-Facebook-products-like-Messenger-use-a-similar-approach"><a href="#Other-Facebook-products-like-Messenger-use-a-similar-approach" class="headerlink" title="Other Facebook products, like Messenger, use a similar approach."></a>Other Facebook products, like Messenger, use a similar approach.</h2><p><img src="http://img2.tuicool.com/Jzuiyu7.jpg!web" alt=""></p>
+<p><img src="http://img2.tuicool.com/zIBVvuv.jpg!web" alt=""></p>
+<h2 id="Feels-good-doesn’t-it"><a href="#Feels-good-doesn’t-it" class="headerlink" title="Feels good, doesn’t it?"></a>Feels good, doesn’t it?</h2><p><img src="http://img1.tuicool.com/juyE7jm.gif" alt=""></p>
+<p>“We’re always looking for ways to help people share and connect on Facebook. Notifications are one of the ways we do this,” a Facebook spokesperson told BuzzFeed News.</p>
+<p><img src="http://img0.tuicool.com/mIrMZ3V.gif" alt=""></p>
+<p>Giphy / Viagiphy.com</p>
+<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
+<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
+<p>Got a confidential tip?Submit it here.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/VjMbuyn" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/we-get-it-facebook-you-want-us-to-post-more</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;It-only-works-if-you-share-stuff-inside-it&quot;&gt;&lt;a href=&quot;#It-only-works-if-you-share-s
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Facebook is testing a feature to prevent profile pictures being abused by other users</title>
+    <link href="https://gmagon.com/blog/2017/06/22/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/"/>
+    <id>https://gmagon.com/blog/2017/06/22/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/</id>
+    <published>2017-06-22T00:00:00.000Z</published>
+    <updated>2017-06-23T15:14:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="http://img1.tuicool.com/AziuEjU.jpg!web" alt=""></p>
+<p>Facebook is introducing a new feature to give users peace of mind around how their profile photo can be used and accessed by others.</p>
+<p>The social network today<a href="https://newsroom.fb.com/news/2017/06/giving-people-more-control-over-their-facebook-profile-picture/" target="_blank" rel="external">announced</a>a pilot program in India that is designed to protect users who are concerned about other people gaining access to their profile image. The new ‘photo guard’ feature has a range of safety measures that include:</p>
+<ul>
+<li>Preventing other users from downloading a person’s profile pic, or sharing it with others</li>
+<li>Preventing other users from tagging other people in a person’s profile pic</li>
+<li>Preventing other users from taking screenshots of a person’s profile pic — although this is initially for the Android app only</li>
+</ul>
+<p>When activated, the optional guard is visible through a blue border and shield around a user’s profile pic. The company partnered with an Indian illustrator to make these safety controls more compelling with attractively designed options.</p>
+<p>The new feature is driven by research that the company undertook in India. In a blogpost, Facebook explained that it found that “some women choose not to share profile pictures that include their faces anywhere on the internet because they’re concerned about what may happen to their photos.”</p>
+<p>It believes this solution may go some way to helping, and it said that early tests indicate that people are 75 percent less likely to copy a photo when the guard option is enabled.</p>
+<p>This rollout is initially happening in India, but Facebook said it hopes to expand it to other countries “soon.”</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/NZJjqqm" target="_blank" rel="external">https://techcrunch.com/2017/06/21/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/AziuEjU.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Facebook is introduci
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Crown – Fast and flexible game engine written in sane C++</title>
+    <link href="https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/"/>
+    <id>https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/</id>
+    <published>2017-06-22T00:00:00.000Z</published>
+    <updated>2017-06-23T15:14:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="The-flexible-game-engine"><a href="#The-flexible-game-engine" class="headerlink" title="The flexible game engine."></a>The flexible game engine.</h2><p>Crown is a general purpose data-driven game engin</p>
+<p>The flexible game engine.</p>
+<p>Crown is a general purpose data-driven game engine, written from scratch in<a href="https://gist.github.com/bkaradzic/2e39896bc7d8c34e042b" target="_blank" rel="external">orthodox C++</a>with a minimalistic and data-oriented design philosophy in mind.</p>
+<p>It is loosely inspired by Bitsquid (now Stingray) engine and its design principles; the current Lua API is similar to that of Bitsquid but this engine is_not_meant to be its clone_nor_to be API compatible with it.</p>
+<h2 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h2><h3 id="Level-Editor"><a href="#Level-Editor" class="headerlink" title="Level Editor"></a><a href="https://github.com/dbartolini/crown/tree/master/tools/level_editor" target="_blank" rel="external">Level Editor</a></h3><p><img src="http://img2.tuicool.com/3iEnqmm.png!web" alt=""></p>
+<h3 id="00-empty"><a href="#00-empty" class="headerlink" title="00-empty"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/00-empty" target="_blank" rel="external">00-empty</a></h3><p>Engine initialization and shutdown.</p>
+<h3 id="01-physics"><a href="#01-physics" class="headerlink" title="01-physics"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/01-physics" target="_blank" rel="external">01-physics</a></h3><p><img src="http://img1.tuicool.com/bm2MFnU.png!web" alt=""></p>
+<h3 id="02-animation"><a href="#02-animation" class="headerlink" title="02-animation"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/02-animation" target="_blank" rel="external">02-animation</a></h3><p><img src="http://img1.tuicool.com/F7f6Fba.png!web" alt=""></p>
+<h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p><a href="https://github.com/dbartolini/crown/releases/download/v0.0.28/crown-0.0.28-linux-x64.tar.gz" target="_blank" rel="external">crown-0.0.28-linux-x64.tar.gz</a></p>
+<h2 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h2><ul>
+<li><a href="http://dbartolini.github.io/crown/html" target="_blank" rel="external">Manual</a></li>
+<li><a href="http://dbartolini.github.io/crown/html/lua_api.html" target="_blank" rel="external">Lua API</a></li>
+<li><a href="http://dbartolini.github.io/crown/doxygen/modules" target="_blank" rel="external">C++ API</a></li>
+</ul>
+<h2 id="Building"><a href="#Building" class="headerlink" title="Building"></a>Building</h2><h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h3><h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><p>Android NDK (<a href="https://developer.android.com/tools/sdk/ndk/index.html" target="_blank" rel="external">https://developer.android.com/tools/sdk/ndk/index.html</a>)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">$ </div><div class="line">export</div><div class="line"> ANDROID_NDK_ROOT=</div><div class="line">&lt;</div><div class="line">path</div><div class="line">/</div><div class="line">to</div><div class="line">/</div><div class="line">android_ndk</div><div class="line">&gt;</div><div class="line"></div><div class="line">$ </div><div class="line">export</div><div class="line"> ANDROID_NDK_ARM=</div><div class="line">&lt;</div><div class="line">path</div><div class="line">/</div><div class="line">to</div><div class="line">/</div><div class="line">android_ndk_arm</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+<h3 id="Linux-Ubuntu-gt-16-04"><a href="#Linux-Ubuntu-gt-16-04" class="headerlink" title="Linux (Ubuntu &gt;= 16.04)"></a>Linux (Ubuntu &gt;= 16.04)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">$ sudo </div><div class="line">add</div><div class="line">-apt-repository </div><div class="line">pp</div><div class="line">a:vala</div><div class="line">-team</div><div class="line">$ sudo apt-</div><div class="line">get</div><div class="line"> install libgtk-</div><div class="line">3</div><div class="line">-dev valac libgee-</div><div class="line">0.8</div><div class="line">-dev</div><div class="line">$ sudo apt-</div><div class="line">get</div><div class="line"> install mesa-common-dev libgl1-mesa-dev libpulse-dev libxrandr-dev</div></pre></td></tr></table></figure>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>MSYS2 (<a href="http://www.msys2.org/" target="_blank" rel="external">http://www.msys2.org</a>)</p>
+<h3 id="Building-and-running-Level-Editor"><a href="#Building-and-running-Level-Editor" class="headerlink" title="Building and running Level Editor"></a>Building and running Level Editor</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ make tools-linux-release64</div><div class="line">$ cd build/linux64/bin</div><div class="line">$ ./level-editor-release ../../../samples/</div><div class="line">01</div><div class="line">-physics</div></pre></td></tr></table></figure>
+<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>Daniele Bartolini (<a href="https://twitter.com/aa_dani_bart" target="_blank" rel="external">@aa_dani_bart</a>)</p>
+<p>Project page:<a href="https://github.com/dbartolini/crown" target="_blank" rel="external">https://github.com/dbartolini/crown</a></p>
+<h2 id="Contributors"><a href="#Contributors" class="headerlink" title="Contributors"></a>Contributors</h2><p>In chronological order.</p>
+<p>Daniele Bartolini (<a href="https://github.com/dbartolini" target="_blank" rel="external">@dbartolini</a>)</p>
+<p>Simone Boscaratto (<a href="https://github.com/Xed89" target="_blank" rel="external">@Xed89</a>)</p>
+<p>Michele Rossi (<a href="https://github.com/mikymod" target="_blank" rel="external">@mikymod</a>)</p>
+<p>Michela Iacchelli - Pepper logo.</p>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div></pre></td><td class="code"><pre><div class="line">Copyright (c) 2012-2017 Daniele Bartolini and individual contributors.</div><div class="line"></div><div class="line">Permission is hereby granted, free of charge, to any person</div><div class="line">obtaining a copy of this software and associated documentation</div><div class="line">files (the &quot;Software&quot;), to deal in the Software without</div><div class="line">restriction, including without limitation the rights to </div><div class="line">use</div><div class="line">,</div><div class="line">copy, </div><div class="line">modify</div><div class="line">, </div><div class="line">merge</div><div class="line">, publish, </div><div class="line">distribute</div><div class="line">, sublicense, </div><div class="line">and</div><div class="line">/</div><div class="line">or</div><div class="line"> sell</div><div class="line">copies </div><div class="line">of</div><div class="line"> the Software, </div><div class="line">and</div><div class="line">to</div><div class="line"> permit persons </div><div class="line">to</div><div class="line"> whom the</div><div class="line">Software </div><div class="line">is</div><div class="line"> furnished </div><div class="line">to</div><div class="line">do</div><div class="line"> so, subject </div><div class="line">to</div><div class="line"> the </div><div class="line">following</div><div class="line"></div><div class="line">conditions:</div><div class="line"></div><div class="line">The above copyright </div><div class="line">notice</div><div class="line">and</div><div class="line"> this permission </div><div class="line">notice</div><div class="line"> shall be</div><div class="line">included </div><div class="line">in</div><div class="line"> all copies </div><div class="line">or</div><div class="line"> substantial portions </div><div class="line">of</div><div class="line"> the Software.</div><div class="line"></div><div class="line">THE SOFTWARE </div><div class="line">IS</div><div class="line"> PROVIDED </div><div class="line">&quot;AS IS&quot;</div><div class="line">, </div><div class="line">WITHOUT</div><div class="line"> WARRANTY </div><div class="line">OF</div><div class="line">ANY</div><div class="line"> KIND,</div><div class="line">EXPRESS </div><div class="line">OR</div><div class="line"> IMPLIED, </div><div class="line">INCLUDING</div><div class="line"> BUT </div><div class="line">NOT</div><div class="line"> LIMITED </div><div class="line">TO</div><div class="line"> THE WARRANTIES</div><div class="line"></div><div class="line">OF</div><div class="line"> MERCHANTABILITY, FITNESS </div><div class="line">FOR</div><div class="line"> A PARTICULAR PURPOSE </div><div class="line">AND</div><div class="line"></div><div class="line">NONINFRINGEMENT. </div><div class="line">IN</div><div class="line">NO</div><div class="line">EVENT</div><div class="line"> SHALL THE </div><div class="line">AUTHORS</div><div class="line">OR</div><div class="line"> COPYRIGHT</div><div class="line">HOLDERS BE LIABLE </div><div class="line">FOR</div><div class="line">ANY</div><div class="line"> CLAIM, DAMAGES </div><div class="line">OR</div><div class="line"> OTHER LIABILITY,</div><div class="line">WHETHER </div><div class="line">IN</div><div class="line"> AN </div><div class="line">ACTION</div><div class="line">OF</div><div class="line"> CONTRACT, TORT </div><div class="line">OR</div><div class="line"> OTHERWISE, ARISING</div><div class="line"></div><div class="line">FROM</div><div class="line">, </div><div class="line">OUT</div><div class="line">OF</div><div class="line">OR</div><div class="line">IN</div><div class="line">CONNECTION</div><div class="line">WITH</div><div class="line"> THE SOFTWARE </div><div class="line">OR</div><div class="line"> THE </div><div class="line">USE</div><div class="line">OR</div><div class="line"></div><div class="line">OTHER DEALINGS </div><div class="line">IN</div><div class="line"> THE SOFTWARE.</div></pre></td></tr></table></figure>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/raUnuay" target="_blank" rel="external">https://github.com/dbartolini/crown</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;The-flexible-game-engine&quot;&gt;&lt;a href=&quot;#The-flexible-game-engine&quot; class=&quot;headerlink&quot; t
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>10 things in tech you need to know today (GOOG)</title>
+    <link href="https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/"/>
+    <id>https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/</id>
+    <published>2017-06-22T00:00:00.000Z</published>
+    <updated>2017-06-23T15:14:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Good morning! Here is the tech news you need to know this Thursday.</p>
+<ol>
+<li><p><a href="http://uk.businessinsider.com/report-bill-gurley-to-leave-uber-board-2017-6" target="_blank" rel="external">Tech investor Bill Gurley is leaving the board of Uber.</a>Gurley will be replaced with Matt Cohler, another partner at Benchmark Capital. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/report-snapchat-buys-zenly-2017-6" target="_blank" rel="external">Snapchat reportedly paid over $250 million (£197 million) for an app that lets you track your friends.</a>It’s called Zenly. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/alibaba-stock-price-jack-ma-artificial-intelligence-machine-learning-may-cause-world-war-iii-2017-6" target="_blank" rel="external">Alibaba’s chairman and founder, Jack Ma, thinks that new technologies could be a threat to more than just jobs.</a>Ma said that new technologies like machine learning and artificial intelligence could lead to the third World War.</p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/deepmind-is-funding-climate-change-research-at-cambridge-university-2017-6" target="_blank" rel="external">DeepMind is funding climate change research at Cambridge University.</a>It wants to use artificial intelligence to slow down global warming. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/uk-digital-minister-matt-hancock-says-ai-needs-regulating-2017-6" target="_blank" rel="external">UK digital minister Matt Hancock said that the government will look to start regulating companies and scientists working in the field of artificial intelligence (AI).</a>He said AI has the potential change the world we live in but stressed that the technology must be regulated by a suitable framework.</p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/tesla-head-of-its-autopilot-software-chris-lattner-left-the-company-less-than-six-months-after-he-joined-2017-6" target="_blank" rel="external">Tesla’s head of its autopilot software left the company less than six months after he joined.</a>His name is Chris Lattner. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/uber-ceo-kalanick-on-coo-search-when-got-letter-urging-resignation-2017-6" target="_blank" rel="external">Uber’s Travis Kalanick was in Chicago to interview a COO candidate when he got the letter demanding his resignation.</a>Uber has been searching for a COO since early March.</p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/ethereum-price-flash-crash-2017-6" target="_blank" rel="external">Red-hot cryptocurrency Ethereum flash-crashed to $13 (£10) before bouncing back to $296 (£233).</a>The tumble occurred in a matter of minutes. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/snapchat-snap-maps-feature-shows-where-your-friends-are-2017-6" target="_blank" rel="external">Snapchat’s new maps feature shows you where your friends are.</a>A trailer for the feature shows two women browsing a map in Snapchat and tapping on a nearby location to see friends sharing videos from an ongoing concert.</p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/deepmind-expandsl-streams-app-to-musgrove-park-hospital-2017-6" target="_blank" rel="external">Google DeepMind is due to start rolling out its controversial Streams healthcare app to another UK hospital.</a>It signed a five year deal with Taunton and Somerset NHS Foundation Trust.</p>
+</li>
+</ol>
+<p>NOW WATCH:<a href="http://www.businessinsider.com/tesla-model-x-america-electric-car-road-trip-elon-musk-2017-6" target="_blank" rel="external">We drove a brand-new Tesla Model X from San Francisco to New York — here’s what happened</a></p>
+<p>Loading video…</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/UvueAzN" target="_blank" rel="external">http://www.businessinsider.com/10-things-in-tech-you-need-to-know-today-june-22-2017-6</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Good morning! Here is the tech news you need to know this Thursday.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a 
     
     </summary>
     
@@ -234,9 +426,9 @@
     <link href="https://gmagon.com/blog/2017/06/22/stop-copying-design-your-own-agile-product-management-framework-instead/"/>
     <id>https://gmagon.com/blog/2017/06/22/stop-copying-design-your-own-agile-product-management-framework-instead/</id>
     <published>2017-06-22T00:00:00.000Z</published>
-    <updated>2017-06-22T09:45:34.626Z</updated>
+    <updated>2017-06-23T15:14:51.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/32M7J3U.jpg!web" alt=""></p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="http://img1.tuicool.com/32M7J3U.jpg!web" alt=""></p>
 <p>Being agile is cool. You do it because, hey, everybody is agile now – or at least they seem to be. I guess you’ve got familiar with the fun procedures, read three articles, convinced your team members and BOOM! You’re doing it. Or, are you?</p>
 <h2 id="Adapt-not-adopt"><a href="#Adapt-not-adopt" class="headerlink" title="Adapt, not adopt"></a>Adapt, not adopt</h2><p>I had a beer with one of my project manager friends recently. As the topic of work came up, she started complaining about her company’s Scrum method. She said it was too inflexible and had been causing more frustration than benefits. I had asked how they used it and she replied:</p>
 <p>“We adopted it from a book.”</p>
@@ -308,182 +500,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/32M7J3U.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Being agile is cool. You do it because, hey, everybody is agile now – o
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>We Get It Facebook, You Want Us To Post More</title>
-    <link href="https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/"/>
-    <id>https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/</id>
-    <published>2017-06-22T00:00:00.000Z</published>
-    <updated>2017-06-22T09:45:34.629Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="It-only-works-if-you-share-stuff-inside-it"><a href="#It-only-works-if-you-share-stuff-inside-it" class="headerlink" title="It only works if you share stuff inside it."></a>It only works if you share stuff inside it.</h2><p><img src="http://img0.tuicool.com/UJbiM3m.png!web" alt=""></p>
-<h2 id="No-sharing-no-Facebook"><a href="#No-sharing-no-Facebook" class="headerlink" title="No sharing, no Facebook"></a>No sharing, no Facebook</h2><p><img src="http://img1.tuicool.com/QjiIBja.png!web" alt=""></p>
-<h2 id="Yes-sharing-happy-Facebook"><a href="#Yes-sharing-happy-Facebook" class="headerlink" title="Yes sharing, happy Facebook"></a>Yes sharing, happy Facebook</h2><p><img src="http://img2.tuicool.com/JZbamiB.jpg!web" alt=""></p>
-<h2 id="So-Facebook-really-wants-us-post-stuff"><a href="#So-Facebook-really-wants-us-post-stuff" class="headerlink" title="So Facebook really wants us post stuff."></a>So Facebook really wants us post stuff.</h2><p><img src="http://img2.tuicool.com/eUZraii.jpg!web" alt=""></p>
-<p>And it started doing this new thing where it tells you how many days in a row you’ve shared.</p>
-<p><img src="http://img2.tuicool.com/uIjY3qa.jpg!web" alt=""></p>
-<h2 id="To-encourage-you-to-feed-its-feed"><a href="#To-encourage-you-to-feed-its-feed" class="headerlink" title="To encourage you to feed its feed"></a>To encourage you to feed its feed</h2><p><img src="http://img2.tuicool.com/AfMFzmZ.jpg!web" alt=""></p>
-<h3 id="Okay-Facebook-We-get-it"><a href="#Okay-Facebook-We-get-it" class="headerlink" title="Okay, Facebook. We get it."></a>Okay, Facebook. We get it.</h3><p><img src="http://img0.tuicool.com/uI3aEvR.png!web" alt=""></p>
-<h2 id="Thanks-for-the-reminder-I-guess"><a href="#Thanks-for-the-reminder-I-guess" class="headerlink" title="Thanks for the reminder, I guess?"></a>Thanks for the reminder, I guess?</h2><p><img src="http://img1.tuicool.com/RjArmeI.png!web" alt=""></p>
-<h2 id="Lord-Have-Mercy"><a href="#Lord-Have-Mercy" class="headerlink" title="Lord. Have. Mercy."></a>Lord. Have. Mercy.</h2><p><img src="http://img0.tuicool.com/iQ3aIrM.png!web" alt=""></p>
-<h2 id="People-are-certainly-uhhh-responding"><a href="#People-are-certainly-uhhh-responding" class="headerlink" title="People are certainly, uhhh, responding."></a>People are certainly, uhhh, responding.</h2><p><img src="http://img0.tuicool.com/yaUNRzv.png!web" alt=""></p>
-<p><img src="http://img1.tuicool.com/zEryMb2.png!web" alt=""></p>
-<p><img src="http://img2.tuicool.com/fAfyE3R.png!web" alt=""></p>
-<p><img src="http://img0.tuicool.com/ZfmqmiU.png!web" alt=""></p>
-<p>Facebook is also letting our friends know when we post — probably so they engage and make us feel better about posting, so we post more.</p>
-<p><img src="http://img0.tuicool.com/V3UZVbR.png!web" alt=""></p>
-<p><img src="http://img1.tuicool.com/N3IzyyU.jpg!web" alt=""></p>
-<p><a href="https://twitter.com/ashleyfeinberg" target="_blank" rel="external">Ashley Feinberg</a><a href="https://twitter.com/ashleyfeinberg" target="_blank" rel="external">@ashleyfeinberg</a></p>
-<p>Really proud of my friend @hamiltonnolan today</p>
-<p><a href="https://twitter.com/ashleyfeinberg/status/877197470840889348" target="_blank" rel="external">04:12 PM - 20 Jun 2017</a></p>
-<p><a href="https://twitter.com/intent/retweet?tweet_id=877197470840889348" target="_blank" rel="external">Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=877197470840889348" target="_blank" rel="external">Favorite</a></p>
-<h2 id="Yeeeesh"><a href="#Yeeeesh" class="headerlink" title="Yeeeesh"></a>Yeeeesh</h2><p><img src="http://img2.tuicool.com/u6Rriyf.png!web" alt=""></p>
-<h2 id="Other-Facebook-products-like-Messenger-use-a-similar-approach"><a href="#Other-Facebook-products-like-Messenger-use-a-similar-approach" class="headerlink" title="Other Facebook products, like Messenger, use a similar approach."></a>Other Facebook products, like Messenger, use a similar approach.</h2><p><img src="http://img2.tuicool.com/Jzuiyu7.jpg!web" alt=""></p>
-<p><img src="http://img2.tuicool.com/zIBVvuv.jpg!web" alt=""></p>
-<h2 id="Feels-good-doesn’t-it"><a href="#Feels-good-doesn’t-it" class="headerlink" title="Feels good, doesn’t it?"></a>Feels good, doesn’t it?</h2><p><img src="http://img1.tuicool.com/juyE7jm.gif" alt=""></p>
-<p>“We’re always looking for ways to help people share and connect on Facebook. Notifications are one of the ways we do this,” a Facebook spokesperson told BuzzFeed News.</p>
-<p><img src="http://img0.tuicool.com/mIrMZ3V.gif" alt=""></p>
-<p>Giphy / Viagiphy.com</p>
-<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
-<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
-<p>Got a confidential tip?Submit it here.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/VjMbuyn" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/we-get-it-facebook-you-want-us-to-post-more</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;It-only-works-if-you-share-stuff-inside-it&quot;&gt;&lt;a href=&quot;#It-only-works-if-you-share-stuff-inside-it&quot; class=&quot;headerlink&quot; title=&quot;It only 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Facebook is testing a feature to prevent profile pictures being abused by other users</title>
-    <link href="https://gmagon.com/blog/2017/06/22/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/"/>
-    <id>https://gmagon.com/blog/2017/06/22/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/</id>
-    <published>2017-06-22T00:00:00.000Z</published>
-    <updated>2017-06-22T09:45:34.622Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/AziuEjU.jpg!web" alt=""></p>
-<p>Facebook is introducing a new feature to give users peace of mind around how their profile photo can be used and accessed by others.</p>
-<p>The social network today<a href="https://newsroom.fb.com/news/2017/06/giving-people-more-control-over-their-facebook-profile-picture/" target="_blank" rel="external">announced</a>a pilot program in India that is designed to protect users who are concerned about other people gaining access to their profile image. The new ‘photo guard’ feature has a range of safety measures that include:</p>
-<ul>
-<li>Preventing other users from downloading a person’s profile pic, or sharing it with others</li>
-<li>Preventing other users from tagging other people in a person’s profile pic</li>
-<li>Preventing other users from taking screenshots of a person’s profile pic — although this is initially for the Android app only</li>
-</ul>
-<p>When activated, the optional guard is visible through a blue border and shield around a user’s profile pic. The company partnered with an Indian illustrator to make these safety controls more compelling with attractively designed options.</p>
-<p>The new feature is driven by research that the company undertook in India. In a blogpost, Facebook explained that it found that “some women choose not to share profile pictures that include their faces anywhere on the internet because they’re concerned about what may happen to their photos.”</p>
-<p>It believes this solution may go some way to helping, and it said that early tests indicate that people are 75 percent less likely to copy a photo when the guard option is enabled.</p>
-<p>This rollout is initially happening in India, but Facebook said it hopes to expand it to other countries “soon.”</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/NZJjqqm" target="_blank" rel="external">https://techcrunch.com/2017/06/21/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/AziuEjU.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Facebook is introducing a new feature to give users peace of mind aroun
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Crown – Fast and flexible game engine written in sane C++</title>
-    <link href="https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/"/>
-    <id>https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/</id>
-    <published>2017-06-22T00:00:00.000Z</published>
-    <updated>2017-06-22T09:45:34.619Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="The-flexible-game-engine"><a href="#The-flexible-game-engine" class="headerlink" title="The flexible game engine."></a>The flexible game engine.</h2><p>Crown is a general purpose data-driven game engin</p>
-<p>The flexible game engine.</p>
-<p>Crown is a general purpose data-driven game engine, written from scratch in<a href="https://gist.github.com/bkaradzic/2e39896bc7d8c34e042b" target="_blank" rel="external">orthodox C++</a>with a minimalistic and data-oriented design philosophy in mind.</p>
-<p>It is loosely inspired by Bitsquid (now Stingray) engine and its design principles; the current Lua API is similar to that of Bitsquid but this engine is_not_meant to be its clone_nor_to be API compatible with it.</p>
-<h2 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h2><h3 id="Level-Editor"><a href="#Level-Editor" class="headerlink" title="Level Editor"></a><a href="https://github.com/dbartolini/crown/tree/master/tools/level_editor" target="_blank" rel="external">Level Editor</a></h3><p><img src="http://img2.tuicool.com/3iEnqmm.png!web" alt=""></p>
-<h3 id="00-empty"><a href="#00-empty" class="headerlink" title="00-empty"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/00-empty" target="_blank" rel="external">00-empty</a></h3><p>Engine initialization and shutdown.</p>
-<h3 id="01-physics"><a href="#01-physics" class="headerlink" title="01-physics"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/01-physics" target="_blank" rel="external">01-physics</a></h3><p><img src="http://img1.tuicool.com/bm2MFnU.png!web" alt=""></p>
-<h3 id="02-animation"><a href="#02-animation" class="headerlink" title="02-animation"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/02-animation" target="_blank" rel="external">02-animation</a></h3><p><img src="http://img1.tuicool.com/F7f6Fba.png!web" alt=""></p>
-<h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p><a href="https://github.com/dbartolini/crown/releases/download/v0.0.28/crown-0.0.28-linux-x64.tar.gz" target="_blank" rel="external">crown-0.0.28-linux-x64.tar.gz</a></p>
-<h2 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h2><ul>
-<li><a href="http://dbartolini.github.io/crown/html" target="_blank" rel="external">Manual</a></li>
-<li><a href="http://dbartolini.github.io/crown/html/lua_api.html" target="_blank" rel="external">Lua API</a></li>
-<li><a href="http://dbartolini.github.io/crown/doxygen/modules" target="_blank" rel="external">C++ API</a></li>
-</ul>
-<h2 id="Building"><a href="#Building" class="headerlink" title="Building"></a>Building</h2><h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h3><h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><p>Android NDK (<a href="https://developer.android.com/tools/sdk/ndk/index.html" target="_blank" rel="external">https://developer.android.com/tools/sdk/ndk/index.html</a>)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">$ </div><div class="line">export</div><div class="line"> ANDROID_NDK_ROOT=</div><div class="line">&lt;</div><div class="line">path</div><div class="line">/</div><div class="line">to</div><div class="line">/</div><div class="line">android_ndk</div><div class="line">&gt;</div><div class="line"></div><div class="line">$ </div><div class="line">export</div><div class="line"> ANDROID_NDK_ARM=</div><div class="line">&lt;</div><div class="line">path</div><div class="line">/</div><div class="line">to</div><div class="line">/</div><div class="line">android_ndk_arm</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-<h3 id="Linux-Ubuntu-gt-16-04"><a href="#Linux-Ubuntu-gt-16-04" class="headerlink" title="Linux (Ubuntu &gt;= 16.04)"></a>Linux (Ubuntu &gt;= 16.04)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">$ sudo </div><div class="line">add</div><div class="line">-apt-repository </div><div class="line">pp</div><div class="line">a:vala</div><div class="line">-team</div><div class="line">$ sudo apt-</div><div class="line">get</div><div class="line"> install libgtk-</div><div class="line">3</div><div class="line">-dev valac libgee-</div><div class="line">0.8</div><div class="line">-dev</div><div class="line">$ sudo apt-</div><div class="line">get</div><div class="line"> install mesa-common-dev libgl1-mesa-dev libpulse-dev libxrandr-dev</div></pre></td></tr></table></figure>
-<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>MSYS2 (<a href="http://www.msys2.org/" target="_blank" rel="external">http://www.msys2.org</a>)</p>
-<h3 id="Building-and-running-Level-Editor"><a href="#Building-and-running-Level-Editor" class="headerlink" title="Building and running Level Editor"></a>Building and running Level Editor</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ make tools-linux-release64</div><div class="line">$ cd build/linux64/bin</div><div class="line">$ ./level-editor-release ../../../samples/</div><div class="line">01</div><div class="line">-physics</div></pre></td></tr></table></figure>
-<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>Daniele Bartolini (<a href="https://twitter.com/aa_dani_bart" target="_blank" rel="external">@aa_dani_bart</a>)</p>
-<p>Project page:<a href="https://github.com/dbartolini/crown" target="_blank" rel="external">https://github.com/dbartolini/crown</a></p>
-<h2 id="Contributors"><a href="#Contributors" class="headerlink" title="Contributors"></a>Contributors</h2><p>In chronological order.</p>
-<p>Daniele Bartolini (<a href="https://github.com/dbartolini" target="_blank" rel="external">@dbartolini</a>)</p>
-<p>Simone Boscaratto (<a href="https://github.com/Xed89" target="_blank" rel="external">@Xed89</a>)</p>
-<p>Michele Rossi (<a href="https://github.com/mikymod" target="_blank" rel="external">@mikymod</a>)</p>
-<p>Michela Iacchelli - Pepper logo.</p>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div></pre></td><td class="code"><pre><div class="line">Copyright (c) 2012-2017 Daniele Bartolini and individual contributors.</div><div class="line"></div><div class="line">Permission is hereby granted, free of charge, to any person</div><div class="line">obtaining a copy of this software and associated documentation</div><div class="line">files (the &quot;Software&quot;), to deal in the Software without</div><div class="line">restriction, including without limitation the rights to </div><div class="line">use</div><div class="line">,</div><div class="line">copy, </div><div class="line">modify</div><div class="line">, </div><div class="line">merge</div><div class="line">, publish, </div><div class="line">distribute</div><div class="line">, sublicense, </div><div class="line">and</div><div class="line">/</div><div class="line">or</div><div class="line"> sell</div><div class="line">copies </div><div class="line">of</div><div class="line"> the Software, </div><div class="line">and</div><div class="line">to</div><div class="line"> permit persons </div><div class="line">to</div><div class="line"> whom the</div><div class="line">Software </div><div class="line">is</div><div class="line"> furnished </div><div class="line">to</div><div class="line">do</div><div class="line"> so, subject </div><div class="line">to</div><div class="line"> the </div><div class="line">following</div><div class="line"></div><div class="line">conditions:</div><div class="line"></div><div class="line">The above copyright </div><div class="line">notice</div><div class="line">and</div><div class="line"> this permission </div><div class="line">notice</div><div class="line"> shall be</div><div class="line">included </div><div class="line">in</div><div class="line"> all copies </div><div class="line">or</div><div class="line"> substantial portions </div><div class="line">of</div><div class="line"> the Software.</div><div class="line"></div><div class="line">THE SOFTWARE </div><div class="line">IS</div><div class="line"> PROVIDED </div><div class="line">&quot;AS IS&quot;</div><div class="line">, </div><div class="line">WITHOUT</div><div class="line"> WARRANTY </div><div class="line">OF</div><div class="line">ANY</div><div class="line"> KIND,</div><div class="line">EXPRESS </div><div class="line">OR</div><div class="line"> IMPLIED, </div><div class="line">INCLUDING</div><div class="line"> BUT </div><div class="line">NOT</div><div class="line"> LIMITED </div><div class="line">TO</div><div class="line"> THE WARRANTIES</div><div class="line"></div><div class="line">OF</div><div class="line"> MERCHANTABILITY, FITNESS </div><div class="line">FOR</div><div class="line"> A PARTICULAR PURPOSE </div><div class="line">AND</div><div class="line"></div><div class="line">NONINFRINGEMENT. </div><div class="line">IN</div><div class="line">NO</div><div class="line">EVENT</div><div class="line"> SHALL THE </div><div class="line">AUTHORS</div><div class="line">OR</div><div class="line"> COPYRIGHT</div><div class="line">HOLDERS BE LIABLE </div><div class="line">FOR</div><div class="line">ANY</div><div class="line"> CLAIM, DAMAGES </div><div class="line">OR</div><div class="line"> OTHER LIABILITY,</div><div class="line">WHETHER </div><div class="line">IN</div><div class="line"> AN </div><div class="line">ACTION</div><div class="line">OF</div><div class="line"> CONTRACT, TORT </div><div class="line">OR</div><div class="line"> OTHERWISE, ARISING</div><div class="line"></div><div class="line">FROM</div><div class="line">, </div><div class="line">OUT</div><div class="line">OF</div><div class="line">OR</div><div class="line">IN</div><div class="line">CONNECTION</div><div class="line">WITH</div><div class="line"> THE SOFTWARE </div><div class="line">OR</div><div class="line"> THE </div><div class="line">USE</div><div class="line">OR</div><div class="line"></div><div class="line">OTHER DEALINGS </div><div class="line">IN</div><div class="line"> THE SOFTWARE.</div></pre></td></tr></table></figure>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/raUnuay" target="_blank" rel="external">https://github.com/dbartolini/crown</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;The-flexible-game-engine&quot;&gt;&lt;a href=&quot;#The-flexible-game-engine&quot; class=&quot;headerlink&quot; title=&quot;The flexible game engine.&quot;&gt;&lt;/a&gt;The flexible 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>10 things in tech you need to know today (GOOG)</title>
-    <link href="https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/"/>
-    <id>https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/</id>
-    <published>2017-06-22T00:00:00.000Z</published>
-    <updated>2017-06-22T09:45:34.617Z</updated>
-    
-    <content type="html"><![CDATA[<p>Good morning! Here is the tech news you need to know this Thursday.</p>
-<ol>
-<li><p><a href="http://uk.businessinsider.com/report-bill-gurley-to-leave-uber-board-2017-6" target="_blank" rel="external">Tech investor Bill Gurley is leaving the board of Uber.</a>Gurley will be replaced with Matt Cohler, another partner at Benchmark Capital. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/report-snapchat-buys-zenly-2017-6" target="_blank" rel="external">Snapchat reportedly paid over $250 million (£197 million) for an app that lets you track your friends.</a>It’s called Zenly. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/alibaba-stock-price-jack-ma-artificial-intelligence-machine-learning-may-cause-world-war-iii-2017-6" target="_blank" rel="external">Alibaba’s chairman and founder, Jack Ma, thinks that new technologies could be a threat to more than just jobs.</a>Ma said that new technologies like machine learning and artificial intelligence could lead to the third World War.</p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/deepmind-is-funding-climate-change-research-at-cambridge-university-2017-6" target="_blank" rel="external">DeepMind is funding climate change research at Cambridge University.</a>It wants to use artificial intelligence to slow down global warming. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/uk-digital-minister-matt-hancock-says-ai-needs-regulating-2017-6" target="_blank" rel="external">UK digital minister Matt Hancock said that the government will look to start regulating companies and scientists working in the field of artificial intelligence (AI).</a>He said AI has the potential change the world we live in but stressed that the technology must be regulated by a suitable framework.</p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/tesla-head-of-its-autopilot-software-chris-lattner-left-the-company-less-than-six-months-after-he-joined-2017-6" target="_blank" rel="external">Tesla’s head of its autopilot software left the company less than six months after he joined.</a>His name is Chris Lattner. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/uber-ceo-kalanick-on-coo-search-when-got-letter-urging-resignation-2017-6" target="_blank" rel="external">Uber’s Travis Kalanick was in Chicago to interview a COO candidate when he got the letter demanding his resignation.</a>Uber has been searching for a COO since early March.</p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/ethereum-price-flash-crash-2017-6" target="_blank" rel="external">Red-hot cryptocurrency Ethereum flash-crashed to $13 (£10) before bouncing back to $296 (£233).</a>The tumble occurred in a matter of minutes. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/snapchat-snap-maps-feature-shows-where-your-friends-are-2017-6" target="_blank" rel="external">Snapchat’s new maps feature shows you where your friends are.</a>A trailer for the feature shows two women browsing a map in Snapchat and tapping on a nearby location to see friends sharing videos from an ongoing concert.</p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/deepmind-expandsl-streams-app-to-musgrove-park-hospital-2017-6" target="_blank" rel="external">Google DeepMind is due to start rolling out its controversial Streams healthcare app to another UK hospital.</a>It signed a five year deal with Taunton and Somerset NHS Foundation Trust.</p>
-</li>
-</ol>
-<p>NOW WATCH:<a href="http://www.businessinsider.com/tesla-model-x-america-electric-car-road-trip-elon-musk-2017-6" target="_blank" rel="external">We drove a brand-new Tesla Model X from San Francisco to New York — here’s what happened</a></p>
-<p>Loading video…</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/UvueAzN" target="_blank" rel="external">http://www.businessinsider.com/10-things-in-tech-you-need-to-know-today-june-22-2017-6</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Good morning! Here is the tech news you need to know this Thursday.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://uk.businessinsider.com/report-bill-gu
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/32M7J3U.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Being agile is cool. 
     
     </summary>
     
@@ -495,9 +513,9 @@
     <link href="https://gmagon.com/blog/2017/06/21/uber-founder-travis-kalanick-resigns-as-ceo/"/>
     <id>https://gmagon.com/blog/2017/06/21/uber-founder-travis-kalanick-resigns-as-ceo/</id>
     <published>2017-06-21T00:00:00.000Z</published>
-    <updated>2017-06-21T08:45:40.992Z</updated>
+    <updated>2017-06-22T08:56:45.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/e2QRVbi.jpg!web" alt=""></p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="http://img2.tuicool.com/e2QRVbi.jpg!web" alt=""></p>
 <p>David Orrell | CNBC</p>
 <p>Travis Kalanick.</p>
 <p>Travis Kalanick stepped down Tuesday as chief executive of Uber, the ride-hailing service that he helped found in 2009 and that he built into a transportation colossus, after a shareholder revolt made it untenable for him to stay on at the company.</p>
@@ -525,10 +543,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/e2QRVbi.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;David Orrell | CNBC&lt;/p&gt;
-&lt;p&gt;Travis Kalanick.&lt;/p&gt;
-&lt;p&gt;Travis Kalanick step
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/e2QRVbi.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;David Orrell | CNBC&lt;/
     
     </summary>
     
@@ -540,9 +556,9 @@
     <link href="https://gmagon.com/blog/2017/06/21/the-4-fundamental-pillars-of-a-successful-company-according-to-these-4-ceos/"/>
     <id>https://gmagon.com/blog/2017/06/21/the-4-fundamental-pillars-of-a-successful-company-according-to-these-4-ceos/</id>
     <published>2017-06-21T00:00:00.000Z</published>
-    <updated>2017-06-21T08:45:40.924Z</updated>
+    <updated>2017-06-22T08:56:45.000Z</updated>
     
-    <content type="html"><![CDATA[<p>When it comes to building asuccessful company, there truly is a “method to the madness.” Read enough interviews, listen to enough<a href="https://www.inc.com/nicolas-cole/this-ceo-says-its-time-to-rethink-your-approach-to-video-marketing.html" target="_blank" rel="external">CEOs speak on their difficult journey</a>up the mountain, and you’ll start to draw parallels from one experience to another – regardless of industry.</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>When it comes to building asuccessful company, there truly is a “method to the madness.” Read enough interviews, listen to enough<a href="https://www.inc.com/nicolas-cole/this-ceo-says-its-time-to-rethink-your-approach-to-video-marketing.html" target="_blank" rel="external">CEOs speak on their difficult journey</a>up the mountain, and you’ll start to draw parallels from one experience to another – regardless of industry.</p>
 <p>One of the ways I feed<a href="https://www.inc.com/nicolas-cole/the-4-biggest-obstacles-all-new-entrepreneurs-face-and-how-these-4-young-entrepr.html" target="_blank" rel="external">my own learning process as a young entrepreneur</a>is by learning from those above or ahead of me on the path. I am constantly looking for new people to learn from, eager to hear what solutions they found for themselves (and selfishly, how I might avoid those same challenges in the future).</p>
 <p>But “success” isn’t just about achievement. In fact, the most successful companies don’t just measure the end result, the total revenue, but the process that got them that result. Efficiency and good habits are equally (if not more) important.</p>
 <p>So, what do some of those good habits look like?</p>
@@ -565,7 +581,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;When it comes to building asuccessful company, there truly is a “method to the madness.” Read enough interviews, listen to enough&lt;a href=
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;When it comes to building asuccessful company, there truly is a “method to the madness.
     
     </summary>
     
@@ -577,9 +593,9 @@
     <link href="https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/"/>
     <id>https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/</id>
     <published>2017-06-21T00:00:00.000Z</published>
-    <updated>2017-06-21T08:45:40.922Z</updated>
+    <updated>2017-06-22T08:56:45.000Z</updated>
     
-    <content type="html"><![CDATA[<p>You’ll be able to see how furniture fits in your home before committing to hours of assembly.</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>You’ll be able to see how furniture fits in your home before committing to hours of assembly.</p>
 <p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fdims-shared%2Fdims3%2FGLOB%2Fcrop%2F4000x2667%2B0%2B0%2Fresize%2F1600x1067%21%2Fformat%2Fjpg%2Fquality%2F85%2Fhttp%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F5753e34113e3c608e558c7d1bd533c95%2F205003391%2F460623244.jpg&amp;client=cbc79c14efcebee57402&amp;signature=ea77eb3f97d65b75fb3eaf0896fba50f77ddd802" alt=""></p>
 <p>Bloomberg via Getty Images</p>
 <p>Apple and IKEA are creating an AR app that will let customers preview how an item will look in their home. Michael Valdsgaard, IKEA’s digital transformation manager, told Swedish website<a href="http://digital.di.se/artikel/ikea-om-samarbetet-med-apple-superintressant-for-oss" target="_blank" rel="external"><em>Digital.di</em></a>, “This will be the first augmented reality app that allows you to make reliable buying decisions.”</p>
@@ -592,8 +608,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;You’ll be able to see how furniture fits in your home before committing to hours of assembly.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/image
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;You’ll be able to see how furniture fits in your home before committing to hours of ass
     
     </summary>
     
@@ -605,9 +620,9 @@
     <link href="https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/"/>
     <id>https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</id>
     <published>2017-06-21T00:00:00.000Z</published>
-    <updated>2017-06-21T08:45:40.918Z</updated>
+    <updated>2017-06-22T08:56:45.000Z</updated>
     
-    <content type="html"><![CDATA[<p>It will help create models that scan the whole world but forecast at a local scale.</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>It will help create models that scan the whole world but forecast at a local scale.</p>
 <p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F73bb7d03dcb9dcca3c04eb7cefbfe050%2F205398004%2FMPAS-model.png&amp;client=cbc79c14efcebee57402&amp;signature=f092faba483afc8c2197a273ce8a7be11fe3ea61" alt=""></p>
 <p>NCAR</p>
 <p>IBM’s supercomputers might soon power the weather-predicting systems of tomorrow. Through its subsidiary The Weather Company, the computing titan has partnered with the University Corporation for Academic Research (UCAR) and the National Center for Atmospheric Research (NCAR) to move beyond today’s regional-scale forecasting to anticipate weather at the local level…and aspire to introduce the first model that covers the whole globe.</p>
@@ -617,8 +632,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;It will help create models that scan the whole world but forecast at a local scale.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?qua
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;It will help create models that scan the whole world but forecast at a local scale.&lt;/p&gt;
     
     </summary>
     
@@ -630,9 +644,9 @@
     <link href="https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/"/>
     <id>https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/</id>
     <published>2017-06-21T00:00:00.000Z</published>
-    <updated>2017-06-21T08:45:40.918Z</updated>
+    <updated>2017-06-22T08:56:45.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Including a leak about its anti-leaking efforts.</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Including a leak about its anti-leaking efforts.</p>
 <p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F77cf94f0db4d4e837b7b7c41b6d3fdc3%2F205396422%2Fsignage-is-displayed-at-the-1-infinite-loop-building-ahead-of-an-inc-picture-id618582652-ed.jpg&amp;client=cbc79c14efcebee57402&amp;signature=6ee70305fcd10e133332fff6a30f307ca15f7871" alt=""></p>
 <p>Michael Short/Bloomberg via Getty Images</p>
 <p>For the longest time, Apple product leaks tended to come from the<a href="https://www.engadget.com/2017/04/24/apple-iphone-8-may-not-ship-in-september/" target="_blank" rel="external">supply chain</a>: a factory worker would<a href="https://www.engadget.com/2011/01/05/iphone-5-parts-caught-on-video/" target="_blank" rel="external">send parts</a>or<a href="https://www.engadget.com/2017/05/15/exclusive-iphone-8-renders/" target="_blank" rel="external">a design file</a>to accessory makers eager to get a head start on their next iPhone cases. You might want to rethink that assumption. In a leaked secrecy briefing (ironic, we know) obtained by<em>The Outline</em>, Apple’s David Rice<a href="https://theoutline.com/post/1766/leaked-recording-inside-apple-s-global-war-on-leakers" target="_blank" rel="external">revealed</a>that leaks from the company’s campuses were more common in 2016 than those from suppliers. This is more a reflection of Apple’s success clamping down on third-party leaks than loose lips in Cupertino, although it does indicate that the tech giant will turn its attention inward.</p>
@@ -645,79 +659,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;Including a leak about its anti-leaking efforts.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>What Does a Well-Documented CSS Codebase Look Like?</title>
-    <link href="https://gmagon.com/blog/2017/06/20/what-does-a-well-documented-css-codebase-look-like/"/>
-    <id>https://gmagon.com/blog/2017/06/20/what-does-a-well-documented-css-codebase-look-like/</id>
-    <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.744Z</updated>
-    
-    <content type="html"><![CDATA[<p>In the front-end community, there is a lot of attention related to documenting JavaScript. That’s not so much the case with CSS. Often times I feel like lost when I join a project with minimal or no CSS documentation.</p>
-<p>Even though CSS is relatively easy to write, it can be quite hard to maintain.The specificity, the global scope of everything, and the lack of guidance can easily lead to inconsistency, code duplication, and over-complication.</p>
-<p>I’ve long been curious what a really well-documented CSS codebase looks like. Here, I’ll share my experience, along with the expectations I have towards my vision of well-documented stylesheets.</p>
-<p>It surprises me where I hear people say that commenting CSS is not that important. I imagine none of them have had to deal with 10,000+ line stylesheets! Often I’ve struggled with what HTML results in what specific style. Without having a solid context about the development decisions taken, debugging efforts increase.<a href="http://commadot.com/wtf-per-minute/" target="_blank" rel="external">WTFs per minute</a>increase exponentially too.</p>
-<p>Many times I’ve spent hours to figure out what the developer intended, why she didn’t do it the another way, why is this layout seemingly so complex. There is much pain buried in these “why” questions.</p>
-<p>So, here we go! Let’s examine the 4 big signs of a well-documented CSS codebase.</p>
-<p><img src="http://img2.tuicool.com/mE3YfiU.jpg!web" alt=""></p>
-<h3 id="1-CSS-Tech-Stack-amp-Toolchain"><a href="#1-CSS-Tech-Stack-amp-Toolchain" class="headerlink" title="1) CSS Tech Stack &amp; Toolchain"></a>1) CSS Tech Stack &amp; Toolchain</h3><p>There are likely things as part of our CSS code base like third-party libraries, mixins, or other tools. Looking in the package manager’s dependencies list doesn’t give a lot of context_why_the decisions were made to add these things, what they do exactly, and how we’re using them.</p>
-<p>It would be good for everyone to know why a certain library or tool was introduced. Imagine, for example, that a third-party library was introduced only to solve what has become an obsolete CSS issue. If we had context like that, we could make more informed decisions.</p>
-<p>There sometimes can be quite a few third-party libraries in a project. Have you ever spent a bunch of time on web searching each one figuring out what it even is? It can be quite a challenge to know or to keep track of what each exactly does.</p>
-<p>A well-documented codebase would include a description for each dependency. Perhaps you could the comment tweet-length (140 characters) explaining why it is there. That would give anyone else in the code base a head start on why something is there.</p>
-<p>I like adding these descriptions right in the place where I<code>@import</code>them.</p>
-<h3 id="2-CSS-Conventions"><a href="#2-CSS-Conventions" class="headerlink" title="2) CSS Conventions"></a>2) CSS Conventions</h3><p>Good coding conventions result in consistent, readable, and unambiguous source code. They standardize the structure and coding style of an application so that you and others can easily read and understand the code.</p>
-<p>It’s important to know if there are any project-specific naming conventions or methodologies in place (likeBEM,<a href="https://css-tricks.com/on-style-maintenance/#article-header-id-2" target="_blank" rel="external">OOCSS</a>,<a href="https://smacss.com/" target="_blank" rel="external">SMACSS</a>, orACSS). I’ve seen cases where a certain methodologies principles are applied but<a href="https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank" rel="external">the actual rules followed are modified based on the preferences of the developers involved</a>. So an indication how strictly we must follow the methodology principles would be good to leave in a well-documented code base.</p>
-<p>This brings up the larger issue of CSS style guides. A naming convention is just one choice as part of a complete styling strategy. Other parts might be:</p>
-<ul>
-<li>How is code sectioned?</li>
-<li>How are files structured?</li>
-<li><a href="https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/" target="_blank" rel="external">How are properties ordered?</a></li>
-<li>How is commenting done?</li>
-<li>How is the formatting done (indentation, rule declarations)?</li>
-<li><a href="https://github.com/airbnb/css#javascript-hooks" target="_blank" rel="external">How to bind JavaScript hooks to classes?</a></li>
-<li>… and many more rules or anti-patterns like nesting more then 3 levels deep, avoiding ID selectors,<br><a href="https://css-tricks.com/when-using-important-is-the-right-choice/" target="_blank" rel="external">using !important only for utility classes</a><br>and etc.</li>
-</ul>
-<p>All this makes up a completeCSS style guide. Having a shared vocabulary like this I’d consider a strong plus towards consistency.</p>
-<h3 id="3-CSS-Architecture"><a href="#3-CSS-Architecture" class="headerlink" title="3) CSS Architecture"></a>3) CSS Architecture</h3><p>Most scalable projects follow some type of architecture in terms of ordering styles. In a well-documented codebase, the fundamental principles that the project follows when structuring and sectioning styles should be mentioned.</p>
-<p>I was first inspired to explore CSS architecture by<a href="https://youtu.be/1OKZOV-iLj4" target="_blank" rel="external">watching Harry Roberts’s talk about managing CSS projects</a>. Here’s Harry:</p>
-<p>CSS architecture seems to be somewhat in vogue right now. It’s something you’ve no doubt heard mentioned numerous times over the past year or so, and with good reason: UIs (and the teams that build them) are getting bigger and more complicated than ever before.</p>
-<p>There are a number of aspects of CSS which make it troublesome. It’s declarative, meaning there is no logic or control flow to tell other developers much about the state or construction of the project. It operates in a global namespace, meaning we get collisions, leaking styles and inadvertent regressions. It utilizes inheritance, making everything somewhat interdependent and brittle. Finally, the unavoidable specificity model can cause problems when selectors fight each other for prominence.</p>
-<p>Therefore, he<a href="http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528" target="_blank" rel="external">introduces a concept for architecting CSS called ITCSS</a>. If you are working on a project of reasonable scale, chances are someone already defined similar principles or ideas that aim to resolve these problems. So in a well-documented codebase, I would expect to see them written somewhere.</p>
-<p>One could tell if the architecture is explained well enough if you can answer the following question: Where should new styles or stylesheets be added?</p>
-<h3 id="4-CSS-Component-Descriptions-and-Examples"><a href="#4-CSS-Component-Descriptions-and-Examples" class="headerlink" title="4) CSS Component Descriptions and Examples"></a>4) CSS Component Descriptions and Examples</h3><p>A common pattern is to separate the logical modules into CSS components (or “blocks” according to BEM). Some of them might be re-usable, some may not, but the important thing is that they are the building blocks of our project. Therefore, describing what they are should be a top priority in a well-documented codebase.</p>
-<p>Ideally, you should arrange and group them, name them, and establish rules between them to generate an overview of all components. A well-described CSS component doesn’t only include information about what the component does but also has other valuable intel like example HTML markup and the context in which it’s meant to be used. Going one step further brings up the issue of<a href="https://www.smashingmagazine.com/taking-pattern-libraries-next-level/" target="_blank" rel="external">Pattern Libraries</a>. A pattern library is a collection of reusable components that can be used together to create a website. With modular, component-based architecture becoming a trend, they can bring huge value.</p>
-<p>The goal of a pattern library is to show what can be built with existing patterns (components). But let’s take a look at what additional information can be displayed alongside each pattern also. Vitaly Friedman shared a good summary on<a href="https://www.smashingmagazine.com/taking-pattern-libraries-next-level/" target="_blank" rel="external">how taking the pattern library to the next level looks like</a>. He states that focusing on components isn’t good enough:</p>
-<p>One of the main problems with pattern libraries is that, while they provide an overview of components, they often leave a lot open to interpretation. Components can be combined in a variety of ways, consistently and inconsistently. It’s great to be able to see what button variants and iconography are available and what kinds of tables and pricing tags one may use, but what if you need to design or build an interface that contains all of these components at once — and perhaps another that doesn’t yet exist in the library?</p>
-<p>A list of modules alone wouldn’t convey any context or any specifics on how the modules should (and should not) be used.</p>
-<p>Based on Vitaly’s post and<a href="http://bradfrost.com/blog/post/anatomy-of-a-pattern-in-a-pattern-library/" target="_blank" rel="external">Brad Frost’s anatomy of a pattern in a pattern library</a>, here are a few ideas I can imagine each of our patterns (components) could have, despite the usual unique name, code sample and a description of the component’s purpose. Basic (fundamental):</p>
-<ul>
-<li>Tags or categories: The assigned tags or categories for the component. Developers could tag their components with “in use”, “needs refactoring” tags and etc.</li>
-<li>Responsive preview: A real-life, resizable preview of the component, using the actual snippet of code being used in production. Alternatively, just a screenshot.</li>
-<li>Versioning and legacy, team members involved or responsible: In a bigger team, the ownership of the (family of) components and which team members have been actively developing them could be really helpful for maintenance and further development.</li>
-</ul>
-<p>… and here are a few more advanced:</p>
-<ul>
-<li>Performance impact: Sometimes CSS could be heavy too. An indicator of performance or a “warning signs” section, outlining not only performance impact but also any common mishaps when the pattern is used incorrectly.</li>
-<li>Accessibility implications: Indicator of accessibility requirements. Some components might require more work to maintain accessibility, especially if they interact with other components.</li>
-<li>Related patterns: A quick overview of related components or the family of components that a given component belongs to. Could use an explanation of when to use a component, when not to, and why.</li>
-<li>Fallback and print previews.</li>
-</ul>
-<p>… the list goes on and on to whatever makes sense for your specific use-case.</p>
-<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>A well-documented CSS codebase enforces consistency, boosts maintainability, and helps the team to build a shared vocabulary. It is a prerequisite for efficient CSS design and development. Moreover, based on my experience, it inevitably leads to better performance. I strongly believe that these are the signs of the professional execution of a project.</p>
-<p>If you have thoughts, please feel free to add them in the comments below, so together we can come closer to better documentation practices.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/yINJrmZ" target="_blank" rel="external">https://css-tricks.com/well-documented-css-codebase-look-like/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;In the front-end community, there is a lot of attention related to documenting JavaScript. That’s not so much the case with CSS. Often ti
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Including a leak about its anti-leaking efforts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/
     
     </summary>
     
@@ -729,9 +672,9 @@
     <link href="https://gmagon.com/blog/2017/06/20/javascript-and-seo-making-your-bot-experience-as-good-as-your-user-experience/"/>
     <id>https://gmagon.com/blog/2017/06/20/javascript-and-seo-making-your-bot-experience-as-good-as-your-user-experience/</id>
     <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.736Z</updated>
+    <updated>2017-06-22T08:56:45.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Understanding JavaScript and its potential impact on search performance is a core skillset of the modern SEO professional. If search engines can’t crawl a site or can’t parse and understand the content, nothing is going to get indexed and the site is not going to rank.</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Understanding JavaScript and its potential impact on search performance is a core skillset of the modern SEO professional. If search engines can’t crawl a site or can’t parse and understand the content, nothing is going to get indexed and the site is not going to rank.</p>
 <p>The most important questions for an SEO relating to JavaScript: Can search engines see the content and grasp the website experience? If not, what solutions can be leveraged to fix this?</p>
 <h2 id="Fundamentals"><a href="#Fundamentals" class="headerlink" title="Fundamentals"></a>Fundamentals</h2><h3 id="What-is-JavaScript"><a href="#What-is-JavaScript" class="headerlink" title="What is JavaScript?"></a>What is JavaScript?</h3><p>When creating a modern web page, there are three major components:</p>
 <ol>
@@ -897,7 +840,78 @@
     
     <summary type="html">
     
-      &lt;p&gt;Understanding JavaScript and its potential impact on search performance is a core skillset of the modern SEO professional. If search engi
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Understanding JavaScript and its potential impact on search performance is a core skill
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>What Does a Well-Documented CSS Codebase Look Like?</title>
+    <link href="https://gmagon.com/blog/2017/06/20/what-does-a-well-documented-css-codebase-look-like/"/>
+    <id>https://gmagon.com/blog/2017/06/20/what-does-a-well-documented-css-codebase-look-like/</id>
+    <published>2017-06-20T00:00:00.000Z</published>
+    <updated>2017-06-22T08:56:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>In the front-end community, there is a lot of attention related to documenting JavaScript. That’s not so much the case with CSS. Often times I feel like lost when I join a project with minimal or no CSS documentation.</p>
+<p>Even though CSS is relatively easy to write, it can be quite hard to maintain.The specificity, the global scope of everything, and the lack of guidance can easily lead to inconsistency, code duplication, and over-complication.</p>
+<p>I’ve long been curious what a really well-documented CSS codebase looks like. Here, I’ll share my experience, along with the expectations I have towards my vision of well-documented stylesheets.</p>
+<p>It surprises me where I hear people say that commenting CSS is not that important. I imagine none of them have had to deal with 10,000+ line stylesheets! Often I’ve struggled with what HTML results in what specific style. Without having a solid context about the development decisions taken, debugging efforts increase.<a href="http://commadot.com/wtf-per-minute/" target="_blank" rel="external">WTFs per minute</a>increase exponentially too.</p>
+<p>Many times I’ve spent hours to figure out what the developer intended, why she didn’t do it the another way, why is this layout seemingly so complex. There is much pain buried in these “why” questions.</p>
+<p>So, here we go! Let’s examine the 4 big signs of a well-documented CSS codebase.</p>
+<p><img src="http://img2.tuicool.com/mE3YfiU.jpg!web" alt=""></p>
+<h3 id="1-CSS-Tech-Stack-amp-Toolchain"><a href="#1-CSS-Tech-Stack-amp-Toolchain" class="headerlink" title="1) CSS Tech Stack &amp; Toolchain"></a>1) CSS Tech Stack &amp; Toolchain</h3><p>There are likely things as part of our CSS code base like third-party libraries, mixins, or other tools. Looking in the package manager’s dependencies list doesn’t give a lot of context_why_the decisions were made to add these things, what they do exactly, and how we’re using them.</p>
+<p>It would be good for everyone to know why a certain library or tool was introduced. Imagine, for example, that a third-party library was introduced only to solve what has become an obsolete CSS issue. If we had context like that, we could make more informed decisions.</p>
+<p>There sometimes can be quite a few third-party libraries in a project. Have you ever spent a bunch of time on web searching each one figuring out what it even is? It can be quite a challenge to know or to keep track of what each exactly does.</p>
+<p>A well-documented codebase would include a description for each dependency. Perhaps you could the comment tweet-length (140 characters) explaining why it is there. That would give anyone else in the code base a head start on why something is there.</p>
+<p>I like adding these descriptions right in the place where I<code>@import</code>them.</p>
+<h3 id="2-CSS-Conventions"><a href="#2-CSS-Conventions" class="headerlink" title="2) CSS Conventions"></a>2) CSS Conventions</h3><p>Good coding conventions result in consistent, readable, and unambiguous source code. They standardize the structure and coding style of an application so that you and others can easily read and understand the code.</p>
+<p>It’s important to know if there are any project-specific naming conventions or methodologies in place (likeBEM,<a href="https://css-tricks.com/on-style-maintenance/#article-header-id-2" target="_blank" rel="external">OOCSS</a>,<a href="https://smacss.com/" target="_blank" rel="external">SMACSS</a>, orACSS). I’ve seen cases where a certain methodologies principles are applied but<a href="https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank" rel="external">the actual rules followed are modified based on the preferences of the developers involved</a>. So an indication how strictly we must follow the methodology principles would be good to leave in a well-documented code base.</p>
+<p>This brings up the larger issue of CSS style guides. A naming convention is just one choice as part of a complete styling strategy. Other parts might be:</p>
+<ul>
+<li>How is code sectioned?</li>
+<li>How are files structured?</li>
+<li><a href="https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/" target="_blank" rel="external">How are properties ordered?</a></li>
+<li>How is commenting done?</li>
+<li>How is the formatting done (indentation, rule declarations)?</li>
+<li><a href="https://github.com/airbnb/css#javascript-hooks" target="_blank" rel="external">How to bind JavaScript hooks to classes?</a></li>
+<li>… and many more rules or anti-patterns like nesting more then 3 levels deep, avoiding ID selectors,<br><a href="https://css-tricks.com/when-using-important-is-the-right-choice/" target="_blank" rel="external">using !important only for utility classes</a><br>and etc.</li>
+</ul>
+<p>All this makes up a completeCSS style guide. Having a shared vocabulary like this I’d consider a strong plus towards consistency.</p>
+<h3 id="3-CSS-Architecture"><a href="#3-CSS-Architecture" class="headerlink" title="3) CSS Architecture"></a>3) CSS Architecture</h3><p>Most scalable projects follow some type of architecture in terms of ordering styles. In a well-documented codebase, the fundamental principles that the project follows when structuring and sectioning styles should be mentioned.</p>
+<p>I was first inspired to explore CSS architecture by<a href="https://youtu.be/1OKZOV-iLj4" target="_blank" rel="external">watching Harry Roberts’s talk about managing CSS projects</a>. Here’s Harry:</p>
+<p>CSS architecture seems to be somewhat in vogue right now. It’s something you’ve no doubt heard mentioned numerous times over the past year or so, and with good reason: UIs (and the teams that build them) are getting bigger and more complicated than ever before.</p>
+<p>There are a number of aspects of CSS which make it troublesome. It’s declarative, meaning there is no logic or control flow to tell other developers much about the state or construction of the project. It operates in a global namespace, meaning we get collisions, leaking styles and inadvertent regressions. It utilizes inheritance, making everything somewhat interdependent and brittle. Finally, the unavoidable specificity model can cause problems when selectors fight each other for prominence.</p>
+<p>Therefore, he<a href="http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528" target="_blank" rel="external">introduces a concept for architecting CSS called ITCSS</a>. If you are working on a project of reasonable scale, chances are someone already defined similar principles or ideas that aim to resolve these problems. So in a well-documented codebase, I would expect to see them written somewhere.</p>
+<p>One could tell if the architecture is explained well enough if you can answer the following question: Where should new styles or stylesheets be added?</p>
+<h3 id="4-CSS-Component-Descriptions-and-Examples"><a href="#4-CSS-Component-Descriptions-and-Examples" class="headerlink" title="4) CSS Component Descriptions and Examples"></a>4) CSS Component Descriptions and Examples</h3><p>A common pattern is to separate the logical modules into CSS components (or “blocks” according to BEM). Some of them might be re-usable, some may not, but the important thing is that they are the building blocks of our project. Therefore, describing what they are should be a top priority in a well-documented codebase.</p>
+<p>Ideally, you should arrange and group them, name them, and establish rules between them to generate an overview of all components. A well-described CSS component doesn’t only include information about what the component does but also has other valuable intel like example HTML markup and the context in which it’s meant to be used. Going one step further brings up the issue of<a href="https://www.smashingmagazine.com/taking-pattern-libraries-next-level/" target="_blank" rel="external">Pattern Libraries</a>. A pattern library is a collection of reusable components that can be used together to create a website. With modular, component-based architecture becoming a trend, they can bring huge value.</p>
+<p>The goal of a pattern library is to show what can be built with existing patterns (components). But let’s take a look at what additional information can be displayed alongside each pattern also. Vitaly Friedman shared a good summary on<a href="https://www.smashingmagazine.com/taking-pattern-libraries-next-level/" target="_blank" rel="external">how taking the pattern library to the next level looks like</a>. He states that focusing on components isn’t good enough:</p>
+<p>One of the main problems with pattern libraries is that, while they provide an overview of components, they often leave a lot open to interpretation. Components can be combined in a variety of ways, consistently and inconsistently. It’s great to be able to see what button variants and iconography are available and what kinds of tables and pricing tags one may use, but what if you need to design or build an interface that contains all of these components at once — and perhaps another that doesn’t yet exist in the library?</p>
+<p>A list of modules alone wouldn’t convey any context or any specifics on how the modules should (and should not) be used.</p>
+<p>Based on Vitaly’s post and<a href="http://bradfrost.com/blog/post/anatomy-of-a-pattern-in-a-pattern-library/" target="_blank" rel="external">Brad Frost’s anatomy of a pattern in a pattern library</a>, here are a few ideas I can imagine each of our patterns (components) could have, despite the usual unique name, code sample and a description of the component’s purpose. Basic (fundamental):</p>
+<ul>
+<li>Tags or categories: The assigned tags or categories for the component. Developers could tag their components with “in use”, “needs refactoring” tags and etc.</li>
+<li>Responsive preview: A real-life, resizable preview of the component, using the actual snippet of code being used in production. Alternatively, just a screenshot.</li>
+<li>Versioning and legacy, team members involved or responsible: In a bigger team, the ownership of the (family of) components and which team members have been actively developing them could be really helpful for maintenance and further development.</li>
+</ul>
+<p>… and here are a few more advanced:</p>
+<ul>
+<li>Performance impact: Sometimes CSS could be heavy too. An indicator of performance or a “warning signs” section, outlining not only performance impact but also any common mishaps when the pattern is used incorrectly.</li>
+<li>Accessibility implications: Indicator of accessibility requirements. Some components might require more work to maintain accessibility, especially if they interact with other components.</li>
+<li>Related patterns: A quick overview of related components or the family of components that a given component belongs to. Could use an explanation of when to use a component, when not to, and why.</li>
+<li>Fallback and print previews.</li>
+</ul>
+<p>… the list goes on and on to whatever makes sense for your specific use-case.</p>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>A well-documented CSS codebase enforces consistency, boosts maintainability, and helps the team to build a shared vocabulary. It is a prerequisite for efficient CSS design and development. Moreover, based on my experience, it inevitably leads to better performance. I strongly believe that these are the signs of the professional execution of a project.</p>
+<p>If you have thoughts, please feel free to add them in the comments below, so together we can come closer to better documentation practices.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/yINJrmZ" target="_blank" rel="external">https://css-tricks.com/well-documented-css-codebase-look-like/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;In the front-end community, there is a lot of attention related to documenting JavaScri
     
     </summary>
     
@@ -909,9 +923,9 @@
     <link href="https://gmagon.com/blog/2017/06/20/outlook-for-mac-adds-features-office-365-already-has/"/>
     <id>https://gmagon.com/blog/2017/06/20/outlook-for-mac-adds-features-office-365-already-has/</id>
     <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.740Z</updated>
+    <updated>2017-06-22T08:56:45.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F9f542094d96c2e308d3e9dde785dfc06%2F205392943%2FOutlook-Mac_account.gif&amp;client=cbc79c14efcebee57402&amp;signature=0ad2e942b4e0434c4917c25c3cd7ff1b6cbe943d" alt=""></p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F9f542094d96c2e308d3e9dde785dfc06%2F205392943%2FOutlook-Mac_account.gif&amp;client=cbc79c14efcebee57402&amp;signature=0ad2e942b4e0434c4917c25c3cd7ff1b6cbe943d" alt=""></p>
 <p>Microsoft</p>
 <p><a href="https://www.engadget.com/2017/03/02/outlook-2016-for-mac-now-supports-google-calendar-and-contacts/" target="_blank" rel="external">Outlook 2016 for Mac</a>users are about to get a big update with some of the<a href="https://blogs.office.com/2017/06/19/outlook-2016-for-mac-is-adding-your-most-requested-features/" target="_blank" rel="external">most requested features</a>for the venerable Microsoft email program. You can now send your emails when you want with a new Send Later feature, use delivery and read receipts to make sure your emails are received and even create calendar events and tasks from your emails. You can also save your oft-repeated emails as templates to make sending them much faster, and Microsoft has simplified the account setup process.</p>
 <p><img src="https://s.aolcdn.com/hss/storage/midas/a4637aa8b92413183a938544e0950d84/205392949/Outlook+2016+for+Mac+send+later.png" alt=""></p>
@@ -923,7 +937,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F9f542094d96c2e30
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2Fo.aol
     
     </summary>
     
@@ -935,9 +949,9 @@
     <link href="https://gmagon.com/blog/2017/06/20/how-to-find-the-dominant-colors-in-an-image-macos/"/>
     <id>https://gmagon.com/blog/2017/06/20/how-to-find-the-dominant-colors-in-an-image-macos/</id>
     <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.695Z</updated>
+    <updated>2017-06-22T08:56:45.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Good design takes time and often years of experience and experimentation to getright.Itis built on certain conventions and rules that serve as the basis of a good design. A common example of a design convention is the use of contrasting colors to make text look better on a colored background.<strong>Vaunt</strong>is a free macOS that lets you find the dominant colors in an image. It’s a simple menu bar utility that you can drag &amp; drop imaged on to. It will find the dominant colors in an image and display all shades of it that appear in the image. You can click a color and its HEX code will automatically be copied to your clipboard.</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Good design takes time and often years of experience and experimentation to getright.Itis built on certain conventions and rules that serve as the basis of a good design. A common example of a design convention is the use of contrasting colors to make text look better on a colored background.<strong>Vaunt</strong>is a free macOS that lets you find the dominant colors in an image. It’s a simple menu bar utility that you can drag &amp; drop imaged on to. It will find the dominant colors in an image and display all shades of it that appear in the image. You can click a color and its HEX code will automatically be copied to your clipboard.</p>
 <p>Download and run Vaunt. It runs entirely from the menu bar. Click the menu bar icon to open the app and drag &amp; drop the image you want to analyze into the designated area. Give it a few seconds and it will show you a selection of colors that appear in the image.</p>
 <p>Vaunt will show you multiple shades of the dominant color. It finds this color using a clustering algorithm and it accounts for the variation in shades by providing you different ones that it detects in the image. Click a color to copy its HEX code to your clipboard.</p>
 <p><a href="http://www.addictivetips.com/mac-os/how-to-find-the-dominant-colors-in-an-image/attachment/vaunt/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/01/vaunt.jpg" alt="" title="vaunt"></a></p>
@@ -955,34 +969,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;Good design takes time and often years of experience and experimentation to getright.Itis built on certain conventions and rules that ser
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Armani’s own Android Wear 2.0 smartwatch will launch on September 14</title>
-    <link href="https://gmagon.com/blog/2017/06/20/armanis-own-android-wear-20-smartwatch-will-launch-on-september-14/"/>
-    <id>https://gmagon.com/blog/2017/06/20/armanis-own-android-wear-20-smartwatch-will-launch-on-september-14/</id>
-    <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.689Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img0.tuicool.com/rAZVrym.jpg!web" alt=""></p>
-<p>The Armani brand is already synonymous with high fashion, and now the company wants to add smartwatches to its lineup. Armani announced that its firstAndroid Wear 2.0 device, the Emporio Armani Connected, will go on sale in its stores starting on September 14. The company previously<a href="http://www.androidauthority.com/emporio-armani-connected-hybrid-watch-725061/" target="_blank" rel="external">released a hybrid smartwatch</a>that went on sale in the fall of 2016.</p>
-<p>See also:</p>
-<p><img src="http://img0.tuicool.com/reA3iez.jpg!web" alt=""></p>
-<h4 id="Best-Android-Wear-watches"><a href="#Best-Android-Wear-watches" class="headerlink" title="Best Android Wear watches"></a>Best Android Wear watches</h4><p>2 weeks ago</p>
-<p>The new touchscreen wearable will be one of the over 300 different hybrid and full smartwatches<a href="http://www.androidauthority.com/fossil-goes-full-android-wear-300-connected-watches-planned-year-759053/" target="_blank" rel="external">that will be made by Fossil</a>, which is also making and marketing devices for other fashion brands like Michael Kors, Skagen, Diesel, DKNY, and Marc Jacobs. In this case, the Emporio Armani Connected will be sold with support for up to eight different straps, along with a number of exclusive watchfaces. There’s not a lot of info on its hardware specs, but on the surface it looks it will be fairly typical Android Wear smartwatch, with a round display and a Qualcomm Snapdragon Wear 2100 processor inside.</p>
-<p>However, you are paying for the brand name, not the hardware, when you decide to get the Emporio Armani Connected. Pricing has not yet been announced but we expect it to be on the higher side of Android Wear products.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/yYby6nU" target="_blank" rel="external">http://www.androidauthority.com/armanis-android-wear-2-0-smartwatch-780870/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/rAZVrym.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;The Armani brand is already synonymous with high fashion, and now the c
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Good design takes time and often years of experience and experimentation to getright.It
     
     </summary>
     

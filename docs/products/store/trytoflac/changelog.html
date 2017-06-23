@@ -67,16 +67,16 @@
   <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Gmagon Software Official Website - Fast, simple & powerful solutions for everyone.">
   <!-- Open Graph -->
-  <meta name="description" content="function DateDiff(sDate1){       var  aDate,  oDate1,  oDate2,  iDays;       aDate  =  sDate1.split(&quot;-&quot;)         oDate1  =  new  Date(aDate[1]  +  &apos;-&apos;  +  aDate[2]  +  &apos;-&apos;  +  aDate[0])         oDa">
+  <meta name="description" content="function DateDiff(sDate1){       var  aDate,  oDate1,  oDate2,  iDays;       aDate  =  sDate1.split(&quot;-&quot;)         oDate1  =  new  Date(aDate[1]  +  &apos;-&apos;  +  aDate[2]  +  &apos;-&apos;  +  aDate[0])         oD">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Release Notes | TryToFLAC">
 <meta property="og:url" content="https://gmagon.com/products/store/trytoflac/changelog.html">
 <meta property="og:site_name" content="Gmagon Software Official Website - Fast, simple &amp; powerful solutions for everyone.">
-<meta property="og:description" content="function DateDiff(sDate1){       var  aDate,  oDate1,  oDate2,  iDays;       aDate  =  sDate1.split(&quot;-&quot;)         oDate1  =  new  Date(aDate[1]  +  &apos;-&apos;  +  aDate[2]  +  &apos;-&apos;  +  aDate[0])         oDa">
-<meta property="og:updated_time" content="2017-06-08T01:13:48.156Z">
+<meta property="og:description" content="function DateDiff(sDate1){       var  aDate,  oDate1,  oDate2,  iDays;       aDate  =  sDate1.split(&quot;-&quot;)         oDate1  =  new  Date(aDate[1]  +  &apos;-&apos;  +  aDate[2]  +  &apos;-&apos;  +  aDate[0])         oD">
+<meta property="og:updated_time" content="2017-06-17T23:55:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Release Notes | TryToFLAC">
-<meta name="twitter:description" content="function DateDiff(sDate1){       var  aDate,  oDate1,  oDate2,  iDays;       aDate  =  sDate1.split(&quot;-&quot;)         oDate1  =  new  Date(aDate[1]  +  &apos;-&apos;  +  aDate[2]  +  &apos;-&apos;  +  aDate[0])         oDa">
+<meta name="twitter:description" content="function DateDiff(sDate1){       var  aDate,  oDate1,  oDate2,  iDays;       aDate  =  sDate1.split(&quot;-&quot;)         oDate1  =  new  Date(aDate[1]  +  &apos;-&apos;  +  aDate[2]  +  &apos;-&apos;  +  aDate[0])         oD">
 <meta name="twitter:site" content="gmagonshare">
 <meta property="fb:admins" content="432634277117208">
   <!-- Google Analytics -->
@@ -158,7 +158,7 @@
             <div class="article">
               <div class="inner">
                 <div class="article-content" itemprop="articleBody">
-                  <script>
+                  <script src="/assets/js/APlayer.min.js"> </script><script>
   function DateDiff(sDate1){
       var  aDate,  oDate1,  oDate2,  iDays;
       aDate  =  sDate1.split("-")  
@@ -206,7 +206,7 @@
 
                 </div>
                 <footer class="article-footer">
-                  <time class="article-footer-updated" datetime="2017-06-08T01:13:48.156Z" itemprop="dateModified">Last updated: 2017-06-08</time>
+                  <time class="article-footer-updated" datetime="2017-06-17T23:55:28.000Z" itemprop="dateModified">Last updated: 2017-06-17</time>
                   
                 </footer>
                 
@@ -292,12 +292,17 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
 <script type="text/javascript">
-document.getElementById('search-input-wrap').classList.add('on');
-docsearch({
-  apiKey: '7a75d3ee07f1e82ea4271e0c58c114c3',
-  indexName: 'gmagon',
-  inputSelector: '#search-input'
-});
+try{
+  return;
+  document.getElementById('search-input-wrap').classList.add('on');
+  docsearch({
+    apiKey: '7a75d3ee07f1e82ea4271e0c58c114c3',
+    indexName: 'gmagon',
+    inputSelector: '#search-input'
+  });
+}catch(e){
+}
+
 </script>
 
 

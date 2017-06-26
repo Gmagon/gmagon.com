@@ -78,6 +78,115 @@
   </entry>
   
   <entry>
+    <title>Snap Behaviour iOS Tutorial</title>
+    <link href="https://gmagon.com/blog/2017/06/26/snap-behaviour-ios-tutorial/"/>
+    <id>https://gmagon.com/blog/2017/06/26/snap-behaviour-ios-tutorial/</id>
+    <published>2017-06-26T00:00:00.000Z</published>
+    <updated>2017-06-26T09:37:13.934Z</updated>
+    
+    <content type="html"><![CDATA[<p>As part of UIKit Dynamics you can add Snap Behavior to a view, which allows it  to be “snapped” to a specific location. The view will move to its new position as if it is pulled by a spring. In this tutorial we will let the user click on the screen to “snap” an image into place. This tutorial is made with Xcode 8.3.3 and built for iOS 10.3.</p>
+<p>Open Xcode and create a new Single View Application.</p>
+<p><img src="http://img2.tuicool.com/q6zmueM.png!web" alt=""></p>
+<p>For product name, use<strong>IOS10SnapBehaviourTutorial</strong>and then fill out the Organization Name and Organization Identifier with your customary values. Enter Swift as Language and make sure only iPhone is selected in Devices.</p>
+<p><img src="http://img2.tuicool.com/NzQvArq.png!web" alt=""></p>
+<p>Go the<strong>Storyboard</strong>and drag an Image View to the main view, Go to the Size Inspector and set the size to 100 by 100 points.</p>
+<p><img src="http://img1.tuicool.com/zuAJziF.png!web" alt=""></p>
+<p>We need a image to insert in our Image View. Downloadthisimage, unpack it and add it to the project. </p>
+<p><img src="http://img2.tuicool.com/euYBfir.png!web" alt=""></p>
+<p>Select the Image View, go to the Attributes Inspector and add the apple.jpg file to Image field.</p>
+<p><img src="http://img2.tuicool.com/Y3iuqyM.png!web" alt=""></p>
+<p>The Storyboard should now look like this.</p>
+<p><img src="http://img0.tuicool.com/vmQjI3q.png!web" alt=""></p>
+<p>Open the Assistant Editor and make sure the ViewController.swift file is visible. Ctrl + drag from the Image View to the ViewController class and create the following Outlet.</p>
+<p><img src="http://img1.tuicool.com/MfuIj2z.png!web" alt=""></p>
+<p>Go to the<strong>ViewController.swift</strong>file and add the following properties</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var</div><div class="line">animator</div><div class="line">:UIDynamicAnimator</div><div class="line">!</div><div class="line"></div><div class="line">var</div><div class="line">snapBehaviour</div><div class="line">:UISnapBehavior</div><div class="line">!</div></pre></td></tr></table></figure>
+<p>The animator property provides physics-related capabilities for its item and the snapBehaviour property will be applied to the Image View later on. Next, change the<strong>viewDidLoad</strong>method to</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">override</div><div class="line">func</div><div class="line">viewDidLoad</div><div class="line">()</div><div class="line"> &#123;</div><div class="line">    </div><div class="line">super</div><div class="line">.viewDidLoad()</div><div class="line">        </div><div class="line">    </div><div class="line">// Create the Tap Gesture Recognizer</div><div class="line">let</div><div class="line"> tapGesture = </div><div class="line">UITapGestureRecognizer</div><div class="line">(target: </div><div class="line">self</div><div class="line">, action: #selector(userHasTapped))</div><div class="line">    </div><div class="line">self</div><div class="line">.view.addGestureRecognizer(tapGesture)</div><div class="line">        </div><div class="line">    </div><div class="line">// Create the Dynamic Animator</div><div class="line"></div><div class="line">    animator = </div><div class="line">UIDynamicAnimator</div><div class="line">(referenceView: </div><div class="line">self</div><div class="line">.view)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>A Tap Gesture Recognizer is created, which will call the userHasTapped method when the user taps on the screen. The Dynamic Animator is created with the main view as its reference view. Next, implement the<strong>userHasTapped</strong>method</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">func</div><div class="line">userHasTapped</div><div class="line">(tap:UITapGestureRecognizer)</div><div class="line"> &#123;</div><div class="line">    </div><div class="line">let</div><div class="line"> touchPoint = tap.location(</div><div class="line">in</div><div class="line">: </div><div class="line">self</div><div class="line">.view)</div><div class="line">    </div><div class="line">if</div><div class="line"> snapBehaviour != </div><div class="line">nil</div><div class="line"> &#123;</div><div class="line">        animator.removeBehavior(snapBehaviour)</div><div class="line">    &#125;</div><div class="line">        </div><div class="line">    snapBehaviour = </div><div class="line">UISnapBehavior</div><div class="line">(item: imageView, snapTo: touchPoint)</div><div class="line">    snapBehaviour.damping = </div><div class="line">0.3</div><div class="line"></div><div class="line">    animator.addBehavior(snapBehaviour)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>First the point is captured where the user has touched the screen. There can be only one Snap Behaviour instance active so we check if there is already a behaviour active. If so, we will remove this behaviour. Next the Snap Behaviour is initialized with the<strong>item:snapToPoint</strong>initializer. The item is our Image View and the point to snap to is the user’s touch input. The damping property is the amount of oscillation the item has of the end of the snap animation. Finally, the Snap Behaviour is added to the Dynamic Animator.</p>
+<p>Build and Runthe project, click anywhere on the screen to “snap” the image to its new location.</p>
+<p><img src="http://img2.tuicool.com/mIvmY33.png!web" alt=""></p>
+<p>You can download the source code of the<strong>IOS10SnapBehaviourTutorial</strong>at the ioscreator repository on<a href="https://github.com/ioscreator/ioscreator" target="_blank" rel="external">Github</a></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/QJfqM33" target="_blank" rel="external">https://www.ioscreator.com/tutorials/snap-behaviour-ios-tutorial-ios10</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;As part of UIKit Dynamics you can add Snap Behavior to a view, which allows it  to be “snapped” to a specific location. The view will mov
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>An Overview of Garbage Collection in Java</title>
+    <link href="https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/"/>
+    <id>https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/</id>
+    <published>2017-06-26T00:00:00.000Z</published>
+    <updated>2017-06-26T09:37:13.928Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="An-Overview-of-Garbage-Collection-in-Java"><a href="#An-Overview-of-Garbage-Collection-in-Java" class="headerlink" title="An Overview of Garbage Collection in Java"></a>An Overview of Garbage Collection in Java</h2><p>DZone’s Guide to</p>
+<h2 id="An-Overview-of-Garbage-Collection-in-Java-1"><a href="#An-Overview-of-Garbage-Collection-in-Java-1" class="headerlink" title="An Overview of Garbage Collection in Java"></a>An Overview of Garbage Collection in Java</h2><p>Here we examine the importance of proper garbage collection for Java apps, the components of GC, and the various patterns at your disposal.</p>
+<p><a href="https://dzone.com/users/2746645/guideinfoways.html" target="_blank" rel="external">Johnny Morgan</a></p>
+<p>Jun. 26, 17</p>
+<p>·</p>
+<p><a href="https://dzone.com/java-jdk-development-tutorials-tools-news" target="_blank" rel="external">Java Zone</a></p>
+<p>Free Resource</p>
+<p>Join the DZone community and get the full member experience.</p>
+<p>What every Java engineer should know about microservices:<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=pre-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Reactive Microservices Architecture</a>.  Brought to you in partnership with<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=pre-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Lightbend</a>.</p>
+<p>The Java garbage collector poses a great impact on the overall working and performance of an application. As the size of the garbage grows, the runtime of an application decreases. Hence, it is essential that you clear this garbage off of your application every now and then to enhance its productivity and user performance.</p>
+<p>Garbage collection can be quite a daunting task. After all, choosing a wrong garbage collector type or settings can hamper the functionality of your app. There are typically seven types of garbage collectors known to us. These are classically bifurcated between the ‘mostly’ and ‘most concurrent’ category. With the ‘mostly’ types, they sometimes do not operate as expected and a fallback mechanism takes place. On the other hand, the ‘most concurrent’ collectors function concurrently with the application’s execution and rarely stop the world.</p>
+<h2 id="Steps-Involved-in-Garbage-Collection"><a href="#Steps-Involved-in-Garbage-Collection" class="headerlink" title="Steps Involved in Garbage Collection"></a>Steps Involved in Garbage Collection</h2><p>Before implementing the garbage cleaning step, it is essential to note whether your application has touched the GC safe point. That is the range where the collector can quickly recognize the thread execution references and complete the process. If your application has to wait for the safe point, it could very well run out of memory and collapse.</p>
+<ul>
+<li><p>Mark: Otherwise known as trace, this step involves finding all the live and dead objects in the expansive heap. The collector paints all the reachable live objects, and those left are tagged as dead.</p>
+</li>
+<li><p>Sweep: Here, the garbage collector looks for dead objects and tracks their location. The bigger the heap, the more time will it take in the sweep to complete the task.</p>
+</li>
+<li><p>Compact: In this step, the garbage collector rearranges the live objects in order to make the space congestion free. As the process commences, remapping takes place, which means your application’s overall runtime should be significantly enhanced.</p>
+</li>
+</ul>
+<h2 id="Types-of-Collectors"><a href="#Types-of-Collectors" class="headerlink" title="Types of Collectors"></a>Types of Collectors</h2><ul>
+<li><p>Mark/sweep/compact collector: Performs the function in three phases.</p>
+</li>
+<li><p>Mark/Compact Collector: Performs the task in two steps, skipping the sweep phase.</p>
+</li>
+<li><p>Copying Collector: Performs all the three phases in one go. It’s quite aggressive in nature and makes use of ‘from’ and ‘to’ space to move all the live objects. It then fixes the bugs and removes the garbage.</p>
+</li>
+<li><p>Generation Collector: This works on the principle that most objects die young. The software creates new objects but at the same time, sooner rather later, it discards them, too. Through a generator collector, a developer can filter the creation, reduce the rate at which the Young Generation is pushed to the Old Generation, and keep pace with contemporary CPU throughput.</p>
+</li>
+<li><p>Remembered Set: In this set, marks are used. These record the exact location of the Young Generation. Write banners are put to use to track the references from these generations into the Old Generation and keep these ‘remembered sets’ up-to-date.</p>
+</li>
+</ul>
+<p>Note on commercial implementations: There are two basic commercially available and proven approaches for the garbage collection implementation. The first one being a parallel approach and the other being the concurrent approach. </p>
+<h2 id="Role-of-Developers-and-Architects"><a href="#Role-of-Developers-and-Architects" class="headerlink" title="Role of Developers and Architects"></a>Role of Developers and Architects</h2><p>The first and the foremost thing is to understand the nature of the application and the core functionality of the garbage collector.</p>
+<ul>
+<li><p>Garbage Collection Metrics: A plethora of application features affect the workings of the garbage collector. These include the allocation time of objects in memory, their life, and the need to save some for a long time. The mutation rate is the next thing that matters. And lastly, there are the metrics that help track the live set and the heap shape of these objects.</p>
+</li>
+<li><p>The compaction time and the mark time make for the most important metrics for tracking the time of the garbage collection cycle. While the latter measures the time taken for identification of live objects, the former maps time taken to free up the memory and do the necessary allocation.</p>
+</li>
+<li><p>Empty Memory for Clean-up Process: Each of these above-listed garbage collectors needs some amount of space to perform the task efficiently. More space practically halves the collector’s work and CPU consumption required for the job. The opposite applies to when there’s a shortage of empty memory.</p>
+</li>
+<li><p>Implementing the GC Strategy: While the process of compaction is unavoidable, what many GCs do is delay the process to a possible point and free the easy empty space as soon as possible. Another technique is the focusing on concurrent markings and sweeping while at the same time skipping compaction. This proves helpful, too.</p>
+</li>
+</ul>
+<p>Bottom line, garbage collection is an integral part of an application’s performance over the Java platform. As Java devs, we need to implement strategies in order to build an application that speaks of excellent performance, scalability, and reliability.</p>
+<p>Microservices for Java, explained. Revitalize your legacy systems (and your career) with<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=post-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Reactive Microservices Architecture</a>, a free O’Reilly book. Brought to you in partnership with<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=post-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Lightbend</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/rmQJJzJ" target="_blank" rel="external">https://dzone.com/articles/an-overview-of-garbage-collection-in-java</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;An-Overview-of-Garbage-Collection-in-Java&quot;&gt;&lt;a href=&quot;#An-Overview-of-Garbage-Collection-in-Java&quot; class=&quot;headerlink&quot; title=&quot;An Overvie
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>C++17 in details: Templates</title>
     <link href="https://gmagon.com/blog/2017/06/26/c++17-in-details-templates/"/>
     <id>https://gmagon.com/blog/2017/06/26/c++17-in-details-templates/</id>
@@ -318,115 +427,6 @@
   </entry>
   
   <entry>
-    <title>An Overview of Garbage Collection in Java</title>
-    <link href="https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/"/>
-    <id>https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/</id>
-    <published>2017-06-26T00:00:00.000Z</published>
-    <updated>2017-06-26T09:37:13.928Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="An-Overview-of-Garbage-Collection-in-Java"><a href="#An-Overview-of-Garbage-Collection-in-Java" class="headerlink" title="An Overview of Garbage Collection in Java"></a>An Overview of Garbage Collection in Java</h2><p>DZone’s Guide to</p>
-<h2 id="An-Overview-of-Garbage-Collection-in-Java-1"><a href="#An-Overview-of-Garbage-Collection-in-Java-1" class="headerlink" title="An Overview of Garbage Collection in Java"></a>An Overview of Garbage Collection in Java</h2><p>Here we examine the importance of proper garbage collection for Java apps, the components of GC, and the various patterns at your disposal.</p>
-<p><a href="https://dzone.com/users/2746645/guideinfoways.html" target="_blank" rel="external">Johnny Morgan</a></p>
-<p>Jun. 26, 17</p>
-<p>·</p>
-<p><a href="https://dzone.com/java-jdk-development-tutorials-tools-news" target="_blank" rel="external">Java Zone</a></p>
-<p>Free Resource</p>
-<p>Join the DZone community and get the full member experience.</p>
-<p>What every Java engineer should know about microservices:<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=pre-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Reactive Microservices Architecture</a>.  Brought to you in partnership with<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=pre-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Lightbend</a>.</p>
-<p>The Java garbage collector poses a great impact on the overall working and performance of an application. As the size of the garbage grows, the runtime of an application decreases. Hence, it is essential that you clear this garbage off of your application every now and then to enhance its productivity and user performance.</p>
-<p>Garbage collection can be quite a daunting task. After all, choosing a wrong garbage collector type or settings can hamper the functionality of your app. There are typically seven types of garbage collectors known to us. These are classically bifurcated between the ‘mostly’ and ‘most concurrent’ category. With the ‘mostly’ types, they sometimes do not operate as expected and a fallback mechanism takes place. On the other hand, the ‘most concurrent’ collectors function concurrently with the application’s execution and rarely stop the world.</p>
-<h2 id="Steps-Involved-in-Garbage-Collection"><a href="#Steps-Involved-in-Garbage-Collection" class="headerlink" title="Steps Involved in Garbage Collection"></a>Steps Involved in Garbage Collection</h2><p>Before implementing the garbage cleaning step, it is essential to note whether your application has touched the GC safe point. That is the range where the collector can quickly recognize the thread execution references and complete the process. If your application has to wait for the safe point, it could very well run out of memory and collapse.</p>
-<ul>
-<li><p>Mark: Otherwise known as trace, this step involves finding all the live and dead objects in the expansive heap. The collector paints all the reachable live objects, and those left are tagged as dead.</p>
-</li>
-<li><p>Sweep: Here, the garbage collector looks for dead objects and tracks their location. The bigger the heap, the more time will it take in the sweep to complete the task.</p>
-</li>
-<li><p>Compact: In this step, the garbage collector rearranges the live objects in order to make the space congestion free. As the process commences, remapping takes place, which means your application’s overall runtime should be significantly enhanced.</p>
-</li>
-</ul>
-<h2 id="Types-of-Collectors"><a href="#Types-of-Collectors" class="headerlink" title="Types of Collectors"></a>Types of Collectors</h2><ul>
-<li><p>Mark/sweep/compact collector: Performs the function in three phases.</p>
-</li>
-<li><p>Mark/Compact Collector: Performs the task in two steps, skipping the sweep phase.</p>
-</li>
-<li><p>Copying Collector: Performs all the three phases in one go. It’s quite aggressive in nature and makes use of ‘from’ and ‘to’ space to move all the live objects. It then fixes the bugs and removes the garbage.</p>
-</li>
-<li><p>Generation Collector: This works on the principle that most objects die young. The software creates new objects but at the same time, sooner rather later, it discards them, too. Through a generator collector, a developer can filter the creation, reduce the rate at which the Young Generation is pushed to the Old Generation, and keep pace with contemporary CPU throughput.</p>
-</li>
-<li><p>Remembered Set: In this set, marks are used. These record the exact location of the Young Generation. Write banners are put to use to track the references from these generations into the Old Generation and keep these ‘remembered sets’ up-to-date.</p>
-</li>
-</ul>
-<p>Note on commercial implementations: There are two basic commercially available and proven approaches for the garbage collection implementation. The first one being a parallel approach and the other being the concurrent approach. </p>
-<h2 id="Role-of-Developers-and-Architects"><a href="#Role-of-Developers-and-Architects" class="headerlink" title="Role of Developers and Architects"></a>Role of Developers and Architects</h2><p>The first and the foremost thing is to understand the nature of the application and the core functionality of the garbage collector.</p>
-<ul>
-<li><p>Garbage Collection Metrics: A plethora of application features affect the workings of the garbage collector. These include the allocation time of objects in memory, their life, and the need to save some for a long time. The mutation rate is the next thing that matters. And lastly, there are the metrics that help track the live set and the heap shape of these objects.</p>
-</li>
-<li><p>The compaction time and the mark time make for the most important metrics for tracking the time of the garbage collection cycle. While the latter measures the time taken for identification of live objects, the former maps time taken to free up the memory and do the necessary allocation.</p>
-</li>
-<li><p>Empty Memory for Clean-up Process: Each of these above-listed garbage collectors needs some amount of space to perform the task efficiently. More space practically halves the collector’s work and CPU consumption required for the job. The opposite applies to when there’s a shortage of empty memory.</p>
-</li>
-<li><p>Implementing the GC Strategy: While the process of compaction is unavoidable, what many GCs do is delay the process to a possible point and free the easy empty space as soon as possible. Another technique is the focusing on concurrent markings and sweeping while at the same time skipping compaction. This proves helpful, too.</p>
-</li>
-</ul>
-<p>Bottom line, garbage collection is an integral part of an application’s performance over the Java platform. As Java devs, we need to implement strategies in order to build an application that speaks of excellent performance, scalability, and reliability.</p>
-<p>Microservices for Java, explained. Revitalize your legacy systems (and your career) with<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=post-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Reactive Microservices Architecture</a>, a free O’Reilly book. Brought to you in partnership with<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=post-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Lightbend</a>.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/rmQJJzJ" target="_blank" rel="external">https://dzone.com/articles/an-overview-of-garbage-collection-in-java</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;An-Overview-of-Garbage-Collection-in-Java&quot;&gt;&lt;a href=&quot;#An-Overview-of-Garbage-Collection-in-Java&quot; class=&quot;headerlink&quot; title=&quot;An Overvie
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Snap Behaviour iOS Tutorial</title>
-    <link href="https://gmagon.com/blog/2017/06/26/snap-behaviour-ios-tutorial/"/>
-    <id>https://gmagon.com/blog/2017/06/26/snap-behaviour-ios-tutorial/</id>
-    <published>2017-06-26T00:00:00.000Z</published>
-    <updated>2017-06-26T09:37:13.934Z</updated>
-    
-    <content type="html"><![CDATA[<p>As part of UIKit Dynamics you can add Snap Behavior to a view, which allows it  to be “snapped” to a specific location. The view will move to its new position as if it is pulled by a spring. In this tutorial we will let the user click on the screen to “snap” an image into place. This tutorial is made with Xcode 8.3.3 and built for iOS 10.3.</p>
-<p>Open Xcode and create a new Single View Application.</p>
-<p><img src="http://img2.tuicool.com/q6zmueM.png!web" alt=""></p>
-<p>For product name, use<strong>IOS10SnapBehaviourTutorial</strong>and then fill out the Organization Name and Organization Identifier with your customary values. Enter Swift as Language and make sure only iPhone is selected in Devices.</p>
-<p><img src="http://img2.tuicool.com/NzQvArq.png!web" alt=""></p>
-<p>Go the<strong>Storyboard</strong>and drag an Image View to the main view, Go to the Size Inspector and set the size to 100 by 100 points.</p>
-<p><img src="http://img1.tuicool.com/zuAJziF.png!web" alt=""></p>
-<p>We need a image to insert in our Image View. Downloadthisimage, unpack it and add it to the project. </p>
-<p><img src="http://img2.tuicool.com/euYBfir.png!web" alt=""></p>
-<p>Select the Image View, go to the Attributes Inspector and add the apple.jpg file to Image field.</p>
-<p><img src="http://img2.tuicool.com/Y3iuqyM.png!web" alt=""></p>
-<p>The Storyboard should now look like this.</p>
-<p><img src="http://img0.tuicool.com/vmQjI3q.png!web" alt=""></p>
-<p>Open the Assistant Editor and make sure the ViewController.swift file is visible. Ctrl + drag from the Image View to the ViewController class and create the following Outlet.</p>
-<p><img src="http://img1.tuicool.com/MfuIj2z.png!web" alt=""></p>
-<p>Go to the<strong>ViewController.swift</strong>file and add the following properties</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var</div><div class="line">animator</div><div class="line">:UIDynamicAnimator</div><div class="line">!</div><div class="line"></div><div class="line">var</div><div class="line">snapBehaviour</div><div class="line">:UISnapBehavior</div><div class="line">!</div></pre></td></tr></table></figure>
-<p>The animator property provides physics-related capabilities for its item and the snapBehaviour property will be applied to the Image View later on. Next, change the<strong>viewDidLoad</strong>method to</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">override</div><div class="line">func</div><div class="line">viewDidLoad</div><div class="line">()</div><div class="line"> &#123;</div><div class="line">    </div><div class="line">super</div><div class="line">.viewDidLoad()</div><div class="line">        </div><div class="line">    </div><div class="line">// Create the Tap Gesture Recognizer</div><div class="line">let</div><div class="line"> tapGesture = </div><div class="line">UITapGestureRecognizer</div><div class="line">(target: </div><div class="line">self</div><div class="line">, action: #selector(userHasTapped))</div><div class="line">    </div><div class="line">self</div><div class="line">.view.addGestureRecognizer(tapGesture)</div><div class="line">        </div><div class="line">    </div><div class="line">// Create the Dynamic Animator</div><div class="line"></div><div class="line">    animator = </div><div class="line">UIDynamicAnimator</div><div class="line">(referenceView: </div><div class="line">self</div><div class="line">.view)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>A Tap Gesture Recognizer is created, which will call the userHasTapped method when the user taps on the screen. The Dynamic Animator is created with the main view as its reference view. Next, implement the<strong>userHasTapped</strong>method</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">func</div><div class="line">userHasTapped</div><div class="line">(tap:UITapGestureRecognizer)</div><div class="line"> &#123;</div><div class="line">    </div><div class="line">let</div><div class="line"> touchPoint = tap.location(</div><div class="line">in</div><div class="line">: </div><div class="line">self</div><div class="line">.view)</div><div class="line">    </div><div class="line">if</div><div class="line"> snapBehaviour != </div><div class="line">nil</div><div class="line"> &#123;</div><div class="line">        animator.removeBehavior(snapBehaviour)</div><div class="line">    &#125;</div><div class="line">        </div><div class="line">    snapBehaviour = </div><div class="line">UISnapBehavior</div><div class="line">(item: imageView, snapTo: touchPoint)</div><div class="line">    snapBehaviour.damping = </div><div class="line">0.3</div><div class="line"></div><div class="line">    animator.addBehavior(snapBehaviour)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>First the point is captured where the user has touched the screen. There can be only one Snap Behaviour instance active so we check if there is already a behaviour active. If so, we will remove this behaviour. Next the Snap Behaviour is initialized with the<strong>item:snapToPoint</strong>initializer. The item is our Image View and the point to snap to is the user’s touch input. The damping property is the amount of oscillation the item has of the end of the snap animation. Finally, the Snap Behaviour is added to the Dynamic Animator.</p>
-<p>Build and Runthe project, click anywhere on the screen to “snap” the image to its new location.</p>
-<p><img src="http://img2.tuicool.com/mIvmY33.png!web" alt=""></p>
-<p>You can download the source code of the<strong>IOS10SnapBehaviourTutorial</strong>at the ioscreator repository on<a href="https://github.com/ioscreator/ioscreator" target="_blank" rel="external">Github</a></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/QJfqM33" target="_blank" rel="external">https://www.ioscreator.com/tutorials/snap-behaviour-ios-tutorial-ios10</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;As part of UIKit Dynamics you can add Snap Behavior to a view, which allows it  to be “snapped” to a specific location. The view will mov
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>The Holy Wars of procrastination</title>
     <link href="https://gmagon.com/blog/2017/06/26/the-holy-wars-of-procrastination/"/>
     <id>https://gmagon.com/blog/2017/06/26/the-holy-wars-of-procrastination/</id>
@@ -491,6 +491,80 @@
     
       &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/FN7BjyZ.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;This year at VidCon, YouTube shared some new metrics that really drive 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Is 30 Years Old GIF Still Popular Now?</title>
+    <link href="https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/"/>
+    <id>https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/</id>
+    <published>2017-06-23T00:00:00.000Z</published>
+    <updated>2017-06-23T09:54:32.282Z</updated>
+    
+    <content type="html"><![CDATA[<p>Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 which stands a big step up from its old black-and-white graphics. </p>
+<p>Maybe you cannot comprehend what actually GIF is, but you must familiar with this: </p>
+<p><img src="/assets/bXQNq_s-200x150.gif" alt=""></p>
+<p>That’s right, memes in your phone is made of GIF format, which you always use when talking with someone in your social network and can’t stop using it, just as following:</p>
+<p><img src="/assets/text-messages_o_295497.jpg" alt=""></p>
+<p>Memes has been popular just  in recent years, but GIF is ancient in the Web, maybe older than you…</p>
+<p>There has been a haunting question about GIF is how to pronounce it.</p>
+<p>some say it it pronounced with a soft G, like “jiff.” Others with a hard G, like “ghiff.” </p>
+<p>Fortunately, most dictionaries accept both pronunciations as correct. So you can read it as what you want.</p>
+<p>GIF has a rival, called APNG or animated PNG, “it is a high quality animated image format complete with full alpha channel and graceful degradation has been available and usable since 2004.” The major advantage of APNG versus an animated GIF is image quality. APNGs simply look better, especially on a wider variety of backgrounds, and there’s already support baked into both Firefox and Opera; Chrome users can <a href="https://chrome.google.com/webstore/detail/apng/ehkepjiconegkhpodgoaeamnpckdbblp?hl=en" target="_blank" rel="external">download an extension</a> to support APNG files.</p>
+<p><img src="http://img2.tuicool.com/YZBjiu.jpg" alt=""></p>
+<p>The good news is you can easily convert you GIF files to APNG through the free tool: </p>
+<p>Gmagon Gif</p>
+<p><a href="https://gmagon.com/products/store/gmagon_gif/">https://gmagon.com/products/store/gmagon_gif/</a></p>
+<p>Maybe we should feel grateful for those GIF or memes that brings much happiness to us.</p>
+<p><img src="/assets/dicaprio3-583e33155f9b58d5b19e3a00.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 whi
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>12 Factors to Cloud Success</title>
+    <link href="https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/"/>
+    <id>https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/</id>
+    <published>2017-06-23T00:00:00.000Z</published>
+    <updated>2017-06-23T07:53:27.158Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/3AZNviN.png!web" alt=""></p>
+<h2 id="12-Factors-to-Cloud-Success"><a href="#12-Factors-to-Cloud-Success" class="headerlink" title="12 Factors to Cloud Success"></a>12 Factors to Cloud Success</h2><p>Posted byRafael Benevides onJune 22, 2017June 19, 2017</p>
+<p>Hey, developers! Do you care about using the best practices to apply your application to the cloud? If so then you should be using<a href="https://12factor.net/" target="_blank" rel="external">The 12-factor App</a>, which is a methodology for building software-as-a-service. Today I like to talk about the 12-factor App, which I had presented to a group at the Red Hat Summit last month.</p>
+<p>Every developer that is moving their application to the cloud will face a different environment than what they are used to, their datacenter or own premise and that’s why they should care about the 12-factor methodology. This 12 step methodology was created by Heroku, which is a cloud provider who found a common solution to most of what their customers were experiencing and decided to release these solutions as a methodology. These 12 factors are intended to solve problems related to applications running in the cloud. If there was one key takeaway from my session it was not the idea to have the audience memorize these 12 factors but to have an understanding of why each one is important.</p>
+<ol>
+<li><strong>Codebase</strong><br>– use version control, one codebase tracked in revision control for many deployments.</li>
+<li><strong>Dependencies</strong><br>– use a package manager and don’t commit dependencies in the codebase repository.</li>
+<li><strong>Config</strong><br>– store the config in Environment Variable, if you have to repackage your application, you’re doing it wrong.</li>
+<li><strong>Backing Services</strong><br>– a<br><a href="https://12factor.net/codebase" target="_blank" rel="external">deploy</a><br>of the twelve-factor app should be able to swap out a local MySQL database with one managed by a third party (such as<br><a href="http://aws.amazon.com/rds/" target="_blank" rel="external">Amazon RDS</a><br>) without any changes to the app’s code.</li>
+<li><strong>Build, Release, Run</strong><br>– the twelve-factor app uses strict separation between the build, release, and run stages. Every release should always have a unique release ID and releases should allow rollback.</li>
+<li><strong>Processes</strong><br>– execute the app as one or more stateless processes, the Twelve-factor processes are stateless and<br><a href="http://en.wikipedia.org/wiki/Shared_nothing_architecture" target="_blank" rel="external">share-nothing</a><br>.</li>
+<li><strong>Port Binding</strong><br>– export services via port binding, The twelve-factor app is completely self-contained.</li>
+<li><strong>Concurrency</strong><br>– scale out via the process model. Each process should be individually scaled, with Factor 6 (Stateless), it is easy to scale the services.</li>
+<li><strong>Disposability</strong><br>– maximize robustness with fast startup and graceful shutdown, we can achieve this with containers.</li>
+<li><strong>Dev/Prod Parity</strong><br>– Keep development, staging, and production as similar as possible, the twelve-factor app is designed for<br><a href="http://www.avc.com/a_vc/2011/02/continuous-deployment.html" target="_blank" rel="external">continuous deployment</a><br>by keeping the gap between development and production small.</li>
+<li><strong>Logs</strong><br>– treat logs as event streams, a twelve-factor app never concerns itself with routing or storage of its output stream.</li>
+<li><strong>Admin Processes</strong><br>– run admin/management tasks as one-off processes.</li>
+</ol>
+<p>The 12-factor App methodology is technology and language agnostic but satisfied by<a href="https://developers.redhat.com/containers/" target="_blank" rel="external">Containers</a>,<a href="https://developers.redhat.com/microservices/" target="_blank" rel="external">Microservices</a>, and CI/CD Pipelines with a focus on<a href="https://developers.redhat.com/devops/" target="_blank" rel="external">DevOps</a>.You can access more information on The 12-factor Appat<a href="https://12factor.net/" target="_blank" rel="external">https://12factor.net/</a>.</p>
+<p><strong>Whether you are new to Containers or have experience, downloading this</strong><a href="https://developers.redhat.com/promotions/docker-cheatsheet/" target="_blank" rel="external"><strong>cheat sheet</strong></a><strong>can assist you when encountering tasks you haven’t done lately.</strong></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/qqa2yyN" target="_blank" rel="external">https://developers.redhat.com/blog/2017/06/22/12-factors-to-cloud-success/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/3AZNviN.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;12-Factors-to-Cloud-Success&quot;&gt;&lt;a href=&quot;#12-Factors-to-Cloud-Success
     
     </summary>
     
@@ -574,80 +648,6 @@
   </entry>
   
   <entry>
-    <title>Is 30 Years Old GIF Still Popular Now?</title>
-    <link href="https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/"/>
-    <id>https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/</id>
-    <published>2017-06-23T00:00:00.000Z</published>
-    <updated>2017-06-23T09:54:32.282Z</updated>
-    
-    <content type="html"><![CDATA[<p>Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 which stands a big step up from its old black-and-white graphics. </p>
-<p>Maybe you cannot comprehend what actually GIF is, but you must familiar with this: </p>
-<p><img src="/assets/bXQNq_s-200x150.gif" alt=""></p>
-<p>That’s right, memes in your phone is made of GIF format, which you always use when talking with someone in your social network and can’t stop using it, just as following:</p>
-<p><img src="/assets/text-messages_o_295497.jpg" alt=""></p>
-<p>Memes has been popular just  in recent years, but GIF is ancient in the Web, maybe older than you…</p>
-<p>There has been a haunting question about GIF is how to pronounce it.</p>
-<p>some say it it pronounced with a soft G, like “jiff.” Others with a hard G, like “ghiff.” </p>
-<p>Fortunately, most dictionaries accept both pronunciations as correct. So you can read it as what you want.</p>
-<p>GIF has a rival, called APNG or animated PNG, “it is a high quality animated image format complete with full alpha channel and graceful degradation has been available and usable since 2004.” The major advantage of APNG versus an animated GIF is image quality. APNGs simply look better, especially on a wider variety of backgrounds, and there’s already support baked into both Firefox and Opera; Chrome users can <a href="https://chrome.google.com/webstore/detail/apng/ehkepjiconegkhpodgoaeamnpckdbblp?hl=en" target="_blank" rel="external">download an extension</a> to support APNG files.</p>
-<p><img src="http://img2.tuicool.com/YZBjiu.jpg" alt=""></p>
-<p>The good news is you can easily convert you GIF files to APNG through the free tool: </p>
-<p>Gmagon Gif</p>
-<p><a href="https://gmagon.com/products/store/gmagon_gif/">https://gmagon.com/products/store/gmagon_gif/</a></p>
-<p>Maybe we should feel grateful for those GIF or memes that brings much happiness to us.</p>
-<p><img src="/assets/dicaprio3-583e33155f9b58d5b19e3a00.jpg" alt=""></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 whi
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>12 Factors to Cloud Success</title>
-    <link href="https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/"/>
-    <id>https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/</id>
-    <published>2017-06-23T00:00:00.000Z</published>
-    <updated>2017-06-23T07:53:27.158Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/3AZNviN.png!web" alt=""></p>
-<h2 id="12-Factors-to-Cloud-Success"><a href="#12-Factors-to-Cloud-Success" class="headerlink" title="12 Factors to Cloud Success"></a>12 Factors to Cloud Success</h2><p>Posted byRafael Benevides onJune 22, 2017June 19, 2017</p>
-<p>Hey, developers! Do you care about using the best practices to apply your application to the cloud? If so then you should be using<a href="https://12factor.net/" target="_blank" rel="external">The 12-factor App</a>, which is a methodology for building software-as-a-service. Today I like to talk about the 12-factor App, which I had presented to a group at the Red Hat Summit last month.</p>
-<p>Every developer that is moving their application to the cloud will face a different environment than what they are used to, their datacenter or own premise and that’s why they should care about the 12-factor methodology. This 12 step methodology was created by Heroku, which is a cloud provider who found a common solution to most of what their customers were experiencing and decided to release these solutions as a methodology. These 12 factors are intended to solve problems related to applications running in the cloud. If there was one key takeaway from my session it was not the idea to have the audience memorize these 12 factors but to have an understanding of why each one is important.</p>
-<ol>
-<li><strong>Codebase</strong><br>– use version control, one codebase tracked in revision control for many deployments.</li>
-<li><strong>Dependencies</strong><br>– use a package manager and don’t commit dependencies in the codebase repository.</li>
-<li><strong>Config</strong><br>– store the config in Environment Variable, if you have to repackage your application, you’re doing it wrong.</li>
-<li><strong>Backing Services</strong><br>– a<br><a href="https://12factor.net/codebase" target="_blank" rel="external">deploy</a><br>of the twelve-factor app should be able to swap out a local MySQL database with one managed by a third party (such as<br><a href="http://aws.amazon.com/rds/" target="_blank" rel="external">Amazon RDS</a><br>) without any changes to the app’s code.</li>
-<li><strong>Build, Release, Run</strong><br>– the twelve-factor app uses strict separation between the build, release, and run stages. Every release should always have a unique release ID and releases should allow rollback.</li>
-<li><strong>Processes</strong><br>– execute the app as one or more stateless processes, the Twelve-factor processes are stateless and<br><a href="http://en.wikipedia.org/wiki/Shared_nothing_architecture" target="_blank" rel="external">share-nothing</a><br>.</li>
-<li><strong>Port Binding</strong><br>– export services via port binding, The twelve-factor app is completely self-contained.</li>
-<li><strong>Concurrency</strong><br>– scale out via the process model. Each process should be individually scaled, with Factor 6 (Stateless), it is easy to scale the services.</li>
-<li><strong>Disposability</strong><br>– maximize robustness with fast startup and graceful shutdown, we can achieve this with containers.</li>
-<li><strong>Dev/Prod Parity</strong><br>– Keep development, staging, and production as similar as possible, the twelve-factor app is designed for<br><a href="http://www.avc.com/a_vc/2011/02/continuous-deployment.html" target="_blank" rel="external">continuous deployment</a><br>by keeping the gap between development and production small.</li>
-<li><strong>Logs</strong><br>– treat logs as event streams, a twelve-factor app never concerns itself with routing or storage of its output stream.</li>
-<li><strong>Admin Processes</strong><br>– run admin/management tasks as one-off processes.</li>
-</ol>
-<p>The 12-factor App methodology is technology and language agnostic but satisfied by<a href="https://developers.redhat.com/containers/" target="_blank" rel="external">Containers</a>,<a href="https://developers.redhat.com/microservices/" target="_blank" rel="external">Microservices</a>, and CI/CD Pipelines with a focus on<a href="https://developers.redhat.com/devops/" target="_blank" rel="external">DevOps</a>.You can access more information on The 12-factor Appat<a href="https://12factor.net/" target="_blank" rel="external">https://12factor.net/</a>.</p>
-<p><strong>Whether you are new to Containers or have experience, downloading this</strong><a href="https://developers.redhat.com/promotions/docker-cheatsheet/" target="_blank" rel="external"><strong>cheat sheet</strong></a><strong>can assist you when encountering tasks you haven’t done lately.</strong></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/qqa2yyN" target="_blank" rel="external">https://developers.redhat.com/blog/2017/06/22/12-factors-to-cloud-success/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/3AZNviN.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;12-Factors-to-Cloud-Success&quot;&gt;&lt;a href=&quot;#12-Factors-to-Cloud-Success
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Search an element in an unsorted array using minimum number of comparisons</title>
     <link href="https://gmagon.com/blog/2017/06/23/search-an-element-in-an-unsorted-array-using-minimum-number-of-comparisons/"/>
     <id>https://gmagon.com/blog/2017/06/23/search-an-element-in-an-unsorted-array-using-minimum-number-of-comparisons/</id>
@@ -677,6 +677,52 @@
     <summary type="html">
     
       &lt;p&gt;Given an array of &lt;strong&gt;n &lt;/strong&gt;distinct integers and an element &lt;strong&gt;x&lt;/strong&gt;. Search the element &lt;strong&gt;x &lt;/strong&gt;in the ar
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>10 things in tech you need to know today (GOOG)</title>
+    <link href="https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/"/>
+    <id>https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/</id>
+    <published>2017-06-22T00:00:00.000Z</published>
+    <updated>2017-06-22T09:45:34.617Z</updated>
+    
+    <content type="html"><![CDATA[<p>Good morning! Here is the tech news you need to know this Thursday.</p>
+<ol>
+<li><p><a href="http://uk.businessinsider.com/report-bill-gurley-to-leave-uber-board-2017-6" target="_blank" rel="external">Tech investor Bill Gurley is leaving the board of Uber.</a>Gurley will be replaced with Matt Cohler, another partner at Benchmark Capital. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/report-snapchat-buys-zenly-2017-6" target="_blank" rel="external">Snapchat reportedly paid over $250 million (£197 million) for an app that lets you track your friends.</a>It’s called Zenly. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/alibaba-stock-price-jack-ma-artificial-intelligence-machine-learning-may-cause-world-war-iii-2017-6" target="_blank" rel="external">Alibaba’s chairman and founder, Jack Ma, thinks that new technologies could be a threat to more than just jobs.</a>Ma said that new technologies like machine learning and artificial intelligence could lead to the third World War.</p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/deepmind-is-funding-climate-change-research-at-cambridge-university-2017-6" target="_blank" rel="external">DeepMind is funding climate change research at Cambridge University.</a>It wants to use artificial intelligence to slow down global warming. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/uk-digital-minister-matt-hancock-says-ai-needs-regulating-2017-6" target="_blank" rel="external">UK digital minister Matt Hancock said that the government will look to start regulating companies and scientists working in the field of artificial intelligence (AI).</a>He said AI has the potential change the world we live in but stressed that the technology must be regulated by a suitable framework.</p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/tesla-head-of-its-autopilot-software-chris-lattner-left-the-company-less-than-six-months-after-he-joined-2017-6" target="_blank" rel="external">Tesla’s head of its autopilot software left the company less than six months after he joined.</a>His name is Chris Lattner. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/uber-ceo-kalanick-on-coo-search-when-got-letter-urging-resignation-2017-6" target="_blank" rel="external">Uber’s Travis Kalanick was in Chicago to interview a COO candidate when he got the letter demanding his resignation.</a>Uber has been searching for a COO since early March.</p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/ethereum-price-flash-crash-2017-6" target="_blank" rel="external">Red-hot cryptocurrency Ethereum flash-crashed to $13 (£10) before bouncing back to $296 (£233).</a>The tumble occurred in a matter of minutes. </p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/snapchat-snap-maps-feature-shows-where-your-friends-are-2017-6" target="_blank" rel="external">Snapchat’s new maps feature shows you where your friends are.</a>A trailer for the feature shows two women browsing a map in Snapchat and tapping on a nearby location to see friends sharing videos from an ongoing concert.</p>
+</li>
+<li><p><a href="http://uk.businessinsider.com/deepmind-expandsl-streams-app-to-musgrove-park-hospital-2017-6" target="_blank" rel="external">Google DeepMind is due to start rolling out its controversial Streams healthcare app to another UK hospital.</a>It signed a five year deal with Taunton and Somerset NHS Foundation Trust.</p>
+</li>
+</ol>
+<p>NOW WATCH:<a href="http://www.businessinsider.com/tesla-model-x-america-electric-car-road-trip-elon-musk-2017-6" target="_blank" rel="external">We drove a brand-new Tesla Model X from San Francisco to New York — here’s what happened</a></p>
+<p>Loading video…</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/UvueAzN" target="_blank" rel="external">http://www.businessinsider.com/10-things-in-tech-you-need-to-know-today-june-22-2017-6</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Good morning! Here is the tech news you need to know this Thursday.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://uk.businessinsider.com/report-bill-gu
     
     </summary>
     
@@ -771,56 +817,6 @@
   </entry>
   
   <entry>
-    <title>We Get It Facebook, You Want Us To Post More</title>
-    <link href="https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/"/>
-    <id>https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/</id>
-    <published>2017-06-22T00:00:00.000Z</published>
-    <updated>2017-06-22T09:45:34.629Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="It-only-works-if-you-share-stuff-inside-it"><a href="#It-only-works-if-you-share-stuff-inside-it" class="headerlink" title="It only works if you share stuff inside it."></a>It only works if you share stuff inside it.</h2><p><img src="http://img0.tuicool.com/UJbiM3m.png!web" alt=""></p>
-<h2 id="No-sharing-no-Facebook"><a href="#No-sharing-no-Facebook" class="headerlink" title="No sharing, no Facebook"></a>No sharing, no Facebook</h2><p><img src="http://img1.tuicool.com/QjiIBja.png!web" alt=""></p>
-<h2 id="Yes-sharing-happy-Facebook"><a href="#Yes-sharing-happy-Facebook" class="headerlink" title="Yes sharing, happy Facebook"></a>Yes sharing, happy Facebook</h2><p><img src="http://img2.tuicool.com/JZbamiB.jpg!web" alt=""></p>
-<h2 id="So-Facebook-really-wants-us-post-stuff"><a href="#So-Facebook-really-wants-us-post-stuff" class="headerlink" title="So Facebook really wants us post stuff."></a>So Facebook really wants us post stuff.</h2><p><img src="http://img2.tuicool.com/eUZraii.jpg!web" alt=""></p>
-<p>And it started doing this new thing where it tells you how many days in a row you’ve shared.</p>
-<p><img src="http://img2.tuicool.com/uIjY3qa.jpg!web" alt=""></p>
-<h2 id="To-encourage-you-to-feed-its-feed"><a href="#To-encourage-you-to-feed-its-feed" class="headerlink" title="To encourage you to feed its feed"></a>To encourage you to feed its feed</h2><p><img src="http://img2.tuicool.com/AfMFzmZ.jpg!web" alt=""></p>
-<h3 id="Okay-Facebook-We-get-it"><a href="#Okay-Facebook-We-get-it" class="headerlink" title="Okay, Facebook. We get it."></a>Okay, Facebook. We get it.</h3><p><img src="http://img0.tuicool.com/uI3aEvR.png!web" alt=""></p>
-<h2 id="Thanks-for-the-reminder-I-guess"><a href="#Thanks-for-the-reminder-I-guess" class="headerlink" title="Thanks for the reminder, I guess?"></a>Thanks for the reminder, I guess?</h2><p><img src="http://img1.tuicool.com/RjArmeI.png!web" alt=""></p>
-<h2 id="Lord-Have-Mercy"><a href="#Lord-Have-Mercy" class="headerlink" title="Lord. Have. Mercy."></a>Lord. Have. Mercy.</h2><p><img src="http://img0.tuicool.com/iQ3aIrM.png!web" alt=""></p>
-<h2 id="People-are-certainly-uhhh-responding"><a href="#People-are-certainly-uhhh-responding" class="headerlink" title="People are certainly, uhhh, responding."></a>People are certainly, uhhh, responding.</h2><p><img src="http://img0.tuicool.com/yaUNRzv.png!web" alt=""></p>
-<p><img src="http://img1.tuicool.com/zEryMb2.png!web" alt=""></p>
-<p><img src="http://img2.tuicool.com/fAfyE3R.png!web" alt=""></p>
-<p><img src="http://img0.tuicool.com/ZfmqmiU.png!web" alt=""></p>
-<p>Facebook is also letting our friends know when we post — probably so they engage and make us feel better about posting, so we post more.</p>
-<p><img src="http://img0.tuicool.com/V3UZVbR.png!web" alt=""></p>
-<p><img src="http://img1.tuicool.com/N3IzyyU.jpg!web" alt=""></p>
-<p><a href="https://twitter.com/ashleyfeinberg" target="_blank" rel="external">Ashley Feinberg</a><a href="https://twitter.com/ashleyfeinberg" target="_blank" rel="external">@ashleyfeinberg</a></p>
-<p>Really proud of my friend @hamiltonnolan today</p>
-<p><a href="https://twitter.com/ashleyfeinberg/status/877197470840889348" target="_blank" rel="external">04:12 PM - 20 Jun 2017</a></p>
-<p><a href="https://twitter.com/intent/retweet?tweet_id=877197470840889348" target="_blank" rel="external">Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=877197470840889348" target="_blank" rel="external">Favorite</a></p>
-<h2 id="Yeeeesh"><a href="#Yeeeesh" class="headerlink" title="Yeeeesh"></a>Yeeeesh</h2><p><img src="http://img2.tuicool.com/u6Rriyf.png!web" alt=""></p>
-<h2 id="Other-Facebook-products-like-Messenger-use-a-similar-approach"><a href="#Other-Facebook-products-like-Messenger-use-a-similar-approach" class="headerlink" title="Other Facebook products, like Messenger, use a similar approach."></a>Other Facebook products, like Messenger, use a similar approach.</h2><p><img src="http://img2.tuicool.com/Jzuiyu7.jpg!web" alt=""></p>
-<p><img src="http://img2.tuicool.com/zIBVvuv.jpg!web" alt=""></p>
-<h2 id="Feels-good-doesn’t-it"><a href="#Feels-good-doesn’t-it" class="headerlink" title="Feels good, doesn’t it?"></a>Feels good, doesn’t it?</h2><p><img src="http://img1.tuicool.com/juyE7jm.gif" alt=""></p>
-<p>“We’re always looking for ways to help people share and connect on Facebook. Notifications are one of the ways we do this,” a Facebook spokesperson told BuzzFeed News.</p>
-<p><img src="http://img0.tuicool.com/mIrMZ3V.gif" alt=""></p>
-<p>Giphy / Viagiphy.com</p>
-<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
-<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
-<p>Got a confidential tip?Submit it here.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/VjMbuyn" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/we-get-it-facebook-you-want-us-to-post-more</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;It-only-works-if-you-share-stuff-inside-it&quot;&gt;&lt;a href=&quot;#It-only-works-if-you-share-stuff-inside-it&quot; class=&quot;headerlink&quot; title=&quot;It only 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Facebook is testing a feature to prevent profile pictures being abused by other users</title>
     <link href="https://gmagon.com/blog/2017/06/22/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/"/>
     <id>https://gmagon.com/blog/2017/06/22/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/</id>
@@ -846,52 +842,6 @@
     
       &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/AziuEjU.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Facebook is introducing a new feature to give users peace of mind aroun
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>10 things in tech you need to know today (GOOG)</title>
-    <link href="https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/"/>
-    <id>https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/</id>
-    <published>2017-06-22T00:00:00.000Z</published>
-    <updated>2017-06-22T09:45:34.617Z</updated>
-    
-    <content type="html"><![CDATA[<p>Good morning! Here is the tech news you need to know this Thursday.</p>
-<ol>
-<li><p><a href="http://uk.businessinsider.com/report-bill-gurley-to-leave-uber-board-2017-6" target="_blank" rel="external">Tech investor Bill Gurley is leaving the board of Uber.</a>Gurley will be replaced with Matt Cohler, another partner at Benchmark Capital. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/report-snapchat-buys-zenly-2017-6" target="_blank" rel="external">Snapchat reportedly paid over $250 million (£197 million) for an app that lets you track your friends.</a>It’s called Zenly. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/alibaba-stock-price-jack-ma-artificial-intelligence-machine-learning-may-cause-world-war-iii-2017-6" target="_blank" rel="external">Alibaba’s chairman and founder, Jack Ma, thinks that new technologies could be a threat to more than just jobs.</a>Ma said that new technologies like machine learning and artificial intelligence could lead to the third World War.</p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/deepmind-is-funding-climate-change-research-at-cambridge-university-2017-6" target="_blank" rel="external">DeepMind is funding climate change research at Cambridge University.</a>It wants to use artificial intelligence to slow down global warming. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/uk-digital-minister-matt-hancock-says-ai-needs-regulating-2017-6" target="_blank" rel="external">UK digital minister Matt Hancock said that the government will look to start regulating companies and scientists working in the field of artificial intelligence (AI).</a>He said AI has the potential change the world we live in but stressed that the technology must be regulated by a suitable framework.</p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/tesla-head-of-its-autopilot-software-chris-lattner-left-the-company-less-than-six-months-after-he-joined-2017-6" target="_blank" rel="external">Tesla’s head of its autopilot software left the company less than six months after he joined.</a>His name is Chris Lattner. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/uber-ceo-kalanick-on-coo-search-when-got-letter-urging-resignation-2017-6" target="_blank" rel="external">Uber’s Travis Kalanick was in Chicago to interview a COO candidate when he got the letter demanding his resignation.</a>Uber has been searching for a COO since early March.</p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/ethereum-price-flash-crash-2017-6" target="_blank" rel="external">Red-hot cryptocurrency Ethereum flash-crashed to $13 (£10) before bouncing back to $296 (£233).</a>The tumble occurred in a matter of minutes. </p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/snapchat-snap-maps-feature-shows-where-your-friends-are-2017-6" target="_blank" rel="external">Snapchat’s new maps feature shows you where your friends are.</a>A trailer for the feature shows two women browsing a map in Snapchat and tapping on a nearby location to see friends sharing videos from an ongoing concert.</p>
-</li>
-<li><p><a href="http://uk.businessinsider.com/deepmind-expandsl-streams-app-to-musgrove-park-hospital-2017-6" target="_blank" rel="external">Google DeepMind is due to start rolling out its controversial Streams healthcare app to another UK hospital.</a>It signed a five year deal with Taunton and Somerset NHS Foundation Trust.</p>
-</li>
-</ol>
-<p>NOW WATCH:<a href="http://www.businessinsider.com/tesla-model-x-america-electric-car-road-trip-elon-musk-2017-6" target="_blank" rel="external">We drove a brand-new Tesla Model X from San Francisco to New York — here’s what happened</a></p>
-<p>Loading video…</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/UvueAzN" target="_blank" rel="external">http://www.businessinsider.com/10-things-in-tech-you-need-to-know-today-june-22-2017-6</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Good morning! Here is the tech news you need to know this Thursday.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://uk.businessinsider.com/report-bill-gu
     
     </summary>
     
@@ -945,6 +895,56 @@
   </entry>
   
   <entry>
+    <title>We Get It Facebook, You Want Us To Post More</title>
+    <link href="https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/"/>
+    <id>https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/</id>
+    <published>2017-06-22T00:00:00.000Z</published>
+    <updated>2017-06-22T09:45:34.629Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="It-only-works-if-you-share-stuff-inside-it"><a href="#It-only-works-if-you-share-stuff-inside-it" class="headerlink" title="It only works if you share stuff inside it."></a>It only works if you share stuff inside it.</h2><p><img src="http://img0.tuicool.com/UJbiM3m.png!web" alt=""></p>
+<h2 id="No-sharing-no-Facebook"><a href="#No-sharing-no-Facebook" class="headerlink" title="No sharing, no Facebook"></a>No sharing, no Facebook</h2><p><img src="http://img1.tuicool.com/QjiIBja.png!web" alt=""></p>
+<h2 id="Yes-sharing-happy-Facebook"><a href="#Yes-sharing-happy-Facebook" class="headerlink" title="Yes sharing, happy Facebook"></a>Yes sharing, happy Facebook</h2><p><img src="http://img2.tuicool.com/JZbamiB.jpg!web" alt=""></p>
+<h2 id="So-Facebook-really-wants-us-post-stuff"><a href="#So-Facebook-really-wants-us-post-stuff" class="headerlink" title="So Facebook really wants us post stuff."></a>So Facebook really wants us post stuff.</h2><p><img src="http://img2.tuicool.com/eUZraii.jpg!web" alt=""></p>
+<p>And it started doing this new thing where it tells you how many days in a row you’ve shared.</p>
+<p><img src="http://img2.tuicool.com/uIjY3qa.jpg!web" alt=""></p>
+<h2 id="To-encourage-you-to-feed-its-feed"><a href="#To-encourage-you-to-feed-its-feed" class="headerlink" title="To encourage you to feed its feed"></a>To encourage you to feed its feed</h2><p><img src="http://img2.tuicool.com/AfMFzmZ.jpg!web" alt=""></p>
+<h3 id="Okay-Facebook-We-get-it"><a href="#Okay-Facebook-We-get-it" class="headerlink" title="Okay, Facebook. We get it."></a>Okay, Facebook. We get it.</h3><p><img src="http://img0.tuicool.com/uI3aEvR.png!web" alt=""></p>
+<h2 id="Thanks-for-the-reminder-I-guess"><a href="#Thanks-for-the-reminder-I-guess" class="headerlink" title="Thanks for the reminder, I guess?"></a>Thanks for the reminder, I guess?</h2><p><img src="http://img1.tuicool.com/RjArmeI.png!web" alt=""></p>
+<h2 id="Lord-Have-Mercy"><a href="#Lord-Have-Mercy" class="headerlink" title="Lord. Have. Mercy."></a>Lord. Have. Mercy.</h2><p><img src="http://img0.tuicool.com/iQ3aIrM.png!web" alt=""></p>
+<h2 id="People-are-certainly-uhhh-responding"><a href="#People-are-certainly-uhhh-responding" class="headerlink" title="People are certainly, uhhh, responding."></a>People are certainly, uhhh, responding.</h2><p><img src="http://img0.tuicool.com/yaUNRzv.png!web" alt=""></p>
+<p><img src="http://img1.tuicool.com/zEryMb2.png!web" alt=""></p>
+<p><img src="http://img2.tuicool.com/fAfyE3R.png!web" alt=""></p>
+<p><img src="http://img0.tuicool.com/ZfmqmiU.png!web" alt=""></p>
+<p>Facebook is also letting our friends know when we post — probably so they engage and make us feel better about posting, so we post more.</p>
+<p><img src="http://img0.tuicool.com/V3UZVbR.png!web" alt=""></p>
+<p><img src="http://img1.tuicool.com/N3IzyyU.jpg!web" alt=""></p>
+<p><a href="https://twitter.com/ashleyfeinberg" target="_blank" rel="external">Ashley Feinberg</a><a href="https://twitter.com/ashleyfeinberg" target="_blank" rel="external">@ashleyfeinberg</a></p>
+<p>Really proud of my friend @hamiltonnolan today</p>
+<p><a href="https://twitter.com/ashleyfeinberg/status/877197470840889348" target="_blank" rel="external">04:12 PM - 20 Jun 2017</a></p>
+<p><a href="https://twitter.com/intent/retweet?tweet_id=877197470840889348" target="_blank" rel="external">Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=877197470840889348" target="_blank" rel="external">Favorite</a></p>
+<h2 id="Yeeeesh"><a href="#Yeeeesh" class="headerlink" title="Yeeeesh"></a>Yeeeesh</h2><p><img src="http://img2.tuicool.com/u6Rriyf.png!web" alt=""></p>
+<h2 id="Other-Facebook-products-like-Messenger-use-a-similar-approach"><a href="#Other-Facebook-products-like-Messenger-use-a-similar-approach" class="headerlink" title="Other Facebook products, like Messenger, use a similar approach."></a>Other Facebook products, like Messenger, use a similar approach.</h2><p><img src="http://img2.tuicool.com/Jzuiyu7.jpg!web" alt=""></p>
+<p><img src="http://img2.tuicool.com/zIBVvuv.jpg!web" alt=""></p>
+<h2 id="Feels-good-doesn’t-it"><a href="#Feels-good-doesn’t-it" class="headerlink" title="Feels good, doesn’t it?"></a>Feels good, doesn’t it?</h2><p><img src="http://img1.tuicool.com/juyE7jm.gif" alt=""></p>
+<p>“We’re always looking for ways to help people share and connect on Facebook. Notifications are one of the ways we do this,” a Facebook spokesperson told BuzzFeed News.</p>
+<p><img src="http://img0.tuicool.com/mIrMZ3V.gif" alt=""></p>
+<p>Giphy / Viagiphy.com</p>
+<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
+<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
+<p>Got a confidential tip?Submit it here.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/VjMbuyn" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/we-get-it-facebook-you-want-us-to-post-more</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;It-only-works-if-you-share-stuff-inside-it&quot;&gt;&lt;a href=&quot;#It-only-works-if-you-share-stuff-inside-it&quot; class=&quot;headerlink&quot; title=&quot;It only 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Uber founder Travis Kalanick resigns as CEO</title>
     <link href="https://gmagon.com/blog/2017/06/21/uber-founder-travis-kalanick-resigns-as-ceo/"/>
     <id>https://gmagon.com/blog/2017/06/21/uber-founder-travis-kalanick-resigns-as-ceo/</id>
@@ -990,36 +990,27 @@
   </entry>
   
   <entry>
-    <title>The 4 Fundamental Pillars Of A Successful Company (According To These 4 CEOs)</title>
-    <link href="https://gmagon.com/blog/2017/06/21/the-4-fundamental-pillars-of-a-successful-company-according-to-these-4-ceos/"/>
-    <id>https://gmagon.com/blog/2017/06/21/the-4-fundamental-pillars-of-a-successful-company-according-to-these-4-ceos/</id>
+    <title>IKEA plans to improve AR shopping tools with help from Apple</title>
+    <link href="https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/"/>
+    <id>https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/</id>
     <published>2017-06-21T00:00:00.000Z</published>
-    <updated>2017-06-21T08:45:40.924Z</updated>
+    <updated>2017-06-21T08:45:40.922Z</updated>
     
-    <content type="html"><![CDATA[<p>When it comes to building asuccessful company, there truly is a “method to the madness.” Read enough interviews, listen to enough<a href="https://www.inc.com/nicolas-cole/this-ceo-says-its-time-to-rethink-your-approach-to-video-marketing.html" target="_blank" rel="external">CEOs speak on their difficult journey</a>up the mountain, and you’ll start to draw parallels from one experience to another – regardless of industry.</p>
-<p>One of the ways I feed<a href="https://www.inc.com/nicolas-cole/the-4-biggest-obstacles-all-new-entrepreneurs-face-and-how-these-4-young-entrepr.html" target="_blank" rel="external">my own learning process as a young entrepreneur</a>is by learning from those above or ahead of me on the path. I am constantly looking for new people to learn from, eager to hear what solutions they found for themselves (and selfishly, how I might avoid those same challenges in the future).</p>
-<p>But “success” isn’t just about achievement. In fact, the most successful companies don’t just measure the end result, the total revenue, but the process that got them that result. Efficiency and good habits are equally (if not more) important.</p>
-<p>So, what do some of those good habits look like?</p>
-<h2 id="Pillar-Number-1-“Cash-is-King”"><a href="#Pillar-Number-1-“Cash-is-King”" class="headerlink" title="Pillar Number 1: “Cash is King”"></a>Pillar Number 1: “Cash is King”</h2><p>A difficult concept made simple, “Cash is King” is the mantra every business (and business leader) should live by.</p>
-<p>“You can’t run a business on the promise of cash or future payment. It is the only metric that really matters and should be the primary measure of your company’s success at every stage,” said Aaron Webber, CEO of<a href="http://madisonwall.co/#home" target="_blank" rel="external">MadisonWall</a>, a venture capital firm and holding company to a handful of creative agencies. “A million dollars in outstanding invoices looks great and all, but it won’t help you if you can’t pay next week’s rent. You need to have physical cash in the bank set aside for when those inevitable obstacles arise.”</p>
-<p>He went on to explain that a successful company is one that practices fiscal prudence and understands the power of compounding interest and investing back into the business. If you can develop and maintain good spending habits with this in mind, you won’t just sustain your business, you will grow it. And if not, then your business has little chance of survival. Unfortunately, money won’t fix bad habits. In fact, it might make them worse.</p>
-<h2 id="Pillar-Number-2-Leadership-that-isn’t-ego-driven"><a href="#Pillar-Number-2-Leadership-that-isn’t-ego-driven" class="headerlink" title="Pillar Number 2: Leadership that isn’t ego driven."></a>Pillar Number 2: Leadership that isn’t ego driven.</h2><p>Too often, I see young entrepreneurs get overly excited about what they’re going to call themselves, and who gets to put the title of “CEO” in their Twitter bio–now that they’ve made a website and decided on a name for their “company.”</p>
-<p>I know I’m not the first person to say this, and I know I won’t be the last. But it is an interesting thing to observe in my peers, and those who are ambitious about starting big companies. I see them spending more time on what title they want to wear, rather than how they’re going to actually build something of value.</p>
-<p>“If you truly want to build a loyal team, you have to realize that it’s not all about you. Especially as the CEO, your job isn’t to be the center of attention. Your job is to make everyone else’s lives easier, and give them the opportunity to do great work. You’re the facilitator, the coach, not necessarily the star player,” said<a href="http://themfceo.com/" target="_blank" rel="external">Andy Frisella</a>, CEO of 1st Phorm International.</p>
-<h2 id="Pillar-Number-3-Productivity-can’t-be-chained-to-a-cubicle"><a href="#Pillar-Number-3-Productivity-can’t-be-chained-to-a-cubicle" class="headerlink" title="Pillar Number 3: Productivity can’t be chained to a cubicle."></a>Pillar Number 3: Productivity can’t be chained to a cubicle.</h2><p>This is a hot topic for the companies of today, this idea of open work environments and allowing for more employee freedom.</p>
-<p>Jim Kwik, founder and CEO of<a href="https://kwiklearning.com/" target="_blank" rel="external">Kwik Learning</a>, has served as the mental coach to some of the world’s leading CEOs and celebrities. On the topic of productivity and brain fitness in the workplace, he said, “We are becoming more and more aware that working 8 straight hours, 5 days a week, might not be the most productive method for maximum efficiency. In fact, many companies are starting to realize that by being more flexible, and allowing their employees more freedom, they will actually produce better work. It just might not happen within the hours of 9-5. And you know what? That’s OK.”</p>
-<p>Especially for new leaders and founders, it can be easy to fall into the trap of thinking that hours-in is the best measure for productivity or success. But the truth is, it’s not. In fact, a lot of today’s business leaders are operating more under the belief that hours-in is a poor metric, and the only thing that matters is the final product. If you do it in half the time while working from home, great. Just get it done, and get it done well.</p>
-<h2 id="Pillar-Number-4-Your-customer-service-can’t-suck"><a href="#Pillar-Number-4-Your-customer-service-can’t-suck" class="headerlink" title="Pillar Number 4: Your customer service can’t suck."></a>Pillar Number 4: Your customer service can’t suck.</h2><p>Customer acquisition is hard. Customer retention is even harder.</p>
-<p>If you have a high churn rate as a company, you’re going to find yourself constantly struggling to build something successful over the long term. What you’re looking for is repeat, happy customers, ideally the kind that then go on to recommend you to their friends.</p>
-<p>This is the advice that Charles Zhong, CEO of<a href="https://www.azazie.com/" target="_blank" rel="external">Azazie</a>, shared. Azazie has made a name for themselves in the bridal fashion world by disrupting the conventional industry, seeing 300% sales growth in 2017. Oh, and for those that say Millennials are impossible to deal with as employees, the average age of the company’s employees is 27.</p>
-<p>“If you want to see what customer service looks like, step inside the world of bridal fashion. Consumers are tremendously particular, and you as a company are dealing with a very important occasion: someone’s wedding. In order for your internal team to work effectively, you have to communicate in a way that allows all parties to call out what isn’t working so that it can be fixed. We encourage our team members to ask questions, ask what people are struggling with, what needs more clarification or process, etc. We want everyone to feel heard,” said Zhong.</p>
-<p>He went on to explain that, on the flipside, customer service that goes above and beyond is all about being personable. People already have the Internet to answer most questions. So when a customer reaches out, sometimes they just need a human to walk them through their specific case. The more human and personable that experience feels, the more likely that customer will be to return, because they trust you.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/FnuI7jN" target="_blank" rel="external">https://www.inc.com/nicolas-cole/the-4-fundamental-pillars-of-a-successful-company-according-to-these-4-ceos.html</a></p>
+    <content type="html"><![CDATA[<p>You’ll be able to see how furniture fits in your home before committing to hours of assembly.</p>
+<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fdims-shared%2Fdims3%2FGLOB%2Fcrop%2F4000x2667%2B0%2B0%2Fresize%2F1600x1067%21%2Fformat%2Fjpg%2Fquality%2F85%2Fhttp%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F5753e34113e3c608e558c7d1bd533c95%2F205003391%2F460623244.jpg&amp;client=cbc79c14efcebee57402&amp;signature=ea77eb3f97d65b75fb3eaf0896fba50f77ddd802" alt=""></p>
+<p>Bloomberg via Getty Images</p>
+<p>Apple and IKEA are creating an AR app that will let customers preview how an item will look in their home. Michael Valdsgaard, IKEA’s digital transformation manager, told Swedish website<a href="http://digital.di.se/artikel/ikea-om-samarbetet-med-apple-superintressant-for-oss" target="_blank" rel="external"><em>Digital.di</em></a>, “This will be the first augmented reality app that allows you to make reliable buying decisions.”</p>
+<p>In the first version, customers will take photos of their homes and use the app to place<a href="https://www.engadget.com/2016/04/05/ikea-htc-vive-kitchen-vr-app/" target="_blank" rel="external">images</a>of IKEA products wherever they might want them. Valdsgaard said users will be able to position products with millimeter precision and sizing of the products will be to scale. Eventually, customers may be able to try out products and then order them through the app.</p>
+<p>The<a href="https://www.engadget.com/2017/06/08/ikea-mars-simulator-teenage-engineering/" target="_blank" rel="external">IKEA</a>catalog app sort of lets you do this now, but not with much accuracy. In it, you can click on a piece of furniture and see it superimposed over whatever your camera is pointed towards. You can drag the furniture around and get an idea of what it might look like in your home and you can even use the app to make sure the size is accurate. But Valdsgaard says the new app will be better with the help of<a href="https://www.engadget.com/2014/09/07/ikea-apple-ad-parody/" target="_blank" rel="external">Apple’s</a>technology and experience with AR.</p>
+<p>IKEA isn’t the only retail company with AR shopping experiences. Both<a href="https://www.engadget.com/2016/06/09/lowes-tango-ar-app/" target="_blank" rel="external">Lowe’s</a>and<a href="https://www.engadget.com/2017/03/20/pottery-barn-ar-app/" target="_blank" rel="external">Pottery Barn</a>have apps that let you get an idea of how furniture and appliances will look in your home. Lowe’s even uses AR to help customers navigate their stores and<a href="https://www.engadget.com/2017/03/14/lowe-s-is-using-ar-and-vr-to-make-how-to-easier/" target="_blank" rel="external">VR</a>to give lessons on how to successfully complete certain home improvement projects.</p>
+<p>Valdsgaard says they would like to have the app available by the iOS 11 debut, but that it may not be possible. IKEA expects to have 500-600 products available on the app at launch.</p>
+<p>Source: <a href="https://www.engadget.com/2017/06/19/ikea-improves-ar-shopping-apple/" target="_blank" rel="external">https://www.engadget.com/2017/06/19/ikea-improves-ar-shopping-apple/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;When it comes to building asuccessful company, there truly is a “method to the madness.” Read enough interviews, listen to enough&lt;a href=
+      &lt;p&gt;You’ll be able to see how furniture fits in your home before committing to hours of assembly.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/image
     
     </summary>
     
@@ -1052,34 +1043,6 @@
   </entry>
   
   <entry>
-    <title>IKEA plans to improve AR shopping tools with help from Apple</title>
-    <link href="https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/"/>
-    <id>https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/</id>
-    <published>2017-06-21T00:00:00.000Z</published>
-    <updated>2017-06-21T08:45:40.922Z</updated>
-    
-    <content type="html"><![CDATA[<p>You’ll be able to see how furniture fits in your home before committing to hours of assembly.</p>
-<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fdims-shared%2Fdims3%2FGLOB%2Fcrop%2F4000x2667%2B0%2B0%2Fresize%2F1600x1067%21%2Fformat%2Fjpg%2Fquality%2F85%2Fhttp%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F5753e34113e3c608e558c7d1bd533c95%2F205003391%2F460623244.jpg&amp;client=cbc79c14efcebee57402&amp;signature=ea77eb3f97d65b75fb3eaf0896fba50f77ddd802" alt=""></p>
-<p>Bloomberg via Getty Images</p>
-<p>Apple and IKEA are creating an AR app that will let customers preview how an item will look in their home. Michael Valdsgaard, IKEA’s digital transformation manager, told Swedish website<a href="http://digital.di.se/artikel/ikea-om-samarbetet-med-apple-superintressant-for-oss" target="_blank" rel="external"><em>Digital.di</em></a>, “This will be the first augmented reality app that allows you to make reliable buying decisions.”</p>
-<p>In the first version, customers will take photos of their homes and use the app to place<a href="https://www.engadget.com/2016/04/05/ikea-htc-vive-kitchen-vr-app/" target="_blank" rel="external">images</a>of IKEA products wherever they might want them. Valdsgaard said users will be able to position products with millimeter precision and sizing of the products will be to scale. Eventually, customers may be able to try out products and then order them through the app.</p>
-<p>The<a href="https://www.engadget.com/2017/06/08/ikea-mars-simulator-teenage-engineering/" target="_blank" rel="external">IKEA</a>catalog app sort of lets you do this now, but not with much accuracy. In it, you can click on a piece of furniture and see it superimposed over whatever your camera is pointed towards. You can drag the furniture around and get an idea of what it might look like in your home and you can even use the app to make sure the size is accurate. But Valdsgaard says the new app will be better with the help of<a href="https://www.engadget.com/2014/09/07/ikea-apple-ad-parody/" target="_blank" rel="external">Apple’s</a>technology and experience with AR.</p>
-<p>IKEA isn’t the only retail company with AR shopping experiences. Both<a href="https://www.engadget.com/2016/06/09/lowes-tango-ar-app/" target="_blank" rel="external">Lowe’s</a>and<a href="https://www.engadget.com/2017/03/20/pottery-barn-ar-app/" target="_blank" rel="external">Pottery Barn</a>have apps that let you get an idea of how furniture and appliances will look in your home. Lowe’s even uses AR to help customers navigate their stores and<a href="https://www.engadget.com/2017/03/14/lowe-s-is-using-ar-and-vr-to-make-how-to-easier/" target="_blank" rel="external">VR</a>to give lessons on how to successfully complete certain home improvement projects.</p>
-<p>Valdsgaard says they would like to have the app available by the iOS 11 debut, but that it may not be possible. IKEA expects to have 500-600 products available on the app at launch.</p>
-<p>Source: <a href="https://www.engadget.com/2017/06/19/ikea-improves-ar-shopping-apple/" target="_blank" rel="external">https://www.engadget.com/2017/06/19/ikea-improves-ar-shopping-apple/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;You’ll be able to see how furniture fits in your home before committing to hours of assembly.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/image
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Apple tries to clamp down on leaks with mixed success</title>
     <link href="https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/"/>
     <id>https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/</id>
@@ -1101,6 +1064,43 @@
     
       &lt;p&gt;Including a leak about its anti-leaking efforts.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The 4 Fundamental Pillars Of A Successful Company (According To These 4 CEOs)</title>
+    <link href="https://gmagon.com/blog/2017/06/21/the-4-fundamental-pillars-of-a-successful-company-according-to-these-4-ceos/"/>
+    <id>https://gmagon.com/blog/2017/06/21/the-4-fundamental-pillars-of-a-successful-company-according-to-these-4-ceos/</id>
+    <published>2017-06-21T00:00:00.000Z</published>
+    <updated>2017-06-21T08:45:40.924Z</updated>
+    
+    <content type="html"><![CDATA[<p>When it comes to building asuccessful company, there truly is a “method to the madness.” Read enough interviews, listen to enough<a href="https://www.inc.com/nicolas-cole/this-ceo-says-its-time-to-rethink-your-approach-to-video-marketing.html" target="_blank" rel="external">CEOs speak on their difficult journey</a>up the mountain, and you’ll start to draw parallels from one experience to another – regardless of industry.</p>
+<p>One of the ways I feed<a href="https://www.inc.com/nicolas-cole/the-4-biggest-obstacles-all-new-entrepreneurs-face-and-how-these-4-young-entrepr.html" target="_blank" rel="external">my own learning process as a young entrepreneur</a>is by learning from those above or ahead of me on the path. I am constantly looking for new people to learn from, eager to hear what solutions they found for themselves (and selfishly, how I might avoid those same challenges in the future).</p>
+<p>But “success” isn’t just about achievement. In fact, the most successful companies don’t just measure the end result, the total revenue, but the process that got them that result. Efficiency and good habits are equally (if not more) important.</p>
+<p>So, what do some of those good habits look like?</p>
+<h2 id="Pillar-Number-1-“Cash-is-King”"><a href="#Pillar-Number-1-“Cash-is-King”" class="headerlink" title="Pillar Number 1: “Cash is King”"></a>Pillar Number 1: “Cash is King”</h2><p>A difficult concept made simple, “Cash is King” is the mantra every business (and business leader) should live by.</p>
+<p>“You can’t run a business on the promise of cash or future payment. It is the only metric that really matters and should be the primary measure of your company’s success at every stage,” said Aaron Webber, CEO of<a href="http://madisonwall.co/#home" target="_blank" rel="external">MadisonWall</a>, a venture capital firm and holding company to a handful of creative agencies. “A million dollars in outstanding invoices looks great and all, but it won’t help you if you can’t pay next week’s rent. You need to have physical cash in the bank set aside for when those inevitable obstacles arise.”</p>
+<p>He went on to explain that a successful company is one that practices fiscal prudence and understands the power of compounding interest and investing back into the business. If you can develop and maintain good spending habits with this in mind, you won’t just sustain your business, you will grow it. And if not, then your business has little chance of survival. Unfortunately, money won’t fix bad habits. In fact, it might make them worse.</p>
+<h2 id="Pillar-Number-2-Leadership-that-isn’t-ego-driven"><a href="#Pillar-Number-2-Leadership-that-isn’t-ego-driven" class="headerlink" title="Pillar Number 2: Leadership that isn’t ego driven."></a>Pillar Number 2: Leadership that isn’t ego driven.</h2><p>Too often, I see young entrepreneurs get overly excited about what they’re going to call themselves, and who gets to put the title of “CEO” in their Twitter bio–now that they’ve made a website and decided on a name for their “company.”</p>
+<p>I know I’m not the first person to say this, and I know I won’t be the last. But it is an interesting thing to observe in my peers, and those who are ambitious about starting big companies. I see them spending more time on what title they want to wear, rather than how they’re going to actually build something of value.</p>
+<p>“If you truly want to build a loyal team, you have to realize that it’s not all about you. Especially as the CEO, your job isn’t to be the center of attention. Your job is to make everyone else’s lives easier, and give them the opportunity to do great work. You’re the facilitator, the coach, not necessarily the star player,” said<a href="http://themfceo.com/" target="_blank" rel="external">Andy Frisella</a>, CEO of 1st Phorm International.</p>
+<h2 id="Pillar-Number-3-Productivity-can’t-be-chained-to-a-cubicle"><a href="#Pillar-Number-3-Productivity-can’t-be-chained-to-a-cubicle" class="headerlink" title="Pillar Number 3: Productivity can’t be chained to a cubicle."></a>Pillar Number 3: Productivity can’t be chained to a cubicle.</h2><p>This is a hot topic for the companies of today, this idea of open work environments and allowing for more employee freedom.</p>
+<p>Jim Kwik, founder and CEO of<a href="https://kwiklearning.com/" target="_blank" rel="external">Kwik Learning</a>, has served as the mental coach to some of the world’s leading CEOs and celebrities. On the topic of productivity and brain fitness in the workplace, he said, “We are becoming more and more aware that working 8 straight hours, 5 days a week, might not be the most productive method for maximum efficiency. In fact, many companies are starting to realize that by being more flexible, and allowing their employees more freedom, they will actually produce better work. It just might not happen within the hours of 9-5. And you know what? That’s OK.”</p>
+<p>Especially for new leaders and founders, it can be easy to fall into the trap of thinking that hours-in is the best measure for productivity or success. But the truth is, it’s not. In fact, a lot of today’s business leaders are operating more under the belief that hours-in is a poor metric, and the only thing that matters is the final product. If you do it in half the time while working from home, great. Just get it done, and get it done well.</p>
+<h2 id="Pillar-Number-4-Your-customer-service-can’t-suck"><a href="#Pillar-Number-4-Your-customer-service-can’t-suck" class="headerlink" title="Pillar Number 4: Your customer service can’t suck."></a>Pillar Number 4: Your customer service can’t suck.</h2><p>Customer acquisition is hard. Customer retention is even harder.</p>
+<p>If you have a high churn rate as a company, you’re going to find yourself constantly struggling to build something successful over the long term. What you’re looking for is repeat, happy customers, ideally the kind that then go on to recommend you to their friends.</p>
+<p>This is the advice that Charles Zhong, CEO of<a href="https://www.azazie.com/" target="_blank" rel="external">Azazie</a>, shared. Azazie has made a name for themselves in the bridal fashion world by disrupting the conventional industry, seeing 300% sales growth in 2017. Oh, and for those that say Millennials are impossible to deal with as employees, the average age of the company’s employees is 27.</p>
+<p>“If you want to see what customer service looks like, step inside the world of bridal fashion. Consumers are tremendously particular, and you as a company are dealing with a very important occasion: someone’s wedding. In order for your internal team to work effectively, you have to communicate in a way that allows all parties to call out what isn’t working so that it can be fixed. We encourage our team members to ask questions, ask what people are struggling with, what needs more clarification or process, etc. We want everyone to feel heard,” said Zhong.</p>
+<p>He went on to explain that, on the flipside, customer service that goes above and beyond is all about being personable. People already have the Internet to answer most questions. So when a customer reaches out, sometimes they just need a human to walk them through their specific case. The more human and personable that experience feels, the more likely that customer will be to return, because they trust you.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/FnuI7jN" target="_blank" rel="external">https://www.inc.com/nicolas-cole/the-4-fundamental-pillars-of-a-successful-company-according-to-these-4-ceos.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;When it comes to building asuccessful company, there truly is a “method to the madness.” Read enough interviews, listen to enough&lt;a href=
     
     </summary>
     

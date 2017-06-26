@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-06-23T07:53:27.168Z</updated>
+  <updated>2017-06-26T09:37:13.942Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -14,6 +14,460 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>What’s new in JPA 2.2 – Java 8 Date and Time Types</title>
+    <link href="https://gmagon.com/blog/2017/06/26/whats-new-in-jpa-22-java-8-date-and-time-types/"/>
+    <id>https://gmagon.com/blog/2017/06/26/whats-new-in-jpa-22-java-8-date-and-time-types/</id>
+    <published>2017-06-26T00:00:00.000Z</published>
+    <updated>2017-06-26T09:37:13.942Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://twitter.com/vlad_mihalcea" target="_blank" rel="external">Follow @vlad_mihalcea</a></p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Now that the<a href="https://www.jcp.org/en/jsr/results?id=6002" target="_blank" rel="external">JPA 2.2 Review Ballot was approved</a>, let’s start analyzing some of the new additions to the standard which have been supported by Hibernate for quite some time already.</p>
+<p>In this article, we are going to see how Java 8 Date/Time API is supported and which types you need to use depending on your business case requirements.</p>
+<h2 id="Java-8-Date-Time-support"><a href="#Java-8-Date-Time-support" class="headerlink" title="Java 8 Date/Time support"></a>Java 8 Date/Time support</h2><p>The<a href="https://jcp.org/aboutJava/communityprocess/maintenance/jsr338/ChangeLog-JPA-2.2-MR.txt" target="_blank" rel="external">JPA 2.2 change log</a>says that only<a href="https://github.com/javaee/jpa-spec/issues/63" target="_blank" rel="external">the following types are going to be supported</a>:</p>
+<ul>
+<li><code>java.time.LocalDate</code></li>
+<li><code>java.time.LocalTime</code></li>
+<li><code>java.time.LocalDateTime</code></li>
+<li><code>java.time.OffsetTime</code></li>
+<li><code>java.time.OffsetDateTime</code></li>
+</ul>
+<p>While<code>LocalDateTime</code>is rather straightforward since it only captures a point in time, similar to<code>java.util.Date</code>,<a href="https://docs.oracle.com/javase/8/docs/api/java/time/OffsetDateTime.html" target="_blank" rel="external"><code>OffsetDateTime</code></a>is more problematic because it only captures the offset, but not the time zone rules such as DST (Daylight Saving Time) or other rules defined by ZoneId and typically supported by<a href="https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html" target="_blank" rel="external"><code>ZonedDateTime</code></a>.</p>
+<p>It’s also curious that the standard does not support the<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html" target="_blank" rel="external"><code>java.time.Duration</code></a>type which can come in handy in many business use cases.</p>
+<h2 id="Domain-Model"><a href="#Domain-Model" class="headerlink" title="Domain Model"></a>Domain Model</h2><p>Considering we have following entities in our system:</p>
+<p><img src="http://img0.tuicool.com/yEBFvmm.png!web" alt=""></p>
+<p>The<code>Employee</code>entity contains the following Java 8 Date Time attributes:</p>
+<ul>
+<li><code>birthday</code><br>attribute is a<br><code>LocalDate</code><br>since we are only interested in the Date part</li>
+<li><code>updatedOn</code><br>is a<br><code>LocalDateTime</code><br>since this attribute needs to store both Date and Time information</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">@Entity</div><div class="line">(name = </div><div class="line">&quot;Employee&quot;</div><div class="line">)</div><div class="line">public class Employee &#123;</div><div class="line"></div><div class="line">    </div><div class="line">@Id</div><div class="line">@GeneratedValue</div><div class="line"></div><div class="line">    private Long id;</div><div class="line"></div><div class="line">    </div><div class="line">@NaturalId</div><div class="line"></div><div class="line">    private String name;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">LocalDate</div><div class="line">birthday</div><div class="line">;</div><div class="line"></div><div class="line">    @</div><div class="line">Column</div><div class="line">(name = </div><div class="line">&quot;updated_on&quot;</div><div class="line">)</div><div class="line">    </div><div class="line">private</div><div class="line">LocalDateTime</div><div class="line">updatedOn</div><div class="line">;</div><div class="line"></div><div class="line">    </div><div class="line">//Getters are setters omitted for brevity</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>The<code>Meeting</code>entity features the following Java 8 Date Time attributes:</p>
+<ul>
+<li><code>startsAt</code><br>is a<br><code>ZoneDateTime</code><br>which, even if not supported by JPA 2.2, is probably a more suitable version of<br><code>OffsetDateTime</code></li>
+<li>the<br><code>duration</code><br>attribute might not be supported by JPA 2.2, but we will use it since Hibernate supports all these types</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">@Entity</div><div class="line">(name = </div><div class="line">&quot;Meeting&quot;</div><div class="line">)</div><div class="line">public class Meeting &#123;</div><div class="line"></div><div class="line">    </div><div class="line">@Id</div><div class="line"></div><div class="line">    private Long id;</div><div class="line"></div><div class="line">    </div><div class="line">@ManyToOne</div><div class="line">(fetch = FetchType.LAZY)</div><div class="line">    </div><div class="line">@JoinColumn</div><div class="line">(name = </div><div class="line">&quot;employee_id&quot;</div><div class="line">)</div><div class="line">    private Employee createdBy;</div><div class="line"></div><div class="line">    </div><div class="line">@Column</div><div class="line">(name = </div><div class="line">&quot;starts_at&quot;</div><div class="line">)</div><div class="line">    private ZonedDateTime startsAt;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">Duration</div><div class="line">duration</div><div class="line">;</div><div class="line">    </div><div class="line">    </div><div class="line">//Getters are setters omitted for brevity</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Testing-time"><a href="#Testing-time" class="headerlink" title="Testing time"></a>Testing time</h2><p>Assuming we persist the following entities:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div></pre></td><td class="code"><pre><div class="line">Employee employee = </div><div class="line">new</div><div class="line"> Employee();</div><div class="line">employee.setName( </div><div class="line">&quot;Vlad Mihalcea&quot;</div><div class="line"> );</div><div class="line">employee.setBirthday(</div><div class="line">    LocalDate.</div><div class="line">of</div><div class="line">(</div><div class="line">        </div><div class="line">1981</div><div class="line">, </div><div class="line">12</div><div class="line">, </div><div class="line">10</div><div class="line"></div><div class="line">    )</div><div class="line">);</div><div class="line">employee.setUpdatedOn(</div><div class="line">    LocalDateTime.</div><div class="line">of</div><div class="line">(</div><div class="line">        </div><div class="line">2015</div><div class="line">, </div><div class="line">12</div><div class="line">, </div><div class="line">1</div><div class="line">,</div><div class="line">        </div><div class="line">8</div><div class="line">, </div><div class="line">0</div><div class="line">, </div><div class="line">0</div><div class="line"></div><div class="line">    )</div><div class="line">);</div><div class="line"></div><div class="line">entityManager.persist( employee );</div><div class="line"></div><div class="line">Meeting meeting = </div><div class="line">new</div><div class="line"> Meeting();</div><div class="line">meeting.setId( </div><div class="line">1</div><div class="line">L );</div><div class="line">meeting.setCreatedBy( employee );</div><div class="line">meeting.setStartsAt(</div><div class="line">    ZonedDateTime.</div><div class="line">of</div><div class="line">(</div><div class="line">        </div><div class="line">2017</div><div class="line">, </div><div class="line">6</div><div class="line">, </div><div class="line">25</div><div class="line">,</div><div class="line">        </div><div class="line">11</div><div class="line">, </div><div class="line">30</div><div class="line">, </div><div class="line">0</div><div class="line">, </div><div class="line">0</div><div class="line">,</div><div class="line">        ZoneId.systemDefault()</div><div class="line">    )</div><div class="line">);</div><div class="line">meeting.setDuration(</div><div class="line">    Duration.</div><div class="line">of</div><div class="line">( </div><div class="line">45</div><div class="line">, ChronoUnit.MINUTES )</div><div class="line">);</div><div class="line"></div><div class="line">entityManager.persist( meeting );</div></pre></td></tr></table></figure>
+<p>Hibernate is going to generate the following SQL statements:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">INSERT</div><div class="line">INTO</div><div class="line"> Employee (</div><div class="line">    birthday, </div><div class="line">    </div><div class="line">name</div><div class="line">, </div><div class="line">    updated_on, </div><div class="line">    </div><div class="line">id</div><div class="line"></div><div class="line">) </div><div class="line"></div><div class="line">VALUES</div><div class="line"> (</div><div class="line">    </div><div class="line">&apos;1981-12-10&apos;</div><div class="line">, </div><div class="line">    </div><div class="line">&apos;Vlad Mihalcea&apos;</div><div class="line">, </div><div class="line">    </div><div class="line">&apos;2015-12-01 08:00:00.0&apos;</div><div class="line">, </div><div class="line">    </div><div class="line">1</div><div class="line"></div><div class="line">)</div><div class="line"></div><div class="line"></div><div class="line">INSERT</div><div class="line">INTO</div><div class="line"> Meeting (</div><div class="line">    employee_id, </div><div class="line">    </div><div class="line">duration</div><div class="line">, </div><div class="line">    starts_at, </div><div class="line">    </div><div class="line">id</div><div class="line"></div><div class="line">) </div><div class="line"></div><div class="line">VALUES</div><div class="line"> (</div><div class="line">    </div><div class="line">1</div><div class="line">, </div><div class="line">    </div><div class="line">2700000000000</div><div class="line">, </div><div class="line">    </div><div class="line">&apos;2017-06-25 11:30:00.0&apos;</div><div class="line">, </div><div class="line">    </div><div class="line">1</div><div class="line"></div><div class="line">)</div></pre></td></tr></table></figure>
+<p>Both<code>LocalDateTime</code>and<code>ZonedDateTime</code>share the<code>org.hibernate.type.descriptor.sql.TimestampTypeDescriptor</code>, meaning that they are going to be persisted as<code>java.sql.Timestamp</code>.</p>
+<p>While for<code>LocalDateTime</code>it makes no difference since, just like<code>java.sql.Timestamp</code>, it only captures a time snapshot, the<code>ZonedDateTime</code>is going to lose the zone information.</p>
+<p>When loading back our entities:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div></pre></td><td class="code"><pre><div class="line">Employee employee = entityManager</div><div class="line">.unwrap( Session.</div><div class="line">class</div><div class="line"> )</div><div class="line">.bySimpleNaturalId( Employee.</div><div class="line">class</div><div class="line"> )</div><div class="line">.load( </div><div class="line">&quot;Vlad Mihalcea&quot;</div><div class="line"> );</div><div class="line"></div><div class="line">assertEquals(</div><div class="line">    LocalDate.</div><div class="line">of</div><div class="line">(</div><div class="line">        </div><div class="line">1981</div><div class="line">, </div><div class="line">12</div><div class="line">, </div><div class="line">10</div><div class="line"></div><div class="line">    ),</div><div class="line">    employee.getBirthday()</div><div class="line">);</div><div class="line">assertEquals(</div><div class="line">    LocalDateTime.</div><div class="line">of</div><div class="line">(</div><div class="line">        </div><div class="line">2015</div><div class="line">, </div><div class="line">12</div><div class="line">, </div><div class="line">1</div><div class="line">,</div><div class="line">        </div><div class="line">8</div><div class="line">, </div><div class="line">0</div><div class="line">, </div><div class="line">0</div><div class="line"></div><div class="line">    ),</div><div class="line">    employee.getUpdatedOn()</div><div class="line">);</div><div class="line"></div><div class="line">Meeting meeting = entityManager.find( Meeting.</div><div class="line">class</div><div class="line">, </div><div class="line">1</div><div class="line">L );</div><div class="line">assertSame(</div><div class="line">    employee, meeting.getCreatedBy()</div><div class="line">);</div><div class="line">assertEquals(</div><div class="line">    ZonedDateTime.</div><div class="line">of</div><div class="line">(</div><div class="line">        </div><div class="line">2017</div><div class="line">, </div><div class="line">6</div><div class="line">, </div><div class="line">25</div><div class="line">,</div><div class="line">        </div><div class="line">11</div><div class="line">, </div><div class="line">30</div><div class="line">, </div><div class="line">0</div><div class="line">, </div><div class="line">0</div><div class="line">,</div><div class="line">        ZoneId.systemDefault()</div><div class="line">    ),</div><div class="line">    meeting.getStartsAt()</div><div class="line">);</div><div class="line">assertEquals(</div><div class="line">    Duration.</div><div class="line">of</div><div class="line">( </div><div class="line">45</div><div class="line">, ChronoUnit.MINUTES ),</div><div class="line">    meeting.getDuration()</div><div class="line">);</div></pre></td></tr></table></figure>
+<p>The original Java 8 Data Time objects match the ones being persisted.</p>
+<p>If you enjoyed this article, I bet you are going to love<a href="https://leanpub.com/high-performance-java-persistence?utm_source=blog&amp;utm_medium=banner&amp;utm_campaign=article" target="_blank" rel="external">my book</a>as well.</p>
+<p><img src="http://img0.tuicool.com/YbQ7ziI.jpg!web" alt=""></p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>The reason why<code>ZonedDateTime</code>equals the one we previously saved is because the undnerlying<code>TIMESTAMP</code>value was transposed in the current System Time Zone.</p>
+<p>Until all JDBC Drivers will support<code>TIMESTAMP WITH TIMEZONE</code>at the<code>java.sql.Statement</code>paraeter value binding level which is a requirement for<a href="http://hibernate%20https//hibernate.atlassian.net/browse/HHH-11773" target="_blank" rel="external">HHH-11773</a>, it’s doubtful that you really need to use<code>ZonedDateTime</code>or<code>OffsetDateTime</code>.</p>
+<p>Currently, it’s much wiser to save all<code>TIMESTAMP</code>values inUTC, meaning that<code>LocalDateTime</code>is a much better fit for your JPA entities.</p>
+<p>If you liked this article, you might want to subscribe to<a href="http://eepurl.com/bg3d3n" target="_blank" rel="external">my newsletter</a> too.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/UVF3Mzy" target="_blank" rel="external">https://vladmihalcea.com/2017/06/26/whats-new-in-jpa-2-2-java-8-date-and-time-types/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://twitter.com/vlad_mihalcea&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Follow @vlad_mihalcea&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C++17 in details: Templates</title>
+    <link href="https://gmagon.com/blog/2017/06/26/c++17-in-details-templates/"/>
+    <id>https://gmagon.com/blog/2017/06/26/c++17-in-details-templates/</id>
+    <published>2017-06-26T00:00:00.000Z</published>
+    <updated>2017-06-26T09:37:13.931Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/raeeu2i.png!web" alt=""></p>
+<p>For C++17 everyone wanted to have concepts, and as you know, we didn’t get them. But does it mean C++17 doesn’t improve templates/template meta-programming? Far from that! In my opinion, we get excellent features.</p>
+<p>Read more for details.</p>
+<h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>Do you work a lot with templates and meta-programming?</p>
+<p>With C++17 we get a few nice improvements: some are quite small, but also there are notable features as well! All in all, the additions should significantly improve writing template code.</p>
+<p>Today I wrote about:</p>
+<ul>
+<li>Template argument deduction for class templates</li>
+<li><code>template</code><br><code>&lt;</code><br><code>auto</code><br><code>&gt;</code></li>
+<li>Fold expressions</li>
+<li><code>constexpr if</code></li>
+<li>Plus some smaller, detailed improvements/fixes</li>
+</ul>
+<p>BTW: if you’re really brave you can still use concepts! They are merged into GCC so you can play with them even before they are finally published.</p>
+<h2 id="The-Series"><a href="#The-Series" class="headerlink" title="The Series"></a>The Series</h2><p>This post is the third one in the series about C++17 features details.</p>
+<p>The plan for the series</p>
+<ol>
+<li><a href="http://www.bfilipek.com/2017/05/cpp17-details-fixes-deprecation.html" target="_blank" rel="external">Fixes and deprecation</a></li>
+<li><a href="http://www.bfilipek.com/2017/06/cpp17-details-clarifications.html" target="_blank" rel="external">Language clarification</a></li>
+<li>Templates (<br><strong>today</strong><br>)</li>
+<li>Attributes (soon)</li>
+<li>Simplification (soon + 1)</li>
+<li>Library changes 1 (soon + 2)</li>
+<li>Library changes 2 (soon + 3)</li>
+</ol>
+<h2 id="Documents-amp-Links"><a href="#Documents-amp-Links" class="headerlink" title="Documents &amp; Links"></a>Documents &amp; Links</h2><p>Just to recall:</p>
+<p>First of all, if you want to dig into the standard on your own, you can read the latest draft here:</p>
+<p><a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf" target="_blank" rel="external">N4659, 2017-03-21,Working Draft, Standard for Programming Language C++</a>- the link also appears on the<a href="https://isocpp.org/" target="_blank" rel="external">isocpp.org</a>.</p>
+<p>WG21 P0636r0:<a href="https://isocpp.org/files/papers/p0636r0.html" target="_blank" rel="external">Changes between C++14 and C++17</a></p>
+<p>Compiler support:<a href="http://en.cppreference.com/w/cpp/compiler_support" target="_blank" rel="external">C++ compiler support</a></p>
+<p>Moreover, I’ve prepared a list of concise descriptions of all of the C++17 language features:</p>
+<p><a href="http://eepurl.com/cyycFz" target="_blank" rel="external">Download a free copy of my C++17 Cheat Sheet!</a></p>
+<p>It’s a one-page reference card, PDF.</p>
+<p>There’s also a talk from Bryce Lelbach:<a href="https://www.youtube.com/watch?v=LvwXJjRQfHk" target="_blank" rel="external">C++Now 2017: C++17 Features</a></p>
+<p>And have a look at my master C++17 features post:C++17 Features</p>
+<h2 id="Template-argument-deduction-for-class-templates"><a href="#Template-argument-deduction-for-class-templates" class="headerlink" title="Template argument deduction for class templates"></a>Template argument deduction for class templates</h2><p>I have good and bad news for you :)</p>
+<p>Do you often use<code>make&lt;T&gt;</code>functions to construct a templated object (like<code>std::make_pair</code>)?</p>
+<p>With C++17 you can forget about (most of) them and just use a regular constructor :)</p>
+<p>That also means that a lot of your code - those<code>make&lt;T&gt;</code>functions can now be removed.</p>
+<p>The reason?</p>
+<p>C++17 filled a gap in the deduction rules for templates. Now the template deduction can happen for standard class templates and not just for functions.</p>
+<p>For instance, the following code is (and was) legal:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">void</div><div class="line">f</div><div class="line">(</div><div class="line">std</div><div class="line">::pair</div><div class="line">&lt;</div><div class="line">int</div><div class="line">, </div><div class="line">char</div><div class="line">&gt;</div><div class="line">)</div><div class="line">;</div><div class="line"></div><div class="line"></div><div class="line">// call:</div><div class="line"></div><div class="line">f(</div><div class="line">std</div><div class="line">::make_pair(</div><div class="line">42</div><div class="line">, </div><div class="line">&apos;z&apos;</div><div class="line">));</div></pre></td></tr></table></figure>
+<p>Because<code>std::make_pair</code>is a template function (so we can perform template deduction).</p>
+<p>But the following wasn’t (before C++17)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">void</div><div class="line">f</div><div class="line">(</div><div class="line">std</div><div class="line">::pair</div><div class="line">&lt;</div><div class="line">int</div><div class="line">, </div><div class="line">char</div><div class="line">&gt;</div><div class="line">)</div><div class="line">;</div><div class="line"></div><div class="line"></div><div class="line">// call:</div><div class="line"></div><div class="line">f(</div><div class="line">std</div><div class="line">::pair(</div><div class="line">42</div><div class="line">, </div><div class="line">&apos;z&apos;</div><div class="line">));</div></pre></td></tr></table></figure>
+<p>Looks the same, right? This was not OK because<code>std::pair</code>is a template class, and template classes could not apply type deduction in their initialization.</p>
+<p>But now we can do that so that the above code will compile under C++17 conformant compiler.</p>
+<p>What about creating local variables like tuples or pairs?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">std</div><div class="line">::pair</div><div class="line">&lt;</div><div class="line">int</div><div class="line">, </div><div class="line">double</div><div class="line">&gt;</div><div class="line"> p(</div><div class="line">10</div><div class="line">, </div><div class="line">0.0</div><div class="line">);</div><div class="line"></div><div class="line">// same as</div><div class="line">std</div><div class="line">::</div><div class="line">pair </div><div class="line">p</div><div class="line">(</div><div class="line">10</div><div class="line">, </div><div class="line">0.0</div><div class="line">)</div><div class="line">; </div><div class="line">// deduced automatically!</div></pre></td></tr></table></figure>
+<p>Try in Compiler Explorer:<a href="https://godbolt.org/g/z62jwK" target="_blank" rel="external">example, GCC 7.1</a>.</p>
+<p>This can substantially reduce complex constructions like</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">std:</div><div class="line">:lock_guard</div><div class="line">&lt;</div><div class="line">std</div><div class="line">:</div><div class="line">:shared_timed_mutex</div><div class="line">, </div><div class="line">        </div><div class="line">std:</div><div class="line">:shared_lock</div><div class="line">&lt;</div><div class="line">std</div><div class="line">:</div><div class="line">:shared_timed_mutex</div><div class="line">&gt;</div><div class="line">&gt;</div><div class="line"> lck(mut</div><div class="line">_</div><div class="line">, r1);</div></pre></td></tr></table></figure>
+<p>Can now become:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">std</div><div class="line">::</div><div class="line">lock_guard </div><div class="line">lck</div><div class="line">(mut_, r1)</div><div class="line">;</div></pre></td></tr></table></figure>
+<p>Note, that partial deduction cannot happen, you have to specify all the template parameters or none:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line">std</div><div class="line">::</div><div class="line">tuple </div><div class="line">t</div><div class="line">(</div><div class="line">1</div><div class="line">, </div><div class="line">2</div><div class="line">, </div><div class="line">3</div><div class="line">)</div><div class="line">;              </div><div class="line">// OK: deduction</div><div class="line">std</div><div class="line">::tuple</div><div class="line">&lt;</div><div class="line">int</div><div class="line">,</div><div class="line">int</div><div class="line">,</div><div class="line">int</div><div class="line">&gt;</div><div class="line"> t(</div><div class="line">1</div><div class="line">, </div><div class="line">2</div><div class="line">, </div><div class="line">3</div><div class="line">); </div><div class="line">// OK: all arguments are provided</div><div class="line">std</div><div class="line">::tuple</div><div class="line">&lt;</div><div class="line">int</div><div class="line">&gt;</div><div class="line"> t(</div><div class="line">1</div><div class="line">, </div><div class="line">2</div><div class="line">, </div><div class="line">3</div><div class="line">);         </div><div class="line">// Error: partial deduction</div></pre></td></tr></table></figure>
+<p>Also if you’re adventurous you can create your custom class template deduction guides: see here for more information: recent post: Arne Mertz:<a href="https://arne-mertz.de/2017/06/class-template-argument-deduction/#User-defined_deduction_guides" target="_blank" rel="external">Modern C++ Features - Class Template Argument Deduction</a>.</p>
+<p>BTW: why not all<code>make</code>functions can be removed? For example, consider<code>make_unique</code>or<code>make_shared</code>are they only for ‘syntactic sugar’ ? I’ll leave this as an open question for now.</p>
+<p>More details in</p>
+<ul>
+<li><a href="http://wg21.link/p0091r3" target="_blank" rel="external">P0091R3</a></li>
+<li>Simon Brand:<br><a href="https://blog.tartanllama.xyz/c++/2017/01/11/deduction-for-class-templates/" target="_blank" rel="external">Template argument deduction for class template constructors</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/language/class_template_deduction" target="_blank" rel="external">Class template deduction(since C++17) - cppreference</a><br>.</li>
+</ul>
+<p>MSVC<strong>not yet</strong>, GCC: 7.0, Clang:<strong>not yet</strong>.</p>
+<h2 id="Declaring-non-type-template-parameters-with-auto"><a href="#Declaring-non-type-template-parameters-with-auto" class="headerlink" title="Declaring non-type template parameters with auto"></a>Declaring non-type template parameters with auto</h2><p>This is another part of the strategy to use<code>auto</code>everywhere. With C++11 and C++14 you can use it to automatically deduce variables or even return types, plus there are also generic lambdas. Now you can also use it for deducing non-type template parameters.</p>
+<p>For example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">template</div><div class="line">&lt;</div><div class="line">auto</div><div class="line"> value</div><div class="line">&gt;</div><div class="line">void</div><div class="line">f</div><div class="line">()</div><div class="line">&#123; &#125;</div><div class="line"></div><div class="line">f</div><div class="line">&lt;</div><div class="line">10</div><div class="line">&gt;</div><div class="line">();               </div><div class="line">// deduces int</div></pre></td></tr></table></figure>
+<p>This is useful, as you don’t have to have a separate parameter for the type of non-type parameter. Like:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">template</div><div class="line">&lt;</div><div class="line">typename</div><div class="line"> Type, Type value</div><div class="line">&gt;</div><div class="line">constexpr</div><div class="line"> Type TConstant = value;</div><div class="line">                </div><div class="line">// ^^^^                        ^^^^  </div><div class="line">constexpr</div><div class="line">auto</div><div class="line">const</div><div class="line"> MySuperConst = TConstant</div><div class="line">&lt;</div><div class="line">int</div><div class="line">, </div><div class="line">100</div><div class="line">&gt;</div><div class="line">;</div></pre></td></tr></table></figure>
+<p>with C++17 it’s a bit simpler:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">template</div><div class="line">&lt;</div><div class="line">auto</div><div class="line"> value</div><div class="line">&gt;</div><div class="line">constexpr</div><div class="line">auto</div><div class="line"> TConstant = value;</div><div class="line">                             </div><div class="line">// ^^^^</div><div class="line">constexpr</div><div class="line">auto</div><div class="line">const</div><div class="line"> MySuperConst = TConstant </div><div class="line">&lt;</div><div class="line">100</div><div class="line">&gt;</div><div class="line">;</div></pre></td></tr></table></figure>
+<p>So no need to write<code>Type</code>explicitly.</p>
+<p>As one of the advanced uses a lot of papers/blogs/talks point to an example of Heterogeneous compile time list:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">template</div><div class="line">&lt;</div><div class="line">auto</div><div class="line"> ... vs</div><div class="line">&gt;</div><div class="line">struct</div><div class="line"> HeterogenousValueList &#123;&#125;;</div><div class="line"></div><div class="line">using</div><div class="line"> MyList = HeterogenousValueList</div><div class="line">&lt;</div><div class="line">&apos;a&apos;</div><div class="line">, </div><div class="line">100</div><div class="line">, </div><div class="line">&apos;b&apos;</div><div class="line">&gt;</div><div class="line">;</div></pre></td></tr></table></figure>
+<p>Before C++17 it was not possible to declare such list directly, some wrapper class would have to be provided first.</p>
+<p>More details in</p>
+<ul>
+<li><a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0127r2.html" target="_blank" rel="external">P0127R2 - Declaring non-type template parameters with auto</a></li>
+<li><a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0127r1.html" target="_blank" rel="external">P0127R1 - Declaring non-type template arguments with auto</a><ul>
+<li>motivation, examples, discussion.</li>
+</ul>
+</li>
+<li><a href="https://stackoverflow.com/questions/38026884/advantages-of-auto-in-template-parameters-in-c17" target="_blank" rel="external">c++ - Advantages of auto in template parameters in C++17 - Stack Overflow</a></li>
+<li><a href="https://herbsutter.com/2016/06/30/trip-report-summer-iso-c-standards-meeting-oulu/" target="_blank" rel="external">Trip report: Summer ISO C++ standards meeting (Oulu) | Sutter’s Mill</a></li>
+</ul>
+<p>MSVC<strong>not yet</strong>, GCC: 7.0, Clang: 4.0.</p>
+<h2 id="Fold-expressions"><a href="#Fold-expressions" class="headerlink" title="Fold expressions"></a>Fold expressions</h2><p>With C++11 we got variadic templates which is a great feature, especially if you want to work with a variable number of input parameters to a function. For example, previously (pre C++11) you had to write several different versions of a function (like one for one parameter, another for two parameters, another for three params… ).</p>
+<p>Still, variadic templates required some additional code when you wanted to implement ‘recursive’ functions like<code>sum</code>,<code>all</code>. You had to specify rules for the recursion:</p>
+<p>For example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">auto</div><div class="line">SumCpp11</div><div class="line">()</div><div class="line">&#123;</div><div class="line">    </div><div class="line">return</div><div class="line">0</div><div class="line">;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">template</div><div class="line">&lt;</div><div class="line">typename</div><div class="line"> T1, </div><div class="line">typename</div><div class="line">... T</div><div class="line">&gt;</div><div class="line">auto</div><div class="line">SumCpp11</div><div class="line">(T1 s, T... ts)</div><div class="line">&#123;</div><div class="line">    </div><div class="line">return</div><div class="line"> s + SumCpp11(ts...);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>And with C++17 we can write much simpler code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">template</div><div class="line">&lt;</div><div class="line">typename</div><div class="line"> ...Args</div><div class="line">&gt;</div><div class="line">auto</div><div class="line">sum</div><div class="line">(Args ...args)</div><div class="line">&#123; </div><div class="line">    </div><div class="line">return</div><div class="line"> (args + ... + </div><div class="line">0</div><div class="line">); </div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">// or even:</div><div class="line">template</div><div class="line">&lt;</div><div class="line">typename</div><div class="line"> ...Args</div><div class="line">&gt;</div><div class="line">auto</div><div class="line">sum2</div><div class="line">(Args ...args)</div><div class="line">&#123; </div><div class="line">    </div><div class="line">return</div><div class="line"> (args + ...);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Fold expressions over a<a href="http://en.cppreference.com/w/cpp/language/parameter_pack" target="_blank" rel="external">parameter pack</a>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Expression</th>
+<th style="text-align:left">Expansion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">(… op pack)</td>
+<td style="text-align:left">((pack1 op pack2) op …) op packN</td>
+</tr>
+<tr>
+<td style="text-align:left">(init op … op pack)</td>
+<td style="text-align:left">(((init op pack1) op pack2) op …) op packN</td>
+</tr>
+<tr>
+<td style="text-align:left">(pack op …)</td>
+<td style="text-align:left">pack1 op (… op (packN-1 op packN))</td>
+</tr>
+<tr>
+<td style="text-align:left">(pack op … op init)</td>
+<td style="text-align:left">pack1 op (… op (packN-1 op (packN op init)))</td>
+</tr>
+</tbody>
+</table>
+<p>Also by default we get the following values for empty parameter packs:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Operator</th>
+<th style="text-align:left">default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">+</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">*</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">&amp;</td>
+<td style="text-align:left">-1</td>
+</tr>
+<tr>
+<td style="text-align:left">\</td>
+<td style="text-align:left"></td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">&amp;&amp;</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">\</td>
+<td style="text-align:left">\</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td style="text-align:left">,</td>
+<td style="text-align:left">void()</td>
+</tr>
+</tbody>
+</table>
+<p>Here’s quite nice implementation of a<code>printf</code>using folds:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">template</div><div class="line">&lt;</div><div class="line">typename</div><div class="line"> ...Args</div><div class="line">&gt;</div><div class="line">void</div><div class="line">FoldPrint</div><div class="line">(Args</div><div class="line">&amp;</div><div class="line">&amp;</div><div class="line">... args)</div><div class="line">&#123;</div><div class="line">    (</div><div class="line">cout</div><div class="line">&lt;</div><div class="line">&lt;</div><div class="line"> ... </div><div class="line">&lt;</div><div class="line">&lt;</div><div class="line"> forward</div><div class="line">&lt;</div><div class="line">Args</div><div class="line">&gt;</div><div class="line">(args)) </div><div class="line">&lt;</div><div class="line">&lt;</div><div class="line">&apos;\n&apos;</div><div class="line">;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Or a fold over a comma operator:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">template</div><div class="line">&lt;</div><div class="line">typename</div><div class="line"> T, </div><div class="line">typename</div><div class="line">... Args</div><div class="line">&gt;</div><div class="line">void</div><div class="line">push_back_vec</div><div class="line">(</div><div class="line">std</div><div class="line">::</div><div class="line">vector</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line">&amp;</div><div class="line"> v, Args</div><div class="line">&amp;</div><div class="line">&amp;</div><div class="line">... args)</div><div class="line">&#123;</div><div class="line">    (v.push_back(args), ...);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>In general, fold expression allows writing cleaner, shorter and probably easier to read code.</p>
+<p>More details in:</p>
+<ul>
+<li><a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4295.html" target="_blank" rel="external">N4295</a><br>and<br><a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4295.html" target="_blank" rel="external">N4295</a></li>
+<li>“Using fold expressions to simplify variadic function templates” in<br><a href="http://amzn.to/2t62io9" target="_blank" rel="external">Modern C++ Programming Cookbook</a><br>.</li>
+<li><a href="https://tartanllama.github.io/c++/2016/11/10/exploding-tuples-fold-expressions/" target="_blank" rel="external">Simon Brand: Exploding tuples with fold expressions</a></li>
+<li><a href="http://baptiste-wicht.com/posts/2015/05/cpp17-fold-expressions.html" target="_blank" rel="external">Baptiste Wicht: C++17 Fold Expressions</a></li>
+<li><a href="http://www.modernescpp.com/index.php/fold-expressions" target="_blank" rel="external">Fold Expressions - ModernesCpp.com</a></li>
+</ul>
+<p>MSVC<strong>not yet</strong>, GCC: 6.0, Clang: 3.6 (N4295)/3.9 (N4295).</p>
+<h2 id="constexpr-if"><a href="#constexpr-if" class="headerlink" title="constexpr if"></a><code>constexpr if</code></h2><p>This is a big one!</p>
+<p>The static-if for C++!</p>
+<p>The feature allows you to discard branches of an if statement at compile-time based on a constant expression condition.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">if</div><div class="line"> constexpr(cond)</div><div class="line">     statement1; </div><div class="line">//</div><div class="line"> Discarded </div><div class="line">if</div><div class="line"> cond is </div><div class="line">false</div><div class="line">else</div><div class="line"></div><div class="line">     statement2; </div><div class="line">//</div><div class="line"> Discarded </div><div class="line">if</div><div class="line"> cond is </div><div class="line">true</div></pre></td></tr></table></figure>
+<p>For example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">template</div><div class="line">&lt;</div><div class="line">typename</div><div class="line"> T</div><div class="line">&gt;</div><div class="line">auto</div><div class="line">get_value</div><div class="line">(T t)</div><div class="line">&#123;</div><div class="line">    </div><div class="line">if</div><div class="line">constexpr</div><div class="line">(</div><div class="line">std</div><div class="line">::is_pointer_v</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line">)</div><div class="line">return</div><div class="line"> *t</div><div class="line">;</div><div class="line">    </div><div class="line">else</div><div class="line">return</div><div class="line"> t;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>This removes a lot of the necessity for tag dispatching and SFINAE and even for<code>#ifdefs</code>.</p>
+<p>I’d like to return to this feature when we are discussing features of C++17 that simplify the language. I hope to come back with more examples of<code>constexpr if</code>.</p>
+<p>More details in:</p>
+<ul>
+<li><a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0292r2.html" target="_blank" rel="external">P0292R2</a></li>
+<li>Simon Brand:<br><a href="https://blog.tartanllama.xyz/c++/2016/12/12/if-constexpr/" target="_blank" rel="external">Simplifying templates and #ifdefs with if constexpr</a></li>
+</ul>
+<p>MSVC<strong>not yet</strong>, GCC: 7.0, Clang: 3.9.</p>
+<h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><p>In C++17 there are also other language features related to templates. In this post, I wanted to focus on biggest enhancements, so I’ll just mention the other briefly:</p>
+<ul>
+<li><p>Allow<code>typename</code>in a template template parameters:<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html" target="_blank" rel="external">N4051</a>.</p>
+<ul>
+<li>Allows you to use<br><code>typename</code><br>instead of<br><code>class</code><br>when declaring a template template parameter. Normal type parameters can use them interchangeably, but template template parameters were restricted to<br><code>class</code><br>.</li>
+</ul>
+</li>
+<li><p>DR: Matching of template template-arguments excludes compatible templates:<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0522r0.html" target="_blank" rel="external">P0522R0</a>.</p>
+<ul>
+<li>Improves matching of template template arguments. Resolves<br><a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4457.html#150" target="_blank" rel="external">Core issue CWG 150</a><br>.</li>
+</ul>
+</li>
+<li><p>Allow constant evaluation for all non-type template arguments:<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4268.html" target="_blank" rel="external">N4268</a></p>
+<ul>
+<li>Remove syntactic restrictions for pointers, references, and pointers to members that appear as non-type template parameters:</li>
+</ul>
+</li>
+<li><p><code>constexpr</code>lambdas:<a href="http://wg21.link/p0170r1" target="_blank" rel="external">P0170R1</a></p>
+<ul>
+<li>Lambda expressions may now be constant expressions.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Is C++17 improving templates and meta-programming? Definitely!</p>
+<p>We have really solid features like template deduction for class templates,<code>template&lt;auto&gt;</code>plus some detailed features that fix some of the problems.</p>
+<p>Still, for me, the most powerful features, that might have a significant impact on the code is<code>constexpr if</code>and folds. They greatly clean up the code and make it more readable.</p>
+<p>What are your favorite parts regarding templates?</p>
+<p>Next time we’ll address attributes like<code>[[fallthrough]]</code>or<code>[[nodiscard]]</code>, and I’d like to recall other, already existing attributes. Stay tuned!</p>
+<p>Once again, remember to grab my<a href="http://eepurl.com/cyycFz" target="_blank" rel="external"><strong>C++17 Language Ref Card</strong></a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/rauARne" target="_blank" rel="external">http://www.bfilipek.com/2017/06/cpp17-details-templates.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/raeeu2i.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;For C++17 everyone wanted to have concepts, and as you know, we didn’t 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>An Overview of Garbage Collection in Java</title>
+    <link href="https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/"/>
+    <id>https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/</id>
+    <published>2017-06-26T00:00:00.000Z</published>
+    <updated>2017-06-26T09:37:13.928Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="An-Overview-of-Garbage-Collection-in-Java"><a href="#An-Overview-of-Garbage-Collection-in-Java" class="headerlink" title="An Overview of Garbage Collection in Java"></a>An Overview of Garbage Collection in Java</h2><p>DZone’s Guide to</p>
+<h2 id="An-Overview-of-Garbage-Collection-in-Java-1"><a href="#An-Overview-of-Garbage-Collection-in-Java-1" class="headerlink" title="An Overview of Garbage Collection in Java"></a>An Overview of Garbage Collection in Java</h2><p>Here we examine the importance of proper garbage collection for Java apps, the components of GC, and the various patterns at your disposal.</p>
+<p><a href="https://dzone.com/users/2746645/guideinfoways.html" target="_blank" rel="external">Johnny Morgan</a></p>
+<p>Jun. 26, 17</p>
+<p>·</p>
+<p><a href="https://dzone.com/java-jdk-development-tutorials-tools-news" target="_blank" rel="external">Java Zone</a></p>
+<p>Free Resource</p>
+<p>Join the DZone community and get the full member experience.</p>
+<p>What every Java engineer should know about microservices:<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=pre-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Reactive Microservices Architecture</a>.  Brought to you in partnership with<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=pre-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Lightbend</a>.</p>
+<p>The Java garbage collector poses a great impact on the overall working and performance of an application. As the size of the garbage grows, the runtime of an application decreases. Hence, it is essential that you clear this garbage off of your application every now and then to enhance its productivity and user performance.</p>
+<p>Garbage collection can be quite a daunting task. After all, choosing a wrong garbage collector type or settings can hamper the functionality of your app. There are typically seven types of garbage collectors known to us. These are classically bifurcated between the ‘mostly’ and ‘most concurrent’ category. With the ‘mostly’ types, they sometimes do not operate as expected and a fallback mechanism takes place. On the other hand, the ‘most concurrent’ collectors function concurrently with the application’s execution and rarely stop the world.</p>
+<h2 id="Steps-Involved-in-Garbage-Collection"><a href="#Steps-Involved-in-Garbage-Collection" class="headerlink" title="Steps Involved in Garbage Collection"></a>Steps Involved in Garbage Collection</h2><p>Before implementing the garbage cleaning step, it is essential to note whether your application has touched the GC safe point. That is the range where the collector can quickly recognize the thread execution references and complete the process. If your application has to wait for the safe point, it could very well run out of memory and collapse.</p>
+<ul>
+<li><p>Mark: Otherwise known as trace, this step involves finding all the live and dead objects in the expansive heap. The collector paints all the reachable live objects, and those left are tagged as dead.</p>
+</li>
+<li><p>Sweep: Here, the garbage collector looks for dead objects and tracks their location. The bigger the heap, the more time will it take in the sweep to complete the task.</p>
+</li>
+<li><p>Compact: In this step, the garbage collector rearranges the live objects in order to make the space congestion free. As the process commences, remapping takes place, which means your application’s overall runtime should be significantly enhanced.</p>
+</li>
+</ul>
+<h2 id="Types-of-Collectors"><a href="#Types-of-Collectors" class="headerlink" title="Types of Collectors"></a>Types of Collectors</h2><ul>
+<li><p>Mark/sweep/compact collector: Performs the function in three phases.</p>
+</li>
+<li><p>Mark/Compact Collector: Performs the task in two steps, skipping the sweep phase.</p>
+</li>
+<li><p>Copying Collector: Performs all the three phases in one go. It’s quite aggressive in nature and makes use of ‘from’ and ‘to’ space to move all the live objects. It then fixes the bugs and removes the garbage.</p>
+</li>
+<li><p>Generation Collector: This works on the principle that most objects die young. The software creates new objects but at the same time, sooner rather later, it discards them, too. Through a generator collector, a developer can filter the creation, reduce the rate at which the Young Generation is pushed to the Old Generation, and keep pace with contemporary CPU throughput.</p>
+</li>
+<li><p>Remembered Set: In this set, marks are used. These record the exact location of the Young Generation. Write banners are put to use to track the references from these generations into the Old Generation and keep these ‘remembered sets’ up-to-date.</p>
+</li>
+</ul>
+<p>Note on commercial implementations: There are two basic commercially available and proven approaches for the garbage collection implementation. The first one being a parallel approach and the other being the concurrent approach. </p>
+<h2 id="Role-of-Developers-and-Architects"><a href="#Role-of-Developers-and-Architects" class="headerlink" title="Role of Developers and Architects"></a>Role of Developers and Architects</h2><p>The first and the foremost thing is to understand the nature of the application and the core functionality of the garbage collector.</p>
+<ul>
+<li><p>Garbage Collection Metrics: A plethora of application features affect the workings of the garbage collector. These include the allocation time of objects in memory, their life, and the need to save some for a long time. The mutation rate is the next thing that matters. And lastly, there are the metrics that help track the live set and the heap shape of these objects.</p>
+</li>
+<li><p>The compaction time and the mark time make for the most important metrics for tracking the time of the garbage collection cycle. While the latter measures the time taken for identification of live objects, the former maps time taken to free up the memory and do the necessary allocation.</p>
+</li>
+<li><p>Empty Memory for Clean-up Process: Each of these above-listed garbage collectors needs some amount of space to perform the task efficiently. More space practically halves the collector’s work and CPU consumption required for the job. The opposite applies to when there’s a shortage of empty memory.</p>
+</li>
+<li><p>Implementing the GC Strategy: While the process of compaction is unavoidable, what many GCs do is delay the process to a possible point and free the easy empty space as soon as possible. Another technique is the focusing on concurrent markings and sweeping while at the same time skipping compaction. This proves helpful, too.</p>
+</li>
+</ul>
+<p>Bottom line, garbage collection is an integral part of an application’s performance over the Java platform. As Java devs, we need to implement strategies in order to build an application that speaks of excellent performance, scalability, and reliability.</p>
+<p>Microservices for Java, explained. Revitalize your legacy systems (and your career) with<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=post-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Reactive Microservices Architecture</a>, a free O’Reilly book. Brought to you in partnership with<a href="https://info.lightbend.com/COLL-20XX-Reactive-Microservices-Architecture-RES-LP.html?utm_source=dzone&amp;utm_medium=post-roll-text&amp;utm_campaign=COLL-20XX-Reactive-Microservices-Architecture&amp;utm_term=none&amp;utm_content=java-zone" target="_blank" rel="external">Lightbend</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/rmQJJzJ" target="_blank" rel="external">https://dzone.com/articles/an-overview-of-garbage-collection-in-java</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;An-Overview-of-Garbage-Collection-in-Java&quot;&gt;&lt;a href=&quot;#An-Overview-of-Garbage-Collection-in-Java&quot; class=&quot;headerlink&quot; title=&quot;An Overvie
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Snap Behaviour iOS Tutorial</title>
+    <link href="https://gmagon.com/blog/2017/06/26/snap-behaviour-ios-tutorial/"/>
+    <id>https://gmagon.com/blog/2017/06/26/snap-behaviour-ios-tutorial/</id>
+    <published>2017-06-26T00:00:00.000Z</published>
+    <updated>2017-06-26T09:37:13.934Z</updated>
+    
+    <content type="html"><![CDATA[<p>As part of UIKit Dynamics you can add Snap Behavior to a view, which allows it  to be “snapped” to a specific location. The view will move to its new position as if it is pulled by a spring. In this tutorial we will let the user click on the screen to “snap” an image into place. This tutorial is made with Xcode 8.3.3 and built for iOS 10.3.</p>
+<p>Open Xcode and create a new Single View Application.</p>
+<p><img src="http://img2.tuicool.com/q6zmueM.png!web" alt=""></p>
+<p>For product name, use<strong>IOS10SnapBehaviourTutorial</strong>and then fill out the Organization Name and Organization Identifier with your customary values. Enter Swift as Language and make sure only iPhone is selected in Devices.</p>
+<p><img src="http://img2.tuicool.com/NzQvArq.png!web" alt=""></p>
+<p>Go the<strong>Storyboard</strong>and drag an Image View to the main view, Go to the Size Inspector and set the size to 100 by 100 points.</p>
+<p><img src="http://img1.tuicool.com/zuAJziF.png!web" alt=""></p>
+<p>We need a image to insert in our Image View. Downloadthisimage, unpack it and add it to the project. </p>
+<p><img src="http://img2.tuicool.com/euYBfir.png!web" alt=""></p>
+<p>Select the Image View, go to the Attributes Inspector and add the apple.jpg file to Image field.</p>
+<p><img src="http://img2.tuicool.com/Y3iuqyM.png!web" alt=""></p>
+<p>The Storyboard should now look like this.</p>
+<p><img src="http://img0.tuicool.com/vmQjI3q.png!web" alt=""></p>
+<p>Open the Assistant Editor and make sure the ViewController.swift file is visible. Ctrl + drag from the Image View to the ViewController class and create the following Outlet.</p>
+<p><img src="http://img1.tuicool.com/MfuIj2z.png!web" alt=""></p>
+<p>Go to the<strong>ViewController.swift</strong>file and add the following properties</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var</div><div class="line">animator</div><div class="line">:UIDynamicAnimator</div><div class="line">!</div><div class="line"></div><div class="line">var</div><div class="line">snapBehaviour</div><div class="line">:UISnapBehavior</div><div class="line">!</div></pre></td></tr></table></figure>
+<p>The animator property provides physics-related capabilities for its item and the snapBehaviour property will be applied to the Image View later on. Next, change the<strong>viewDidLoad</strong>method to</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">override</div><div class="line">func</div><div class="line">viewDidLoad</div><div class="line">()</div><div class="line"> &#123;</div><div class="line">    </div><div class="line">super</div><div class="line">.viewDidLoad()</div><div class="line">        </div><div class="line">    </div><div class="line">// Create the Tap Gesture Recognizer</div><div class="line">let</div><div class="line"> tapGesture = </div><div class="line">UITapGestureRecognizer</div><div class="line">(target: </div><div class="line">self</div><div class="line">, action: #selector(userHasTapped))</div><div class="line">    </div><div class="line">self</div><div class="line">.view.addGestureRecognizer(tapGesture)</div><div class="line">        </div><div class="line">    </div><div class="line">// Create the Dynamic Animator</div><div class="line"></div><div class="line">    animator = </div><div class="line">UIDynamicAnimator</div><div class="line">(referenceView: </div><div class="line">self</div><div class="line">.view)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>A Tap Gesture Recognizer is created, which will call the userHasTapped method when the user taps on the screen. The Dynamic Animator is created with the main view as its reference view. Next, implement the<strong>userHasTapped</strong>method</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">func</div><div class="line">userHasTapped</div><div class="line">(tap:UITapGestureRecognizer)</div><div class="line"> &#123;</div><div class="line">    </div><div class="line">let</div><div class="line"> touchPoint = tap.location(</div><div class="line">in</div><div class="line">: </div><div class="line">self</div><div class="line">.view)</div><div class="line">    </div><div class="line">if</div><div class="line"> snapBehaviour != </div><div class="line">nil</div><div class="line"> &#123;</div><div class="line">        animator.removeBehavior(snapBehaviour)</div><div class="line">    &#125;</div><div class="line">        </div><div class="line">    snapBehaviour = </div><div class="line">UISnapBehavior</div><div class="line">(item: imageView, snapTo: touchPoint)</div><div class="line">    snapBehaviour.damping = </div><div class="line">0.3</div><div class="line"></div><div class="line">    animator.addBehavior(snapBehaviour)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>First the point is captured where the user has touched the screen. There can be only one Snap Behaviour instance active so we check if there is already a behaviour active. If so, we will remove this behaviour. Next the Snap Behaviour is initialized with the<strong>item:snapToPoint</strong>initializer. The item is our Image View and the point to snap to is the user’s touch input. The damping property is the amount of oscillation the item has of the end of the snap animation. Finally, the Snap Behaviour is added to the Dynamic Animator.</p>
+<p>Build and Runthe project, click anywhere on the screen to “snap” the image to its new location.</p>
+<p><img src="http://img2.tuicool.com/mIvmY33.png!web" alt=""></p>
+<p>You can download the source code of the<strong>IOS10SnapBehaviourTutorial</strong>at the ioscreator repository on<a href="https://github.com/ioscreator/ioscreator" target="_blank" rel="external">Github</a></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/QJfqM33" target="_blank" rel="external">https://www.ioscreator.com/tutorials/snap-behaviour-ios-tutorial-ios10</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;As part of UIKit Dynamics you can add Snap Behavior to a view, which allows it  to be “snapped” to a specific location. The view will mov
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The Holy Wars of procrastination</title>
+    <link href="https://gmagon.com/blog/2017/06/26/the-holy-wars-of-procrastination/"/>
+    <id>https://gmagon.com/blog/2017/06/26/the-holy-wars-of-procrastination/</id>
+    <published>2017-06-26T00:00:00.000Z</published>
+    <updated>2017-06-26T09:37:13.938Z</updated>
+    
+    <content type="html"><![CDATA[<p>Procrastination is putting a task that we should be doing to do later instead of now. It may be because the task seems daunting or maybe because we sometimes have a strike of ergophobia (fear of completion) and in programming there are some frequent “wars” we tend to fight with the pretext “this is important before I start”.</p>
+<p>This articles comes because I see a lot of awesome projects, mine and otherwise, never being finished because the wars that end up being fought with ourselves and colleagues are in most cases a form of procrastination.</p>
+<p>Create that great ideia you have on your head instead of being idle by fighting wars that have no end goal.</p>
+<p>To name a few, and some possible solutions, here were we go…</p>
+<h3 id="IDE-war"><a href="#IDE-war" class="headerlink" title="IDE war"></a>IDE war</h3><p>This one occurs specially in teams to choose what IDE to use, VS Code vs Atom, Intellij vs Eclipse, vim vs emacs, and so many others. These take a lot of development time at the start of a project because everyone has a favorite and those who don’t don’t know what to use in the mist of all the arguments.</p>
+<p>If have no clue of what to use do a quick search for what IDE supports the programming language you want to use “out of the box” and start learning it has you go, don’t get stuck with add-ons configurations and learning every feature from the start.</p>
+<p>When on a team just decide which one most people are comfortable with and go with it, you can keep using your favorite one most of the time, you just have to keep the one that everyone agreed at the start at hand and configured just in case you have to do some pair programming.</p>
+<h3 id="Syntax-war"><a href="#Syntax-war" class="headerlink" title="Syntax war"></a>Syntax war</h3><p>“I use tabs and not spaces”, “No ; at the end of a expression”, “I rather use “ than ‘ ”. I see this kind of arguments all the time and at my current job every project has a different style guide defined.</p>
+<p>What we ended up noticing is that “consistency is key”, you can adapt faster than you think to a style guide that you are not familiar with you just keep a linter for each project.</p>
+<p>If you’re having problems fighting this war by defining a style guide from scratch just use already existing ones, in case of javascript google’s or airbnb’s work like a charm with eslint running to check the files. You don’t need to leave it “has is”, adapt it to your preference has you start coding your project, in case of a team, with the feedback of everyone, if a rule is not fitting just discuss it when you’re having problems with it, maybe the rest of the team is on the same boat and it ends of being ignored on the linter.</p>
+<h3 id="Over-engineering-war"><a href="#Over-engineering-war" class="headerlink" title="Over-engineering war"></a>Over-engineering war</h3><p>“I’m gonna do a calendar app with react…oh…I read that I should use redux, or maybe MOBX….I want to use ES6+ so maybe webpack along the way…I’m adding that cool thing, what was it…oh…yes GraphQL, so maybe I should use node on the backend and Grunt and PostCSS and Tape for testing, or enzyme, maybe I also install Yarn since is faster than NPM….almost forgot, should add I will add typescript since that way I will have less problems from what I’ve read, and….”</p>
+<p>I think I made my point that, specially if your not familiar with those tech libraries/frameworks, 2 weeks later you will still have a Hello World and few else (if not, congrats!). Most of the time is better at the start of a project to keep with what you know plus 1 or 2 new libraries/frameworks that way you will see progress in your project and will learn new stuff nonetheless.</p>
+<p>Any “extra” libraries aside from those 1 or 2 you choose at the start can be added as you have the need for them, you will know you have the need when the thought “this is repetitive and has to have a way to be made better” is starting to be frequent has you develop your project.</p>
+<h3 id="Perfection-war"><a href="#Perfection-war" class="headerlink" title="Perfection war"></a>Perfection war</h3><p>“The project is not perfect yet, I have 100 more ideias, I have to add tests, need to have CI, need to…”</p>
+<p>Same old same old, the fear of something we make being judged sometimes leaves us to endlessly add features and never releasing with fear that someone will not like it because that one feature that we add on our head was not sent from the start.</p>
+<p>Perfect is the enemy of good, it’s better to have something good being used and improved than having something perfect just stuck in our heads or computer.</p>
+<h3 id="TL-DR"><a href="#TL-DR" class="headerlink" title="TL;DR"></a>TL;DR</h3><ul>
+<li>If you are working on a team, choose an IDE that fits most people, most of the time you will use your favorite tool, just keep the one that everyone agreed upon configured like the rest of the team just in case you have to do pair programming or something of the sort;</li>
+<li>Choose 1 or 2 new frameworks or libraries to start your project alongside the tech stack you already are comfortable with, that way you will not be stuck for hours without end trying to understand 30 libraries you would like to know and think are necessary for the development of your project. This will make the project evolve more naturally and you will see faster progress;</li>
+<li>Choose a syntax and adapt it as you go, it is hard, if not even impossible, to know before hand if style guides like google’s or airbnb’s will fit completely to your needs/habits;</li>
+<li>Create an MVP and just add future features to a “up next” list of sorts, unless it is really critical to whatever you’re developing, most of the ideias you will have along the way are “should have” and not “must have or this project will go nowhere” it will only go nowhere if you never ship it.</li>
+</ul>
+<p>While it is important to fight this wars before the start of a project my point is that you should not overthink it, start doing whatever you have on your mind and learn has you go, adapt, but stop fighting wars that at the end, will only waste your time.</p>
+<p>Now that you’ve finished reading, leave a comment, follow me at @daspinola and go get that brilliant project of yours on the way!</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/EfmIv2z" target="_blank" rel="external">https://medium.com/@daspinola/the-holy-wars-of-procrastination-ac0a1298a459</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Procrastination is putting a task that we should be doing to do later instead of now. It may be because the task seems daunting or maybe 
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>YouTube has 1.5 billion logged-in monthly users watching a ton of mobile video</title>
@@ -37,80 +491,6 @@
     
       &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/FN7BjyZ.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;This year at VidCon, YouTube shared some new metrics that really drive 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Is 30 Years Old GIF Still Popular Now?</title>
-    <link href="https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/"/>
-    <id>https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/</id>
-    <published>2017-06-23T00:00:00.000Z</published>
-    <updated>2017-06-23T09:54:32.282Z</updated>
-    
-    <content type="html"><![CDATA[<p>Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 which stands a big step up from its old black-and-white graphics. </p>
-<p>Maybe you cannot comprehend what actually GIF is, but you must familiar with this: </p>
-<p><img src="/assets/bXQNq_s-200x150.gif" alt=""></p>
-<p>That’s right, memes in your phone is made of GIF format, which you always use when talking with someone in your social network and can’t stop using it, just as following:</p>
-<p><img src="/assets/text-messages_o_295497.jpg" alt=""></p>
-<p>Memes has been popular just  in recent years, but GIF is ancient in the Web, maybe older than you…</p>
-<p>There has been a haunting question about GIF is how to pronounce it.</p>
-<p>some say it it pronounced with a soft G, like “jiff.” Others with a hard G, like “ghiff.” </p>
-<p>Fortunately, most dictionaries accept both pronunciations as correct. So you can read it as what you want.</p>
-<p>GIF has a rival, called APNG or animated PNG, “it is a high quality animated image format complete with full alpha channel and graceful degradation has been available and usable since 2004.” The major advantage of APNG versus an animated GIF is image quality. APNGs simply look better, especially on a wider variety of backgrounds, and there’s already support baked into both Firefox and Opera; Chrome users can <a href="https://chrome.google.com/webstore/detail/apng/ehkepjiconegkhpodgoaeamnpckdbblp?hl=en" target="_blank" rel="external">download an extension</a> to support APNG files.</p>
-<p><img src="http://img2.tuicool.com/YZBjiu.jpg" alt=""></p>
-<p>The good news is you can easily convert you GIF files to APNG through the free tool: </p>
-<p>Gmagon Gif</p>
-<p><a href="https://gmagon.com/products/store/gmagon_gif/">https://gmagon.com/products/store/gmagon_gif/</a></p>
-<p>Maybe we should feel grateful for those GIF or memes that brings much happiness to us.</p>
-<p><img src="/assets/dicaprio3-583e33155f9b58d5b19e3a00.jpg" alt=""></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 whi
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>12 Factors to Cloud Success</title>
-    <link href="https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/"/>
-    <id>https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/</id>
-    <published>2017-06-23T00:00:00.000Z</published>
-    <updated>2017-06-23T07:53:27.158Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/3AZNviN.png!web" alt=""></p>
-<h2 id="12-Factors-to-Cloud-Success"><a href="#12-Factors-to-Cloud-Success" class="headerlink" title="12 Factors to Cloud Success"></a>12 Factors to Cloud Success</h2><p>Posted byRafael Benevides onJune 22, 2017June 19, 2017</p>
-<p>Hey, developers! Do you care about using the best practices to apply your application to the cloud? If so then you should be using<a href="https://12factor.net/" target="_blank" rel="external">The 12-factor App</a>, which is a methodology for building software-as-a-service. Today I like to talk about the 12-factor App, which I had presented to a group at the Red Hat Summit last month.</p>
-<p>Every developer that is moving their application to the cloud will face a different environment than what they are used to, their datacenter or own premise and that’s why they should care about the 12-factor methodology. This 12 step methodology was created by Heroku, which is a cloud provider who found a common solution to most of what their customers were experiencing and decided to release these solutions as a methodology. These 12 factors are intended to solve problems related to applications running in the cloud. If there was one key takeaway from my session it was not the idea to have the audience memorize these 12 factors but to have an understanding of why each one is important.</p>
-<ol>
-<li><strong>Codebase</strong><br>– use version control, one codebase tracked in revision control for many deployments.</li>
-<li><strong>Dependencies</strong><br>– use a package manager and don’t commit dependencies in the codebase repository.</li>
-<li><strong>Config</strong><br>– store the config in Environment Variable, if you have to repackage your application, you’re doing it wrong.</li>
-<li><strong>Backing Services</strong><br>– a<br><a href="https://12factor.net/codebase" target="_blank" rel="external">deploy</a><br>of the twelve-factor app should be able to swap out a local MySQL database with one managed by a third party (such as<br><a href="http://aws.amazon.com/rds/" target="_blank" rel="external">Amazon RDS</a><br>) without any changes to the app’s code.</li>
-<li><strong>Build, Release, Run</strong><br>– the twelve-factor app uses strict separation between the build, release, and run stages. Every release should always have a unique release ID and releases should allow rollback.</li>
-<li><strong>Processes</strong><br>– execute the app as one or more stateless processes, the Twelve-factor processes are stateless and<br><a href="http://en.wikipedia.org/wiki/Shared_nothing_architecture" target="_blank" rel="external">share-nothing</a><br>.</li>
-<li><strong>Port Binding</strong><br>– export services via port binding, The twelve-factor app is completely self-contained.</li>
-<li><strong>Concurrency</strong><br>– scale out via the process model. Each process should be individually scaled, with Factor 6 (Stateless), it is easy to scale the services.</li>
-<li><strong>Disposability</strong><br>– maximize robustness with fast startup and graceful shutdown, we can achieve this with containers.</li>
-<li><strong>Dev/Prod Parity</strong><br>– Keep development, staging, and production as similar as possible, the twelve-factor app is designed for<br><a href="http://www.avc.com/a_vc/2011/02/continuous-deployment.html" target="_blank" rel="external">continuous deployment</a><br>by keeping the gap between development and production small.</li>
-<li><strong>Logs</strong><br>– treat logs as event streams, a twelve-factor app never concerns itself with routing or storage of its output stream.</li>
-<li><strong>Admin Processes</strong><br>– run admin/management tasks as one-off processes.</li>
-</ol>
-<p>The 12-factor App methodology is technology and language agnostic but satisfied by<a href="https://developers.redhat.com/containers/" target="_blank" rel="external">Containers</a>,<a href="https://developers.redhat.com/microservices/" target="_blank" rel="external">Microservices</a>, and CI/CD Pipelines with a focus on<a href="https://developers.redhat.com/devops/" target="_blank" rel="external">DevOps</a>.You can access more information on The 12-factor Appat<a href="https://12factor.net/" target="_blank" rel="external">https://12factor.net/</a>.</p>
-<p><strong>Whether you are new to Containers or have experience, downloading this</strong><a href="https://developers.redhat.com/promotions/docker-cheatsheet/" target="_blank" rel="external"><strong>cheat sheet</strong></a><strong>can assist you when encountering tasks you haven’t done lately.</strong></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/qqa2yyN" target="_blank" rel="external">https://developers.redhat.com/blog/2017/06/22/12-factors-to-cloud-success/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/3AZNviN.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;12-Factors-to-Cloud-Success&quot;&gt;&lt;a href=&quot;#12-Factors-to-Cloud-Success
     
     </summary>
     
@@ -187,6 +567,80 @@
     <summary type="html">
     
       &lt;p&gt;(This article was first published on&lt;a href=&quot;https://www.stoltzmaniac.com/facial-recognition-in-r/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;stron
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Is 30 Years Old GIF Still Popular Now?</title>
+    <link href="https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/"/>
+    <id>https://gmagon.com/blog/2017/06/23/is-30-years-old-gif-still-popular-now/</id>
+    <published>2017-06-23T00:00:00.000Z</published>
+    <updated>2017-06-23T09:54:32.282Z</updated>
+    
+    <content type="html"><![CDATA[<p>Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 which stands a big step up from its old black-and-white graphics. </p>
+<p>Maybe you cannot comprehend what actually GIF is, but you must familiar with this: </p>
+<p><img src="/assets/bXQNq_s-200x150.gif" alt=""></p>
+<p>That’s right, memes in your phone is made of GIF format, which you always use when talking with someone in your social network and can’t stop using it, just as following:</p>
+<p><img src="/assets/text-messages_o_295497.jpg" alt=""></p>
+<p>Memes has been popular just  in recent years, but GIF is ancient in the Web, maybe older than you…</p>
+<p>There has been a haunting question about GIF is how to pronounce it.</p>
+<p>some say it it pronounced with a soft G, like “jiff.” Others with a hard G, like “ghiff.” </p>
+<p>Fortunately, most dictionaries accept both pronunciations as correct. So you can read it as what you want.</p>
+<p>GIF has a rival, called APNG or animated PNG, “it is a high quality animated image format complete with full alpha channel and graceful degradation has been available and usable since 2004.” The major advantage of APNG versus an animated GIF is image quality. APNGs simply look better, especially on a wider variety of backgrounds, and there’s already support baked into both Firefox and Opera; Chrome users can <a href="https://chrome.google.com/webstore/detail/apng/ehkepjiconegkhpodgoaeamnpckdbblp?hl=en" target="_blank" rel="external">download an extension</a> to support APNG files.</p>
+<p><img src="http://img2.tuicool.com/YZBjiu.jpg" alt=""></p>
+<p>The good news is you can easily convert you GIF files to APNG through the free tool: </p>
+<p>Gmagon Gif</p>
+<p><a href="https://gmagon.com/products/store/gmagon_gif/">https://gmagon.com/products/store/gmagon_gif/</a></p>
+<p>Maybe we should feel grateful for those GIF or memes that brings much happiness to us.</p>
+<p><img src="/assets/dicaprio3-583e33155f9b58d5b19e3a00.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Several days ago,  Facebook has been celebrated the 30 years birthday to the most popular image format-GIF. GIF born on June 15, 1987 whi
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>12 Factors to Cloud Success</title>
+    <link href="https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/"/>
+    <id>https://gmagon.com/blog/2017/06/23/12-factors-to-cloud-success/</id>
+    <published>2017-06-23T00:00:00.000Z</published>
+    <updated>2017-06-23T07:53:27.158Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/3AZNviN.png!web" alt=""></p>
+<h2 id="12-Factors-to-Cloud-Success"><a href="#12-Factors-to-Cloud-Success" class="headerlink" title="12 Factors to Cloud Success"></a>12 Factors to Cloud Success</h2><p>Posted byRafael Benevides onJune 22, 2017June 19, 2017</p>
+<p>Hey, developers! Do you care about using the best practices to apply your application to the cloud? If so then you should be using<a href="https://12factor.net/" target="_blank" rel="external">The 12-factor App</a>, which is a methodology for building software-as-a-service. Today I like to talk about the 12-factor App, which I had presented to a group at the Red Hat Summit last month.</p>
+<p>Every developer that is moving their application to the cloud will face a different environment than what they are used to, their datacenter or own premise and that’s why they should care about the 12-factor methodology. This 12 step methodology was created by Heroku, which is a cloud provider who found a common solution to most of what their customers were experiencing and decided to release these solutions as a methodology. These 12 factors are intended to solve problems related to applications running in the cloud. If there was one key takeaway from my session it was not the idea to have the audience memorize these 12 factors but to have an understanding of why each one is important.</p>
+<ol>
+<li><strong>Codebase</strong><br>– use version control, one codebase tracked in revision control for many deployments.</li>
+<li><strong>Dependencies</strong><br>– use a package manager and don’t commit dependencies in the codebase repository.</li>
+<li><strong>Config</strong><br>– store the config in Environment Variable, if you have to repackage your application, you’re doing it wrong.</li>
+<li><strong>Backing Services</strong><br>– a<br><a href="https://12factor.net/codebase" target="_blank" rel="external">deploy</a><br>of the twelve-factor app should be able to swap out a local MySQL database with one managed by a third party (such as<br><a href="http://aws.amazon.com/rds/" target="_blank" rel="external">Amazon RDS</a><br>) without any changes to the app’s code.</li>
+<li><strong>Build, Release, Run</strong><br>– the twelve-factor app uses strict separation between the build, release, and run stages. Every release should always have a unique release ID and releases should allow rollback.</li>
+<li><strong>Processes</strong><br>– execute the app as one or more stateless processes, the Twelve-factor processes are stateless and<br><a href="http://en.wikipedia.org/wiki/Shared_nothing_architecture" target="_blank" rel="external">share-nothing</a><br>.</li>
+<li><strong>Port Binding</strong><br>– export services via port binding, The twelve-factor app is completely self-contained.</li>
+<li><strong>Concurrency</strong><br>– scale out via the process model. Each process should be individually scaled, with Factor 6 (Stateless), it is easy to scale the services.</li>
+<li><strong>Disposability</strong><br>– maximize robustness with fast startup and graceful shutdown, we can achieve this with containers.</li>
+<li><strong>Dev/Prod Parity</strong><br>– Keep development, staging, and production as similar as possible, the twelve-factor app is designed for<br><a href="http://www.avc.com/a_vc/2011/02/continuous-deployment.html" target="_blank" rel="external">continuous deployment</a><br>by keeping the gap between development and production small.</li>
+<li><strong>Logs</strong><br>– treat logs as event streams, a twelve-factor app never concerns itself with routing or storage of its output stream.</li>
+<li><strong>Admin Processes</strong><br>– run admin/management tasks as one-off processes.</li>
+</ol>
+<p>The 12-factor App methodology is technology and language agnostic but satisfied by<a href="https://developers.redhat.com/containers/" target="_blank" rel="external">Containers</a>,<a href="https://developers.redhat.com/microservices/" target="_blank" rel="external">Microservices</a>, and CI/CD Pipelines with a focus on<a href="https://developers.redhat.com/devops/" target="_blank" rel="external">DevOps</a>.You can access more information on The 12-factor Appat<a href="https://12factor.net/" target="_blank" rel="external">https://12factor.net/</a>.</p>
+<p><strong>Whether you are new to Containers or have experience, downloading this</strong><a href="https://developers.redhat.com/promotions/docker-cheatsheet/" target="_blank" rel="external"><strong>cheat sheet</strong></a><strong>can assist you when encountering tasks you haven’t done lately.</strong></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/qqa2yyN" target="_blank" rel="external">https://developers.redhat.com/blog/2017/06/22/12-factors-to-cloud-success/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/3AZNviN.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;12-Factors-to-Cloud-Success&quot;&gt;&lt;a href=&quot;#12-Factors-to-Cloud-Success
     
     </summary>
     
@@ -399,52 +853,6 @@
   </entry>
   
   <entry>
-    <title>Crown – Fast and flexible game engine written in sane C++</title>
-    <link href="https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/"/>
-    <id>https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/</id>
-    <published>2017-06-22T00:00:00.000Z</published>
-    <updated>2017-06-22T09:45:34.619Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="The-flexible-game-engine"><a href="#The-flexible-game-engine" class="headerlink" title="The flexible game engine."></a>The flexible game engine.</h2><p>Crown is a general purpose data-driven game engin</p>
-<p>The flexible game engine.</p>
-<p>Crown is a general purpose data-driven game engine, written from scratch in<a href="https://gist.github.com/bkaradzic/2e39896bc7d8c34e042b" target="_blank" rel="external">orthodox C++</a>with a minimalistic and data-oriented design philosophy in mind.</p>
-<p>It is loosely inspired by Bitsquid (now Stingray) engine and its design principles; the current Lua API is similar to that of Bitsquid but this engine is_not_meant to be its clone_nor_to be API compatible with it.</p>
-<h2 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h2><h3 id="Level-Editor"><a href="#Level-Editor" class="headerlink" title="Level Editor"></a><a href="https://github.com/dbartolini/crown/tree/master/tools/level_editor" target="_blank" rel="external">Level Editor</a></h3><p><img src="http://img2.tuicool.com/3iEnqmm.png!web" alt=""></p>
-<h3 id="00-empty"><a href="#00-empty" class="headerlink" title="00-empty"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/00-empty" target="_blank" rel="external">00-empty</a></h3><p>Engine initialization and shutdown.</p>
-<h3 id="01-physics"><a href="#01-physics" class="headerlink" title="01-physics"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/01-physics" target="_blank" rel="external">01-physics</a></h3><p><img src="http://img1.tuicool.com/bm2MFnU.png!web" alt=""></p>
-<h3 id="02-animation"><a href="#02-animation" class="headerlink" title="02-animation"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/02-animation" target="_blank" rel="external">02-animation</a></h3><p><img src="http://img1.tuicool.com/F7f6Fba.png!web" alt=""></p>
-<h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p><a href="https://github.com/dbartolini/crown/releases/download/v0.0.28/crown-0.0.28-linux-x64.tar.gz" target="_blank" rel="external">crown-0.0.28-linux-x64.tar.gz</a></p>
-<h2 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h2><ul>
-<li><a href="http://dbartolini.github.io/crown/html" target="_blank" rel="external">Manual</a></li>
-<li><a href="http://dbartolini.github.io/crown/html/lua_api.html" target="_blank" rel="external">Lua API</a></li>
-<li><a href="http://dbartolini.github.io/crown/doxygen/modules" target="_blank" rel="external">C++ API</a></li>
-</ul>
-<h2 id="Building"><a href="#Building" class="headerlink" title="Building"></a>Building</h2><h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h3><h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><p>Android NDK (<a href="https://developer.android.com/tools/sdk/ndk/index.html" target="_blank" rel="external">https://developer.android.com/tools/sdk/ndk/index.html</a>)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">$ </div><div class="line">export</div><div class="line"> ANDROID_NDK_ROOT=</div><div class="line">&lt;</div><div class="line">path</div><div class="line">/</div><div class="line">to</div><div class="line">/</div><div class="line">android_ndk</div><div class="line">&gt;</div><div class="line"></div><div class="line">$ </div><div class="line">export</div><div class="line"> ANDROID_NDK_ARM=</div><div class="line">&lt;</div><div class="line">path</div><div class="line">/</div><div class="line">to</div><div class="line">/</div><div class="line">android_ndk_arm</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-<h3 id="Linux-Ubuntu-gt-16-04"><a href="#Linux-Ubuntu-gt-16-04" class="headerlink" title="Linux (Ubuntu &gt;= 16.04)"></a>Linux (Ubuntu &gt;= 16.04)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">$ sudo </div><div class="line">add</div><div class="line">-apt-repository </div><div class="line">pp</div><div class="line">a:vala</div><div class="line">-team</div><div class="line">$ sudo apt-</div><div class="line">get</div><div class="line"> install libgtk-</div><div class="line">3</div><div class="line">-dev valac libgee-</div><div class="line">0.8</div><div class="line">-dev</div><div class="line">$ sudo apt-</div><div class="line">get</div><div class="line"> install mesa-common-dev libgl1-mesa-dev libpulse-dev libxrandr-dev</div></pre></td></tr></table></figure>
-<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>MSYS2 (<a href="http://www.msys2.org/" target="_blank" rel="external">http://www.msys2.org</a>)</p>
-<h3 id="Building-and-running-Level-Editor"><a href="#Building-and-running-Level-Editor" class="headerlink" title="Building and running Level Editor"></a>Building and running Level Editor</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ make tools-linux-release64</div><div class="line">$ cd build/linux64/bin</div><div class="line">$ ./level-editor-release ../../../samples/</div><div class="line">01</div><div class="line">-physics</div></pre></td></tr></table></figure>
-<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>Daniele Bartolini (<a href="https://twitter.com/aa_dani_bart" target="_blank" rel="external">@aa_dani_bart</a>)</p>
-<p>Project page:<a href="https://github.com/dbartolini/crown" target="_blank" rel="external">https://github.com/dbartolini/crown</a></p>
-<h2 id="Contributors"><a href="#Contributors" class="headerlink" title="Contributors"></a>Contributors</h2><p>In chronological order.</p>
-<p>Daniele Bartolini (<a href="https://github.com/dbartolini" target="_blank" rel="external">@dbartolini</a>)</p>
-<p>Simone Boscaratto (<a href="https://github.com/Xed89" target="_blank" rel="external">@Xed89</a>)</p>
-<p>Michele Rossi (<a href="https://github.com/mikymod" target="_blank" rel="external">@mikymod</a>)</p>
-<p>Michela Iacchelli - Pepper logo.</p>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div></pre></td><td class="code"><pre><div class="line">Copyright (c) 2012-2017 Daniele Bartolini and individual contributors.</div><div class="line"></div><div class="line">Permission is hereby granted, free of charge, to any person</div><div class="line">obtaining a copy of this software and associated documentation</div><div class="line">files (the &quot;Software&quot;), to deal in the Software without</div><div class="line">restriction, including without limitation the rights to </div><div class="line">use</div><div class="line">,</div><div class="line">copy, </div><div class="line">modify</div><div class="line">, </div><div class="line">merge</div><div class="line">, publish, </div><div class="line">distribute</div><div class="line">, sublicense, </div><div class="line">and</div><div class="line">/</div><div class="line">or</div><div class="line"> sell</div><div class="line">copies </div><div class="line">of</div><div class="line"> the Software, </div><div class="line">and</div><div class="line">to</div><div class="line"> permit persons </div><div class="line">to</div><div class="line"> whom the</div><div class="line">Software </div><div class="line">is</div><div class="line"> furnished </div><div class="line">to</div><div class="line">do</div><div class="line"> so, subject </div><div class="line">to</div><div class="line"> the </div><div class="line">following</div><div class="line"></div><div class="line">conditions:</div><div class="line"></div><div class="line">The above copyright </div><div class="line">notice</div><div class="line">and</div><div class="line"> this permission </div><div class="line">notice</div><div class="line"> shall be</div><div class="line">included </div><div class="line">in</div><div class="line"> all copies </div><div class="line">or</div><div class="line"> substantial portions </div><div class="line">of</div><div class="line"> the Software.</div><div class="line"></div><div class="line">THE SOFTWARE </div><div class="line">IS</div><div class="line"> PROVIDED </div><div class="line">&quot;AS IS&quot;</div><div class="line">, </div><div class="line">WITHOUT</div><div class="line"> WARRANTY </div><div class="line">OF</div><div class="line">ANY</div><div class="line"> KIND,</div><div class="line">EXPRESS </div><div class="line">OR</div><div class="line"> IMPLIED, </div><div class="line">INCLUDING</div><div class="line"> BUT </div><div class="line">NOT</div><div class="line"> LIMITED </div><div class="line">TO</div><div class="line"> THE WARRANTIES</div><div class="line"></div><div class="line">OF</div><div class="line"> MERCHANTABILITY, FITNESS </div><div class="line">FOR</div><div class="line"> A PARTICULAR PURPOSE </div><div class="line">AND</div><div class="line"></div><div class="line">NONINFRINGEMENT. </div><div class="line">IN</div><div class="line">NO</div><div class="line">EVENT</div><div class="line"> SHALL THE </div><div class="line">AUTHORS</div><div class="line">OR</div><div class="line"> COPYRIGHT</div><div class="line">HOLDERS BE LIABLE </div><div class="line">FOR</div><div class="line">ANY</div><div class="line"> CLAIM, DAMAGES </div><div class="line">OR</div><div class="line"> OTHER LIABILITY,</div><div class="line">WHETHER </div><div class="line">IN</div><div class="line"> AN </div><div class="line">ACTION</div><div class="line">OF</div><div class="line"> CONTRACT, TORT </div><div class="line">OR</div><div class="line"> OTHERWISE, ARISING</div><div class="line"></div><div class="line">FROM</div><div class="line">, </div><div class="line">OUT</div><div class="line">OF</div><div class="line">OR</div><div class="line">IN</div><div class="line">CONNECTION</div><div class="line">WITH</div><div class="line"> THE SOFTWARE </div><div class="line">OR</div><div class="line"> THE </div><div class="line">USE</div><div class="line">OR</div><div class="line"></div><div class="line">OTHER DEALINGS </div><div class="line">IN</div><div class="line"> THE SOFTWARE.</div></pre></td></tr></table></figure>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/raUnuay" target="_blank" rel="external">https://github.com/dbartolini/crown</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;The-flexible-game-engine&quot;&gt;&lt;a href=&quot;#The-flexible-game-engine&quot; class=&quot;headerlink&quot; title=&quot;The flexible game engine.&quot;&gt;&lt;/a&gt;The flexible 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>10 things in tech you need to know today (GOOG)</title>
     <link href="https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/"/>
     <id>https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/</id>
@@ -484,6 +892,52 @@
       &lt;p&gt;Good morning! Here is the tech news you need to know this Thursday.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://uk.businessinsider.com/report-bill-gu
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Crown – Fast and flexible game engine written in sane C++</title>
+    <link href="https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/"/>
+    <id>https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/</id>
+    <published>2017-06-22T00:00:00.000Z</published>
+    <updated>2017-06-22T09:45:34.619Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="The-flexible-game-engine"><a href="#The-flexible-game-engine" class="headerlink" title="The flexible game engine."></a>The flexible game engine.</h2><p>Crown is a general purpose data-driven game engin</p>
+<p>The flexible game engine.</p>
+<p>Crown is a general purpose data-driven game engine, written from scratch in<a href="https://gist.github.com/bkaradzic/2e39896bc7d8c34e042b" target="_blank" rel="external">orthodox C++</a>with a minimalistic and data-oriented design philosophy in mind.</p>
+<p>It is loosely inspired by Bitsquid (now Stingray) engine and its design principles; the current Lua API is similar to that of Bitsquid but this engine is_not_meant to be its clone_nor_to be API compatible with it.</p>
+<h2 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h2><h3 id="Level-Editor"><a href="#Level-Editor" class="headerlink" title="Level Editor"></a><a href="https://github.com/dbartolini/crown/tree/master/tools/level_editor" target="_blank" rel="external">Level Editor</a></h3><p><img src="http://img2.tuicool.com/3iEnqmm.png!web" alt=""></p>
+<h3 id="00-empty"><a href="#00-empty" class="headerlink" title="00-empty"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/00-empty" target="_blank" rel="external">00-empty</a></h3><p>Engine initialization and shutdown.</p>
+<h3 id="01-physics"><a href="#01-physics" class="headerlink" title="01-physics"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/01-physics" target="_blank" rel="external">01-physics</a></h3><p><img src="http://img1.tuicool.com/bm2MFnU.png!web" alt=""></p>
+<h3 id="02-animation"><a href="#02-animation" class="headerlink" title="02-animation"></a><a href="https://github.com/dbartolini/crown/tree/master/samples/02-animation" target="_blank" rel="external">02-animation</a></h3><p><img src="http://img1.tuicool.com/F7f6Fba.png!web" alt=""></p>
+<h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p><a href="https://github.com/dbartolini/crown/releases/download/v0.0.28/crown-0.0.28-linux-x64.tar.gz" target="_blank" rel="external">crown-0.0.28-linux-x64.tar.gz</a></p>
+<h2 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h2><ul>
+<li><a href="http://dbartolini.github.io/crown/html" target="_blank" rel="external">Manual</a></li>
+<li><a href="http://dbartolini.github.io/crown/html/lua_api.html" target="_blank" rel="external">Lua API</a></li>
+<li><a href="http://dbartolini.github.io/crown/doxygen/modules" target="_blank" rel="external">C++ API</a></li>
+</ul>
+<h2 id="Building"><a href="#Building" class="headerlink" title="Building"></a>Building</h2><h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h3><h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><p>Android NDK (<a href="https://developer.android.com/tools/sdk/ndk/index.html" target="_blank" rel="external">https://developer.android.com/tools/sdk/ndk/index.html</a>)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">$ </div><div class="line">export</div><div class="line"> ANDROID_NDK_ROOT=</div><div class="line">&lt;</div><div class="line">path</div><div class="line">/</div><div class="line">to</div><div class="line">/</div><div class="line">android_ndk</div><div class="line">&gt;</div><div class="line"></div><div class="line">$ </div><div class="line">export</div><div class="line"> ANDROID_NDK_ARM=</div><div class="line">&lt;</div><div class="line">path</div><div class="line">/</div><div class="line">to</div><div class="line">/</div><div class="line">android_ndk_arm</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+<h3 id="Linux-Ubuntu-gt-16-04"><a href="#Linux-Ubuntu-gt-16-04" class="headerlink" title="Linux (Ubuntu &gt;= 16.04)"></a>Linux (Ubuntu &gt;= 16.04)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">$ sudo </div><div class="line">add</div><div class="line">-apt-repository </div><div class="line">pp</div><div class="line">a:vala</div><div class="line">-team</div><div class="line">$ sudo apt-</div><div class="line">get</div><div class="line"> install libgtk-</div><div class="line">3</div><div class="line">-dev valac libgee-</div><div class="line">0.8</div><div class="line">-dev</div><div class="line">$ sudo apt-</div><div class="line">get</div><div class="line"> install mesa-common-dev libgl1-mesa-dev libpulse-dev libxrandr-dev</div></pre></td></tr></table></figure>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>MSYS2 (<a href="http://www.msys2.org/" target="_blank" rel="external">http://www.msys2.org</a>)</p>
+<h3 id="Building-and-running-Level-Editor"><a href="#Building-and-running-Level-Editor" class="headerlink" title="Building and running Level Editor"></a>Building and running Level Editor</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ make tools-linux-release64</div><div class="line">$ cd build/linux64/bin</div><div class="line">$ ./level-editor-release ../../../samples/</div><div class="line">01</div><div class="line">-physics</div></pre></td></tr></table></figure>
+<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>Daniele Bartolini (<a href="https://twitter.com/aa_dani_bart" target="_blank" rel="external">@aa_dani_bart</a>)</p>
+<p>Project page:<a href="https://github.com/dbartolini/crown" target="_blank" rel="external">https://github.com/dbartolini/crown</a></p>
+<h2 id="Contributors"><a href="#Contributors" class="headerlink" title="Contributors"></a>Contributors</h2><p>In chronological order.</p>
+<p>Daniele Bartolini (<a href="https://github.com/dbartolini" target="_blank" rel="external">@dbartolini</a>)</p>
+<p>Simone Boscaratto (<a href="https://github.com/Xed89" target="_blank" rel="external">@Xed89</a>)</p>
+<p>Michele Rossi (<a href="https://github.com/mikymod" target="_blank" rel="external">@mikymod</a>)</p>
+<p>Michela Iacchelli - Pepper logo.</p>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div></pre></td><td class="code"><pre><div class="line">Copyright (c) 2012-2017 Daniele Bartolini and individual contributors.</div><div class="line"></div><div class="line">Permission is hereby granted, free of charge, to any person</div><div class="line">obtaining a copy of this software and associated documentation</div><div class="line">files (the &quot;Software&quot;), to deal in the Software without</div><div class="line">restriction, including without limitation the rights to </div><div class="line">use</div><div class="line">,</div><div class="line">copy, </div><div class="line">modify</div><div class="line">, </div><div class="line">merge</div><div class="line">, publish, </div><div class="line">distribute</div><div class="line">, sublicense, </div><div class="line">and</div><div class="line">/</div><div class="line">or</div><div class="line"> sell</div><div class="line">copies </div><div class="line">of</div><div class="line"> the Software, </div><div class="line">and</div><div class="line">to</div><div class="line"> permit persons </div><div class="line">to</div><div class="line"> whom the</div><div class="line">Software </div><div class="line">is</div><div class="line"> furnished </div><div class="line">to</div><div class="line">do</div><div class="line"> so, subject </div><div class="line">to</div><div class="line"> the </div><div class="line">following</div><div class="line"></div><div class="line">conditions:</div><div class="line"></div><div class="line">The above copyright </div><div class="line">notice</div><div class="line">and</div><div class="line"> this permission </div><div class="line">notice</div><div class="line"> shall be</div><div class="line">included </div><div class="line">in</div><div class="line"> all copies </div><div class="line">or</div><div class="line"> substantial portions </div><div class="line">of</div><div class="line"> the Software.</div><div class="line"></div><div class="line">THE SOFTWARE </div><div class="line">IS</div><div class="line"> PROVIDED </div><div class="line">&quot;AS IS&quot;</div><div class="line">, </div><div class="line">WITHOUT</div><div class="line"> WARRANTY </div><div class="line">OF</div><div class="line">ANY</div><div class="line"> KIND,</div><div class="line">EXPRESS </div><div class="line">OR</div><div class="line"> IMPLIED, </div><div class="line">INCLUDING</div><div class="line"> BUT </div><div class="line">NOT</div><div class="line"> LIMITED </div><div class="line">TO</div><div class="line"> THE WARRANTIES</div><div class="line"></div><div class="line">OF</div><div class="line"> MERCHANTABILITY, FITNESS </div><div class="line">FOR</div><div class="line"> A PARTICULAR PURPOSE </div><div class="line">AND</div><div class="line"></div><div class="line">NONINFRINGEMENT. </div><div class="line">IN</div><div class="line">NO</div><div class="line">EVENT</div><div class="line"> SHALL THE </div><div class="line">AUTHORS</div><div class="line">OR</div><div class="line"> COPYRIGHT</div><div class="line">HOLDERS BE LIABLE </div><div class="line">FOR</div><div class="line">ANY</div><div class="line"> CLAIM, DAMAGES </div><div class="line">OR</div><div class="line"> OTHER LIABILITY,</div><div class="line">WHETHER </div><div class="line">IN</div><div class="line"> AN </div><div class="line">ACTION</div><div class="line">OF</div><div class="line"> CONTRACT, TORT </div><div class="line">OR</div><div class="line"> OTHERWISE, ARISING</div><div class="line"></div><div class="line">FROM</div><div class="line">, </div><div class="line">OUT</div><div class="line">OF</div><div class="line">OR</div><div class="line">IN</div><div class="line">CONNECTION</div><div class="line">WITH</div><div class="line"> THE SOFTWARE </div><div class="line">OR</div><div class="line"> THE </div><div class="line">USE</div><div class="line">OR</div><div class="line"></div><div class="line">OTHER DEALINGS </div><div class="line">IN</div><div class="line"> THE SOFTWARE.</div></pre></td></tr></table></figure>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/raUnuay" target="_blank" rel="external">https://github.com/dbartolini/crown</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;The-flexible-game-engine&quot;&gt;&lt;a href=&quot;#The-flexible-game-engine&quot; class=&quot;headerlink&quot; title=&quot;The flexible game engine.&quot;&gt;&lt;/a&gt;The flexible 
     
     </summary>
     
@@ -573,6 +1027,31 @@
   </entry>
   
   <entry>
+    <title>IBM supercomputers will power global weather forecasts</title>
+    <link href="https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/"/>
+    <id>https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</id>
+    <published>2017-06-21T00:00:00.000Z</published>
+    <updated>2017-06-21T08:45:40.918Z</updated>
+    
+    <content type="html"><![CDATA[<p>It will help create models that scan the whole world but forecast at a local scale.</p>
+<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F73bb7d03dcb9dcca3c04eb7cefbfe050%2F205398004%2FMPAS-model.png&amp;client=cbc79c14efcebee57402&amp;signature=f092faba483afc8c2197a273ce8a7be11fe3ea61" alt=""></p>
+<p>NCAR</p>
+<p>IBM’s supercomputers might soon power the weather-predicting systems of tomorrow. Through its subsidiary The Weather Company, the computing titan has partnered with the University Corporation for Academic Research (UCAR) and the National Center for Atmospheric Research (NCAR) to move beyond today’s regional-scale forecasting to anticipate weather at the local level…and aspire to introduce the first model that covers the whole globe.</p>
+<p>Current tech forecasts massively-sized meteorological systems that influence regional weather, like snowstorms and hurricanes. The model this IBM collaboration wants to build would account for the influence smaller events (like thunderstorms) have on local weather. IBM will join with UCAR to co-design a computational solution that runs on the former’s POWER9-based systems, which are set to launch at the end of the year. The Weather Company will use this computing powerhouse to adapt NCAR’s community-weather model to a global scale and refine the longer-term predictions to make more accurate forecasts weeks or months out.</p>
+<p>Source: <a href="https://www.engadget.com/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/" target="_blank" rel="external">https://www.engadget.com/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;It will help create models that scan the whole world but forecast at a local scale.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?qua
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>IKEA plans to improve AR shopping tools with help from Apple</title>
     <link href="https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/"/>
     <id>https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/</id>
@@ -601,31 +1080,6 @@
   </entry>
   
   <entry>
-    <title>IBM supercomputers will power global weather forecasts</title>
-    <link href="https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/"/>
-    <id>https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</id>
-    <published>2017-06-21T00:00:00.000Z</published>
-    <updated>2017-06-21T08:45:40.918Z</updated>
-    
-    <content type="html"><![CDATA[<p>It will help create models that scan the whole world but forecast at a local scale.</p>
-<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F73bb7d03dcb9dcca3c04eb7cefbfe050%2F205398004%2FMPAS-model.png&amp;client=cbc79c14efcebee57402&amp;signature=f092faba483afc8c2197a273ce8a7be11fe3ea61" alt=""></p>
-<p>NCAR</p>
-<p>IBM’s supercomputers might soon power the weather-predicting systems of tomorrow. Through its subsidiary The Weather Company, the computing titan has partnered with the University Corporation for Academic Research (UCAR) and the National Center for Atmospheric Research (NCAR) to move beyond today’s regional-scale forecasting to anticipate weather at the local level…and aspire to introduce the first model that covers the whole globe.</p>
-<p>Current tech forecasts massively-sized meteorological systems that influence regional weather, like snowstorms and hurricanes. The model this IBM collaboration wants to build would account for the influence smaller events (like thunderstorms) have on local weather. IBM will join with UCAR to co-design a computational solution that runs on the former’s POWER9-based systems, which are set to launch at the end of the year. The Weather Company will use this computing powerhouse to adapt NCAR’s community-weather model to a global scale and refine the longer-term predictions to make more accurate forecasts weeks or months out.</p>
-<p>Source: <a href="https://www.engadget.com/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/" target="_blank" rel="external">https://www.engadget.com/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;It will help create models that scan the whole world but forecast at a local scale.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?qua
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Apple tries to clamp down on leaks with mixed success</title>
     <link href="https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/"/>
     <id>https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/</id>
@@ -647,342 +1101,6 @@
     
       &lt;p&gt;Including a leak about its anti-leaking efforts.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>What Does a Well-Documented CSS Codebase Look Like?</title>
-    <link href="https://gmagon.com/blog/2017/06/20/what-does-a-well-documented-css-codebase-look-like/"/>
-    <id>https://gmagon.com/blog/2017/06/20/what-does-a-well-documented-css-codebase-look-like/</id>
-    <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.744Z</updated>
-    
-    <content type="html"><![CDATA[<p>In the front-end community, there is a lot of attention related to documenting JavaScript. That’s not so much the case with CSS. Often times I feel like lost when I join a project with minimal or no CSS documentation.</p>
-<p>Even though CSS is relatively easy to write, it can be quite hard to maintain.The specificity, the global scope of everything, and the lack of guidance can easily lead to inconsistency, code duplication, and over-complication.</p>
-<p>I’ve long been curious what a really well-documented CSS codebase looks like. Here, I’ll share my experience, along with the expectations I have towards my vision of well-documented stylesheets.</p>
-<p>It surprises me where I hear people say that commenting CSS is not that important. I imagine none of them have had to deal with 10,000+ line stylesheets! Often I’ve struggled with what HTML results in what specific style. Without having a solid context about the development decisions taken, debugging efforts increase.<a href="http://commadot.com/wtf-per-minute/" target="_blank" rel="external">WTFs per minute</a>increase exponentially too.</p>
-<p>Many times I’ve spent hours to figure out what the developer intended, why she didn’t do it the another way, why is this layout seemingly so complex. There is much pain buried in these “why” questions.</p>
-<p>So, here we go! Let’s examine the 4 big signs of a well-documented CSS codebase.</p>
-<p><img src="http://img2.tuicool.com/mE3YfiU.jpg!web" alt=""></p>
-<h3 id="1-CSS-Tech-Stack-amp-Toolchain"><a href="#1-CSS-Tech-Stack-amp-Toolchain" class="headerlink" title="1) CSS Tech Stack &amp; Toolchain"></a>1) CSS Tech Stack &amp; Toolchain</h3><p>There are likely things as part of our CSS code base like third-party libraries, mixins, or other tools. Looking in the package manager’s dependencies list doesn’t give a lot of context_why_the decisions were made to add these things, what they do exactly, and how we’re using them.</p>
-<p>It would be good for everyone to know why a certain library or tool was introduced. Imagine, for example, that a third-party library was introduced only to solve what has become an obsolete CSS issue. If we had context like that, we could make more informed decisions.</p>
-<p>There sometimes can be quite a few third-party libraries in a project. Have you ever spent a bunch of time on web searching each one figuring out what it even is? It can be quite a challenge to know or to keep track of what each exactly does.</p>
-<p>A well-documented codebase would include a description for each dependency. Perhaps you could the comment tweet-length (140 characters) explaining why it is there. That would give anyone else in the code base a head start on why something is there.</p>
-<p>I like adding these descriptions right in the place where I<code>@import</code>them.</p>
-<h3 id="2-CSS-Conventions"><a href="#2-CSS-Conventions" class="headerlink" title="2) CSS Conventions"></a>2) CSS Conventions</h3><p>Good coding conventions result in consistent, readable, and unambiguous source code. They standardize the structure and coding style of an application so that you and others can easily read and understand the code.</p>
-<p>It’s important to know if there are any project-specific naming conventions or methodologies in place (likeBEM,<a href="https://css-tricks.com/on-style-maintenance/#article-header-id-2" target="_blank" rel="external">OOCSS</a>,<a href="https://smacss.com/" target="_blank" rel="external">SMACSS</a>, orACSS). I’ve seen cases where a certain methodologies principles are applied but<a href="https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank" rel="external">the actual rules followed are modified based on the preferences of the developers involved</a>. So an indication how strictly we must follow the methodology principles would be good to leave in a well-documented code base.</p>
-<p>This brings up the larger issue of CSS style guides. A naming convention is just one choice as part of a complete styling strategy. Other parts might be:</p>
-<ul>
-<li>How is code sectioned?</li>
-<li>How are files structured?</li>
-<li><a href="https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/" target="_blank" rel="external">How are properties ordered?</a></li>
-<li>How is commenting done?</li>
-<li>How is the formatting done (indentation, rule declarations)?</li>
-<li><a href="https://github.com/airbnb/css#javascript-hooks" target="_blank" rel="external">How to bind JavaScript hooks to classes?</a></li>
-<li>… and many more rules or anti-patterns like nesting more then 3 levels deep, avoiding ID selectors,<br><a href="https://css-tricks.com/when-using-important-is-the-right-choice/" target="_blank" rel="external">using !important only for utility classes</a><br>and etc.</li>
-</ul>
-<p>All this makes up a completeCSS style guide. Having a shared vocabulary like this I’d consider a strong plus towards consistency.</p>
-<h3 id="3-CSS-Architecture"><a href="#3-CSS-Architecture" class="headerlink" title="3) CSS Architecture"></a>3) CSS Architecture</h3><p>Most scalable projects follow some type of architecture in terms of ordering styles. In a well-documented codebase, the fundamental principles that the project follows when structuring and sectioning styles should be mentioned.</p>
-<p>I was first inspired to explore CSS architecture by<a href="https://youtu.be/1OKZOV-iLj4" target="_blank" rel="external">watching Harry Roberts’s talk about managing CSS projects</a>. Here’s Harry:</p>
-<p>CSS architecture seems to be somewhat in vogue right now. It’s something you’ve no doubt heard mentioned numerous times over the past year or so, and with good reason: UIs (and the teams that build them) are getting bigger and more complicated than ever before.</p>
-<p>There are a number of aspects of CSS which make it troublesome. It’s declarative, meaning there is no logic or control flow to tell other developers much about the state or construction of the project. It operates in a global namespace, meaning we get collisions, leaking styles and inadvertent regressions. It utilizes inheritance, making everything somewhat interdependent and brittle. Finally, the unavoidable specificity model can cause problems when selectors fight each other for prominence.</p>
-<p>Therefore, he<a href="http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528" target="_blank" rel="external">introduces a concept for architecting CSS called ITCSS</a>. If you are working on a project of reasonable scale, chances are someone already defined similar principles or ideas that aim to resolve these problems. So in a well-documented codebase, I would expect to see them written somewhere.</p>
-<p>One could tell if the architecture is explained well enough if you can answer the following question: Where should new styles or stylesheets be added?</p>
-<h3 id="4-CSS-Component-Descriptions-and-Examples"><a href="#4-CSS-Component-Descriptions-and-Examples" class="headerlink" title="4) CSS Component Descriptions and Examples"></a>4) CSS Component Descriptions and Examples</h3><p>A common pattern is to separate the logical modules into CSS components (or “blocks” according to BEM). Some of them might be re-usable, some may not, but the important thing is that they are the building blocks of our project. Therefore, describing what they are should be a top priority in a well-documented codebase.</p>
-<p>Ideally, you should arrange and group them, name them, and establish rules between them to generate an overview of all components. A well-described CSS component doesn’t only include information about what the component does but also has other valuable intel like example HTML markup and the context in which it’s meant to be used. Going one step further brings up the issue of<a href="https://www.smashingmagazine.com/taking-pattern-libraries-next-level/" target="_blank" rel="external">Pattern Libraries</a>. A pattern library is a collection of reusable components that can be used together to create a website. With modular, component-based architecture becoming a trend, they can bring huge value.</p>
-<p>The goal of a pattern library is to show what can be built with existing patterns (components). But let’s take a look at what additional information can be displayed alongside each pattern also. Vitaly Friedman shared a good summary on<a href="https://www.smashingmagazine.com/taking-pattern-libraries-next-level/" target="_blank" rel="external">how taking the pattern library to the next level looks like</a>. He states that focusing on components isn’t good enough:</p>
-<p>One of the main problems with pattern libraries is that, while they provide an overview of components, they often leave a lot open to interpretation. Components can be combined in a variety of ways, consistently and inconsistently. It’s great to be able to see what button variants and iconography are available and what kinds of tables and pricing tags one may use, but what if you need to design or build an interface that contains all of these components at once — and perhaps another that doesn’t yet exist in the library?</p>
-<p>A list of modules alone wouldn’t convey any context or any specifics on how the modules should (and should not) be used.</p>
-<p>Based on Vitaly’s post and<a href="http://bradfrost.com/blog/post/anatomy-of-a-pattern-in-a-pattern-library/" target="_blank" rel="external">Brad Frost’s anatomy of a pattern in a pattern library</a>, here are a few ideas I can imagine each of our patterns (components) could have, despite the usual unique name, code sample and a description of the component’s purpose. Basic (fundamental):</p>
-<ul>
-<li>Tags or categories: The assigned tags or categories for the component. Developers could tag their components with “in use”, “needs refactoring” tags and etc.</li>
-<li>Responsive preview: A real-life, resizable preview of the component, using the actual snippet of code being used in production. Alternatively, just a screenshot.</li>
-<li>Versioning and legacy, team members involved or responsible: In a bigger team, the ownership of the (family of) components and which team members have been actively developing them could be really helpful for maintenance and further development.</li>
-</ul>
-<p>… and here are a few more advanced:</p>
-<ul>
-<li>Performance impact: Sometimes CSS could be heavy too. An indicator of performance or a “warning signs” section, outlining not only performance impact but also any common mishaps when the pattern is used incorrectly.</li>
-<li>Accessibility implications: Indicator of accessibility requirements. Some components might require more work to maintain accessibility, especially if they interact with other components.</li>
-<li>Related patterns: A quick overview of related components or the family of components that a given component belongs to. Could use an explanation of when to use a component, when not to, and why.</li>
-<li>Fallback and print previews.</li>
-</ul>
-<p>… the list goes on and on to whatever makes sense for your specific use-case.</p>
-<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>A well-documented CSS codebase enforces consistency, boosts maintainability, and helps the team to build a shared vocabulary. It is a prerequisite for efficient CSS design and development. Moreover, based on my experience, it inevitably leads to better performance. I strongly believe that these are the signs of the professional execution of a project.</p>
-<p>If you have thoughts, please feel free to add them in the comments below, so together we can come closer to better documentation practices.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/yINJrmZ" target="_blank" rel="external">https://css-tricks.com/well-documented-css-codebase-look-like/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;In the front-end community, there is a lot of attention related to documenting JavaScript. That’s not so much the case with CSS. Often ti
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript &amp; SEO: Making Your Bot Experience As Good As Your User Experience</title>
-    <link href="https://gmagon.com/blog/2017/06/20/javascript-and-seo-making-your-bot-experience-as-good-as-your-user-experience/"/>
-    <id>https://gmagon.com/blog/2017/06/20/javascript-and-seo-making-your-bot-experience-as-good-as-your-user-experience/</id>
-    <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.736Z</updated>
-    
-    <content type="html"><![CDATA[<p>Understanding JavaScript and its potential impact on search performance is a core skillset of the modern SEO professional. If search engines can’t crawl a site or can’t parse and understand the content, nothing is going to get indexed and the site is not going to rank.</p>
-<p>The most important questions for an SEO relating to JavaScript: Can search engines see the content and grasp the website experience? If not, what solutions can be leveraged to fix this?</p>
-<h2 id="Fundamentals"><a href="#Fundamentals" class="headerlink" title="Fundamentals"></a>Fundamentals</h2><h3 id="What-is-JavaScript"><a href="#What-is-JavaScript" class="headerlink" title="What is JavaScript?"></a>What is JavaScript?</h3><p>When creating a modern web page, there are three major components:</p>
-<ol>
-<li><strong>HTML –</strong><br>Hypertext Markup Language serves as the backbone, or organizer of content, on a site. It is the structure of the website (e.g. headings, paragraphs, list elements, etc.) and defining static content.</li>
-<li><strong>CSS –</strong><br>Cascading Style Sheets are the design, glitz, glam, and style added to a website. It makes up the presentation layer of the page.</li>
-<li><strong>JavaScript –</strong><br>JavaScript is the interactivity and a core component of the dynamic web.</li>
-</ol>
-<p><em>Learn more about</em><a href="https://www.codecademy.com/learn/web" target="_blank" rel="external"><em>webpage development</em></a><em>and how to code basic</em><a href="https://www.codecademy.com/learn/javascript" target="_blank" rel="external"><em>JavaScript</em></a><em>.</em></p>
-<p><img src="http://img2.tuicool.com/jqUZR3Q.gif" alt=""></p>
-<p>Image sources:<a href="https://img0.etsystatic.com/000/0/6007442/il_fullxfull.281148222.jpg" target="_blank" rel="external">1</a>,<a href="http://i.ebayimg.com/00/s/NTAwWDQ1Mg==/z/0FYAAOxyRhBS-qzb/$_3.JPG?set_id=2" target="_blank" rel="external">2</a>,<a href="http://i.imgur.com/hjRn2ZM.gif" target="_blank" rel="external">3</a></p>
-<p>JavaScript is either placed in the HTML document within &lt;script&gt; tags (i.e., it is embedded in the HTML) or linked/referenced. There are currently a plethora of JavaScript libraries and frameworks, including jQuery, AngularJS, ReactJS, EmberJS, etc.</p>
-<h4 id="JavaScript-libraries-and-frameworks"><a href="#JavaScript-libraries-and-frameworks" class="headerlink" title="JavaScript libraries and frameworks:"></a>JavaScript libraries and frameworks:</h4><p><img src="http://img2.tuicool.com/Q73aYj2.png!web" alt=""></p>
-<h3 id="What-is-AJAX"><a href="#What-is-AJAX" class="headerlink" title="What is AJAX?"></a>What is AJAX?</h3><p>AJAX, or Asynchronous JavaScript and XML, is a set of web development techniques combining JavaScript and XML that allows web applications to communicate with a server in the background without interfering with the current page. Asynchronous means that other functions or lines of code can run while the_async_script is running. XML used to be the primary language to pass data; however, the term AJAX is used for all types of data transfers (including JSON; I guess “AJAJ” doesn’t sound as clean as “AJAX” [pun intended]).</p>
-<p>A common use of AJAX is to update the content or layout of a webpage without initiating a full page refresh. Normally, when a page loads, all the assets on the page must be requested and fetched from the server and then rendered on the page. However, with AJAX, only the assets that differ between pages need to be loaded, which improves the user experience as they do not have to refresh the entire page.</p>
-<p>One can think of AJAX as mini server calls. A good example of AJAX in action is Google Maps. The page updates without a full page reload (i.e., mini server calls are being used to load content as the user navigates).</p>
-<p><img src="http://img2.tuicool.com/reM3Un3.png!web" alt=""></p>
-<p>Image<a href="https://derivadow.com/2007/01/05/ajax-what-is-it-its-not-dhtml/" target="_blank" rel="external">source</a></p>
-<h3 id="What-is-the-Document-Object-Model-DOM"><a href="#What-is-the-Document-Object-Model-DOM" class="headerlink" title="What is the Document Object Model (DOM)?"></a>What is the Document Object Model (DOM)?</h3><p>As an SEO professional, you need to understand what the DOM is, because it’s what Google is using to analyze and understand webpages.</p>
-<p>The DOM is what you see when you “Inspect Element” in a browser. Simply put, you can think of the DOM as the steps the browser takes after receiving the HTML document to render the page.</p>
-<p>The first thing the browser receives is the HTML document. After that, it will start parsing the content within this document and fetch additional resources, such as images, CSS, and JavaScript files.</p>
-<p>The DOM is what forms from this parsing of information and resources. One can think of it as a structured, organized version of the webpage’s code.</p>
-<p>Nowadays the DOM is often very different from the initial HTML document, due to what’s collectively called<em>dynamic HTML</em>. Dynamic HTML is the ability for a page to change its content depending on user input, environmental conditions (e.g. time of day), and other variables, leveraging HTML, CSS, and JavaScript.</p>
-<p>Simple example with a &lt;title&gt; tag that is populated through JavaScript:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">HTML source</th>
-<th style="text-align:left">DOM</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><img src="http://img2.tuicool.com/QBJ3qeM.png!web" alt=""></td>
-<td style="text-align:left"><img src="http://img1.tuicool.com/fmaimmr.png!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<h3 id="What-is-headless-browsing"><a href="#What-is-headless-browsing" class="headerlink" title="What is headless browsing?"></a>What is headless browsing?</h3><p>Headless browsing is simply the action of fetching webpages without the user interface. It is important to understand because Google,<a href="https://www.merkleinc.com/blog/baidu-adds-new-spider-rendering-job" target="_blank" rel="external">and now Baidu</a>, leverage headless browsing to gain a better understanding of the user’s experience and the content of webpages.</p>
-<p><a href="http://phantomjs.org/" target="_blank" rel="external">PhantomJS</a>and<a href="http://zombie.js.org/" target="_blank" rel="external">Zombie.js</a>are scripted headless browsers, typically used for automating web interaction for testing purposes, and rendering static HTML snapshots for initial requests (pre-rendering).</p>
-<h2 id="Why-can-JavaScript-be-challenging-for-SEO-and-how-to-fix-issues"><a href="#Why-can-JavaScript-be-challenging-for-SEO-and-how-to-fix-issues" class="headerlink" title="Why can JavaScript be challenging for SEO? (and how to fix issues)"></a>Why can JavaScript be challenging for SEO? (and how to fix issues)</h2><p>There are three (3) primary reasons to be concerned about JavaScript on your site:</p>
-<ol>
-<li>Crawlability: Bots’ ability to crawl your site.</li>
-<li>Obtainability: Bots’ ability to access information and parse your content.</li>
-<li>Perceived site latency: AKA the Critical Rendering Path.</li>
-</ol>
-<p><img src="http://img0.tuicool.com/bAVB7bI.png!web" alt=""></p>
-<h3 id="Crawlability"><a href="#Crawlability" class="headerlink" title="Crawlability"></a>Crawlability</h3><p>Are bots able to find URLs and understand your site’s architecture? There are two important elements here:</p>
-<ol>
-<li>Blocking search engines from your JavaScript (even accidentally).</li>
-<li>Proper internal linking, not leveraging JavaScript events as a replacement for HTML tags.</li>
-</ol>
-<h4 id="Why-is-blocking-JavaScript-such-a-big-deal"><a href="#Why-is-blocking-JavaScript-such-a-big-deal" class="headerlink" title="Why is blocking JavaScript such a big deal?"></a>Why is blocking JavaScript such a big deal?</h4><p>If search engines are<a href="https://moz.com/blog/why-all-seos-should-unblock-js-css" target="_blank" rel="external">blocked from crawling JavaScript</a>, they will not be receiving your site’s full experience. This means search engines are not seeing what the end user is seeing. This can reduce your site’s appeal to search engines and could eventually be considered cloaking (if the intent is indeed malicious).</p>
-<p><a href="https://www.google.com/webmasters/tools/googlebot-fetch" target="_blank" rel="external">Fetch as Google</a>and TechnicalSEO.com’s<a href="https://technicalseo.com/seo-tools/robots-txt/" target="_blank" rel="external">robots.txt</a>and<a href="https://technicalseo.com/seo-tools/fetch-render/" target="_blank" rel="external">Fetch and Render</a>testing tools can help to identify resources that Googlebot is blocked from.</p>
-<p>The easiest way to solve this problem is through providing search engines access to the resources they need to understand your user experience.</p>
-<p>_!!! Important note:_Work with your development team to determine which files should and should not be accessible to search engines.</p>
-<h4 id="Internal-linking"><a href="#Internal-linking" class="headerlink" title="Internal linking"></a>Internal linking</h4><p>Internal linking should be implemented with regular anchor tags within the HTML or the DOM (using an<a href="https://moz.com/blog/www.example.com" target="_blank" rel="external">HTML tag) versus leveraging JavaScript functions to allow the user to traverse the site.</a></p>
-<p>Essentially: Don’t use JavaScript’s onclick events as a replacement for internal linking. While end URLs might be found and crawled (through strings in JavaScript code or XML sitemaps), they won’t be associated with the global navigation of the site.</p>
-<p>Internal linking is a strong signal to search engines regarding the site’s architecture and importance of pages. In fact, internal links are so strong that they can (in certain situations) override “SEO hints” such as canonical tags.</p>
-<h4 id="URL-structure"><a href="#URL-structure" class="headerlink" title="URL structure"></a>URL structure</h4><p>Historically, JavaScript-based websites (aka “AJAX sites”) were using fragment identifiers (#) within URLs.</p>
-<ul>
-<li><strong>Not recommended:</strong><ul>
-<li><strong>The Lone Hash (#) –</strong><br>The lone pound symbol is not crawlable. It is used to identify anchor link (aka jump links). These are the links that allow one to jump to a piece of content on a page. Anything after the lone hash portion of the URL is never sent to the server and will cause the page to automatically scroll to the first element with a matching ID (or the first<br>&lt;<br>a<br>&gt;<br> element with a name of the following information).<br><a href="https://plus.google.com/u/0/+JohnMueller/posts/LT4fU7kFB8W" target="_blank" rel="external">Google recommends</a><br>avoiding the use of “#“ in URLs.</li>
-<li><strong>Hashbang (#!) (and</strong><br><a href="https://developers.google.com/webmasters/ajax-crawling/docs/specification" target="_blank" rel="external"><strong>escaped_fragments</strong></a><br><strong>URLs) –</strong><br>Hashbang URLs were a hack to support crawlers (Google wants to avoid now and only Bing supports). Many a moon ago, Google and Bing developed a complicated AJAX solution, whereby a pretty (#!) URL with the UX co-existed with an equivalent escaped_fragment HTML-based experience for bots. Google has since backtracked on this recommendation, preferring to receive the exact user experience. In escaped fragments, there are two experiences here:<ul>
-<li><strong>Original Experience (aka Pretty URL):</strong><br>This URL must either have a #! (hashbang) within the URL to indicate that there is an escaped fragment or a meta element indicating that an escaped fragment exists (<br>&lt;<br>meta name=”fragment” content=”!”<br>&gt;<br>).</li>
-<li><strong>Escaped Fragment (aka Ugly URL, HTML snapshot):</strong><br>This URL replace the hashbang (#!) with “_escaped_fragment_” and serves the HTML snapshot. It is called the ugly URL because it’s long and looks like (and for all intents and purposes is) a hack.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="http://img0.tuicool.com/ai6JNjv.png!web" alt=""></p>
-<p>Image<a href="http://www.developerfusion.com/article/145920/using-html5-history-in-an-aspnet-mvc-site/" target="_blank" rel="external">source</a></p>
-<ul>
-<li><strong>Recommended:</strong><ul>
-<li><strong>pushState History API –</strong><br>PushState is navigation-based and part of the History API (think: your web browsing history). Essentially, pushState updates the URL in the address bar and only what needs to change on the page is updated. It allows JS sites to leverage “clean” URLs. PushState is currently<br><a href="https://webmasters.googleblog.com/2016/11/building-indexable-progressive-web-apps.html" target="_blank" rel="external">supported by Google</a><br>, when supporting browser navigation for client-side or hybrid rendering.<ul>
-<li>A good use of pushState is for infinite scroll (i.e., as the user hits new parts of the page the URL will update). Ideally, if the user refreshes the page, the experience will land them in the exact same spot. However, they do not need to refresh the page, as the content updates as they scroll down, while the URL is updated in the address bar.</li>
-<li>Example: A good example of a search engine-friendly infinite scroll implementation, created by Google’s John Mueller (go figure), can be found<br><a href="http://scrollsample.appspot.com/items" target="_blank" rel="external">here</a><br>. He technically leverages the replaceState(), which doesn’t include the same back button functionality as pushState.</li>
-<li>Read more:<br><a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API" target="_blank" rel="external">Mozilla PushState History API Documents</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="http://img1.tuicool.com/beiAZ3E.jpg!web" alt=""></p>
-<h3 id="Obtainability"><a href="#Obtainability" class="headerlink" title="Obtainability"></a>Obtainability</h3><p>Search engines have been shown to employ headless browsing to render the DOM to gain a better understanding of the user’s experience and the content on page. That is to say, Google can process some JavaScript and uses the DOM (instead of the HTML document).</p>
-<p>At the same time, there are situations where search engines struggle to comprehend JavaScript. Nobody wants<a href="http://www.linkresearchtools.com/case-studies/hulu-javascript-fail-visibility-drop/" target="_blank" rel="external">a Hulu situation</a>to happen to their site or a client’s site. It is crucial to understand how bots are interacting with your onsite content. When you aren’t sure, test.</p>
-<p>Assuming we’re talking about a search engine bot that executes JavaScript, there are a few important elements for search engines to be able to obtain content:</p>
-<ul>
-<li>If the user must interact for something to fire, search engines probably aren’t seeing it.<ul>
-<li>Google is a lazy user. It doesn’t click, it doesn’t scroll, and it doesn’t log in. If the full UX demands action from the user, special precautions should be taken to ensure that bots are receiving an equivalent experience.</li>
-</ul>
-</li>
-<li>If the JavaScript occurs after the JavaScript load event fires plus ~5-seconds*, search engines may not be seeing it.<ul>
-<li>*<br><a href="https://groups.google.com/forum/#!topic/js-sites-wg/ZFBMv2TcB3M" target="_blank" rel="external">John Mueller mentioned</a><br>that there is no specific timeout value; however, sites should aim to load within five seconds.</li>
-<li>*<br><a href="https://www.screamingfrog.co.uk/crawl-javascript-seo/" target="_blank" rel="external">Screaming Frog tests</a><br>show a correlation to five seconds to render content.</li>
-<li>*The load event plus five seconds is what Google’s PageSpeed Insights, Mobile Friendliness Tool, and Fetch as Google use; check out<br><a href="https://maxxeight.com/tests/js-timer/" target="_blank" rel="external">Max Prin’s test timer</a><br>.</li>
-</ul>
-</li>
-<li>If there are errors within the JavaScript, both browsers and search engines won’t be able to go through and potentially miss sections of pages if the entire code is not executed.</li>
-</ul>
-<h4 id="How-to-make-sure-Google-and-other-search-engines-can-get-your-content"><a href="#How-to-make-sure-Google-and-other-search-engines-can-get-your-content" class="headerlink" title="How to make sure Google and other search engines can get your content"></a>How to make sure Google and other search engines can get your content</h4><h4 id="1-TEST"><a href="#1-TEST" class="headerlink" title="1. TEST"></a>1. TEST</h4><p>The most popular solution to resolving JavaScript is probably not resolving anything (grab a coffee and let Google work its algorithmic brilliance). Providing Google with the same experience as searchers is<a href="https://webmasters.googleblog.com/2015/10/deprecating-our-ajax-crawling-scheme.html" target="_blank" rel="external">Google’s preferred scenario</a>.</p>
-<p>Google first announced being able to “better understand the web (i.e., JavaScript)” in<a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html" target="_blank" rel="external">May 2014</a>. Industry experts suggested that Google could crawl JavaScript way before this announcement. The iPullRank team offered two great pieces on this in 2011:<a href="http://ipullrank.com/googlebot-is-chrome/" target="_blank" rel="external">Googlebot is Chrome</a>and<a href="https://moz.com/blog/just-how-smart-are-search-robots" target="_blank" rel="external">How smart are Googlebots?</a>(thank you, Josh and Mike). Adam Audette’s<a href="http://searchengineland.com/tested-googlebot-crawls-javascript-heres-learned-220157" target="_blank" rel="external">Google can crawl JavaScript and leverages the DOM</a>in 2015 confirmed. Therefore, if you can see your content in the DOM, chances are your content is being parsed by Google.</p>
-<p><img src="http://img1.tuicool.com/ZJj6VrV.jpg!web" alt=""></p>
-<p>Recently, Barry Goralewicz performed<a href="https://goralewicz.com/blog/javascript-seo-experiment/" target="_blank" rel="external">a cool experiment testing a combination of various JavaScript libraries and frameworks</a>to determine how Google interacts with the pages (e.g., are they indexing URL/content? How does GSC interact? Etc.). It ultimately showed that Google is able to interact with many forms of JavaScript and highlighted certain frameworks as perhaps more challenging.<a href="https://groups.google.com/forum/#!forum/js-sites-wg" target="_blank" rel="external">John Mueller even started a JavaScript search group</a>(from what I’ve read, it’s fairly therapeutic).</p>
-<p>All of these studies are amazing and help SEOs understand when to be concerned and take a proactive role. However, before you determine that sitting back is the right solution for your site, I recommend being actively cautious by experimenting with small section Think: Jim Collin’s “bullets, then cannonballs” philosophy from his book<a href="http://www.jimcollins.com/books/great-by-choice.html" target="_blank" rel="external">Great by Choice</a>:</p>
-<p>“A bullet is an empirical test aimed at learning what works and meets three criteria: a bullet must be low-cost, low-risk, and low-distraction… 10Xers use bullets to empirically validate what will actually work. Based on that empirical validation, they then concentrate their resources to fire a cannonball, enabling large returns from concentrated bets.”</p>
-<p>Consider testing and reviewing through the following:</p>
-<ol>
-<li>Confirm that your content is appearing within the DOM.</li>
-<li>Test a subset of pages to see if Google can index content.</li>
-</ol>
-<ul>
-<li>Manually check quotes from your content.</li>
-<li><p>Fetch with Google and see if content appears.</p>
-</li>
-<li><p>Fetch with Google supposedly occurs around the load event or before timeout. It’s a great test to check to see if Google will be able to see your content and whether or not you’re blocking JavaScript in your robots.txt. Although Fetch with Google is not foolproof, it’s a good starting point.</p>
-</li>
-<li>Note: If you aren’t verified in GSC, try<br><a href="https://technicalseo.com/seo-tools/fetch-render/" target="_blank" rel="external">Technicalseo.com’s Fetch and Render As Any Bot Tool</a><br>.</li>
-</ul>
-<p>After you’ve tested all this, what if something’s not working and search engines and bots are struggling to index and obtain your content? Perhaps you’re concerned about alternative search engines (DuckDuckGo, Facebook, LinkedIn, etc.), or maybe you’re leveraging meta information that needs to be parsed by other bots, such as Twitter summary cards or Facebook Open Graph tags. If any of this is identified in testing or presents itself as a concern, an HTML snapshot may be the only decision.</p>
-<h4 id="2-HTML-SNAPSHOTS"><a href="#2-HTML-SNAPSHOTS" class="headerlink" title="2. HTML SNAPSHOTS"></a>2. HTML SNAPSHOTS</h4><h4 id="What-are-HTmL-snapshots"><a href="#What-are-HTmL-snapshots" class="headerlink" title="What are HTmL snapshots?"></a>What are HTmL snapshots?</h4><p>HTML snapshots are a fully rendered page (as one might see in the DOM) that can be returned to search engine bots (think: a static HTML version of the DOM).</p>
-<p><a href="https://webmasters.googleblog.com/2009/10/proposal-for-making-ajax-crawlable.html" target="_blank" rel="external">Google introduced HTML snapshots 2009</a>,<a href="https://webmasters.googleblog.com/2015/10/deprecating-our-ajax-crawling-scheme.html" target="_blank" rel="external">deprecated (but still supported) them in 2015</a>, and awkwardly mentioned them as<a href="https://webmasters.googleblog.com/2016/11/building-indexable-progressive-web-apps.html" target="_blank" rel="external">an element to “avoid”</a>in late 2016. HTML snapshots are a contentious topic with Google. However, they’re important to understand, because in certain situations they’re necessary.</p>
-<p>If search engines (or sites like Facebook) cannot grasp your JavaScript, it’s better to return an HTML snapshot than not to have your content indexed and understood at all. Ideally, your site would leverage some form of user-agent detection on the server side and return the HTML snapshot to the bot.</p>
-<p>At the same time, one must recognize that Google wants the same experience as the user (i.e., only provide Google with an HTML snapshot if the tests are dire and the<a href="https://groups.google.com/forum/#!forum/js-sites-wg" target="_blank" rel="external">JavaScript search group</a>cannot provide support for your situation).</p>
-<h4 id="Considerations"><a href="#Considerations" class="headerlink" title="Considerations"></a>Considerations</h4><p>When considering HTML snapshots, you must consider that Google has deprecated this AJAX recommendation. Although Google technically still supports it, Google recommends avoiding it. Yes, Google changed its mind and now want to receive the same experience as the user. This direction makes sense, as it allows the bot to receive an experience more true to the user experience.</p>
-<p>A second consideration factor relates to the risk of cloaking. If the HTML snapshots are found to not represent the experience on the page, it’s considered a cloaking risk. Straight from the source:</p>
-<p>“The HTML snapshot must contain the same content as the end user would see in a browser. If this is not the case, it may be considered cloaking.”</p>
-<p>–<a href="https://developers.google.com/webmasters/ajax-crawling/docs/faq#cloaking" target="_blank" rel="external">Google Developer AJAX Crawling FAQs</a></p>
-<h4 id="Benefits"><a href="#Benefits" class="headerlink" title="Benefits"></a>Benefits</h4><p>Despite the considerations, HTML snapshots have powerful advantages:</p>
-<ol>
-<li>Knowledge that search engines and crawlers will be able to understand the experience.<ul>
-<li>Certain types of JavaScript may be harder for Google to grasp (cough… Angular (also colloquially referred to as AngularJS 2) …cough).</li>
-</ul>
-</li>
-<li>Other search engines and crawlers (think: Bing, Facebook) will be able to understand the experience.<ul>
-<li>Bing, among other search engines, has not stated that it can crawl and index JavaScript. HTML snapshots may be the only solution for a JavaScript-heavy site. As always, test to make sure that this is the case before diving in.</li>
-</ul>
-</li>
-</ol>
-<p><img src="http://img0.tuicool.com/ZRRz6rR.jpg!web" alt=""></p>
-<h4 id="Site-latency"><a href="#Site-latency" class="headerlink" title="Site latency"></a>Site latency</h4><p>When browsers receive an HTML document and create the DOM (although there is some level of pre-scanning), most resources are loaded as they appear within the HTML document. This means that if you have a huge file toward the top of your HTML document, a browser will load that immense file first.</p>
-<p>The concept of Google’s critical rendering path is to load what the user needs as soon as possible, which can be translated to → “get everything above-the-fold in front of the user, ASAP.”</p>
-<h4 id="Critical-Rendering-Path-Optimized-Rendering-Loads-Progressively-ASAP"><a href="#Critical-Rendering-Path-Optimized-Rendering-Loads-Progressively-ASAP" class="headerlink" title="Critical Rendering Path - Optimized Rendering Loads Progressively ASAP:"></a>Critical Rendering Path - Optimized Rendering Loads Progressively ASAP:</h4><p><img src="http://img2.tuicool.com/zMjQFrF.png!web" alt=""></p>
-<p>Image<a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/" target="_blank" rel="external">source</a></p>
-<p>However, if you have unnecessary resources or JavaScript files clogging up the page’s ability to load, you get “render-blocking JavaScript.” Meaning: your JavaScript is blocking the page’s potential to appear as if it’s loading faster (also called: perceived latency).</p>
-<p><img src="http://img2.tuicool.com/BVNRN3B.png!web" alt=""></p>
-<h4 id="Render-blocking-JavaScript-–-Solutions"><a href="#Render-blocking-JavaScript-–-Solutions" class="headerlink" title="Render-blocking JavaScript – Solutions"></a>Render-blocking JavaScript – Solutions</h4><p>If you analyze your page speed results (through tools like<a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" rel="external">Page Speed Insights Tool</a>,<a href="https://www.webpagetest.org/" target="_blank" rel="external">WebPageTest.org</a>, CatchPoint, etc.) and determine that there is a render-blocking JavaScript issue, here are three potential solutions:</p>
-<ol>
-<li>Inline: Add the JavaScript in the HTML document.</li>
-<li><p>Async: Make JavaScript asynchronous (i.e., add “async” attribute to HTML tag).</p>
-<p><img src="http://img2.tuicool.com/Bba67bj.png!web" alt=""></p>
-</li>
-<li>Defer: By placing JavaScript lower within the HTML.</li>
-</ol>
-<p><img src="http://img1.tuicool.com/FbU7n2N.png!web" alt=""></p>
-<p>_!!! Important note:_It’s important to understand that scripts must be arranged in order of precedence. Scripts that are used to load the above-the-fold content must be prioritized and should not be deferred. Also, any script that references another file can only be used after the referenced file has loaded. Make sure to work closely with your development team to confirm that there are no interruptions to the user’s experience.</p>
-<p>Read more:<a href="https://developers.google.com/speed/docs/insights/BlockingJS" target="_blank" rel="external">Google Developer’s Speed Documentation</a></p>
-<h2 id="TL-DR-Moral-of-the-story"><a href="#TL-DR-Moral-of-the-story" class="headerlink" title="TL;DR - Moral of the story"></a>TL;DR - Moral of the story</h2><p>Crawlers and search engines will do their best to crawl, execute, and interpret your JavaScript, but it is not guaranteed. Make sure your content is crawlable, obtainable, and isn’t developing site latency obstructions. The key = every situation demands testing. Based on the results, evaluate potential solutions.</p>
-<p><img src="http://img0.tuicool.com/bEFRvaj.png!web" alt=""></p>
-<p>Thanks:Thank you Max Prin (@maxxeight) for reviewing this content piece and sharing your knowledge, insight, and wisdom. It wouldn’t be the same without you.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/z63uymu" target="_blank" rel="external">https://moz.com/blog/javascript-seo</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Understanding JavaScript and its potential impact on search performance is a core skillset of the modern SEO professional. If search engi
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Outlook for Mac adds features Office 365 already has</title>
-    <link href="https://gmagon.com/blog/2017/06/20/outlook-for-mac-adds-features-office-365-already-has/"/>
-    <id>https://gmagon.com/blog/2017/06/20/outlook-for-mac-adds-features-office-365-already-has/</id>
-    <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.740Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://o.aolcdn.com/images/dims?quality=100&amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F9f542094d96c2e308d3e9dde785dfc06%2F205392943%2FOutlook-Mac_account.gif&amp;client=cbc79c14efcebee57402&amp;signature=0ad2e942b4e0434c4917c25c3cd7ff1b6cbe943d" alt=""></p>
-<p>Microsoft</p>
-<p><a href="https://www.engadget.com/2017/03/02/outlook-2016-for-mac-now-supports-google-calendar-and-contacts/" target="_blank" rel="external">Outlook 2016 for Mac</a>users are about to get a big update with some of the<a href="https://blogs.office.com/2017/06/19/outlook-2016-for-mac-is-adding-your-most-requested-features/" target="_blank" rel="external">most requested features</a>for the venerable Microsoft email program. You can now send your emails when you want with a new Send Later feature, use delivery and read receipts to make sure your emails are received and even create calendar events and tasks from your emails. You can also save your oft-repeated emails as templates to make sending them much faster, and Microsoft has simplified the account setup process.</p>
-<p><img src="https://s.aolcdn.com/hss/storage/midas/a4637aa8b92413183a938544e0950d84/205392949/Outlook+2016+for+Mac+send+later.png" alt=""></p>
-<p>The Send Later function is hidden under the little down arrow by the Send Email button and will be available to Office Insider Fast members now and Office 365 subscribers in July. All other new features should be ready for Office 365 subscribers right away, including the easier onboarding process, which automatically detects your email settings from your address so you don’t have to, and read receipts, which may be the bane of our existence, but seem to make business users pretty happy.</p>
-<p><img src="https://s.aolcdn.com/hss/storage/midas/95a0d890c07f0fb22a866e900475ff44/205392950/Outlook+2016+for+Mac+receipts.png" alt=""></p>
-<p>This brings Outlook 2016 for Mac up to parity with Outlook 2016 for Windows, which already has<a href="https://support.office.com/en-us/article/Compare-Outlook-2016-for-Mac-with-Outlook-2016-for-Windows-bd54cb79-d367-4c2f-89c7-3e5d16618f87" target="_blank" rel="external">these features</a>. In addition,<a href="https://www.engadget.com/2017/05/17/google-smart-replies-gmail-app/" target="_blank" rel="external">Gmail</a>users can so similar things with extensions and built-in features, as well. Goog’es business-flavored G Suite allows administrators to enable<a href="https://support.google.com/a/answer/1383374?hl=en" target="_blank" rel="external">read receipts</a>, third-party<a href="https://www.engadget.com/2016/08/23/boomerang-respondable-email/" target="_blank" rel="external">Boomerang</a>can let you schedule your emails and the even your basic Gmail account can<a href="https://www.lifewire.com/create-a-google-calendar-event-from-a-message-in-gmail-1172093" target="_blank" rel="external">create</a>Google Calendar events on the fly. Still, it’s got to be great to finally be able to schedule your emails or find out if they’ve been received when you’re using Outlook on the Mac.</p>
-<p>Source: <a href="https://www.engadget.com/2017/06/19/outlook-for-mac-update-office-365/" target="_blank" rel="external">https://www.engadget.com/2017/06/19/outlook-for-mac-update-office-365/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F9f542094d96c2e30
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>How To Find The Dominant Colors In An Image [macOS]</title>
-    <link href="https://gmagon.com/blog/2017/06/20/how-to-find-the-dominant-colors-in-an-image-macos/"/>
-    <id>https://gmagon.com/blog/2017/06/20/how-to-find-the-dominant-colors-in-an-image-macos/</id>
-    <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.695Z</updated>
-    
-    <content type="html"><![CDATA[<p>Good design takes time and often years of experience and experimentation to getright.Itis built on certain conventions and rules that serve as the basis of a good design. A common example of a design convention is the use of contrasting colors to make text look better on a colored background.<strong>Vaunt</strong>is a free macOS that lets you find the dominant colors in an image. It’s a simple menu bar utility that you can drag &amp; drop imaged on to. It will find the dominant colors in an image and display all shades of it that appear in the image. You can click a color and its HEX code will automatically be copied to your clipboard.</p>
-<p>Download and run Vaunt. It runs entirely from the menu bar. Click the menu bar icon to open the app and drag &amp; drop the image you want to analyze into the designated area. Give it a few seconds and it will show you a selection of colors that appear in the image.</p>
-<p>Vaunt will show you multiple shades of the dominant color. It finds this color using a clustering algorithm and it accounts for the variation in shades by providing you different ones that it detects in the image. Click a color to copy its HEX code to your clipboard.</p>
-<p><a href="http://www.addictivetips.com/mac-os/how-to-find-the-dominant-colors-in-an-image/attachment/vaunt/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2017/01/vaunt.jpg" alt="" title="vaunt"></a></p>
-<p>We tested the app out with a very psychedelic Alice in Wonderland wallpaper and the poster for Suicide Squad (2016). In both cases, there were two very distinct colors that were dominant in the image. We ran the images multiple times through Vaunt and it returned at least two different dominant colors for each image.</p>
-<h3 id="RECOMMENDED-FOR-YOU"><a href="#RECOMMENDED-FOR-YOU" class="headerlink" title="RECOMMENDED FOR YOU"></a>RECOMMENDED FOR YOU</h3><p><a href="http://www.addictivetips.com/web/palette-pick-colors-from-image-get-hex-rgb-code/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2014/09/PALETTE-choose-type-100x100.png" alt="" title="Palette Picks Colors From Any Image And Gives You The HEX Or RGB Code \[Web\]"></a></p>
-<p><a href="http://www.addictivetips.com/category/web/" target="_blank" rel="external">Web</a></p>
-<p><a href="http://www.addictivetips.com/web/palette-pick-colors-from-image-get-hex-rgb-code/" target="_blank" rel="external">Palette Picks Colors From Any Image And Gives You The HEX Or RGB Code [Web]</a></p>
-<p><a href="http://www.addictivetips.com/windows-tips/get-an-rgb-or-html-code-for-on-screen-colors-with-shade-variations/" target="_blank" rel="external"><img src="http://cloud.addictivetips.com/wp-content/uploads/2015/04/cp1_shades-100x100.png" alt="" title="Get An RGB Or HTML Code For On-Screen Colors With Shade Variations"></a></p>
-<p><a href="http://www.addictivetips.com/category/windows-tips/" target="_blank" rel="external">Windows</a></p>
-<p><a href="http://www.addictivetips.com/windows-tips/get-an-rgb-or-html-code-for-on-screen-colors-with-shade-variations/" target="_blank" rel="external">Get An RGB Or HTML Code For On-Screen Colors With Shade Variations</a></p>
-<p>The color that Vaunt identifies as dominant depends on the area it analyzes. For images like posters or wallpapers, the results can vary greatly each time you run them through the app. This is because the app is looking at and analyzing a different part of the image. Vaunt can analyze both PNG and JPG images.</p>
-<p><a href="http://vaunt.io/" target="_blank" rel="external">Download Vaunt</a></p>
-<p>Source: <a href="http://www.addictivetips.com/mac-os/how-to-find-the-dominant-colors-in-an-image/\#" target="_blank" rel="external">http://www.addictivetips.com/mac-os/how-to-find-the-dominant-colors-in-an-image/\#</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Good design takes time and often years of experience and experimentation to getright.Itis built on certain conventions and rules that ser
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Armani’s own Android Wear 2.0 smartwatch will launch on September 14</title>
-    <link href="https://gmagon.com/blog/2017/06/20/armanis-own-android-wear-20-smartwatch-will-launch-on-september-14/"/>
-    <id>https://gmagon.com/blog/2017/06/20/armanis-own-android-wear-20-smartwatch-will-launch-on-september-14/</id>
-    <published>2017-06-20T00:00:00.000Z</published>
-    <updated>2017-06-20T09:33:02.689Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img0.tuicool.com/rAZVrym.jpg!web" alt=""></p>
-<p>The Armani brand is already synonymous with high fashion, and now the company wants to add smartwatches to its lineup. Armani announced that its firstAndroid Wear 2.0 device, the Emporio Armani Connected, will go on sale in its stores starting on September 14. The company previously<a href="http://www.androidauthority.com/emporio-armani-connected-hybrid-watch-725061/" target="_blank" rel="external">released a hybrid smartwatch</a>that went on sale in the fall of 2016.</p>
-<p>See also:</p>
-<p><img src="http://img0.tuicool.com/reA3iez.jpg!web" alt=""></p>
-<h4 id="Best-Android-Wear-watches"><a href="#Best-Android-Wear-watches" class="headerlink" title="Best Android Wear watches"></a>Best Android Wear watches</h4><p>2 weeks ago</p>
-<p>The new touchscreen wearable will be one of the over 300 different hybrid and full smartwatches<a href="http://www.androidauthority.com/fossil-goes-full-android-wear-300-connected-watches-planned-year-759053/" target="_blank" rel="external">that will be made by Fossil</a>, which is also making and marketing devices for other fashion brands like Michael Kors, Skagen, Diesel, DKNY, and Marc Jacobs. In this case, the Emporio Armani Connected will be sold with support for up to eight different straps, along with a number of exclusive watchfaces. There’s not a lot of info on its hardware specs, but on the surface it looks it will be fairly typical Android Wear smartwatch, with a round display and a Qualcomm Snapdragon Wear 2100 processor inside.</p>
-<p>However, you are paying for the brand name, not the hardware, when you decide to get the Emporio Armani Connected. Pricing has not yet been announced but we expect it to be on the higher side of Android Wear products.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/yYby6nU" target="_blank" rel="external">http://www.androidauthority.com/armanis-android-wear-2-0-smartwatch-780870/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/rAZVrym.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;The Armani brand is already synonymous with high fashion, and now the c
     
     </summary>
     

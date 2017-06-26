@@ -260,12 +260,17 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
 <script type="text/javascript">
-document.getElementById('search-input-wrap').classList.add('on');
-docsearch({
-  apiKey: '7a75d3ee07f1e82ea4271e0c58c114c3',
-  indexName: 'gmagon',
-  inputSelector: '#search-input'
-});
+try{
+  return;
+  document.getElementById('search-input-wrap').classList.add('on');
+  docsearch({
+    apiKey: '7a75d3ee07f1e82ea4271e0c58c114c3',
+    indexName: 'gmagon',
+    inputSelector: '#search-input'
+  });
+}catch(e){
+}
+
 </script>
 
 

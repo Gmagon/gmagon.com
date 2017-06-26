@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/</loc>
+    
+    <lastmod>2017-06-26T10:20:16.608Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/blog/2017/06/26/whats-new-in-jpa-22-java-8-date-and-time-types/</loc>
     
     <lastmod>2017-06-26T09:37:13.942Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://gmagon.com/blog/2017/06/26/c++17-in-details-templates/</loc>
     
     <lastmod>2017-06-26T09:37:13.931Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/</loc>
-    
-    <lastmod>2017-06-26T09:37:13.928Z</lastmod>
     
   </url>
   
@@ -506,6 +506,13 @@
   </url>
   
   <url>
+    <loc>https://gmagon.com/blog/2017/06/14/the-maya-principle-design-for-the-future-but-balance-it-with-your-users-present/</loc>
+    
+    <lastmod>2017-06-14T03:43:53.575Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/blog/2017/06/14/web-design-usability-tips-for-billing-forms/</loc>
     
     <lastmod>2017-06-14T03:43:53.575Z</lastmod>
@@ -513,9 +520,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/the-maya-principle-design-for-the-future-but-balance-it-with-your-users-present/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</loc>
     
-    <lastmod>2017-06-14T03:43:53.575Z</lastmod>
+    <lastmod>2017-06-14T03:43:53.556Z</lastmod>
     
   </url>
   
@@ -528,13 +535,6 @@
   
   <url>
     <loc>https://gmagon.com/blog/2017/06/14/mobile-conversion-rates-how-does-your-site-compare/</loc>
-    
-    <lastmod>2017-06-14T03:43:53.556Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</loc>
     
     <lastmod>2017-06-14T03:43:53.556Z</lastmod>
     
@@ -814,14 +814,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytoaac/roadmap.html</loc>
+    <loc>https://gmagon.com/products/store/gmagon_gif/roadmap.html</loc>
     
     <lastmod>2017-05-26T07:04:27.281Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/gmagon_gif/roadmap.html</loc>
+    <loc>https://gmagon.com/products/store/trytoaac/roadmap.html</loc>
     
     <lastmod>2017-05-26T07:04:27.281Z</lastmod>
     

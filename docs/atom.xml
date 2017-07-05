@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-07-04T10:12:45.986Z</updated>
+  <updated>2017-07-05T09:44:47.963Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -16,37 +16,334 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Real World React apps and their open source codebases for developers to learn from</title>
-    <link href="https://gmagon.com/blog/2017/07/04/real-world-react-apps-and-their-open-source-codebases-for-developers-to-learn-from/"/>
-    <id>https://gmagon.com/blog/2017/07/04/real-world-react-apps-and-their-open-source-codebases-for-developers-to-learn-from/</id>
-    <published>2017-07-04T00:00:00.000Z</published>
-    <updated>2017-07-04T10:12:45.986Z</updated>
+    <title>Top Smartphones Under Php20k (Mid-2017)</title>
+    <link href="https://gmagon.com/blog/2017/07/05/top-smartphones-under-php20k-mid-2017/"/>
+    <id>https://gmagon.com/blog/2017/07/05/top-smartphones-under-php20k-mid-2017/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.963Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Real-World-React"><a href="#Real-World-React" class="headerlink" title="Real World React"></a>Real World React</h2><p>Real World React apps and their open source codebases for developers to learn from</p>
-<p>Learn from React apps written by experienced developers.</p>
-<p>You’ll find the source code for the Real World React apps in the<a href="https://github.com/jeromedalbert/real-world-react/blob/master/apps" target="_blank" rel="external"><code>apps/</code></a>subdirectory.</p>
-<p>Thank you to every developer who has worked on a project this repo links to, your work is helping developers learn React.</p>
-<h2 id="How-to-install-on-your-computer"><a href="#How-to-install-on-your-computer" class="headerlink" title="How to install on your computer"></a>How to install on your computer</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># Clone this git repo:</div><div class="line">git</div><div class="line"> clone git</div><div class="line">@github</div><div class="line">.com:jeromedalbert/real-world-react.git</div><div class="line"></div><div class="line">cd real-world-react/</div><div class="line"></div><div class="line"></div><div class="line"># The apps are linked to as git submodules.</div><div class="line"># This will take some time...</div><div class="line"></div><div class="line">git submodule update --init</div></pre></td></tr></table></figure>
-<h2 id="Information-for-Contributors"><a href="#Information-for-Contributors" class="headerlink" title="Information for Contributors"></a>Information for Contributors</h2><h4 id="Is-your-app-the-right-fit"><a href="#Is-your-app-the-right-fit" class="headerlink" title="Is your app the right fit?"></a>Is your app the right fit?</h4><ul>
-<li>A real world app should ideally be publicly accessible and used by real people in a production environment. As such, boilerplate, starter kits, libraries, and small demo/example projects are not really a good fit.</li>
-<li>Ideally most of the code should be frontend-oriented, in order to focus on React. Small backends may be OK, but should constitute the minority of the codebase.</li>
-</ul>
-<p>That being said, don’t hesitate to submit a pull request if you meet the criteria!</p>
-<h4 id="How-to-add-a-Real-World-App"><a href="#How-to-add-a-Real-World-App" class="headerlink" title="How to add a Real World App"></a>How to add a Real World App</h4><p>Given a GitHub repo for an app<code>githubuser/foo</code>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># Inside the project root:</div><div class="line">git</div><div class="line"> submodule add -b master git</div><div class="line">@github</div><div class="line">.com:githubuser/foo.git apps/foo</div></pre></td></tr></table></figure>
-<h4 id="Updating-the-apps-submodules-to-latest"><a href="#Updating-the-apps-submodules-to-latest" class="headerlink" title="Updating the apps submodules to latest"></a>Updating the apps submodules to latest</h4><p>The apps in<code>apps/</code>are git submodules. Git submodules are locked to a revision and don’t stay in sync with the latest revision.</p>
-<p>To update the revisions, run:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># This will take some time:</div><div class="line">git</div><div class="line"> submodule foreach git pull origin master</div></pre></td></tr></table></figure>
-<h2 id="Contributors"><a href="#Contributors" class="headerlink" title="Contributors"></a>Contributors</h2><ul>
-<li>Jerome Dalbert<br><a href="http://jeromedalbert.com/" target="_blank" rel="external">http://jeromedalbert.com</a></li>
-<li>Contributions are welcome, fork the GitHub repo, make your changes, then submit your pull request! Reach out if you’d like some help.</li>
-</ul>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/3QjiYbZ" target="_blank" rel="external">https://github.com/jeromedalbert/real-world-react</a></p>
+    <content type="html"><![CDATA[<p>Over the last two days, we’ve shared our lists of the top smartphones of mid-2017 with price ranges of above Php30k and above Php20k. Today, we look at the mid-rangers. All of the phones mentioned in this list are no less than Php10k and no more than Php20k. Let’s get started.</p>
+<p><img src="http://img2.tuicool.com/2UBbq2Z.png!web" alt=""></p>
+<p>Author’s note: The smartphones listed below are those that have officially launched in the Philippines from January to June 2017. The list is arranged by price from highest to lowest.</p>
+<h3 id="Samsung-Galaxy-A5-2017"><a href="#Samsung-Galaxy-A5-2017" class="headerlink" title="Samsung Galaxy A5 (2017)"></a><a href="http://www.yugatech.com/mobile/samsung-galaxy-a7-and-a5-2017-gets-ph-price/#OipiIkY4KAT5OsTq.97" target="_blank" rel="external">Samsung Galaxy A5 (2017)</a></h3><p>Early this year, Samsung launched their new A-series phones in the country, specifically the<strong>Galaxy A7 (2017)</strong>and the <strong>Galaxy A5 (2017)</strong>. While not much as changed here in size and form factor, under the hood, the new A5 sports a faster octa-core CPU, more RAM, and an improved camera.</p>
+<p><img src="http://img0.tuicool.com/mAR7Fz7.jpg!web" alt=""></p>
+<p>Samsung Galaxy A5 (2017) specs:</p>
+<p>5.2-inch Super AMOLED display @ 1920 x 1080 pixels</p>
+<p>1.9GHz octa-core processor</p>
+<p>3GB RAM</p>
+<p>32GB internal storage</p>
+<p>Expandable via microSD card, up to 256GB</p>
+<p>16-megapixel f/1.9 autofocus rear camera w/ LED flash</p>
+<p>16-megapixel f/1.9 front-facing camera</p>
+<p>4G LTE Cat.6</p>
+<p>Wi-Fi 802.11 a/b/g/n/ac</p>
+<p>Bluetooth v 4.2</p>
+<p>NFC</p>
+<p>ANT+</p>
+<p>USB Type-C</p>
+<p>Fingerprint sensor</p>
+<p>IP68 water-resistant</p>
+<p>3000mAh battery w/ fast charging</p>
+<p>Android 6.0 Marshmallow</p>
+<p>Price: Php19,990</p>
+<h3 id="Vivo-V5-Plus"><a href="#Vivo-V5-Plus" class="headerlink" title="Vivo V5 Plus"></a><a href="http://www.yugatech.com/mobile/vivo-v5-plus-review/#ZVowhOAh803kUjTe.97" target="_blank" rel="external">Vivo V5 Plus</a></h3><p>Packed with 20MP and 8MP dual front cameras, this is truly a self-portrait centered smartphone. That is not to say that the great cameras are all it has going for it, as it has a beefy octa-core CPU, 4GB of RAM, 64GB internal storage, and above average battery life.</p>
+<p><img src="http://img1.tuicool.com/zE7JVf7.jpg!web" alt=""></p>
+<p>Vivo V5 Plus specs:</p>
+<p>5.5-inch Full HD IPS display, 401ppi</p>
+<p>2.5D Corning Gorilla Glass 5</p>
+<p>2.5GHz Qualcomm Snapdragon 625 octa-core processor</p>
+<p>Adreno 506 GPU</p>
+<p>4GB RAM</p>
+<p>64GB internal storage</p>
+<p>16-megapixel f/2.0 autofocus rear camera w/ LED flash</p>
+<p>20MP f/2.0 + 8MP front-facing camera</p>
+<p>Dual SIM 4G LTE</p>
+<p>Wi-Fi 802.11ac</p>
+<p>Bluetooth 4.0</p>
+<p>GPS w/ A-GPS, GLONASS, BeiDou</p>
+<p>Fingerprint scanner</p>
+<p>AK4376 Hi-Fi chip</p>
+<p>USB OTG</p>
+<p>Gyroscope, E-compass</p>
+<p>3,160mAh non-removable battery w/ fast charging</p>
+<p>Android 6.0 Marshmallow w/ Funtouch OS 3.0</p>
+<p>152.58 x 74.00 x 7.26 mm</p>
+<p>158.6 g</p>
+<p>Price: Php19,990</p>
+<h3 id="Nokia-6"><a href="#Nokia-6" class="headerlink" title="Nokia 6"></a><a href="http://www.yugatech.com/mobile/nokia-6-review/#wMIFjfO1FwWJE07K.97" target="_blank" rel="external">Nokia 6</a></h3><p>With Nokia finally launching a proper full-featured Android smartphone this year, it has proven to be worth the wait. The<strong>Nokia 6</strong>wasunveiled at the Mobile World Congress 2017, and has a beautiful design, respectable specs, and Android 7.0 Nougat out of the box.</p>
+<p><img src="http://img2.tuicool.com/qEfUnu7.jpg!web" alt=""></p>
+<p>Nokia 6 specs:</p>
+<p>5.5-inch IPS LCD @ 1920 x 1080 pixels, 401ppi</p>
+<p>2.5D Corning Gorilla Glass 3</p>
+<p>Qualcomm Snapdragon 430 1.4GHz octa-core processor</p>
+<p>Adreno 505 graphics</p>
+<p>4GB RAM</p>
+<p>64GB internal storage</p>
+<p>Expandable via microSD, up to 128GB (Uses SIM 2)</p>
+<p>16MP PDAF rear camera w/ dual-tone flash</p>
+<p>8MP front-facing camera</p>
+<p>4G LTE</p>
+<p>Dual-SIM</p>
+<p>WiFi 802.11ac</p>
+<p>Bluetooth 4.1</p>
+<p>GPS, A-GPS, GLONASS</p>
+<p>Fingerprint scanner</p>
+<p>Gyroscope sensor</p>
+<p>USB OTG support</p>
+<p>3,000mAh Li-Ion battery</p>
+<p>Fast charging support</p>
+<p>Android 7.0 Nougat</p>
+<p>154 x 75.8 x 7.85 mm</p>
+<p>169 g</p>
+<p>Price: Php18,590</p>
+<h3 id="OPPO-F3"><a href="#OPPO-F3" class="headerlink" title="OPPO F3"></a><a href="http://www.yugatech.com/mobile/oppo-f3-review/#0rjRZbUDeAZoF8UM.97" target="_blank" rel="external">OPPO F3</a></h3><p>Another phone for those who value high-quality selfies, here we have the more affordable offering to the OPPO F3 Plus. Like the V5 Plus mentioned earlier, it sports dual front cameras with wide and narrow fields of view.</p>
+<p><img src="http://img0.tuicool.com/RBviaim.jpg!web" alt=""></p>
+<p>OPPO F3 specs:</p>
+<p>5.5-inch In-Cell IPS LCD display @ 1920 x 1080 pixels, 401ppi</p>
+<p>Corning Gorilla Glass 5</p>
+<p>MediaTek MT6750T 1.5GHz octa-core CPU</p>
+<p>Mali T860 GPU</p>
+<p>4GB RAM</p>
+<p>64GB internal storage</p>
+<p>Expandable via microSD, up to 128GB</p>
+<p>13MP PDAF rear camera w/ LED flash</p>
+<p>16MP + 8MP 120-degree wide-angle front cameras</p>
+<p>Dual SIM (Nano + Nano)</p>
+<p>4G LTE</p>
+<p>WiFi 802.11a/b/g/n</p>
+<p>Bluetooth 4.1</p>
+<p>GPS w/ a-GPS</p>
+<p>Fingerprint scanner</p>
+<p>Android 6.0 Marshmallow with ColorOS 3.1</p>
+<p>3200mAh non-removable battery</p>
+<p>75.2 x 153.3 x 7.3 mm</p>
+<p>153 g</p>
+<p>Price: Php16,990</p>
+<h3 id="Xiaomi-Mi-Max-2"><a href="#Xiaomi-Mi-Max-2" class="headerlink" title="Xiaomi Mi Max 2"></a><a href="http://www.yugatech.com/mobile/xiaomi-mi-max-2-first-impressions/#l5u7KzvxtHXXjRp4.97" target="_blank" rel="external">Xiaomi Mi Max 2</a></h3><p>With a 6.44-inch display, this is definitely the biggest phone on this list. Great battery life, solid specs, decent cameras, and Android 7.0 Nougat support are what this over-sized smartphone has going for it.</p>
+<p><img src="http://img2.tuicool.com/MRN7fmj.jpg!web" alt=""></p>
+<p>Xiaomi Mi Max 2 specs:</p>
+<p>6.44-inch IPS LCD @ 1920 x 1080 pixels, 342ppi</p>
+<p>Qualcomm Snapdragon 625 octa-core CPU</p>
+<p>Adreno 506 GPU</p>
+<p>4GB RAM</p>
+<p>64GB/128GB internal storage</p>
+<p>Expandable via microSD, up to 128GB (Uses SIM 2)</p>
+<p>12MP Sony IMX386 PDAF rear camera w/ LED flash</p>
+<p>5MP wide-angle front camera</p>
+<p>Dual SIM (Nano)</p>
+<p>LTE-A</p>
+<p>Wi-Fi 802.11ac, dual-band</p>
+<p>Bluetooth 4.2</p>
+<p>GPS w/ A-GPS, GLONASS</p>
+<p>NFC</p>
+<p>IR blaster</p>
+<p>Fingerprint scanner</p>
+<p>Gyroscope</p>
+<p>Stereo speakers</p>
+<p>5300mAh non-removable battery w/ Quick Charge 3.0</p>
+<p>Android 7.0 Nougat w/ MIUI 8</p>
+<p>Price: Php15,500 (Widget City)</p>
+<h3 id="Sony-Xperia-XA1"><a href="#Sony-Xperia-XA1" class="headerlink" title="Sony Xperia XA1"></a><a href="http://www.yugatech.com/mobile/sony-xperia-xa1-first-impressions/#z1IXWx5eYlA5C7D5.97" target="_blank" rel="external">Sony Xperia XA1</a></h3><p>One of Sony’s newest mid-range phones is the XA1 Ultra. It has the classic Xperia look: Flat sides and sharp corners and features a “borderless edge-to-edge” HD display. The phone also boasts Image Enhance Technology and packs a great punch in its camera.</p>
+<p><img src="http://img1.tuicool.com/INZN3uR.jpg!web" alt=""></p>
+<p>Sony Xperia XA1 specs:</p>
+<p>5-inch HD display w/ Image Enhance Technology</p>
+<p>2.3GHz MediaTek Helio P20 octa-core CPU</p>
+<p>Mali T880 MP2 900MHz GPU</p>
+<p>3GB RAM</p>
+<p>32GB storage</p>
+<p>microSD up to 256GB</p>
+<p>23MP 1/2.3-inch Exmor RS rear camera, Hybrid AF, SteadyShot, LED flash</p>
+<p>8MP 1/4-inch Exmor R AF front camera, SteadyShot</p>
+<p>4G LTE</p>
+<p>WiFi</p>
+<p>Bluetooth</p>
+<p>GPS, A-GPS</p>
+<p>Android 7.0 Nougat</p>
+<p>2,300mAh battery w/ Qnovo Adaptive Charging</p>
+<p>145 x 67 x 8mm</p>
+<p>143 g</p>
+<p>Price: Php15,500 (Widget City)</p>
+<h3 id="Huawei-GR5-2017"><a href="#Huawei-GR5-2017" class="headerlink" title="Huawei GR5 (2017)"></a><a href="http://www.yugatech.com/mobile/video-huawei-gr5-2017-review/#PGz2DVJwD9URISyl.97" target="_blank" rel="external">Huawei GR5 (2017)</a></h3><p>A refresh of last year’s model, the current model packs an improved design and hardware configuration. It has taken a page from the P9 series with its dual-camera setup.</p>
+<p><img src="http://img0.tuicool.com/FbYB3mN.jpg!web" alt=""></p>
+<p>Huawei GR5 specs:</p>
+<p>5.5-inch IPS LCD display @ 1920 x 1080 pixels</p>
+<p>HiSilicon Kirin 655 2.1GHz octa-core processor</p>
+<p>4 x ARM Cortex A53 @ 2.1GHz</p>
+<p>4 x ARM Cortex A53 @ 1.7 GHz</p>
+<p>Mali-T830 MP2</p>
+<p>3GB RAM</p>
+<p>32GB internal storage</p>
+<p>Up to 128GB via microSD</p>
+<p>Dual rear cameras (12MP/2MP)</p>
+<p>8MP wide-angle front camera</p>
+<p>Wi-Fi 802.11b/g/n</p>
+<p>Bluetooth 4.1</p>
+<p>4G LTE</p>
+<p>Fingerprint scanner</p>
+<p>Android 6.0 Marshmallow with EMUI 4.1</p>
+<p>3,340mAh Li-Ion battery</p>
+<p>Price: Php13,990</p>
+<p>With that, it’s a wrap. Did we miss anything? Please do let us know in the comments down below.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/fMzqMnQ" target="_blank" rel="external">http://www.yugatech.com/mobile/top-smartphones-under-php20k-mid-2017/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Real-World-React&quot;&gt;&lt;a href=&quot;#Real-World-React&quot; class=&quot;headerlink&quot; title=&quot;Real World React&quot;&gt;&lt;/a&gt;Real World React&lt;/h2&gt;&lt;p&gt;Real World Rea
+      &lt;p&gt;Over the last two days, we’ve shared our lists of the top smartphones of mid-2017 with price ranges of above Php30k and above Php20k. Tod
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>&#39;Baby Driver&#39; is an ode to iPod nostalgia</title>
+    <link href="https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/"/>
+    <id>https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.957Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg" alt=""></p>
+<p>Tristar Pictures</p>
+<p>It took a while to get going, but it’s safe to say we’re living in a golden age of digital music. Terrible compression is a thing of the past, and the rise of streaming services like Spotify and Apple Music give us instant access to almost anything we’d want to hear. But while we’ve gained so much, there’s also a sense that we’ve lost something. Sharing a playlist isn’t the same as burning a CD for your sweetheart, or going even further back, manually dubbing a mixtape. As our music has become less physical, so has our attachment to it.</p>
+<p>That’s something that struck me while watching<em>Baby Driver</em>, director Edgar Wright’s new mashup of car chases, heist films and excellent tunes. Its lead character, Baby (Ansel Elgort), is perpetually connected to a pair of headphones, experiencing life as if it’s a never-ending music video. But his earbuds aren’t attached to a smartphone; they’re plugged into one of his many iPods. He has a box full of them, each with their own colors and ornamentations. Basically, a different iPod for every mood.</p>
+<p>While they’re filled with digital files, the iPods also serve as a physical connection to all of his music. The film opens with Baby in a getaway car, cool as a cucumber while wearing white earbuds, launching into a jam out session with_Bellbottoms_by The Jon Spencer Blues Explosion. That song also serves as the backdrop for the film’s electric opening chase, where you can almost feel the iPod’s tiny mechanical hard drive (remember those?) racing alongside him.</p>
+<p>As someone who<a href="https://www.engadget.com/2015/09/17/gone-too-zune/" target="_blank" rel="external">reminisces fondly about my Zune HD</a>,<a href="https://en.wikipedia.org/wiki/Rio_Karma" target="_blank" rel="external">Rio Karma</a>,<a href="https://www.cnet.com/products/toshiba-gigabeat-s/review/" target="_blank" rel="external">Toshiba Gigabeat</a>and countless other players of varying quality, Baby’s connection to his iPods struck a chord. With older media players, there was a sense of physicality, before cloud syncing made it a cinch to keep track of all your music. If you somehow managed to hit a double whammy of bad luck and lost both your player and your computer’s hard drive, you were out of luck.</p>
+<p>These days, you can hop between phones within minutes, porting over your entire library without a sweat with iTunes, Google Play and apps like Spotify. You don’t even have to wait for your music to download; you can just stream it all from the server heavens.</p>
+<p>Baby’s iPod addiction seems fitting today, at a time when we’re all plugged into headphones most of the day. Just look up from your phone once in a while and you’ll see it: a crowd of people, each in their own world with their own private soundtracks. In<em>Baby Driver</em>, that soundtrack underscores everything, be it a chase, a shootout or even a stroll for coffee. The film also takes pains to choreograph the tunes with what’s happening on screen (there’s a shootout set to_Tequila_that’s pitch perfect). Baby also uses music as a form of therapy, due to a tinnitus condition that resulted from a childhood car accident. It’s a way to drown out the “hum in the drum,” as Kevin Spacey’s criminal mastermind, Doc, tells us.</p>
+<p><img src="https://o.aolcdn.com/images/dims?resize=980%2C640&amp;quality=100&amp;image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F898e51608e44a0022256740610336ea2%2F205434882%2FBaby%2BDriver%2B2.jpg&amp;client=cbc79c14efcebee57402&amp;signature=dc771c585960952fdbbeeb4c05d41fa744c718ed" alt=""></p>
+<p>Tristar Pictures</p>
+<p>Since the film is practically an action musical, it’s no surprise that Baby’s relationship with everyone is centered around tunes. He strikes up a conversation with his sweetheart, Debora (Lily James), by comparing the songs that feature both of their names. He forms a kinship with Jon Hamm’s bank robber as they share earbuds, reminiscing about their go-to tracks during a getaway. (Baby’s is_Queen’s_Brighton Rock, which should come as no surprise to fans of Edgar Wright’s<em>Shaun of the Dead</em>.) Meanwhile, Jamie Foxx’s Bats, who’s particularly unstable, hates the idea of listening to music during robberies. That’s a major red flag that tells us not to trust him.</p>
+<p>Baby’s connection to music extends beyond Apple’s devices: his apartment practically has wall-to-wall records. He also spends his time mixing sound clips with a unique rig,<a href="http://www.gq.com/story/kid-koala-baby-driver" target="_blank" rel="external">developed by Kid Koala</a>, which consists of a magnetic card reader, a distorted Buddhist meditation box and a pen controlled device. There’s even an E-mu Emulator II, for good measure. In true, anachronistic music nerd fashion, Baby also records all of his mixes to cassette tape.</p>
+<p>Since he’s a collector of old-school musical gear (although not many CDs, from what I could gather), Baby’s iPod obsession seems almost peculiar. But I suppose he’s just like plenty of other hip music nerds. We live in a world where the digital and analog still coexist – record sales, paradoxically, are actually on the rise, along with streaming music sales. Baby just latches onto the things he can actually touch and feel.</p>
+<p>And, after all, who wants to deal with their favorite track buffering when you’re in the middle of a life or death car chase?</p>
+<p>Source: <a href="https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/" target="_blank" rel="external">https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/</a>  </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Tristar 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AutoWiring Spring Beans Into Classes Not Managed by Spring</title>
+    <link href="https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/"/>
+    <id>https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.954Z</updated>
+    
+    <content type="html"><![CDATA[<p>In my previous article<a href="https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs" target="_blank" rel="external">JPA Auditing: Persisting Audit Logs Automatically using EntityListeners</a>, I discussed how we can use Spring Data JPA automate auditing and automatically create audit logs or history records and update CreatedBy, CreatedDate, LastModifiedBy, LastModifiedDate properties.</p>
+<p>So in order to save history records for our File entity, we were trying to autowire EntityManager inside our FileEntityListener class before we learned that we could not do that.</p>
+<p>We cannot inject any Spring-managed bean in the EntityListener because EntityListeners are instantiated by JPA before Spring injects anything into it. EntityListeners are not managed by Spring so Spring cannot inject any Spring-managed bean, e.g. EntityManager in the EntityListeners.</p>
+<p>And this is not just the case with EntityListeners, you cannot autowire any Spring-managed bean into another class (i.e. utility classes) not managed by Spring.</p>
+<p>Because this is a very common problem that can also arise with other classes, I tried to come out with a common solution that will not just solve this problem but will also help us get Spring-managed beans in other places.</p>
+<p><img src="http://img1.tuicool.com/zQV3IzI.png!web" alt=""></p>
+<p>So, have created a utility class to fetch any bean according to our requirements.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">@Service</div><div class="line">public</div><div class="line">class</div><div class="line">BeanUtil</div><div class="line">implements</div><div class="line">ApplicationContextAware</div><div class="line">&#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">static</div><div class="line"> ApplicationContext context;</div><div class="line"></div><div class="line">    </div><div class="line">@Override</div><div class="line">public</div><div class="line">void</div><div class="line">setApplicationContext</div><div class="line">(ApplicationContext applicationContext)</div><div class="line">throws</div><div class="line"> BeansException </div><div class="line">&#123;</div><div class="line">        context = applicationContext;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    </div><div class="line">public</div><div class="line">static</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line">T </div><div class="line">getBean</div><div class="line">(Class</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line"> beanClass)</div><div class="line">&#123;</div><div class="line">        </div><div class="line">return</div><div class="line"> context.getBean(beanClass);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Now, to get any bean in a class, we will just need to call BeanUtil.getBean(YourClass.class) and pass the class type to it. Then, we will get the bean.</p>
+<p>For example, in our case, we were trying to get the EntityManager bean inside FileEntityListener. We can simply do that by writing BeanUtil.getBean(EntityManager.class).</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">public</div><div class="line">class</div><div class="line"> FileEntityListener &#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">void</div><div class="line">perform</div><div class="line">(File target, Action action)</div><div class="line">&#123;</div><div class="line">        EntityManager entityManager = BeanUtil.getBean(EntityManager.</div><div class="line">class</div><div class="line">);</div><div class="line">        entityManager.persist(</div><div class="line">new</div><div class="line"> FileHistory(target, action));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>You can find the complete code in this<a href="https://github.com/njnareshjoshi/articles/tree/master/spring-data-jpa-auditing" target="_blank" rel="external">GitHub Repository, </a>and please feel free to provide your valuable feedback.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/zINby2B" target="_blank" rel="external">https://dzone.com/articles/autowiring-spring-beans-into-classes-not-managed-by-spring</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In my previous article&lt;a href=&quot;https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs&quot; target=&quot;_blank&quot; rel=&quot;external
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>After Nonstop Games closed, its employees founded Mighty Bear Games; today it raised US$775K</title>
+    <link href="https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/"/>
+    <id>https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.951Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Mighty-Bear-Games-will-focus-on-developing-mobile-app-games"><a href="#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games" class="headerlink" title="Mighty Bear Games will focus on developing mobile app games"></a>Mighty Bear Games will focus on developing mobile app games</h2><p><img src="http://img0.tuicool.com/y2uMrqj.png!web" alt=""></p>
+<p>Nonstop Games was a Singapore-based mobile games studio run by Finnish developers. Their hit game was strategy title Heroes of Honor.</p>
+<p>In 2014, it was acquired by Candy Crush maker King forabout US$16 million. Two years later, Nonstop Games shuttered.</p>
+<p>But the journey for its employees did not end there. They pressed on, scouring the game development landscape for new compatriots to join their next adventure. Along the way, they recruited talents from renowned gaming studios such as Ubisoft, EA and LucasArts.</p>
+<p>With renewed vigour in their hearts and a hardy band of developers to boot, the Nonstop Games alumni roared back with a spanking new enterprise.</p>
+<p>They called it Mighty Bear Games.</p>
+<p>And today, Mighty Bear raised US$775,000 in a round led by Global Founders Capital, the venture capital arm of Rocket Internet.</p>
+<p>Mighty Bear will use the newly-raised financing to develop its new mobile MMORPG (Massive Multiplayer Online Roleplaying Game). Details of the game have not been disclosed.</p>
+<p>It is interesting to note that despite receiving offers from the US and Europe — two markets with long history of producing top rated games — the Nonstop Games alumni chose to, once again, base their gaming studio in Singapore.</p>
+<p>“One of the interesting developments we’ve seen is that Singapore-based studios are starting to gain traction with their own IP,” says co-founder and CEO Simon Davis, in an interview with<strong>e27</strong>.</p>
+<p>“We see a trend developing where game development studios in Singapore are now being founded by guys like us with 5, or even 10+ years experience working in big AAA studios,” he adds. “This wouldn’t have been possible if the government hadn’t made such an effort bringing in top multi-national studios over the past few years — many of us on the team, including myself, directly benefited from that.”</p>
+<h2 id="Keeping-an-eye-on-gaming-trends"><a href="#Keeping-an-eye-on-gaming-trends" class="headerlink" title="Keeping an eye on gaming trends"></a><strong>Keeping an eye on gaming trends</strong></h2><p>While Davis says Mighty Bear is platform-agnostic, it will still be focussing on making mobile games. But he does not rule out building games for consoles or desktops in the future.</p>
+<p>The studio will also target the multiplayer gaming market.</p>
+<p>Also Read:<a href="https://e27.co/curious-south-korea-gaming-culture-closer-look-popularity-esports-reveals-trends-20170525/" target="_blank" rel="external">Curious about the South Korea gaming culture? A closer look at the popularity of esports reveals some trends</a></p>
+<p>“We love playing multiplayer games, and we feel there’s a huge gap in the market for online multiplayer games which are not completely skewed toward your typical hardcore gamer,” says Davis.</p>
+<p>“This is an area that’s really interesting, because the challenge is to create games which have a competitive element, but are still accessible to people who may not consider themselves hardcore gamers.”</p>
+<p>The Mighty Bear team may eat and breathe games, but they are not just button-mashing geeks; as a creative force, they also take inspiration from all other forms of art (yes, gaming is an art too).</p>
+<p>“I studied music so that makes approaching the creative process a bit different. We also read a lot which is a great way to get new ideas and approaches. Finally, we watch a lot of movies together – movie nights and ‘Popcorn Fridays’ are two Mighty Bear traditions,” says Davis.</p>
+<p>“Other than that we’re all hardcore gamers. We have a weekly ‘gaming club’ where we all sit down and compare notes on a pre-agreed game and discuss what we liked and what we didn’t about it.”</p>
+<p>So what are Davis’s all-time favourite games?</p>
+<p>“I’d say that Super Mario 64 was the first game that really blew me away, Street Fighter II was the first game that got me hooked on multiplayer. For scale and awe it might be The Legend of Zelda: The Breath of the Wild or Shadow of the Colossus. Candy Crush has the perfect puzzle combination of skill, luck, and amazing player feedback, and lately. I’ve been absolutely loving Brawl Stars on mobile.”</p>
+<p>The mobile app market is a lucrative industry, it is projected to hit US$189 billion with mobile gaming accounting for more than<a href="https://venturebeat.com/2016/11/02/mobile-app-market-to-grow-270-to-189-billion-by-2020-with-games-accounting-for-55/" target="_blank" rel="external">half the share.</a></p>
+<p>In Singapore’s backyard, China’s mobile games market collected<a href="http://www.gamesindustry.biz/articles/2016-05-03-chinese-mobile-market-is-now-the-most-valuable-in-the-world" target="_blank" rel="external">US$7 billion in revenue in 2015</a>. This figure is set to continue to grow exponentially as mobile usage increases and more games are developed.</p>
+<p>If Mighty Bear can claw out its own niche in this increasingly saturated space, the sweet dew of revenue will surely come forth easily.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/eERRZ3R" target="_blank" rel="external">http://e27.co/nonstop-games-closed-employees-founded-mighty-bear-games-today-raised-us775k-20170704/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot;&gt;&lt;a href=&quot;#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot; 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Is Freelancing Your Next UX Career Move?</title>
+    <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
+    <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.960Z</updated>
+    
+    <content type="html"><![CDATA[<p>I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time again, abandoning the 9-5 life and making my main source of employment a series of projects from different clients.</p>
+<p>Since then, I’ve had countless conversations with other UX professionals who are considering moving to freelancing as their next career step.</p>
+<p>They usually say they’re looking for freedom, more money, the ability to work on more interesting problems or learn new things – or even just the chance to work in their pyjamas regularly. Since I started consulting, I’ve expanded my focus into more strategy and product work across a wide variety of industries, and have met all kinds of interesting, smart colleagues.</p>
+<p>While I wouldn’t change a thing about my situation, I’m always cautious about encouraging others to jump into the freelance world, because it’s definitely not for everyone. Here are some things I’ve learned along the way to consider before you quit your day job.</p>
+<h3 id="Freelancing-pros-and-cons"><a href="#Freelancing-pros-and-cons" class="headerlink" title="Freelancing pros and cons"></a>Freelancing pros and cons</h3><p>Yes, it’s true that I spend most days in yoga pants, travel frequently, and work on some pretty cool projects. But consulting isn’t all sunshine and rainbows. There are many things that are great about consulting, some things that aren’t so great, and some things that just depend on the day.</p>
+<p><img src="http://img2.tuicool.com/mqEZzeZ.png!web" alt=""></p>
+<p>Freelancing pro: setting up your own home office. Photo by<a href="http://unsplash.com/photos/RcdV8rnXSeE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Vadim Sherbakov</a>on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Unsplash</a>.</p>
+<p>Schedule: One of the things I love most about consulting is being in total control of my schedule. There’s no expectation that I’m at my desk from 9 am to 5 pm. Sometimes I get in a zone and finish an entire report in one very long day and take the next morning off to let ideas percolate. Of course I have meetings and deadlines, but I can usually finagle things to work well for my clients and myself.</p>
+<p>On the flip side, juggling your schedule can be difficult. I’m quite disciplined about getting things done, but I’ve never quite figured out a way to create a consistent schedule. Sometimes I’ve had priority work on different projects collide at the same time or I’ve said yes to a few too many things and ended up working crazy hours to get everything done. Such is a consultant’s life.</p>
+<p>Money: I absolutely find that I make more money freelancing than when I worked in-house, even in leadership roles. I’m still experimenting with how I bill, but I tend to use value-based pricing for entire projects rather than charge hourly. I often ask clients to pay me 50% of the total upfront and the rest upon project completion, which can make managing money tricky, especially when you’re used to a consistent paycheck.</p>
+<p>You also have to know that you’ll never be able to collect money as though you’re billing 40 hours a week, every week. You have to account for supplies, tool costs, benefits, and set aside time for administrative tasks like sending invoices, business development, and, of course, downtime. No one gives you sick time or vacation days when you freelance.</p>
+<p>Inevitably, I’ve also run into time periods where I don’t have anything billable booked. An open schedule can be scary, so I use this time to do things like reach out to colleagues or potential clients, write articles, research new tools, try to learn something new, or catch up on administrative work. One of the benefits of this downtime is the space to learn, exploring the vast array of available online courses or just experimenting with a new method or tool.</p>
+<p>Work environment: I mostly work from home, which means I wear what I like, can pet my dog throughout the day, don’t contend with traffic, and for better or worse, have all day access to my kitchen. All great, but it also means that sometimes the only person I see in the flesh each day is my husband.</p>
+<p>I have to make an extra concerted effort to hang out with colleagues, so I’ve become more active in my local meetups and groups (shout out to<a href="https://www.meetup.com/Ladies-that-UX-Durham/" target="_blank" rel="external">Ladies that UX Durham</a>– love yall!) I also found I need to be more social during the week, even if that means going to a fitness class instead of biking solo or talking on the phone while I shop.</p>
+<h3 id="What-services-will-you-provide"><a href="#What-services-will-you-provide" class="headerlink" title="What services will you provide?"></a>What services will you provide?</h3><p>I’ve been focused on research and strategy for most of my career. I won’t rehash the “<a href="http://community.uxmastery.com/t/forced-to-become-a-unicorn-has-that-happened-to-you/783/11" target="_blank" rel="external">Should I be a unicorn</a>?” or “<a href="http://uxmastery.com/ux-designers-do-not-need-to-code/" target="_blank" rel="external">Do designers need to code</a>?” debates, but I’ll admit that when I first starting freelancing, I was worried I wasn’t going to be able to find enough work without doing visual work. Turns out, I was totally wrong. Phew!</p>
+<p><img src="http://img1.tuicool.com/BzMjMbA.jpg!web" alt=""></p>
+<p>Don’t worry, you don’t need to be a unicorn to be a freelance UXer.</p>
+<p>You absolutely don’t need to be a unicorn or try to tackle projects that aren’t your speciality. But it helps to have a broad set of experience and at least one area of deep expertise you can market and use to define your services. You can match what you’re good at and what you like to define the kind of projects you target, the projects you’re OK with taking, and what you will certainly turn down.</p>
+<p>Clearly<a href="http://uxmastery.com/build-your-ux-personal-brand/" target="_blank" rel="external">defining your services and interests</a>are important because it tells other people what to turn to you for. if I know someone has great interaction design skills and tonnes of experience with financial products, I’ll suggest them anytime I see a project like that. If someone tells me they’ll do anything that comes their way, they probably won’t come to mind for any projects I know about.</p>
+<h3 id="How-will-you-find-clients"><a href="#How-will-you-find-clients" class="headerlink" title="How will you find clients?"></a>How will you find clients?</h3><p>This is a question that I get asked time after time, and the answer is incredibly simple in concept but hard in practice:<strong>treat your clients and colleagues as you would users and provide them with a good experience working with you</strong>.</p>
+<p>More specifically, you have to do good work and other people have to be willing to talk about it. This can either mean that your clients are pleased with your work and will re-hire you or tell other potential clients, or that your peers in UX like your work and can refer you when they need help or can’t take something on. It really is true that a huge amount of success in consulting is based on networking and who you know, but that only works to your advantage if the people you know have had a good experience working with you. Right now, every single one of my clients is someone I’ve previously worked with or have gotten a good reference.</p>
+<p>This is where, once again, it helps to have a clearly defined, slightly unique set of skills or interests. There are tonnes of researchers and tonnes of designers, but if you’re known as a researcher who loves qualitative work and medical products, people will think of you whenever they come across that kind of project. Just be sure that you don’t define yourself too narrowly.</p>
+<p>You can also use job boards to identify potential projects or try recruiting agencies, but I haven’t found either as fruitful as having my name passed on from a previous contact. More on finding freelance UX work<a href="https://www.linkedin.com/pulse/single-best-way-get-freelance-ux-work-amanda-stockwell?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWB86zkUbaQbxQN8f0Iqf%2Bw%3D%3D" target="_blank" rel="external">here</a>.</p>
+<h3 id="Are-you-really-suited-for-all-that"><a href="#Are-you-really-suited-for-all-that" class="headerlink" title="Are you really suited for all that?"></a>Are you really suited for all that?</h3><p>Even if all the potential pros sound amazing to you and you have the skills and network to pull off freelancing, take a moment to reflect on your personality and soft skills.</p>
+<p>Are you detailed, organised, and willing to juggle many different client requests and manage your own schedule? Are you a natural risk-taker who can cope well with slow periods or lack of viable work? Are you assertive enough to negotiate terms for yourself? Do you mind working by yourself a lot?</p>
+<p>There’s a lot to think about before leaving the security of a full-time job. I love freelancing, but it’s worth carefully considering the pros and cons and your skillset and personality before taking the leap. Best wishes for whichever path you choose! </p>
+<p>Do you have experience or tips on freelancing for UX professionals? Leave a comment on the blog or in the forums! </p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/3qIJryE" target="_blank" rel="external">http://uxmastery.com/freelancing-ux-career/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
     
     </summary>
     
@@ -82,6 +379,78 @@
     
       &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/Qn67Bja.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Security boffins have discovered a critical vulnerability in a GnuPG cr
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Delaware Passes Bill Recognizing Stock Trading via Blockchain Technology</title>
+    <link href="https://gmagon.com/blog/2017/07/04/delaware-passes-bill-recognizing-stock-trading-via-blockchain-technology/"/>
+    <id>https://gmagon.com/blog/2017/07/04/delaware-passes-bill-recognizing-stock-trading-via-blockchain-technology/</id>
+    <published>2017-07-04T00:00:00.000Z</published>
+    <updated>2017-07-04T10:12:45.983Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/NVfMnuv.jpg!web" alt=""></p>
+<p>Delaware has passed a bill that legally recognizes the trading of stocks using blockchain technology. Although the state has sought to promote itself as a bastion for blockchain investment, the bill is extremely limited in its scope – leading many to view Delaware’s government as attempting to cash in on bitcoin’s recent boom.</p>
+<p><em><strong>Also Read: </strong></em><a href="https://news.bitcoin.com/bitwage-launches-uk-bitcoin-payroll-services/" target="_blank" rel="external"><em>Bitwage Officially Launches UK Bitcoin Payroll Services</em></a></p>
+<h2 id="Delaware’s-Blockchain-Bill-Has-Been-Championed-by-Blockchain-Start-Up-Symbiont"><a href="#Delaware’s-Blockchain-Bill-Has-Been-Championed-by-Blockchain-Start-Up-Symbiont" class="headerlink" title="Delaware’s Blockchain Bill Has Been Championed by Blockchain Start-Up Symbiont"></a>Delaware’s Blockchain Bill Has Been Championed by Blockchain Start-Up Symbiont</h2><p>Recent<a href="http://www.coindesk.com/delaware-house-passes-historic-blockchain-regulation/" target="_blank" rel="external">reports</a>have announced the near unanimous passing of a<a href="http://www.coindesk.com/delaware-blockchain-stock-bill-likely-to-advance-in-house-vote-today/" target="_blank" rel="external">bill</a>in the US state of Delaware that will explicitly recognize the right to trade stocks using a blockchain. The chair of the Delaware bar association’s corporate law section describing the vote as “keep[ing] Delaware at the forefront of corporate law and in the lead in terms of enabling the use of ‘distributed ledger shares’.” The bill is expected to be signed into law by Delaware’s governor, John Carney, before the end of July.</p>
+<p><img src="http://img0.tuicool.com/UZ7nueb.png!web" alt=""></p>
+<p>Delaware’s blockchain bill has been championed by blockchain start-up Symbiont, who has<a href="https://bitcoinmagazine.com/articles/private-capital-market-ecosystems-meet-blockchain/" target="_blank" rel="external">partnered</a>with Hong Kong-based Privatemarket.io to build an “alternative investment marketplace for closed-end funds” that is built using Symbiont’s smart-contract software. The bill was developed under close legal guidance from Marco Santori of Cooley LLP and Symbiont’s Caitlin Long – suggesting that Symbiont will be among the early high-profile blockchain businesses seeking to operate within Delaware. When announcing the partnership with Privatemarket to offer stock trading via blockchain technology, Symbiont stated “We see blockchain technology having a significant positive impact on the investment world, and it starts with the fact that the foundational document for any investment — the registration of a company — will likely soon be possible to do on a blockchain in Delaware”.</p>
+<p>The Bill Draws Attention to the Absence of Legal Consensus Pertaining to Blockchain Technology</p>
+<p>Although the passing of the bill is positive step toward permissive bitcoin regulation, many see the bill having been custom tailored to the desires of Symbiont’s legal team – with the recognition of stock trading via blockchain comprises a very limited step toward blockchain regulation – especially when contrasted with recent moves by Japan, South Korea and Australia in recognizing bitcoin as a legal form of payment.</p>
+<p><img src="http://img1.tuicool.com/2aUfUzb.jpg!web" alt=""></p>
+<p>The passing of the bill draws attention to the absence of clear legal definitions and apparatus pertaining to blockchain technology. The lack of federal legal consensus regarding basic bitcoin and blockchain technology suggests that some theproblems within the regulatory framework dealing with cannabis-based businesses could potentially emerge within bitcoin, such as overlapping or contradicting federal laws. It is entirely possible that particular states may seek to become early bastions of blockchain investment, seeking to capitalize on a nascent booming industry in the same fashion as Colorado or Seattle with regards to the cannabis industry.</p>
+<p>Although the positive ramifications from further government embracement of bitcoin and blockchain technology are undeniable, the risk of hastily rushed state legislations running afoul of future federal regulations is very real – especially given the absence of legal consensus on the definition of fundamental terminology such as ‘blockchain’. In the case of Delaware, it is entirely possible that future federal laws may not recognize stock trading via blockchain technology, creating potential future legal and logistical challenges for businesses that seek to build their operations according to the laws of a single state.</p>
+<p>Do you think that Delaware passing a bill recognizing stock trading via blockchain technology is a significant step toward cryptocurrency regulations? Share your thoughts in the comments section below!</p>
+<p>Images courtesy of shutterstock</p>
+<p>Need to calculate your bitcoin holdings? Check our <a href="http://tools.bitcoin.com/" target="_blank" rel="external">tools</a> section.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/YbYVryF" target="_blank" rel="external">https://news.bitcoin.com/delaware-passes-bill-recognizing-stock-trading-via-blockchain-technology/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/NVfMnuv.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Delaware has passed a bill that legally recognizes the trading of stock
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Real World React apps and their open source codebases for developers to learn from</title>
+    <link href="https://gmagon.com/blog/2017/07/04/real-world-react-apps-and-their-open-source-codebases-for-developers-to-learn-from/"/>
+    <id>https://gmagon.com/blog/2017/07/04/real-world-react-apps-and-their-open-source-codebases-for-developers-to-learn-from/</id>
+    <published>2017-07-04T00:00:00.000Z</published>
+    <updated>2017-07-04T10:12:45.986Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Real-World-React"><a href="#Real-World-React" class="headerlink" title="Real World React"></a>Real World React</h2><p>Real World React apps and their open source codebases for developers to learn from</p>
+<p>Learn from React apps written by experienced developers.</p>
+<p>You’ll find the source code for the Real World React apps in the<a href="https://github.com/jeromedalbert/real-world-react/blob/master/apps" target="_blank" rel="external"><code>apps/</code></a>subdirectory.</p>
+<p>Thank you to every developer who has worked on a project this repo links to, your work is helping developers learn React.</p>
+<h2 id="How-to-install-on-your-computer"><a href="#How-to-install-on-your-computer" class="headerlink" title="How to install on your computer"></a>How to install on your computer</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># Clone this git repo:</div><div class="line">git</div><div class="line"> clone git</div><div class="line">@github</div><div class="line">.com:jeromedalbert/real-world-react.git</div><div class="line"></div><div class="line">cd real-world-react/</div><div class="line"></div><div class="line"></div><div class="line"># The apps are linked to as git submodules.</div><div class="line"># This will take some time...</div><div class="line"></div><div class="line">git submodule update --init</div></pre></td></tr></table></figure>
+<h2 id="Information-for-Contributors"><a href="#Information-for-Contributors" class="headerlink" title="Information for Contributors"></a>Information for Contributors</h2><h4 id="Is-your-app-the-right-fit"><a href="#Is-your-app-the-right-fit" class="headerlink" title="Is your app the right fit?"></a>Is your app the right fit?</h4><ul>
+<li>A real world app should ideally be publicly accessible and used by real people in a production environment. As such, boilerplate, starter kits, libraries, and small demo/example projects are not really a good fit.</li>
+<li>Ideally most of the code should be frontend-oriented, in order to focus on React. Small backends may be OK, but should constitute the minority of the codebase.</li>
+</ul>
+<p>That being said, don’t hesitate to submit a pull request if you meet the criteria!</p>
+<h4 id="How-to-add-a-Real-World-App"><a href="#How-to-add-a-Real-World-App" class="headerlink" title="How to add a Real World App"></a>How to add a Real World App</h4><p>Given a GitHub repo for an app<code>githubuser/foo</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># Inside the project root:</div><div class="line">git</div><div class="line"> submodule add -b master git</div><div class="line">@github</div><div class="line">.com:githubuser/foo.git apps/foo</div></pre></td></tr></table></figure>
+<h4 id="Updating-the-apps-submodules-to-latest"><a href="#Updating-the-apps-submodules-to-latest" class="headerlink" title="Updating the apps submodules to latest"></a>Updating the apps submodules to latest</h4><p>The apps in<code>apps/</code>are git submodules. Git submodules are locked to a revision and don’t stay in sync with the latest revision.</p>
+<p>To update the revisions, run:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># This will take some time:</div><div class="line">git</div><div class="line"> submodule foreach git pull origin master</div></pre></td></tr></table></figure>
+<h2 id="Contributors"><a href="#Contributors" class="headerlink" title="Contributors"></a>Contributors</h2><ul>
+<li>Jerome Dalbert<br><a href="http://jeromedalbert.com/" target="_blank" rel="external">http://jeromedalbert.com</a></li>
+<li>Contributions are welcome, fork the GitHub repo, make your changes, then submit your pull request! Reach out if you’d like some help.</li>
+</ul>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/3QjiYbZ" target="_blank" rel="external">https://github.com/jeromedalbert/real-world-react</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Real-World-React&quot;&gt;&lt;a href=&quot;#Real-World-React&quot; class=&quot;headerlink&quot; title=&quot;Real World React&quot;&gt;&lt;/a&gt;Real World React&lt;/h2&gt;&lt;p&gt;Real World Rea
     
     </summary>
     
@@ -223,33 +592,44 @@
   </entry>
   
   <entry>
-    <title>Delaware Passes Bill Recognizing Stock Trading via Blockchain Technology</title>
-    <link href="https://gmagon.com/blog/2017/07/04/delaware-passes-bill-recognizing-stock-trading-via-blockchain-technology/"/>
-    <id>https://gmagon.com/blog/2017/07/04/delaware-passes-bill-recognizing-stock-trading-via-blockchain-technology/</id>
-    <published>2017-07-04T00:00:00.000Z</published>
-    <updated>2017-07-04T10:12:45.983Z</updated>
+    <title>Angular 4 News Roundup June</title>
+    <link href="https://gmagon.com/blog/2017/07/03/angular-4-news-roundup-june/"/>
+    <id>https://gmagon.com/blog/2017/07/03/angular-4-news-roundup-june/</id>
+    <published>2017-07-03T00:00:00.000Z</published>
+    <updated>2017-07-03T10:07:06.808Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://img1.tuicool.com/NVfMnuv.jpg!web" alt=""></p>
-<p>Delaware has passed a bill that legally recognizes the trading of stocks using blockchain technology. Although the state has sought to promote itself as a bastion for blockchain investment, the bill is extremely limited in its scope – leading many to view Delaware’s government as attempting to cash in on bitcoin’s recent boom.</p>
-<p><em><strong>Also Read: </strong></em><a href="https://news.bitcoin.com/bitwage-launches-uk-bitcoin-payroll-services/" target="_blank" rel="external"><em>Bitwage Officially Launches UK Bitcoin Payroll Services</em></a></p>
-<h2 id="Delaware’s-Blockchain-Bill-Has-Been-Championed-by-Blockchain-Start-Up-Symbiont"><a href="#Delaware’s-Blockchain-Bill-Has-Been-Championed-by-Blockchain-Start-Up-Symbiont" class="headerlink" title="Delaware’s Blockchain Bill Has Been Championed by Blockchain Start-Up Symbiont"></a>Delaware’s Blockchain Bill Has Been Championed by Blockchain Start-Up Symbiont</h2><p>Recent<a href="http://www.coindesk.com/delaware-house-passes-historic-blockchain-regulation/" target="_blank" rel="external">reports</a>have announced the near unanimous passing of a<a href="http://www.coindesk.com/delaware-blockchain-stock-bill-likely-to-advance-in-house-vote-today/" target="_blank" rel="external">bill</a>in the US state of Delaware that will explicitly recognize the right to trade stocks using a blockchain. The chair of the Delaware bar association’s corporate law section describing the vote as “keep[ing] Delaware at the forefront of corporate law and in the lead in terms of enabling the use of ‘distributed ledger shares’.” The bill is expected to be signed into law by Delaware’s governor, John Carney, before the end of July.</p>
-<p><img src="http://img0.tuicool.com/UZ7nueb.png!web" alt=""></p>
-<p>Delaware’s blockchain bill has been championed by blockchain start-up Symbiont, who has<a href="https://bitcoinmagazine.com/articles/private-capital-market-ecosystems-meet-blockchain/" target="_blank" rel="external">partnered</a>with Hong Kong-based Privatemarket.io to build an “alternative investment marketplace for closed-end funds” that is built using Symbiont’s smart-contract software. The bill was developed under close legal guidance from Marco Santori of Cooley LLP and Symbiont’s Caitlin Long – suggesting that Symbiont will be among the early high-profile blockchain businesses seeking to operate within Delaware. When announcing the partnership with Privatemarket to offer stock trading via blockchain technology, Symbiont stated “We see blockchain technology having a significant positive impact on the investment world, and it starts with the fact that the foundational document for any investment — the registration of a company — will likely soon be possible to do on a blockchain in Delaware”.</p>
-<p>The Bill Draws Attention to the Absence of Legal Consensus Pertaining to Blockchain Technology</p>
-<p>Although the passing of the bill is positive step toward permissive bitcoin regulation, many see the bill having been custom tailored to the desires of Symbiont’s legal team – with the recognition of stock trading via blockchain comprises a very limited step toward blockchain regulation – especially when contrasted with recent moves by Japan, South Korea and Australia in recognizing bitcoin as a legal form of payment.</p>
-<p><img src="http://img1.tuicool.com/2aUfUzb.jpg!web" alt=""></p>
-<p>The passing of the bill draws attention to the absence of clear legal definitions and apparatus pertaining to blockchain technology. The lack of federal legal consensus regarding basic bitcoin and blockchain technology suggests that some theproblems within the regulatory framework dealing with cannabis-based businesses could potentially emerge within bitcoin, such as overlapping or contradicting federal laws. It is entirely possible that particular states may seek to become early bastions of blockchain investment, seeking to capitalize on a nascent booming industry in the same fashion as Colorado or Seattle with regards to the cannabis industry.</p>
-<p>Although the positive ramifications from further government embracement of bitcoin and blockchain technology are undeniable, the risk of hastily rushed state legislations running afoul of future federal regulations is very real – especially given the absence of legal consensus on the definition of fundamental terminology such as ‘blockchain’. In the case of Delaware, it is entirely possible that future federal laws may not recognize stock trading via blockchain technology, creating potential future legal and logistical challenges for businesses that seek to build their operations according to the laws of a single state.</p>
-<p>Do you think that Delaware passing a bill recognizing stock trading via blockchain technology is a significant step toward cryptocurrency regulations? Share your thoughts in the comments section below!</p>
-<p>Images courtesy of shutterstock</p>
-<p>Need to calculate your bitcoin holdings? Check our <a href="http://tools.bitcoin.com/" target="_blank" rel="external">tools</a> section.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/YbYVryF" target="_blank" rel="external">https://news.bitcoin.com/delaware-passes-bill-recognizing-stock-trading-via-blockchain-technology/</a></p>
+    <content type="html"><![CDATA[<p>WRITTEN BY<a href="https://twitter.com/jsdiaries" target="_blank" rel="external">GARETH DUNNE @JSDIARIES</a></p>
+<p>ng-June</p>
+<p>June has come and gone and it has brought with it a steady month of Angular 4 news. There is a chance that you could have missed a change to key features or components so I’ve listed some of the main snippets of news that may have passed you by.</p>
+<p>Although there isn’t much reading material specifically for<strong>Angular 4</strong>I recommend having a look at<strong>ng-book: The Complete Guide to Angular 4</strong><a href="http://geni.us/LCTQUAa" target="_blank" rel="external">here</a>.</p>
+<p>Its updated with Angular 4 practices and is one of the few books doing so.</p>
+<p>Angular 4.2</p>
+<p>The most notable piece of Angular news this month is the release of<strong>Angular 4.2</strong>. This is a small update and will not break your current Angular projects via Semantic Versioning which I covered in a previous posthere.</p>
+<p>All changes pertaining to the release are mentioned on the official blog here. So what are main highlights we should take our of this update?</p>
+<p>Well, the changes to allow the creation of reusable animations using the<code>animation()</code>function enables our animations to become more modular.</p>
+<p>I’ve listed a very similar example as the docs here for reference.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">var fadeAnimation = animation([</div><div class="line">  style(&#123; </div><div class="line">opacity:</div><div class="line">&apos;&#123;&#123; start &#125;&#125;&apos;</div><div class="line"> &#125;),</div><div class="line">  animate(</div><div class="line">&apos;&#123;&#123; time &#125;&#125;&apos;</div><div class="line">,</div><div class="line">    style(&#123; </div><div class="line">opacity:</div><div class="line">&apos;&#123;&#123; end &#125;&#125;&apos;</div><div class="line">))</div><div class="line">], &#123; </div><div class="line">params:</div><div class="line"> &#123; </div><div class="line">time:</div><div class="line">&apos;1000ms&apos;</div><div class="line">, </div><div class="line">start:</div><div class="line">0</div><div class="line">, </div><div class="line">end:</div><div class="line">1</div><div class="line"> &#125;&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">useAnimation</div><div class="line">(fadeAnimation, &#123;</div><div class="line">  </div><div class="line">params</div><div class="line">: &#123;</div><div class="line">    </div><div class="line">time</div><div class="line">: </div><div class="line">&apos;2s&apos;</div><div class="line">,</div><div class="line">    </div><div class="line">start</div><div class="line">: </div><div class="line">1</div><div class="line">,</div><div class="line">    </div><div class="line">end</div><div class="line">: </div><div class="line">0</div><div class="line"></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>As you can see we assign our animations to a variable, specify its animation properties and then invoke it using the<code>useAnimation</code>function</p>
+<p>Typescript 2.4</p>
+<p>Typescript has also updated to a new release, bringing with it dynamic import expressions as well as Safer callback parameter checking. There could be few posts written about these changes so I’ll let the official blog post do the talking<a href="https://blogs.msdn.microsoft.com/typescript/2017/06/12/announcing-typescript-2-4-rc/" target="_blank" rel="external">here</a>.</p>
+<p>I’ll just note that the dynamic imports feature in particular is a fantastic addition in this new release. It allows an even deeper layer of lazy loading and enables Webpack to split your bundles even further to only load a particular asset required in a function.</p>
+<p>Angular IO</p>
+<p><img src="http://img0.tuicool.com/Ar6RRbB.png!web" alt=""></p>
+<p>angularIO</p>
+<p>In order to coincide with Angular 4 features and benefits, the official<a href="https://angular.io/" target="_blank" rel="external">angular.io</a>website has now been converted to a full scale web application. It is now much faster and has increased its performance significantly.</p>
+<p>There is also a satisfying element of practice what you preach and the Angular team have clearly rebuilt the website from the ground up with performance in mind.</p>
+<p>It may seems like a minor detail but searching through the documentation has now become a better user experience which I’m sure is appreciated throughout the Angular community especially for those browsing on mobile devices.</p>
+<p>These were the main notable Angular events and features this month. The framework is progressively evolving every month and if theres enough newsworthy item in July I’ll be sure to do a similar roundup.</p>
+<p>Still looking to upgrade your AngularJS app to Angular 2? Check out this tutorial by Toptal<a href="https://www.toptal.com/angular-js/angular-2-upgrading-from-1-5" target="_blank" rel="external">here</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/JNZ3qeb" target="_blank" rel="external">http://jsdiaries.com/2017/07/03/angular-4-news-roundup-june/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/NVfMnuv.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Delaware has passed a bill that legally recognizes the trading of stock
+      &lt;p&gt;WRITTEN BY&lt;a href=&quot;https://twitter.com/jsdiaries&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GARETH DUNNE @JSDIARIES&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ng-June&lt;/p&gt;
+&lt;p&gt;June h
     
     </summary>
     
@@ -392,35 +772,41 @@
   </entry>
   
   <entry>
-    <title>Bitwage Officially Launches UK Bitcoin Payroll Services</title>
-    <link href="https://gmagon.com/blog/2017/07/03/bitwage-officially-launches-uk-bitcoin-payroll-services/"/>
-    <id>https://gmagon.com/blog/2017/07/03/bitwage-officially-launches-uk-bitcoin-payroll-services/</id>
+    <title>Beware the cutting edge of web design</title>
+    <link href="https://gmagon.com/blog/2017/07/03/beware-the-cutting-edge-of-web-design/"/>
+    <id>https://gmagon.com/blog/2017/07/03/beware-the-cutting-edge-of-web-design/</id>
     <published>2017-07-03T00:00:00.000Z</published>
-    <updated>2017-07-03T10:07:06.826Z</updated>
+    <updated>2017-07-03T10:07:06.815Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/iYzuUvb.jpg!web" alt=""></p>
-<p>After expanding services in Europe earlier this year, bitcoin payroll and wage payment service provider Bitwage announced its official launch in the UK on Monday.</p>
-<p><em><strong>Also read:</strong></em><a href="https://news.bitcoin.com/bitwage-launches-new-functionality-european-customers/" target="_blank" rel="external"><em>Bitwage Launches New Functionality for European Customers</em></a></p>
-<h2 id="Bitwage’s-Official-Launch-in-the-UK"><a href="#Bitwage’s-Official-Launch-in-the-UK" class="headerlink" title="Bitwage’s Official Launch in the UK"></a>Bitwage’s Official Launch in the UK</h2><p><a href="https://www.bitwage.com/" target="_blank" rel="external">Bitwage</a><img src="http://img2.tuicool.com/BJneqen.png!web" alt="">offers solutions for remote workers to receive wages in a variety of currencies including bitcoin. Using the service, workers can get paid in bitcoin without having to ask each employer to pay in the cryptocurrency or sign up with Bitwage. They simply give the employers Bitwage’s bank account details to receive payments in.</p>
-<p>Bitwage claims to have over 13,000 registered workers and have processed over $21.6 million in international wages. Users can invoice employers or clients in the United States (US), United Kingdom (UK), and the European Union (EU). Wages received can be split into any ratio between different bank accounts and bitcoin wallets.</p>
-<p>On Monday, the company announced the official launch of their services in the UK, stating:</p>
-<p>We are now able to offer workers anywhere in the world the ability to receive wages from companies in the UK through local banking partners. This means that our workers can receive wages through Faster Payments, Bacs, Chaps or Swift into local UK GBP bank accounts.</p>
-<h2 id="Bacs-Faster-Payments-and-Chaps-Now-Supported"><a href="#Bacs-Faster-Payments-and-Chaps-Now-Supported" class="headerlink" title="Bacs, Faster Payments, and Chaps Now Supported"></a>Bacs, Faster Payments, and Chaps Now Supported</h2><p>Bitwage founder and president Jonathan Chester told Bitcoin.com that the company has been beta testing this service. He explained that although the ability to receive wages in British pounds (GBP) existed previously, it was not done locally and was never publicly launched. Without local UK partners, the service was not cost-effective. Chester detailed:</p>
-<p>Before this, we had a banking partner with GBP correspondent accounts in Ireland that could receive Chaps, but not Faster Payments or Bacs. This was a costly solution for potential clients in the UK, so there was very little usage. We have now been working with these same customers during the beta testing of our new local UK services.</p>
-<p><img src="http://img1.tuicool.com/BbIBrau.png!web" alt="">Chaps is the UK’s same-day high-value payment system, currently used by 26 direct participants including the Bank of England and over 5,000 indirect participants. Payments are transferred over Swift and settled intraday in central bank funds. In 2016 Chap’s volumes reached a record 39 million transactions, worth £75.6 trillion.</p>
-<p><img src="http://img1.tuicool.com/iyy2mu7.png!web" alt="">Bacs is responsible for the clearing and settlement of UK automated payment methods, direct debit and Bacs direct credit. The company processed 6.22 billion transactions to UK bank accounts in 2016, worth £4.8 trillion. Faster Payments is a UK banking initiative which uses the Bacs system to reduce payment times between different banks’ customer accounts from three working days to a few hours. While Chaps focuses on same-day service for high-value transactions, Faster Payments is tailored to the much larger number of smaller payments.</p>
-<h2 id="Bitwage’s-Growing-List-of-Services"><a href="#Bitwage’s-Growing-List-of-Services" class="headerlink" title="Bitwage’s Growing List of Services"></a>Bitwage’s Growing List of Services</h2><p>In April, Bitcoin.comreported on Bitwage launching unique IBANs for users receiving wages in the European Union. With Monday’s launch in the UK, <img src="http://img1.tuicool.com/22QFnyf.jpg!web" alt="">employers can pay in US dollars, British pounds, and euros. In addition, Bitwage can accept Canadian dollars, Australian dollars, Swiss Francs, and Japanese yen.</p>
-<p>Payouts to the workers are far more diverse and are done on the same or next day. Currencies supported include bitcoin, ether, and litecoin, as well as the US dollar, the euro, the British pound, the Brazilian Real, the Philippine peso, the Mexican peso, the Argentine peso, the Indian rupee, the Vietnamese dong, the Nigerian naira, and the Ukrainian hryvnia.</p>
-<p>Would you use Bitwage to receive your wages? Let us know in the comments section below.</p>
-<p>Images courtesy of Shutterstock, Chaps, Bacs, Faster Payments, and Bitwage</p>
-<p>Need to calculate your bitcoin holdings? Check our <a href="http://tools.bitcoin.com/" target="_blank" rel="external">tools</a> section.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/iqQfqmi" target="_blank" rel="external">https://news.bitcoin.com/bitwage-launches-uk-bitcoin-payroll-services/</a></p>
+    <content type="html"><![CDATA[<p>Progress in web design techniques shows no signs of slowing up. As the proponents of the early web are staggering around with thousand-yard stares, you can’t help but feel a little over-awed by the plethora of techniques and frameworks available nowadays.</p>
+<p>People are championing the new approaches that are about to change the way we work once again, such asFlexbox andCSS Grid. Rachel Andrew and Jen Simmons have been encouraging developers to look at these technologies now, in readiness for their arrival.</p>
+<p><img src="http://img0.tuicool.com/BzuUvm2.jpg!web" alt=""></p>
+<p>Is web design too formulaic, or cutting edge, these days?</p>
+<p>Recently, some of the current web industry’s founders – such as Andy Clarke and Jeffrey Zeldman – have asked if it really needs to be this complicated, and whether the web is losing its soul or becoming reliant on a standard output (three-column layouts, hero blocks and the like). Have we all become enslaved to the frameworks and tools available to us?</p>
+<p>Although they make a good argument, I don’t think there has been a time where there has been more choice (or opinion) about how to build digital projects. We are long past ‘HTML,CSS and a littleJavaScript’. Now there are CSS preprocessors andJS frameworks, and the components that make up a web project encompass a load of new elements – optimisation, CDN delivery andSEO, to name a few.</p>
+<p>An urge to jump into new methods too early can be the worst thing to do on live client work</p>
+<p>Sush Kelly</p>
+<h3 id="Pioneering-web-tech"><a href="#Pioneering-web-tech" class="headerlink" title="Pioneering web tech"></a>Pioneering web tech</h3><p>The talks and conferences advocate best practices and cutting-edge tech – why we should be using X, Y and Z. This is 100 per cent necessary. After all, the web industry is relatively young and we are still defining the standards of the industry to an extent.</p>
+<p>The problem is, those not using these technologies day-to-day in their work can be left feeling inadequate or somehow lacking. It is a lucky few who get to make their living pushing those boundaries and telling us all about them. Don’t get me wrong, it is essential to have these people pushing the bleeding edge, but it can result in an urge to jump into new methods too early, which can be the worst thing to do on live client work.</p>
+<p>You want long, productive relationships with clients. Changing how you build sites means having to readjust and remember more skills. As much as good commenting and a README file will help, you need to make sure what you’re delivering will remain effective and usable for as long as possible.</p>
+<p>As a digital director at a small creative agency,<a href="https://www.imaginate.uk.com/home" target="_blank" rel="external">Imaginate</a>, it is on my shoulders to make sure we use the right technology on client work and invest our time wisely with regards to what we learn and (in due course) adapt into our processes.</p>
+<p>I completely understand how designers and developers want to adopt the next great thing. I feel the same compulsion, and it is actually one of the things that has kept me in the industry so long (since 2000). The fact is that I also have to think about the longevity of the plugin/library/software, because if it doesn’t stand the test of time, or it ends up failing or losing support due to a later development, then the responsibility falls on us.</p>
+<h3 id="Educating-junior-web-developers"><a href="#Educating-junior-web-developers" class="headerlink" title="Educating junior web developers"></a>Educating junior web developers</h3><p>Many junior developers have a real thirst for knowledge. It is often an inspiration to more senior team members when they arrive in the studio, eager to show a new method or technique that is emerging and explore how it might be used on a project.</p>
+<p>You want your staff to grow, to develop and to be able to work on things together, so again it’s important to make sure that you’re only taking on board advancements that are an improvement on what went before. But when the churn of technology is so quick that we have interns and junior designers who have never had to use a float and do not know life before Bootstrap, it becomes a real balancing act.</p>
+<p>A good example of this is the move from LESS to SCSS and also from Grunt to Gulp. Both these technologies are similar, but different enough to mean returning to a project using LESS/Grunt becomes an exercise in re-learning – or in the case of juniors or interns, learning a new (old) technology from scratch.</p>
+<h3 id="Website-layout-gambles"><a href="#Website-layout-gambles" class="headerlink" title="Website layout gambles"></a>Website layout gambles</h3><p>Flex and CSS Grids are the current darlings of frontend talk. CSS Grid has the potential to revolutionise the way we will lay websites out in the future. At the moment it is still hidden in the latest browsers, although you can access it if you enable experimental features on the likes of Chrome. We can’t use it in live work for this reason, though with an imminent launch date, Grid could bring about as big a shift in web development practice as the shift from tables to divs and floats.</p>
+<p>We are using Flexbox on live work now, but only in ways that are a benefit – for example for ordering content in responsive layouts orvertically centring items. To try to use Flexbox for a full site at the moment, with iOS and Safari’s flaky support, would be a challenge that just may not be financially viable. </p>
+<h3 id="Embracing-the-old-browsers"><a href="#Embracing-the-old-browsers" class="headerlink" title="Embracing the old browsers"></a>Embracing the old browsers</h3><p>Clients, especially within larger companies, likely won’t be running the latest browsers. They could also have restrictions on their web access that could affect your build. And if it turns out the main stakeholder is using IE on an old laptop, the site better work on it or the project just won’t get signed off.</p>
+<p>Sometimes a client will have a good idea of what they want, or specify an incumbent system or technology that you need to work with. A key point for us as an agency is to be adaptive to these needs and to work with them, rather than dismissing what the client has and trying to force them down the route we would prefer. Sometimes this may mean having to extend an existing codebase in order to keep within the technology required.</p>
+<p>When embarking on a new project, we now make sure we establish the required sign-off devices as soon as possible. However, over the years have had our fingers burnt on more than one occasion, when we have run with a new way of doing something with good intentions, only for it to cause issues as we tried to get the site signed off. This just serves to remind us that there are so many device/user combos that it just isn’t OK if a given method will only work on certain browsers.</p>
+<p>Although you can make workarounds and shims, there often isn’t budget to do this. And when a client doesn’t have the right resources then you need to go with the solution that will please everyone.</p>
+<p>When it comes down to it, the main aim of the studio is to produce great, forward-thinking work, which means being fully open to new methods but also picking the right time and project to use them. It is a tricky balancing act, but one that gives me a great feeling of satisfaction, especially when a new process finally becomes ‘the standard’ on live projects.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/AJbi63b" target="_blank" rel="external">http://www.creativebloq.com/advice/beware-the-cutting-edge-of-web-design</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/iYzuUvb.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;After expanding services in Europe earlier this year, bitcoin payroll a
+      &lt;p&gt;Progress in web design techniques shows no signs of slowing up. As the proponents of the early web are staggering around with thousand-ya
     
     </summary>
     
@@ -487,86 +873,35 @@
   </entry>
   
   <entry>
-    <title>Beware the cutting edge of web design</title>
-    <link href="https://gmagon.com/blog/2017/07/03/beware-the-cutting-edge-of-web-design/"/>
-    <id>https://gmagon.com/blog/2017/07/03/beware-the-cutting-edge-of-web-design/</id>
+    <title>Bitwage Officially Launches UK Bitcoin Payroll Services</title>
+    <link href="https://gmagon.com/blog/2017/07/03/bitwage-officially-launches-uk-bitcoin-payroll-services/"/>
+    <id>https://gmagon.com/blog/2017/07/03/bitwage-officially-launches-uk-bitcoin-payroll-services/</id>
     <published>2017-07-03T00:00:00.000Z</published>
-    <updated>2017-07-03T10:07:06.815Z</updated>
+    <updated>2017-07-03T10:07:06.826Z</updated>
     
-    <content type="html"><![CDATA[<p>Progress in web design techniques shows no signs of slowing up. As the proponents of the early web are staggering around with thousand-yard stares, you can’t help but feel a little over-awed by the plethora of techniques and frameworks available nowadays.</p>
-<p>People are championing the new approaches that are about to change the way we work once again, such asFlexbox andCSS Grid. Rachel Andrew and Jen Simmons have been encouraging developers to look at these technologies now, in readiness for their arrival.</p>
-<p><img src="http://img0.tuicool.com/BzuUvm2.jpg!web" alt=""></p>
-<p>Is web design too formulaic, or cutting edge, these days?</p>
-<p>Recently, some of the current web industry’s founders – such as Andy Clarke and Jeffrey Zeldman – have asked if it really needs to be this complicated, and whether the web is losing its soul or becoming reliant on a standard output (three-column layouts, hero blocks and the like). Have we all become enslaved to the frameworks and tools available to us?</p>
-<p>Although they make a good argument, I don’t think there has been a time where there has been more choice (or opinion) about how to build digital projects. We are long past ‘HTML,CSS and a littleJavaScript’. Now there are CSS preprocessors andJS frameworks, and the components that make up a web project encompass a load of new elements – optimisation, CDN delivery andSEO, to name a few.</p>
-<p>An urge to jump into new methods too early can be the worst thing to do on live client work</p>
-<p>Sush Kelly</p>
-<h3 id="Pioneering-web-tech"><a href="#Pioneering-web-tech" class="headerlink" title="Pioneering web tech"></a>Pioneering web tech</h3><p>The talks and conferences advocate best practices and cutting-edge tech – why we should be using X, Y and Z. This is 100 per cent necessary. After all, the web industry is relatively young and we are still defining the standards of the industry to an extent.</p>
-<p>The problem is, those not using these technologies day-to-day in their work can be left feeling inadequate or somehow lacking. It is a lucky few who get to make their living pushing those boundaries and telling us all about them. Don’t get me wrong, it is essential to have these people pushing the bleeding edge, but it can result in an urge to jump into new methods too early, which can be the worst thing to do on live client work.</p>
-<p>You want long, productive relationships with clients. Changing how you build sites means having to readjust and remember more skills. As much as good commenting and a README file will help, you need to make sure what you’re delivering will remain effective and usable for as long as possible.</p>
-<p>As a digital director at a small creative agency,<a href="https://www.imaginate.uk.com/home" target="_blank" rel="external">Imaginate</a>, it is on my shoulders to make sure we use the right technology on client work and invest our time wisely with regards to what we learn and (in due course) adapt into our processes.</p>
-<p>I completely understand how designers and developers want to adopt the next great thing. I feel the same compulsion, and it is actually one of the things that has kept me in the industry so long (since 2000). The fact is that I also have to think about the longevity of the plugin/library/software, because if it doesn’t stand the test of time, or it ends up failing or losing support due to a later development, then the responsibility falls on us.</p>
-<h3 id="Educating-junior-web-developers"><a href="#Educating-junior-web-developers" class="headerlink" title="Educating junior web developers"></a>Educating junior web developers</h3><p>Many junior developers have a real thirst for knowledge. It is often an inspiration to more senior team members when they arrive in the studio, eager to show a new method or technique that is emerging and explore how it might be used on a project.</p>
-<p>You want your staff to grow, to develop and to be able to work on things together, so again it’s important to make sure that you’re only taking on board advancements that are an improvement on what went before. But when the churn of technology is so quick that we have interns and junior designers who have never had to use a float and do not know life before Bootstrap, it becomes a real balancing act.</p>
-<p>A good example of this is the move from LESS to SCSS and also from Grunt to Gulp. Both these technologies are similar, but different enough to mean returning to a project using LESS/Grunt becomes an exercise in re-learning – or in the case of juniors or interns, learning a new (old) technology from scratch.</p>
-<h3 id="Website-layout-gambles"><a href="#Website-layout-gambles" class="headerlink" title="Website layout gambles"></a>Website layout gambles</h3><p>Flex and CSS Grids are the current darlings of frontend talk. CSS Grid has the potential to revolutionise the way we will lay websites out in the future. At the moment it is still hidden in the latest browsers, although you can access it if you enable experimental features on the likes of Chrome. We can’t use it in live work for this reason, though with an imminent launch date, Grid could bring about as big a shift in web development practice as the shift from tables to divs and floats.</p>
-<p>We are using Flexbox on live work now, but only in ways that are a benefit – for example for ordering content in responsive layouts orvertically centring items. To try to use Flexbox for a full site at the moment, with iOS and Safari’s flaky support, would be a challenge that just may not be financially viable. </p>
-<h3 id="Embracing-the-old-browsers"><a href="#Embracing-the-old-browsers" class="headerlink" title="Embracing the old browsers"></a>Embracing the old browsers</h3><p>Clients, especially within larger companies, likely won’t be running the latest browsers. They could also have restrictions on their web access that could affect your build. And if it turns out the main stakeholder is using IE on an old laptop, the site better work on it or the project just won’t get signed off.</p>
-<p>Sometimes a client will have a good idea of what they want, or specify an incumbent system or technology that you need to work with. A key point for us as an agency is to be adaptive to these needs and to work with them, rather than dismissing what the client has and trying to force them down the route we would prefer. Sometimes this may mean having to extend an existing codebase in order to keep within the technology required.</p>
-<p>When embarking on a new project, we now make sure we establish the required sign-off devices as soon as possible. However, over the years have had our fingers burnt on more than one occasion, when we have run with a new way of doing something with good intentions, only for it to cause issues as we tried to get the site signed off. This just serves to remind us that there are so many device/user combos that it just isn’t OK if a given method will only work on certain browsers.</p>
-<p>Although you can make workarounds and shims, there often isn’t budget to do this. And when a client doesn’t have the right resources then you need to go with the solution that will please everyone.</p>
-<p>When it comes down to it, the main aim of the studio is to produce great, forward-thinking work, which means being fully open to new methods but also picking the right time and project to use them. It is a tricky balancing act, but one that gives me a great feeling of satisfaction, especially when a new process finally becomes ‘the standard’ on live projects.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/AJbi63b" target="_blank" rel="external">http://www.creativebloq.com/advice/beware-the-cutting-edge-of-web-design</a></p>
+    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/iYzuUvb.jpg!web" alt=""></p>
+<p>After expanding services in Europe earlier this year, bitcoin payroll and wage payment service provider Bitwage announced its official launch in the UK on Monday.</p>
+<p><em><strong>Also read:</strong></em><a href="https://news.bitcoin.com/bitwage-launches-new-functionality-european-customers/" target="_blank" rel="external"><em>Bitwage Launches New Functionality for European Customers</em></a></p>
+<h2 id="Bitwage’s-Official-Launch-in-the-UK"><a href="#Bitwage’s-Official-Launch-in-the-UK" class="headerlink" title="Bitwage’s Official Launch in the UK"></a>Bitwage’s Official Launch in the UK</h2><p><a href="https://www.bitwage.com/" target="_blank" rel="external">Bitwage</a><img src="http://img2.tuicool.com/BJneqen.png!web" alt="">offers solutions for remote workers to receive wages in a variety of currencies including bitcoin. Using the service, workers can get paid in bitcoin without having to ask each employer to pay in the cryptocurrency or sign up with Bitwage. They simply give the employers Bitwage’s bank account details to receive payments in.</p>
+<p>Bitwage claims to have over 13,000 registered workers and have processed over $21.6 million in international wages. Users can invoice employers or clients in the United States (US), United Kingdom (UK), and the European Union (EU). Wages received can be split into any ratio between different bank accounts and bitcoin wallets.</p>
+<p>On Monday, the company announced the official launch of their services in the UK, stating:</p>
+<p>We are now able to offer workers anywhere in the world the ability to receive wages from companies in the UK through local banking partners. This means that our workers can receive wages through Faster Payments, Bacs, Chaps or Swift into local UK GBP bank accounts.</p>
+<h2 id="Bacs-Faster-Payments-and-Chaps-Now-Supported"><a href="#Bacs-Faster-Payments-and-Chaps-Now-Supported" class="headerlink" title="Bacs, Faster Payments, and Chaps Now Supported"></a>Bacs, Faster Payments, and Chaps Now Supported</h2><p>Bitwage founder and president Jonathan Chester told Bitcoin.com that the company has been beta testing this service. He explained that although the ability to receive wages in British pounds (GBP) existed previously, it was not done locally and was never publicly launched. Without local UK partners, the service was not cost-effective. Chester detailed:</p>
+<p>Before this, we had a banking partner with GBP correspondent accounts in Ireland that could receive Chaps, but not Faster Payments or Bacs. This was a costly solution for potential clients in the UK, so there was very little usage. We have now been working with these same customers during the beta testing of our new local UK services.</p>
+<p><img src="http://img1.tuicool.com/BbIBrau.png!web" alt="">Chaps is the UK’s same-day high-value payment system, currently used by 26 direct participants including the Bank of England and over 5,000 indirect participants. Payments are transferred over Swift and settled intraday in central bank funds. In 2016 Chap’s volumes reached a record 39 million transactions, worth £75.6 trillion.</p>
+<p><img src="http://img1.tuicool.com/iyy2mu7.png!web" alt="">Bacs is responsible for the clearing and settlement of UK automated payment methods, direct debit and Bacs direct credit. The company processed 6.22 billion transactions to UK bank accounts in 2016, worth £4.8 trillion. Faster Payments is a UK banking initiative which uses the Bacs system to reduce payment times between different banks’ customer accounts from three working days to a few hours. While Chaps focuses on same-day service for high-value transactions, Faster Payments is tailored to the much larger number of smaller payments.</p>
+<h2 id="Bitwage’s-Growing-List-of-Services"><a href="#Bitwage’s-Growing-List-of-Services" class="headerlink" title="Bitwage’s Growing List of Services"></a>Bitwage’s Growing List of Services</h2><p>In April, Bitcoin.comreported on Bitwage launching unique IBANs for users receiving wages in the European Union. With Monday’s launch in the UK, <img src="http://img1.tuicool.com/22QFnyf.jpg!web" alt="">employers can pay in US dollars, British pounds, and euros. In addition, Bitwage can accept Canadian dollars, Australian dollars, Swiss Francs, and Japanese yen.</p>
+<p>Payouts to the workers are far more diverse and are done on the same or next day. Currencies supported include bitcoin, ether, and litecoin, as well as the US dollar, the euro, the British pound, the Brazilian Real, the Philippine peso, the Mexican peso, the Argentine peso, the Indian rupee, the Vietnamese dong, the Nigerian naira, and the Ukrainian hryvnia.</p>
+<p>Would you use Bitwage to receive your wages? Let us know in the comments section below.</p>
+<p>Images courtesy of Shutterstock, Chaps, Bacs, Faster Payments, and Bitwage</p>
+<p>Need to calculate your bitcoin holdings? Check our <a href="http://tools.bitcoin.com/" target="_blank" rel="external">tools</a> section.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/iqQfqmi" target="_blank" rel="external">https://news.bitcoin.com/bitwage-launches-uk-bitcoin-payroll-services/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Progress in web design techniques shows no signs of slowing up. As the proponents of the early web are staggering around with thousand-ya
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Angular 4 News Roundup June</title>
-    <link href="https://gmagon.com/blog/2017/07/03/angular-4-news-roundup-june/"/>
-    <id>https://gmagon.com/blog/2017/07/03/angular-4-news-roundup-june/</id>
-    <published>2017-07-03T00:00:00.000Z</published>
-    <updated>2017-07-03T10:07:06.808Z</updated>
-    
-    <content type="html"><![CDATA[<p>WRITTEN BY<a href="https://twitter.com/jsdiaries" target="_blank" rel="external">GARETH DUNNE @JSDIARIES</a></p>
-<p>ng-June</p>
-<p>June has come and gone and it has brought with it a steady month of Angular 4 news. There is a chance that you could have missed a change to key features or components so I’ve listed some of the main snippets of news that may have passed you by.</p>
-<p>Although there isn’t much reading material specifically for<strong>Angular 4</strong>I recommend having a look at<strong>ng-book: The Complete Guide to Angular 4</strong><a href="http://geni.us/LCTQUAa" target="_blank" rel="external">here</a>.</p>
-<p>Its updated with Angular 4 practices and is one of the few books doing so.</p>
-<p>Angular 4.2</p>
-<p>The most notable piece of Angular news this month is the release of<strong>Angular 4.2</strong>. This is a small update and will not break your current Angular projects via Semantic Versioning which I covered in a previous posthere.</p>
-<p>All changes pertaining to the release are mentioned on the official blog here. So what are main highlights we should take our of this update?</p>
-<p>Well, the changes to allow the creation of reusable animations using the<code>animation()</code>function enables our animations to become more modular.</p>
-<p>I’ve listed a very similar example as the docs here for reference.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">var fadeAnimation = animation([</div><div class="line">  style(&#123; </div><div class="line">opacity:</div><div class="line">&apos;&#123;&#123; start &#125;&#125;&apos;</div><div class="line"> &#125;),</div><div class="line">  animate(</div><div class="line">&apos;&#123;&#123; time &#125;&#125;&apos;</div><div class="line">,</div><div class="line">    style(&#123; </div><div class="line">opacity:</div><div class="line">&apos;&#123;&#123; end &#125;&#125;&apos;</div><div class="line">))</div><div class="line">], &#123; </div><div class="line">params:</div><div class="line"> &#123; </div><div class="line">time:</div><div class="line">&apos;1000ms&apos;</div><div class="line">, </div><div class="line">start:</div><div class="line">0</div><div class="line">, </div><div class="line">end:</div><div class="line">1</div><div class="line"> &#125;&#125;);</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">useAnimation</div><div class="line">(fadeAnimation, &#123;</div><div class="line">  </div><div class="line">params</div><div class="line">: &#123;</div><div class="line">    </div><div class="line">time</div><div class="line">: </div><div class="line">&apos;2s&apos;</div><div class="line">,</div><div class="line">    </div><div class="line">start</div><div class="line">: </div><div class="line">1</div><div class="line">,</div><div class="line">    </div><div class="line">end</div><div class="line">: </div><div class="line">0</div><div class="line"></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>As you can see we assign our animations to a variable, specify its animation properties and then invoke it using the<code>useAnimation</code>function</p>
-<p>Typescript 2.4</p>
-<p>Typescript has also updated to a new release, bringing with it dynamic import expressions as well as Safer callback parameter checking. There could be few posts written about these changes so I’ll let the official blog post do the talking<a href="https://blogs.msdn.microsoft.com/typescript/2017/06/12/announcing-typescript-2-4-rc/" target="_blank" rel="external">here</a>.</p>
-<p>I’ll just note that the dynamic imports feature in particular is a fantastic addition in this new release. It allows an even deeper layer of lazy loading and enables Webpack to split your bundles even further to only load a particular asset required in a function.</p>
-<p>Angular IO</p>
-<p><img src="http://img0.tuicool.com/Ar6RRbB.png!web" alt=""></p>
-<p>angularIO</p>
-<p>In order to coincide with Angular 4 features and benefits, the official<a href="https://angular.io/" target="_blank" rel="external">angular.io</a>website has now been converted to a full scale web application. It is now much faster and has increased its performance significantly.</p>
-<p>There is also a satisfying element of practice what you preach and the Angular team have clearly rebuilt the website from the ground up with performance in mind.</p>
-<p>It may seems like a minor detail but searching through the documentation has now become a better user experience which I’m sure is appreciated throughout the Angular community especially for those browsing on mobile devices.</p>
-<p>These were the main notable Angular events and features this month. The framework is progressively evolving every month and if theres enough newsworthy item in July I’ll be sure to do a similar roundup.</p>
-<p>Still looking to upgrade your AngularJS app to Angular 2? Check out this tutorial by Toptal<a href="https://www.toptal.com/angular-js/angular-2-upgrading-from-1-5" target="_blank" rel="external">here</a>.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/JNZ3qeb" target="_blank" rel="external">http://jsdiaries.com/2017/07/03/angular-4-news-roundup-june/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;WRITTEN BY&lt;a href=&quot;https://twitter.com/jsdiaries&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GARETH DUNNE @JSDIARIES&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;ng-June&lt;/p&gt;
-&lt;p&gt;June h
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/iYzuUvb.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;After expanding services in Europe earlier this year, bitcoin payroll a
     
     </summary>
     
@@ -605,6 +940,59 @@
     
       &lt;p&gt;ByRachel Howard, Community Editor | June 30, 2017&lt;/p&gt;
 &lt;p&gt;“As the relationship really started to take shape, we realized what the two tech
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Minoca OS 0.4: We love the eighties!</title>
+    <link href="https://gmagon.com/blog/2017/06/30/minoca-os-04-we-love-the-eighties/"/>
+    <id>https://gmagon.com/blog/2017/06/30/minoca-os-04-we-love-the-eighties/</id>
+    <published>2017-06-30T00:00:00.000Z</published>
+    <updated>2017-06-30T10:06:34.697Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img0.tuicool.com/AzmmqmR.png!web" alt=""></p>
+<p>fceux running on the first Minoca OS X server</p>
+<p>We’re pleased to announce the release of version 0.4 of Minoca OS. In the eight months since we released 0.3, our very first open source release, a lot has changed. Most notably Minoca is now sporting the_early_signs of a desktop. And of course no desktop would be complete without an application to run on it. So we’ve added<a href="http://www.fceux.com/web/home.html" target="_blank" rel="external">fceux</a>, an NES emulator, which we used to test both graphics performance and sound. Hopefully you’ll be better at Super Mario Brothers than Chris, who I watched blatantly kill Mario probably upwards of 50 times in the name of testing sound. Here’s what, how, and why we did it.</p>
+<p>For those who have never heard of us before, Minoca OS is a new operating system built completely from the ground up. It’s designed to be lean, portable, modular, and modern (NES emulator notwithstanding). We’re trying to do more with less, so devices with limited power and resource budgets can get full OS functionality with minimal overhead.</p>
+<h3 id="What’s-New"><a href="#What’s-New" class="headerlink" title="What’s New"></a>What’s New</h3><p>Some new drivers in 0.4:</p>
+<ul>
+<li>AHCI (the controller usually behind your SATA port)</li>
+<li>e1000 (Intel gigabit networking driver)</li>
+<li>USB and PS/2 mouse</li>
+<li>Intel HD Audio and Raspberry Pi PWM audio</li>
+</ul>
+<p>Some new third-party packages worth noting:</p>
+<ul>
+<li>Xorg-server</li>
+<li>SDL</li>
+<li>fceux (NES emulator)</li>
+<li>miniDLNA</li>
+<li>Mesa3D (software rendering)</li>
+<li>GTK+</li>
+</ul>
+<p>You can grab the latest OS images on ourdownloads page. Bugs and feature requests can be filed on our<a href="https://github.com/minoca/os" target="_blank" rel="external">GitHub</a>page. You can fire up X for yourself by running “opkg update; opkg install fceux xinit; startx”.</p>
+<h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>First of all I’d like to say a huge thank you to everyone who tried out Minoca OS since we went open source back in November. An even bigger thank you goes to the intrepid folks who submitted bugs and pull requests on our GitHub page. Chris and I really appreciate that, please continue to do it!</p>
+<p>One of the requests we seemed to get a lot was “where’s the GUI” or “can I run this graphical application XYZ?” When we launched 0.3 we had done no work towards a graphical environment, mostly citing the fact that accelerated graphics are hard. That’s still true, and we still don’t have accelerated graphics (remember these are the_beginnings_of a desktop), but we were curious to find out how far out we were from having some sort of basic graphical environment.</p>
+<p>The goal here was not to put out 0.4 with the message of “behold, the glorious desktop GUI has arrived”, but rather to provide the elements and building blocks for people familiar with compiling software to potentially make progress on their own.</p>
+<h3 id="All-Roads-Lead-to-X"><a href="#All-Roads-Lead-to-X" class="headerlink" title="All Roads Lead to X"></a>All Roads Lead to X</h3><p>Our initial thought was actually to port over DirectFB, a Linux library for interacting directly with the frame buffer. In fact we went so far as to port DirectFB to Minoca. Things fell apart a bit when we went looking for applications built on top of DirectFB. There aren’t so many of those. Wayland/Weston looks super cool and new, but it also appeared to be pretty Linux-specific, so it didn’t seem like the ideal choice to start with. No, everything graphical seems to compile against X. The ancient terrifying medusa that is X. It was on the very bottom of my mental list of possible options, but it was becoming clear that it really was the_only_option.</p>
+<p>X is not just one thing that you download and compile. It’s composed of over a hundred different packages. As developers of a new OS, we generally feel it’s a pretty good day if we’ve added one or two new packages. The idea of adding over 100 new packages even if they all ported perfectly seems daunting. And though we’ve worked hard to build a POSIX compatible C library, life has a way of not going that smoothly.</p>
+<h3 id="Into-the-Abyss"><a href="#Into-the-Abyss" class="headerlink" title="Into the Abyss"></a>Into the Abyss</h3><p>There’s really no way to check and see if you’re going to get stuck on a missing OS feature in package number 67 of 140, you just have to start building and hope the obstacles are surmountable. The chapter on X in the<a href="http://www.linuxfromscratch.org/blfs/view/svn/x/installing.html" target="_blank" rel="external">Linux From Scratch</a>book is a precious map in an otherwise endless labyrinth. I have no idea how anyone built the X server before that book. Most of it isn’t super Linux-specific, with some light editing they could call it “Any OS From Scratch”.</p>
+<p>It also helps that nearly everything is autoconfed. Not that I don’t struggle with autoconf and especially libtool, but I’d say autoconf and I have an “understanding” with each other. It’s the devil I know, at least.</p>
+<p>The first batch of 25 or so packages contain mostly headers. A warmup round to get your fingers loose, I suppose. Then comes another batch of 30 or so library packages. To my surprise these seem to go by pretty smoothly, and even cross compile!</p>
+<p>I hit my biggest obstacle with Mesa, the 3D graphics library responsible for libraries like libGL. Mesa was one of the few non-Xorg packages in the quest for the X server, and required some monkeying to get right. Supplying the right configure parameters for a non-Linux software-only pipeline that the X server was happy with took some trial and error. There were also a few OS-specific bits of code that needed the obligatory “and here’s Minoca, too” code snippets. The nastiest<a href="https://bugs.freedesktop.org/show_bug.cgi?id=35268" target="_blank" rel="external">barb</a>, which I’d only discover later, was their forced use of the “initial-exec” thread-local storage model. I know this was done in the name of performance, but it leaves a bit of a mess for the OS designers, who either have to 1) accommodate it with a brittle “might work for Mesa but I hope no one else does this” kind of hack, or 2) force programs using libGL to load it on initial program load, which the X server wouldn’t have ordinarily done. We went for option 2, which leaves you feeling only slightly less dirty.</p>
+<p>The remaining packages leading up to running an X server went surprisingly smoothly. My compliments to the Xorg developers. Xterm, a non-Xorg package, required a bit of work. There are some code bases that have a “shove your OS in here with ifdefs” vibe to them, xterm is one of those. It’s usually pretty easy to do, but it never feels very good.</p>
+<h3 id="Minoca-I-O"><a href="#Minoca-I-O" class="headerlink" title="Minoca I/O"></a>Minoca I/O</h3><p>In theory we had a running X server, but given that X couldn’t display video or receive input, there wasn’t much proof. I added Minoca framebuffer support, and wrote an input driver to allow X to gather keyboard and mouse events from the kernel. This also required actually adding mouse support to Minoca, including a USB HID parser. After some false starts, I was presented with this beauty:</p>
+<p>Source:　<a href="http://www.tuicool.com/articles/hit/yyYNjyB" target="_blank" rel="external">https://blog.minocacorp.com/minoca-os-0-4-we-love-the-eighties-170a93112db1</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/AzmmqmR.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;fceux running on the first Minoca OS X server&lt;/p&gt;
+&lt;p&gt;We’re pleased to a
     
     </summary>
     
@@ -667,88 +1055,6 @@
   </entry>
   
   <entry>
-    <title>Minoca OS 0.4: We love the eighties!</title>
-    <link href="https://gmagon.com/blog/2017/06/30/minoca-os-04-we-love-the-eighties/"/>
-    <id>https://gmagon.com/blog/2017/06/30/minoca-os-04-we-love-the-eighties/</id>
-    <published>2017-06-30T00:00:00.000Z</published>
-    <updated>2017-06-30T10:06:34.697Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img0.tuicool.com/AzmmqmR.png!web" alt=""></p>
-<p>fceux running on the first Minoca OS X server</p>
-<p>We’re pleased to announce the release of version 0.4 of Minoca OS. In the eight months since we released 0.3, our very first open source release, a lot has changed. Most notably Minoca is now sporting the_early_signs of a desktop. And of course no desktop would be complete without an application to run on it. So we’ve added<a href="http://www.fceux.com/web/home.html" target="_blank" rel="external">fceux</a>, an NES emulator, which we used to test both graphics performance and sound. Hopefully you’ll be better at Super Mario Brothers than Chris, who I watched blatantly kill Mario probably upwards of 50 times in the name of testing sound. Here’s what, how, and why we did it.</p>
-<p>For those who have never heard of us before, Minoca OS is a new operating system built completely from the ground up. It’s designed to be lean, portable, modular, and modern (NES emulator notwithstanding). We’re trying to do more with less, so devices with limited power and resource budgets can get full OS functionality with minimal overhead.</p>
-<h3 id="What’s-New"><a href="#What’s-New" class="headerlink" title="What’s New"></a>What’s New</h3><p>Some new drivers in 0.4:</p>
-<ul>
-<li>AHCI (the controller usually behind your SATA port)</li>
-<li>e1000 (Intel gigabit networking driver)</li>
-<li>USB and PS/2 mouse</li>
-<li>Intel HD Audio and Raspberry Pi PWM audio</li>
-</ul>
-<p>Some new third-party packages worth noting:</p>
-<ul>
-<li>Xorg-server</li>
-<li>SDL</li>
-<li>fceux (NES emulator)</li>
-<li>miniDLNA</li>
-<li>Mesa3D (software rendering)</li>
-<li>GTK+</li>
-</ul>
-<p>You can grab the latest OS images on ourdownloads page. Bugs and feature requests can be filed on our<a href="https://github.com/minoca/os" target="_blank" rel="external">GitHub</a>page. You can fire up X for yourself by running “opkg update; opkg install fceux xinit; startx”.</p>
-<h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>First of all I’d like to say a huge thank you to everyone who tried out Minoca OS since we went open source back in November. An even bigger thank you goes to the intrepid folks who submitted bugs and pull requests on our GitHub page. Chris and I really appreciate that, please continue to do it!</p>
-<p>One of the requests we seemed to get a lot was “where’s the GUI” or “can I run this graphical application XYZ?” When we launched 0.3 we had done no work towards a graphical environment, mostly citing the fact that accelerated graphics are hard. That’s still true, and we still don’t have accelerated graphics (remember these are the_beginnings_of a desktop), but we were curious to find out how far out we were from having some sort of basic graphical environment.</p>
-<p>The goal here was not to put out 0.4 with the message of “behold, the glorious desktop GUI has arrived”, but rather to provide the elements and building blocks for people familiar with compiling software to potentially make progress on their own.</p>
-<h3 id="All-Roads-Lead-to-X"><a href="#All-Roads-Lead-to-X" class="headerlink" title="All Roads Lead to X"></a>All Roads Lead to X</h3><p>Our initial thought was actually to port over DirectFB, a Linux library for interacting directly with the frame buffer. In fact we went so far as to port DirectFB to Minoca. Things fell apart a bit when we went looking for applications built on top of DirectFB. There aren’t so many of those. Wayland/Weston looks super cool and new, but it also appeared to be pretty Linux-specific, so it didn’t seem like the ideal choice to start with. No, everything graphical seems to compile against X. The ancient terrifying medusa that is X. It was on the very bottom of my mental list of possible options, but it was becoming clear that it really was the_only_option.</p>
-<p>X is not just one thing that you download and compile. It’s composed of over a hundred different packages. As developers of a new OS, we generally feel it’s a pretty good day if we’ve added one or two new packages. The idea of adding over 100 new packages even if they all ported perfectly seems daunting. And though we’ve worked hard to build a POSIX compatible C library, life has a way of not going that smoothly.</p>
-<h3 id="Into-the-Abyss"><a href="#Into-the-Abyss" class="headerlink" title="Into the Abyss"></a>Into the Abyss</h3><p>There’s really no way to check and see if you’re going to get stuck on a missing OS feature in package number 67 of 140, you just have to start building and hope the obstacles are surmountable. The chapter on X in the<a href="http://www.linuxfromscratch.org/blfs/view/svn/x/installing.html" target="_blank" rel="external">Linux From Scratch</a>book is a precious map in an otherwise endless labyrinth. I have no idea how anyone built the X server before that book. Most of it isn’t super Linux-specific, with some light editing they could call it “Any OS From Scratch”.</p>
-<p>It also helps that nearly everything is autoconfed. Not that I don’t struggle with autoconf and especially libtool, but I’d say autoconf and I have an “understanding” with each other. It’s the devil I know, at least.</p>
-<p>The first batch of 25 or so packages contain mostly headers. A warmup round to get your fingers loose, I suppose. Then comes another batch of 30 or so library packages. To my surprise these seem to go by pretty smoothly, and even cross compile!</p>
-<p>I hit my biggest obstacle with Mesa, the 3D graphics library responsible for libraries like libGL. Mesa was one of the few non-Xorg packages in the quest for the X server, and required some monkeying to get right. Supplying the right configure parameters for a non-Linux software-only pipeline that the X server was happy with took some trial and error. There were also a few OS-specific bits of code that needed the obligatory “and here’s Minoca, too” code snippets. The nastiest<a href="https://bugs.freedesktop.org/show_bug.cgi?id=35268" target="_blank" rel="external">barb</a>, which I’d only discover later, was their forced use of the “initial-exec” thread-local storage model. I know this was done in the name of performance, but it leaves a bit of a mess for the OS designers, who either have to 1) accommodate it with a brittle “might work for Mesa but I hope no one else does this” kind of hack, or 2) force programs using libGL to load it on initial program load, which the X server wouldn’t have ordinarily done. We went for option 2, which leaves you feeling only slightly less dirty.</p>
-<p>The remaining packages leading up to running an X server went surprisingly smoothly. My compliments to the Xorg developers. Xterm, a non-Xorg package, required a bit of work. There are some code bases that have a “shove your OS in here with ifdefs” vibe to them, xterm is one of those. It’s usually pretty easy to do, but it never feels very good.</p>
-<h3 id="Minoca-I-O"><a href="#Minoca-I-O" class="headerlink" title="Minoca I/O"></a>Minoca I/O</h3><p>In theory we had a running X server, but given that X couldn’t display video or receive input, there wasn’t much proof. I added Minoca framebuffer support, and wrote an input driver to allow X to gather keyboard and mouse events from the kernel. This also required actually adding mouse support to Minoca, including a USB HID parser. After some false starts, I was presented with this beauty:</p>
-<p>Source:　<a href="http://www.tuicool.com/articles/hit/yyYNjyB" target="_blank" rel="external">https://blog.minocacorp.com/minoca-os-0-4-we-love-the-eighties-170a93112db1</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/AzmmqmR.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;fceux running on the first Minoca OS X server&lt;/p&gt;
-&lt;p&gt;We’re pleased to a
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Bid Farewell to These 6 Worst Website Design Habits</title>
-    <link href="https://gmagon.com/blog/2017/06/30/bid-farewell-to-these-6-worst-website-design-habits/"/>
-    <id>https://gmagon.com/blog/2017/06/30/bid-farewell-to-these-6-worst-website-design-habits/</id>
-    <published>2017-06-30T00:00:00.000Z</published>
-    <updated>2017-06-30T10:03:41.540Z</updated>
-    
-    <content type="html"><![CDATA[<p>Your website is the primary online identity of your business. Hence, it has to be flawless. It is the space through which your potential clients can gather all their information on your company. A well designed<a href="https://www.perth-web-design.com.au/website-design-portfolio/" target="_blank" rel="external">web design</a>can make or break your business. Hence, it is crucial that you avoid some of the common design mistakes which do not speak well to the visitors.</p>
-<h2 id="Lack-of-User-Friendliness"><a href="#Lack-of-User-Friendliness" class="headerlink" title="Lack of User Friendliness"></a>Lack of User Friendliness</h2><p>The first and foremost thing to keep in mind while designing your website is its user friendliness. You cannot assume all of your visitors to be extremely tech savvy. If your website is not easy to access and browse through for users of different levels of technological competence, it can give rise to frustration, which in turn, will make them customers abandon your space. Therefore, make sure all the necessary content or contact information is displayed clearly. Use easily accessible menu tabs, call to action buttons and whatever else it takes to ensure a smooth experience for your visitors.</p>
-<h2 id="Thoughtless-use-of-Colors"><a href="#Thoughtless-use-of-Colors" class="headerlink" title="Thoughtless use of Colors"></a>Thoughtless use of Colors</h2><p>It is important to know what your company represents and how to present all of it though your web design. Using the right kind of color scheme and design is crucial else you might end up<a href="https://tech.co/employee-benefits-package-millennial-2017-01" target="_blank" rel="external">damaging your company’s image</a>. Choose your colors wisely, keeping in mind the image you want to portray. Keep it simple but stunning. First, decide if you want a complimentary or contrasting color scheme, and once decided, stick to it.</p>
-<h2 id="Lack-of-White-Space"><a href="#Lack-of-White-Space" class="headerlink" title="Lack of White Space"></a>Lack of White Space</h2><p>If there is one thing that annoys a visitor infinitely, it is the lack of white space. White space is a stretch of blank space on your website, which is intended to strike a balance between the matter so as to ensure a better view of the content. Gone are the shiny, glittery designs of the nineties where websites tend to cram everything into one page. Minimalism offers a clean look which helps your viewer focus on the content better.</p>
-<p><img src="http://img2.tuicool.com/7FRVNbQ.jpg!web" alt=""></p>
-<h2 id="Autoplays-and-Pop-Ups"><a href="#Autoplays-and-Pop-Ups" class="headerlink" title="Autoplays and Pop Ups"></a>Autoplays and Pop Ups</h2><p>Often websites choose to include a small pop up page to ask their users to register or to advertise their content but it is not an advisable design. Concentrate more on the content than on such mindless advertisement. If your website is informative and well structured, viewers will automatically choose to register or look into your other content. Don’t distract your visitors with an annoying pop up. Similarly, autoplay can be an extremely infuriating feature on a website. For example, if someone is checking your website out at work or on a cab, it can be frustrating if an<a href="http://www.dreamytricks.net/free-music-download-apps-for-android/" target="_blank" rel="external">music starts playing automatically</a>. Give your users the choice to play it instead of forcing it upon them.</p>
-<h2 id="Slow-Loading-Design"><a href="#Slow-Loading-Design" class="headerlink" title="Slow Loading Design"></a>Slow Loading Design</h2><p>Always keep this in mind that your viewers will not spend an extra second waiting for your website to load. Therefore, make sure that your website is not too loaded to compromise loading speed. You can get rid of heavy designs like carousels, too many pictures, videos, etc., which slow down the loading process. Make sure you put only the most essential content on your page above the fold. Your user will not mind scrolling over to the next page but aslow loading page will definitely make you lose out on visitors.</p>
-<h2 id="Non-Responsive-Design"><a href="#Non-Responsive-Design" class="headerlink" title="Non Responsive Design"></a>Non Responsive Design</h2><p>As more and more people are shifting to hand held mobile devices to access the internet, it is almost a crime to not make your website mobile responsive. Lack of responsiveness will not only make your website difficult to view on a smaller device like a tablet or a mobile phone, it will also push down your ratings on the Google search, which can be disastrous for any website.</p>
-<p>Design your website wisely as it is the face of your company. It is what gives your potential clients an idea about your organization and helps you turn your visitors into clients. Hence, avoid these mistakes to ensure an excellent viewing experience for your visitors.</p>
-<p>Read more<a href="https://tech.co/entrepreneur/development-design" target="_blank" rel="external">about designing a quality website for your company</a>at TechCo</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/ENfiyi3" target="_blank" rel="external">https://tech.co/bid-farewell-worst-design-habits-2017-06</a> </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Your website is the primary online identity of your business. Hence, it has to be flawless. It is the space through which your potential 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Get epic graphic design skills and the diploma to prove it</title>
     <link href="https://gmagon.com/blog/2017/06/30/get-epic-graphic-design-skills-and-the-diploma-to-prove-it/"/>
     <id>https://gmagon.com/blog/2017/06/30/get-epic-graphic-design-skills-and-the-diploma-to-prove-it/</id>
@@ -783,239 +1089,28 @@
   </entry>
   
   <entry>
-    <title>Repetition, Pattern, and Rhythm</title>
-    <link href="https://gmagon.com/blog/2017/06/28/repetition-pattern-and-rhythm/"/>
-    <id>https://gmagon.com/blog/2017/06/28/repetition-pattern-and-rhythm/</id>
-    <published>2017-06-28T00:00:00.000Z</published>
-    <updated>2017-06-28T10:01:53.444Z</updated>
+    <title>Bid Farewell to These 6 Worst Website Design Habits</title>
+    <link href="https://gmagon.com/blog/2017/06/30/bid-farewell-to-these-6-worst-website-design-habits/"/>
+    <id>https://gmagon.com/blog/2017/06/30/bid-farewell-to-these-6-worst-website-design-habits/</id>
+    <published>2017-06-30T00:00:00.000Z</published>
+    <updated>2017-06-30T10:03:41.540Z</updated>
     
-    <content type="html"><![CDATA[<p>Let’s look at three subjects that, at first glance, may strike you as being incredibly basic and self-explanatory. However, although they mayseemlike they should need no introduction, we should study them. By understanding these concepts, you’ll be able to apply them more effectively to captivate your users’ attention while making your designs more effective.</p>
-<p>Say “repetition” and you might think about someone who says the same thing over and over again. However, it’s different indesign. Repeating things does not have to be boring! In fact, it canempowera design when used in the right way. It can also ensure that messages are better understood. As designers, we have threerepetition methods:<strong>repetition</strong>,<strong>patterns</strong>, and<strong>rhythm</strong>.</p>
-<h2 id="Repetition"><a href="#Repetition" class="headerlink" title="Repetition"></a>Repetition</h2><p>Repetition is simply repeating a single element many times in a design. For example, you could draw aline horizontally and then draw several others next to it.</p>
-<p><img src="http://img2.tuicool.com/qyeMfyB.jpg!web" alt=""></p>
-<p>Repetition can be useful in web and app design. For example, you’d expect the logo of a business to be repeated on every page and in the same place. Menu items are also often repeated in the same place on a page. This helps provide a consistentuser experience. By repeatingelements, we as designers not onlydeliver according to our users’expectations in this way, but we also improve their experience. Our being consistent makes the users more comfortable. Remember that the eye works in a certain way by default. Using repetition to keep the eye familiar with our design’s elements means we’re taking advantage of this tendency. We can also use shapes, colors, textures, fonts, etc. to maintain this consistency via repetition.</p>
-<p>You can also achieve repetition by using repeated messages. If you want your customers to know that you’re the cheapest or the fastest in the business, you’ll want to tell them that on more than one occasion if you want the message to stick. In this instance, we use repetition forreinforcement. You may rememberlearning your times tables by repeating them until you drummed them into your mind. The principle here is the same. We retain information better the more often we encounter it and internalize it.</p>
-<h2 id="Pattern"><a href="#Pattern" class="headerlink" title="Pattern"></a>Pattern</h2><p>Patterns are simply a repetition of more tan one design element working in concert with each other. Aseamless patternis one where every element within a design (no matter how often it’s repeated) combines to form a whole. This is most common in backgrounds on web and app pages. It’s also popular in carpet and wallpaper design. Look around you: your bed cover, wall, notebook cover. If you see a seamless pattern, look at it closely. Do you see how the elements (circles, spirals, cones, pineapples, etc.) appear again and again in the same way? Sometimes, they touch; sometimes, they have space between them.</p>
-<p><img src="http://img0.tuicool.com/qYzEJfu.jpg!web" alt=""></p>
-<p>Author/Copyright holder: Dirk Stoop. Copyright terms and licence: CC BY-NC 2.0</p>
-<p>As you might expect, designers base most patterns on colors, textures and shapes, rather than words. We can recognize shapes far more quickly than words, which we have to read, no matter how quickly. You can find such patterns in architecture, too. Architects tend to include a unifying motif on the inside and outside of buildings to enhance the aesthetic appeal. This is nothing new. Think of ancient Greek buildings such as the Parthenon. Ancient designers could be ingenious in their use of patterns of such elements as lines and spirals.</p>
-<p>When you consider using patterns in your web or app design, you’ll want to think about the pattern’s complexity. While it might seem like a nice idea to tile a single image as a background, this can make it much harder to read the text that lies over the pattern. If you want tocreate a design for a site that deals with travel to Greece, you could use the top of an ancient column for your design. At first, it looks great; you’ve got a beautiful design that features circles and grape leaves.</p>
-<p>However, you still have to add text. So, writing over this, you soon notice a problem. The dark writing sometimes falls over the image’s dark lines. You could use brighter text, such as white or yellow, but you’ll find that the gray stone makes it hard to read, too.You’rehaving trouble reading it, and so will your users. They want to engage with your design, not work to try and read text.Simplicity andsubtlety are key considerations if you want to maintain the user experience, keeping usersonyour page.</p>
-<h2 id="Rhythm"><a href="#Rhythm" class="headerlink" title="Rhythm"></a>Rhythm</h2><p>When you repeat elements, the intervals between those repetitions can create a sense of rhythm in the viewer and a sense ofmovement. Musicians create rhythm in the spacing between notes, effectively making these “silent” gapsplay offthe notes. Designers insert spacing between elements to makerhythm. There are, broadly speaking, five types of visual rhythm.</p>
-<p><img src="http://img2.tuicool.com/AfeAVnA.jpg!web" alt=""></p>
-<p>Author/Copyright holder: Eden-Lys. Copyright terms and licence: CC BY-NC-ND 2.0</p>
-<p><strong>Random rhythm</strong>–Repeating elements with nospecific regular interval creates random rhythms. The spacing could be a millimeter here, a centimeter there, while the elements could be all over the place. Think of falling snow, pebbles on a beach, traffic movements: they are all examples of random rhythms in action.</p>
-<p>It’s also worth noting that a rhythm mayappearrandom if you examine asmall section of the rhythm. However, if you step back and examine a larger section, it may be that there is a regular but complex rhythm applied to the design. Remember that you have positive and negative images, which you can use so that both the elements and the spaces between them make your design hard to “predict”. By using a larger series of elements, you’ll have virtually limitless possibilities toplay with. The artist René Magritte made particularly interesting use of random rhythm.</p>
-<p><strong>Regular rhythm</strong>–Like the beating of aheart, the regular rhythm follows the same intervals over and over again. You can easily make a regular rhythm just by creating a grid or a series of vertical lines. The user’s eye will instantly recognize a regular rhythm, scanning it for any irregularities in the process. Remember, the eye “likes” to be drawn to outstanding elements. Therefore, there is a risk that when you’re using a regular rhythm in a design that it can become monotonous (like the dripping of a tap).</p>
-<p><strong>Alternating rhythm</strong>–You can repeat more than one element in a design. In an alternating design, you use a 1-2-1-2-1-2 pattern. Think of the black and white squares on a chessboard: that’s an alternating rhythm in play. An alternating rhythm is, in fact, a regular rhythm with more complexity. It could be as straightforward as our chessboard, or we could envision something more intricate. Some fantastic alternating rhythms include rows of fish, birds, or other animals. Taking fish as an example, we can see that each identical fish is following another. Below, the sequence is repeated; however, thenegative space betweenthe rows shows fish of theothercolor (which we take to be the background) swimming the other way, the fine lines of their fins and tails interlocking with those of the first pattern of fish. M.C. Escher’sLizard(1942) is another great example of this, incorporating three colors of lizards with a pair of lizards of each color facing away from each other, tail to tail. As simple or complex as we want to make an alternating rhythm, it can be an easy way to break up the monotony of a regular rhythm.</p>
-<p><strong>Flowing rhythm</strong>–A flowing rhythm shows the repeated elements following bends, curves, and undulations. In nature, you can see this in the waves on a beach or sand dunes. As designers, we can mimic nature by making wonderful patterns of elements with flowing rhythm. We can show clumps of seaweed underwater, their strands gently facing in a series of directions. The user imagines them washing against each other.</p>
-<p><strong>Progressive rhythm</strong>–We can make a progressive rhythm simply by changing one characteristic of a motif as we repeat it. We could draw a series of circles, one above the other, making each lower one larger. Do you see how the largest one at the bottom looks like it’s closest to you? We can make a progressive rhythm change subtly or dramatically. You could add shade to the smaller circles progressively so that the smallest one at the top is dark, the middle one in partial shade, and the biggest one only slightly shaded. Progressive rhythms surround us. If you were tovideo someone dancing and then examine that video frame-by-frame, you would have a progressive rhythm.</p>
-<h2 id="Designing-with-Repetition-Pattern-and-Rhythm"><a href="#Designing-with-Repetition-Pattern-and-Rhythm" class="headerlink" title="Designing with Repetition, Pattern, and Rhythm"></a>Designing with Repetition, Pattern, and Rhythm</h2><p>The use of repeated visual elements is a technique designers commonly employ inweb design. You can repeat design elements, for example, to provide a consistent visual experience. It will make it easier for users to focus on the content because they know where they can find specific types of content ornavigation options.</p>
-<p>You can also use repetition to draw attention to a particular area of content or design. You can use it to show relationships between content blocks, too.</p>
-<p>Also, you can use patterns for backgrounds to addtexture and consistency, and you can deploy them to deliver consistency between pages of the same type.</p>
-<p>As designers, we can use rhythm to create excitement (building gradually over time) or reassurance (a heartbeat might be perfect on a page aimed at expectant mothers, for example). Or, we can use it to influence otheremotions.</p>
-<h2 id="The-Take-Away"><a href="#The-Take-Away" class="headerlink" title="The Take Away"></a>The Take Away</h2><p>As a designer, you have three types of repetition:</p>
-<ul>
-<li>Repetition</li>
-<li>Patterns</li>
-<li>Rhythm</li>
-</ul>
-<p>You can use these toshape the user experience of your web or app. Through repetition,patterns, or rhythm, you set “the mood” of theuser interface and use these elements to either reinforce your message and/or create the look and feel of your product.</p>
-<p>Repetition is the simplest element you can use. Pattern is a combination of elements that are repeated. Rhythm involves using intervals or spaces between elements to give the user an impression of rhythm or movement. We can use five types of rhythm:</p>
-<ul>
-<li>Random Rhythm</li>
-<li>Regular Rhythm</li>
-<li>Alternating Rhythm</li>
-<li>Flowing Rhythm</li>
-<li>Progressive Rhythm</li>
-</ul>
-<p>There is also another conception of pattern that comes from architect Christopher Alexander. We will examine that in a later article. Rhythm, like in music, helps build a cadence in your design, engaging your users with all sorts of interesting variations. With some thought, you can maximize the impact of your message by working the right rhythm into your design.</p>
-<h2 id="References-amp-Where-to-Learn-More"><a href="#References-amp-Where-to-Learn-More" class="headerlink" title="References &amp; Where to Learn More"></a>References &amp; Where to Learn More</h2><ul>
-<li>Hero Image: Author/Copyright holder: Jonas Bengtsson. Copyright terms and licence: CC BY 2.0</li>
-<li>Design in Art: Repetition, Pattern, and Rhythm.<br>Sophia Learning.<br>Retrieved from: <a href="http://www.sophia.org/tutorials/design-in-art-repetition-pattern-and-rhythm" target="_blank" rel="external">http://www.sophia.org/tutorials/design-in-art-repetition-pattern-and-rhythm</a>. [2014, Aug]</li>
-<li>Swinburne. BasicDesign Principles. Retrieved from: <a href="http://www.swinburne.edu.au/design/tutorials/design/design/\#four" target="_blank" rel="external">http://www.swinburne.edu.au/design/tutorials/design/design/\#four</a>. [2014 Aug]</li>
-</ul>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/QfAJN3N" target="_blank" rel="external">https://www.interaction-design.org/literature/article/repetition-pattern-and-rhythm</a></p>
+    <content type="html"><![CDATA[<p>Your website is the primary online identity of your business. Hence, it has to be flawless. It is the space through which your potential clients can gather all their information on your company. A well designed<a href="https://www.perth-web-design.com.au/website-design-portfolio/" target="_blank" rel="external">web design</a>can make or break your business. Hence, it is crucial that you avoid some of the common design mistakes which do not speak well to the visitors.</p>
+<h2 id="Lack-of-User-Friendliness"><a href="#Lack-of-User-Friendliness" class="headerlink" title="Lack of User Friendliness"></a>Lack of User Friendliness</h2><p>The first and foremost thing to keep in mind while designing your website is its user friendliness. You cannot assume all of your visitors to be extremely tech savvy. If your website is not easy to access and browse through for users of different levels of technological competence, it can give rise to frustration, which in turn, will make them customers abandon your space. Therefore, make sure all the necessary content or contact information is displayed clearly. Use easily accessible menu tabs, call to action buttons and whatever else it takes to ensure a smooth experience for your visitors.</p>
+<h2 id="Thoughtless-use-of-Colors"><a href="#Thoughtless-use-of-Colors" class="headerlink" title="Thoughtless use of Colors"></a>Thoughtless use of Colors</h2><p>It is important to know what your company represents and how to present all of it though your web design. Using the right kind of color scheme and design is crucial else you might end up<a href="https://tech.co/employee-benefits-package-millennial-2017-01" target="_blank" rel="external">damaging your company’s image</a>. Choose your colors wisely, keeping in mind the image you want to portray. Keep it simple but stunning. First, decide if you want a complimentary or contrasting color scheme, and once decided, stick to it.</p>
+<h2 id="Lack-of-White-Space"><a href="#Lack-of-White-Space" class="headerlink" title="Lack of White Space"></a>Lack of White Space</h2><p>If there is one thing that annoys a visitor infinitely, it is the lack of white space. White space is a stretch of blank space on your website, which is intended to strike a balance between the matter so as to ensure a better view of the content. Gone are the shiny, glittery designs of the nineties where websites tend to cram everything into one page. Minimalism offers a clean look which helps your viewer focus on the content better.</p>
+<p><img src="http://img2.tuicool.com/7FRVNbQ.jpg!web" alt=""></p>
+<h2 id="Autoplays-and-Pop-Ups"><a href="#Autoplays-and-Pop-Ups" class="headerlink" title="Autoplays and Pop Ups"></a>Autoplays and Pop Ups</h2><p>Often websites choose to include a small pop up page to ask their users to register or to advertise their content but it is not an advisable design. Concentrate more on the content than on such mindless advertisement. If your website is informative and well structured, viewers will automatically choose to register or look into your other content. Don’t distract your visitors with an annoying pop up. Similarly, autoplay can be an extremely infuriating feature on a website. For example, if someone is checking your website out at work or on a cab, it can be frustrating if an<a href="http://www.dreamytricks.net/free-music-download-apps-for-android/" target="_blank" rel="external">music starts playing automatically</a>. Give your users the choice to play it instead of forcing it upon them.</p>
+<h2 id="Slow-Loading-Design"><a href="#Slow-Loading-Design" class="headerlink" title="Slow Loading Design"></a>Slow Loading Design</h2><p>Always keep this in mind that your viewers will not spend an extra second waiting for your website to load. Therefore, make sure that your website is not too loaded to compromise loading speed. You can get rid of heavy designs like carousels, too many pictures, videos, etc., which slow down the loading process. Make sure you put only the most essential content on your page above the fold. Your user will not mind scrolling over to the next page but aslow loading page will definitely make you lose out on visitors.</p>
+<h2 id="Non-Responsive-Design"><a href="#Non-Responsive-Design" class="headerlink" title="Non Responsive Design"></a>Non Responsive Design</h2><p>As more and more people are shifting to hand held mobile devices to access the internet, it is almost a crime to not make your website mobile responsive. Lack of responsiveness will not only make your website difficult to view on a smaller device like a tablet or a mobile phone, it will also push down your ratings on the Google search, which can be disastrous for any website.</p>
+<p>Design your website wisely as it is the face of your company. It is what gives your potential clients an idea about your organization and helps you turn your visitors into clients. Hence, avoid these mistakes to ensure an excellent viewing experience for your visitors.</p>
+<p>Read more<a href="https://tech.co/entrepreneur/development-design" target="_blank" rel="external">about designing a quality website for your company</a>at TechCo</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/ENfiyi3" target="_blank" rel="external">https://tech.co/bid-farewell-worst-design-habits-2017-06</a> </p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Let’s look at three subjects that, at first glance, may strike you as being incredibly basic and self-explanatory. However, although they
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Design. Prototype. Propose. How One Man Used Adobe XD To Ask ‘Will You Marry Me?’</title>
-    <link href="https://gmagon.com/blog/2017/06/28/design-prototype-propose-how-one-man-used-adobe-xd-to-ask-will-you-marry-me/"/>
-    <id>https://gmagon.com/blog/2017/06/28/design-prototype-propose-how-one-man-used-adobe-xd-to-ask-will-you-marry-me/</id>
-    <published>2017-06-28T00:00:00.000Z</published>
-    <updated>2017-06-28T10:01:53.433Z</updated>
-    
-    <content type="html"><![CDATA[<p>Adobe XD is known as a powerful design and prototyping tool, but at its core it’s a communication tool that lets users share ideas quickly and easily. We’ve seen lots of examples of great work<a href="https://twitter.com/search?q=%23madewithadobexd&amp;src=typd" target="_blank" rel="external">shared online with #MadeWithAdobeXD</a>, but nothing quite like this. When Lee Chapman, a Latvia-based project manager for Cake HR, was introduced to XD by his boss, he started dreaming up a plan to use the program outside of work. It was a mission of love.</p>
-<p><img src="http://img1.tuicool.com/zERZV3z.jpg!web" alt=""></p>
-<p>Lee was dreaming up a creative way to propose to his girlfriend Zane (pronounced Zana), and he decided Adobe XD was going to be the way to do it.</p>
-<p>“Zane and I met on Tinder, and I wanted her to relive the experience of our first date, so I decided to mock-up my own version of Tinder,” said Lee. The only problem — Lee isn’t a pro designer and had never used XD before, but that didn’t stop him! “I started on Monday and I proposed to her on Friday. That’s the amazing thing about XD, how quickly I could do this.” His first design and prototype was a milestone in many ways.</p>
-<h3 id="The-Plan"><a href="#The-Plan" class="headerlink" title="The Plan"></a>The Plan</h3><p>Chapman spent nights working on his prototype, hiding the computer screen from Zane so she wouldn’t see what he was up to. Leveraging the prototyping power of XD, Lee created an immersive treasure hunt for Zane, mimicking the buttons and interactions of Tinder. The prototype led her from their home to the street corner where they first met, then on to the coffee shop where they had their first date. Lee simply wired up his design so each button interaction took her to a different screen, guiding her along the journey Chapman had planned.</p>
-<p>“You could say I was able to quickly onboard her through the engagement experience. I quickly learned I could use the tool to direct her where I wanted her to go,” he said.</p>
-<p>On Friday morning, after he had finished his design, Lee headed to work and sent Zane the link to his prototype, telling her to follow along with strict instructions not to skip ahead. She went on the journey, following the directions to locations and reading the love letters Chapman had composed on artboards throughout.</p>
-<p>“The love letters detailed how our lives are going to be changing, and she told me while she was reading this in the middle of the street she was bawling her eyes out,” said Chapman.</p>
-<p>As Zane was completing her treasure hunt throughout the city, Chapman was at home getting ready to ‘pop the question.’</p>
-<p><img src="http://img0.tuicool.com/7BZNfe2.jpg!web" alt=""></p>
-<h3 id="The-Proposal"><a href="#The-Proposal" class="headerlink" title="The Proposal"></a>The Proposal</h3><p>The final screen in Chapman’s prototype led Zane back to their house.</p>
-<p>“She let me know she was having the best time ever and crying her eyes out, and she was completely naive to what was next. It was also her birthday, so she thought it was her birthday present. She didn’t have any clue of the big finish until she came home,” he said.</p>
-<p>That’s where Chapman was waiting in a tuxedo with flowers and a big question. He asked her to marry him.</p>
-<p>“She said yes, and she loved the entire experience. To be honest, I think I nailed a pretty unique proposal.”</p>
-<p>He calls his creation an MVP (minimum viable proposal) on a personal level, and says the end result felt like an immersive story, since it was so easy for Zane to use.</p>
-<p>“I was able to give her that personal touch and that WOW moment throughout the whole experience, with every single push of a button.”</p>
-<h3 id="Easy-to-Design-Prototype-and-Share"><a href="#Easy-to-Design-Prototype-and-Share" class="headerlink" title="Easy to Design, Prototype, and Share"></a>Easy to Design, Prototype, and Share</h3><p>Because Zane would be using the prototype on her own, Chapman wanted to make sure it worked perfectly on her phone as she travelled to ‘their spots’ in the city.</p>
-<p>“XD provides artboard templates to her version of iPhone, so actually having the dimensions there was so helpful. What I also love and found super useful were the UI kits, like the one for Apple iOS, which made it easy to add in the default images for the mobile application design,” he said.</p>
-<p>He also found it easy to create a working prototype that would give Zane the open feel of an app, but still guide her on the experience he wanted to create.</p>
-<p>“I really loved how you can create a prototype with click functionality. My design was very basic, but that’s because Tinder is very basic, and I wanted to ensure the prototype I made gave the impression of a real application,” he said.</p>
-<p>Chapman has lots of reasons to be excited. On top of getting married, he and Zane are expecting a child, and no doubt their son or daughter has a lot of Adobe XD treasure hunts to look forward to.</p>
-<p>“On a personal level, this is experience has helped me on my journey to learning how to be a UX designer. I’m not the best at UI or UX, but I was able to open up my world to create that user experience that no one’s going to have.”</p>
-<p><em>You can follow Lee Chapman’s work on</em><a href="http://twitter.com/leefranchap" target="_blank" rel="external"><em><strong>his Twitter</strong></em></a><em><strong>, and</strong></em><a href="http://www.adobe.com/products/experience-design.html" target="_blank" rel="external"><em><strong>click here to learn more about Adobe XD</strong></em></a><em><strong>and its powerful prototyping tools.</strong></em></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/AJzQBjy" target="_blank" rel="external">https://blogs.adobe.com/creativecloud/design-prototype-propose-how-one-man-used-adobe-xd-to-ask-will-you-marry-me</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Adobe XD is known as a powerful design and prototyping tool, but at its core it’s a communication tool that lets users share ideas quickl
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>pnpm version 1 is out!</title>
-    <link href="https://gmagon.com/blog/2017/06/28/pnpm-version-1-is-out/"/>
-    <id>https://gmagon.com/blog/2017/06/28/pnpm-version-1-is-out/</id>
-    <published>2017-06-28T00:00:00.000Z</published>
-    <updated>2017-06-28T10:01:53.439Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="pnpm-version-1-is-out"><a href="#pnpm-version-1-is-out" class="headerlink" title="_pnpm_version 1 is out!"></a>_pnpm_version 1 is out!</h2><p>Today we’re excited to announce the release of<a href="https://github.com/pnpm/pnpm" target="_blank" rel="external">pnpm</a>1!</p>
-<p>Why only now? The initial commit to pnpm was made byRico Sta. Cruz on<a href="https://github.com/pnpm/pnpm/commit/4b42e5fcc402310d028ac54ba8fe979f7c4470af" target="_blank" rel="external">Jan 27, 2016</a>. It was based on the ideas of<a href="https://github.com/alexanderGugel/ied" target="_blank" rel="external">ied</a>by<a href="https://twitter.com/alexanderGugel" target="_blank" rel="external">Alexander Gugel</a>with initial commit on<a href="https://github.com/alexanderGugel/ied/commit/d8bae2d63750030b019e9653ce9ea71de93be5c7" target="_blank" rel="external">Aug 6, 2015</a>!</p>
-<p>Unlike<em>Yarn</em>, which has decided to use the same<strong>node_modules</strong>structure that_npm_creates,_pnpm_uses a completely new approach (about which you can read more inthis article). It was_really_hard to make a symlinked<strong>node_modules</strong>structure work with most of the existing npm packages! All the different problems that we have encountered and the dozens of breaking changes we had to make, deserves a post of its own. Finally, almost 2 years since the idea of a symlinked<strong>node_modules</strong>structure has born, we can tell with confidence: it is possible and<strong>it does work</strong>.</p>
-<h3 id="So-what-does-version-1-mean"><a href="#So-what-does-version-1-mean" class="headerlink" title="So what does version 1 mean?"></a>So what does version 1 mean?</h3><p>Version 1 means that:</p>
-<ul>
-<li>The<br><a href="https://github.com/pnpm/pnpm/blob/master/docs/about-the-package-store.md" target="_blank" rel="external">store structure</a><br>that pnpm uses since<br><a href="https://github.com/pnpm/pnpm/releases/tag/v0.70.0" target="_blank" rel="external">version 0.70</a><br>is reliable enough and we are confident that there will be no need in breaking changes in its structure.</li>
-<li><p><a href="https://github.com/pnpm/pnpm/blob/master/docs/symlinked-node-modules-structure.md" target="_blank" rel="external">The<strong>node_modules</strong>layout</a><br>that pnpm creates works with most of the ecosystem.</p>
-<p><em>pnpm@1</em><br>also ships with an experimental<br><strong>node_modules</strong><br>layout that can be turned on with the<br><a href="https://github.com/pnpm/pnpm#independent-leaves" target="_blank" rel="external">independent-leaves</a><br>config. The experimental layout boosts installation speed by 8% and works almost with all projects. However, we were not confident enough to make it the default yet.</p>
-</li>
-<li>The format of the<br><strong>shrinkwrap.yaml</strong><br>file, which is pnpm’s lockfile, is good enough for being committed to VCS.</li>
-<li>When possible,<br><em>pnpm@1</em><br>works the way<br><em>npm@5</em><br>does.</li>
-</ul>
-<p>You can rely on these things and they won’t get breaking changes in version 1.</p>
-<h3 id="What’s-next"><a href="#What’s-next" class="headerlink" title="What’s next?"></a>What’s next?</h3><p>Even faster!The goal is to make installations<em>subsecond fast</em>. So fast that it would run on every Git operation. Maybe one day it would be even integrated to Git?!</p>
-<p>As of now, pnpm is faster than Yarn when installing with cold cache but may be a bit slower in different scenarios. For a detailed comparison of npm/pnpm/Yarn speed, see “<a href="https://intoli.com/blog/node-package-manager-benchmarks/" target="_blank" rel="external">Why I still don’t use Yarn</a>”. However, there is no reason for pnpm to be slower than Yarn or npm. So we’ll have to find the issues and make pnpm faster.</p>
-<p>Simpler codebase.pnpm is currently very hard to contribute to, so it will have to be split into separate packages. The first step will probably be separation of the installation engine.</p>
-<p>PR.Although pnpm is public for a longer period of time than Yarn, it is far less popular. So more articles, more documentation, and more interesting tools will be created to promote pnpm. Let’s make our<a href="https://github.com/pnpm/awesome-pnpm" target="_blank" rel="external">awesome list</a>huge!</p>
-<h3 id="Try-it"><a href="#Try-it" class="headerlink" title="Try it"></a>Try it</h3><p>Just install pnpm via npm:<code>npm install -g pnpm</code>. And use it instead of npm whenever you want to install something:<code>pnpm i foo</code>.</p>
-<p>Also, you can read more info at the<a href="https://github.com/pnpm/pnpm" target="_blank" rel="external">pnpm GitHub repo</a>. You can follow<a href="https://twitter.com/pnpmjs" target="_blank" rel="external">pnpm on Twitter</a>or ask for help at the<a href="https://gitter.im/pnpm/pnpm" target="_blank" rel="external">pnpm Gitter Chat Room</a>.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/euQnUn7" target="_blank" rel="external">https://medium.com/pnpm/pnpm-version-1-is-out-935a07af914</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;pnpm-version-1-is-out&quot;&gt;&lt;a href=&quot;#pnpm-version-1-is-out&quot; class=&quot;headerlink&quot; title=&quot;_pnpm_version 1 is out!&quot;&gt;&lt;/a&gt;_pnpm_version 1 is ou
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>5 ways type can define brands</title>
-    <link href="https://gmagon.com/blog/2017/06/28/5-ways-type-can-define-brands/"/>
-    <id>https://gmagon.com/blog/2017/06/28/5-ways-type-can-define-brands/</id>
-    <published>2017-06-28T00:00:00.000Z</published>
-    <updated>2017-06-28T10:01:53.415Z</updated>
-    
-    <content type="html"><![CDATA[<p>Choosing the right typeface is a crucial part of thelogo design process, but when it comes to defining the unique characteristics of a brand, it can also play a much more subtle role in shaping its personality and tone of voice.</p>
-<p>For smaller brands, this tends to be as simple as selecting an existing typeface that’s best suited for their particular needs. But the ultimate solution, for those with the time and budget to do so, is a bespoke font tweaked to perfection.</p>
-<p>Studios such as<a href="https://www.daltonmaag.com/" target="_blank" rel="external">Dalton Maag</a>,<a href="https://commercialtype.com/" target="_blank" rel="external">Commercial Type</a>,<a href="http://www.fontsmith.com/" target="_blank" rel="external">Fontsmith</a>and<a href="https://www.typography.com/" target="_blank" rel="external">Hoefler &amp; Co</a>haver extensive experience in developing bespoke typefaces for brands, and many of their clients have honed their personality across many different platforms as a result.</p>
-<p>Read on to discover how bespoke typography has enhanced brands across five different sectors…</p>
-<h3 id="01-Motion-friendly-type-for-broadcasters"><a href="#01-Motion-friendly-type-for-broadcasters" class="headerlink" title="01. Motion-friendly type for broadcasters"></a>01. Motion-friendly type for broadcasters</h3><p>On-screen branding provides a particular challenge for bespoke typefaces, as motion graphics come into play alongside all manner of other uses, from billboards to corporate stationery.</p>
-<p><a href="http://brody-associates.com/" target="_blank" rel="external">Brody Associates</a>’ highly distinctive typeface for Channel 4 is a great example of the versatility required to convey personality in this field. Within the same family, it combines a functional text face (Chadwick) with a highly expressive display version (Horseferry).</p>
-<p><img src="http://img1.tuicool.com/fERJBbY.jpg!web" alt=""></p>
-<p>Channel 4 can choose between text face Chadwick and display face Horseferry</p>
-<p>Horseferry incorporates elements from Channel 4’s logo into the letterforms, with highly unconventional, striking results that can only function at large sizes, such as for advertising. Chadwick follows the same basic structure, but calms things down to help with legibility, particularly when used to communicate information on screen.</p>
-<p><img src="http://img2.tuicool.com/vy6Brm6.jpg!web" alt=""></p>
-<p>The curves of the ITV logotype are echoed in its typeface</p>
-<p>For ITV, Fontsmith was given the task of translating the smooth, flowing curves of the broadcaster’s logotype into a whole typeface family to be used across the brand, including TV, online and on-demand applications.</p>
-<p>The resulting typeface is detailed and wide proportioned, with a subtle calligraphic feel. According to Fontsmith: “When you take a pen off the page when writing, you get the sense of a rounded ending to the stroke or line creating a subtle, modern and bouncy script tone of voice.”</p>
-<h3 id="02-Standout-typography-for-packaging"><a href="#02-Standout-typography-for-packaging" class="headerlink" title="02. Standout typography for packaging"></a>02. Standout typography for packaging</h3><p>When it comes to brands that express themselves on packaging, on-shelf standout becomes a critical factor to consider in a typeface. And where global brands are concerned, different language support also comes into play as that packaging needs to cater to different markets.</p>
-<p><img src="http://img0.tuicool.com/Qj2eqeZ.jpg!web" alt=""></p>
-<p>Colgate Ready was translated into a range of different scripts</p>
-<p>Another Fontsmith case study is Colgate, in collaboration with The Partners and Red Fuse Communications. The brief was to reflect the “emotional and tonal dimensions” of the brand through a Roman/Latin typeface in three different weights, and ‘Colgate Ready’ was the result.</p>
-<p>Colgate Ready was translated into Cyrillic, Eastern European, Devanagari and Thai, with a consistent stroke weight, x-height, cap height, width proportions and terminals.</p>
-<p><img src="http://img2.tuicool.com/2iQNR3f.jpg!web" alt=""></p>
-<p>Hoefler &amp; Co’s bespoke typeface is used sparingly on Tiffany &amp; Co’s packaging</p>
-<p>At the other end of the scale, in the luxury market, Tiffany &amp; Co’s unique typeface, created by Hoefler &amp; Co, is used sparingly on the jeweller’s minimalist packaging, making those iconic duck-egg-blue boxes even more desirable.</p>
-<h3 id="03-Flexible-typography-for-retail"><a href="#03-Flexible-typography-for-retail" class="headerlink" title="03. Flexible typography for retail"></a>03. Flexible typography for retail</h3><p>Another fascinating application of bespoke type is in the retail space, where applications range from signage and wayfinding, to point-of-sale displays, to own-brand packaging.</p>
-<p>Dalton Maag was commissioned to create a bespoke font for Lush, translating the boutique cosmetics brand’s distinctive chalkboard-style handwritten signage into a more neutral and contemporary typeface.</p>
-<p>“Every letter had two alternate versions, while the most-used letters had three alternates,” explains designer Riccardo de Franceschi. “On top of these we created ligatures, and selected them according to not only frequency of use, but also the way the Lush handwriters write.”</p>
-<p><img src="http://img1.tuicool.com/q6NzAzr.jpg!web" alt=""></p>
-<p>For Lush’s typeface, each character needed two or three alternative versions</p>
-<p>Lush’s typeface helps develop its boutique, artisan brand voice, but larger stores need to tread a finer line between personality and functionality – such as Fontsmith’s bespoke typeface for Sainsbury’s, which uses the foundry’s own FS Lola as a starting point.</p>
-<p>“The new font needed to successfully stretch across a wide range of channels including above the line marketing, online, publications, packaging, in-store services, in-store navigation and in-store pricing,” reveals the agency. “It had to work from 400pt, all the way down to 6pt.”</p>
-<p><img src="http://img1.tuicool.com/NRzQbe6.jpg!web" alt=""></p>
-<p>Sainsbury’s’ font needed to stretch across a wide range of uses</p>
-<p>FS Lola’s distinctive slab serifs were softened, while regularly used brand words – particularly those that featured in wayfinding and signage – were adjusted on a case by case basis to improve legibility while conveying the supermarket’s personality.</p>
-<h3 id="04-Scalable-typography-for-mobile"><a href="#04-Scalable-typography-for-mobile" class="headerlink" title="04. Scalable typography for mobile"></a>04. Scalable typography for mobile</h3><p>When it comes to mobile use, the need for functionality and legibility at tiny sizes on small screens can all too easily overwhelm brand personality. But it’s not impossible.</p>
-<p><img src="http://img1.tuicool.com/EFVvQvq.jpg!web" alt=""></p>
-<p>For Nokia, Dalton Maag faced a massive, multi-platform, multi-language project</p>
-<p>Bespoke type projects don’t get much more in-depth than Dalton Maag’s breakthrough project for global giant Nokia, which saw the agency expand massively to handle the demands of the multi-platform, multi-language project – including Hebrew, Arabic, Thai, Greek and Russian.</p>
-<p>“This was all about going back to Finnish design roots – clean, simple, pure – and functionality was the primary objective,” explains Bruno Maag. “There was a big discussion about whether the brand fonts should have more personality or not. While the UI fonts need to be functional and readable, the display fonts have to do something else for their job.”</p>
-<p><img src="http://img2.tuicool.com/jURzmi6.jpg!web" alt=""></p>
-<p>Fontsmith created this bespoke semi-slab serif typeface for Movistar</p>
-<p>Fontsmith collaborated with Interbrand on a bespoke semi-slab serif typeface for Movistar, Telefónica’s Spanish and Latin American mobile operator. According to the agency: “We needed to be mindful that the slab wasn’t too static, that it had rhythm, progression, an approachable nature, and was authentic.”</p>
-<h3 id="05-Apt-typography-for-editorial"><a href="#05-Apt-typography-for-editorial" class="headerlink" title="05. Apt typography for editorial"></a>05. Apt typography for editorial</h3><p>One of the most varied uses for a bespoke typeface is in a newspaper or magazine, purely because there are so many sizes, weights and styles involved in different capacities.</p>
-<p><img src="http://img0.tuicool.com/INFbyaq.jpg!web" alt=""></p>
-<p>Commercial Type designed this multi-weight typeface for The Guardian in 2005</p>
-<p>A particularly high-profile example of this is Commercial Type’s multi-weight typeface for The Guardian, which coincided with the newspaper’s transition to the Berliner format in 2005. It has served the newspaper well ever since, although the recent announcement that it’ll shrink to tabloid size in 2018 may prompt another refresh.</p>
-<p>The extensive family incorporates several interrelated families: an Egyptian for headlines; a Text Egyptian; four different widths of Sans for headlines; and finally an Agate Sans. Between them, they can handle everything from hard-hitting headlines to tiny financial listings.</p>
-<p><img src="http://img1.tuicool.com/6R3mm2B.jpg!web" alt=""></p>
-<p>Wired is synonymous with innovative typography</p>
-<p>One magazine that’s synonymous with innovative use of type is Condé Nast’s Wired – and again, Hoefler &amp; Co rose to the challenge with Forza, an adaptable sans serif based on a rounded rectangle structure that, like Guardian Collection, is available commercially.</p>
-<p>“Wired commissioned us to design a square sans as its editorial workhorse – one that could handle everything from philosophical essays to down-to-earth service pieces,” reports Hoefler &amp; Co. “Forza’s sophisticated visual vocabulary makes it alert and engaging, and its broad palette of weights ensures it can meet the needs of the most demanding designer.”</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/yIzmAnr" target="_blank" rel="external">http://www.creativebloq.com/features/5-ways-type-can-define-brands</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Choosing the right typeface is a crucial part of thelogo design process, but when it comes to defining the unique characteristics of a br
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Google News shows off its minimalist new look</title>
-    <link href="https://gmagon.com/blog/2017/06/28/google-news-shows-off-its-minimalist-new-look/"/>
-    <id>https://gmagon.com/blog/2017/06/28/google-news-shows-off-its-minimalist-new-look/</id>
-    <published>2017-06-28T00:00:00.000Z</published>
-    <updated>2017-06-28T10:01:53.436Z</updated>
-    
-    <content type="html"><![CDATA[<p>Google today rolled out a brand new look for News. The redesign is modern, clutter-free, and puts the emphasis on what’s important when browsing dozens of news stories.</p>
-<p>According to Google:</p>
-<p>“To make news more accessible and easier to navigate, we redesigned the desktop website with a renewed focus on facts, diverse perspectives, and more control for users.”</p>
-<p>Scrolling through the news feed, you’ll find easily scannable content.Google’s Story card format allowsusers to quickly pinpoint key bits of information like news source, headline, and publish time. The Story cards also allow users to look at the different perspectives surrounding the story ー encouraging readers to gain a more informative understanding of the issue.</p>
-<p>And if you glance at the top of the page, you’ll see a new navigation bar for “Headlines,” “Local” and “For You.” “Local” is exactly what it sounds like ー keeping tabs on stories from any part of the world. And then there’s “For You,” a feature that personalizes the news feed based on your interests.</p>
-<p><img src="http://img2.tuicool.com/73uyMnN.png!web" alt=""></p>
-<p>The icing on the cake is the Fact Check block, which makes it a lot easier to vet a story’s credibility.</p>
-<p>The feature is only available to US readers at the moment, but Google plans to slowly roll out the update globally.</p>
-<p><a href="https://thenextweb.com/company/google/" target="_blank" rel="external">Google</a><a href="https://thenextweb.com/section/insights/" target="_blank" rel="external">Insights</a></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/3yquAfB" target="_blank" rel="external">https://thenextweb.com/google/2017/06/28/google-news-shows-off-its-minimalist-new-look/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Google today rolled out a brand new look for News. The redesign is modern, clutter-free, and puts the emphasis on what’s important when b
+      &lt;p&gt;Your website is the primary online identity of your business. Hence, it has to be flawless. It is the space through which your potential 
     
     </summary>
     

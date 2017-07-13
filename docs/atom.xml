@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-07-10T04:16:54.602Z</updated>
+  <updated>2017-07-10T04:16:54.596Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Make a Perfect Triangle Path in Illustrator</title>
+    <link href="https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/"/>
+    <id>https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/</id>
+    <published>2017-07-10T00:00:00.000Z</published>
+    <updated>2017-07-10T04:16:54.596Z</updated>
+    
+    <content type="html"><![CDATA[<p>There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first started using Illustrator and really tried to get to know the program in depth. This was one of the things that frustrated me regularly (making a perfect, equilateral triangle) until I finally figured out a simple solution. If you use Adobe Illustrator on a regular basis, chances are you might need to create an equilateral triangle every once in a while. This may seem like a simple task, and it is, but not as easy as it should be. I’ll show you how to easily make a perfect triangle path in Illustrator, and hopefully, you will have one less vector headache to deal with in the future.</p>
+<p><img src="http://img1.tuicool.com/a67fAvB.gif" alt=""></p>
+<h2 id="1-Select-the-Star-Tool"><a href="#1-Select-the-Star-Tool" class="headerlink" title="1. Select the Star Tool"></a>1. Select the Star Tool</h2><p>Yes, believe it or not, the Star Tool is what you will use to make a triangle. I know it sounds weird, but go with me here.</p>
+<p><img src="http://img0.tuicool.com/vyqM7zn.gif" alt=""></p>
+<h2 id="2-Click-Once-on-the-Artboard"><a href="#2-Click-Once-on-the-Artboard" class="headerlink" title="2. Click Once on the Artboard"></a>2. Click Once on the Artboard</h2><p>By only clicking once, you will get the Star Tool Options pane. This is where you can reduce the number of points to “3.” The trick is to set one radius 2 at your desired size for your triangle, then set the other radius at exactly half. Note: It doesn’t matter which radius is which. Radius 1 and 2 can be reversed as long as one is double/half the other. Choose the size of your triangle and click OK.</p>
+<p><img src="http://img1.tuicool.com/BJ3yMr6.gif" alt=""></p>
+<h2 id="3-Get-Rid-of-the-Extra-Anchor-Points"><a href="#3-Get-Rid-of-the-Extra-Anchor-Points" class="headerlink" title="3. Get Rid of the Extra Anchor Points"></a>3. Get Rid of the Extra Anchor Points</h2><p>Now that you have your triangle, you might want to get rid of the extra anchor points created by the Star tool.</p>
+<p><img src="http://img0.tuicool.com/63qaeuV.gif" alt=""></p>
+<p>You can select the Subtract Anchor Point tool or hit the keyboard shortcut “-” (minus) and delete the 3 points that are in between the corners of your path.</p>
+<p><img src="http://img1.tuicool.com/fuInYnV.gif" alt=""></p>
+<h2 id="Done"><a href="#Done" class="headerlink" title="Done!"></a>Done!</h2><p>There you have it. A perfect Triangle path in only a few easy steps, no pen tool necessary!</p>
+<p><img src="http://img0.tuicool.com/ayAFvmE.gif" alt=""></p>
+<p>From here you can do anything you need to with it, like maybe reflect it and make it have the wide part at the bottom, etc. Remember that the angles in every equilateral triangle are 60 degrees, so if you need something to line up with one of the sides of your equilateral triangle, rotate that object in 60 degree intervals and you should be able to perfectly align things to your T-angle! I hope this little tip saves you some time and headache. It is often-times the little things that help the most. (from my experience)</p>
+<p><img src="http://img1.tuicool.com/RFRZRrF.gif" alt=""></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/JRVna2Q" target="_blank" rel="external">http://www.bittbox.com/illustrator/make-a-perfect-triangle-path-in-illustrator</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first 
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>When not to use deep learning</title>
@@ -48,32 +81,52 @@
   </entry>
   
   <entry>
-    <title>Make a Perfect Triangle Path in Illustrator</title>
-    <link href="https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/"/>
-    <id>https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/</id>
+    <title>2 Things I learnt By Reading Failsafe Source code</title>
+    <link href="https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/"/>
+    <id>https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</id>
     <published>2017-07-10T00:00:00.000Z</published>
-    <updated>2017-07-10T04:16:54.596Z</updated>
+    <updated>2017-07-10T04:16:54.579Z</updated>
     
-    <content type="html"><![CDATA[<p>There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first started using Illustrator and really tried to get to know the program in depth. This was one of the things that frustrated me regularly (making a perfect, equilateral triangle) until I finally figured out a simple solution. If you use Adobe Illustrator on a regular basis, chances are you might need to create an equilateral triangle every once in a while. This may seem like a simple task, and it is, but not as easy as it should be. I’ll show you how to easily make a perfect triangle path in Illustrator, and hopefully, you will have one less vector headache to deal with in the future.</p>
-<p><img src="http://img1.tuicool.com/a67fAvB.gif" alt=""></p>
-<h2 id="1-Select-the-Star-Tool"><a href="#1-Select-the-Star-Tool" class="headerlink" title="1. Select the Star Tool"></a>1. Select the Star Tool</h2><p>Yes, believe it or not, the Star Tool is what you will use to make a triangle. I know it sounds weird, but go with me here.</p>
-<p><img src="http://img0.tuicool.com/vyqM7zn.gif" alt=""></p>
-<h2 id="2-Click-Once-on-the-Artboard"><a href="#2-Click-Once-on-the-Artboard" class="headerlink" title="2. Click Once on the Artboard"></a>2. Click Once on the Artboard</h2><p>By only clicking once, you will get the Star Tool Options pane. This is where you can reduce the number of points to “3.” The trick is to set one radius 2 at your desired size for your triangle, then set the other radius at exactly half. Note: It doesn’t matter which radius is which. Radius 1 and 2 can be reversed as long as one is double/half the other. Choose the size of your triangle and click OK.</p>
-<p><img src="http://img1.tuicool.com/BJ3yMr6.gif" alt=""></p>
-<h2 id="3-Get-Rid-of-the-Extra-Anchor-Points"><a href="#3-Get-Rid-of-the-Extra-Anchor-Points" class="headerlink" title="3. Get Rid of the Extra Anchor Points"></a>3. Get Rid of the Extra Anchor Points</h2><p>Now that you have your triangle, you might want to get rid of the extra anchor points created by the Star tool.</p>
-<p><img src="http://img0.tuicool.com/63qaeuV.gif" alt=""></p>
-<p>You can select the Subtract Anchor Point tool or hit the keyboard shortcut “-” (minus) and delete the 3 points that are in between the corners of your path.</p>
-<p><img src="http://img1.tuicool.com/fuInYnV.gif" alt=""></p>
-<h2 id="Done"><a href="#Done" class="headerlink" title="Done!"></a>Done!</h2><p>There you have it. A perfect Triangle path in only a few easy steps, no pen tool necessary!</p>
-<p><img src="http://img0.tuicool.com/ayAFvmE.gif" alt=""></p>
-<p>From here you can do anything you need to with it, like maybe reflect it and make it have the wide part at the bottom, etc. Remember that the angles in every equilateral triangle are 60 degrees, so if you need something to line up with one of the sides of your equilateral triangle, rotate that object in 60 degree intervals and you should be able to perfectly align things to your T-angle! I hope this little tip saves you some time and headache. It is often-times the little things that help the most. (from my experience)</p>
-<p><img src="http://img1.tuicool.com/RFRZRrF.gif" alt=""></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/JRVna2Q" target="_blank" rel="external">http://www.bittbox.com/illustrator/make-a-perfect-triangle-path-in-illustrator</a></p>
+    <content type="html"><![CDATA[<p>Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of<a href="https://github.com/jhalterman/failsafe" target="_blank" rel="external">failsafe</a>library.</p>
+<p>Failsafe is a lightweight, zero-dependency library for handling failures. It was designed to be as easy to use as possible, with a concise API for handling everyday use cases and the flexibility to handle everything else.</p>
+<p>Let’s suppose you are working with a flaky HTTP service. You can use failsafe to retry the service a configurable number of times by writing code as shown below.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">RetryPolicy retryPolicy = </div><div class="line">new</div><div class="line"> RetryPolicy()</div><div class="line">  .retryOn(HttpConnectionException.</div><div class="line">class</div><div class="line">)</div><div class="line">  .withMaxRetries(</div><div class="line">3</div><div class="line">);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">MyHttpService connection = Failsafe.</div><div class="line">with</div><div class="line">(retryPolicy)</div><div class="line">                               .get</div><div class="line">(() -</div><div class="line">&gt;</div><div class="line"> connect())</div><div class="line">;</div></pre></td></tr></table></figure>
+<p>The above will retry 3 times to connect to the http service if HttpConnectionException is thrown.</p>
+<h2 id="2-Things-I-learnt"><a href="#2-Things-I-learnt" class="headerlink" title="2 Things I learnt"></a>2 Things I learnt</h2><p>Reading through the source code and referring to Github issues I learnt couple of things to avoid when designing APIs. So, I learnt what not to do rather than what to do ��</p>
+<ol>
+<li>Don’t use wrong default values: failsafe library does not enforce users to provide values when configuring RetryPolicy or other configuration object. The default value for number of retries is set to  -1, which means retry infinitely. This is not correct as user of the API would want retry call to complete eventually or throw an exception. I think better way to design API is to enforce users to provide values when you are unable to come up with good default values. This would avoid surprises to the user.  APIs should follow<br><a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" target="_blank" rel="external">Principle of least astonishment</a><br>.</li>
+<li>Favour immutability: A common thread that I found in many issues is related to shareability of RetryPolicy object. Users want to reuse RetryPolicy object but because it is not immutable they fear thread safety concerns. Library author clarified that library does not change the state of object internally so it is safe to reuse. I think the better way to design such objects is by using a builder pattern. Then, in the build method of builder make an immutable object. This does not confuse users and keep your API consistent.</li>
+</ol>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/Y3mUjaa" target="_blank" rel="external">http://shekhargulati.com/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first 
+      &lt;p&gt;Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of&lt;a href=&quot;https://
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>News Outlets to Seek Bargaining Rights Against Google and Facebook</title>
+    <link href="https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/"/>
+    <id>https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/</id>
+    <published>2017-07-10T00:00:00.000Z</published>
+    <updated>2017-07-10T04:16:54.599Z</updated>
+    
+    <content type="html"><![CDATA[<p>Google andFacebook continue to<a href="https://www.ft.com/content/30c81d12-08c8-11e7-97d1-5e720a26771b" target="_blank" rel="external">gobble up</a>the digital advertising market,<a href="https://www.nytimes.com/2017/05/07/business/media/ad-buyers-have-say-in-survival-of-news.html?rref=collection%2Fbyline%2Fjim-rutenberg&amp;action=click&amp;contentCollection=undefined&amp;region=stream&amp;module=stream_unit&amp;version=latest&amp;contentPlacement=6&amp;pgtype=collection" target="_blank" rel="external">siphoning away revenue</a>that once paid for the quality journalism that Google and Facebook now offer for free.</p>
+<p>They are gaining increasing control over digital distribution, so newspapers that once delivered their journalism with their own trucks increasingly have to rely on these big online platforms to get their articles in front of people, fighting for attention alongsidefake news, websites that lift their content, and cat videos.</p>
+<p>And for all of Google’s and Facebook’s<a href="http://fortune.com/2017/02/22/tech-funding-for-journalism/" target="_blank" rel="external">efforts to support journalism</a>by helping news organizations find new revenue streams — and survive in the new world that these sites helped create — they are, at the end of the day, the royals of the court. Quality news providers are the supplicants and the serfs.</p>
+<p>It’s an uneasy alliance that has publishers chafing at the<a href="https://digiday.com/media/facebook-faces-increased-publisher-resistance-instant-articles/?utm_source=rundown&amp;utm_medium=email&amp;utm_content=1704018&amp;utm_campaign=digidaydis" target="_blank" rel="external">returns they receive</a>from Google and Facebook, which rely on the free flow of premium news and information.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/mAjuM3" target="_blank" rel="external">https://www.nytimes.com/2017/07/09/business/media/google-facebook-news-media-alliance.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Google andFacebook continue to&lt;a href=&quot;https://www.ft.com/content/30c81d12-08c8-11e7-97d1-5e720a26771b&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;go
     
     </summary>
     
@@ -209,59 +262,6 @@
   </entry>
   
   <entry>
-    <title>2 Things I learnt By Reading Failsafe Source code</title>
-    <link href="https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/"/>
-    <id>https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</id>
-    <published>2017-07-10T00:00:00.000Z</published>
-    <updated>2017-07-10T04:16:54.579Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of<a href="https://github.com/jhalterman/failsafe" target="_blank" rel="external">failsafe</a>library.</p>
-<p>Failsafe is a lightweight, zero-dependency library for handling failures. It was designed to be as easy to use as possible, with a concise API for handling everyday use cases and the flexibility to handle everything else.</p>
-<p>Let’s suppose you are working with a flaky HTTP service. You can use failsafe to retry the service a configurable number of times by writing code as shown below.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">RetryPolicy retryPolicy = </div><div class="line">new</div><div class="line"> RetryPolicy()</div><div class="line">  .retryOn(HttpConnectionException.</div><div class="line">class</div><div class="line">)</div><div class="line">  .withMaxRetries(</div><div class="line">3</div><div class="line">);</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">MyHttpService connection = Failsafe.</div><div class="line">with</div><div class="line">(retryPolicy)</div><div class="line">                               .get</div><div class="line">(() -</div><div class="line">&gt;</div><div class="line"> connect())</div><div class="line">;</div></pre></td></tr></table></figure>
-<p>The above will retry 3 times to connect to the http service if HttpConnectionException is thrown.</p>
-<h2 id="2-Things-I-learnt"><a href="#2-Things-I-learnt" class="headerlink" title="2 Things I learnt"></a>2 Things I learnt</h2><p>Reading through the source code and referring to Github issues I learnt couple of things to avoid when designing APIs. So, I learnt what not to do rather than what to do ��</p>
-<ol>
-<li>Don’t use wrong default values: failsafe library does not enforce users to provide values when configuring RetryPolicy or other configuration object. The default value for number of retries is set to  -1, which means retry infinitely. This is not correct as user of the API would want retry call to complete eventually or throw an exception. I think better way to design API is to enforce users to provide values when you are unable to come up with good default values. This would avoid surprises to the user.  APIs should follow<br><a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" target="_blank" rel="external">Principle of least astonishment</a><br>.</li>
-<li>Favour immutability: A common thread that I found in many issues is related to shareability of RetryPolicy object. Users want to reuse RetryPolicy object but because it is not immutable they fear thread safety concerns. Library author clarified that library does not change the state of object internally so it is safe to reuse. I think the better way to design such objects is by using a builder pattern. Then, in the build method of builder make an immutable object. This does not confuse users and keep your API consistent.</li>
-</ol>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/Y3mUjaa" target="_blank" rel="external">http://shekhargulati.com/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of&lt;a href=&quot;https://
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>News Outlets to Seek Bargaining Rights Against Google and Facebook</title>
-    <link href="https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/"/>
-    <id>https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/</id>
-    <published>2017-07-10T00:00:00.000Z</published>
-    <updated>2017-07-10T04:16:54.599Z</updated>
-    
-    <content type="html"><![CDATA[<p>Google andFacebook continue to<a href="https://www.ft.com/content/30c81d12-08c8-11e7-97d1-5e720a26771b" target="_blank" rel="external">gobble up</a>the digital advertising market,<a href="https://www.nytimes.com/2017/05/07/business/media/ad-buyers-have-say-in-survival-of-news.html?rref=collection%2Fbyline%2Fjim-rutenberg&amp;action=click&amp;contentCollection=undefined&amp;region=stream&amp;module=stream_unit&amp;version=latest&amp;contentPlacement=6&amp;pgtype=collection" target="_blank" rel="external">siphoning away revenue</a>that once paid for the quality journalism that Google and Facebook now offer for free.</p>
-<p>They are gaining increasing control over digital distribution, so newspapers that once delivered their journalism with their own trucks increasingly have to rely on these big online platforms to get their articles in front of people, fighting for attention alongsidefake news, websites that lift their content, and cat videos.</p>
-<p>And for all of Google’s and Facebook’s<a href="http://fortune.com/2017/02/22/tech-funding-for-journalism/" target="_blank" rel="external">efforts to support journalism</a>by helping news organizations find new revenue streams — and survive in the new world that these sites helped create — they are, at the end of the day, the royals of the court. Quality news providers are the supplicants and the serfs.</p>
-<p>It’s an uneasy alliance that has publishers chafing at the<a href="https://digiday.com/media/facebook-faces-increased-publisher-resistance-instant-articles/?utm_source=rundown&amp;utm_medium=email&amp;utm_content=1704018&amp;utm_campaign=digidaydis" target="_blank" rel="external">returns they receive</a>from Google and Facebook, which rely on the free flow of premium news and information.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/mAjuM3" target="_blank" rel="external">https://www.nytimes.com/2017/07/09/business/media/google-facebook-news-media-alliance.html</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Google andFacebook continue to&lt;a href=&quot;https://www.ft.com/content/30c81d12-08c8-11e7-97d1-5e720a26771b&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;go
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>PowerShell Tool Time: The Tool Framework</title>
     <link href="https://gmagon.com/blog/2017/07/07/powershell-tool-time-the-tool-framework/"/>
     <id>https://gmagon.com/blog/2017/07/07/powershell-tool-time-the-tool-framework/</id>
@@ -355,39 +355,6 @@ $_
     <summary type="html">
     
       &lt;p&gt;Welcome to a new blog series here on SQL Server Central, Powershell Tool Time. Over the next few articles I will serve a SQL Server/Power
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>A Nasty Instagram Bug Is Causing Lots Of People To Think Their Accounts Were Deleted</title>
-    <link href="https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/"/>
-    <id>https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/</id>
-    <published>2017-07-07T00:00:00.000Z</published>
-    <updated>2017-07-07T10:09:04.665Z</updated>
-    
-    <content type="html"><![CDATA[<p>A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.</p>
-<p>The Facebook owned-social app is being bombarded with complaints on Twitter, Facebook and its own service from people who claim their accounts have been deleted without warning or cause.</p>
-<p>Instagram says the culprit is a bug that not only logged people out of their accounts, but also hid them from view. When BuzzFeed News checked multiple account pages that users claimed were deleted, it saw a message stating that the content was unavailable, noting that the link might be broken or the page could’ve been removed.</p>
-<p><strong>“</strong>No accounts have been deleted,” a company spokesperson told BuzzFeed News. “However, the bug logged some users out of their accounts, while also locking their accounts from view. When the bug is fixed and affected users are able to log back in, their accounts will be viewable again.”</p>
-<p><img src="http://img1.tuicool.com/ZJVn2ei.png!web" alt=""></p>
-<p>Comments on Instagram’s latest post</p>
-<p>Even so, users are freaked out. “Please give me back my account@harryspinkflowers i worked so hard on it and had it for 2 years…. please give it back,” read a typical response to Instagram’slatest post. Others were less diplomatic. “Give me my fucking account back bro,” Twitter user<a href="https://go.redirectingat.com/?id=74679X1524629&amp;sref=https%3A%2F%2Fwww.buzzfeed.com%2Falexkantrowitz%2Fa-nasty-instagram-bug-is-causing-lots-of-people-to-think&amp;url=https%3A%2F%2Ftwitter.com%2F_SaucySierra_&amp;xcust=4574368%7CBFLITE&amp;xs=1" target="_blank" rel="external">@<strong>_SaucySierra_</strong></a>wrote.</p>
-<p>It’s unclear how many accounts were affected by this faux purge. Instagram says it’s a very small percentage, but the complaints serve as useful a reminder that ultimately, free social media accounts belong to the companies you register them with. And these companies can do pretty much whatever they want with them.</p>
-<p>That’s a big problem, especially for businesses and other Instagam users whose accounts have a material tie to the offline world. Chocolate company ChocZero’s business is suffering without access to its 6,500 follower account, according to its marketing director Rhea Monique. “I’m supposed to talk to wholesale distributors today and our Instagram along with our proof of sales is a big way to pitch relevancy, “ she told BuzzFeed News. “So it’s devastating this happened.”</p>
-<p><img src="http://img1.tuicool.com/jAjUryu.png!web" alt=""></p>
-<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
-<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
-<p>Got a confidential tip?Submit it here.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/AraQVfy" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/a-nasty-instagram-bug-is-causing-lots-of-people-to-think</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.&lt;/p&gt;
-&lt;p&gt;The Facebook owned-
     
     </summary>
     
@@ -597,318 +564,32 @@ $_
   </entry>
   
   <entry>
-    <title>Small Elements, Big Impact: Types and Functions of UI Icons.</title>
-    <link href="https://gmagon.com/blog/2017/07/06/small-elements-big-impact-types-and-functions-of-ui-icons/"/>
-    <id>https://gmagon.com/blog/2017/07/06/small-elements-big-impact-types-and-functions-of-ui-icons/</id>
-    <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.045Z</updated>
+    <title>A Nasty Instagram Bug Is Causing Lots Of People To Think Their Accounts Were Deleted</title>
+    <link href="https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/"/>
+    <id>https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/</id>
+    <published>2017-07-07T00:00:00.000Z</published>
+    <updated>2017-07-07T10:09:04.665Z</updated>
     
-    <content type="html"><![CDATA[<p>Icons in user interfaces are the elements that cannot be overestimated. Small and meaningful, they solve numerous problems. They become little keys to usability and intuitive navigation. And only designers know how much time and effort is needed to make them simple, helpful and expressive.</p>
-<p>Guru of user experience design Steve  Jobs said: «Details matter, it’s worth waiting to get it right.» Obviously, icons are on the top of details making interface usable and navigable. So, today let’s discuss what are their types and how they can be used in interfaces.</p>
-<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><p>In general terms, an icon can be defined as an image which has a high symbolic value and is used for the purpose of communication. Icons present signs which are informative and support data exchange between the informer and addressee alongside with words and sentences: while copy is served with letters or characters, icons communicate via the images showing pictorial resemblance with an object of the physical world. In computing and digital design, icons are pictograms or ideograms used in the web or mobile interface to support its usability and provide the successful flow of human-computer interaction.</p>
-<p>Diving into the benefits of icons, one of the most important among them is the ability to replace the text. In one of our earlier articles, we gave details about the<a href="http://tubikstudio.com/visual-perception-icons-vs-copy-in-ui/" target="_blank" rel="external">relations of copy and icons</a>and their influence on usability. The process of the research showed that usage of recognizable and clear icons had a great potential in strengthening navigation as most people perceive images faster than words. However, even the slightest misperception can become the reason of poor UX so the solutions on the type of icons should be carefully tested to reach the good balance of icons and copy for a particular target audience.</p>
-<p><img src="http://img0.tuicool.com/7vIF7bn.jpg!web" alt=""></p>
-<h2 id="History"><a href="#History" class="headerlink" title="History"></a>History</h2><p>Obviously, icons weren’t invented by interface designers. As an object of communication, they have a long and diverse history rooting in ancient times. They are found in maps, signs, schemes, manuals and many other sources of information. However, with the advent of new technologies and graphical user interfaces, icons experienced the new twist of progress. Historically, Xerox is mentioned in credits for creating the first icons for a graphical UI in the early 1970s: the icons were implemented in a machine called Xerox Alto which was very expensive and didn’t really go to the wide masses. Still, that was a beginning of a long story: in 1981, Xerox Star was released and it’s referred to as the first consumer computer which used icons as a part of its interface. In particular, it applied the icons of folders and trash bins which have been used so far.</p>
-<p><img src="http://img0.tuicool.com/rIRVjmb.png!web" alt=""></p>
-<p><a href="https://www.interaction-design.org/literature/article/a-brief-history-of-the-origin-of-the-computer-icon" target="_blank" rel="external"><em>Source</em></a></p>
-<p>Another milestone easily remembered on this way is presented with the color icons Apple revealed first in 1991 and then later with their further updates for Macintosh. They featured another approach to the style when icons combined functionality and informative capacity with attractive and harmonic appearance.</p>
-<p><img src="http://img2.tuicool.com/vANvaqY.png!web" alt=""></p>
-<p><a href="https://www.interaction-design.org/literature/article/a-brief-history-of-the-origin-of-the-computer-icon" target="_blank" rel="external"><em>Source</em></a></p>
-<p>These days icons are presented in digital design with numerous packs and sets in all the themes and styles possible. Although there are many ready-made packs, the database of icons is growing all the time in search of new solutions appealing to users.</p>
-<p>Talking about the classification of icons, we can mark out several aspects of grouping them on types.</p>
-<h2 id="Types-based-on-functions"><a href="#Types-based-on-functions" class="headerlink" title="Types based on functions"></a>Types based on functions</h2><h3 id="Clarifying-icons"><a href="#Clarifying-icons" class="headerlink" title="Clarifying icons"></a>Clarifying icons</h3><p>These are the icons aimed at explanation. They are visual markers explaining particular features or marking out categories of content. In some cases, they are not the layout elements of direct interaction; also, you can often find them in combination with copy supporting their meaning. This trick activates multiple elements of perception in one interaction providing better recognizability for call-to-action elements. People, who instantly understand the symbol transferred with the icon, won’t pay big attention to the copy. The same will happen to those who have problems with fast copy recognition. However, using the copy together with the icon decreases the risk of misunderstanding or wrong interactions for people who can possibly misinterpret the meaning of the image.</p>
-<p><img src="http://img1.tuicool.com/3AZbqaf.png!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3440889-Homey-App" target="_blank" rel="external"><em>Homey App</em></a></p>
-<p><img src="http://img0.tuicool.com/rUjuUjj.png!web" alt=""></p>
-<p>Category icons forSaily app</p>
-<h3 id="Interactive-icons"><a href="#Interactive-icons" class="headerlink" title="Interactive icons"></a>Interactive icons</h3><p>The icons of this type are directly involved into interaction process and are the core supporters of navigation. They are clickable or tappable and respond to the users request doing the action symbolized by them. Their main goal is to inform users about the functions or featuresbehindthe buttons, controls and any other elements of interaction.</p>
-<p><img src="http://img1.tuicool.com/AJ3a6nA.gif" alt=""></p>
-<p><a href="https://dribbble.com/shots/2071319-GIF-of-the-Tapbar-Interactions" target="_blank" rel="external"><em>Tab Bar interactions</em></a></p>
-<p><img src="http://img2.tuicool.com/z6NnMfE.gif" alt=""></p>
-<p><a href="https://dribbble.com/shots/2267219-UI-Navigation-Concept" target="_blank" rel="external"><em>Menu interaction concept</em></a></p>
-<h3 id="Decorative-and-entertaining-icons"><a href="#Decorative-and-entertaining-icons" class="headerlink" title="Decorative and entertaining icons"></a>Decorative and entertaining icons</h3><p>The icons of this type give more about aesthetic appeal than functionality. However, this aspect is also significant and needs to be considered as the style and appearance corresponding to the target audience preferences and expectations set the solid ground for high desirability. Applied wisely, it is one of the features that can not only attract but also retain users and add much to the positive user experience. Decorative icons are often used to present seasonal features and special offers.</p>
-<p><img src="http://img0.tuicool.com/VnMrA3a.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/2007927-Easter-and-spring-themed-icons" target="_blank" rel="external"><em>Easter and spring themed icons</em></a></p>
-<h3 id="App-icons"><a href="#App-icons" class="headerlink" title="App icons"></a>App icons</h3><p>App icons are the interactive brand signs that present the application on different platforms supporting the original identity of the digital product. In most cases, it features the logo of the app designed according to the requirements set for this kind of icons. However, it also can apply something else, for example, a mascot or an abstract combination of corporate colors. The effective solution is usually based on thorough market and competition research with the aim of creating an original icon which won’t get lost on the screen full of other app icons.</p>
-<p><img src="http://img2.tuicool.com/eM732av.png!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/2852836-Elephun-Icon" target="_blank" rel="external"><em>Elephun App Icon</em></a></p>
-<h3 id="Favicon"><a href="#Favicon" class="headerlink" title="Favicon"></a>Favicon</h3><p>Favicon, also known as URL icon or bookmark icon, is a special type of symbol which represents the product or brand in the URL-line of the browser as well as in the bookmark tab. It allows users to get a quick visual connection with it while they are browsing. This interface element proved itself effective for productive website promotion and good recognizability of its visual identity.</p>
-<h2 id="Types-based-on-visual-performance"><a href="#Types-based-on-visual-performance" class="headerlink" title="Types based on visual performance"></a>Types based on visual performance</h2><h3 id="Glyph-icons"><a href="#Glyph-icons" class="headerlink" title="Glyph icons"></a>Glyph icons</h3><p>The term “glyph”[glif] has come to design from the field of typography. The word takes its roots from the Greek word which means “carving”. Originally, the term presents an elements symbols or pictogram which is included in the set of symbols agreed upon many users (readers, writers etc.): it presents a readable character enabling people to write it.</p>
-<p>In the sphere of typography, it is a certain graphic representation of an element of written language within a particular system of writing or particular typeface: it can be a grapheme, or part of a grapheme, or sometimes several graphemes in combination (a composed glyph). Here’s the set of ancient Celtic glyphs, for example.</p>
-<p><img src="http://img2.tuicool.com/63IF3mM.jpg!web" alt=""></p>
-<p><a href="http://td-brushes.deviantart.com/art/Pictish-Rune-Meanings-40202186" target="_blank" rel="external"><em>Source</em></a></p>
-<p>In modern digital design, the word “glyph” reinvented its meaning but not into a sort of revolution. It is used to define a graphic symbol that provides the appearance or form for a character: it can be an alphabetic or numeric font as well as a symbol picturing an encoded character. Talking about icons, glyph icons are first of all described as a typographic symbol that represents something else, not letter or number. Among popular examples, you will also find the «@» symbol representing the preposition «at». For example, here is the set of icons for material design from Google.</p>
-<p><img src="http://img0.tuicool.com/jURniiq.jpg!web" alt=""></p>
-<p><a href="https://material.io/icons/" target="_blank" rel="external"><em>Material icons</em></a></p>
-<p>Glyph icons use simplified and universal shapes and images to be recognizable and flexible in terms of responsive design. They play the big role in the issues of navigation for a digital product.</p>
-<p><img src="http://img2.tuicool.com/QJ7RZ3E.png!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/2396211-Weather-Icons-Set" target="_blank" rel="external"><em>Weather icons</em></a></p>
-<h3 id="Flat-and-semi-flat-icons"><a href="#Flat-and-semi-flat-icons" class="headerlink" title="Flat and semi-flat icons"></a>Flat and semi-flat icons</h3><p>Flat icons are usually a bit more complex than glyph: they can apply color combinations, filling of the elements and present a bit more complicated images. Nevertheless, they are also focused on simple and recognizable visual metaphors quickly transferring the required meaning. The most prominent feature which actually has inspired the name of this direction is applying flat 2-dimensional visual details as the opposite to highly realistic and detailed skeuomorphic images. Flat style allows designers to be more flexible in applying the expressive power of colors and shapes not losing in legibility of the presented items.</p>
-<p><img src="http://img0.tuicool.com/eABB7vY.png!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/2082509-Blog-App" target="_blank" rel="external"><em>Blog App</em></a></p>
-<h3 id="Skeuomorphic-icons"><a href="#Skeuomorphic-icons" class="headerlink" title="Skeuomorphic icons"></a>Skeuomorphic icons</h3><p>Skeuomorphism is the design direction somehow opposite to flat. It is based on the idea of reflecting images in 3D look very close to the original natural look of the physical objects. It was popular for GUI of different types and functionality several years ago. But then it was gradually replaced with flat design in UI which is simpler and therefore more flexible and practical for the needs of digital interfaces. Nevertheless, the skeuomorphic icons are still widely used in game design and app icons in game sector.</p>
-<h3 id="SVG-icons"><a href="#SVG-icons" class="headerlink" title="SVG icons"></a>SVG icons</h3><p>SVG icons, decoded as Scalable Vector Graphics, are responsive icons built on XML-based 2D vector images. They are designed and integrated according to an open standard developed by the World Wide Web Consortium (W3C) since 1999, and supported by all major browsers. SVG icons are growing their popularity as today websites are used on the diversity of platforms and devices and need to be responsive to provide positive UX.</p>
-<h2 id="Types-based-on-applied-image-metaphor"><a href="#Types-based-on-applied-image-metaphor" class="headerlink" title="Types based on applied image metaphor"></a>Types based on applied image metaphor</h2><p>This direction of icons typology is based on the research provided by the famous expert in usability Jackob Nielsen and revealed in hisarticlefor Nielsen Norman Group. In this perspective, icons can be divided into three core types according to the type of the metaphor they reflect.</p>
-<p>Resemblance iconsare the symbols directly depicting a physical object the icon represents. These are, for example, the magnifier for search, the shopping cart, the envelope for mail etc.</p>
-<p>Reference iconsare the symbols depicting an object on the basis of analogy. For instance, a picture of a clamp representing a file-compression utility (because it squeezes) goes to this group.</p>
-<p>Arbitrary iconsare the symbols which currently do not set direct connections with the objects and their recognizability is based on convention and power of habit. This is when we should remember about floppy disc representing «Save» function: although initially it was a reference icon, for many users now it doesn’t work like that — they just know the meaning solidly connected to this image for many years.</p>
-<p><img src="http://img2.tuicool.com/FJBRfqZ.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/2117638-Multimedia-icon-set" target="_blank" rel="external"><em>Multimedia Icon Set</em></a></p>
-<h2 id="Key-features-of-effective-icons"><a href="#Key-features-of-effective-icons" class="headerlink" title="Key features of effective icons"></a>Key features of effective icons</h2><p>In one of our previous articles devoted to the role of icons in user interfaces, we have already described all the essential features making the icons efficient, so today let’s just quickly recall them.</p>
-<ul>
-<li><strong>clear</strong><br>— the meaning of the icon is understandable and accessible to the target audience</li>
-<li><strong>meaningful</strong><br>— the icon transfers the informative value</li>
-<li><strong>recognizable</strong><br>— the visual symbol applied in the icon is presented in the form which can be recognized and decoded correctly by users</li>
-<li><strong>simple</strong><br>— the icon isn’t overloaded with non-essential graphic elements which allows it to be quickly perceived and understood without too much effort</li>
-<li><strong>original and noticeable</strong><br>— the icon stands out among other similar elements of the interface which is especially actual for the app icons</li>
-<li><strong>scalable and flexible</strong><br>— the icon saves its unity, integrity, and legibility in different sizes and resolutions</li>
-<li><strong>attractive</strong><br>— the icon satisfies aesthetic expectations and sets harmonic visual appeal</li>
-<li><strong>non-offensive</strong><br>— the icon doesn’t have hidden meanings or misperceptions which could feel offensive or rude for any part of the target audience</li>
-<li><strong>consistent</strong><br>— the icon corresponds to the general stylistic concept of the layout it is applied for.</li>
-</ul>
-<p><img src="http://img1.tuicool.com/rQBfqyv.jpg!web" alt=""></p>
-<h2 id="Recommended-reading"><a href="#Recommended-reading" class="headerlink" title="Recommended reading"></a>Recommended reading</h2><p>Here is a bunch of articles for further exploration of the topic:</p>
-<p><a href="https://www.nngroup.com/articles/classifying-icons/" target="_blank" rel="external">Icon Classification: Resemblance, Reference, and Arbitrary Icons</a></p>
-<p><a href="https://www.interaction-design.org/literature/article/a-brief-history-of-the-origin-of-the-computer-icon" target="_blank" rel="external">A Brief History of the Origin of the Computer Icon</a></p>
-<p><a href="http://tubikstudio.com/iconic-simplicity-the-vital-role-of-icons/" target="_blank" rel="external">Iconic Simplicity. The Vital Role of Icons.</a></p>
-<p><a href="http://tubikstudio.com/visual-perception-icons-vs-copy-in-ui/" target="_blank" rel="external">Visual Perception: Icons VS Copy in UI.</a></p>
-<p><a href="https://icons8.com/articles/how-to-combine-icons-from-different-sets-in-your-ui/" target="_blank" rel="external">How to Combine Icons from Different Sets in Your UI</a></p>
-<p>Welcome to see the designs by Tubik Studio on <a href="https://dribbble.com/Tubik" target="_blank" rel="external">Dribbble</a>and <a href="https://www.behance.net/Tubik" target="_blank" rel="external">Behance</a></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/IfqYJz7" target="_blank" rel="external">http://tubikstudio.com/small-elements-big-impact-types-and-functions-of-ui-icons/</a></p>
+    <content type="html"><![CDATA[<p>A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.</p>
+<p>The Facebook owned-social app is being bombarded with complaints on Twitter, Facebook and its own service from people who claim their accounts have been deleted without warning or cause.</p>
+<p>Instagram says the culprit is a bug that not only logged people out of their accounts, but also hid them from view. When BuzzFeed News checked multiple account pages that users claimed were deleted, it saw a message stating that the content was unavailable, noting that the link might be broken or the page could’ve been removed.</p>
+<p><strong>“</strong>No accounts have been deleted,” a company spokesperson told BuzzFeed News. “However, the bug logged some users out of their accounts, while also locking their accounts from view. When the bug is fixed and affected users are able to log back in, their accounts will be viewable again.”</p>
+<p><img src="http://img1.tuicool.com/ZJVn2ei.png!web" alt=""></p>
+<p>Comments on Instagram’s latest post</p>
+<p>Even so, users are freaked out. “Please give me back my account@harryspinkflowers i worked so hard on it and had it for 2 years…. please give it back,” read a typical response to Instagram’slatest post. Others were less diplomatic. “Give me my fucking account back bro,” Twitter user<a href="https://go.redirectingat.com/?id=74679X1524629&amp;sref=https%3A%2F%2Fwww.buzzfeed.com%2Falexkantrowitz%2Fa-nasty-instagram-bug-is-causing-lots-of-people-to-think&amp;url=https%3A%2F%2Ftwitter.com%2F_SaucySierra_&amp;xcust=4574368%7CBFLITE&amp;xs=1" target="_blank" rel="external">@<strong>_SaucySierra_</strong></a>wrote.</p>
+<p>It’s unclear how many accounts were affected by this faux purge. Instagram says it’s a very small percentage, but the complaints serve as useful a reminder that ultimately, free social media accounts belong to the companies you register them with. And these companies can do pretty much whatever they want with them.</p>
+<p>That’s a big problem, especially for businesses and other Instagam users whose accounts have a material tie to the offline world. Chocolate company ChocZero’s business is suffering without access to its 6,500 follower account, according to its marketing director Rhea Monique. “I’m supposed to talk to wholesale distributors today and our Instagram along with our proof of sales is a big way to pitch relevancy, “ she told BuzzFeed News. “So it’s devastating this happened.”</p>
+<p><img src="http://img1.tuicool.com/jAjUryu.png!web" alt=""></p>
+<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
+<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
+<p>Got a confidential tip?Submit it here.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/AraQVfy" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/a-nasty-instagram-bug-is-causing-lots-of-people-to-think</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Icons in user interfaces are the elements that cannot be overestimated. Small and meaningful, they solve numerous problems. They become l
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Micro frontends – a microservice approach to front-end web development</title>
-    <link href="https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/"/>
-    <id>https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/</id>
-    <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.031Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img0.tuicool.com/7BFRBrz.png!web" alt=""></p>
-<p>For web apps, the front end is becoming bigger and bigger, and the back end is getting less important. Our web app at<a href="https://www.weld.io/?utm_source=medium.com&amp;utm_content=micro-frontends" target="_blank" rel="external"><strong>Weld</strong>(web/app creation tool)</a>is 90% front-end code, with a very thin back end. I can imagine that a majority of new web apps being built today are dealing with a similar situation.</p>
-<p>Web apps also change over time, as do development techniques and frameworks. This requires support for allowing different front-end frameworks to co-exist, e.g. older modules built in JQuery or AngularJS 1.x, combined with newer modules built in React or Vue.</p>
-<h3 id="The-monolithic-approach-doesn’t-work-for-larger-web-apps"><a href="#The-monolithic-approach-doesn’t-work-for-larger-web-apps" class="headerlink" title="The monolithic approach doesn’t work for larger web apps"></a>The monolithic approach doesn’t work for larger web apps</h3><p>Having a monolithic approach to a large front-end app becomes unwieldly. There needs to be a way of breaking it up into smaller modules that can act independently.</p>
-<p>Example:</p>
-<ul>
-<li><code>myapp.com/</code><ul>
-<li>landing page built with static HTML.</li>
-</ul>
-</li>
-<li><code>myapp.com/settings</code><ul>
-<li>old settings module built in AngularJS 1.x.</li>
-</ul>
-</li>
-<li><code>myapp.com/dashboard</code><ul>
-<li>new dashboard module built in React.</li>
-</ul>
-</li>
-</ul>
-<p>I would imagine the following is needed:</p>
-<ol>
-<li>A<br><strong>shared codebase</strong><br>in pure JavaScript e.g. managing routing and user sessions. Also some shared CSS. Both should be as thin as possible.</li>
-<li>A<br><strong>collection of separate modules</strong><br>, “mini-apps”, built in various frameworks. Stored in different code repositories.</li>
-<li>A deployment system that<br><strong>bundles all the modules together</strong><br>from different repositories and deploys to a server, whenever a module is updated.</li>
-</ol>
-<h3 id="The-solution-“micro-frontends”"><a href="#The-solution-“micro-frontends”" class="headerlink" title="The solution: “micro frontends”"></a>The solution: “micro frontends”</h3><p>But as it turns out, a lot of other people is thinking about the same ideas. The common term is<em>“micro frontends”</em>.</p>
-<p>Companies like<a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external">Spotify</a>,<a href="https://news.ycombinator.com/item?id=13012916" target="_blank" rel="external">Klarna</a>,<a href="https://www.mosaic9.org/" target="_blank" rel="external">Zalando</a>,<a href="https://www.upwork.com/blog/2017/05/modernizing-upwork-micro-frontends/" target="_blank" rel="external">Upwork</a>, and<a href="http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html" target="_blank" rel="external">Allegro</a>are using the micro frontends approach to build their web apps.</p>
-<h3 id="Implementing-micro-frontends"><a href="#Implementing-micro-frontends" class="headerlink" title="Implementing micro frontends"></a>Implementing micro frontends</h3><p>Here’s a few different approaches to implementing micro frontends:</p>
-<ol>
-<li>Isolating micro-apps into<br><a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external"><strong>IFrames</strong>using libraries and Window.postMessage APIs</a><br>to coordinate. IFrames share APIs exposed by their parent window.</li>
-<li><a href="https://news.ycombinator.com/item?id=13011795" target="_blank" rel="external">Multiple single-page apps that live at different URLs</a><br>. The apps use NPM/Bower components for shared functionality.</li>
-<li>Using<br><a href="http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html" target="_blank" rel="external"><strong>Varnish Cache</strong>to integrate different modules</a><br>.</li>
-<li><a href="https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/" target="_blank" rel="external"><strong>Web Components</strong>as the integration layer</a><br>.</li>
-<li><a href="https://news.ycombinator.com/item?id=13012916" target="_blank" rel="external">“Blackbox”<strong>React</strong>components</a><br>.</li>
-</ol>
-<h3 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h3><ul>
-<li><a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external">Ask Hacker News: “What do you use to build micro-front ends?”</a></li>
-<li><a href="https://www.mosaic9.org/" target="_blank" rel="external">Project Mosaic</a><br>by Zalando, a set of libraries to support a microservice style architecture for large scale websites. See also<br><a href="https://www.microservices.com/talks/mosaic-microservices-zalando-tech/" target="_blank" rel="external">this presentation from Zalando Tech</a><br>.</li>
-<li><a href="https://github.com/neuland/micro-frontends" target="_blank" rel="external">Micro Frontends (GitHub)</a><br>— will contain techniques, strategies and recipes for building a modern web app with multiple independent teams.</li>
-</ul>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/aeM3Ybf" target="_blank" rel="external">https://medium.com/@tomsoderlund/micro-frontends-a-microservice-approach-to-front-end-web-development-f325ebdadc16</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/7BFRBrz.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;For web apps, the front end is becoming bigger and bigger, and the back
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Tonsser, the social app for youth soccer players, partners with Nike and raises new funding</title>
-    <link href="https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/"/>
-    <id>https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</id>
-    <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.048Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/EneaUnz.jpg!web" alt=""></p>
-<p><a href="http://tonsser.com/" target="_blank" rel="external">Tonsser</a>, the Copenhagen-based startup that offers a vertical social network aimed at youth soccer players who want to build their own online profile and potentially get discovered by a bigger club, continues to grow at a clip, both in terms of signups but also the influence it wants to have on the beautiful game. The company has signed on Nike as its first brand channel partner, and now has 380,000 youth players registered, up from 100,000 just over a year ago.</p>
-<p>The Danish startup has also raised a new round of funding as it gears up for a 2018 expansion to the U.K., home to the English Premier League and a huge potential youth football market for the startup. It is also quite a fragmented one, in terms of youth leagues, so it will be interesting to see how quickly Tonsser can grow here. The app is currently live in France, Germany, Denmark, Sweden and Norway.</p>
-<p>In a call with co-founder and CEO Peter Holm (and after we spent the first ten minutes catching up with the latest Tottenham Hotspur news, as we are inclined to do), he told me that Tonsser is evolving from a social app that was<a href="https://techcrunch.com/2016/06/08/tonsser/" target="_blank" rel="external">mainly about youth players making a profile of themselves and tracking scores and stats</a>in order to get noticed by scouts — a bit like a real life Football Manager video game — to offer even more user-generated content where players can learn skills from each other and in turn become influencers on the platform.</p>
-<p><img src="http://img1.tuicool.com/MVFbMzJ.jpg!web" alt="">“Since the internet you no longer need to go to Harvard to learn and be educated by the best. You can go to Youtube, masterclasses or see a Ted talk. We believe it should be the same in football where don’t need to be at the best or most expensive academy to learn and be inspired by the best players and coaches,” he says.</p>
-<p>This is seeing top youth players, including from PSG, Lyon, and Dortmund, and “freestylers and local heroes” create video content, such as how to take a free kick, to inspire other young soccer players in Europe.</p>
-<p>Related to this, Tonsser has signed on Nike to be the first brand to get access to the platform with their own channel, where they are posting what Holm calls “edutainment,” including drills with from players in Barcelona’s La Masia academy. This also points towards the makings of a revenue model for the free to access social app.</p>
-<p>“Next is opening [the platform up] to top clubs to show drills and practice from their academies. [We are] currently in talks with international top clubs from England, Germany, Holland and Denmark,” adds Holm.</p>
-<p>He also tells me Tonsser is working on integrations with wearable devices to “empower players to become more data-driven and compare physical data including pace, acceleration, distance covered, form, etc”.</p>
-<p>Meanwhile, I understand the startup has raised €2.5 million in new funding. Backing the round are existing investors Wellington Partners, SEED Capital, Arthur Kosten (Booking.com), and unnamed professional soccer players. The long term ambition is “to become the de facto platform for the next generation of football,” says the Tonsser CEO.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/Qr6VZjV" target="_blank" rel="external">https://techcrunch.com/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/EneaUnz.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://tonsser.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tonsser&lt;/a
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Image Correction for Color Blindness</title>
-    <link href="https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/"/>
-    <id>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</id>
-    <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.028Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Color-blind-image-correction"><a href="#Color-blind-image-correction" class="headerlink" title="Color blind image correction"></a>Color blind image correction</h2><p>Color blind image correction</p>
-<p><a href="http://www.vischeck.com/daltonize/runDaltonize.php" target="_blank" rel="external">(Run Daltonize online here)</a></p>
-<p>One of the most common questions that we are asked is:</p>
-<p><strong>  
-</strong></p>
-<p>Is there a way to cure color blindness?</p>
-<p>From a medical point of view, the answer is ‘not really’. There are some devices (colored contact lenses or filter spectacles) that are claimed to improve the vision of color blind people but in general, people report very mixed results with them. There is currently no effective way to recover full trichromatic vision if you are red/green colorblind.</p>
-<p>So in one sense, color blindness is ‘incurable’. But a deeper question is “what is color good for?”. Apart from its aethetic appeal, seeing many different colors allows us to distinguish things in the world. Take the example below.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>How many types of fruit is this man selling?</strong> People with three different cone types (“trichromats”) can see 5 distinct piles of fruit on the ground. From back to front, they look ‘red’, ‘green’, ‘red’, ‘yellow’ and ‘light orange’. There are also some baskets on the shelf containing three piles of fruit.</th>
-<th style="text-align:left"><img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">But people with red/green color blindness usually have trouble seeing all the different fruits.They see something that can be simulated like this: Note that there now seem to be only three or four different types of fruit on the ground. It is also hard to tell how many distinct piles of fruit there are on the shelves.</td>
-<td style="text-align:left"><img src="http://img0.tuicool.com/iUNRfi7.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>In some pictures, a lot of important information is conveyed by variations in reds and greens. This is a real problem for color blind people who will miss this information. The important point to understand is that<strong>the ‘true’ color of something may be irrelevant but the fact that it is different from its surroundings is very important.</strong></p>
-<p>Here is another example:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><img src="http://img2.tuicool.com/Y3MBVvr.jpg!web" alt=""></th>
-<th style="text-align:left"><img src="http://img2.tuicool.com/j6rUryi.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>1) Cells labelled with three types of fluorescent markers to show up three different structures.</strong></td>
-<td style="text-align:left"><strong>2) Red/green color blind simulation of fluorescent cell picture.</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Here, a color blind scientist would be unable to tell the red and green labels apart. They would miss important information about the structure of the cells.</p>
-<p>How to fix it?</p>
-<p>We can use image processing techniques to improve this situation. There are two ways that we can make information in pictures available to color blind people.</p>
-<p><strong>1)</strong>The simplest way is simply to increase the red/green contrast in the image. Many color blind people have some residual red/green discrimination. Increasing the red/green contrast makes them more likely to see these types of color variations.</p>
-<p><strong>2)</strong>We can analyze the information conveyed by variations in the red/green direction and convert these into changes in brightness and/or blue/yellow coloration.  This allows us to map information from a color dimension that is invisible to dichromats into those that they can see.</p>
-<p>We call the combination of these two processes ‘Daltonization’ after John Dalton, the British scientist who was one of the first people to investigate color blindness.</p>
-<p>The result of applying these algorithms is shown below.:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><img src="http://img2.tuicool.com/INjiey2.jpg!web" alt=""></th>
-<th style="text-align:left"><img src="http://img1.tuicool.com/QZ7vUji.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">3) Daltonized version of three-color-labelled fluorescent cells.</td>
-<td style="text-align:left"><strong>4) Dichromat (red/green color blind) simulation of the  Daltonized image.</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Here, the algorithm has mapped changes in the reds and greens into slight changes in brightness and bluishness. The result is that when viewed by someone with color blindness, the different labelled structures in the cell are clearly visible.</p>
-<p>Here are some more examples. In each case, the images are numbered 1 to 4 where<strong>1</strong>) is the original full-color image,<strong>2</strong>) is a simulation of the color-blind view of the full color image,<strong>3</strong>) is the Daltonized version of the full color image and<strong>4</strong>) is the color blind simulation of the Daltonized image showing improved red/green discrimination. To see how well the Daltonization algorithm works for someone with color blindness, compare images<strong>2</strong>) and<strong>4</strong>).</p>
-<p>Example: Gauguin painting</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img1.tuicool.com/AR3U73r.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img0.tuicool.com/rA7jqiJ.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img1.tuicool.com/INjieiZ.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/QfE7fui.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>In this case, the Daltonization transformation must be judged on a more aesthetic level. While there is more ‘information’ present in image<strong>4)</strong>compared to image<strong>2)</strong>the disruption in the color balance may be unsettling (or fascinating) to some dichromats.</p>
-<p>Here is an Ishihara plate - a common aid for diagnosing color blindness. The number ‘45’ in the center of the disk is invisible to  someone with red/green color blindness.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/quMZJbn.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img2.tuicool.com/vi6v6rA.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>There are several things to note about this example. First of all, although the enhancement of the red/green information in the Daltonized version is striking, this is not a good<strong>general</strong>test of an algorithm to modify images for color blind observers. The reason is that the Ishihara plates are (deliberately) artificial images, and do not represent the range of colors that people see in everyday life. It would be rather easy to design an algorithm to ‘improve’ Ishihara plates (for example one that replaced all reds with blues) that would nevertheless destroy other types of information in the image. One nice feature of the Daltonization algorithm is that it analyses the information content of the image beforehand and attempts to preserve existing color variations.</p>
-<p>Note also that the Daltonizing algorithm does not enable people to “pass” the Ishihara test in any way. It is a digital image processing technique that can make print or video display more salient to color blind people without distorting the color balance to an unnacceptable degree.</p>
-<p>And finally, here’s the fruit market we showed you at the start:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img1.tuicool.com/EJR73qz.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/qqA3y26.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img2.tuicool.com/NZRNj23.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>The different piles of fruit on the floor are now clearly visible in image<strong>4</strong>).</p>
-<p><strong>What is it good for?</strong>We envisage a number of applications for this algorithm. Here are some examples:</p>
-<p><strong>As part of a digital microscope</strong>(see the ‘cells’ example above): Color blind users could flick a switch to improve the visibility of red/green fluorescent labels or intrinsic color contrast…</p>
-<p><strong>In digital video recorders and display systems</strong>: Viewers could turn on the Daltonize algorithm much as they might vary the brightness or volume using a remote control. Operating on a real-time video stream, the algorithm could improve the appearence of TV for color blind viewers (for example, making sports teams playing in red strip on a green field far more visible) without significantly disturbing the color balance for other members of the audience….</p>
-<p><strong>Computer display devices</strong>: Computer users could turn on the Daltonize algorithm from as part of their computer video card controls. All output appearing on the monitor (including web-pages, videos and still images) would automatically be processed and rendered more salient to dichromats.</p>
-<p><strong>Print media</strong>: Images can be Daltonized before printing. Print applications where legibility is essential (for example, public safety documents, maps, technical instructions) can all be made more legible for color-blind users….</p>
-<p><strong>  
-</strong></p>
-<p>You can play with the algorithm onlineon this web page. Please be aware that this page is taking a lot of hits at the moment and may seem a little slow to respond. If you have any particularly interesting images that you would like us to process, send them to us by email atinfo@vischeck.com and we will run them ‘by hand’. Please keep them to a reasonable size :)</p>
-<p>We would also like to hear your feedback about this algorithm - especially if you are color blind. Let us know what you think!</p>
-<p>If you would like to license the Daltonizing algorithm for use in your own applications, please contact us at<a href="mailto://daltonize_license@vischeck.com" target="_blank" rel="external">daltonize_licence@vischeck.com</a>.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/6B3qMvb" target="_blank" rel="external">http://www.vischeck.com/daltonize/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Color-blind-image-correction&quot;&gt;&lt;a href=&quot;#Color-blind-image-correction&quot; class=&quot;headerlink&quot; title=&quot;Color blind image correction&quot;&gt;&lt;/a&gt;Co
+      &lt;p&gt;A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.&lt;/p&gt;
+&lt;p&gt;The Facebook owned-
     
     </summary>
     
@@ -1070,33 +751,29 @@ $_
   </entry>
   
   <entry>
-    <title>&#39;Baby Driver&#39; is an ode to iPod nostalgia</title>
-    <link href="https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/"/>
-    <id>https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.957Z</updated>
+    <title>Tonsser, the social app for youth soccer players, partners with Nike and raises new funding</title>
+    <link href="https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/"/>
+    <id>https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</id>
+    <published>2017-07-06T00:00:00.000Z</published>
+    <updated>2017-07-06T10:09:59.048Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg" alt=""></p>
-<p>Tristar Pictures</p>
-<p>It took a while to get going, but it’s safe to say we’re living in a golden age of digital music. Terrible compression is a thing of the past, and the rise of streaming services like Spotify and Apple Music give us instant access to almost anything we’d want to hear. But while we’ve gained so much, there’s also a sense that we’ve lost something. Sharing a playlist isn’t the same as burning a CD for your sweetheart, or going even further back, manually dubbing a mixtape. As our music has become less physical, so has our attachment to it.</p>
-<p>That’s something that struck me while watching<em>Baby Driver</em>, director Edgar Wright’s new mashup of car chases, heist films and excellent tunes. Its lead character, Baby (Ansel Elgort), is perpetually connected to a pair of headphones, experiencing life as if it’s a never-ending music video. But his earbuds aren’t attached to a smartphone; they’re plugged into one of his many iPods. He has a box full of them, each with their own colors and ornamentations. Basically, a different iPod for every mood.</p>
-<p>While they’re filled with digital files, the iPods also serve as a physical connection to all of his music. The film opens with Baby in a getaway car, cool as a cucumber while wearing white earbuds, launching into a jam out session with_Bellbottoms_by The Jon Spencer Blues Explosion. That song also serves as the backdrop for the film’s electric opening chase, where you can almost feel the iPod’s tiny mechanical hard drive (remember those?) racing alongside him.</p>
-<p>As someone who<a href="https://www.engadget.com/2015/09/17/gone-too-zune/" target="_blank" rel="external">reminisces fondly about my Zune HD</a>,<a href="https://en.wikipedia.org/wiki/Rio_Karma" target="_blank" rel="external">Rio Karma</a>,<a href="https://www.cnet.com/products/toshiba-gigabeat-s/review/" target="_blank" rel="external">Toshiba Gigabeat</a>and countless other players of varying quality, Baby’s connection to his iPods struck a chord. With older media players, there was a sense of physicality, before cloud syncing made it a cinch to keep track of all your music. If you somehow managed to hit a double whammy of bad luck and lost both your player and your computer’s hard drive, you were out of luck.</p>
-<p>These days, you can hop between phones within minutes, porting over your entire library without a sweat with iTunes, Google Play and apps like Spotify. You don’t even have to wait for your music to download; you can just stream it all from the server heavens.</p>
-<p>Baby’s iPod addiction seems fitting today, at a time when we’re all plugged into headphones most of the day. Just look up from your phone once in a while and you’ll see it: a crowd of people, each in their own world with their own private soundtracks. In<em>Baby Driver</em>, that soundtrack underscores everything, be it a chase, a shootout or even a stroll for coffee. The film also takes pains to choreograph the tunes with what’s happening on screen (there’s a shootout set to_Tequila_that’s pitch perfect). Baby also uses music as a form of therapy, due to a tinnitus condition that resulted from a childhood car accident. It’s a way to drown out the “hum in the drum,” as Kevin Spacey’s criminal mastermind, Doc, tells us.</p>
-<p><img src="https://o.aolcdn.com/images/dims?resize=980%2C640&amp;quality=100&amp;image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F898e51608e44a0022256740610336ea2%2F205434882%2FBaby%2BDriver%2B2.jpg&amp;client=cbc79c14efcebee57402&amp;signature=dc771c585960952fdbbeeb4c05d41fa744c718ed" alt=""></p>
-<p>Tristar Pictures</p>
-<p>Since the film is practically an action musical, it’s no surprise that Baby’s relationship with everyone is centered around tunes. He strikes up a conversation with his sweetheart, Debora (Lily James), by comparing the songs that feature both of their names. He forms a kinship with Jon Hamm’s bank robber as they share earbuds, reminiscing about their go-to tracks during a getaway. (Baby’s is_Queen’s_Brighton Rock, which should come as no surprise to fans of Edgar Wright’s<em>Shaun of the Dead</em>.) Meanwhile, Jamie Foxx’s Bats, who’s particularly unstable, hates the idea of listening to music during robberies. That’s a major red flag that tells us not to trust him.</p>
-<p>Baby’s connection to music extends beyond Apple’s devices: his apartment practically has wall-to-wall records. He also spends his time mixing sound clips with a unique rig,<a href="http://www.gq.com/story/kid-koala-baby-driver" target="_blank" rel="external">developed by Kid Koala</a>, which consists of a magnetic card reader, a distorted Buddhist meditation box and a pen controlled device. There’s even an E-mu Emulator II, for good measure. In true, anachronistic music nerd fashion, Baby also records all of his mixes to cassette tape.</p>
-<p>Since he’s a collector of old-school musical gear (although not many CDs, from what I could gather), Baby’s iPod obsession seems almost peculiar. But I suppose he’s just like plenty of other hip music nerds. We live in a world where the digital and analog still coexist – record sales, paradoxically, are actually on the rise, along with streaming music sales. Baby just latches onto the things he can actually touch and feel.</p>
-<p>And, after all, who wants to deal with their favorite track buffering when you’re in the middle of a life or death car chase?</p>
-<p>Source: <a href="https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/" target="_blank" rel="external">https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/</a>  </p>
+    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/EneaUnz.jpg!web" alt=""></p>
+<p><a href="http://tonsser.com/" target="_blank" rel="external">Tonsser</a>, the Copenhagen-based startup that offers a vertical social network aimed at youth soccer players who want to build their own online profile and potentially get discovered by a bigger club, continues to grow at a clip, both in terms of signups but also the influence it wants to have on the beautiful game. The company has signed on Nike as its first brand channel partner, and now has 380,000 youth players registered, up from 100,000 just over a year ago.</p>
+<p>The Danish startup has also raised a new round of funding as it gears up for a 2018 expansion to the U.K., home to the English Premier League and a huge potential youth football market for the startup. It is also quite a fragmented one, in terms of youth leagues, so it will be interesting to see how quickly Tonsser can grow here. The app is currently live in France, Germany, Denmark, Sweden and Norway.</p>
+<p>In a call with co-founder and CEO Peter Holm (and after we spent the first ten minutes catching up with the latest Tottenham Hotspur news, as we are inclined to do), he told me that Tonsser is evolving from a social app that was<a href="https://techcrunch.com/2016/06/08/tonsser/" target="_blank" rel="external">mainly about youth players making a profile of themselves and tracking scores and stats</a>in order to get noticed by scouts — a bit like a real life Football Manager video game — to offer even more user-generated content where players can learn skills from each other and in turn become influencers on the platform.</p>
+<p><img src="http://img1.tuicool.com/MVFbMzJ.jpg!web" alt="">“Since the internet you no longer need to go to Harvard to learn and be educated by the best. You can go to Youtube, masterclasses or see a Ted talk. We believe it should be the same in football where don’t need to be at the best or most expensive academy to learn and be inspired by the best players and coaches,” he says.</p>
+<p>This is seeing top youth players, including from PSG, Lyon, and Dortmund, and “freestylers and local heroes” create video content, such as how to take a free kick, to inspire other young soccer players in Europe.</p>
+<p>Related to this, Tonsser has signed on Nike to be the first brand to get access to the platform with their own channel, where they are posting what Holm calls “edutainment,” including drills with from players in Barcelona’s La Masia academy. This also points towards the makings of a revenue model for the free to access social app.</p>
+<p>“Next is opening [the platform up] to top clubs to show drills and practice from their academies. [We are] currently in talks with international top clubs from England, Germany, Holland and Denmark,” adds Holm.</p>
+<p>He also tells me Tonsser is working on integrations with wearable devices to “empower players to become more data-driven and compare physical data including pace, acceleration, distance covered, form, etc”.</p>
+<p>Meanwhile, I understand the startup has raised €2.5 million in new funding. Backing the round are existing investors Wellington Partners, SEED Capital, Arthur Kosten (Booking.com), and unnamed professional soccer players. The long term ambition is “to become the de facto platform for the next generation of football,” says the Tonsser CEO.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/Qr6VZjV" target="_blank" rel="external">https://techcrunch.com/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Tristar 
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/EneaUnz.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tonsser.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tonsser&lt;/a
     
     </summary>
     
@@ -1104,45 +781,288 @@ $_
   </entry>
   
   <entry>
-    <title>Is Freelancing Your Next UX Career Move?</title>
-    <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
-    <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.960Z</updated>
+    <title>Small Elements, Big Impact: Types and Functions of UI Icons.</title>
+    <link href="https://gmagon.com/blog/2017/07/06/small-elements-big-impact-types-and-functions-of-ui-icons/"/>
+    <id>https://gmagon.com/blog/2017/07/06/small-elements-big-impact-types-and-functions-of-ui-icons/</id>
+    <published>2017-07-06T00:00:00.000Z</published>
+    <updated>2017-07-06T10:09:59.045Z</updated>
     
-    <content type="html"><![CDATA[<p>I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time again, abandoning the 9-5 life and making my main source of employment a series of projects from different clients.</p>
-<p>Since then, I’ve had countless conversations with other UX professionals who are considering moving to freelancing as their next career step.</p>
-<p>They usually say they’re looking for freedom, more money, the ability to work on more interesting problems or learn new things – or even just the chance to work in their pyjamas regularly. Since I started consulting, I’ve expanded my focus into more strategy and product work across a wide variety of industries, and have met all kinds of interesting, smart colleagues.</p>
-<p>While I wouldn’t change a thing about my situation, I’m always cautious about encouraging others to jump into the freelance world, because it’s definitely not for everyone. Here are some things I’ve learned along the way to consider before you quit your day job.</p>
-<h3 id="Freelancing-pros-and-cons"><a href="#Freelancing-pros-and-cons" class="headerlink" title="Freelancing pros and cons"></a>Freelancing pros and cons</h3><p>Yes, it’s true that I spend most days in yoga pants, travel frequently, and work on some pretty cool projects. But consulting isn’t all sunshine and rainbows. There are many things that are great about consulting, some things that aren’t so great, and some things that just depend on the day.</p>
-<p><img src="http://img2.tuicool.com/mqEZzeZ.png!web" alt=""></p>
-<p>Freelancing pro: setting up your own home office. Photo by<a href="http://unsplash.com/photos/RcdV8rnXSeE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Vadim Sherbakov</a>on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Unsplash</a>.</p>
-<p>Schedule: One of the things I love most about consulting is being in total control of my schedule. There’s no expectation that I’m at my desk from 9 am to 5 pm. Sometimes I get in a zone and finish an entire report in one very long day and take the next morning off to let ideas percolate. Of course I have meetings and deadlines, but I can usually finagle things to work well for my clients and myself.</p>
-<p>On the flip side, juggling your schedule can be difficult. I’m quite disciplined about getting things done, but I’ve never quite figured out a way to create a consistent schedule. Sometimes I’ve had priority work on different projects collide at the same time or I’ve said yes to a few too many things and ended up working crazy hours to get everything done. Such is a consultant’s life.</p>
-<p>Money: I absolutely find that I make more money freelancing than when I worked in-house, even in leadership roles. I’m still experimenting with how I bill, but I tend to use value-based pricing for entire projects rather than charge hourly. I often ask clients to pay me 50% of the total upfront and the rest upon project completion, which can make managing money tricky, especially when you’re used to a consistent paycheck.</p>
-<p>You also have to know that you’ll never be able to collect money as though you’re billing 40 hours a week, every week. You have to account for supplies, tool costs, benefits, and set aside time for administrative tasks like sending invoices, business development, and, of course, downtime. No one gives you sick time or vacation days when you freelance.</p>
-<p>Inevitably, I’ve also run into time periods where I don’t have anything billable booked. An open schedule can be scary, so I use this time to do things like reach out to colleagues or potential clients, write articles, research new tools, try to learn something new, or catch up on administrative work. One of the benefits of this downtime is the space to learn, exploring the vast array of available online courses or just experimenting with a new method or tool.</p>
-<p>Work environment: I mostly work from home, which means I wear what I like, can pet my dog throughout the day, don’t contend with traffic, and for better or worse, have all day access to my kitchen. All great, but it also means that sometimes the only person I see in the flesh each day is my husband.</p>
-<p>I have to make an extra concerted effort to hang out with colleagues, so I’ve become more active in my local meetups and groups (shout out to<a href="https://www.meetup.com/Ladies-that-UX-Durham/" target="_blank" rel="external">Ladies that UX Durham</a>– love yall!) I also found I need to be more social during the week, even if that means going to a fitness class instead of biking solo or talking on the phone while I shop.</p>
-<h3 id="What-services-will-you-provide"><a href="#What-services-will-you-provide" class="headerlink" title="What services will you provide?"></a>What services will you provide?</h3><p>I’ve been focused on research and strategy for most of my career. I won’t rehash the “<a href="http://community.uxmastery.com/t/forced-to-become-a-unicorn-has-that-happened-to-you/783/11" target="_blank" rel="external">Should I be a unicorn</a>?” or “<a href="http://uxmastery.com/ux-designers-do-not-need-to-code/" target="_blank" rel="external">Do designers need to code</a>?” debates, but I’ll admit that when I first starting freelancing, I was worried I wasn’t going to be able to find enough work without doing visual work. Turns out, I was totally wrong. Phew!</p>
-<p><img src="http://img1.tuicool.com/BzMjMbA.jpg!web" alt=""></p>
-<p>Don’t worry, you don’t need to be a unicorn to be a freelance UXer.</p>
-<p>You absolutely don’t need to be a unicorn or try to tackle projects that aren’t your speciality. But it helps to have a broad set of experience and at least one area of deep expertise you can market and use to define your services. You can match what you’re good at and what you like to define the kind of projects you target, the projects you’re OK with taking, and what you will certainly turn down.</p>
-<p>Clearly<a href="http://uxmastery.com/build-your-ux-personal-brand/" target="_blank" rel="external">defining your services and interests</a>are important because it tells other people what to turn to you for. if I know someone has great interaction design skills and tonnes of experience with financial products, I’ll suggest them anytime I see a project like that. If someone tells me they’ll do anything that comes their way, they probably won’t come to mind for any projects I know about.</p>
-<h3 id="How-will-you-find-clients"><a href="#How-will-you-find-clients" class="headerlink" title="How will you find clients?"></a>How will you find clients?</h3><p>This is a question that I get asked time after time, and the answer is incredibly simple in concept but hard in practice:<strong>treat your clients and colleagues as you would users and provide them with a good experience working with you</strong>.</p>
-<p>More specifically, you have to do good work and other people have to be willing to talk about it. This can either mean that your clients are pleased with your work and will re-hire you or tell other potential clients, or that your peers in UX like your work and can refer you when they need help or can’t take something on. It really is true that a huge amount of success in consulting is based on networking and who you know, but that only works to your advantage if the people you know have had a good experience working with you. Right now, every single one of my clients is someone I’ve previously worked with or have gotten a good reference.</p>
-<p>This is where, once again, it helps to have a clearly defined, slightly unique set of skills or interests. There are tonnes of researchers and tonnes of designers, but if you’re known as a researcher who loves qualitative work and medical products, people will think of you whenever they come across that kind of project. Just be sure that you don’t define yourself too narrowly.</p>
-<p>You can also use job boards to identify potential projects or try recruiting agencies, but I haven’t found either as fruitful as having my name passed on from a previous contact. More on finding freelance UX work<a href="https://www.linkedin.com/pulse/single-best-way-get-freelance-ux-work-amanda-stockwell?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWB86zkUbaQbxQN8f0Iqf%2Bw%3D%3D" target="_blank" rel="external">here</a>.</p>
-<h3 id="Are-you-really-suited-for-all-that"><a href="#Are-you-really-suited-for-all-that" class="headerlink" title="Are you really suited for all that?"></a>Are you really suited for all that?</h3><p>Even if all the potential pros sound amazing to you and you have the skills and network to pull off freelancing, take a moment to reflect on your personality and soft skills.</p>
-<p>Are you detailed, organised, and willing to juggle many different client requests and manage your own schedule? Are you a natural risk-taker who can cope well with slow periods or lack of viable work? Are you assertive enough to negotiate terms for yourself? Do you mind working by yourself a lot?</p>
-<p>There’s a lot to think about before leaving the security of a full-time job. I love freelancing, but it’s worth carefully considering the pros and cons and your skillset and personality before taking the leap. Best wishes for whichever path you choose! </p>
-<p>Do you have experience or tips on freelancing for UX professionals? Leave a comment on the blog or in the forums! </p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/3qIJryE" target="_blank" rel="external">http://uxmastery.com/freelancing-ux-career/</a></p>
+    <content type="html"><![CDATA[<p>Icons in user interfaces are the elements that cannot be overestimated. Small and meaningful, they solve numerous problems. They become little keys to usability and intuitive navigation. And only designers know how much time and effort is needed to make them simple, helpful and expressive.</p>
+<p>Guru of user experience design Steve  Jobs said: «Details matter, it’s worth waiting to get it right.» Obviously, icons are on the top of details making interface usable and navigable. So, today let’s discuss what are their types and how they can be used in interfaces.</p>
+<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><p>In general terms, an icon can be defined as an image which has a high symbolic value and is used for the purpose of communication. Icons present signs which are informative and support data exchange between the informer and addressee alongside with words and sentences: while copy is served with letters or characters, icons communicate via the images showing pictorial resemblance with an object of the physical world. In computing and digital design, icons are pictograms or ideograms used in the web or mobile interface to support its usability and provide the successful flow of human-computer interaction.</p>
+<p>Diving into the benefits of icons, one of the most important among them is the ability to replace the text. In one of our earlier articles, we gave details about the<a href="http://tubikstudio.com/visual-perception-icons-vs-copy-in-ui/" target="_blank" rel="external">relations of copy and icons</a>and their influence on usability. The process of the research showed that usage of recognizable and clear icons had a great potential in strengthening navigation as most people perceive images faster than words. However, even the slightest misperception can become the reason of poor UX so the solutions on the type of icons should be carefully tested to reach the good balance of icons and copy for a particular target audience.</p>
+<p><img src="http://img0.tuicool.com/7vIF7bn.jpg!web" alt=""></p>
+<h2 id="History"><a href="#History" class="headerlink" title="History"></a>History</h2><p>Obviously, icons weren’t invented by interface designers. As an object of communication, they have a long and diverse history rooting in ancient times. They are found in maps, signs, schemes, manuals and many other sources of information. However, with the advent of new technologies and graphical user interfaces, icons experienced the new twist of progress. Historically, Xerox is mentioned in credits for creating the first icons for a graphical UI in the early 1970s: the icons were implemented in a machine called Xerox Alto which was very expensive and didn’t really go to the wide masses. Still, that was a beginning of a long story: in 1981, Xerox Star was released and it’s referred to as the first consumer computer which used icons as a part of its interface. In particular, it applied the icons of folders and trash bins which have been used so far.</p>
+<p><img src="http://img0.tuicool.com/rIRVjmb.png!web" alt=""></p>
+<p><a href="https://www.interaction-design.org/literature/article/a-brief-history-of-the-origin-of-the-computer-icon" target="_blank" rel="external"><em>Source</em></a></p>
+<p>Another milestone easily remembered on this way is presented with the color icons Apple revealed first in 1991 and then later with their further updates for Macintosh. They featured another approach to the style when icons combined functionality and informative capacity with attractive and harmonic appearance.</p>
+<p><img src="http://img2.tuicool.com/vANvaqY.png!web" alt=""></p>
+<p><a href="https://www.interaction-design.org/literature/article/a-brief-history-of-the-origin-of-the-computer-icon" target="_blank" rel="external"><em>Source</em></a></p>
+<p>These days icons are presented in digital design with numerous packs and sets in all the themes and styles possible. Although there are many ready-made packs, the database of icons is growing all the time in search of new solutions appealing to users.</p>
+<p>Talking about the classification of icons, we can mark out several aspects of grouping them on types.</p>
+<h2 id="Types-based-on-functions"><a href="#Types-based-on-functions" class="headerlink" title="Types based on functions"></a>Types based on functions</h2><h3 id="Clarifying-icons"><a href="#Clarifying-icons" class="headerlink" title="Clarifying icons"></a>Clarifying icons</h3><p>These are the icons aimed at explanation. They are visual markers explaining particular features or marking out categories of content. In some cases, they are not the layout elements of direct interaction; also, you can often find them in combination with copy supporting their meaning. This trick activates multiple elements of perception in one interaction providing better recognizability for call-to-action elements. People, who instantly understand the symbol transferred with the icon, won’t pay big attention to the copy. The same will happen to those who have problems with fast copy recognition. However, using the copy together with the icon decreases the risk of misunderstanding or wrong interactions for people who can possibly misinterpret the meaning of the image.</p>
+<p><img src="http://img1.tuicool.com/3AZbqaf.png!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3440889-Homey-App" target="_blank" rel="external"><em>Homey App</em></a></p>
+<p><img src="http://img0.tuicool.com/rUjuUjj.png!web" alt=""></p>
+<p>Category icons forSaily app</p>
+<h3 id="Interactive-icons"><a href="#Interactive-icons" class="headerlink" title="Interactive icons"></a>Interactive icons</h3><p>The icons of this type are directly involved into interaction process and are the core supporters of navigation. They are clickable or tappable and respond to the users request doing the action symbolized by them. Their main goal is to inform users about the functions or featuresbehindthe buttons, controls and any other elements of interaction.</p>
+<p><img src="http://img1.tuicool.com/AJ3a6nA.gif" alt=""></p>
+<p><a href="https://dribbble.com/shots/2071319-GIF-of-the-Tapbar-Interactions" target="_blank" rel="external"><em>Tab Bar interactions</em></a></p>
+<p><img src="http://img2.tuicool.com/z6NnMfE.gif" alt=""></p>
+<p><a href="https://dribbble.com/shots/2267219-UI-Navigation-Concept" target="_blank" rel="external"><em>Menu interaction concept</em></a></p>
+<h3 id="Decorative-and-entertaining-icons"><a href="#Decorative-and-entertaining-icons" class="headerlink" title="Decorative and entertaining icons"></a>Decorative and entertaining icons</h3><p>The icons of this type give more about aesthetic appeal than functionality. However, this aspect is also significant and needs to be considered as the style and appearance corresponding to the target audience preferences and expectations set the solid ground for high desirability. Applied wisely, it is one of the features that can not only attract but also retain users and add much to the positive user experience. Decorative icons are often used to present seasonal features and special offers.</p>
+<p><img src="http://img0.tuicool.com/VnMrA3a.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/2007927-Easter-and-spring-themed-icons" target="_blank" rel="external"><em>Easter and spring themed icons</em></a></p>
+<h3 id="App-icons"><a href="#App-icons" class="headerlink" title="App icons"></a>App icons</h3><p>App icons are the interactive brand signs that present the application on different platforms supporting the original identity of the digital product. In most cases, it features the logo of the app designed according to the requirements set for this kind of icons. However, it also can apply something else, for example, a mascot or an abstract combination of corporate colors. The effective solution is usually based on thorough market and competition research with the aim of creating an original icon which won’t get lost on the screen full of other app icons.</p>
+<p><img src="http://img2.tuicool.com/eM732av.png!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/2852836-Elephun-Icon" target="_blank" rel="external"><em>Elephun App Icon</em></a></p>
+<h3 id="Favicon"><a href="#Favicon" class="headerlink" title="Favicon"></a>Favicon</h3><p>Favicon, also known as URL icon or bookmark icon, is a special type of symbol which represents the product or brand in the URL-line of the browser as well as in the bookmark tab. It allows users to get a quick visual connection with it while they are browsing. This interface element proved itself effective for productive website promotion and good recognizability of its visual identity.</p>
+<h2 id="Types-based-on-visual-performance"><a href="#Types-based-on-visual-performance" class="headerlink" title="Types based on visual performance"></a>Types based on visual performance</h2><h3 id="Glyph-icons"><a href="#Glyph-icons" class="headerlink" title="Glyph icons"></a>Glyph icons</h3><p>The term “glyph”[glif] has come to design from the field of typography. The word takes its roots from the Greek word which means “carving”. Originally, the term presents an elements symbols or pictogram which is included in the set of symbols agreed upon many users (readers, writers etc.): it presents a readable character enabling people to write it.</p>
+<p>In the sphere of typography, it is a certain graphic representation of an element of written language within a particular system of writing or particular typeface: it can be a grapheme, or part of a grapheme, or sometimes several graphemes in combination (a composed glyph). Here’s the set of ancient Celtic glyphs, for example.</p>
+<p><img src="http://img2.tuicool.com/63IF3mM.jpg!web" alt=""></p>
+<p><a href="http://td-brushes.deviantart.com/art/Pictish-Rune-Meanings-40202186" target="_blank" rel="external"><em>Source</em></a></p>
+<p>In modern digital design, the word “glyph” reinvented its meaning but not into a sort of revolution. It is used to define a graphic symbol that provides the appearance or form for a character: it can be an alphabetic or numeric font as well as a symbol picturing an encoded character. Talking about icons, glyph icons are first of all described as a typographic symbol that represents something else, not letter or number. Among popular examples, you will also find the «@» symbol representing the preposition «at». For example, here is the set of icons for material design from Google.</p>
+<p><img src="http://img0.tuicool.com/jURniiq.jpg!web" alt=""></p>
+<p><a href="https://material.io/icons/" target="_blank" rel="external"><em>Material icons</em></a></p>
+<p>Glyph icons use simplified and universal shapes and images to be recognizable and flexible in terms of responsive design. They play the big role in the issues of navigation for a digital product.</p>
+<p><img src="http://img2.tuicool.com/QJ7RZ3E.png!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/2396211-Weather-Icons-Set" target="_blank" rel="external"><em>Weather icons</em></a></p>
+<h3 id="Flat-and-semi-flat-icons"><a href="#Flat-and-semi-flat-icons" class="headerlink" title="Flat and semi-flat icons"></a>Flat and semi-flat icons</h3><p>Flat icons are usually a bit more complex than glyph: they can apply color combinations, filling of the elements and present a bit more complicated images. Nevertheless, they are also focused on simple and recognizable visual metaphors quickly transferring the required meaning. The most prominent feature which actually has inspired the name of this direction is applying flat 2-dimensional visual details as the opposite to highly realistic and detailed skeuomorphic images. Flat style allows designers to be more flexible in applying the expressive power of colors and shapes not losing in legibility of the presented items.</p>
+<p><img src="http://img0.tuicool.com/eABB7vY.png!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/2082509-Blog-App" target="_blank" rel="external"><em>Blog App</em></a></p>
+<h3 id="Skeuomorphic-icons"><a href="#Skeuomorphic-icons" class="headerlink" title="Skeuomorphic icons"></a>Skeuomorphic icons</h3><p>Skeuomorphism is the design direction somehow opposite to flat. It is based on the idea of reflecting images in 3D look very close to the original natural look of the physical objects. It was popular for GUI of different types and functionality several years ago. But then it was gradually replaced with flat design in UI which is simpler and therefore more flexible and practical for the needs of digital interfaces. Nevertheless, the skeuomorphic icons are still widely used in game design and app icons in game sector.</p>
+<h3 id="SVG-icons"><a href="#SVG-icons" class="headerlink" title="SVG icons"></a>SVG icons</h3><p>SVG icons, decoded as Scalable Vector Graphics, are responsive icons built on XML-based 2D vector images. They are designed and integrated according to an open standard developed by the World Wide Web Consortium (W3C) since 1999, and supported by all major browsers. SVG icons are growing their popularity as today websites are used on the diversity of platforms and devices and need to be responsive to provide positive UX.</p>
+<h2 id="Types-based-on-applied-image-metaphor"><a href="#Types-based-on-applied-image-metaphor" class="headerlink" title="Types based on applied image metaphor"></a>Types based on applied image metaphor</h2><p>This direction of icons typology is based on the research provided by the famous expert in usability Jackob Nielsen and revealed in hisarticlefor Nielsen Norman Group. In this perspective, icons can be divided into three core types according to the type of the metaphor they reflect.</p>
+<p>Resemblance iconsare the symbols directly depicting a physical object the icon represents. These are, for example, the magnifier for search, the shopping cart, the envelope for mail etc.</p>
+<p>Reference iconsare the symbols depicting an object on the basis of analogy. For instance, a picture of a clamp representing a file-compression utility (because it squeezes) goes to this group.</p>
+<p>Arbitrary iconsare the symbols which currently do not set direct connections with the objects and their recognizability is based on convention and power of habit. This is when we should remember about floppy disc representing «Save» function: although initially it was a reference icon, for many users now it doesn’t work like that — they just know the meaning solidly connected to this image for many years.</p>
+<p><img src="http://img2.tuicool.com/FJBRfqZ.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/2117638-Multimedia-icon-set" target="_blank" rel="external"><em>Multimedia Icon Set</em></a></p>
+<h2 id="Key-features-of-effective-icons"><a href="#Key-features-of-effective-icons" class="headerlink" title="Key features of effective icons"></a>Key features of effective icons</h2><p>In one of our previous articles devoted to the role of icons in user interfaces, we have already described all the essential features making the icons efficient, so today let’s just quickly recall them.</p>
+<ul>
+<li><strong>clear</strong><br>— the meaning of the icon is understandable and accessible to the target audience</li>
+<li><strong>meaningful</strong><br>— the icon transfers the informative value</li>
+<li><strong>recognizable</strong><br>— the visual symbol applied in the icon is presented in the form which can be recognized and decoded correctly by users</li>
+<li><strong>simple</strong><br>— the icon isn’t overloaded with non-essential graphic elements which allows it to be quickly perceived and understood without too much effort</li>
+<li><strong>original and noticeable</strong><br>— the icon stands out among other similar elements of the interface which is especially actual for the app icons</li>
+<li><strong>scalable and flexible</strong><br>— the icon saves its unity, integrity, and legibility in different sizes and resolutions</li>
+<li><strong>attractive</strong><br>— the icon satisfies aesthetic expectations and sets harmonic visual appeal</li>
+<li><strong>non-offensive</strong><br>— the icon doesn’t have hidden meanings or misperceptions which could feel offensive or rude for any part of the target audience</li>
+<li><strong>consistent</strong><br>— the icon corresponds to the general stylistic concept of the layout it is applied for.</li>
+</ul>
+<p><img src="http://img1.tuicool.com/rQBfqyv.jpg!web" alt=""></p>
+<h2 id="Recommended-reading"><a href="#Recommended-reading" class="headerlink" title="Recommended reading"></a>Recommended reading</h2><p>Here is a bunch of articles for further exploration of the topic:</p>
+<p><a href="https://www.nngroup.com/articles/classifying-icons/" target="_blank" rel="external">Icon Classification: Resemblance, Reference, and Arbitrary Icons</a></p>
+<p><a href="https://www.interaction-design.org/literature/article/a-brief-history-of-the-origin-of-the-computer-icon" target="_blank" rel="external">A Brief History of the Origin of the Computer Icon</a></p>
+<p><a href="http://tubikstudio.com/iconic-simplicity-the-vital-role-of-icons/" target="_blank" rel="external">Iconic Simplicity. The Vital Role of Icons.</a></p>
+<p><a href="http://tubikstudio.com/visual-perception-icons-vs-copy-in-ui/" target="_blank" rel="external">Visual Perception: Icons VS Copy in UI.</a></p>
+<p><a href="https://icons8.com/articles/how-to-combine-icons-from-different-sets-in-your-ui/" target="_blank" rel="external">How to Combine Icons from Different Sets in Your UI</a></p>
+<p>Welcome to see the designs by Tubik Studio on <a href="https://dribbble.com/Tubik" target="_blank" rel="external">Dribbble</a>and <a href="https://www.behance.net/Tubik" target="_blank" rel="external">Behance</a></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/IfqYJz7" target="_blank" rel="external">http://tubikstudio.com/small-elements-big-impact-types-and-functions-of-ui-icons/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
+      &lt;p&gt;Icons in user interfaces are the elements that cannot be overestimated. Small and meaningful, they solve numerous problems. They become l
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Micro frontends – a microservice approach to front-end web development</title>
+    <link href="https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/"/>
+    <id>https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/</id>
+    <published>2017-07-06T00:00:00.000Z</published>
+    <updated>2017-07-06T10:09:59.031Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://img0.tuicool.com/7BFRBrz.png!web" alt=""></p>
+<p>For web apps, the front end is becoming bigger and bigger, and the back end is getting less important. Our web app at<a href="https://www.weld.io/?utm_source=medium.com&amp;utm_content=micro-frontends" target="_blank" rel="external"><strong>Weld</strong>(web/app creation tool)</a>is 90% front-end code, with a very thin back end. I can imagine that a majority of new web apps being built today are dealing with a similar situation.</p>
+<p>Web apps also change over time, as do development techniques and frameworks. This requires support for allowing different front-end frameworks to co-exist, e.g. older modules built in JQuery or AngularJS 1.x, combined with newer modules built in React or Vue.</p>
+<h3 id="The-monolithic-approach-doesn’t-work-for-larger-web-apps"><a href="#The-monolithic-approach-doesn’t-work-for-larger-web-apps" class="headerlink" title="The monolithic approach doesn’t work for larger web apps"></a>The monolithic approach doesn’t work for larger web apps</h3><p>Having a monolithic approach to a large front-end app becomes unwieldly. There needs to be a way of breaking it up into smaller modules that can act independently.</p>
+<p>Example:</p>
+<ul>
+<li><code>myapp.com/</code><ul>
+<li>landing page built with static HTML.</li>
+</ul>
+</li>
+<li><code>myapp.com/settings</code><ul>
+<li>old settings module built in AngularJS 1.x.</li>
+</ul>
+</li>
+<li><code>myapp.com/dashboard</code><ul>
+<li>new dashboard module built in React.</li>
+</ul>
+</li>
+</ul>
+<p>I would imagine the following is needed:</p>
+<ol>
+<li>A<br><strong>shared codebase</strong><br>in pure JavaScript e.g. managing routing and user sessions. Also some shared CSS. Both should be as thin as possible.</li>
+<li>A<br><strong>collection of separate modules</strong><br>, “mini-apps”, built in various frameworks. Stored in different code repositories.</li>
+<li>A deployment system that<br><strong>bundles all the modules together</strong><br>from different repositories and deploys to a server, whenever a module is updated.</li>
+</ol>
+<h3 id="The-solution-“micro-frontends”"><a href="#The-solution-“micro-frontends”" class="headerlink" title="The solution: “micro frontends”"></a>The solution: “micro frontends”</h3><p>But as it turns out, a lot of other people is thinking about the same ideas. The common term is<em>“micro frontends”</em>.</p>
+<p>Companies like<a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external">Spotify</a>,<a href="https://news.ycombinator.com/item?id=13012916" target="_blank" rel="external">Klarna</a>,<a href="https://www.mosaic9.org/" target="_blank" rel="external">Zalando</a>,<a href="https://www.upwork.com/blog/2017/05/modernizing-upwork-micro-frontends/" target="_blank" rel="external">Upwork</a>, and<a href="http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html" target="_blank" rel="external">Allegro</a>are using the micro frontends approach to build their web apps.</p>
+<h3 id="Implementing-micro-frontends"><a href="#Implementing-micro-frontends" class="headerlink" title="Implementing micro frontends"></a>Implementing micro frontends</h3><p>Here’s a few different approaches to implementing micro frontends:</p>
+<ol>
+<li>Isolating micro-apps into<br><a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external"><strong>IFrames</strong>using libraries and Window.postMessage APIs</a><br>to coordinate. IFrames share APIs exposed by their parent window.</li>
+<li><a href="https://news.ycombinator.com/item?id=13011795" target="_blank" rel="external">Multiple single-page apps that live at different URLs</a><br>. The apps use NPM/Bower components for shared functionality.</li>
+<li>Using<br><a href="http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html" target="_blank" rel="external"><strong>Varnish Cache</strong>to integrate different modules</a><br>.</li>
+<li><a href="https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/" target="_blank" rel="external"><strong>Web Components</strong>as the integration layer</a><br>.</li>
+<li><a href="https://news.ycombinator.com/item?id=13012916" target="_blank" rel="external">“Blackbox”<strong>React</strong>components</a><br>.</li>
+</ol>
+<h3 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h3><ul>
+<li><a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external">Ask Hacker News: “What do you use to build micro-front ends?”</a></li>
+<li><a href="https://www.mosaic9.org/" target="_blank" rel="external">Project Mosaic</a><br>by Zalando, a set of libraries to support a microservice style architecture for large scale websites. See also<br><a href="https://www.microservices.com/talks/mosaic-microservices-zalando-tech/" target="_blank" rel="external">this presentation from Zalando Tech</a><br>.</li>
+<li><a href="https://github.com/neuland/micro-frontends" target="_blank" rel="external">Micro Frontends (GitHub)</a><br>— will contain techniques, strategies and recipes for building a modern web app with multiple independent teams.</li>
+</ul>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/aeM3Ybf" target="_blank" rel="external">https://medium.com/@tomsoderlund/micro-frontends-a-microservice-approach-to-front-end-web-development-f325ebdadc16</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/7BFRBrz.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;For web apps, the front end is becoming bigger and bigger, and the back
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Image Correction for Color Blindness</title>
+    <link href="https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/"/>
+    <id>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</id>
+    <published>2017-07-06T00:00:00.000Z</published>
+    <updated>2017-07-06T10:09:59.028Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Color-blind-image-correction"><a href="#Color-blind-image-correction" class="headerlink" title="Color blind image correction"></a>Color blind image correction</h2><p>Color blind image correction</p>
+<p><a href="http://www.vischeck.com/daltonize/runDaltonize.php" target="_blank" rel="external">(Run Daltonize online here)</a></p>
+<p>One of the most common questions that we are asked is:</p>
+<p><strong>  
+</strong></p>
+<p>Is there a way to cure color blindness?</p>
+<p>From a medical point of view, the answer is ‘not really’. There are some devices (colored contact lenses or filter spectacles) that are claimed to improve the vision of color blind people but in general, people report very mixed results with them. There is currently no effective way to recover full trichromatic vision if you are red/green colorblind.</p>
+<p>So in one sense, color blindness is ‘incurable’. But a deeper question is “what is color good for?”. Apart from its aethetic appeal, seeing many different colors allows us to distinguish things in the world. Take the example below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>How many types of fruit is this man selling?</strong> People with three different cone types (“trichromats”) can see 5 distinct piles of fruit on the ground. From back to front, they look ‘red’, ‘green’, ‘red’, ‘yellow’ and ‘light orange’. There are also some baskets on the shelf containing three piles of fruit.</th>
+<th style="text-align:left"><img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">But people with red/green color blindness usually have trouble seeing all the different fruits.They see something that can be simulated like this: Note that there now seem to be only three or four different types of fruit on the ground. It is also hard to tell how many distinct piles of fruit there are on the shelves.</td>
+<td style="text-align:left"><img src="http://img0.tuicool.com/iUNRfi7.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>In some pictures, a lot of important information is conveyed by variations in reds and greens. This is a real problem for color blind people who will miss this information. The important point to understand is that<strong>the ‘true’ color of something may be irrelevant but the fact that it is different from its surroundings is very important.</strong></p>
+<p>Here is another example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><img src="http://img2.tuicool.com/Y3MBVvr.jpg!web" alt=""></th>
+<th style="text-align:left"><img src="http://img2.tuicool.com/j6rUryi.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1) Cells labelled with three types of fluorescent markers to show up three different structures.</strong></td>
+<td style="text-align:left"><strong>2) Red/green color blind simulation of fluorescent cell picture.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Here, a color blind scientist would be unable to tell the red and green labels apart. They would miss important information about the structure of the cells.</p>
+<p>How to fix it?</p>
+<p>We can use image processing techniques to improve this situation. There are two ways that we can make information in pictures available to color blind people.</p>
+<p><strong>1)</strong>The simplest way is simply to increase the red/green contrast in the image. Many color blind people have some residual red/green discrimination. Increasing the red/green contrast makes them more likely to see these types of color variations.</p>
+<p><strong>2)</strong>We can analyze the information conveyed by variations in the red/green direction and convert these into changes in brightness and/or blue/yellow coloration.  This allows us to map information from a color dimension that is invisible to dichromats into those that they can see.</p>
+<p>We call the combination of these two processes ‘Daltonization’ after John Dalton, the British scientist who was one of the first people to investigate color blindness.</p>
+<p>The result of applying these algorithms is shown below.:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><img src="http://img2.tuicool.com/INjiey2.jpg!web" alt=""></th>
+<th style="text-align:left"><img src="http://img1.tuicool.com/QZ7vUji.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">3) Daltonized version of three-color-labelled fluorescent cells.</td>
+<td style="text-align:left"><strong>4) Dichromat (red/green color blind) simulation of the  Daltonized image.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Here, the algorithm has mapped changes in the reds and greens into slight changes in brightness and bluishness. The result is that when viewed by someone with color blindness, the different labelled structures in the cell are clearly visible.</p>
+<p>Here are some more examples. In each case, the images are numbered 1 to 4 where<strong>1</strong>) is the original full-color image,<strong>2</strong>) is a simulation of the color-blind view of the full color image,<strong>3</strong>) is the Daltonized version of the full color image and<strong>4</strong>) is the color blind simulation of the Daltonized image showing improved red/green discrimination. To see how well the Daltonization algorithm works for someone with color blindness, compare images<strong>2</strong>) and<strong>4</strong>).</p>
+<p>Example: Gauguin painting</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img1.tuicool.com/AR3U73r.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img0.tuicool.com/rA7jqiJ.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img1.tuicool.com/INjieiZ.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/QfE7fui.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>In this case, the Daltonization transformation must be judged on a more aesthetic level. While there is more ‘information’ present in image<strong>4)</strong>compared to image<strong>2)</strong>the disruption in the color balance may be unsettling (or fascinating) to some dichromats.</p>
+<p>Here is an Ishihara plate - a common aid for diagnosing color blindness. The number ‘45’ in the center of the disk is invisible to  someone with red/green color blindness.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/quMZJbn.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img2.tuicool.com/vi6v6rA.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>There are several things to note about this example. First of all, although the enhancement of the red/green information in the Daltonized version is striking, this is not a good<strong>general</strong>test of an algorithm to modify images for color blind observers. The reason is that the Ishihara plates are (deliberately) artificial images, and do not represent the range of colors that people see in everyday life. It would be rather easy to design an algorithm to ‘improve’ Ishihara plates (for example one that replaced all reds with blues) that would nevertheless destroy other types of information in the image. One nice feature of the Daltonization algorithm is that it analyses the information content of the image beforehand and attempts to preserve existing color variations.</p>
+<p>Note also that the Daltonizing algorithm does not enable people to “pass” the Ishihara test in any way. It is a digital image processing technique that can make print or video display more salient to color blind people without distorting the color balance to an unnacceptable degree.</p>
+<p>And finally, here’s the fruit market we showed you at the start:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img1.tuicool.com/EJR73qz.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/qqA3y26.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img2.tuicool.com/NZRNj23.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>The different piles of fruit on the floor are now clearly visible in image<strong>4</strong>).</p>
+<p><strong>What is it good for?</strong>We envisage a number of applications for this algorithm. Here are some examples:</p>
+<p><strong>As part of a digital microscope</strong>(see the ‘cells’ example above): Color blind users could flick a switch to improve the visibility of red/green fluorescent labels or intrinsic color contrast…</p>
+<p><strong>In digital video recorders and display systems</strong>: Viewers could turn on the Daltonize algorithm much as they might vary the brightness or volume using a remote control. Operating on a real-time video stream, the algorithm could improve the appearence of TV for color blind viewers (for example, making sports teams playing in red strip on a green field far more visible) without significantly disturbing the color balance for other members of the audience….</p>
+<p><strong>Computer display devices</strong>: Computer users could turn on the Daltonize algorithm from as part of their computer video card controls. All output appearing on the monitor (including web-pages, videos and still images) would automatically be processed and rendered more salient to dichromats.</p>
+<p><strong>Print media</strong>: Images can be Daltonized before printing. Print applications where legibility is essential (for example, public safety documents, maps, technical instructions) can all be made more legible for color-blind users….</p>
+<p><strong>  
+</strong></p>
+<p>You can play with the algorithm onlineon this web page. Please be aware that this page is taking a lot of hits at the moment and may seem a little slow to respond. If you have any particularly interesting images that you would like us to process, send them to us by email atinfo@vischeck.com and we will run them ‘by hand’. Please keep them to a reasonable size :)</p>
+<p>We would also like to hear your feedback about this algorithm - especially if you are color blind. Let us know what you think!</p>
+<p>If you would like to license the Daltonizing algorithm for use in your own applications, please contact us at<a href="mailto://daltonize_license@vischeck.com" target="_blank" rel="external">daltonize_licence@vischeck.com</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/6B3qMvb" target="_blank" rel="external">http://www.vischeck.com/daltonize/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Color-blind-image-correction&quot;&gt;&lt;a href=&quot;#Color-blind-image-correction&quot; class=&quot;headerlink&quot; title=&quot;Color blind image correction&quot;&gt;&lt;/a&gt;Co
     
     </summary>
     
@@ -1331,6 +1251,71 @@ $_
   </entry>
   
   <entry>
+    <title>&#39;Baby Driver&#39; is an ode to iPod nostalgia</title>
+    <link href="https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/"/>
+    <id>https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.957Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg" alt=""></p>
+<p>Tristar Pictures</p>
+<p>It took a while to get going, but it’s safe to say we’re living in a golden age of digital music. Terrible compression is a thing of the past, and the rise of streaming services like Spotify and Apple Music give us instant access to almost anything we’d want to hear. But while we’ve gained so much, there’s also a sense that we’ve lost something. Sharing a playlist isn’t the same as burning a CD for your sweetheart, or going even further back, manually dubbing a mixtape. As our music has become less physical, so has our attachment to it.</p>
+<p>That’s something that struck me while watching<em>Baby Driver</em>, director Edgar Wright’s new mashup of car chases, heist films and excellent tunes. Its lead character, Baby (Ansel Elgort), is perpetually connected to a pair of headphones, experiencing life as if it’s a never-ending music video. But his earbuds aren’t attached to a smartphone; they’re plugged into one of his many iPods. He has a box full of them, each with their own colors and ornamentations. Basically, a different iPod for every mood.</p>
+<p>While they’re filled with digital files, the iPods also serve as a physical connection to all of his music. The film opens with Baby in a getaway car, cool as a cucumber while wearing white earbuds, launching into a jam out session with_Bellbottoms_by The Jon Spencer Blues Explosion. That song also serves as the backdrop for the film’s electric opening chase, where you can almost feel the iPod’s tiny mechanical hard drive (remember those?) racing alongside him.</p>
+<p>As someone who<a href="https://www.engadget.com/2015/09/17/gone-too-zune/" target="_blank" rel="external">reminisces fondly about my Zune HD</a>,<a href="https://en.wikipedia.org/wiki/Rio_Karma" target="_blank" rel="external">Rio Karma</a>,<a href="https://www.cnet.com/products/toshiba-gigabeat-s/review/" target="_blank" rel="external">Toshiba Gigabeat</a>and countless other players of varying quality, Baby’s connection to his iPods struck a chord. With older media players, there was a sense of physicality, before cloud syncing made it a cinch to keep track of all your music. If you somehow managed to hit a double whammy of bad luck and lost both your player and your computer’s hard drive, you were out of luck.</p>
+<p>These days, you can hop between phones within minutes, porting over your entire library without a sweat with iTunes, Google Play and apps like Spotify. You don’t even have to wait for your music to download; you can just stream it all from the server heavens.</p>
+<p>Baby’s iPod addiction seems fitting today, at a time when we’re all plugged into headphones most of the day. Just look up from your phone once in a while and you’ll see it: a crowd of people, each in their own world with their own private soundtracks. In<em>Baby Driver</em>, that soundtrack underscores everything, be it a chase, a shootout or even a stroll for coffee. The film also takes pains to choreograph the tunes with what’s happening on screen (there’s a shootout set to_Tequila_that’s pitch perfect). Baby also uses music as a form of therapy, due to a tinnitus condition that resulted from a childhood car accident. It’s a way to drown out the “hum in the drum,” as Kevin Spacey’s criminal mastermind, Doc, tells us.</p>
+<p><img src="https://o.aolcdn.com/images/dims?resize=980%2C640&amp;quality=100&amp;image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F898e51608e44a0022256740610336ea2%2F205434882%2FBaby%2BDriver%2B2.jpg&amp;client=cbc79c14efcebee57402&amp;signature=dc771c585960952fdbbeeb4c05d41fa744c718ed" alt=""></p>
+<p>Tristar Pictures</p>
+<p>Since the film is practically an action musical, it’s no surprise that Baby’s relationship with everyone is centered around tunes. He strikes up a conversation with his sweetheart, Debora (Lily James), by comparing the songs that feature both of their names. He forms a kinship with Jon Hamm’s bank robber as they share earbuds, reminiscing about their go-to tracks during a getaway. (Baby’s is_Queen’s_Brighton Rock, which should come as no surprise to fans of Edgar Wright’s<em>Shaun of the Dead</em>.) Meanwhile, Jamie Foxx’s Bats, who’s particularly unstable, hates the idea of listening to music during robberies. That’s a major red flag that tells us not to trust him.</p>
+<p>Baby’s connection to music extends beyond Apple’s devices: his apartment practically has wall-to-wall records. He also spends his time mixing sound clips with a unique rig,<a href="http://www.gq.com/story/kid-koala-baby-driver" target="_blank" rel="external">developed by Kid Koala</a>, which consists of a magnetic card reader, a distorted Buddhist meditation box and a pen controlled device. There’s even an E-mu Emulator II, for good measure. In true, anachronistic music nerd fashion, Baby also records all of his mixes to cassette tape.</p>
+<p>Since he’s a collector of old-school musical gear (although not many CDs, from what I could gather), Baby’s iPod obsession seems almost peculiar. But I suppose he’s just like plenty of other hip music nerds. We live in a world where the digital and analog still coexist – record sales, paradoxically, are actually on the rise, along with streaming music sales. Baby just latches onto the things he can actually touch and feel.</p>
+<p>And, after all, who wants to deal with their favorite track buffering when you’re in the middle of a life or death car chase?</p>
+<p>Source: <a href="https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/" target="_blank" rel="external">https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/</a>  </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Tristar 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AutoWiring Spring Beans Into Classes Not Managed by Spring</title>
+    <link href="https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/"/>
+    <id>https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.954Z</updated>
+    
+    <content type="html"><![CDATA[<p>In my previous article<a href="https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs" target="_blank" rel="external">JPA Auditing: Persisting Audit Logs Automatically using EntityListeners</a>, I discussed how we can use Spring Data JPA automate auditing and automatically create audit logs or history records and update CreatedBy, CreatedDate, LastModifiedBy, LastModifiedDate properties.</p>
+<p>So in order to save history records for our File entity, we were trying to autowire EntityManager inside our FileEntityListener class before we learned that we could not do that.</p>
+<p>We cannot inject any Spring-managed bean in the EntityListener because EntityListeners are instantiated by JPA before Spring injects anything into it. EntityListeners are not managed by Spring so Spring cannot inject any Spring-managed bean, e.g. EntityManager in the EntityListeners.</p>
+<p>And this is not just the case with EntityListeners, you cannot autowire any Spring-managed bean into another class (i.e. utility classes) not managed by Spring.</p>
+<p>Because this is a very common problem that can also arise with other classes, I tried to come out with a common solution that will not just solve this problem but will also help us get Spring-managed beans in other places.</p>
+<p><img src="http://img1.tuicool.com/zQV3IzI.png!web" alt=""></p>
+<p>So, have created a utility class to fetch any bean according to our requirements.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">@Service</div><div class="line">public</div><div class="line">class</div><div class="line">BeanUtil</div><div class="line">implements</div><div class="line">ApplicationContextAware</div><div class="line">&#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">static</div><div class="line"> ApplicationContext context;</div><div class="line"></div><div class="line">    </div><div class="line">@Override</div><div class="line">public</div><div class="line">void</div><div class="line">setApplicationContext</div><div class="line">(ApplicationContext applicationContext)</div><div class="line">throws</div><div class="line"> BeansException </div><div class="line">&#123;</div><div class="line">        context = applicationContext;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    </div><div class="line">public</div><div class="line">static</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line">T </div><div class="line">getBean</div><div class="line">(Class</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line"> beanClass)</div><div class="line">&#123;</div><div class="line">        </div><div class="line">return</div><div class="line"> context.getBean(beanClass);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Now, to get any bean in a class, we will just need to call BeanUtil.getBean(YourClass.class) and pass the class type to it. Then, we will get the bean.</p>
+<p>For example, in our case, we were trying to get the EntityManager bean inside FileEntityListener. We can simply do that by writing BeanUtil.getBean(EntityManager.class).</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">public</div><div class="line">class</div><div class="line"> FileEntityListener &#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">void</div><div class="line">perform</div><div class="line">(File target, Action action)</div><div class="line">&#123;</div><div class="line">        EntityManager entityManager = BeanUtil.getBean(EntityManager.</div><div class="line">class</div><div class="line">);</div><div class="line">        entityManager.persist(</div><div class="line">new</div><div class="line"> FileHistory(target, action));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>You can find the complete code in this<a href="https://github.com/njnareshjoshi/articles/tree/master/spring-data-jpa-auditing" target="_blank" rel="external">GitHub Repository, </a>and please feel free to provide your valuable feedback.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/zINby2B" target="_blank" rel="external">https://dzone.com/articles/autowiring-spring-beans-into-classes-not-managed-by-spring</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In my previous article&lt;a href=&quot;https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs&quot; target=&quot;_blank&quot; rel=&quot;external
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>After Nonstop Games closed, its employees founded Mighty Bear Games; today it raised US$775K</title>
     <link href="https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/"/>
     <id>https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/</id>
@@ -1374,30 +1359,45 @@ $_
   </entry>
   
   <entry>
-    <title>AutoWiring Spring Beans Into Classes Not Managed by Spring</title>
-    <link href="https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/"/>
-    <id>https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/</id>
+    <title>Is Freelancing Your Next UX Career Move?</title>
+    <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
+    <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
     <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.954Z</updated>
+    <updated>2017-07-05T09:44:47.960Z</updated>
     
-    <content type="html"><![CDATA[<p>In my previous article<a href="https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs" target="_blank" rel="external">JPA Auditing: Persisting Audit Logs Automatically using EntityListeners</a>, I discussed how we can use Spring Data JPA automate auditing and automatically create audit logs or history records and update CreatedBy, CreatedDate, LastModifiedBy, LastModifiedDate properties.</p>
-<p>So in order to save history records for our File entity, we were trying to autowire EntityManager inside our FileEntityListener class before we learned that we could not do that.</p>
-<p>We cannot inject any Spring-managed bean in the EntityListener because EntityListeners are instantiated by JPA before Spring injects anything into it. EntityListeners are not managed by Spring so Spring cannot inject any Spring-managed bean, e.g. EntityManager in the EntityListeners.</p>
-<p>And this is not just the case with EntityListeners, you cannot autowire any Spring-managed bean into another class (i.e. utility classes) not managed by Spring.</p>
-<p>Because this is a very common problem that can also arise with other classes, I tried to come out with a common solution that will not just solve this problem but will also help us get Spring-managed beans in other places.</p>
-<p><img src="http://img1.tuicool.com/zQV3IzI.png!web" alt=""></p>
-<p>So, have created a utility class to fetch any bean according to our requirements.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">@Service</div><div class="line">public</div><div class="line">class</div><div class="line">BeanUtil</div><div class="line">implements</div><div class="line">ApplicationContextAware</div><div class="line">&#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">static</div><div class="line"> ApplicationContext context;</div><div class="line"></div><div class="line">    </div><div class="line">@Override</div><div class="line">public</div><div class="line">void</div><div class="line">setApplicationContext</div><div class="line">(ApplicationContext applicationContext)</div><div class="line">throws</div><div class="line"> BeansException </div><div class="line">&#123;</div><div class="line">        context = applicationContext;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    </div><div class="line">public</div><div class="line">static</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line">T </div><div class="line">getBean</div><div class="line">(Class</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line"> beanClass)</div><div class="line">&#123;</div><div class="line">        </div><div class="line">return</div><div class="line"> context.getBean(beanClass);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Now, to get any bean in a class, we will just need to call BeanUtil.getBean(YourClass.class) and pass the class type to it. Then, we will get the bean.</p>
-<p>For example, in our case, we were trying to get the EntityManager bean inside FileEntityListener. We can simply do that by writing BeanUtil.getBean(EntityManager.class).</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">public</div><div class="line">class</div><div class="line"> FileEntityListener &#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">void</div><div class="line">perform</div><div class="line">(File target, Action action)</div><div class="line">&#123;</div><div class="line">        EntityManager entityManager = BeanUtil.getBean(EntityManager.</div><div class="line">class</div><div class="line">);</div><div class="line">        entityManager.persist(</div><div class="line">new</div><div class="line"> FileHistory(target, action));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>You can find the complete code in this<a href="https://github.com/njnareshjoshi/articles/tree/master/spring-data-jpa-auditing" target="_blank" rel="external">GitHub Repository, </a>and please feel free to provide your valuable feedback.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/zINby2B" target="_blank" rel="external">https://dzone.com/articles/autowiring-spring-beans-into-classes-not-managed-by-spring</a></p>
+    <content type="html"><![CDATA[<p>I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time again, abandoning the 9-5 life and making my main source of employment a series of projects from different clients.</p>
+<p>Since then, I’ve had countless conversations with other UX professionals who are considering moving to freelancing as their next career step.</p>
+<p>They usually say they’re looking for freedom, more money, the ability to work on more interesting problems or learn new things – or even just the chance to work in their pyjamas regularly. Since I started consulting, I’ve expanded my focus into more strategy and product work across a wide variety of industries, and have met all kinds of interesting, smart colleagues.</p>
+<p>While I wouldn’t change a thing about my situation, I’m always cautious about encouraging others to jump into the freelance world, because it’s definitely not for everyone. Here are some things I’ve learned along the way to consider before you quit your day job.</p>
+<h3 id="Freelancing-pros-and-cons"><a href="#Freelancing-pros-and-cons" class="headerlink" title="Freelancing pros and cons"></a>Freelancing pros and cons</h3><p>Yes, it’s true that I spend most days in yoga pants, travel frequently, and work on some pretty cool projects. But consulting isn’t all sunshine and rainbows. There are many things that are great about consulting, some things that aren’t so great, and some things that just depend on the day.</p>
+<p><img src="http://img2.tuicool.com/mqEZzeZ.png!web" alt=""></p>
+<p>Freelancing pro: setting up your own home office. Photo by<a href="http://unsplash.com/photos/RcdV8rnXSeE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Vadim Sherbakov</a>on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Unsplash</a>.</p>
+<p>Schedule: One of the things I love most about consulting is being in total control of my schedule. There’s no expectation that I’m at my desk from 9 am to 5 pm. Sometimes I get in a zone and finish an entire report in one very long day and take the next morning off to let ideas percolate. Of course I have meetings and deadlines, but I can usually finagle things to work well for my clients and myself.</p>
+<p>On the flip side, juggling your schedule can be difficult. I’m quite disciplined about getting things done, but I’ve never quite figured out a way to create a consistent schedule. Sometimes I’ve had priority work on different projects collide at the same time or I’ve said yes to a few too many things and ended up working crazy hours to get everything done. Such is a consultant’s life.</p>
+<p>Money: I absolutely find that I make more money freelancing than when I worked in-house, even in leadership roles. I’m still experimenting with how I bill, but I tend to use value-based pricing for entire projects rather than charge hourly. I often ask clients to pay me 50% of the total upfront and the rest upon project completion, which can make managing money tricky, especially when you’re used to a consistent paycheck.</p>
+<p>You also have to know that you’ll never be able to collect money as though you’re billing 40 hours a week, every week. You have to account for supplies, tool costs, benefits, and set aside time for administrative tasks like sending invoices, business development, and, of course, downtime. No one gives you sick time or vacation days when you freelance.</p>
+<p>Inevitably, I’ve also run into time periods where I don’t have anything billable booked. An open schedule can be scary, so I use this time to do things like reach out to colleagues or potential clients, write articles, research new tools, try to learn something new, or catch up on administrative work. One of the benefits of this downtime is the space to learn, exploring the vast array of available online courses or just experimenting with a new method or tool.</p>
+<p>Work environment: I mostly work from home, which means I wear what I like, can pet my dog throughout the day, don’t contend with traffic, and for better or worse, have all day access to my kitchen. All great, but it also means that sometimes the only person I see in the flesh each day is my husband.</p>
+<p>I have to make an extra concerted effort to hang out with colleagues, so I’ve become more active in my local meetups and groups (shout out to<a href="https://www.meetup.com/Ladies-that-UX-Durham/" target="_blank" rel="external">Ladies that UX Durham</a>– love yall!) I also found I need to be more social during the week, even if that means going to a fitness class instead of biking solo or talking on the phone while I shop.</p>
+<h3 id="What-services-will-you-provide"><a href="#What-services-will-you-provide" class="headerlink" title="What services will you provide?"></a>What services will you provide?</h3><p>I’ve been focused on research and strategy for most of my career. I won’t rehash the “<a href="http://community.uxmastery.com/t/forced-to-become-a-unicorn-has-that-happened-to-you/783/11" target="_blank" rel="external">Should I be a unicorn</a>?” or “<a href="http://uxmastery.com/ux-designers-do-not-need-to-code/" target="_blank" rel="external">Do designers need to code</a>?” debates, but I’ll admit that when I first starting freelancing, I was worried I wasn’t going to be able to find enough work without doing visual work. Turns out, I was totally wrong. Phew!</p>
+<p><img src="http://img1.tuicool.com/BzMjMbA.jpg!web" alt=""></p>
+<p>Don’t worry, you don’t need to be a unicorn to be a freelance UXer.</p>
+<p>You absolutely don’t need to be a unicorn or try to tackle projects that aren’t your speciality. But it helps to have a broad set of experience and at least one area of deep expertise you can market and use to define your services. You can match what you’re good at and what you like to define the kind of projects you target, the projects you’re OK with taking, and what you will certainly turn down.</p>
+<p>Clearly<a href="http://uxmastery.com/build-your-ux-personal-brand/" target="_blank" rel="external">defining your services and interests</a>are important because it tells other people what to turn to you for. if I know someone has great interaction design skills and tonnes of experience with financial products, I’ll suggest them anytime I see a project like that. If someone tells me they’ll do anything that comes their way, they probably won’t come to mind for any projects I know about.</p>
+<h3 id="How-will-you-find-clients"><a href="#How-will-you-find-clients" class="headerlink" title="How will you find clients?"></a>How will you find clients?</h3><p>This is a question that I get asked time after time, and the answer is incredibly simple in concept but hard in practice:<strong>treat your clients and colleagues as you would users and provide them with a good experience working with you</strong>.</p>
+<p>More specifically, you have to do good work and other people have to be willing to talk about it. This can either mean that your clients are pleased with your work and will re-hire you or tell other potential clients, or that your peers in UX like your work and can refer you when they need help or can’t take something on. It really is true that a huge amount of success in consulting is based on networking and who you know, but that only works to your advantage if the people you know have had a good experience working with you. Right now, every single one of my clients is someone I’ve previously worked with or have gotten a good reference.</p>
+<p>This is where, once again, it helps to have a clearly defined, slightly unique set of skills or interests. There are tonnes of researchers and tonnes of designers, but if you’re known as a researcher who loves qualitative work and medical products, people will think of you whenever they come across that kind of project. Just be sure that you don’t define yourself too narrowly.</p>
+<p>You can also use job boards to identify potential projects or try recruiting agencies, but I haven’t found either as fruitful as having my name passed on from a previous contact. More on finding freelance UX work<a href="https://www.linkedin.com/pulse/single-best-way-get-freelance-ux-work-amanda-stockwell?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWB86zkUbaQbxQN8f0Iqf%2Bw%3D%3D" target="_blank" rel="external">here</a>.</p>
+<h3 id="Are-you-really-suited-for-all-that"><a href="#Are-you-really-suited-for-all-that" class="headerlink" title="Are you really suited for all that?"></a>Are you really suited for all that?</h3><p>Even if all the potential pros sound amazing to you and you have the skills and network to pull off freelancing, take a moment to reflect on your personality and soft skills.</p>
+<p>Are you detailed, organised, and willing to juggle many different client requests and manage your own schedule? Are you a natural risk-taker who can cope well with slow periods or lack of viable work? Are you assertive enough to negotiate terms for yourself? Do you mind working by yourself a lot?</p>
+<p>There’s a lot to think about before leaving the security of a full-time job. I love freelancing, but it’s worth carefully considering the pros and cons and your skillset and personality before taking the leap. Best wishes for whichever path you choose! </p>
+<p>Do you have experience or tips on freelancing for UX professionals? Leave a comment on the blog or in the forums! </p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/3qIJryE" target="_blank" rel="external">http://uxmastery.com/freelancing-ux-career/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;In my previous article&lt;a href=&quot;https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs&quot; target=&quot;_blank&quot; rel=&quot;external
+      &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
     
     </summary>
     

@@ -48,6 +48,36 @@
   </entry>
   
   <entry>
+    <title>2 Things I learnt By Reading Failsafe Source code</title>
+    <link href="https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/"/>
+    <id>https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</id>
+    <published>2017-07-10T00:00:00.000Z</published>
+    <updated>2017-07-10T04:16:54.579Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of<a href="https://github.com/jhalterman/failsafe" target="_blank" rel="external">failsafe</a>library.</p>
+<p>Failsafe is a lightweight, zero-dependency library for handling failures. It was designed to be as easy to use as possible, with a concise API for handling everyday use cases and the flexibility to handle everything else.</p>
+<p>Let’s suppose you are working with a flaky HTTP service. You can use failsafe to retry the service a configurable number of times by writing code as shown below.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">RetryPolicy retryPolicy = </div><div class="line">new</div><div class="line"> RetryPolicy()</div><div class="line">  .retryOn(HttpConnectionException.</div><div class="line">class</div><div class="line">)</div><div class="line">  .withMaxRetries(</div><div class="line">3</div><div class="line">);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">MyHttpService connection = Failsafe.</div><div class="line">with</div><div class="line">(retryPolicy)</div><div class="line">                               .get</div><div class="line">(() -</div><div class="line">&gt;</div><div class="line"> connect())</div><div class="line">;</div></pre></td></tr></table></figure>
+<p>The above will retry 3 times to connect to the http service if HttpConnectionException is thrown.</p>
+<h2 id="2-Things-I-learnt"><a href="#2-Things-I-learnt" class="headerlink" title="2 Things I learnt"></a>2 Things I learnt</h2><p>Reading through the source code and referring to Github issues I learnt couple of things to avoid when designing APIs. So, I learnt what not to do rather than what to do ��</p>
+<ol>
+<li>Don’t use wrong default values: failsafe library does not enforce users to provide values when configuring RetryPolicy or other configuration object. The default value for number of retries is set to  -1, which means retry infinitely. This is not correct as user of the API would want retry call to complete eventually or throw an exception. I think better way to design API is to enforce users to provide values when you are unable to come up with good default values. This would avoid surprises to the user.  APIs should follow<br><a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" target="_blank" rel="external">Principle of least astonishment</a><br>.</li>
+<li>Favour immutability: A common thread that I found in many issues is related to shareability of RetryPolicy object. Users want to reuse RetryPolicy object but because it is not immutable they fear thread safety concerns. Library author clarified that library does not change the state of object internally so it is safe to reuse. I think the better way to design such objects is by using a builder pattern. Then, in the build method of builder make an immutable object. This does not confuse users and keep your API consistent.</li>
+</ol>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/Y3mUjaa" target="_blank" rel="external">http://shekhargulati.com/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of&lt;a href=&quot;https://
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Make a Perfect Triangle Path in Illustrator</title>
     <link href="https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/"/>
     <id>https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/</id>
@@ -232,29 +262,32 @@
   </entry>
   
   <entry>
-    <title>2 Things I learnt By Reading Failsafe Source code</title>
-    <link href="https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/"/>
-    <id>https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</id>
-    <published>2017-07-10T00:00:00.000Z</published>
-    <updated>2017-07-10T04:16:54.579Z</updated>
+    <title>A Nasty Instagram Bug Is Causing Lots Of People To Think Their Accounts Were Deleted</title>
+    <link href="https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/"/>
+    <id>https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/</id>
+    <published>2017-07-07T00:00:00.000Z</published>
+    <updated>2017-07-07T10:09:04.665Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of<a href="https://github.com/jhalterman/failsafe" target="_blank" rel="external">failsafe</a>library.</p>
-<p>Failsafe is a lightweight, zero-dependency library for handling failures. It was designed to be as easy to use as possible, with a concise API for handling everyday use cases and the flexibility to handle everything else.</p>
-<p>Let’s suppose you are working with a flaky HTTP service. You can use failsafe to retry the service a configurable number of times by writing code as shown below.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">RetryPolicy retryPolicy = </div><div class="line">new</div><div class="line"> RetryPolicy()</div><div class="line">  .retryOn(HttpConnectionException.</div><div class="line">class</div><div class="line">)</div><div class="line">  .withMaxRetries(</div><div class="line">3</div><div class="line">);</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">MyHttpService connection = Failsafe.</div><div class="line">with</div><div class="line">(retryPolicy)</div><div class="line">                               .get</div><div class="line">(() -</div><div class="line">&gt;</div><div class="line"> connect())</div><div class="line">;</div></pre></td></tr></table></figure>
-<p>The above will retry 3 times to connect to the http service if HttpConnectionException is thrown.</p>
-<h2 id="2-Things-I-learnt"><a href="#2-Things-I-learnt" class="headerlink" title="2 Things I learnt"></a>2 Things I learnt</h2><p>Reading through the source code and referring to Github issues I learnt couple of things to avoid when designing APIs. So, I learnt what not to do rather than what to do ��</p>
-<ol>
-<li>Don’t use wrong default values: failsafe library does not enforce users to provide values when configuring RetryPolicy or other configuration object. The default value for number of retries is set to  -1, which means retry infinitely. This is not correct as user of the API would want retry call to complete eventually or throw an exception. I think better way to design API is to enforce users to provide values when you are unable to come up with good default values. This would avoid surprises to the user.  APIs should follow<br><a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" target="_blank" rel="external">Principle of least astonishment</a><br>.</li>
-<li>Favour immutability: A common thread that I found in many issues is related to shareability of RetryPolicy object. Users want to reuse RetryPolicy object but because it is not immutable they fear thread safety concerns. Library author clarified that library does not change the state of object internally so it is safe to reuse. I think the better way to design such objects is by using a builder pattern. Then, in the build method of builder make an immutable object. This does not confuse users and keep your API consistent.</li>
-</ol>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/Y3mUjaa" target="_blank" rel="external">http://shekhargulati.com/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</a></p>
+    <content type="html"><![CDATA[<p>A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.</p>
+<p>The Facebook owned-social app is being bombarded with complaints on Twitter, Facebook and its own service from people who claim their accounts have been deleted without warning or cause.</p>
+<p>Instagram says the culprit is a bug that not only logged people out of their accounts, but also hid them from view. When BuzzFeed News checked multiple account pages that users claimed were deleted, it saw a message stating that the content was unavailable, noting that the link might be broken or the page could’ve been removed.</p>
+<p><strong>“</strong>No accounts have been deleted,” a company spokesperson told BuzzFeed News. “However, the bug logged some users out of their accounts, while also locking their accounts from view. When the bug is fixed and affected users are able to log back in, their accounts will be viewable again.”</p>
+<p><img src="http://img1.tuicool.com/ZJVn2ei.png!web" alt=""></p>
+<p>Comments on Instagram’s latest post</p>
+<p>Even so, users are freaked out. “Please give me back my account@harryspinkflowers i worked so hard on it and had it for 2 years…. please give it back,” read a typical response to Instagram’slatest post. Others were less diplomatic. “Give me my fucking account back bro,” Twitter user<a href="https://go.redirectingat.com/?id=74679X1524629&amp;sref=https%3A%2F%2Fwww.buzzfeed.com%2Falexkantrowitz%2Fa-nasty-instagram-bug-is-causing-lots-of-people-to-think&amp;url=https%3A%2F%2Ftwitter.com%2F_SaucySierra_&amp;xcust=4574368%7CBFLITE&amp;xs=1" target="_blank" rel="external">@<strong>_SaucySierra_</strong></a>wrote.</p>
+<p>It’s unclear how many accounts were affected by this faux purge. Instagram says it’s a very small percentage, but the complaints serve as useful a reminder that ultimately, free social media accounts belong to the companies you register them with. And these companies can do pretty much whatever they want with them.</p>
+<p>That’s a big problem, especially for businesses and other Instagam users whose accounts have a material tie to the offline world. Chocolate company ChocZero’s business is suffering without access to its 6,500 follower account, according to its marketing director Rhea Monique. “I’m supposed to talk to wholesale distributors today and our Instagram along with our proof of sales is a big way to pitch relevancy, “ she told BuzzFeed News. “So it’s devastating this happened.”</p>
+<p><img src="http://img1.tuicool.com/jAjUryu.png!web" alt=""></p>
+<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
+<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
+<p>Got a confidential tip?Submit it here.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/AraQVfy" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/a-nasty-instagram-bug-is-causing-lots-of-people-to-think</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of&lt;a href=&quot;https://
+      &lt;p&gt;A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.&lt;/p&gt;
+&lt;p&gt;The Facebook owned-
     
     </summary>
     
@@ -462,39 +495,6 @@ $_
   </entry>
   
   <entry>
-    <title>A Nasty Instagram Bug Is Causing Lots Of People To Think Their Accounts Were Deleted</title>
-    <link href="https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/"/>
-    <id>https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/</id>
-    <published>2017-07-07T00:00:00.000Z</published>
-    <updated>2017-07-07T10:09:04.665Z</updated>
-    
-    <content type="html"><![CDATA[<p>A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.</p>
-<p>The Facebook owned-social app is being bombarded with complaints on Twitter, Facebook and its own service from people who claim their accounts have been deleted without warning or cause.</p>
-<p>Instagram says the culprit is a bug that not only logged people out of their accounts, but also hid them from view. When BuzzFeed News checked multiple account pages that users claimed were deleted, it saw a message stating that the content was unavailable, noting that the link might be broken or the page could’ve been removed.</p>
-<p><strong>“</strong>No accounts have been deleted,” a company spokesperson told BuzzFeed News. “However, the bug logged some users out of their accounts, while also locking their accounts from view. When the bug is fixed and affected users are able to log back in, their accounts will be viewable again.”</p>
-<p><img src="http://img1.tuicool.com/ZJVn2ei.png!web" alt=""></p>
-<p>Comments on Instagram’s latest post</p>
-<p>Even so, users are freaked out. “Please give me back my account@harryspinkflowers i worked so hard on it and had it for 2 years…. please give it back,” read a typical response to Instagram’slatest post. Others were less diplomatic. “Give me my fucking account back bro,” Twitter user<a href="https://go.redirectingat.com/?id=74679X1524629&amp;sref=https%3A%2F%2Fwww.buzzfeed.com%2Falexkantrowitz%2Fa-nasty-instagram-bug-is-causing-lots-of-people-to-think&amp;url=https%3A%2F%2Ftwitter.com%2F_SaucySierra_&amp;xcust=4574368%7CBFLITE&amp;xs=1" target="_blank" rel="external">@<strong>_SaucySierra_</strong></a>wrote.</p>
-<p>It’s unclear how many accounts were affected by this faux purge. Instagram says it’s a very small percentage, but the complaints serve as useful a reminder that ultimately, free social media accounts belong to the companies you register them with. And these companies can do pretty much whatever they want with them.</p>
-<p>That’s a big problem, especially for businesses and other Instagam users whose accounts have a material tie to the offline world. Chocolate company ChocZero’s business is suffering without access to its 6,500 follower account, according to its marketing director Rhea Monique. “I’m supposed to talk to wholesale distributors today and our Instagram along with our proof of sales is a big way to pitch relevancy, “ she told BuzzFeed News. “So it’s devastating this happened.”</p>
-<p><img src="http://img1.tuicool.com/jAjUryu.png!web" alt=""></p>
-<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
-<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
-<p>Got a confidential tip?Submit it here.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/AraQVfy" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/a-nasty-instagram-bug-is-causing-lots-of-people-to-think</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.&lt;/p&gt;
-&lt;p&gt;The Facebook owned-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Why I Hate Slack and You Should Too</title>
     <link href="https://gmagon.com/blog/2017/07/07/why-i-hate-slack-and-you-should-too/"/>
     <id>https://gmagon.com/blog/2017/07/07/why-i-hate-slack-and-you-should-too/</id>
@@ -687,36 +687,6 @@ $_
   </entry>
   
   <entry>
-    <title>Tonsser, the social app for youth soccer players, partners with Nike and raises new funding</title>
-    <link href="https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/"/>
-    <id>https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</id>
-    <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.048Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/EneaUnz.jpg!web" alt=""></p>
-<p><a href="http://tonsser.com/" target="_blank" rel="external">Tonsser</a>, the Copenhagen-based startup that offers a vertical social network aimed at youth soccer players who want to build their own online profile and potentially get discovered by a bigger club, continues to grow at a clip, both in terms of signups but also the influence it wants to have on the beautiful game. The company has signed on Nike as its first brand channel partner, and now has 380,000 youth players registered, up from 100,000 just over a year ago.</p>
-<p>The Danish startup has also raised a new round of funding as it gears up for a 2018 expansion to the U.K., home to the English Premier League and a huge potential youth football market for the startup. It is also quite a fragmented one, in terms of youth leagues, so it will be interesting to see how quickly Tonsser can grow here. The app is currently live in France, Germany, Denmark, Sweden and Norway.</p>
-<p>In a call with co-founder and CEO Peter Holm (and after we spent the first ten minutes catching up with the latest Tottenham Hotspur news, as we are inclined to do), he told me that Tonsser is evolving from a social app that was<a href="https://techcrunch.com/2016/06/08/tonsser/" target="_blank" rel="external">mainly about youth players making a profile of themselves and tracking scores and stats</a>in order to get noticed by scouts — a bit like a real life Football Manager video game — to offer even more user-generated content where players can learn skills from each other and in turn become influencers on the platform.</p>
-<p><img src="http://img1.tuicool.com/MVFbMzJ.jpg!web" alt="">“Since the internet you no longer need to go to Harvard to learn and be educated by the best. You can go to Youtube, masterclasses or see a Ted talk. We believe it should be the same in football where don’t need to be at the best or most expensive academy to learn and be inspired by the best players and coaches,” he says.</p>
-<p>This is seeing top youth players, including from PSG, Lyon, and Dortmund, and “freestylers and local heroes” create video content, such as how to take a free kick, to inspire other young soccer players in Europe.</p>
-<p>Related to this, Tonsser has signed on Nike to be the first brand to get access to the platform with their own channel, where they are posting what Holm calls “edutainment,” including drills with from players in Barcelona’s La Masia academy. This also points towards the makings of a revenue model for the free to access social app.</p>
-<p>“Next is opening [the platform up] to top clubs to show drills and practice from their academies. [We are] currently in talks with international top clubs from England, Germany, Holland and Denmark,” adds Holm.</p>
-<p>He also tells me Tonsser is working on integrations with wearable devices to “empower players to become more data-driven and compare physical data including pace, acceleration, distance covered, form, etc”.</p>
-<p>Meanwhile, I understand the startup has raised €2.5 million in new funding. Backing the round are existing investors Wellington Partners, SEED Capital, Arthur Kosten (Booking.com), and unnamed professional soccer players. The long term ambition is “to become the de facto platform for the next generation of football,” says the Tonsser CEO.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/Qr6VZjV" target="_blank" rel="external">https://techcrunch.com/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/EneaUnz.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://tonsser.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tonsser&lt;/a
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Micro frontends – a microservice approach to front-end web development</title>
     <link href="https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/"/>
     <id>https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/</id>
@@ -777,138 +747,29 @@ $_
   </entry>
   
   <entry>
-    <title>Image Correction for Color Blindness</title>
-    <link href="https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/"/>
-    <id>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</id>
+    <title>Tonsser, the social app for youth soccer players, partners with Nike and raises new funding</title>
+    <link href="https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/"/>
+    <id>https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</id>
     <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.028Z</updated>
+    <updated>2017-07-06T10:09:59.048Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Color-blind-image-correction"><a href="#Color-blind-image-correction" class="headerlink" title="Color blind image correction"></a>Color blind image correction</h2><p>Color blind image correction</p>
-<p><a href="http://www.vischeck.com/daltonize/runDaltonize.php" target="_blank" rel="external">(Run Daltonize online here)</a></p>
-<p>One of the most common questions that we are asked is:</p>
-<p><strong>  
-</strong></p>
-<p>Is there a way to cure color blindness?</p>
-<p>From a medical point of view, the answer is ‘not really’. There are some devices (colored contact lenses or filter spectacles) that are claimed to improve the vision of color blind people but in general, people report very mixed results with them. There is currently no effective way to recover full trichromatic vision if you are red/green colorblind.</p>
-<p>So in one sense, color blindness is ‘incurable’. But a deeper question is “what is color good for?”. Apart from its aethetic appeal, seeing many different colors allows us to distinguish things in the world. Take the example below.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>How many types of fruit is this man selling?</strong> People with three different cone types (“trichromats”) can see 5 distinct piles of fruit on the ground. From back to front, they look ‘red’, ‘green’, ‘red’, ‘yellow’ and ‘light orange’. There are also some baskets on the shelf containing three piles of fruit.</th>
-<th style="text-align:left"><img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">But people with red/green color blindness usually have trouble seeing all the different fruits.They see something that can be simulated like this: Note that there now seem to be only three or four different types of fruit on the ground. It is also hard to tell how many distinct piles of fruit there are on the shelves.</td>
-<td style="text-align:left"><img src="http://img0.tuicool.com/iUNRfi7.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>In some pictures, a lot of important information is conveyed by variations in reds and greens. This is a real problem for color blind people who will miss this information. The important point to understand is that<strong>the ‘true’ color of something may be irrelevant but the fact that it is different from its surroundings is very important.</strong></p>
-<p>Here is another example:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><img src="http://img2.tuicool.com/Y3MBVvr.jpg!web" alt=""></th>
-<th style="text-align:left"><img src="http://img2.tuicool.com/j6rUryi.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>1) Cells labelled with three types of fluorescent markers to show up three different structures.</strong></td>
-<td style="text-align:left"><strong>2) Red/green color blind simulation of fluorescent cell picture.</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Here, a color blind scientist would be unable to tell the red and green labels apart. They would miss important information about the structure of the cells.</p>
-<p>How to fix it?</p>
-<p>We can use image processing techniques to improve this situation. There are two ways that we can make information in pictures available to color blind people.</p>
-<p><strong>1)</strong>The simplest way is simply to increase the red/green contrast in the image. Many color blind people have some residual red/green discrimination. Increasing the red/green contrast makes them more likely to see these types of color variations.</p>
-<p><strong>2)</strong>We can analyze the information conveyed by variations in the red/green direction and convert these into changes in brightness and/or blue/yellow coloration.  This allows us to map information from a color dimension that is invisible to dichromats into those that they can see.</p>
-<p>We call the combination of these two processes ‘Daltonization’ after John Dalton, the British scientist who was one of the first people to investigate color blindness.</p>
-<p>The result of applying these algorithms is shown below.:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><img src="http://img2.tuicool.com/INjiey2.jpg!web" alt=""></th>
-<th style="text-align:left"><img src="http://img1.tuicool.com/QZ7vUji.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">3) Daltonized version of three-color-labelled fluorescent cells.</td>
-<td style="text-align:left"><strong>4) Dichromat (red/green color blind) simulation of the  Daltonized image.</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Here, the algorithm has mapped changes in the reds and greens into slight changes in brightness and bluishness. The result is that when viewed by someone with color blindness, the different labelled structures in the cell are clearly visible.</p>
-<p>Here are some more examples. In each case, the images are numbered 1 to 4 where<strong>1</strong>) is the original full-color image,<strong>2</strong>) is a simulation of the color-blind view of the full color image,<strong>3</strong>) is the Daltonized version of the full color image and<strong>4</strong>) is the color blind simulation of the Daltonized image showing improved red/green discrimination. To see how well the Daltonization algorithm works for someone with color blindness, compare images<strong>2</strong>) and<strong>4</strong>).</p>
-<p>Example: Gauguin painting</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img1.tuicool.com/AR3U73r.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img0.tuicool.com/rA7jqiJ.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img1.tuicool.com/INjieiZ.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/QfE7fui.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>In this case, the Daltonization transformation must be judged on a more aesthetic level. While there is more ‘information’ present in image<strong>4)</strong>compared to image<strong>2)</strong>the disruption in the color balance may be unsettling (or fascinating) to some dichromats.</p>
-<p>Here is an Ishihara plate - a common aid for diagnosing color blindness. The number ‘45’ in the center of the disk is invisible to  someone with red/green color blindness.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/quMZJbn.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img2.tuicool.com/vi6v6rA.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>There are several things to note about this example. First of all, although the enhancement of the red/green information in the Daltonized version is striking, this is not a good<strong>general</strong>test of an algorithm to modify images for color blind observers. The reason is that the Ishihara plates are (deliberately) artificial images, and do not represent the range of colors that people see in everyday life. It would be rather easy to design an algorithm to ‘improve’ Ishihara plates (for example one that replaced all reds with blues) that would nevertheless destroy other types of information in the image. One nice feature of the Daltonization algorithm is that it analyses the information content of the image beforehand and attempts to preserve existing color variations.</p>
-<p>Note also that the Daltonizing algorithm does not enable people to “pass” the Ishihara test in any way. It is a digital image processing technique that can make print or video display more salient to color blind people without distorting the color balance to an unnacceptable degree.</p>
-<p>And finally, here’s the fruit market we showed you at the start:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img1.tuicool.com/EJR73qz.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/qqA3y26.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img2.tuicool.com/NZRNj23.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>The different piles of fruit on the floor are now clearly visible in image<strong>4</strong>).</p>
-<p><strong>What is it good for?</strong>We envisage a number of applications for this algorithm. Here are some examples:</p>
-<p><strong>As part of a digital microscope</strong>(see the ‘cells’ example above): Color blind users could flick a switch to improve the visibility of red/green fluorescent labels or intrinsic color contrast…</p>
-<p><strong>In digital video recorders and display systems</strong>: Viewers could turn on the Daltonize algorithm much as they might vary the brightness or volume using a remote control. Operating on a real-time video stream, the algorithm could improve the appearence of TV for color blind viewers (for example, making sports teams playing in red strip on a green field far more visible) without significantly disturbing the color balance for other members of the audience….</p>
-<p><strong>Computer display devices</strong>: Computer users could turn on the Daltonize algorithm from as part of their computer video card controls. All output appearing on the monitor (including web-pages, videos and still images) would automatically be processed and rendered more salient to dichromats.</p>
-<p><strong>Print media</strong>: Images can be Daltonized before printing. Print applications where legibility is essential (for example, public safety documents, maps, technical instructions) can all be made more legible for color-blind users….</p>
-<p><strong>  
-</strong></p>
-<p>You can play with the algorithm onlineon this web page. Please be aware that this page is taking a lot of hits at the moment and may seem a little slow to respond. If you have any particularly interesting images that you would like us to process, send them to us by email atinfo@vischeck.com and we will run them ‘by hand’. Please keep them to a reasonable size :)</p>
-<p>We would also like to hear your feedback about this algorithm - especially if you are color blind. Let us know what you think!</p>
-<p>If you would like to license the Daltonizing algorithm for use in your own applications, please contact us at<a href="mailto://daltonize_license@vischeck.com" target="_blank" rel="external">daltonize_licence@vischeck.com</a>.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/6B3qMvb" target="_blank" rel="external">http://www.vischeck.com/daltonize/</a></p>
+    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/EneaUnz.jpg!web" alt=""></p>
+<p><a href="http://tonsser.com/" target="_blank" rel="external">Tonsser</a>, the Copenhagen-based startup that offers a vertical social network aimed at youth soccer players who want to build their own online profile and potentially get discovered by a bigger club, continues to grow at a clip, both in terms of signups but also the influence it wants to have on the beautiful game. The company has signed on Nike as its first brand channel partner, and now has 380,000 youth players registered, up from 100,000 just over a year ago.</p>
+<p>The Danish startup has also raised a new round of funding as it gears up for a 2018 expansion to the U.K., home to the English Premier League and a huge potential youth football market for the startup. It is also quite a fragmented one, in terms of youth leagues, so it will be interesting to see how quickly Tonsser can grow here. The app is currently live in France, Germany, Denmark, Sweden and Norway.</p>
+<p>In a call with co-founder and CEO Peter Holm (and after we spent the first ten minutes catching up with the latest Tottenham Hotspur news, as we are inclined to do), he told me that Tonsser is evolving from a social app that was<a href="https://techcrunch.com/2016/06/08/tonsser/" target="_blank" rel="external">mainly about youth players making a profile of themselves and tracking scores and stats</a>in order to get noticed by scouts — a bit like a real life Football Manager video game — to offer even more user-generated content where players can learn skills from each other and in turn become influencers on the platform.</p>
+<p><img src="http://img1.tuicool.com/MVFbMzJ.jpg!web" alt="">“Since the internet you no longer need to go to Harvard to learn and be educated by the best. You can go to Youtube, masterclasses or see a Ted talk. We believe it should be the same in football where don’t need to be at the best or most expensive academy to learn and be inspired by the best players and coaches,” he says.</p>
+<p>This is seeing top youth players, including from PSG, Lyon, and Dortmund, and “freestylers and local heroes” create video content, such as how to take a free kick, to inspire other young soccer players in Europe.</p>
+<p>Related to this, Tonsser has signed on Nike to be the first brand to get access to the platform with their own channel, where they are posting what Holm calls “edutainment,” including drills with from players in Barcelona’s La Masia academy. This also points towards the makings of a revenue model for the free to access social app.</p>
+<p>“Next is opening [the platform up] to top clubs to show drills and practice from their academies. [We are] currently in talks with international top clubs from England, Germany, Holland and Denmark,” adds Holm.</p>
+<p>He also tells me Tonsser is working on integrations with wearable devices to “empower players to become more data-driven and compare physical data including pace, acceleration, distance covered, form, etc”.</p>
+<p>Meanwhile, I understand the startup has raised €2.5 million in new funding. Backing the round are existing investors Wellington Partners, SEED Capital, Arthur Kosten (Booking.com), and unnamed professional soccer players. The long term ambition is “to become the de facto platform for the next generation of football,” says the Tonsser CEO.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/Qr6VZjV" target="_blank" rel="external">https://techcrunch.com/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Color-blind-image-correction&quot;&gt;&lt;a href=&quot;#Color-blind-image-correction&quot; class=&quot;headerlink&quot; title=&quot;Color blind image correction&quot;&gt;&lt;/a&gt;Co
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/EneaUnz.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tonsser.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tonsser&lt;/a
     
     </summary>
     
@@ -1063,6 +924,145 @@ $_
     <summary type="html">
     
       &lt;p&gt;WWDC 2017 brought many amazing and powerful APIs to iOS. Among the most popular is&lt;a href=&quot;https://developer.apple.com/documentation/core
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Image Correction for Color Blindness</title>
+    <link href="https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/"/>
+    <id>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</id>
+    <published>2017-07-06T00:00:00.000Z</published>
+    <updated>2017-07-06T10:09:59.028Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Color-blind-image-correction"><a href="#Color-blind-image-correction" class="headerlink" title="Color blind image correction"></a>Color blind image correction</h2><p>Color blind image correction</p>
+<p><a href="http://www.vischeck.com/daltonize/runDaltonize.php" target="_blank" rel="external">(Run Daltonize online here)</a></p>
+<p>One of the most common questions that we are asked is:</p>
+<p><strong>  
+</strong></p>
+<p>Is there a way to cure color blindness?</p>
+<p>From a medical point of view, the answer is ‘not really’. There are some devices (colored contact lenses or filter spectacles) that are claimed to improve the vision of color blind people but in general, people report very mixed results with them. There is currently no effective way to recover full trichromatic vision if you are red/green colorblind.</p>
+<p>So in one sense, color blindness is ‘incurable’. But a deeper question is “what is color good for?”. Apart from its aethetic appeal, seeing many different colors allows us to distinguish things in the world. Take the example below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>How many types of fruit is this man selling?</strong> People with three different cone types (“trichromats”) can see 5 distinct piles of fruit on the ground. From back to front, they look ‘red’, ‘green’, ‘red’, ‘yellow’ and ‘light orange’. There are also some baskets on the shelf containing three piles of fruit.</th>
+<th style="text-align:left"><img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">But people with red/green color blindness usually have trouble seeing all the different fruits.They see something that can be simulated like this: Note that there now seem to be only three or four different types of fruit on the ground. It is also hard to tell how many distinct piles of fruit there are on the shelves.</td>
+<td style="text-align:left"><img src="http://img0.tuicool.com/iUNRfi7.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>In some pictures, a lot of important information is conveyed by variations in reds and greens. This is a real problem for color blind people who will miss this information. The important point to understand is that<strong>the ‘true’ color of something may be irrelevant but the fact that it is different from its surroundings is very important.</strong></p>
+<p>Here is another example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><img src="http://img2.tuicool.com/Y3MBVvr.jpg!web" alt=""></th>
+<th style="text-align:left"><img src="http://img2.tuicool.com/j6rUryi.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1) Cells labelled with three types of fluorescent markers to show up three different structures.</strong></td>
+<td style="text-align:left"><strong>2) Red/green color blind simulation of fluorescent cell picture.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Here, a color blind scientist would be unable to tell the red and green labels apart. They would miss important information about the structure of the cells.</p>
+<p>How to fix it?</p>
+<p>We can use image processing techniques to improve this situation. There are two ways that we can make information in pictures available to color blind people.</p>
+<p><strong>1)</strong>The simplest way is simply to increase the red/green contrast in the image. Many color blind people have some residual red/green discrimination. Increasing the red/green contrast makes them more likely to see these types of color variations.</p>
+<p><strong>2)</strong>We can analyze the information conveyed by variations in the red/green direction and convert these into changes in brightness and/or blue/yellow coloration.  This allows us to map information from a color dimension that is invisible to dichromats into those that they can see.</p>
+<p>We call the combination of these two processes ‘Daltonization’ after John Dalton, the British scientist who was one of the first people to investigate color blindness.</p>
+<p>The result of applying these algorithms is shown below.:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><img src="http://img2.tuicool.com/INjiey2.jpg!web" alt=""></th>
+<th style="text-align:left"><img src="http://img1.tuicool.com/QZ7vUji.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">3) Daltonized version of three-color-labelled fluorescent cells.</td>
+<td style="text-align:left"><strong>4) Dichromat (red/green color blind) simulation of the  Daltonized image.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Here, the algorithm has mapped changes in the reds and greens into slight changes in brightness and bluishness. The result is that when viewed by someone with color blindness, the different labelled structures in the cell are clearly visible.</p>
+<p>Here are some more examples. In each case, the images are numbered 1 to 4 where<strong>1</strong>) is the original full-color image,<strong>2</strong>) is a simulation of the color-blind view of the full color image,<strong>3</strong>) is the Daltonized version of the full color image and<strong>4</strong>) is the color blind simulation of the Daltonized image showing improved red/green discrimination. To see how well the Daltonization algorithm works for someone with color blindness, compare images<strong>2</strong>) and<strong>4</strong>).</p>
+<p>Example: Gauguin painting</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img1.tuicool.com/AR3U73r.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img0.tuicool.com/rA7jqiJ.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img1.tuicool.com/INjieiZ.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/QfE7fui.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>In this case, the Daltonization transformation must be judged on a more aesthetic level. While there is more ‘information’ present in image<strong>4)</strong>compared to image<strong>2)</strong>the disruption in the color balance may be unsettling (or fascinating) to some dichromats.</p>
+<p>Here is an Ishihara plate - a common aid for diagnosing color blindness. The number ‘45’ in the center of the disk is invisible to  someone with red/green color blindness.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/quMZJbn.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img2.tuicool.com/vi6v6rA.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>There are several things to note about this example. First of all, although the enhancement of the red/green information in the Daltonized version is striking, this is not a good<strong>general</strong>test of an algorithm to modify images for color blind observers. The reason is that the Ishihara plates are (deliberately) artificial images, and do not represent the range of colors that people see in everyday life. It would be rather easy to design an algorithm to ‘improve’ Ishihara plates (for example one that replaced all reds with blues) that would nevertheless destroy other types of information in the image. One nice feature of the Daltonization algorithm is that it analyses the information content of the image beforehand and attempts to preserve existing color variations.</p>
+<p>Note also that the Daltonizing algorithm does not enable people to “pass” the Ishihara test in any way. It is a digital image processing technique that can make print or video display more salient to color blind people without distorting the color balance to an unnacceptable degree.</p>
+<p>And finally, here’s the fruit market we showed you at the start:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img1.tuicool.com/EJR73qz.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/qqA3y26.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img2.tuicool.com/NZRNj23.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>The different piles of fruit on the floor are now clearly visible in image<strong>4</strong>).</p>
+<p><strong>What is it good for?</strong>We envisage a number of applications for this algorithm. Here are some examples:</p>
+<p><strong>As part of a digital microscope</strong>(see the ‘cells’ example above): Color blind users could flick a switch to improve the visibility of red/green fluorescent labels or intrinsic color contrast…</p>
+<p><strong>In digital video recorders and display systems</strong>: Viewers could turn on the Daltonize algorithm much as they might vary the brightness or volume using a remote control. Operating on a real-time video stream, the algorithm could improve the appearence of TV for color blind viewers (for example, making sports teams playing in red strip on a green field far more visible) without significantly disturbing the color balance for other members of the audience….</p>
+<p><strong>Computer display devices</strong>: Computer users could turn on the Daltonize algorithm from as part of their computer video card controls. All output appearing on the monitor (including web-pages, videos and still images) would automatically be processed and rendered more salient to dichromats.</p>
+<p><strong>Print media</strong>: Images can be Daltonized before printing. Print applications where legibility is essential (for example, public safety documents, maps, technical instructions) can all be made more legible for color-blind users….</p>
+<p><strong>  
+</strong></p>
+<p>You can play with the algorithm onlineon this web page. Please be aware that this page is taking a lot of hits at the moment and may seem a little slow to respond. If you have any particularly interesting images that you would like us to process, send them to us by email atinfo@vischeck.com and we will run them ‘by hand’. Please keep them to a reasonable size :)</p>
+<p>We would also like to hear your feedback about this algorithm - especially if you are color blind. Let us know what you think!</p>
+<p>If you would like to license the Daltonizing algorithm for use in your own applications, please contact us at<a href="mailto://daltonize_license@vischeck.com" target="_blank" rel="external">daltonize_licence@vischeck.com</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/6B3qMvb" target="_blank" rel="external">http://www.vischeck.com/daltonize/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Color-blind-image-correction&quot;&gt;&lt;a href=&quot;#Color-blind-image-correction&quot; class=&quot;headerlink&quot; title=&quot;Color blind image correction&quot;&gt;&lt;/a&gt;Co
     
     </summary>
     
@@ -1316,6 +1316,49 @@ $_
   </entry>
   
   <entry>
+    <title>After Nonstop Games closed, its employees founded Mighty Bear Games; today it raised US$775K</title>
+    <link href="https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/"/>
+    <id>https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.951Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Mighty-Bear-Games-will-focus-on-developing-mobile-app-games"><a href="#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games" class="headerlink" title="Mighty Bear Games will focus on developing mobile app games"></a>Mighty Bear Games will focus on developing mobile app games</h2><p><img src="http://img0.tuicool.com/y2uMrqj.png!web" alt=""></p>
+<p>Nonstop Games was a Singapore-based mobile games studio run by Finnish developers. Their hit game was strategy title Heroes of Honor.</p>
+<p>In 2014, it was acquired by Candy Crush maker King forabout US$16 million. Two years later, Nonstop Games shuttered.</p>
+<p>But the journey for its employees did not end there. They pressed on, scouring the game development landscape for new compatriots to join their next adventure. Along the way, they recruited talents from renowned gaming studios such as Ubisoft, EA and LucasArts.</p>
+<p>With renewed vigour in their hearts and a hardy band of developers to boot, the Nonstop Games alumni roared back with a spanking new enterprise.</p>
+<p>They called it Mighty Bear Games.</p>
+<p>And today, Mighty Bear raised US$775,000 in a round led by Global Founders Capital, the venture capital arm of Rocket Internet.</p>
+<p>Mighty Bear will use the newly-raised financing to develop its new mobile MMORPG (Massive Multiplayer Online Roleplaying Game). Details of the game have not been disclosed.</p>
+<p>It is interesting to note that despite receiving offers from the US and Europe — two markets with long history of producing top rated games — the Nonstop Games alumni chose to, once again, base their gaming studio in Singapore.</p>
+<p>“One of the interesting developments we’ve seen is that Singapore-based studios are starting to gain traction with their own IP,” says co-founder and CEO Simon Davis, in an interview with<strong>e27</strong>.</p>
+<p>“We see a trend developing where game development studios in Singapore are now being founded by guys like us with 5, or even 10+ years experience working in big AAA studios,” he adds. “This wouldn’t have been possible if the government hadn’t made such an effort bringing in top multi-national studios over the past few years — many of us on the team, including myself, directly benefited from that.”</p>
+<h2 id="Keeping-an-eye-on-gaming-trends"><a href="#Keeping-an-eye-on-gaming-trends" class="headerlink" title="Keeping an eye on gaming trends"></a><strong>Keeping an eye on gaming trends</strong></h2><p>While Davis says Mighty Bear is platform-agnostic, it will still be focussing on making mobile games. But he does not rule out building games for consoles or desktops in the future.</p>
+<p>The studio will also target the multiplayer gaming market.</p>
+<p>Also Read:<a href="https://e27.co/curious-south-korea-gaming-culture-closer-look-popularity-esports-reveals-trends-20170525/" target="_blank" rel="external">Curious about the South Korea gaming culture? A closer look at the popularity of esports reveals some trends</a></p>
+<p>“We love playing multiplayer games, and we feel there’s a huge gap in the market for online multiplayer games which are not completely skewed toward your typical hardcore gamer,” says Davis.</p>
+<p>“This is an area that’s really interesting, because the challenge is to create games which have a competitive element, but are still accessible to people who may not consider themselves hardcore gamers.”</p>
+<p>The Mighty Bear team may eat and breathe games, but they are not just button-mashing geeks; as a creative force, they also take inspiration from all other forms of art (yes, gaming is an art too).</p>
+<p>“I studied music so that makes approaching the creative process a bit different. We also read a lot which is a great way to get new ideas and approaches. Finally, we watch a lot of movies together – movie nights and ‘Popcorn Fridays’ are two Mighty Bear traditions,” says Davis.</p>
+<p>“Other than that we’re all hardcore gamers. We have a weekly ‘gaming club’ where we all sit down and compare notes on a pre-agreed game and discuss what we liked and what we didn’t about it.”</p>
+<p>So what are Davis’s all-time favourite games?</p>
+<p>“I’d say that Super Mario 64 was the first game that really blew me away, Street Fighter II was the first game that got me hooked on multiplayer. For scale and awe it might be The Legend of Zelda: The Breath of the Wild or Shadow of the Colossus. Candy Crush has the perfect puzzle combination of skill, luck, and amazing player feedback, and lately. I’ve been absolutely loving Brawl Stars on mobile.”</p>
+<p>The mobile app market is a lucrative industry, it is projected to hit US$189 billion with mobile gaming accounting for more than<a href="https://venturebeat.com/2016/11/02/mobile-app-market-to-grow-270-to-189-billion-by-2020-with-games-accounting-for-55/" target="_blank" rel="external">half the share.</a></p>
+<p>In Singapore’s backyard, China’s mobile games market collected<a href="http://www.gamesindustry.biz/articles/2016-05-03-chinese-mobile-market-is-now-the-most-valuable-in-the-world" target="_blank" rel="external">US$7 billion in revenue in 2015</a>. This figure is set to continue to grow exponentially as mobile usage increases and more games are developed.</p>
+<p>If Mighty Bear can claw out its own niche in this increasingly saturated space, the sweet dew of revenue will surely come forth easily.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/eERRZ3R" target="_blank" rel="external">http://e27.co/nonstop-games-closed-employees-founded-mighty-bear-games-today-raised-us775k-20170704/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot;&gt;&lt;a href=&quot;#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot; 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Is Freelancing Your Next UX Career Move?</title>
     <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
     <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
@@ -1355,49 +1398,6 @@ $_
     <summary type="html">
     
       &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>After Nonstop Games closed, its employees founded Mighty Bear Games; today it raised US$775K</title>
-    <link href="https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/"/>
-    <id>https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.951Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Mighty-Bear-Games-will-focus-on-developing-mobile-app-games"><a href="#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games" class="headerlink" title="Mighty Bear Games will focus on developing mobile app games"></a>Mighty Bear Games will focus on developing mobile app games</h2><p><img src="http://img0.tuicool.com/y2uMrqj.png!web" alt=""></p>
-<p>Nonstop Games was a Singapore-based mobile games studio run by Finnish developers. Their hit game was strategy title Heroes of Honor.</p>
-<p>In 2014, it was acquired by Candy Crush maker King forabout US$16 million. Two years later, Nonstop Games shuttered.</p>
-<p>But the journey for its employees did not end there. They pressed on, scouring the game development landscape for new compatriots to join their next adventure. Along the way, they recruited talents from renowned gaming studios such as Ubisoft, EA and LucasArts.</p>
-<p>With renewed vigour in their hearts and a hardy band of developers to boot, the Nonstop Games alumni roared back with a spanking new enterprise.</p>
-<p>They called it Mighty Bear Games.</p>
-<p>And today, Mighty Bear raised US$775,000 in a round led by Global Founders Capital, the venture capital arm of Rocket Internet.</p>
-<p>Mighty Bear will use the newly-raised financing to develop its new mobile MMORPG (Massive Multiplayer Online Roleplaying Game). Details of the game have not been disclosed.</p>
-<p>It is interesting to note that despite receiving offers from the US and Europe — two markets with long history of producing top rated games — the Nonstop Games alumni chose to, once again, base their gaming studio in Singapore.</p>
-<p>“One of the interesting developments we’ve seen is that Singapore-based studios are starting to gain traction with their own IP,” says co-founder and CEO Simon Davis, in an interview with<strong>e27</strong>.</p>
-<p>“We see a trend developing where game development studios in Singapore are now being founded by guys like us with 5, or even 10+ years experience working in big AAA studios,” he adds. “This wouldn’t have been possible if the government hadn’t made such an effort bringing in top multi-national studios over the past few years — many of us on the team, including myself, directly benefited from that.”</p>
-<h2 id="Keeping-an-eye-on-gaming-trends"><a href="#Keeping-an-eye-on-gaming-trends" class="headerlink" title="Keeping an eye on gaming trends"></a><strong>Keeping an eye on gaming trends</strong></h2><p>While Davis says Mighty Bear is platform-agnostic, it will still be focussing on making mobile games. But he does not rule out building games for consoles or desktops in the future.</p>
-<p>The studio will also target the multiplayer gaming market.</p>
-<p>Also Read:<a href="https://e27.co/curious-south-korea-gaming-culture-closer-look-popularity-esports-reveals-trends-20170525/" target="_blank" rel="external">Curious about the South Korea gaming culture? A closer look at the popularity of esports reveals some trends</a></p>
-<p>“We love playing multiplayer games, and we feel there’s a huge gap in the market for online multiplayer games which are not completely skewed toward your typical hardcore gamer,” says Davis.</p>
-<p>“This is an area that’s really interesting, because the challenge is to create games which have a competitive element, but are still accessible to people who may not consider themselves hardcore gamers.”</p>
-<p>The Mighty Bear team may eat and breathe games, but they are not just button-mashing geeks; as a creative force, they also take inspiration from all other forms of art (yes, gaming is an art too).</p>
-<p>“I studied music so that makes approaching the creative process a bit different. We also read a lot which is a great way to get new ideas and approaches. Finally, we watch a lot of movies together – movie nights and ‘Popcorn Fridays’ are two Mighty Bear traditions,” says Davis.</p>
-<p>“Other than that we’re all hardcore gamers. We have a weekly ‘gaming club’ where we all sit down and compare notes on a pre-agreed game and discuss what we liked and what we didn’t about it.”</p>
-<p>So what are Davis’s all-time favourite games?</p>
-<p>“I’d say that Super Mario 64 was the first game that really blew me away, Street Fighter II was the first game that got me hooked on multiplayer. For scale and awe it might be The Legend of Zelda: The Breath of the Wild or Shadow of the Colossus. Candy Crush has the perfect puzzle combination of skill, luck, and amazing player feedback, and lately. I’ve been absolutely loving Brawl Stars on mobile.”</p>
-<p>The mobile app market is a lucrative industry, it is projected to hit US$189 billion with mobile gaming accounting for more than<a href="https://venturebeat.com/2016/11/02/mobile-app-market-to-grow-270-to-189-billion-by-2020-with-games-accounting-for-55/" target="_blank" rel="external">half the share.</a></p>
-<p>In Singapore’s backyard, China’s mobile games market collected<a href="http://www.gamesindustry.biz/articles/2016-05-03-chinese-mobile-market-is-now-the-most-valuable-in-the-world" target="_blank" rel="external">US$7 billion in revenue in 2015</a>. This figure is set to continue to grow exponentially as mobile usage increases and more games are developed.</p>
-<p>If Mighty Bear can claw out its own niche in this increasingly saturated space, the sweet dew of revenue will surely come forth easily.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/eERRZ3R" target="_blank" rel="external">http://e27.co/nonstop-games-closed-employees-founded-mighty-bear-games-today-raised-us775k-20170704/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot;&gt;&lt;a href=&quot;#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot; 
     
     </summary>
     

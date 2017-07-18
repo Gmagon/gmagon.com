@@ -334,6 +334,69 @@
   </entry>
   
   <entry>
+    <title>Beginner’s guide : 4 linux group management commands</title>
+    <link href="https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/"/>
+    <id>https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/</id>
+    <published>2017-07-07T00:00:00.000Z</published>
+    <updated>2017-07-07T10:09:04.670Z</updated>
+    
+    <content type="html"><![CDATA[<p>Learn to manage groups in Linux with these group management commands. Article includes how to create, modify, delete and administer groups.</p>
+<p><img src="http://img0.tuicool.com/MN7zEze.png!web" alt=""></p>
+<p>Group management in Linux</p>
+<p>Groups on Linux system are bunch of users created for easy access/permission management. One user can be member of one or many groups. User will have only one primary and one/many secondary groups. In our another article we have seen<a href="https://kerneltalks.com/linux/linux-user-management-useradd-userdel-usermod/" target="_blank" rel="external">user management commands</a>in Linux/Unix. In this article we will discuss group management. There are mainly 4 commands used to manage user groups on Linux systems :</p>
+<ol>
+<li>groupadd</li>
+<li>groupmod</li>
+<li>groupdel</li>
+<li>gpasswd</li>
+</ol>
+<p>Lets check all these commands and fields they are responsible in/etc/group file.</p>
+<h3 id="groupadd-command"><a href="#groupadd-command" class="headerlink" title="groupadd command"></a>groupadd command</h3><p>As name suggests, it is used to create new groups on Linux system. groupadd command needs group name as a argument.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># groupadd sysadmins</div><div class="line"># cat /etc/group</div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">502</div><div class="line">:</div></pre></td></tr></table></figure>
+<p>This command creates group named sysadmins. Newly created group can be verified in /etc/group file. Study fields in /etc/group filehere.</p>
+<p>Several common switches which works with groupadd are :</p>
+<ul>
+<li>-g : Specify GID of your choice</li>
+<li>-o : Create group with non-unique GID</li>
+<li>-r : Create system group. (GID will be taken from system group GID range</li>
+</ul>
+<h3 id="groupmod-command"><a href="#groupmod-command" class="headerlink" title="groupmod command"></a>groupmod command</h3><p>If you want to edit parameters like name, GID, uniqueness of group which already exist in system then you can modify group using groupmod. Below list of switch with their desired values should feed to this command –</p>
+<ul>
+<li>-g : new GID</li>
+<li>-o : Make it non-unique</li>
+<li>-n : New name</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"># groupmod -n newsysadmins sysadmins</div><div class="line"># cat /etc/group |grep sys</div><div class="line">newsysadmins:</div><div class="line">x:</div><div class="line">502</div><div class="line">:</div><div class="line"> </div><div class="line"></div><div class="line"># groupmod -g 9999 sysadmins</div><div class="line"># cat /etc/group </div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">9999</div><div class="line">:</div><div class="line"> </div><div class="line"></div><div class="line"># groupmod -o -g 3 sysadmins</div><div class="line"># cat /etc/group |grep sys</div><div class="line">sys:</div><div class="line">x:</div><div class="line">3</div><div class="line">:bin,adm</div><div class="line"></div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">3</div><div class="line">:</div></pre></td></tr></table></figure>
+<p>Observe above outputs where we changed name, gid of group and lastly we assigned same GID 3 (non-unique) to our group which was already existing.</p>
+<h3 id="groupdel-command"><a href="#groupdel-command" class="headerlink" title="groupdel command"></a>groupdel command</h3><p>Thats the command where group ends their life! Yes, group deletion is performed using this command. This command is pretty simple. Just supply your group name and it will be deleted from system.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># groupdel sysadmins</div></pre></td></tr></table></figure>
+<h3 id="gpasswd-command"><a href="#gpasswd-command" class="headerlink" title="gpasswd command"></a>gpasswd command</h3><p>This command is used to administer group. Administering groups includes :</p>
+<ol>
+<li>Adding/removing users to/from group</li>
+<li>Setting and removing group password</li>
+<li>Making user administrator/member of group</li>
+</ol>
+<p>Adding and removing user in group is done with switch -a and -d followed by user name and lastly group name. Check below examples :</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"># gpasswd -a shri sysadmins</div><div class="line"></div><div class="line">Adding </div><div class="line">user</div><div class="line"> shri to group sysadmins</div><div class="line"> </div><div class="line"></div><div class="line"># cat /etc/group | grep sysadmin</div><div class="line"></div><div class="line">sysadmins:x:</div><div class="line">3</div><div class="line">:shri</div><div class="line"> </div><div class="line"></div><div class="line"># gpasswd -d shri sysadmins</div><div class="line"></div><div class="line">Removing </div><div class="line">user</div><div class="line"> shri </div><div class="line">from</div><div class="line"> group sysadmins</div><div class="line"> </div><div class="line"></div><div class="line"># cat /etc/group | grep sysadmin</div><div class="line"></div><div class="line">sysadmins:x:</div><div class="line">3</div><div class="line">:</div></pre></td></tr></table></figure>
+<p>Password set is done without any switch while password removal is with -r switch as below :</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># gpasswd sysadmins</div><div class="line"></div><div class="line">Changing the password </div><div class="line">for</div><div class="line">group</div><div class="line"> sysadmins</div><div class="line"></div><div class="line">New</div><div class="line"> Password:</div><div class="line">Re-enter </div><div class="line">new</div><div class="line"> password:</div></pre></td></tr></table></figure>
+<h4 id="What-is-the-use-of-group-password-in-Linux"><a href="#What-is-the-use-of-group-password-in-Linux" class="headerlink" title="What is the use of group password in Linux?"></a>What is the use of group password in Linux?</h4><p>This question comes to many of us. Hardly rather no one use this feature at all. Idea must be to secure group from non-member users. But since group password should be known to all group members, its actually doesnt make any sense to use it. Then you might ask then why group password exist in first place? It may be just following user (password security) model to groups as well to maintain symmenty in design. I mean its just my thought. Let me know if you have any other reason which suits group password existence!</p>
+<p>Making any user administrator of group grants him privilege to administer group. Member user is just member of group and can not administer it. You can make user administrator of group with -A switch and member with -M. By default user is added to group as a member</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># gpasswd -A shri sysadmins</div><div class="line"># gpasswd -M shri sysadmins</div></pre></td></tr></table></figure>
+<p>Those are all group management commands in Linux with their most used switches. Let us know any addition/correction/feedback in comments!</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/jYNBji" target="_blank" rel="external">https://kerneltalks.com/commands/4-linux-group-management-commands/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Learn to manage groups in Linux with these group management commands. Article includes how to create, modify, delete and administer group
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>35 Awe-Inspiring Badge &amp; Emblem Logo Designs</title>
     <link href="https://gmagon.com/blog/2017/07/07/35-awe-inspiring-badge-and-emblem-logo-designs/"/>
     <id>https://gmagon.com/blog/2017/07/07/35-awe-inspiring-badge-and-emblem-logo-designs/</id>
@@ -534,69 +597,6 @@ $_
   </entry>
   
   <entry>
-    <title>Beginner’s guide : 4 linux group management commands</title>
-    <link href="https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/"/>
-    <id>https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/</id>
-    <published>2017-07-07T00:00:00.000Z</published>
-    <updated>2017-07-07T10:09:04.670Z</updated>
-    
-    <content type="html"><![CDATA[<p>Learn to manage groups in Linux with these group management commands. Article includes how to create, modify, delete and administer groups.</p>
-<p><img src="http://img0.tuicool.com/MN7zEze.png!web" alt=""></p>
-<p>Group management in Linux</p>
-<p>Groups on Linux system are bunch of users created for easy access/permission management. One user can be member of one or many groups. User will have only one primary and one/many secondary groups. In our another article we have seen<a href="https://kerneltalks.com/linux/linux-user-management-useradd-userdel-usermod/" target="_blank" rel="external">user management commands</a>in Linux/Unix. In this article we will discuss group management. There are mainly 4 commands used to manage user groups on Linux systems :</p>
-<ol>
-<li>groupadd</li>
-<li>groupmod</li>
-<li>groupdel</li>
-<li>gpasswd</li>
-</ol>
-<p>Lets check all these commands and fields they are responsible in/etc/group file.</p>
-<h3 id="groupadd-command"><a href="#groupadd-command" class="headerlink" title="groupadd command"></a>groupadd command</h3><p>As name suggests, it is used to create new groups on Linux system. groupadd command needs group name as a argument.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># groupadd sysadmins</div><div class="line"># cat /etc/group</div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">502</div><div class="line">:</div></pre></td></tr></table></figure>
-<p>This command creates group named sysadmins. Newly created group can be verified in /etc/group file. Study fields in /etc/group filehere.</p>
-<p>Several common switches which works with groupadd are :</p>
-<ul>
-<li>-g : Specify GID of your choice</li>
-<li>-o : Create group with non-unique GID</li>
-<li>-r : Create system group. (GID will be taken from system group GID range</li>
-</ul>
-<h3 id="groupmod-command"><a href="#groupmod-command" class="headerlink" title="groupmod command"></a>groupmod command</h3><p>If you want to edit parameters like name, GID, uniqueness of group which already exist in system then you can modify group using groupmod. Below list of switch with their desired values should feed to this command –</p>
-<ul>
-<li>-g : new GID</li>
-<li>-o : Make it non-unique</li>
-<li>-n : New name</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"># groupmod -n newsysadmins sysadmins</div><div class="line"># cat /etc/group |grep sys</div><div class="line">newsysadmins:</div><div class="line">x:</div><div class="line">502</div><div class="line">:</div><div class="line"> </div><div class="line"></div><div class="line"># groupmod -g 9999 sysadmins</div><div class="line"># cat /etc/group </div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">9999</div><div class="line">:</div><div class="line"> </div><div class="line"></div><div class="line"># groupmod -o -g 3 sysadmins</div><div class="line"># cat /etc/group |grep sys</div><div class="line">sys:</div><div class="line">x:</div><div class="line">3</div><div class="line">:bin,adm</div><div class="line"></div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">3</div><div class="line">:</div></pre></td></tr></table></figure>
-<p>Observe above outputs where we changed name, gid of group and lastly we assigned same GID 3 (non-unique) to our group which was already existing.</p>
-<h3 id="groupdel-command"><a href="#groupdel-command" class="headerlink" title="groupdel command"></a>groupdel command</h3><p>Thats the command where group ends their life! Yes, group deletion is performed using this command. This command is pretty simple. Just supply your group name and it will be deleted from system.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># groupdel sysadmins</div></pre></td></tr></table></figure>
-<h3 id="gpasswd-command"><a href="#gpasswd-command" class="headerlink" title="gpasswd command"></a>gpasswd command</h3><p>This command is used to administer group. Administering groups includes :</p>
-<ol>
-<li>Adding/removing users to/from group</li>
-<li>Setting and removing group password</li>
-<li>Making user administrator/member of group</li>
-</ol>
-<p>Adding and removing user in group is done with switch -a and -d followed by user name and lastly group name. Check below examples :</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"># gpasswd -a shri sysadmins</div><div class="line"></div><div class="line">Adding </div><div class="line">user</div><div class="line"> shri to group sysadmins</div><div class="line"> </div><div class="line"></div><div class="line"># cat /etc/group | grep sysadmin</div><div class="line"></div><div class="line">sysadmins:x:</div><div class="line">3</div><div class="line">:shri</div><div class="line"> </div><div class="line"></div><div class="line"># gpasswd -d shri sysadmins</div><div class="line"></div><div class="line">Removing </div><div class="line">user</div><div class="line"> shri </div><div class="line">from</div><div class="line"> group sysadmins</div><div class="line"> </div><div class="line"></div><div class="line"># cat /etc/group | grep sysadmin</div><div class="line"></div><div class="line">sysadmins:x:</div><div class="line">3</div><div class="line">:</div></pre></td></tr></table></figure>
-<p>Password set is done without any switch while password removal is with -r switch as below :</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># gpasswd sysadmins</div><div class="line"></div><div class="line">Changing the password </div><div class="line">for</div><div class="line">group</div><div class="line"> sysadmins</div><div class="line"></div><div class="line">New</div><div class="line"> Password:</div><div class="line">Re-enter </div><div class="line">new</div><div class="line"> password:</div></pre></td></tr></table></figure>
-<h4 id="What-is-the-use-of-group-password-in-Linux"><a href="#What-is-the-use-of-group-password-in-Linux" class="headerlink" title="What is the use of group password in Linux?"></a>What is the use of group password in Linux?</h4><p>This question comes to many of us. Hardly rather no one use this feature at all. Idea must be to secure group from non-member users. But since group password should be known to all group members, its actually doesnt make any sense to use it. Then you might ask then why group password exist in first place? It may be just following user (password security) model to groups as well to maintain symmenty in design. I mean its just my thought. Let me know if you have any other reason which suits group password existence!</p>
-<p>Making any user administrator of group grants him privilege to administer group. Member user is just member of group and can not administer it. You can make user administrator of group with -A switch and member with -M. By default user is added to group as a member</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># gpasswd -A shri sysadmins</div><div class="line"># gpasswd -M shri sysadmins</div></pre></td></tr></table></figure>
-<p>Those are all group management commands in Linux with their most used switches. Let us know any addition/correction/feedback in comments!</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/jYNBji" target="_blank" rel="external">https://kerneltalks.com/commands/4-linux-group-management-commands/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Learn to manage groups in Linux with these group management commands. Article includes how to create, modify, delete and administer group
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Small Elements, Big Impact: Types and Functions of UI Icons.</title>
     <link href="https://gmagon.com/blog/2017/07/06/small-elements-big-impact-types-and-functions-of-ui-icons/"/>
     <id>https://gmagon.com/blog/2017/07/06/small-elements-big-impact-types-and-functions-of-ui-icons/</id>
@@ -740,145 +740,6 @@ $_
     
       &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/7BFRBrz.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;For web apps, the front end is becoming bigger and bigger, and the back
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Image Correction for Color Blindness</title>
-    <link href="https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/"/>
-    <id>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</id>
-    <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.028Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Color-blind-image-correction"><a href="#Color-blind-image-correction" class="headerlink" title="Color blind image correction"></a>Color blind image correction</h2><p>Color blind image correction</p>
-<p><a href="http://www.vischeck.com/daltonize/runDaltonize.php" target="_blank" rel="external">(Run Daltonize online here)</a></p>
-<p>One of the most common questions that we are asked is:</p>
-<p><strong>  
-</strong></p>
-<p>Is there a way to cure color blindness?</p>
-<p>From a medical point of view, the answer is ‘not really’. There are some devices (colored contact lenses or filter spectacles) that are claimed to improve the vision of color blind people but in general, people report very mixed results with them. There is currently no effective way to recover full trichromatic vision if you are red/green colorblind.</p>
-<p>So in one sense, color blindness is ‘incurable’. But a deeper question is “what is color good for?”. Apart from its aethetic appeal, seeing many different colors allows us to distinguish things in the world. Take the example below.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>How many types of fruit is this man selling?</strong> People with three different cone types (“trichromats”) can see 5 distinct piles of fruit on the ground. From back to front, they look ‘red’, ‘green’, ‘red’, ‘yellow’ and ‘light orange’. There are also some baskets on the shelf containing three piles of fruit.</th>
-<th style="text-align:left"><img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">But people with red/green color blindness usually have trouble seeing all the different fruits.They see something that can be simulated like this: Note that there now seem to be only three or four different types of fruit on the ground. It is also hard to tell how many distinct piles of fruit there are on the shelves.</td>
-<td style="text-align:left"><img src="http://img0.tuicool.com/iUNRfi7.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>In some pictures, a lot of important information is conveyed by variations in reds and greens. This is a real problem for color blind people who will miss this information. The important point to understand is that<strong>the ‘true’ color of something may be irrelevant but the fact that it is different from its surroundings is very important.</strong></p>
-<p>Here is another example:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><img src="http://img2.tuicool.com/Y3MBVvr.jpg!web" alt=""></th>
-<th style="text-align:left"><img src="http://img2.tuicool.com/j6rUryi.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>1) Cells labelled with three types of fluorescent markers to show up three different structures.</strong></td>
-<td style="text-align:left"><strong>2) Red/green color blind simulation of fluorescent cell picture.</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Here, a color blind scientist would be unable to tell the red and green labels apart. They would miss important information about the structure of the cells.</p>
-<p>How to fix it?</p>
-<p>We can use image processing techniques to improve this situation. There are two ways that we can make information in pictures available to color blind people.</p>
-<p><strong>1)</strong>The simplest way is simply to increase the red/green contrast in the image. Many color blind people have some residual red/green discrimination. Increasing the red/green contrast makes them more likely to see these types of color variations.</p>
-<p><strong>2)</strong>We can analyze the information conveyed by variations in the red/green direction and convert these into changes in brightness and/or blue/yellow coloration.  This allows us to map information from a color dimension that is invisible to dichromats into those that they can see.</p>
-<p>We call the combination of these two processes ‘Daltonization’ after John Dalton, the British scientist who was one of the first people to investigate color blindness.</p>
-<p>The result of applying these algorithms is shown below.:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><img src="http://img2.tuicool.com/INjiey2.jpg!web" alt=""></th>
-<th style="text-align:left"><img src="http://img1.tuicool.com/QZ7vUji.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">3) Daltonized version of three-color-labelled fluorescent cells.</td>
-<td style="text-align:left"><strong>4) Dichromat (red/green color blind) simulation of the  Daltonized image.</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Here, the algorithm has mapped changes in the reds and greens into slight changes in brightness and bluishness. The result is that when viewed by someone with color blindness, the different labelled structures in the cell are clearly visible.</p>
-<p>Here are some more examples. In each case, the images are numbered 1 to 4 where<strong>1</strong>) is the original full-color image,<strong>2</strong>) is a simulation of the color-blind view of the full color image,<strong>3</strong>) is the Daltonized version of the full color image and<strong>4</strong>) is the color blind simulation of the Daltonized image showing improved red/green discrimination. To see how well the Daltonization algorithm works for someone with color blindness, compare images<strong>2</strong>) and<strong>4</strong>).</p>
-<p>Example: Gauguin painting</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img1.tuicool.com/AR3U73r.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img0.tuicool.com/rA7jqiJ.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img1.tuicool.com/INjieiZ.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/QfE7fui.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>In this case, the Daltonization transformation must be judged on a more aesthetic level. While there is more ‘information’ present in image<strong>4)</strong>compared to image<strong>2)</strong>the disruption in the color balance may be unsettling (or fascinating) to some dichromats.</p>
-<p>Here is an Ishihara plate - a common aid for diagnosing color blindness. The number ‘45’ in the center of the disk is invisible to  someone with red/green color blindness.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/quMZJbn.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img2.tuicool.com/vi6v6rA.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>There are several things to note about this example. First of all, although the enhancement of the red/green information in the Daltonized version is striking, this is not a good<strong>general</strong>test of an algorithm to modify images for color blind observers. The reason is that the Ishihara plates are (deliberately) artificial images, and do not represent the range of colors that people see in everyday life. It would be rather easy to design an algorithm to ‘improve’ Ishihara plates (for example one that replaced all reds with blues) that would nevertheless destroy other types of information in the image. One nice feature of the Daltonization algorithm is that it analyses the information content of the image beforehand and attempts to preserve existing color variations.</p>
-<p>Note also that the Daltonizing algorithm does not enable people to “pass” the Ishihara test in any way. It is a digital image processing technique that can make print or video display more salient to color blind people without distorting the color balance to an unnacceptable degree.</p>
-<p>And finally, here’s the fruit market we showed you at the start:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img1.tuicool.com/EJR73qz.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/qqA3y26.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img2.tuicool.com/NZRNj23.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>The different piles of fruit on the floor are now clearly visible in image<strong>4</strong>).</p>
-<p><strong>What is it good for?</strong>We envisage a number of applications for this algorithm. Here are some examples:</p>
-<p><strong>As part of a digital microscope</strong>(see the ‘cells’ example above): Color blind users could flick a switch to improve the visibility of red/green fluorescent labels or intrinsic color contrast…</p>
-<p><strong>In digital video recorders and display systems</strong>: Viewers could turn on the Daltonize algorithm much as they might vary the brightness or volume using a remote control. Operating on a real-time video stream, the algorithm could improve the appearence of TV for color blind viewers (for example, making sports teams playing in red strip on a green field far more visible) without significantly disturbing the color balance for other members of the audience….</p>
-<p><strong>Computer display devices</strong>: Computer users could turn on the Daltonize algorithm from as part of their computer video card controls. All output appearing on the monitor (including web-pages, videos and still images) would automatically be processed and rendered more salient to dichromats.</p>
-<p><strong>Print media</strong>: Images can be Daltonized before printing. Print applications where legibility is essential (for example, public safety documents, maps, technical instructions) can all be made more legible for color-blind users….</p>
-<p><strong>  
-</strong></p>
-<p>You can play with the algorithm onlineon this web page. Please be aware that this page is taking a lot of hits at the moment and may seem a little slow to respond. If you have any particularly interesting images that you would like us to process, send them to us by email atinfo@vischeck.com and we will run them ‘by hand’. Please keep them to a reasonable size :)</p>
-<p>We would also like to hear your feedback about this algorithm - especially if you are color blind. Let us know what you think!</p>
-<p>If you would like to license the Daltonizing algorithm for use in your own applications, please contact us at<a href="mailto://daltonize_license@vischeck.com" target="_blank" rel="external">daltonize_licence@vischeck.com</a>.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/6B3qMvb" target="_blank" rel="external">http://www.vischeck.com/daltonize/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Color-blind-image-correction&quot;&gt;&lt;a href=&quot;#Color-blind-image-correction&quot; class=&quot;headerlink&quot; title=&quot;Color blind image correction&quot;&gt;&lt;/a&gt;Co
     
     </summary>
     
@@ -1070,6 +931,145 @@ $_
   </entry>
   
   <entry>
+    <title>Image Correction for Color Blindness</title>
+    <link href="https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/"/>
+    <id>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</id>
+    <published>2017-07-06T00:00:00.000Z</published>
+    <updated>2017-07-06T10:09:59.028Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Color-blind-image-correction"><a href="#Color-blind-image-correction" class="headerlink" title="Color blind image correction"></a>Color blind image correction</h2><p>Color blind image correction</p>
+<p><a href="http://www.vischeck.com/daltonize/runDaltonize.php" target="_blank" rel="external">(Run Daltonize online here)</a></p>
+<p>One of the most common questions that we are asked is:</p>
+<p><strong>  
+</strong></p>
+<p>Is there a way to cure color blindness?</p>
+<p>From a medical point of view, the answer is ‘not really’. There are some devices (colored contact lenses or filter spectacles) that are claimed to improve the vision of color blind people but in general, people report very mixed results with them. There is currently no effective way to recover full trichromatic vision if you are red/green colorblind.</p>
+<p>So in one sense, color blindness is ‘incurable’. But a deeper question is “what is color good for?”. Apart from its aethetic appeal, seeing many different colors allows us to distinguish things in the world. Take the example below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>How many types of fruit is this man selling?</strong> People with three different cone types (“trichromats”) can see 5 distinct piles of fruit on the ground. From back to front, they look ‘red’, ‘green’, ‘red’, ‘yellow’ and ‘light orange’. There are also some baskets on the shelf containing three piles of fruit.</th>
+<th style="text-align:left"><img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">But people with red/green color blindness usually have trouble seeing all the different fruits.They see something that can be simulated like this: Note that there now seem to be only three or four different types of fruit on the ground. It is also hard to tell how many distinct piles of fruit there are on the shelves.</td>
+<td style="text-align:left"><img src="http://img0.tuicool.com/iUNRfi7.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>In some pictures, a lot of important information is conveyed by variations in reds and greens. This is a real problem for color blind people who will miss this information. The important point to understand is that<strong>the ‘true’ color of something may be irrelevant but the fact that it is different from its surroundings is very important.</strong></p>
+<p>Here is another example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><img src="http://img2.tuicool.com/Y3MBVvr.jpg!web" alt=""></th>
+<th style="text-align:left"><img src="http://img2.tuicool.com/j6rUryi.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1) Cells labelled with three types of fluorescent markers to show up three different structures.</strong></td>
+<td style="text-align:left"><strong>2) Red/green color blind simulation of fluorescent cell picture.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Here, a color blind scientist would be unable to tell the red and green labels apart. They would miss important information about the structure of the cells.</p>
+<p>How to fix it?</p>
+<p>We can use image processing techniques to improve this situation. There are two ways that we can make information in pictures available to color blind people.</p>
+<p><strong>1)</strong>The simplest way is simply to increase the red/green contrast in the image. Many color blind people have some residual red/green discrimination. Increasing the red/green contrast makes them more likely to see these types of color variations.</p>
+<p><strong>2)</strong>We can analyze the information conveyed by variations in the red/green direction and convert these into changes in brightness and/or blue/yellow coloration.  This allows us to map information from a color dimension that is invisible to dichromats into those that they can see.</p>
+<p>We call the combination of these two processes ‘Daltonization’ after John Dalton, the British scientist who was one of the first people to investigate color blindness.</p>
+<p>The result of applying these algorithms is shown below.:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><img src="http://img2.tuicool.com/INjiey2.jpg!web" alt=""></th>
+<th style="text-align:left"><img src="http://img1.tuicool.com/QZ7vUji.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">3) Daltonized version of three-color-labelled fluorescent cells.</td>
+<td style="text-align:left"><strong>4) Dichromat (red/green color blind) simulation of the  Daltonized image.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Here, the algorithm has mapped changes in the reds and greens into slight changes in brightness and bluishness. The result is that when viewed by someone with color blindness, the different labelled structures in the cell are clearly visible.</p>
+<p>Here are some more examples. In each case, the images are numbered 1 to 4 where<strong>1</strong>) is the original full-color image,<strong>2</strong>) is a simulation of the color-blind view of the full color image,<strong>3</strong>) is the Daltonized version of the full color image and<strong>4</strong>) is the color blind simulation of the Daltonized image showing improved red/green discrimination. To see how well the Daltonization algorithm works for someone with color blindness, compare images<strong>2</strong>) and<strong>4</strong>).</p>
+<p>Example: Gauguin painting</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img1.tuicool.com/AR3U73r.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img0.tuicool.com/rA7jqiJ.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img1.tuicool.com/INjieiZ.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/QfE7fui.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>In this case, the Daltonization transformation must be judged on a more aesthetic level. While there is more ‘information’ present in image<strong>4)</strong>compared to image<strong>2)</strong>the disruption in the color balance may be unsettling (or fascinating) to some dichromats.</p>
+<p>Here is an Ishihara plate - a common aid for diagnosing color blindness. The number ‘45’ in the center of the disk is invisible to  someone with red/green color blindness.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/quMZJbn.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img2.tuicool.com/vi6v6rA.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>There are several things to note about this example. First of all, although the enhancement of the red/green information in the Daltonized version is striking, this is not a good<strong>general</strong>test of an algorithm to modify images for color blind observers. The reason is that the Ishihara plates are (deliberately) artificial images, and do not represent the range of colors that people see in everyday life. It would be rather easy to design an algorithm to ‘improve’ Ishihara plates (for example one that replaced all reds with blues) that would nevertheless destroy other types of information in the image. One nice feature of the Daltonization algorithm is that it analyses the information content of the image beforehand and attempts to preserve existing color variations.</p>
+<p>Note also that the Daltonizing algorithm does not enable people to “pass” the Ishihara test in any way. It is a digital image processing technique that can make print or video display more salient to color blind people without distorting the color balance to an unnacceptable degree.</p>
+<p>And finally, here’s the fruit market we showed you at the start:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img1.tuicool.com/EJR73qz.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/qqA3y26.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img2.tuicool.com/NZRNj23.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>The different piles of fruit on the floor are now clearly visible in image<strong>4</strong>).</p>
+<p><strong>What is it good for?</strong>We envisage a number of applications for this algorithm. Here are some examples:</p>
+<p><strong>As part of a digital microscope</strong>(see the ‘cells’ example above): Color blind users could flick a switch to improve the visibility of red/green fluorescent labels or intrinsic color contrast…</p>
+<p><strong>In digital video recorders and display systems</strong>: Viewers could turn on the Daltonize algorithm much as they might vary the brightness or volume using a remote control. Operating on a real-time video stream, the algorithm could improve the appearence of TV for color blind viewers (for example, making sports teams playing in red strip on a green field far more visible) without significantly disturbing the color balance for other members of the audience….</p>
+<p><strong>Computer display devices</strong>: Computer users could turn on the Daltonize algorithm from as part of their computer video card controls. All output appearing on the monitor (including web-pages, videos and still images) would automatically be processed and rendered more salient to dichromats.</p>
+<p><strong>Print media</strong>: Images can be Daltonized before printing. Print applications where legibility is essential (for example, public safety documents, maps, technical instructions) can all be made more legible for color-blind users….</p>
+<p><strong>  
+</strong></p>
+<p>You can play with the algorithm onlineon this web page. Please be aware that this page is taking a lot of hits at the moment and may seem a little slow to respond. If you have any particularly interesting images that you would like us to process, send them to us by email atinfo@vischeck.com and we will run them ‘by hand’. Please keep them to a reasonable size :)</p>
+<p>We would also like to hear your feedback about this algorithm - especially if you are color blind. Let us know what you think!</p>
+<p>If you would like to license the Daltonizing algorithm for use in your own applications, please contact us at<a href="mailto://daltonize_license@vischeck.com" target="_blank" rel="external">daltonize_licence@vischeck.com</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/6B3qMvb" target="_blank" rel="external">http://www.vischeck.com/daltonize/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Color-blind-image-correction&quot;&gt;&lt;a href=&quot;#Color-blind-image-correction&quot; class=&quot;headerlink&quot; title=&quot;Color blind image correction&quot;&gt;&lt;/a&gt;Co
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Top Smartphones Under Php20k (Mid-2017)</title>
     <link href="https://gmagon.com/blog/2017/07/05/top-smartphones-under-php20k-mid-2017/"/>
     <id>https://gmagon.com/blog/2017/07/05/top-smartphones-under-php20k-mid-2017/</id>
@@ -1251,6 +1251,52 @@ $_
   </entry>
   
   <entry>
+    <title>Is Freelancing Your Next UX Career Move?</title>
+    <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
+    <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.960Z</updated>
+    
+    <content type="html"><![CDATA[<p>I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time again, abandoning the 9-5 life and making my main source of employment a series of projects from different clients.</p>
+<p>Since then, I’ve had countless conversations with other UX professionals who are considering moving to freelancing as their next career step.</p>
+<p>They usually say they’re looking for freedom, more money, the ability to work on more interesting problems or learn new things – or even just the chance to work in their pyjamas regularly. Since I started consulting, I’ve expanded my focus into more strategy and product work across a wide variety of industries, and have met all kinds of interesting, smart colleagues.</p>
+<p>While I wouldn’t change a thing about my situation, I’m always cautious about encouraging others to jump into the freelance world, because it’s definitely not for everyone. Here are some things I’ve learned along the way to consider before you quit your day job.</p>
+<h3 id="Freelancing-pros-and-cons"><a href="#Freelancing-pros-and-cons" class="headerlink" title="Freelancing pros and cons"></a>Freelancing pros and cons</h3><p>Yes, it’s true that I spend most days in yoga pants, travel frequently, and work on some pretty cool projects. But consulting isn’t all sunshine and rainbows. There are many things that are great about consulting, some things that aren’t so great, and some things that just depend on the day.</p>
+<p><img src="http://img2.tuicool.com/mqEZzeZ.png!web" alt=""></p>
+<p>Freelancing pro: setting up your own home office. Photo by<a href="http://unsplash.com/photos/RcdV8rnXSeE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Vadim Sherbakov</a>on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Unsplash</a>.</p>
+<p>Schedule: One of the things I love most about consulting is being in total control of my schedule. There’s no expectation that I’m at my desk from 9 am to 5 pm. Sometimes I get in a zone and finish an entire report in one very long day and take the next morning off to let ideas percolate. Of course I have meetings and deadlines, but I can usually finagle things to work well for my clients and myself.</p>
+<p>On the flip side, juggling your schedule can be difficult. I’m quite disciplined about getting things done, but I’ve never quite figured out a way to create a consistent schedule. Sometimes I’ve had priority work on different projects collide at the same time or I’ve said yes to a few too many things and ended up working crazy hours to get everything done. Such is a consultant’s life.</p>
+<p>Money: I absolutely find that I make more money freelancing than when I worked in-house, even in leadership roles. I’m still experimenting with how I bill, but I tend to use value-based pricing for entire projects rather than charge hourly. I often ask clients to pay me 50% of the total upfront and the rest upon project completion, which can make managing money tricky, especially when you’re used to a consistent paycheck.</p>
+<p>You also have to know that you’ll never be able to collect money as though you’re billing 40 hours a week, every week. You have to account for supplies, tool costs, benefits, and set aside time for administrative tasks like sending invoices, business development, and, of course, downtime. No one gives you sick time or vacation days when you freelance.</p>
+<p>Inevitably, I’ve also run into time periods where I don’t have anything billable booked. An open schedule can be scary, so I use this time to do things like reach out to colleagues or potential clients, write articles, research new tools, try to learn something new, or catch up on administrative work. One of the benefits of this downtime is the space to learn, exploring the vast array of available online courses or just experimenting with a new method or tool.</p>
+<p>Work environment: I mostly work from home, which means I wear what I like, can pet my dog throughout the day, don’t contend with traffic, and for better or worse, have all day access to my kitchen. All great, but it also means that sometimes the only person I see in the flesh each day is my husband.</p>
+<p>I have to make an extra concerted effort to hang out with colleagues, so I’ve become more active in my local meetups and groups (shout out to<a href="https://www.meetup.com/Ladies-that-UX-Durham/" target="_blank" rel="external">Ladies that UX Durham</a>– love yall!) I also found I need to be more social during the week, even if that means going to a fitness class instead of biking solo or talking on the phone while I shop.</p>
+<h3 id="What-services-will-you-provide"><a href="#What-services-will-you-provide" class="headerlink" title="What services will you provide?"></a>What services will you provide?</h3><p>I’ve been focused on research and strategy for most of my career. I won’t rehash the “<a href="http://community.uxmastery.com/t/forced-to-become-a-unicorn-has-that-happened-to-you/783/11" target="_blank" rel="external">Should I be a unicorn</a>?” or “<a href="http://uxmastery.com/ux-designers-do-not-need-to-code/" target="_blank" rel="external">Do designers need to code</a>?” debates, but I’ll admit that when I first starting freelancing, I was worried I wasn’t going to be able to find enough work without doing visual work. Turns out, I was totally wrong. Phew!</p>
+<p><img src="http://img1.tuicool.com/BzMjMbA.jpg!web" alt=""></p>
+<p>Don’t worry, you don’t need to be a unicorn to be a freelance UXer.</p>
+<p>You absolutely don’t need to be a unicorn or try to tackle projects that aren’t your speciality. But it helps to have a broad set of experience and at least one area of deep expertise you can market and use to define your services. You can match what you’re good at and what you like to define the kind of projects you target, the projects you’re OK with taking, and what you will certainly turn down.</p>
+<p>Clearly<a href="http://uxmastery.com/build-your-ux-personal-brand/" target="_blank" rel="external">defining your services and interests</a>are important because it tells other people what to turn to you for. if I know someone has great interaction design skills and tonnes of experience with financial products, I’ll suggest them anytime I see a project like that. If someone tells me they’ll do anything that comes their way, they probably won’t come to mind for any projects I know about.</p>
+<h3 id="How-will-you-find-clients"><a href="#How-will-you-find-clients" class="headerlink" title="How will you find clients?"></a>How will you find clients?</h3><p>This is a question that I get asked time after time, and the answer is incredibly simple in concept but hard in practice:<strong>treat your clients and colleagues as you would users and provide them with a good experience working with you</strong>.</p>
+<p>More specifically, you have to do good work and other people have to be willing to talk about it. This can either mean that your clients are pleased with your work and will re-hire you or tell other potential clients, or that your peers in UX like your work and can refer you when they need help or can’t take something on. It really is true that a huge amount of success in consulting is based on networking and who you know, but that only works to your advantage if the people you know have had a good experience working with you. Right now, every single one of my clients is someone I’ve previously worked with or have gotten a good reference.</p>
+<p>This is where, once again, it helps to have a clearly defined, slightly unique set of skills or interests. There are tonnes of researchers and tonnes of designers, but if you’re known as a researcher who loves qualitative work and medical products, people will think of you whenever they come across that kind of project. Just be sure that you don’t define yourself too narrowly.</p>
+<p>You can also use job boards to identify potential projects or try recruiting agencies, but I haven’t found either as fruitful as having my name passed on from a previous contact. More on finding freelance UX work<a href="https://www.linkedin.com/pulse/single-best-way-get-freelance-ux-work-amanda-stockwell?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWB86zkUbaQbxQN8f0Iqf%2Bw%3D%3D" target="_blank" rel="external">here</a>.</p>
+<h3 id="Are-you-really-suited-for-all-that"><a href="#Are-you-really-suited-for-all-that" class="headerlink" title="Are you really suited for all that?"></a>Are you really suited for all that?</h3><p>Even if all the potential pros sound amazing to you and you have the skills and network to pull off freelancing, take a moment to reflect on your personality and soft skills.</p>
+<p>Are you detailed, organised, and willing to juggle many different client requests and manage your own schedule? Are you a natural risk-taker who can cope well with slow periods or lack of viable work? Are you assertive enough to negotiate terms for yourself? Do you mind working by yourself a lot?</p>
+<p>There’s a lot to think about before leaving the security of a full-time job. I love freelancing, but it’s worth carefully considering the pros and cons and your skillset and personality before taking the leap. Best wishes for whichever path you choose! </p>
+<p>Do you have experience or tips on freelancing for UX professionals? Leave a comment on the blog or in the forums! </p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/3qIJryE" target="_blank" rel="external">http://uxmastery.com/freelancing-ux-career/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>&#39;Baby Driver&#39; is an ode to iPod nostalgia</title>
     <link href="https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/"/>
     <id>https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/</id>
@@ -1352,52 +1398,6 @@ $_
     <summary type="html">
     
       &lt;h2 id=&quot;Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot;&gt;&lt;a href=&quot;#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot; 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Is Freelancing Your Next UX Career Move?</title>
-    <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
-    <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.960Z</updated>
-    
-    <content type="html"><![CDATA[<p>I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time again, abandoning the 9-5 life and making my main source of employment a series of projects from different clients.</p>
-<p>Since then, I’ve had countless conversations with other UX professionals who are considering moving to freelancing as their next career step.</p>
-<p>They usually say they’re looking for freedom, more money, the ability to work on more interesting problems or learn new things – or even just the chance to work in their pyjamas regularly. Since I started consulting, I’ve expanded my focus into more strategy and product work across a wide variety of industries, and have met all kinds of interesting, smart colleagues.</p>
-<p>While I wouldn’t change a thing about my situation, I’m always cautious about encouraging others to jump into the freelance world, because it’s definitely not for everyone. Here are some things I’ve learned along the way to consider before you quit your day job.</p>
-<h3 id="Freelancing-pros-and-cons"><a href="#Freelancing-pros-and-cons" class="headerlink" title="Freelancing pros and cons"></a>Freelancing pros and cons</h3><p>Yes, it’s true that I spend most days in yoga pants, travel frequently, and work on some pretty cool projects. But consulting isn’t all sunshine and rainbows. There are many things that are great about consulting, some things that aren’t so great, and some things that just depend on the day.</p>
-<p><img src="http://img2.tuicool.com/mqEZzeZ.png!web" alt=""></p>
-<p>Freelancing pro: setting up your own home office. Photo by<a href="http://unsplash.com/photos/RcdV8rnXSeE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Vadim Sherbakov</a>on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Unsplash</a>.</p>
-<p>Schedule: One of the things I love most about consulting is being in total control of my schedule. There’s no expectation that I’m at my desk from 9 am to 5 pm. Sometimes I get in a zone and finish an entire report in one very long day and take the next morning off to let ideas percolate. Of course I have meetings and deadlines, but I can usually finagle things to work well for my clients and myself.</p>
-<p>On the flip side, juggling your schedule can be difficult. I’m quite disciplined about getting things done, but I’ve never quite figured out a way to create a consistent schedule. Sometimes I’ve had priority work on different projects collide at the same time or I’ve said yes to a few too many things and ended up working crazy hours to get everything done. Such is a consultant’s life.</p>
-<p>Money: I absolutely find that I make more money freelancing than when I worked in-house, even in leadership roles. I’m still experimenting with how I bill, but I tend to use value-based pricing for entire projects rather than charge hourly. I often ask clients to pay me 50% of the total upfront and the rest upon project completion, which can make managing money tricky, especially when you’re used to a consistent paycheck.</p>
-<p>You also have to know that you’ll never be able to collect money as though you’re billing 40 hours a week, every week. You have to account for supplies, tool costs, benefits, and set aside time for administrative tasks like sending invoices, business development, and, of course, downtime. No one gives you sick time or vacation days when you freelance.</p>
-<p>Inevitably, I’ve also run into time periods where I don’t have anything billable booked. An open schedule can be scary, so I use this time to do things like reach out to colleagues or potential clients, write articles, research new tools, try to learn something new, or catch up on administrative work. One of the benefits of this downtime is the space to learn, exploring the vast array of available online courses or just experimenting with a new method or tool.</p>
-<p>Work environment: I mostly work from home, which means I wear what I like, can pet my dog throughout the day, don’t contend with traffic, and for better or worse, have all day access to my kitchen. All great, but it also means that sometimes the only person I see in the flesh each day is my husband.</p>
-<p>I have to make an extra concerted effort to hang out with colleagues, so I’ve become more active in my local meetups and groups (shout out to<a href="https://www.meetup.com/Ladies-that-UX-Durham/" target="_blank" rel="external">Ladies that UX Durham</a>– love yall!) I also found I need to be more social during the week, even if that means going to a fitness class instead of biking solo or talking on the phone while I shop.</p>
-<h3 id="What-services-will-you-provide"><a href="#What-services-will-you-provide" class="headerlink" title="What services will you provide?"></a>What services will you provide?</h3><p>I’ve been focused on research and strategy for most of my career. I won’t rehash the “<a href="http://community.uxmastery.com/t/forced-to-become-a-unicorn-has-that-happened-to-you/783/11" target="_blank" rel="external">Should I be a unicorn</a>?” or “<a href="http://uxmastery.com/ux-designers-do-not-need-to-code/" target="_blank" rel="external">Do designers need to code</a>?” debates, but I’ll admit that when I first starting freelancing, I was worried I wasn’t going to be able to find enough work without doing visual work. Turns out, I was totally wrong. Phew!</p>
-<p><img src="http://img1.tuicool.com/BzMjMbA.jpg!web" alt=""></p>
-<p>Don’t worry, you don’t need to be a unicorn to be a freelance UXer.</p>
-<p>You absolutely don’t need to be a unicorn or try to tackle projects that aren’t your speciality. But it helps to have a broad set of experience and at least one area of deep expertise you can market and use to define your services. You can match what you’re good at and what you like to define the kind of projects you target, the projects you’re OK with taking, and what you will certainly turn down.</p>
-<p>Clearly<a href="http://uxmastery.com/build-your-ux-personal-brand/" target="_blank" rel="external">defining your services and interests</a>are important because it tells other people what to turn to you for. if I know someone has great interaction design skills and tonnes of experience with financial products, I’ll suggest them anytime I see a project like that. If someone tells me they’ll do anything that comes their way, they probably won’t come to mind for any projects I know about.</p>
-<h3 id="How-will-you-find-clients"><a href="#How-will-you-find-clients" class="headerlink" title="How will you find clients?"></a>How will you find clients?</h3><p>This is a question that I get asked time after time, and the answer is incredibly simple in concept but hard in practice:<strong>treat your clients and colleagues as you would users and provide them with a good experience working with you</strong>.</p>
-<p>More specifically, you have to do good work and other people have to be willing to talk about it. This can either mean that your clients are pleased with your work and will re-hire you or tell other potential clients, or that your peers in UX like your work and can refer you when they need help or can’t take something on. It really is true that a huge amount of success in consulting is based on networking and who you know, but that only works to your advantage if the people you know have had a good experience working with you. Right now, every single one of my clients is someone I’ve previously worked with or have gotten a good reference.</p>
-<p>This is where, once again, it helps to have a clearly defined, slightly unique set of skills or interests. There are tonnes of researchers and tonnes of designers, but if you’re known as a researcher who loves qualitative work and medical products, people will think of you whenever they come across that kind of project. Just be sure that you don’t define yourself too narrowly.</p>
-<p>You can also use job boards to identify potential projects or try recruiting agencies, but I haven’t found either as fruitful as having my name passed on from a previous contact. More on finding freelance UX work<a href="https://www.linkedin.com/pulse/single-best-way-get-freelance-ux-work-amanda-stockwell?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWB86zkUbaQbxQN8f0Iqf%2Bw%3D%3D" target="_blank" rel="external">here</a>.</p>
-<h3 id="Are-you-really-suited-for-all-that"><a href="#Are-you-really-suited-for-all-that" class="headerlink" title="Are you really suited for all that?"></a>Are you really suited for all that?</h3><p>Even if all the potential pros sound amazing to you and you have the skills and network to pull off freelancing, take a moment to reflect on your personality and soft skills.</p>
-<p>Are you detailed, organised, and willing to juggle many different client requests and manage your own schedule? Are you a natural risk-taker who can cope well with slow periods or lack of viable work? Are you assertive enough to negotiate terms for yourself? Do you mind working by yourself a lot?</p>
-<p>There’s a lot to think about before leaving the security of a full-time job. I love freelancing, but it’s worth carefully considering the pros and cons and your skillset and personality before taking the leap. Best wishes for whichever path you choose! </p>
-<p>Do you have experience or tips on freelancing for UX professionals? Leave a comment on the blog or in the forums! </p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/3qIJryE" target="_blank" rel="external">http://uxmastery.com/freelancing-ux-career/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
     
     </summary>
     

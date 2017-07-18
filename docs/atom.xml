@@ -48,69 +48,6 @@
   </entry>
   
   <entry>
-    <title>Make a Perfect Triangle Path in Illustrator</title>
-    <link href="https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/"/>
-    <id>https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/</id>
-    <published>2017-07-10T00:00:00.000Z</published>
-    <updated>2017-07-10T04:16:54.596Z</updated>
-    
-    <content type="html"><![CDATA[<p>There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first started using Illustrator and really tried to get to know the program in depth. This was one of the things that frustrated me regularly (making a perfect, equilateral triangle) until I finally figured out a simple solution. If you use Adobe Illustrator on a regular basis, chances are you might need to create an equilateral triangle every once in a while. This may seem like a simple task, and it is, but not as easy as it should be. I’ll show you how to easily make a perfect triangle path in Illustrator, and hopefully, you will have one less vector headache to deal with in the future.</p>
-<p><img src="http://img1.tuicool.com/a67fAvB.gif" alt=""></p>
-<h2 id="1-Select-the-Star-Tool"><a href="#1-Select-the-Star-Tool" class="headerlink" title="1. Select the Star Tool"></a>1. Select the Star Tool</h2><p>Yes, believe it or not, the Star Tool is what you will use to make a triangle. I know it sounds weird, but go with me here.</p>
-<p><img src="http://img0.tuicool.com/vyqM7zn.gif" alt=""></p>
-<h2 id="2-Click-Once-on-the-Artboard"><a href="#2-Click-Once-on-the-Artboard" class="headerlink" title="2. Click Once on the Artboard"></a>2. Click Once on the Artboard</h2><p>By only clicking once, you will get the Star Tool Options pane. This is where you can reduce the number of points to “3.” The trick is to set one radius 2 at your desired size for your triangle, then set the other radius at exactly half. Note: It doesn’t matter which radius is which. Radius 1 and 2 can be reversed as long as one is double/half the other. Choose the size of your triangle and click OK.</p>
-<p><img src="http://img1.tuicool.com/BJ3yMr6.gif" alt=""></p>
-<h2 id="3-Get-Rid-of-the-Extra-Anchor-Points"><a href="#3-Get-Rid-of-the-Extra-Anchor-Points" class="headerlink" title="3. Get Rid of the Extra Anchor Points"></a>3. Get Rid of the Extra Anchor Points</h2><p>Now that you have your triangle, you might want to get rid of the extra anchor points created by the Star tool.</p>
-<p><img src="http://img0.tuicool.com/63qaeuV.gif" alt=""></p>
-<p>You can select the Subtract Anchor Point tool or hit the keyboard shortcut “-” (minus) and delete the 3 points that are in between the corners of your path.</p>
-<p><img src="http://img1.tuicool.com/fuInYnV.gif" alt=""></p>
-<h2 id="Done"><a href="#Done" class="headerlink" title="Done!"></a>Done!</h2><p>There you have it. A perfect Triangle path in only a few easy steps, no pen tool necessary!</p>
-<p><img src="http://img0.tuicool.com/ayAFvmE.gif" alt=""></p>
-<p>From here you can do anything you need to with it, like maybe reflect it and make it have the wide part at the bottom, etc. Remember that the angles in every equilateral triangle are 60 degrees, so if you need something to line up with one of the sides of your equilateral triangle, rotate that object in 60 degree intervals and you should be able to perfectly align things to your T-angle! I hope this little tip saves you some time and headache. It is often-times the little things that help the most. (from my experience)</p>
-<p><img src="http://img1.tuicool.com/RFRZRrF.gif" alt=""></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/JRVna2Q" target="_blank" rel="external">http://www.bittbox.com/illustrator/make-a-perfect-triangle-path-in-illustrator</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2 Things I learnt By Reading Failsafe Source code</title>
-    <link href="https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/"/>
-    <id>https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</id>
-    <published>2017-07-10T00:00:00.000Z</published>
-    <updated>2017-07-10T04:16:54.579Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of<a href="https://github.com/jhalterman/failsafe" target="_blank" rel="external">failsafe</a>library.</p>
-<p>Failsafe is a lightweight, zero-dependency library for handling failures. It was designed to be as easy to use as possible, with a concise API for handling everyday use cases and the flexibility to handle everything else.</p>
-<p>Let’s suppose you are working with a flaky HTTP service. You can use failsafe to retry the service a configurable number of times by writing code as shown below.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">RetryPolicy retryPolicy = </div><div class="line">new</div><div class="line"> RetryPolicy()</div><div class="line">  .retryOn(HttpConnectionException.</div><div class="line">class</div><div class="line">)</div><div class="line">  .withMaxRetries(</div><div class="line">3</div><div class="line">);</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">MyHttpService connection = Failsafe.</div><div class="line">with</div><div class="line">(retryPolicy)</div><div class="line">                               .get</div><div class="line">(() -</div><div class="line">&gt;</div><div class="line"> connect())</div><div class="line">;</div></pre></td></tr></table></figure>
-<p>The above will retry 3 times to connect to the http service if HttpConnectionException is thrown.</p>
-<h2 id="2-Things-I-learnt"><a href="#2-Things-I-learnt" class="headerlink" title="2 Things I learnt"></a>2 Things I learnt</h2><p>Reading through the source code and referring to Github issues I learnt couple of things to avoid when designing APIs. So, I learnt what not to do rather than what to do ��</p>
-<ol>
-<li>Don’t use wrong default values: failsafe library does not enforce users to provide values when configuring RetryPolicy or other configuration object. The default value for number of retries is set to  -1, which means retry infinitely. This is not correct as user of the API would want retry call to complete eventually or throw an exception. I think better way to design API is to enforce users to provide values when you are unable to come up with good default values. This would avoid surprises to the user.  APIs should follow<br><a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" target="_blank" rel="external">Principle of least astonishment</a><br>.</li>
-<li>Favour immutability: A common thread that I found in many issues is related to shareability of RetryPolicy object. Users want to reuse RetryPolicy object but because it is not immutable they fear thread safety concerns. Library author clarified that library does not change the state of object internally so it is safe to reuse. I think the better way to design such objects is by using a builder pattern. Then, in the build method of builder make an immutable object. This does not confuse users and keep your API consistent.</li>
-</ol>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/Y3mUjaa" target="_blank" rel="external">http://shekhargulati.com/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of&lt;a href=&quot;https://
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Enhance Your Search Results: How to Get Started With Schema Markup </title>
     <link href="https://gmagon.com/blog/2017/07/10/enhance-your-search-results-how-to-get-started-with-schema-markup/"/>
     <id>https://gmagon.com/blog/2017/07/10/enhance-your-search-results-how-to-get-started-with-schema-markup/</id>
@@ -255,6 +192,132 @@
     <summary type="html">
     
       &lt;p&gt;Google andFacebook continue to&lt;a href=&quot;https://www.ft.com/content/30c81d12-08c8-11e7-97d1-5e720a26771b&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;go
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2 Things I learnt By Reading Failsafe Source code</title>
+    <link href="https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/"/>
+    <id>https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</id>
+    <published>2017-07-10T00:00:00.000Z</published>
+    <updated>2017-07-10T04:16:54.579Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of<a href="https://github.com/jhalterman/failsafe" target="_blank" rel="external">failsafe</a>library.</p>
+<p>Failsafe is a lightweight, zero-dependency library for handling failures. It was designed to be as easy to use as possible, with a concise API for handling everyday use cases and the flexibility to handle everything else.</p>
+<p>Let’s suppose you are working with a flaky HTTP service. You can use failsafe to retry the service a configurable number of times by writing code as shown below.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">RetryPolicy retryPolicy = </div><div class="line">new</div><div class="line"> RetryPolicy()</div><div class="line">  .retryOn(HttpConnectionException.</div><div class="line">class</div><div class="line">)</div><div class="line">  .withMaxRetries(</div><div class="line">3</div><div class="line">);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">MyHttpService connection = Failsafe.</div><div class="line">with</div><div class="line">(retryPolicy)</div><div class="line">                               .get</div><div class="line">(() -</div><div class="line">&gt;</div><div class="line"> connect())</div><div class="line">;</div></pre></td></tr></table></figure>
+<p>The above will retry 3 times to connect to the http service if HttpConnectionException is thrown.</p>
+<h2 id="2-Things-I-learnt"><a href="#2-Things-I-learnt" class="headerlink" title="2 Things I learnt"></a>2 Things I learnt</h2><p>Reading through the source code and referring to Github issues I learnt couple of things to avoid when designing APIs. So, I learnt what not to do rather than what to do ��</p>
+<ol>
+<li>Don’t use wrong default values: failsafe library does not enforce users to provide values when configuring RetryPolicy or other configuration object. The default value for number of retries is set to  -1, which means retry infinitely. This is not correct as user of the API would want retry call to complete eventually or throw an exception. I think better way to design API is to enforce users to provide values when you are unable to come up with good default values. This would avoid surprises to the user.  APIs should follow<br><a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" target="_blank" rel="external">Principle of least astonishment</a><br>.</li>
+<li>Favour immutability: A common thread that I found in many issues is related to shareability of RetryPolicy object. Users want to reuse RetryPolicy object but because it is not immutable they fear thread safety concerns. Library author clarified that library does not change the state of object internally so it is safe to reuse. I think the better way to design such objects is by using a builder pattern. Then, in the build method of builder make an immutable object. This does not confuse users and keep your API consistent.</li>
+</ol>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/Y3mUjaa" target="_blank" rel="external">http://shekhargulati.com/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of&lt;a href=&quot;https://
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Make a Perfect Triangle Path in Illustrator</title>
+    <link href="https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/"/>
+    <id>https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/</id>
+    <published>2017-07-10T00:00:00.000Z</published>
+    <updated>2017-07-10T04:16:54.596Z</updated>
+    
+    <content type="html"><![CDATA[<p>There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first started using Illustrator and really tried to get to know the program in depth. This was one of the things that frustrated me regularly (making a perfect, equilateral triangle) until I finally figured out a simple solution. If you use Adobe Illustrator on a regular basis, chances are you might need to create an equilateral triangle every once in a while. This may seem like a simple task, and it is, but not as easy as it should be. I’ll show you how to easily make a perfect triangle path in Illustrator, and hopefully, you will have one less vector headache to deal with in the future.</p>
+<p><img src="http://img1.tuicool.com/a67fAvB.gif" alt=""></p>
+<h2 id="1-Select-the-Star-Tool"><a href="#1-Select-the-Star-Tool" class="headerlink" title="1. Select the Star Tool"></a>1. Select the Star Tool</h2><p>Yes, believe it or not, the Star Tool is what you will use to make a triangle. I know it sounds weird, but go with me here.</p>
+<p><img src="http://img0.tuicool.com/vyqM7zn.gif" alt=""></p>
+<h2 id="2-Click-Once-on-the-Artboard"><a href="#2-Click-Once-on-the-Artboard" class="headerlink" title="2. Click Once on the Artboard"></a>2. Click Once on the Artboard</h2><p>By only clicking once, you will get the Star Tool Options pane. This is where you can reduce the number of points to “3.” The trick is to set one radius 2 at your desired size for your triangle, then set the other radius at exactly half. Note: It doesn’t matter which radius is which. Radius 1 and 2 can be reversed as long as one is double/half the other. Choose the size of your triangle and click OK.</p>
+<p><img src="http://img1.tuicool.com/BJ3yMr6.gif" alt=""></p>
+<h2 id="3-Get-Rid-of-the-Extra-Anchor-Points"><a href="#3-Get-Rid-of-the-Extra-Anchor-Points" class="headerlink" title="3. Get Rid of the Extra Anchor Points"></a>3. Get Rid of the Extra Anchor Points</h2><p>Now that you have your triangle, you might want to get rid of the extra anchor points created by the Star tool.</p>
+<p><img src="http://img0.tuicool.com/63qaeuV.gif" alt=""></p>
+<p>You can select the Subtract Anchor Point tool or hit the keyboard shortcut “-” (minus) and delete the 3 points that are in between the corners of your path.</p>
+<p><img src="http://img1.tuicool.com/fuInYnV.gif" alt=""></p>
+<h2 id="Done"><a href="#Done" class="headerlink" title="Done!"></a>Done!</h2><p>There you have it. A perfect Triangle path in only a few easy steps, no pen tool necessary!</p>
+<p><img src="http://img0.tuicool.com/ayAFvmE.gif" alt=""></p>
+<p>From here you can do anything you need to with it, like maybe reflect it and make it have the wide part at the bottom, etc. Remember that the angles in every equilateral triangle are 60 degrees, so if you need something to line up with one of the sides of your equilateral triangle, rotate that object in 60 degree intervals and you should be able to perfectly align things to your T-angle! I hope this little tip saves you some time and headache. It is often-times the little things that help the most. (from my experience)</p>
+<p><img src="http://img1.tuicool.com/RFRZRrF.gif" alt=""></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/JRVna2Q" target="_blank" rel="external">http://www.bittbox.com/illustrator/make-a-perfect-triangle-path-in-illustrator</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Beginner’s guide : 4 linux group management commands</title>
+    <link href="https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/"/>
+    <id>https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/</id>
+    <published>2017-07-07T00:00:00.000Z</published>
+    <updated>2017-07-07T10:09:04.670Z</updated>
+    
+    <content type="html"><![CDATA[<p>Learn to manage groups in Linux with these group management commands. Article includes how to create, modify, delete and administer groups.</p>
+<p><img src="http://img0.tuicool.com/MN7zEze.png!web" alt=""></p>
+<p>Group management in Linux</p>
+<p>Groups on Linux system are bunch of users created for easy access/permission management. One user can be member of one or many groups. User will have only one primary and one/many secondary groups. In our another article we have seen<a href="https://kerneltalks.com/linux/linux-user-management-useradd-userdel-usermod/" target="_blank" rel="external">user management commands</a>in Linux/Unix. In this article we will discuss group management. There are mainly 4 commands used to manage user groups on Linux systems :</p>
+<ol>
+<li>groupadd</li>
+<li>groupmod</li>
+<li>groupdel</li>
+<li>gpasswd</li>
+</ol>
+<p>Lets check all these commands and fields they are responsible in/etc/group file.</p>
+<h3 id="groupadd-command"><a href="#groupadd-command" class="headerlink" title="groupadd command"></a>groupadd command</h3><p>As name suggests, it is used to create new groups on Linux system. groupadd command needs group name as a argument.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># groupadd sysadmins</div><div class="line"># cat /etc/group</div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">502</div><div class="line">:</div></pre></td></tr></table></figure>
+<p>This command creates group named sysadmins. Newly created group can be verified in /etc/group file. Study fields in /etc/group filehere.</p>
+<p>Several common switches which works with groupadd are :</p>
+<ul>
+<li>-g : Specify GID of your choice</li>
+<li>-o : Create group with non-unique GID</li>
+<li>-r : Create system group. (GID will be taken from system group GID range</li>
+</ul>
+<h3 id="groupmod-command"><a href="#groupmod-command" class="headerlink" title="groupmod command"></a>groupmod command</h3><p>If you want to edit parameters like name, GID, uniqueness of group which already exist in system then you can modify group using groupmod. Below list of switch with their desired values should feed to this command –</p>
+<ul>
+<li>-g : new GID</li>
+<li>-o : Make it non-unique</li>
+<li>-n : New name</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"># groupmod -n newsysadmins sysadmins</div><div class="line"># cat /etc/group |grep sys</div><div class="line">newsysadmins:</div><div class="line">x:</div><div class="line">502</div><div class="line">:</div><div class="line"> </div><div class="line"></div><div class="line"># groupmod -g 9999 sysadmins</div><div class="line"># cat /etc/group </div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">9999</div><div class="line">:</div><div class="line"> </div><div class="line"></div><div class="line"># groupmod -o -g 3 sysadmins</div><div class="line"># cat /etc/group |grep sys</div><div class="line">sys:</div><div class="line">x:</div><div class="line">3</div><div class="line">:bin,adm</div><div class="line"></div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">3</div><div class="line">:</div></pre></td></tr></table></figure>
+<p>Observe above outputs where we changed name, gid of group and lastly we assigned same GID 3 (non-unique) to our group which was already existing.</p>
+<h3 id="groupdel-command"><a href="#groupdel-command" class="headerlink" title="groupdel command"></a>groupdel command</h3><p>Thats the command where group ends their life! Yes, group deletion is performed using this command. This command is pretty simple. Just supply your group name and it will be deleted from system.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># groupdel sysadmins</div></pre></td></tr></table></figure>
+<h3 id="gpasswd-command"><a href="#gpasswd-command" class="headerlink" title="gpasswd command"></a>gpasswd command</h3><p>This command is used to administer group. Administering groups includes :</p>
+<ol>
+<li>Adding/removing users to/from group</li>
+<li>Setting and removing group password</li>
+<li>Making user administrator/member of group</li>
+</ol>
+<p>Adding and removing user in group is done with switch -a and -d followed by user name and lastly group name. Check below examples :</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"># gpasswd -a shri sysadmins</div><div class="line"></div><div class="line">Adding </div><div class="line">user</div><div class="line"> shri to group sysadmins</div><div class="line"> </div><div class="line"></div><div class="line"># cat /etc/group | grep sysadmin</div><div class="line"></div><div class="line">sysadmins:x:</div><div class="line">3</div><div class="line">:shri</div><div class="line"> </div><div class="line"></div><div class="line"># gpasswd -d shri sysadmins</div><div class="line"></div><div class="line">Removing </div><div class="line">user</div><div class="line"> shri </div><div class="line">from</div><div class="line"> group sysadmins</div><div class="line"> </div><div class="line"></div><div class="line"># cat /etc/group | grep sysadmin</div><div class="line"></div><div class="line">sysadmins:x:</div><div class="line">3</div><div class="line">:</div></pre></td></tr></table></figure>
+<p>Password set is done without any switch while password removal is with -r switch as below :</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># gpasswd sysadmins</div><div class="line"></div><div class="line">Changing the password </div><div class="line">for</div><div class="line">group</div><div class="line"> sysadmins</div><div class="line"></div><div class="line">New</div><div class="line"> Password:</div><div class="line">Re-enter </div><div class="line">new</div><div class="line"> password:</div></pre></td></tr></table></figure>
+<h4 id="What-is-the-use-of-group-password-in-Linux"><a href="#What-is-the-use-of-group-password-in-Linux" class="headerlink" title="What is the use of group password in Linux?"></a>What is the use of group password in Linux?</h4><p>This question comes to many of us. Hardly rather no one use this feature at all. Idea must be to secure group from non-member users. But since group password should be known to all group members, its actually doesnt make any sense to use it. Then you might ask then why group password exist in first place? It may be just following user (password security) model to groups as well to maintain symmenty in design. I mean its just my thought. Let me know if you have any other reason which suits group password existence!</p>
+<p>Making any user administrator of group grants him privilege to administer group. Member user is just member of group and can not administer it. You can make user administrator of group with -A switch and member with -M. By default user is added to group as a member</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># gpasswd -A shri sysadmins</div><div class="line"># gpasswd -M shri sysadmins</div></pre></td></tr></table></figure>
+<p>Those are all group management commands in Linux with their most used switches. Let us know any addition/correction/feedback in comments!</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/jYNBji" target="_blank" rel="external">https://kerneltalks.com/commands/4-linux-group-management-commands/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Learn to manage groups in Linux with these group management commands. Article includes how to create, modify, delete and administer group
     
     </summary>
     
@@ -455,69 +518,6 @@ $_
     <summary type="html">
     
       &lt;p&gt;An another amazing examples of&lt;a href=&quot;http://graphicdesignjunction.com/2017/02/badge-emblem-logos/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;stro
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Beginner’s guide : 4 linux group management commands</title>
-    <link href="https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/"/>
-    <id>https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/</id>
-    <published>2017-07-07T00:00:00.000Z</published>
-    <updated>2017-07-07T10:09:04.670Z</updated>
-    
-    <content type="html"><![CDATA[<p>Learn to manage groups in Linux with these group management commands. Article includes how to create, modify, delete and administer groups.</p>
-<p><img src="http://img0.tuicool.com/MN7zEze.png!web" alt=""></p>
-<p>Group management in Linux</p>
-<p>Groups on Linux system are bunch of users created for easy access/permission management. One user can be member of one or many groups. User will have only one primary and one/many secondary groups. In our another article we have seen<a href="https://kerneltalks.com/linux/linux-user-management-useradd-userdel-usermod/" target="_blank" rel="external">user management commands</a>in Linux/Unix. In this article we will discuss group management. There are mainly 4 commands used to manage user groups on Linux systems :</p>
-<ol>
-<li>groupadd</li>
-<li>groupmod</li>
-<li>groupdel</li>
-<li>gpasswd</li>
-</ol>
-<p>Lets check all these commands and fields they are responsible in/etc/group file.</p>
-<h3 id="groupadd-command"><a href="#groupadd-command" class="headerlink" title="groupadd command"></a>groupadd command</h3><p>As name suggests, it is used to create new groups on Linux system. groupadd command needs group name as a argument.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># groupadd sysadmins</div><div class="line"># cat /etc/group</div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">502</div><div class="line">:</div></pre></td></tr></table></figure>
-<p>This command creates group named sysadmins. Newly created group can be verified in /etc/group file. Study fields in /etc/group filehere.</p>
-<p>Several common switches which works with groupadd are :</p>
-<ul>
-<li>-g : Specify GID of your choice</li>
-<li>-o : Create group with non-unique GID</li>
-<li>-r : Create system group. (GID will be taken from system group GID range</li>
-</ul>
-<h3 id="groupmod-command"><a href="#groupmod-command" class="headerlink" title="groupmod command"></a>groupmod command</h3><p>If you want to edit parameters like name, GID, uniqueness of group which already exist in system then you can modify group using groupmod. Below list of switch with their desired values should feed to this command –</p>
-<ul>
-<li>-g : new GID</li>
-<li>-o : Make it non-unique</li>
-<li>-n : New name</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"># groupmod -n newsysadmins sysadmins</div><div class="line"># cat /etc/group |grep sys</div><div class="line">newsysadmins:</div><div class="line">x:</div><div class="line">502</div><div class="line">:</div><div class="line"> </div><div class="line"></div><div class="line"># groupmod -g 9999 sysadmins</div><div class="line"># cat /etc/group </div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">9999</div><div class="line">:</div><div class="line"> </div><div class="line"></div><div class="line"># groupmod -o -g 3 sysadmins</div><div class="line"># cat /etc/group |grep sys</div><div class="line">sys:</div><div class="line">x:</div><div class="line">3</div><div class="line">:bin,adm</div><div class="line"></div><div class="line">sysadmins:</div><div class="line">x:</div><div class="line">3</div><div class="line">:</div></pre></td></tr></table></figure>
-<p>Observe above outputs where we changed name, gid of group and lastly we assigned same GID 3 (non-unique) to our group which was already existing.</p>
-<h3 id="groupdel-command"><a href="#groupdel-command" class="headerlink" title="groupdel command"></a>groupdel command</h3><p>Thats the command where group ends their life! Yes, group deletion is performed using this command. This command is pretty simple. Just supply your group name and it will be deleted from system.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># groupdel sysadmins</div></pre></td></tr></table></figure>
-<h3 id="gpasswd-command"><a href="#gpasswd-command" class="headerlink" title="gpasswd command"></a>gpasswd command</h3><p>This command is used to administer group. Administering groups includes :</p>
-<ol>
-<li>Adding/removing users to/from group</li>
-<li>Setting and removing group password</li>
-<li>Making user administrator/member of group</li>
-</ol>
-<p>Adding and removing user in group is done with switch -a and -d followed by user name and lastly group name. Check below examples :</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"># gpasswd -a shri sysadmins</div><div class="line"></div><div class="line">Adding </div><div class="line">user</div><div class="line"> shri to group sysadmins</div><div class="line"> </div><div class="line"></div><div class="line"># cat /etc/group | grep sysadmin</div><div class="line"></div><div class="line">sysadmins:x:</div><div class="line">3</div><div class="line">:shri</div><div class="line"> </div><div class="line"></div><div class="line"># gpasswd -d shri sysadmins</div><div class="line"></div><div class="line">Removing </div><div class="line">user</div><div class="line"> shri </div><div class="line">from</div><div class="line"> group sysadmins</div><div class="line"> </div><div class="line"></div><div class="line"># cat /etc/group | grep sysadmin</div><div class="line"></div><div class="line">sysadmins:x:</div><div class="line">3</div><div class="line">:</div></pre></td></tr></table></figure>
-<p>Password set is done without any switch while password removal is with -r switch as below :</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># gpasswd sysadmins</div><div class="line"></div><div class="line">Changing the password </div><div class="line">for</div><div class="line">group</div><div class="line"> sysadmins</div><div class="line"></div><div class="line">New</div><div class="line"> Password:</div><div class="line">Re-enter </div><div class="line">new</div><div class="line"> password:</div></pre></td></tr></table></figure>
-<h4 id="What-is-the-use-of-group-password-in-Linux"><a href="#What-is-the-use-of-group-password-in-Linux" class="headerlink" title="What is the use of group password in Linux?"></a>What is the use of group password in Linux?</h4><p>This question comes to many of us. Hardly rather no one use this feature at all. Idea must be to secure group from non-member users. But since group password should be known to all group members, its actually doesnt make any sense to use it. Then you might ask then why group password exist in first place? It may be just following user (password security) model to groups as well to maintain symmenty in design. I mean its just my thought. Let me know if you have any other reason which suits group password existence!</p>
-<p>Making any user administrator of group grants him privilege to administer group. Member user is just member of group and can not administer it. You can make user administrator of group with -A switch and member with -M. By default user is added to group as a member</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># gpasswd -A shri sysadmins</div><div class="line"># gpasswd -M shri sysadmins</div></pre></td></tr></table></figure>
-<p>Those are all group management commands in Linux with their most used switches. Let us know any addition/correction/feedback in comments!</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/jYNBji" target="_blank" rel="external">https://kerneltalks.com/commands/4-linux-group-management-commands/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Learn to manage groups in Linux with these group management commands. Article includes how to create, modify, delete and administer group
     
     </summary>
     
@@ -1070,6 +1070,160 @@ $_
   </entry>
   
   <entry>
+    <title>Is Freelancing Your Next UX Career Move?</title>
+    <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
+    <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.960Z</updated>
+    
+    <content type="html"><![CDATA[<p>I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time again, abandoning the 9-5 life and making my main source of employment a series of projects from different clients.</p>
+<p>Since then, I’ve had countless conversations with other UX professionals who are considering moving to freelancing as their next career step.</p>
+<p>They usually say they’re looking for freedom, more money, the ability to work on more interesting problems or learn new things – or even just the chance to work in their pyjamas regularly. Since I started consulting, I’ve expanded my focus into more strategy and product work across a wide variety of industries, and have met all kinds of interesting, smart colleagues.</p>
+<p>While I wouldn’t change a thing about my situation, I’m always cautious about encouraging others to jump into the freelance world, because it’s definitely not for everyone. Here are some things I’ve learned along the way to consider before you quit your day job.</p>
+<h3 id="Freelancing-pros-and-cons"><a href="#Freelancing-pros-and-cons" class="headerlink" title="Freelancing pros and cons"></a>Freelancing pros and cons</h3><p>Yes, it’s true that I spend most days in yoga pants, travel frequently, and work on some pretty cool projects. But consulting isn’t all sunshine and rainbows. There are many things that are great about consulting, some things that aren’t so great, and some things that just depend on the day.</p>
+<p><img src="http://img2.tuicool.com/mqEZzeZ.png!web" alt=""></p>
+<p>Freelancing pro: setting up your own home office. Photo by<a href="http://unsplash.com/photos/RcdV8rnXSeE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Vadim Sherbakov</a>on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Unsplash</a>.</p>
+<p>Schedule: One of the things I love most about consulting is being in total control of my schedule. There’s no expectation that I’m at my desk from 9 am to 5 pm. Sometimes I get in a zone and finish an entire report in one very long day and take the next morning off to let ideas percolate. Of course I have meetings and deadlines, but I can usually finagle things to work well for my clients and myself.</p>
+<p>On the flip side, juggling your schedule can be difficult. I’m quite disciplined about getting things done, but I’ve never quite figured out a way to create a consistent schedule. Sometimes I’ve had priority work on different projects collide at the same time or I’ve said yes to a few too many things and ended up working crazy hours to get everything done. Such is a consultant’s life.</p>
+<p>Money: I absolutely find that I make more money freelancing than when I worked in-house, even in leadership roles. I’m still experimenting with how I bill, but I tend to use value-based pricing for entire projects rather than charge hourly. I often ask clients to pay me 50% of the total upfront and the rest upon project completion, which can make managing money tricky, especially when you’re used to a consistent paycheck.</p>
+<p>You also have to know that you’ll never be able to collect money as though you’re billing 40 hours a week, every week. You have to account for supplies, tool costs, benefits, and set aside time for administrative tasks like sending invoices, business development, and, of course, downtime. No one gives you sick time or vacation days when you freelance.</p>
+<p>Inevitably, I’ve also run into time periods where I don’t have anything billable booked. An open schedule can be scary, so I use this time to do things like reach out to colleagues or potential clients, write articles, research new tools, try to learn something new, or catch up on administrative work. One of the benefits of this downtime is the space to learn, exploring the vast array of available online courses or just experimenting with a new method or tool.</p>
+<p>Work environment: I mostly work from home, which means I wear what I like, can pet my dog throughout the day, don’t contend with traffic, and for better or worse, have all day access to my kitchen. All great, but it also means that sometimes the only person I see in the flesh each day is my husband.</p>
+<p>I have to make an extra concerted effort to hang out with colleagues, so I’ve become more active in my local meetups and groups (shout out to<a href="https://www.meetup.com/Ladies-that-UX-Durham/" target="_blank" rel="external">Ladies that UX Durham</a>– love yall!) I also found I need to be more social during the week, even if that means going to a fitness class instead of biking solo or talking on the phone while I shop.</p>
+<h3 id="What-services-will-you-provide"><a href="#What-services-will-you-provide" class="headerlink" title="What services will you provide?"></a>What services will you provide?</h3><p>I’ve been focused on research and strategy for most of my career. I won’t rehash the “<a href="http://community.uxmastery.com/t/forced-to-become-a-unicorn-has-that-happened-to-you/783/11" target="_blank" rel="external">Should I be a unicorn</a>?” or “<a href="http://uxmastery.com/ux-designers-do-not-need-to-code/" target="_blank" rel="external">Do designers need to code</a>?” debates, but I’ll admit that when I first starting freelancing, I was worried I wasn’t going to be able to find enough work without doing visual work. Turns out, I was totally wrong. Phew!</p>
+<p><img src="http://img1.tuicool.com/BzMjMbA.jpg!web" alt=""></p>
+<p>Don’t worry, you don’t need to be a unicorn to be a freelance UXer.</p>
+<p>You absolutely don’t need to be a unicorn or try to tackle projects that aren’t your speciality. But it helps to have a broad set of experience and at least one area of deep expertise you can market and use to define your services. You can match what you’re good at and what you like to define the kind of projects you target, the projects you’re OK with taking, and what you will certainly turn down.</p>
+<p>Clearly<a href="http://uxmastery.com/build-your-ux-personal-brand/" target="_blank" rel="external">defining your services and interests</a>are important because it tells other people what to turn to you for. if I know someone has great interaction design skills and tonnes of experience with financial products, I’ll suggest them anytime I see a project like that. If someone tells me they’ll do anything that comes their way, they probably won’t come to mind for any projects I know about.</p>
+<h3 id="How-will-you-find-clients"><a href="#How-will-you-find-clients" class="headerlink" title="How will you find clients?"></a>How will you find clients?</h3><p>This is a question that I get asked time after time, and the answer is incredibly simple in concept but hard in practice:<strong>treat your clients and colleagues as you would users and provide them with a good experience working with you</strong>.</p>
+<p>More specifically, you have to do good work and other people have to be willing to talk about it. This can either mean that your clients are pleased with your work and will re-hire you or tell other potential clients, or that your peers in UX like your work and can refer you when they need help or can’t take something on. It really is true that a huge amount of success in consulting is based on networking and who you know, but that only works to your advantage if the people you know have had a good experience working with you. Right now, every single one of my clients is someone I’ve previously worked with or have gotten a good reference.</p>
+<p>This is where, once again, it helps to have a clearly defined, slightly unique set of skills or interests. There are tonnes of researchers and tonnes of designers, but if you’re known as a researcher who loves qualitative work and medical products, people will think of you whenever they come across that kind of project. Just be sure that you don’t define yourself too narrowly.</p>
+<p>You can also use job boards to identify potential projects or try recruiting agencies, but I haven’t found either as fruitful as having my name passed on from a previous contact. More on finding freelance UX work<a href="https://www.linkedin.com/pulse/single-best-way-get-freelance-ux-work-amanda-stockwell?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWB86zkUbaQbxQN8f0Iqf%2Bw%3D%3D" target="_blank" rel="external">here</a>.</p>
+<h3 id="Are-you-really-suited-for-all-that"><a href="#Are-you-really-suited-for-all-that" class="headerlink" title="Are you really suited for all that?"></a>Are you really suited for all that?</h3><p>Even if all the potential pros sound amazing to you and you have the skills and network to pull off freelancing, take a moment to reflect on your personality and soft skills.</p>
+<p>Are you detailed, organised, and willing to juggle many different client requests and manage your own schedule? Are you a natural risk-taker who can cope well with slow periods or lack of viable work? Are you assertive enough to negotiate terms for yourself? Do you mind working by yourself a lot?</p>
+<p>There’s a lot to think about before leaving the security of a full-time job. I love freelancing, but it’s worth carefully considering the pros and cons and your skillset and personality before taking the leap. Best wishes for whichever path you choose! </p>
+<p>Do you have experience or tips on freelancing for UX professionals? Leave a comment on the blog or in the forums! </p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/3qIJryE" target="_blank" rel="external">http://uxmastery.com/freelancing-ux-career/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>&#39;Baby Driver&#39; is an ode to iPod nostalgia</title>
+    <link href="https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/"/>
+    <id>https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.957Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg" alt=""></p>
+<p>Tristar Pictures</p>
+<p>It took a while to get going, but it’s safe to say we’re living in a golden age of digital music. Terrible compression is a thing of the past, and the rise of streaming services like Spotify and Apple Music give us instant access to almost anything we’d want to hear. But while we’ve gained so much, there’s also a sense that we’ve lost something. Sharing a playlist isn’t the same as burning a CD for your sweetheart, or going even further back, manually dubbing a mixtape. As our music has become less physical, so has our attachment to it.</p>
+<p>That’s something that struck me while watching<em>Baby Driver</em>, director Edgar Wright’s new mashup of car chases, heist films and excellent tunes. Its lead character, Baby (Ansel Elgort), is perpetually connected to a pair of headphones, experiencing life as if it’s a never-ending music video. But his earbuds aren’t attached to a smartphone; they’re plugged into one of his many iPods. He has a box full of them, each with their own colors and ornamentations. Basically, a different iPod for every mood.</p>
+<p>While they’re filled with digital files, the iPods also serve as a physical connection to all of his music. The film opens with Baby in a getaway car, cool as a cucumber while wearing white earbuds, launching into a jam out session with_Bellbottoms_by The Jon Spencer Blues Explosion. That song also serves as the backdrop for the film’s electric opening chase, where you can almost feel the iPod’s tiny mechanical hard drive (remember those?) racing alongside him.</p>
+<p>As someone who<a href="https://www.engadget.com/2015/09/17/gone-too-zune/" target="_blank" rel="external">reminisces fondly about my Zune HD</a>,<a href="https://en.wikipedia.org/wiki/Rio_Karma" target="_blank" rel="external">Rio Karma</a>,<a href="https://www.cnet.com/products/toshiba-gigabeat-s/review/" target="_blank" rel="external">Toshiba Gigabeat</a>and countless other players of varying quality, Baby’s connection to his iPods struck a chord. With older media players, there was a sense of physicality, before cloud syncing made it a cinch to keep track of all your music. If you somehow managed to hit a double whammy of bad luck and lost both your player and your computer’s hard drive, you were out of luck.</p>
+<p>These days, you can hop between phones within minutes, porting over your entire library without a sweat with iTunes, Google Play and apps like Spotify. You don’t even have to wait for your music to download; you can just stream it all from the server heavens.</p>
+<p>Baby’s iPod addiction seems fitting today, at a time when we’re all plugged into headphones most of the day. Just look up from your phone once in a while and you’ll see it: a crowd of people, each in their own world with their own private soundtracks. In<em>Baby Driver</em>, that soundtrack underscores everything, be it a chase, a shootout or even a stroll for coffee. The film also takes pains to choreograph the tunes with what’s happening on screen (there’s a shootout set to_Tequila_that’s pitch perfect). Baby also uses music as a form of therapy, due to a tinnitus condition that resulted from a childhood car accident. It’s a way to drown out the “hum in the drum,” as Kevin Spacey’s criminal mastermind, Doc, tells us.</p>
+<p><img src="https://o.aolcdn.com/images/dims?resize=980%2C640&amp;quality=100&amp;image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F898e51608e44a0022256740610336ea2%2F205434882%2FBaby%2BDriver%2B2.jpg&amp;client=cbc79c14efcebee57402&amp;signature=dc771c585960952fdbbeeb4c05d41fa744c718ed" alt=""></p>
+<p>Tristar Pictures</p>
+<p>Since the film is practically an action musical, it’s no surprise that Baby’s relationship with everyone is centered around tunes. He strikes up a conversation with his sweetheart, Debora (Lily James), by comparing the songs that feature both of their names. He forms a kinship with Jon Hamm’s bank robber as they share earbuds, reminiscing about their go-to tracks during a getaway. (Baby’s is_Queen’s_Brighton Rock, which should come as no surprise to fans of Edgar Wright’s<em>Shaun of the Dead</em>.) Meanwhile, Jamie Foxx’s Bats, who’s particularly unstable, hates the idea of listening to music during robberies. That’s a major red flag that tells us not to trust him.</p>
+<p>Baby’s connection to music extends beyond Apple’s devices: his apartment practically has wall-to-wall records. He also spends his time mixing sound clips with a unique rig,<a href="http://www.gq.com/story/kid-koala-baby-driver" target="_blank" rel="external">developed by Kid Koala</a>, which consists of a magnetic card reader, a distorted Buddhist meditation box and a pen controlled device. There’s even an E-mu Emulator II, for good measure. In true, anachronistic music nerd fashion, Baby also records all of his mixes to cassette tape.</p>
+<p>Since he’s a collector of old-school musical gear (although not many CDs, from what I could gather), Baby’s iPod obsession seems almost peculiar. But I suppose he’s just like plenty of other hip music nerds. We live in a world where the digital and analog still coexist – record sales, paradoxically, are actually on the rise, along with streaming music sales. Baby just latches onto the things he can actually touch and feel.</p>
+<p>And, after all, who wants to deal with their favorite track buffering when you’re in the middle of a life or death car chase?</p>
+<p>Source: <a href="https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/" target="_blank" rel="external">https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/</a>  </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Tristar 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AutoWiring Spring Beans Into Classes Not Managed by Spring</title>
+    <link href="https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/"/>
+    <id>https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.954Z</updated>
+    
+    <content type="html"><![CDATA[<p>In my previous article<a href="https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs" target="_blank" rel="external">JPA Auditing: Persisting Audit Logs Automatically using EntityListeners</a>, I discussed how we can use Spring Data JPA automate auditing and automatically create audit logs or history records and update CreatedBy, CreatedDate, LastModifiedBy, LastModifiedDate properties.</p>
+<p>So in order to save history records for our File entity, we were trying to autowire EntityManager inside our FileEntityListener class before we learned that we could not do that.</p>
+<p>We cannot inject any Spring-managed bean in the EntityListener because EntityListeners are instantiated by JPA before Spring injects anything into it. EntityListeners are not managed by Spring so Spring cannot inject any Spring-managed bean, e.g. EntityManager in the EntityListeners.</p>
+<p>And this is not just the case with EntityListeners, you cannot autowire any Spring-managed bean into another class (i.e. utility classes) not managed by Spring.</p>
+<p>Because this is a very common problem that can also arise with other classes, I tried to come out with a common solution that will not just solve this problem but will also help us get Spring-managed beans in other places.</p>
+<p><img src="http://img1.tuicool.com/zQV3IzI.png!web" alt=""></p>
+<p>So, have created a utility class to fetch any bean according to our requirements.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">@Service</div><div class="line">public</div><div class="line">class</div><div class="line">BeanUtil</div><div class="line">implements</div><div class="line">ApplicationContextAware</div><div class="line">&#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">static</div><div class="line"> ApplicationContext context;</div><div class="line"></div><div class="line">    </div><div class="line">@Override</div><div class="line">public</div><div class="line">void</div><div class="line">setApplicationContext</div><div class="line">(ApplicationContext applicationContext)</div><div class="line">throws</div><div class="line"> BeansException </div><div class="line">&#123;</div><div class="line">        context = applicationContext;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    </div><div class="line">public</div><div class="line">static</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line">T </div><div class="line">getBean</div><div class="line">(Class</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line"> beanClass)</div><div class="line">&#123;</div><div class="line">        </div><div class="line">return</div><div class="line"> context.getBean(beanClass);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Now, to get any bean in a class, we will just need to call BeanUtil.getBean(YourClass.class) and pass the class type to it. Then, we will get the bean.</p>
+<p>For example, in our case, we were trying to get the EntityManager bean inside FileEntityListener. We can simply do that by writing BeanUtil.getBean(EntityManager.class).</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">public</div><div class="line">class</div><div class="line"> FileEntityListener &#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">void</div><div class="line">perform</div><div class="line">(File target, Action action)</div><div class="line">&#123;</div><div class="line">        EntityManager entityManager = BeanUtil.getBean(EntityManager.</div><div class="line">class</div><div class="line">);</div><div class="line">        entityManager.persist(</div><div class="line">new</div><div class="line"> FileHistory(target, action));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>You can find the complete code in this<a href="https://github.com/njnareshjoshi/articles/tree/master/spring-data-jpa-auditing" target="_blank" rel="external">GitHub Repository, </a>and please feel free to provide your valuable feedback.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/zINby2B" target="_blank" rel="external">https://dzone.com/articles/autowiring-spring-beans-into-classes-not-managed-by-spring</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In my previous article&lt;a href=&quot;https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs&quot; target=&quot;_blank&quot; rel=&quot;external
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>After Nonstop Games closed, its employees founded Mighty Bear Games; today it raised US$775K</title>
+    <link href="https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/"/>
+    <id>https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.951Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Mighty-Bear-Games-will-focus-on-developing-mobile-app-games"><a href="#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games" class="headerlink" title="Mighty Bear Games will focus on developing mobile app games"></a>Mighty Bear Games will focus on developing mobile app games</h2><p><img src="http://img0.tuicool.com/y2uMrqj.png!web" alt=""></p>
+<p>Nonstop Games was a Singapore-based mobile games studio run by Finnish developers. Their hit game was strategy title Heroes of Honor.</p>
+<p>In 2014, it was acquired by Candy Crush maker King forabout US$16 million. Two years later, Nonstop Games shuttered.</p>
+<p>But the journey for its employees did not end there. They pressed on, scouring the game development landscape for new compatriots to join their next adventure. Along the way, they recruited talents from renowned gaming studios such as Ubisoft, EA and LucasArts.</p>
+<p>With renewed vigour in their hearts and a hardy band of developers to boot, the Nonstop Games alumni roared back with a spanking new enterprise.</p>
+<p>They called it Mighty Bear Games.</p>
+<p>And today, Mighty Bear raised US$775,000 in a round led by Global Founders Capital, the venture capital arm of Rocket Internet.</p>
+<p>Mighty Bear will use the newly-raised financing to develop its new mobile MMORPG (Massive Multiplayer Online Roleplaying Game). Details of the game have not been disclosed.</p>
+<p>It is interesting to note that despite receiving offers from the US and Europe — two markets with long history of producing top rated games — the Nonstop Games alumni chose to, once again, base their gaming studio in Singapore.</p>
+<p>“One of the interesting developments we’ve seen is that Singapore-based studios are starting to gain traction with their own IP,” says co-founder and CEO Simon Davis, in an interview with<strong>e27</strong>.</p>
+<p>“We see a trend developing where game development studios in Singapore are now being founded by guys like us with 5, or even 10+ years experience working in big AAA studios,” he adds. “This wouldn’t have been possible if the government hadn’t made such an effort bringing in top multi-national studios over the past few years — many of us on the team, including myself, directly benefited from that.”</p>
+<h2 id="Keeping-an-eye-on-gaming-trends"><a href="#Keeping-an-eye-on-gaming-trends" class="headerlink" title="Keeping an eye on gaming trends"></a><strong>Keeping an eye on gaming trends</strong></h2><p>While Davis says Mighty Bear is platform-agnostic, it will still be focussing on making mobile games. But he does not rule out building games for consoles or desktops in the future.</p>
+<p>The studio will also target the multiplayer gaming market.</p>
+<p>Also Read:<a href="https://e27.co/curious-south-korea-gaming-culture-closer-look-popularity-esports-reveals-trends-20170525/" target="_blank" rel="external">Curious about the South Korea gaming culture? A closer look at the popularity of esports reveals some trends</a></p>
+<p>“We love playing multiplayer games, and we feel there’s a huge gap in the market for online multiplayer games which are not completely skewed toward your typical hardcore gamer,” says Davis.</p>
+<p>“This is an area that’s really interesting, because the challenge is to create games which have a competitive element, but are still accessible to people who may not consider themselves hardcore gamers.”</p>
+<p>The Mighty Bear team may eat and breathe games, but they are not just button-mashing geeks; as a creative force, they also take inspiration from all other forms of art (yes, gaming is an art too).</p>
+<p>“I studied music so that makes approaching the creative process a bit different. We also read a lot which is a great way to get new ideas and approaches. Finally, we watch a lot of movies together – movie nights and ‘Popcorn Fridays’ are two Mighty Bear traditions,” says Davis.</p>
+<p>“Other than that we’re all hardcore gamers. We have a weekly ‘gaming club’ where we all sit down and compare notes on a pre-agreed game and discuss what we liked and what we didn’t about it.”</p>
+<p>So what are Davis’s all-time favourite games?</p>
+<p>“I’d say that Super Mario 64 was the first game that really blew me away, Street Fighter II was the first game that got me hooked on multiplayer. For scale and awe it might be The Legend of Zelda: The Breath of the Wild or Shadow of the Colossus. Candy Crush has the perfect puzzle combination of skill, luck, and amazing player feedback, and lately. I’ve been absolutely loving Brawl Stars on mobile.”</p>
+<p>The mobile app market is a lucrative industry, it is projected to hit US$189 billion with mobile gaming accounting for more than<a href="https://venturebeat.com/2016/11/02/mobile-app-market-to-grow-270-to-189-billion-by-2020-with-games-accounting-for-55/" target="_blank" rel="external">half the share.</a></p>
+<p>In Singapore’s backyard, China’s mobile games market collected<a href="http://www.gamesindustry.biz/articles/2016-05-03-chinese-mobile-market-is-now-the-most-valuable-in-the-world" target="_blank" rel="external">US$7 billion in revenue in 2015</a>. This figure is set to continue to grow exponentially as mobile usage increases and more games are developed.</p>
+<p>If Mighty Bear can claw out its own niche in this increasingly saturated space, the sweet dew of revenue will surely come forth easily.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/eERRZ3R" target="_blank" rel="external">http://e27.co/nonstop-games-closed-employees-founded-mighty-bear-games-today-raised-us775k-20170704/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot;&gt;&lt;a href=&quot;#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot; 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Top Smartphones Under Php20k (Mid-2017)</title>
     <link href="https://gmagon.com/blog/2017/07/05/top-smartphones-under-php20k-mid-2017/"/>
     <id>https://gmagon.com/blog/2017/07/05/top-smartphones-under-php20k-mid-2017/</id>
@@ -1244,160 +1398,6 @@ $_
     <summary type="html">
     
       &lt;p&gt;Over the last two days, we’ve shared our lists of the top smartphones of mid-2017 with price ranges of above Php30k and above Php20k. Tod
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>&#39;Baby Driver&#39; is an ode to iPod nostalgia</title>
-    <link href="https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/"/>
-    <id>https://gmagon.com/blog/2017/07/05/baby-driver-is-an-ode-to-ipod-nostalgia/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.957Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg" alt=""></p>
-<p>Tristar Pictures</p>
-<p>It took a while to get going, but it’s safe to say we’re living in a golden age of digital music. Terrible compression is a thing of the past, and the rise of streaming services like Spotify and Apple Music give us instant access to almost anything we’d want to hear. But while we’ve gained so much, there’s also a sense that we’ve lost something. Sharing a playlist isn’t the same as burning a CD for your sweetheart, or going even further back, manually dubbing a mixtape. As our music has become less physical, so has our attachment to it.</p>
-<p>That’s something that struck me while watching<em>Baby Driver</em>, director Edgar Wright’s new mashup of car chases, heist films and excellent tunes. Its lead character, Baby (Ansel Elgort), is perpetually connected to a pair of headphones, experiencing life as if it’s a never-ending music video. But his earbuds aren’t attached to a smartphone; they’re plugged into one of his many iPods. He has a box full of them, each with their own colors and ornamentations. Basically, a different iPod for every mood.</p>
-<p>While they’re filled with digital files, the iPods also serve as a physical connection to all of his music. The film opens with Baby in a getaway car, cool as a cucumber while wearing white earbuds, launching into a jam out session with_Bellbottoms_by The Jon Spencer Blues Explosion. That song also serves as the backdrop for the film’s electric opening chase, where you can almost feel the iPod’s tiny mechanical hard drive (remember those?) racing alongside him.</p>
-<p>As someone who<a href="https://www.engadget.com/2015/09/17/gone-too-zune/" target="_blank" rel="external">reminisces fondly about my Zune HD</a>,<a href="https://en.wikipedia.org/wiki/Rio_Karma" target="_blank" rel="external">Rio Karma</a>,<a href="https://www.cnet.com/products/toshiba-gigabeat-s/review/" target="_blank" rel="external">Toshiba Gigabeat</a>and countless other players of varying quality, Baby’s connection to his iPods struck a chord. With older media players, there was a sense of physicality, before cloud syncing made it a cinch to keep track of all your music. If you somehow managed to hit a double whammy of bad luck and lost both your player and your computer’s hard drive, you were out of luck.</p>
-<p>These days, you can hop between phones within minutes, porting over your entire library without a sweat with iTunes, Google Play and apps like Spotify. You don’t even have to wait for your music to download; you can just stream it all from the server heavens.</p>
-<p>Baby’s iPod addiction seems fitting today, at a time when we’re all plugged into headphones most of the day. Just look up from your phone once in a while and you’ll see it: a crowd of people, each in their own world with their own private soundtracks. In<em>Baby Driver</em>, that soundtrack underscores everything, be it a chase, a shootout or even a stroll for coffee. The film also takes pains to choreograph the tunes with what’s happening on screen (there’s a shootout set to_Tequila_that’s pitch perfect). Baby also uses music as a form of therapy, due to a tinnitus condition that resulted from a childhood car accident. It’s a way to drown out the “hum in the drum,” as Kevin Spacey’s criminal mastermind, Doc, tells us.</p>
-<p><img src="https://o.aolcdn.com/images/dims?resize=980%2C640&amp;quality=100&amp;image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F898e51608e44a0022256740610336ea2%2F205434882%2FBaby%2BDriver%2B2.jpg&amp;client=cbc79c14efcebee57402&amp;signature=dc771c585960952fdbbeeb4c05d41fa744c718ed" alt=""></p>
-<p>Tristar Pictures</p>
-<p>Since the film is practically an action musical, it’s no surprise that Baby’s relationship with everyone is centered around tunes. He strikes up a conversation with his sweetheart, Debora (Lily James), by comparing the songs that feature both of their names. He forms a kinship with Jon Hamm’s bank robber as they share earbuds, reminiscing about their go-to tracks during a getaway. (Baby’s is_Queen’s_Brighton Rock, which should come as no surprise to fans of Edgar Wright’s<em>Shaun of the Dead</em>.) Meanwhile, Jamie Foxx’s Bats, who’s particularly unstable, hates the idea of listening to music during robberies. That’s a major red flag that tells us not to trust him.</p>
-<p>Baby’s connection to music extends beyond Apple’s devices: his apartment practically has wall-to-wall records. He also spends his time mixing sound clips with a unique rig,<a href="http://www.gq.com/story/kid-koala-baby-driver" target="_blank" rel="external">developed by Kid Koala</a>, which consists of a magnetic card reader, a distorted Buddhist meditation box and a pen controlled device. There’s even an E-mu Emulator II, for good measure. In true, anachronistic music nerd fashion, Baby also records all of his mixes to cassette tape.</p>
-<p>Since he’s a collector of old-school musical gear (although not many CDs, from what I could gather), Baby’s iPod obsession seems almost peculiar. But I suppose he’s just like plenty of other hip music nerds. We live in a world where the digital and analog still coexist – record sales, paradoxically, are actually on the rise, along with streaming music sales. Baby just latches onto the things he can actually touch and feel.</p>
-<p>And, after all, who wants to deal with their favorite track buffering when you’re in the middle of a life or death car chase?</p>
-<p>Source: <a href="https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/" target="_blank" rel="external">https://www.engadget.com/2017/07/03/baby-driver-ipod-nostalgia/</a>  </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://s.aolcdn.com/hss/storage/midas/91351aa33a3d30a39ff662e8b8b68e9/205442176/Baby%2BDriver%2B1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Tristar 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>AutoWiring Spring Beans Into Classes Not Managed by Spring</title>
-    <link href="https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/"/>
-    <id>https://gmagon.com/blog/2017/07/05/autowiring-spring-beans-into-classes-not-managed-by-spring/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.954Z</updated>
-    
-    <content type="html"><![CDATA[<p>In my previous article<a href="https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs" target="_blank" rel="external">JPA Auditing: Persisting Audit Logs Automatically using EntityListeners</a>, I discussed how we can use Spring Data JPA automate auditing and automatically create audit logs or history records and update CreatedBy, CreatedDate, LastModifiedBy, LastModifiedDate properties.</p>
-<p>So in order to save history records for our File entity, we were trying to autowire EntityManager inside our FileEntityListener class before we learned that we could not do that.</p>
-<p>We cannot inject any Spring-managed bean in the EntityListener because EntityListeners are instantiated by JPA before Spring injects anything into it. EntityListeners are not managed by Spring so Spring cannot inject any Spring-managed bean, e.g. EntityManager in the EntityListeners.</p>
-<p>And this is not just the case with EntityListeners, you cannot autowire any Spring-managed bean into another class (i.e. utility classes) not managed by Spring.</p>
-<p>Because this is a very common problem that can also arise with other classes, I tried to come out with a common solution that will not just solve this problem but will also help us get Spring-managed beans in other places.</p>
-<p><img src="http://img1.tuicool.com/zQV3IzI.png!web" alt=""></p>
-<p>So, have created a utility class to fetch any bean according to our requirements.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">@Service</div><div class="line">public</div><div class="line">class</div><div class="line">BeanUtil</div><div class="line">implements</div><div class="line">ApplicationContextAware</div><div class="line">&#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">static</div><div class="line"> ApplicationContext context;</div><div class="line"></div><div class="line">    </div><div class="line">@Override</div><div class="line">public</div><div class="line">void</div><div class="line">setApplicationContext</div><div class="line">(ApplicationContext applicationContext)</div><div class="line">throws</div><div class="line"> BeansException </div><div class="line">&#123;</div><div class="line">        context = applicationContext;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    </div><div class="line">public</div><div class="line">static</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line">T </div><div class="line">getBean</div><div class="line">(Class</div><div class="line">&lt;</div><div class="line">T</div><div class="line">&gt;</div><div class="line"> beanClass)</div><div class="line">&#123;</div><div class="line">        </div><div class="line">return</div><div class="line"> context.getBean(beanClass);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Now, to get any bean in a class, we will just need to call BeanUtil.getBean(YourClass.class) and pass the class type to it. Then, we will get the bean.</p>
-<p>For example, in our case, we were trying to get the EntityManager bean inside FileEntityListener. We can simply do that by writing BeanUtil.getBean(EntityManager.class).</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">public</div><div class="line">class</div><div class="line"> FileEntityListener &#123;</div><div class="line"></div><div class="line">    </div><div class="line">private</div><div class="line">void</div><div class="line">perform</div><div class="line">(File target, Action action)</div><div class="line">&#123;</div><div class="line">        EntityManager entityManager = BeanUtil.getBean(EntityManager.</div><div class="line">class</div><div class="line">);</div><div class="line">        entityManager.persist(</div><div class="line">new</div><div class="line"> FileHistory(target, action));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>You can find the complete code in this<a href="https://github.com/njnareshjoshi/articles/tree/master/spring-data-jpa-auditing" target="_blank" rel="external">GitHub Repository, </a>and please feel free to provide your valuable feedback.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/zINby2B" target="_blank" rel="external">https://dzone.com/articles/autowiring-spring-beans-into-classes-not-managed-by-spring</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;In my previous article&lt;a href=&quot;https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs&quot; target=&quot;_blank&quot; rel=&quot;external
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>After Nonstop Games closed, its employees founded Mighty Bear Games; today it raised US$775K</title>
-    <link href="https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/"/>
-    <id>https://gmagon.com/blog/2017/07/05/after-nonstop-games-closed-its-employees-founded-mighty-bear-games-today-it-raised-us775k/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.951Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Mighty-Bear-Games-will-focus-on-developing-mobile-app-games"><a href="#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games" class="headerlink" title="Mighty Bear Games will focus on developing mobile app games"></a>Mighty Bear Games will focus on developing mobile app games</h2><p><img src="http://img0.tuicool.com/y2uMrqj.png!web" alt=""></p>
-<p>Nonstop Games was a Singapore-based mobile games studio run by Finnish developers. Their hit game was strategy title Heroes of Honor.</p>
-<p>In 2014, it was acquired by Candy Crush maker King forabout US$16 million. Two years later, Nonstop Games shuttered.</p>
-<p>But the journey for its employees did not end there. They pressed on, scouring the game development landscape for new compatriots to join their next adventure. Along the way, they recruited talents from renowned gaming studios such as Ubisoft, EA and LucasArts.</p>
-<p>With renewed vigour in their hearts and a hardy band of developers to boot, the Nonstop Games alumni roared back with a spanking new enterprise.</p>
-<p>They called it Mighty Bear Games.</p>
-<p>And today, Mighty Bear raised US$775,000 in a round led by Global Founders Capital, the venture capital arm of Rocket Internet.</p>
-<p>Mighty Bear will use the newly-raised financing to develop its new mobile MMORPG (Massive Multiplayer Online Roleplaying Game). Details of the game have not been disclosed.</p>
-<p>It is interesting to note that despite receiving offers from the US and Europe — two markets with long history of producing top rated games — the Nonstop Games alumni chose to, once again, base their gaming studio in Singapore.</p>
-<p>“One of the interesting developments we’ve seen is that Singapore-based studios are starting to gain traction with their own IP,” says co-founder and CEO Simon Davis, in an interview with<strong>e27</strong>.</p>
-<p>“We see a trend developing where game development studios in Singapore are now being founded by guys like us with 5, or even 10+ years experience working in big AAA studios,” he adds. “This wouldn’t have been possible if the government hadn’t made such an effort bringing in top multi-national studios over the past few years — many of us on the team, including myself, directly benefited from that.”</p>
-<h2 id="Keeping-an-eye-on-gaming-trends"><a href="#Keeping-an-eye-on-gaming-trends" class="headerlink" title="Keeping an eye on gaming trends"></a><strong>Keeping an eye on gaming trends</strong></h2><p>While Davis says Mighty Bear is platform-agnostic, it will still be focussing on making mobile games. But he does not rule out building games for consoles or desktops in the future.</p>
-<p>The studio will also target the multiplayer gaming market.</p>
-<p>Also Read:<a href="https://e27.co/curious-south-korea-gaming-culture-closer-look-popularity-esports-reveals-trends-20170525/" target="_blank" rel="external">Curious about the South Korea gaming culture? A closer look at the popularity of esports reveals some trends</a></p>
-<p>“We love playing multiplayer games, and we feel there’s a huge gap in the market for online multiplayer games which are not completely skewed toward your typical hardcore gamer,” says Davis.</p>
-<p>“This is an area that’s really interesting, because the challenge is to create games which have a competitive element, but are still accessible to people who may not consider themselves hardcore gamers.”</p>
-<p>The Mighty Bear team may eat and breathe games, but they are not just button-mashing geeks; as a creative force, they also take inspiration from all other forms of art (yes, gaming is an art too).</p>
-<p>“I studied music so that makes approaching the creative process a bit different. We also read a lot which is a great way to get new ideas and approaches. Finally, we watch a lot of movies together – movie nights and ‘Popcorn Fridays’ are two Mighty Bear traditions,” says Davis.</p>
-<p>“Other than that we’re all hardcore gamers. We have a weekly ‘gaming club’ where we all sit down and compare notes on a pre-agreed game and discuss what we liked and what we didn’t about it.”</p>
-<p>So what are Davis’s all-time favourite games?</p>
-<p>“I’d say that Super Mario 64 was the first game that really blew me away, Street Fighter II was the first game that got me hooked on multiplayer. For scale and awe it might be The Legend of Zelda: The Breath of the Wild or Shadow of the Colossus. Candy Crush has the perfect puzzle combination of skill, luck, and amazing player feedback, and lately. I’ve been absolutely loving Brawl Stars on mobile.”</p>
-<p>The mobile app market is a lucrative industry, it is projected to hit US$189 billion with mobile gaming accounting for more than<a href="https://venturebeat.com/2016/11/02/mobile-app-market-to-grow-270-to-189-billion-by-2020-with-games-accounting-for-55/" target="_blank" rel="external">half the share.</a></p>
-<p>In Singapore’s backyard, China’s mobile games market collected<a href="http://www.gamesindustry.biz/articles/2016-05-03-chinese-mobile-market-is-now-the-most-valuable-in-the-world" target="_blank" rel="external">US$7 billion in revenue in 2015</a>. This figure is set to continue to grow exponentially as mobile usage increases and more games are developed.</p>
-<p>If Mighty Bear can claw out its own niche in this increasingly saturated space, the sweet dew of revenue will surely come forth easily.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/eERRZ3R" target="_blank" rel="external">http://e27.co/nonstop-games-closed-employees-founded-mighty-bear-games-today-raised-us775k-20170704/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot;&gt;&lt;a href=&quot;#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot; 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Is Freelancing Your Next UX Career Move?</title>
-    <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
-    <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.960Z</updated>
-    
-    <content type="html"><![CDATA[<p>I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time again, abandoning the 9-5 life and making my main source of employment a series of projects from different clients.</p>
-<p>Since then, I’ve had countless conversations with other UX professionals who are considering moving to freelancing as their next career step.</p>
-<p>They usually say they’re looking for freedom, more money, the ability to work on more interesting problems or learn new things – or even just the chance to work in their pyjamas regularly. Since I started consulting, I’ve expanded my focus into more strategy and product work across a wide variety of industries, and have met all kinds of interesting, smart colleagues.</p>
-<p>While I wouldn’t change a thing about my situation, I’m always cautious about encouraging others to jump into the freelance world, because it’s definitely not for everyone. Here are some things I’ve learned along the way to consider before you quit your day job.</p>
-<h3 id="Freelancing-pros-and-cons"><a href="#Freelancing-pros-and-cons" class="headerlink" title="Freelancing pros and cons"></a>Freelancing pros and cons</h3><p>Yes, it’s true that I spend most days in yoga pants, travel frequently, and work on some pretty cool projects. But consulting isn’t all sunshine and rainbows. There are many things that are great about consulting, some things that aren’t so great, and some things that just depend on the day.</p>
-<p><img src="http://img2.tuicool.com/mqEZzeZ.png!web" alt=""></p>
-<p>Freelancing pro: setting up your own home office. Photo by<a href="http://unsplash.com/photos/RcdV8rnXSeE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Vadim Sherbakov</a>on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Unsplash</a>.</p>
-<p>Schedule: One of the things I love most about consulting is being in total control of my schedule. There’s no expectation that I’m at my desk from 9 am to 5 pm. Sometimes I get in a zone and finish an entire report in one very long day and take the next morning off to let ideas percolate. Of course I have meetings and deadlines, but I can usually finagle things to work well for my clients and myself.</p>
-<p>On the flip side, juggling your schedule can be difficult. I’m quite disciplined about getting things done, but I’ve never quite figured out a way to create a consistent schedule. Sometimes I’ve had priority work on different projects collide at the same time or I’ve said yes to a few too many things and ended up working crazy hours to get everything done. Such is a consultant’s life.</p>
-<p>Money: I absolutely find that I make more money freelancing than when I worked in-house, even in leadership roles. I’m still experimenting with how I bill, but I tend to use value-based pricing for entire projects rather than charge hourly. I often ask clients to pay me 50% of the total upfront and the rest upon project completion, which can make managing money tricky, especially when you’re used to a consistent paycheck.</p>
-<p>You also have to know that you’ll never be able to collect money as though you’re billing 40 hours a week, every week. You have to account for supplies, tool costs, benefits, and set aside time for administrative tasks like sending invoices, business development, and, of course, downtime. No one gives you sick time or vacation days when you freelance.</p>
-<p>Inevitably, I’ve also run into time periods where I don’t have anything billable booked. An open schedule can be scary, so I use this time to do things like reach out to colleagues or potential clients, write articles, research new tools, try to learn something new, or catch up on administrative work. One of the benefits of this downtime is the space to learn, exploring the vast array of available online courses or just experimenting with a new method or tool.</p>
-<p>Work environment: I mostly work from home, which means I wear what I like, can pet my dog throughout the day, don’t contend with traffic, and for better or worse, have all day access to my kitchen. All great, but it also means that sometimes the only person I see in the flesh each day is my husband.</p>
-<p>I have to make an extra concerted effort to hang out with colleagues, so I’ve become more active in my local meetups and groups (shout out to<a href="https://www.meetup.com/Ladies-that-UX-Durham/" target="_blank" rel="external">Ladies that UX Durham</a>– love yall!) I also found I need to be more social during the week, even if that means going to a fitness class instead of biking solo or talking on the phone while I shop.</p>
-<h3 id="What-services-will-you-provide"><a href="#What-services-will-you-provide" class="headerlink" title="What services will you provide?"></a>What services will you provide?</h3><p>I’ve been focused on research and strategy for most of my career. I won’t rehash the “<a href="http://community.uxmastery.com/t/forced-to-become-a-unicorn-has-that-happened-to-you/783/11" target="_blank" rel="external">Should I be a unicorn</a>?” or “<a href="http://uxmastery.com/ux-designers-do-not-need-to-code/" target="_blank" rel="external">Do designers need to code</a>?” debates, but I’ll admit that when I first starting freelancing, I was worried I wasn’t going to be able to find enough work without doing visual work. Turns out, I was totally wrong. Phew!</p>
-<p><img src="http://img1.tuicool.com/BzMjMbA.jpg!web" alt=""></p>
-<p>Don’t worry, you don’t need to be a unicorn to be a freelance UXer.</p>
-<p>You absolutely don’t need to be a unicorn or try to tackle projects that aren’t your speciality. But it helps to have a broad set of experience and at least one area of deep expertise you can market and use to define your services. You can match what you’re good at and what you like to define the kind of projects you target, the projects you’re OK with taking, and what you will certainly turn down.</p>
-<p>Clearly<a href="http://uxmastery.com/build-your-ux-personal-brand/" target="_blank" rel="external">defining your services and interests</a>are important because it tells other people what to turn to you for. if I know someone has great interaction design skills and tonnes of experience with financial products, I’ll suggest them anytime I see a project like that. If someone tells me they’ll do anything that comes their way, they probably won’t come to mind for any projects I know about.</p>
-<h3 id="How-will-you-find-clients"><a href="#How-will-you-find-clients" class="headerlink" title="How will you find clients?"></a>How will you find clients?</h3><p>This is a question that I get asked time after time, and the answer is incredibly simple in concept but hard in practice:<strong>treat your clients and colleagues as you would users and provide them with a good experience working with you</strong>.</p>
-<p>More specifically, you have to do good work and other people have to be willing to talk about it. This can either mean that your clients are pleased with your work and will re-hire you or tell other potential clients, or that your peers in UX like your work and can refer you when they need help or can’t take something on. It really is true that a huge amount of success in consulting is based on networking and who you know, but that only works to your advantage if the people you know have had a good experience working with you. Right now, every single one of my clients is someone I’ve previously worked with or have gotten a good reference.</p>
-<p>This is where, once again, it helps to have a clearly defined, slightly unique set of skills or interests. There are tonnes of researchers and tonnes of designers, but if you’re known as a researcher who loves qualitative work and medical products, people will think of you whenever they come across that kind of project. Just be sure that you don’t define yourself too narrowly.</p>
-<p>You can also use job boards to identify potential projects or try recruiting agencies, but I haven’t found either as fruitful as having my name passed on from a previous contact. More on finding freelance UX work<a href="https://www.linkedin.com/pulse/single-best-way-get-freelance-ux-work-amanda-stockwell?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWB86zkUbaQbxQN8f0Iqf%2Bw%3D%3D" target="_blank" rel="external">here</a>.</p>
-<h3 id="Are-you-really-suited-for-all-that"><a href="#Are-you-really-suited-for-all-that" class="headerlink" title="Are you really suited for all that?"></a>Are you really suited for all that?</h3><p>Even if all the potential pros sound amazing to you and you have the skills and network to pull off freelancing, take a moment to reflect on your personality and soft skills.</p>
-<p>Are you detailed, organised, and willing to juggle many different client requests and manage your own schedule? Are you a natural risk-taker who can cope well with slow periods or lack of viable work? Are you assertive enough to negotiate terms for yourself? Do you mind working by yourself a lot?</p>
-<p>There’s a lot to think about before leaving the security of a full-time job. I love freelancing, but it’s worth carefully considering the pros and cons and your skillset and personality before taking the leap. Best wishes for whichever path you choose! </p>
-<p>Do you have experience or tips on freelancing for UX professionals? Leave a comment on the blog or in the forums! </p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/3qIJryE" target="_blank" rel="external">http://uxmastery.com/freelancing-ux-career/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
     
     </summary>
     

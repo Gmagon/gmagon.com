@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gmagon.com/products/store/xls2csv/download.html</loc>
+    
+    <lastmod>2017-07-18T02:43:49.248Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/xls2csv/changelog.html</loc>
+    
+    <lastmod>2017-07-18T02:43:38.531Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/products/store/xls2csv/docs.html</loc>
     
     <lastmod>2017-07-18T02:37:13.715Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>https://gmagon.com/products/store/xls2csv/index.html</loc>
     
     <lastmod>2017-07-18T01:14:12.312Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/xls2csv/download.html</loc>
-    
-    <lastmod>2017-07-17T09:47:51.078Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/xls2csv/changelog.html</loc>
-    
-    <lastmod>2017-07-17T09:47:28.858Z</lastmod>
     
   </url>
   
@@ -870,7 +870,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/gmagon_gif/data/news.json</loc>
+    <loc>https://gmagon.com/products/store/apngtogifconverter/data/news.json</loc>
     
     <lastmod>2017-06-22T09:19:05.087Z</lastmod>
     
@@ -884,14 +884,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/colorpicker2/data/news.json</loc>
+    <loc>https://gmagon.com/products/store/gmagon_gif/data/news.json</loc>
     
     <lastmod>2017-06-22T09:19:05.087Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/apngtogifconverter/data/news.json</loc>
+    <loc>https://gmagon.com/products/store/colorpicker2/data/news.json</loc>
     
     <lastmod>2017-06-22T09:19:05.087Z</lastmod>
     
@@ -940,14 +940,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/</loc>
+    <loc>https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</loc>
     
     <lastmod>2017-06-21T08:45:40.918Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</loc>
+    <loc>https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/</loc>
     
     <lastmod>2017-06-21T08:45:40.918Z</lastmod>
     
@@ -1143,6 +1143,13 @@
   </url>
   
   <url>
+    <loc>https://gmagon.com/blog/2017/06/14/web-design-usability-tips-for-billing-forms/</loc>
+    
+    <lastmod>2017-06-14T03:43:53.575Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/blog/2017/06/14/the-maya-principle-design-for-the-future-but-balance-it-with-your-users-present/</loc>
     
     <lastmod>2017-06-14T03:43:53.575Z</lastmod>
@@ -1150,9 +1157,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/web-design-usability-tips-for-billing-forms/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/</loc>
     
-    <lastmod>2017-06-14T03:43:53.575Z</lastmod>
+    <lastmod>2017-06-14T03:43:53.556Z</lastmod>
     
   </url>
   
@@ -1165,13 +1172,6 @@
   
   <url>
     <loc>https://gmagon.com/blog/2017/06/14/mobile-conversion-rates-how-does-your-site-compare/</loc>
-    
-    <lastmod>2017-06-14T03:43:53.556Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/</loc>
     
     <lastmod>2017-06-14T03:43:53.556Z</lastmod>
     
@@ -1416,7 +1416,28 @@
   </url>
   
   <url>
+    <loc>https://gmagon.com/products/store/colorpicker2/roadmap.html</loc>
+    
+    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/apngtogifconverter/roadmap.html</loc>
+    
+    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/products/store/xls2csv/roadmap.html</loc>
+    
+    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/easyping/roadmap.html</loc>
     
     <lastmod>2017-05-26T07:04:27.281Z</lastmod>
     
@@ -1431,27 +1452,6 @@
   
   <url>
     <loc>https://gmagon.com/products/store/gmagon_gif/roadmap.html</loc>
-    
-    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/easyping/roadmap.html</loc>
-    
-    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/colorpicker2/roadmap.html</loc>
-    
-    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/apngtogifconverter/roadmap.html</loc>
     
     <lastmod>2017-05-26T07:04:27.281Z</lastmod>
     

@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gmagon.com/products/store/trytoaac/docs.html</loc>
+    
+    <lastmod>2017-07-19T01:21:23.489Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/products/store/trytoaac/index.html</loc>
     
-    <lastmod>2017-07-18T10:06:15.931Z</lastmod>
+    <lastmod>2017-07-19T01:19:42.923Z</lastmod>
     
   </url>
   
@@ -124,13 +131,6 @@
     <loc>https://gmagon.com/products/store/xls2csv/index.html</loc>
     
     <lastmod>2017-07-18T01:14:12.312Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/trytoaac/docs.html</loc>
-    
-    <lastmod>2017-07-17T09:31:46.538Z</lastmod>
     
   </url>
   
@@ -863,13 +863,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/gmagon_gif/data/news.json</loc>
-    
-    <lastmod>2017-06-22T09:19:05.087Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/products/store/xls2csv/data/news.json</loc>
     
     <lastmod>2017-06-22T09:19:05.087Z</lastmod>
@@ -877,7 +870,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/apngtogifconverter/data/news.json</loc>
+    <loc>https://gmagon.com/products/store/gmagon_gif/data/news.json</loc>
     
     <lastmod>2017-06-22T09:19:05.087Z</lastmod>
     
@@ -892,6 +885,13 @@
   
   <url>
     <loc>https://gmagon.com/products/store/colorpicker2/data/news.json</loc>
+    
+    <lastmod>2017-06-22T09:19:05.087Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/apngtogifconverter/data/news.json</loc>
     
     <lastmod>2017-06-22T09:19:05.087Z</lastmod>
     
@@ -940,14 +940,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</loc>
+    <loc>https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/</loc>
     
     <lastmod>2017-06-21T08:45:40.918Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/21/apple-tries-to-clamp-down-on-leaks-with-mixed-success/</loc>
+    <loc>https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</loc>
     
     <lastmod>2017-06-21T08:45:40.918Z</lastmod>
     
@@ -1164,14 +1164,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/</loc>
     
     <lastmod>2017-06-14T03:43:53.556Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</loc>
     
     <lastmod>2017-06-14T03:43:53.556Z</lastmod>
     
@@ -1430,20 +1430,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/easyping/roadmap.html</loc>
-    
-    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/apngtogifconverter/roadmap.html</loc>
-    
-    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/products/store/gmagon_gif/roadmap.html</loc>
     
     <lastmod>2017-05-26T07:04:27.281Z</lastmod>
@@ -1451,7 +1437,21 @@
   </url>
   
   <url>
+    <loc>https://gmagon.com/products/store/easyping/roadmap.html</loc>
+    
+    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/products/store/colorpicker2/roadmap.html</loc>
+    
+    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/apngtogifconverter/roadmap.html</loc>
     
     <lastmod>2017-05-26T07:04:27.281Z</lastmod>
     

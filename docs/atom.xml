@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-07-10T04:16:54.599Z</updated>
+  <updated>2017-07-10T04:16:54.602Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -14,29 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>News Outlets to Seek Bargaining Rights Against Google and Facebook</title>
-    <link href="https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/"/>
-    <id>https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/</id>
-    <published>2017-07-10T00:00:00.000Z</published>
-    <updated>2017-07-10T04:16:54.599Z</updated>
-    
-    <content type="html"><![CDATA[<p>Google andFacebook continue to<a href="https://www.ft.com/content/30c81d12-08c8-11e7-97d1-5e720a26771b" target="_blank" rel="external">gobble up</a>the digital advertising market,<a href="https://www.nytimes.com/2017/05/07/business/media/ad-buyers-have-say-in-survival-of-news.html?rref=collection%2Fbyline%2Fjim-rutenberg&amp;action=click&amp;contentCollection=undefined&amp;region=stream&amp;module=stream_unit&amp;version=latest&amp;contentPlacement=6&amp;pgtype=collection" target="_blank" rel="external">siphoning away revenue</a>that once paid for the quality journalism that Google and Facebook now offer for free.</p>
-<p>They are gaining increasing control over digital distribution, so newspapers that once delivered their journalism with their own trucks increasingly have to rely on these big online platforms to get their articles in front of people, fighting for attention alongsidefake news, websites that lift their content, and cat videos.</p>
-<p>And for all of Google’s and Facebook’s<a href="http://fortune.com/2017/02/22/tech-funding-for-journalism/" target="_blank" rel="external">efforts to support journalism</a>by helping news organizations find new revenue streams — and survive in the new world that these sites helped create — they are, at the end of the day, the royals of the court. Quality news providers are the supplicants and the serfs.</p>
-<p>It’s an uneasy alliance that has publishers chafing at the<a href="https://digiday.com/media/facebook-faces-increased-publisher-resistance-instant-articles/?utm_source=rundown&amp;utm_medium=email&amp;utm_content=1704018&amp;utm_campaign=digidaydis" target="_blank" rel="external">returns they receive</a>from Google and Facebook, which rely on the free flow of premium news and information.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/mAjuM3" target="_blank" rel="external">https://www.nytimes.com/2017/07/09/business/media/google-facebook-news-media-alliance.html</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Google andFacebook continue to&lt;a href=&quot;https://www.ft.com/content/30c81d12-08c8-11e7-97d1-5e720a26771b&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;go
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>When not to use deep learning</title>
@@ -71,62 +48,22 @@
   </entry>
   
   <entry>
-    <title>Make a Perfect Triangle Path in Illustrator</title>
-    <link href="https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/"/>
-    <id>https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/</id>
+    <title>News Outlets to Seek Bargaining Rights Against Google and Facebook</title>
+    <link href="https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/"/>
+    <id>https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/</id>
     <published>2017-07-10T00:00:00.000Z</published>
-    <updated>2017-07-10T04:16:54.596Z</updated>
+    <updated>2017-07-10T04:16:54.599Z</updated>
     
-    <content type="html"><![CDATA[<p>There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first started using Illustrator and really tried to get to know the program in depth. This was one of the things that frustrated me regularly (making a perfect, equilateral triangle) until I finally figured out a simple solution. If you use Adobe Illustrator on a regular basis, chances are you might need to create an equilateral triangle every once in a while. This may seem like a simple task, and it is, but not as easy as it should be. I’ll show you how to easily make a perfect triangle path in Illustrator, and hopefully, you will have one less vector headache to deal with in the future.</p>
-<p><img src="http://img1.tuicool.com/a67fAvB.gif" alt=""></p>
-<h2 id="1-Select-the-Star-Tool"><a href="#1-Select-the-Star-Tool" class="headerlink" title="1. Select the Star Tool"></a>1. Select the Star Tool</h2><p>Yes, believe it or not, the Star Tool is what you will use to make a triangle. I know it sounds weird, but go with me here.</p>
-<p><img src="http://img0.tuicool.com/vyqM7zn.gif" alt=""></p>
-<h2 id="2-Click-Once-on-the-Artboard"><a href="#2-Click-Once-on-the-Artboard" class="headerlink" title="2. Click Once on the Artboard"></a>2. Click Once on the Artboard</h2><p>By only clicking once, you will get the Star Tool Options pane. This is where you can reduce the number of points to “3.” The trick is to set one radius 2 at your desired size for your triangle, then set the other radius at exactly half. Note: It doesn’t matter which radius is which. Radius 1 and 2 can be reversed as long as one is double/half the other. Choose the size of your triangle and click OK.</p>
-<p><img src="http://img1.tuicool.com/BJ3yMr6.gif" alt=""></p>
-<h2 id="3-Get-Rid-of-the-Extra-Anchor-Points"><a href="#3-Get-Rid-of-the-Extra-Anchor-Points" class="headerlink" title="3. Get Rid of the Extra Anchor Points"></a>3. Get Rid of the Extra Anchor Points</h2><p>Now that you have your triangle, you might want to get rid of the extra anchor points created by the Star tool.</p>
-<p><img src="http://img0.tuicool.com/63qaeuV.gif" alt=""></p>
-<p>You can select the Subtract Anchor Point tool or hit the keyboard shortcut “-” (minus) and delete the 3 points that are in between the corners of your path.</p>
-<p><img src="http://img1.tuicool.com/fuInYnV.gif" alt=""></p>
-<h2 id="Done"><a href="#Done" class="headerlink" title="Done!"></a>Done!</h2><p>There you have it. A perfect Triangle path in only a few easy steps, no pen tool necessary!</p>
-<p><img src="http://img0.tuicool.com/ayAFvmE.gif" alt=""></p>
-<p>From here you can do anything you need to with it, like maybe reflect it and make it have the wide part at the bottom, etc. Remember that the angles in every equilateral triangle are 60 degrees, so if you need something to line up with one of the sides of your equilateral triangle, rotate that object in 60 degree intervals and you should be able to perfectly align things to your T-angle! I hope this little tip saves you some time and headache. It is often-times the little things that help the most. (from my experience)</p>
-<p><img src="http://img1.tuicool.com/RFRZRrF.gif" alt=""></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/JRVna2Q" target="_blank" rel="external">http://www.bittbox.com/illustrator/make-a-perfect-triangle-path-in-illustrator</a></p>
+    <content type="html"><![CDATA[<p>Google andFacebook continue to<a href="https://www.ft.com/content/30c81d12-08c8-11e7-97d1-5e720a26771b" target="_blank" rel="external">gobble up</a>the digital advertising market,<a href="https://www.nytimes.com/2017/05/07/business/media/ad-buyers-have-say-in-survival-of-news.html?rref=collection%2Fbyline%2Fjim-rutenberg&amp;action=click&amp;contentCollection=undefined&amp;region=stream&amp;module=stream_unit&amp;version=latest&amp;contentPlacement=6&amp;pgtype=collection" target="_blank" rel="external">siphoning away revenue</a>that once paid for the quality journalism that Google and Facebook now offer for free.</p>
+<p>They are gaining increasing control over digital distribution, so newspapers that once delivered their journalism with their own trucks increasingly have to rely on these big online platforms to get their articles in front of people, fighting for attention alongsidefake news, websites that lift their content, and cat videos.</p>
+<p>And for all of Google’s and Facebook’s<a href="http://fortune.com/2017/02/22/tech-funding-for-journalism/" target="_blank" rel="external">efforts to support journalism</a>by helping news organizations find new revenue streams — and survive in the new world that these sites helped create — they are, at the end of the day, the royals of the court. Quality news providers are the supplicants and the serfs.</p>
+<p>It’s an uneasy alliance that has publishers chafing at the<a href="https://digiday.com/media/facebook-faces-increased-publisher-resistance-instant-articles/?utm_source=rundown&amp;utm_medium=email&amp;utm_content=1704018&amp;utm_campaign=digidaydis" target="_blank" rel="external">returns they receive</a>from Google and Facebook, which rely on the free flow of premium news and information.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/mAjuM3" target="_blank" rel="external">https://www.nytimes.com/2017/07/09/business/media/google-facebook-news-media-alliance.html</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2 Things I learnt By Reading Failsafe Source code</title>
-    <link href="https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/"/>
-    <id>https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</id>
-    <published>2017-07-10T00:00:00.000Z</published>
-    <updated>2017-07-10T04:16:54.579Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of<a href="https://github.com/jhalterman/failsafe" target="_blank" rel="external">failsafe</a>library.</p>
-<p>Failsafe is a lightweight, zero-dependency library for handling failures. It was designed to be as easy to use as possible, with a concise API for handling everyday use cases and the flexibility to handle everything else.</p>
-<p>Let’s suppose you are working with a flaky HTTP service. You can use failsafe to retry the service a configurable number of times by writing code as shown below.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">RetryPolicy retryPolicy = </div><div class="line">new</div><div class="line"> RetryPolicy()</div><div class="line">  .retryOn(HttpConnectionException.</div><div class="line">class</div><div class="line">)</div><div class="line">  .withMaxRetries(</div><div class="line">3</div><div class="line">);</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">MyHttpService connection = Failsafe.</div><div class="line">with</div><div class="line">(retryPolicy)</div><div class="line">                               .get</div><div class="line">(() -</div><div class="line">&gt;</div><div class="line"> connect())</div><div class="line">;</div></pre></td></tr></table></figure>
-<p>The above will retry 3 times to connect to the http service if HttpConnectionException is thrown.</p>
-<h2 id="2-Things-I-learnt"><a href="#2-Things-I-learnt" class="headerlink" title="2 Things I learnt"></a>2 Things I learnt</h2><p>Reading through the source code and referring to Github issues I learnt couple of things to avoid when designing APIs. So, I learnt what not to do rather than what to do ��</p>
-<ol>
-<li>Don’t use wrong default values: failsafe library does not enforce users to provide values when configuring RetryPolicy or other configuration object. The default value for number of retries is set to  -1, which means retry infinitely. This is not correct as user of the API would want retry call to complete eventually or throw an exception. I think better way to design API is to enforce users to provide values when you are unable to come up with good default values. This would avoid surprises to the user.  APIs should follow<br><a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" target="_blank" rel="external">Principle of least astonishment</a><br>.</li>
-<li>Favour immutability: A common thread that I found in many issues is related to shareability of RetryPolicy object. Users want to reuse RetryPolicy object but because it is not immutable they fear thread safety concerns. Library author clarified that library does not change the state of object internally so it is safe to reuse. I think the better way to design such objects is by using a builder pattern. Then, in the build method of builder make an immutable object. This does not confuse users and keep your API consistent.</li>
-</ol>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/Y3mUjaa" target="_blank" rel="external">http://shekhargulati.com/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of&lt;a href=&quot;https://
+      &lt;p&gt;Google andFacebook continue to&lt;a href=&quot;https://www.ft.com/content/30c81d12-08c8-11e7-97d1-5e720a26771b&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;go
     
     </summary>
     
@@ -262,38 +199,29 @@
   </entry>
   
   <entry>
-    <title>Why I Hate Slack and You Should Too</title>
-    <link href="https://gmagon.com/blog/2017/07/07/why-i-hate-slack-and-you-should-too/"/>
-    <id>https://gmagon.com/blog/2017/07/07/why-i-hate-slack-and-you-should-too/</id>
-    <published>2017-07-07T00:00:00.000Z</published>
-    <updated>2017-07-07T10:09:04.688Z</updated>
+    <title>2 Things I learnt By Reading Failsafe Source code</title>
+    <link href="https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/"/>
+    <id>https://gmagon.com/blog/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</id>
+    <published>2017-07-10T00:00:00.000Z</published>
+    <updated>2017-07-10T04:16:54.579Z</updated>
     
-    <content type="html"><![CDATA[<p>Yeah, that’s right: there’s finally something I feel so negatively about that I’m unsatisfied hating it all by myself; I want_you_to hate it, too. So let’s talk about why Slack is destroying your life, piece by piece, and why you should get rid of it immediately before its trail of destruction widens any further—in other words, while you still have time to stop the deluge of mindless addiction that it’s already staple-gunned to your life.</p>
-<h3 id="1-It-encourages-use-for-both-time-sensitive-and-time-insensitive-communication"><a href="#1-It-encourages-use-for-both-time-sensitive-and-time-insensitive-communication" class="headerlink" title="1. It encourages use for both time-sensitive and time-insensitive communication"></a>1. It encourages use for both time-sensitive and time-insensitive communication</h3><p>A Long Thyme Agoe, in the Days Before Slack, I had three different ways of being contacted, and they served three very different purposes, with radically different interrupt priorities. I had emails, which could wait; I had phone calls, which couldn’t; and I had the company IRC server, which was usually where I went to waste time by sharing links to things that either made me get_very_angry or made me laugh hysterically.In this system, the important, time-sensitive thing can interrupt me, and everything else can’t. That’s great for productivity and great for my sanity, and the people were happy and things were good.</p>
-<p>Slack totally just trashed everything. It’s email and phone calls and cat pictures, all rolled into one. So_sometimes<em>Slack notifications are totally not time-sensitive</em>(<code>@here</code>Hey I need coloring books for my niece, any suggestions? also she’s afraid of animals clowns food people and dinosaurs and also allergic to paper kthxbye!)_, and_sometimes<em>they require an immediate action</em>(<code>@here</code>Dr. Poison just showed up and tl;dr maybe run for it idk?)_—and until I’ve read the message, I have<em>absolutely no idea whether it deserves my immediate attention</em>. That order’s backwards and it makes me feel bad because it_is_bad.</p>
-<p>This is actually a whole thing in psychology: if you give a mouse food every time they push a lever, they’ll eventually only push it when they’re hungry, but if you only give them food_sometimes_when they push a lever, then the “reward uncertainty” will actually cause them to push the lever<em>more often</em>.And hey! Here we are, all checking Slack 23,598 times a minute for each notification, because who knows, maybe_this_one matters. It’s all the pain of Vegas with none of the reward and somehow we’re_still_hooked.</p>
-<p>So unlike before, now I get interrupted constantly, and I_have_to break my flow to figure out whether getting interrupted was worthwhile, and for some reason this is supposed to<em>enhance business productivity</em>.</p>
-<p>Right. Sure. You go on being you, Slack.</p>
-<h3 id="2-It-cannot-be-sanely-ignored"><a href="#2-It-cannot-be-sanely-ignored" class="headerlink" title="2. It cannot be sanely ignored"></a>2. It cannot be sanely ignored</h3><p>_“Okay, pea-brain,”<em>you mutter,</em>“so just turn off Slack notifications when you need to focus for awhile, and catch up later.”_</p>
-<p>I once thought as you did, but part of the reason you end up addicted to Slack is that catching up on what you’ve missed feels very similar to when you were back in college and were a day before the final and suddenly realized that your plan of not highlighting the book or taking notes all semester may’ve been a Bad Idea™. About the only way Slack bothers grouping information is by room—and as anyone who’s been trapped in a heavily-used Slack system can tell you, the room names and descriptions are at best weak guidelines, so you can’t even necessarily prioritize what to catch up on even at_that_gross level of granularity.Nope: your only option is going to be to read<em>the entire backlog, from start to finish</em>, or else just accept that, at some distant point three months from now, you’re going to look like a complete idiot when you’re the only one didn’t know that all employee blood was now going to be collected for occult purposes.</p>
-<p>Granted, this isn’t Slack’s fault<em>per se</em>, at least insofar as_every_chat system has this problem, but Slack’s attempt to become your One True Source of Everything, from scheduling to reminders to SharePoint replacement to company directory, means that a_huge_amount of information that previously would’ve been in emails ends up in Slack, and_only_in Slack. And that’s a very deliberate decision by Slack to make themselves utterly indispensable, so I feel very comfy screaming at them until I go hoarse.</p>
-<h3 id="3-It-cannot-be-sanely-organized"><a href="#3-It-cannot-be-sanely-organized" class="headerlink" title="3. It cannot be sanely organized"></a>3. It cannot be sanely organized</h3><p>Okay fine, so you read through the whole backlog from your vacation, which took you barely even 70 hours, and have extracted the six actual to-do items from it, one of which involves something about pentagrams and goats that you’ll decipher later. Great. Mazel tov. Phase one complete.</p>
-<p>Now what? Slack has no meaningful way to organize those six messages. There aren’t folders. There isn’t a meaningful “do later” pile. (There’s<code>/remind</code>, to be fair, but, as noted previously, that just generates more notifications, which we’re trying to avoid. Theoretically.) So you’re left with…what, exactly? Right-clicking on each individual message at the end of the chain, copying the link, and pasting that into some external to-do app? Which, of course, when you click back on the link, will require you to re-read at least_some_amount of unstructured backlog, including a bunch of unrelated garbage about reconfiguring CARP on the edge servers and something about epoll and multithreading and a panda birth video that just happens to be there, just to remind yourself what everyone said?</p>
-<p>Welcome to hell. Population: all Slack users.</p>
-<h3 id="4-It’s-proprietary-and-encourages-lock-in"><a href="#4-It’s-proprietary-and-encourages-lock-in" class="headerlink" title="4. It’s proprietary and encourages lock-in"></a>4. It’s proprietary and encourages lock-in</h3><p>In an ideal world, I could circumvent a lot of these issues in any number of ways. For example, I’m still active in open-source sometimes, and the open-source equivalent of Slack is (usually) still IRC. But IRC, being a well-documentedolder system, has_tons_of different tools to extract data from it. If I want to be nerdy, I can yank individual messages from<a href="https://www.emacswiki.org/emacs/ERC" target="_blank" rel="external">ERC</a>straight into<a href="http://orgmode.org/" target="_blank" rel="external">org mode</a>, or write custom scripts for<a href="https://weechat.org/" target="_blank" rel="external">WeeChat</a>, or use any of literally dozens of clients written in Ruby and Python and Io and Java and C# and thousands of other programming languages plus also JavaScript and do really bespoke things. And even if I don’t, the plethora of macOS and Windows clients means that an off-the-shelf or trivially customizable AppleScript or WSH solution is never far away.</p>
-<p>But Slack is Slack, and Slack is Electron, and Electron is Chrome—Chrome surrounded by an unscriptable posterior that eats up 100 MB of RAM per channel, plus an extra 250 MB for each Giphy.And while I can_almost_script my way out of this hell, I really can’t. Not as a mortal end-user, anyway. To the extent I_can_do anything, I need to write directly against the<a href="https://api.slack.com/" target="_blank" rel="external">Slack API</a>, rather than using something commonplace like XMPP or IRC, so goodbye portability. And even if I’m willing and able to write against the proprietary API, a lot of the more interesting things you can do require being an organization admin, and require being enabled globally for the entire instance. So goodbye, personalized custom integration points, and hello, one-size-fits-zero webhooks. This is my life now.</p>
-<h3 id="5-Its-version-of-Markdown-is-just-broken"><a href="#5-Its-version-of-Markdown-is-just-broken" class="headerlink" title="5. Its version of Markdown is just broken"></a>5. Its version of Markdown is just broken</h3><p>I’m going to use up an entire heading purely to say that making<code>*foo*</code>be<strong>bold</strong>and<code>_foo_</code>be_italic_is covered in Leviticus 64:128 and explicitly punishable by stoning until death.</p>
-<h3 id="6-It-encourages-use-for-both-business-and-personal-applications"><a href="#6-It-encourages-use-for-both-business-and-personal-applications" class="headerlink" title="6. It encourages use for both business and personal applications"></a>6. It encourages use for both business and personal applications</h3><p>All this would be merely infuriating and drive me into a blind murderous rage if it were just something I dealt with at work, but_oh no,_now the_fun_groups I interact with are turning to Slack! That’s right: the same application and environment that makes a full-blown Dementor-style kiss with my attention span for work can now corner me in a back-alley when I just want to shoot the breeze with friends.</p>
-<p>I glance at the Slack icon. I have nine unread messages. Neat. Are they from work? I should probably actually go read those and see which ones require I do something. Are they all the ex-employees of that one company I used to work for? It’s probably a bunch of political screaming about stochastically sentient Cheetos that somehow won the presidency, and I’m honestly a bit tired of reading about that at this point.But at any rate, I can’t know until I take my phone out and read the notification—and sometimes_even then_I can’t, since of course some of the people I talk to are on multiple Slack instances and have a habit of saying things like “<code>@bmp</code>did you look at this it’s really concerning?” which requires I actually load up the freaking client and find the instance and the message and finally learn to my utter horror that I shall never be given up, let down, or run around/deserted.</p>
-<h3 id="Give-up-and-yield-untoCthulhuSlack-destroyer-of-focus"><a href="#Give-up-and-yield-untoCthulhuSlack-destroyer-of-focus" class="headerlink" title="Give up and yield untoCthulhuSlack, destroyer of focus"></a>Give up and yield unto<del>Cthulhu</del>Slack, destroyer of focus</h3><p>Stop using Slack. I hate it; you also should hate it. It’s distracting. It murders productivity. It destroys old tools. It exploits psychological needs in such a way that it kills your soul and hangs it up to dry over a lava pit, where the clothesline catches fire and your soul falls into the fire and somehow you’re not dead, just a zombie, forever, reading zombie notifications on your zombie iPhone and wondering whether “<code>@here</code>brains?” is a lunch invite or an insult until you read the backlog. Friends do not let friends use Slack. I have been utterly convincing and you should listen to me in my capacity as low-grade Internet celebrity and do what I say because mindlessly obeying authority is the right thing to do.</p>
-<p>But realistically? We’re all still using Slack, because it’s there, and we have to, and it’s the best option according to our collective judgment, which I do have point out may empirically be lacking at this point. So if we_are_stuck in Slack, then maybe, just maybe, we could start trying to restore Slack to a place where it’s genuinely for ephemeral ideas. Where it’s indeed the place for_ad hoc_conversations, but not a canonical store for their conclusions and action items. Where I_don’t_have to read the backlog when I come back from vacation, because anything actionable will at worst have been duplicated as an email or a Trello card or what have you. Where I can disable Slack notifications because I can know, with certainty, that any activity can wait until I’m back at my computer and actually_want_to spend time chatting on Slack.</p>
-<p>In the meantime I’ll be right back because either the data center just exploded or someone posted a picture of a goat fainting and The Notification God must be placated.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/IvUb6nq" target="_blank" rel="external">https://bitquabit.com/post/i-hate-slack-and-you-should-too/</a></p>
+    <content type="html"><![CDATA[<p>Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of<a href="https://github.com/jhalterman/failsafe" target="_blank" rel="external">failsafe</a>library.</p>
+<p>Failsafe is a lightweight, zero-dependency library for handling failures. It was designed to be as easy to use as possible, with a concise API for handling everyday use cases and the flexibility to handle everything else.</p>
+<p>Let’s suppose you are working with a flaky HTTP service. You can use failsafe to retry the service a configurable number of times by writing code as shown below.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">RetryPolicy retryPolicy = </div><div class="line">new</div><div class="line"> RetryPolicy()</div><div class="line">  .retryOn(HttpConnectionException.</div><div class="line">class</div><div class="line">)</div><div class="line">  .withMaxRetries(</div><div class="line">3</div><div class="line">);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">MyHttpService connection = Failsafe.</div><div class="line">with</div><div class="line">(retryPolicy)</div><div class="line">                               .get</div><div class="line">(() -</div><div class="line">&gt;</div><div class="line"> connect())</div><div class="line">;</div></pre></td></tr></table></figure>
+<p>The above will retry 3 times to connect to the http service if HttpConnectionException is thrown.</p>
+<h2 id="2-Things-I-learnt"><a href="#2-Things-I-learnt" class="headerlink" title="2 Things I learnt"></a>2 Things I learnt</h2><p>Reading through the source code and referring to Github issues I learnt couple of things to avoid when designing APIs. So, I learnt what not to do rather than what to do ��</p>
+<ol>
+<li>Don’t use wrong default values: failsafe library does not enforce users to provide values when configuring RetryPolicy or other configuration object. The default value for number of retries is set to  -1, which means retry infinitely. This is not correct as user of the API would want retry call to complete eventually or throw an exception. I think better way to design API is to enforce users to provide values when you are unable to come up with good default values. This would avoid surprises to the user.  APIs should follow<br><a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" target="_blank" rel="external">Principle of least astonishment</a><br>.</li>
+<li>Favour immutability: A common thread that I found in many issues is related to shareability of RetryPolicy object. Users want to reuse RetryPolicy object but because it is not immutable they fear thread safety concerns. Library author clarified that library does not change the state of object internally so it is safe to reuse. I think the better way to design such objects is by using a builder pattern. Then, in the build method of builder make an immutable object. This does not confuse users and keep your API consistent.</li>
+</ol>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/Y3mUjaa" target="_blank" rel="external">http://shekhargulati.com/2017/07/10/2-things-i-learnt-by-reading-failsafe-source-code/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Yeah, that’s right: there’s finally something I feel so negatively about that I’m unsatisfied hating it all by myself; I want_you_to hate
+      &lt;p&gt;Welcome to the second post ofX-things-I-learnt-reading-Y’s-source-codeseries. This week I decided to read source code of&lt;a href=&quot;https://
     
     </summary>
     
@@ -301,99 +229,32 @@
   </entry>
   
   <entry>
-    <title>35 Awe-Inspiring Badge &amp; Emblem Logo Designs</title>
-    <link href="https://gmagon.com/blog/2017/07/07/35-awe-inspiring-badge-and-emblem-logo-designs/"/>
-    <id>https://gmagon.com/blog/2017/07/07/35-awe-inspiring-badge-and-emblem-logo-designs/</id>
-    <published>2017-07-07T00:00:00.000Z</published>
-    <updated>2017-07-07T10:09:04.661Z</updated>
+    <title>Make a Perfect Triangle Path in Illustrator</title>
+    <link href="https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/"/>
+    <id>https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/</id>
+    <published>2017-07-10T00:00:00.000Z</published>
+    <updated>2017-07-10T04:16:54.596Z</updated>
     
-    <content type="html"><![CDATA[<p>An another amazing examples of<a href="http://graphicdesignjunction.com/2017/02/badge-emblem-logos/" target="_blank" rel="external"><strong>emblem and badges</strong></a>in Retro and Vintage style. These <strong>logo, badge, emblem</strong>and <strong>insignia templates</strong>design by professional graphic designers. Today’s in this gallery I’ve gathered thirty five awe-inspiring<a href="http://graphicdesignjunction.com/2016/05/badge-emblem-logo-designs/" target="_blank" rel="external"><strong>emblem and badges logo designs</strong></a>, concepts and ideas that will surely inspired you.</p>
-<h4 id="Some-Branding-and-Logo-Design-Related-Articles"><a href="#Some-Branding-and-Logo-Design-Related-Articles" class="headerlink" title="Some Branding and Logo Design Related Articles:"></a>Some Branding and Logo Design Related Articles:</h4><ul>
-<li><a href="http://graphicdesignjunction.com/2015/03/brand-strategy/" target="_blank" rel="external"><strong>Brand Strategy: What You Need To Know</strong></a></li>
-<li><a href="http://graphicdesignjunction.com/2015/01/new-and-vigorous-logo/" target="_blank" rel="external"><strong>New and Vigorous Logo – Useful Tips</strong></a></li>
-<li><a href="http://graphicdesignjunction.com/2014/12/boost-your-business-with-branding/" target="_blank" rel="external"><strong>Boost Your Business with Branding</strong></a></li>
-<li><a href="http://graphicdesignjunction.com/2014/06/why-branding-isnt-all-about-the-logo-but-much-more/" target="_blank" rel="external">Why Branding Isn’t All About the Logo but Much More</a></li>
-</ul>
-<p>Please join us &amp; follow on<a href="http://www.facebook.com/GraphicDesignJunction" target="_blank" rel="external"><strong>Facebook</strong></a>, <a href="http://twitter.com/graphicdesignju" target="_blank" rel="external"><strong>Twitter</strong></a>and <a href="https://plus.google.com/117891373249797133057/posts" target="_blank" rel="external"><strong>Google+</strong></a>for updates.</p>
-<p>Subscribe to our RSS via email, simply enter your email address &amp; click subscribe.</p>
-<h2 id="Creative-Badges-Emblem-Insignia-and-Logos-Collection"><a href="#Creative-Badges-Emblem-Insignia-and-Logos-Collection" class="headerlink" title="Creative Badges, Emblem, Insignia and Logos Collection"></a>Creative Badges, Emblem, Insignia and Logos Collection</h2><p>Here’s a great collection of Awe-Inspiring Badge &amp; Emblem Logo Designs. You may also check the full list of<a href="http://graphicdesignjunction.com/tag/business-logo-design/" target="_blank" rel="external"><strong>logo design series</strong></a>.</p>
-<h3 id="Fidget-Spinners-Emblem-by-Sergey-Akimov"><a href="#Fidget-Spinners-Emblem-by-Sergey-Akimov" class="headerlink" title="Fidget Spinners Emblem by Sergey Akimov"></a>Fidget Spinners Emblem by Sergey Akimov</h3><p><img src="http://img1.tuicool.com/eeuUFff.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3577663-Fidget-Spinners-Emblem" target="_blank" rel="external">Source</a></p>
-<h3 id="Aqua-Adventures-by-Zachary-Thomson"><a href="#Aqua-Adventures-by-Zachary-Thomson" class="headerlink" title="Aqua Adventures by Zachary Thomson"></a>Aqua Adventures by Zachary Thomson</h3><p><img src="http://img1.tuicool.com/jYZJJzf.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3629106-Aqua-Adventures" target="_blank" rel="external">Source</a></p>
-<h3 id="City-Cycling-Badge-by-Marcus-Rentsch"><a href="#City-Cycling-Badge-by-Marcus-Rentsch" class="headerlink" title="City Cycling Badge by Marcus Rentsch"></a>City Cycling Badge by Marcus Rentsch</h3><p><img src="http://img1.tuicool.com/7n6FbaE.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3626806-City-Cycling" target="_blank" rel="external">Source</a></p>
-<h3 id="Badge-by-Patrick-Moriarty"><a href="#Badge-by-Patrick-Moriarty" class="headerlink" title="Badge by Patrick Moriarty"></a>Badge by Patrick Moriarty</h3><p><img src="http://img1.tuicool.com/BvYnUz7.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/2333209-Badge" target="_blank" rel="external">Source</a></p>
-<h3 id="Moon-Valley-Badge-by-Rodrigo-Avalos"><a href="#Moon-Valley-Badge-by-Rodrigo-Avalos" class="headerlink" title="Moon Valley Badge by Rodrigo Avalos"></a>Moon Valley Badge by Rodrigo Avalos</h3><p><img src="http://img1.tuicool.com/bQfUJjQ.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3625328-Moon-Valley" target="_blank" rel="external">Source</a></p>
-<h3 id="Yellowstone-Sticker-by-Jorrien-Peterson"><a href="#Yellowstone-Sticker-by-Jorrien-Peterson" class="headerlink" title="Yellowstone Sticker by Jorrien Peterson"></a>Yellowstone Sticker by Jorrien Peterson</h3><p><img src="http://img2.tuicool.com/Y3Ir22I.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3629394-Yellowstone-Sticker" target="_blank" rel="external">Source</a></p>
-<h3 id="Battle-For-Baltimore-Badge-by-Jason-Halliburton"><a href="#Battle-For-Baltimore-Badge-by-Jason-Halliburton" class="headerlink" title="Battle For Baltimore Badge by Jason Halliburton"></a>Battle For Baltimore Badge by Jason Halliburton</h3><p><img src="http://img1.tuicool.com/R3qQBzZ.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3625012-Battle-For-Baltimore" target="_blank" rel="external">Source</a></p>
-<h3 id="Camp-Fire-Emblem-by-A-L-PENCIL"><a href="#Camp-Fire-Emblem-by-A-L-PENCIL" class="headerlink" title="Camp Fire Emblem by A.L PENCIL"></a>Camp Fire Emblem by A.L PENCIL</h3><p><img src="http://img0.tuicool.com/6rAjyyN.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3626670-Camp-Fire" target="_blank" rel="external">Source</a></p>
-<h3 id="Monteillerie-Emblem-by-CilabStudio"><a href="#Monteillerie-Emblem-by-CilabStudio" class="headerlink" title="Monteillerie Emblem by CilabStudio"></a>Monteillerie Emblem by CilabStudio</h3><p><img src="http://img1.tuicool.com/iU7vm2q.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3624155-Monteillerie-emblem-blue" target="_blank" rel="external">Source</a></p>
-<h3 id="Gri-amp-Lu-Tattoo-amp-Coffee-Emblem-by-La-Ruca"><a href="#Gri-amp-Lu-Tattoo-amp-Coffee-Emblem-by-La-Ruca" class="headerlink" title="Gri &amp; Lu | Tattoo &amp; Coffee Emblem by La Ruca"></a>Gri &amp; Lu | Tattoo &amp; Coffee Emblem by La Ruca</h3><p><img src="http://img1.tuicool.com/6nAFnqA.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3615281-Gri-Lu-Tattoo-Coffee" target="_blank" rel="external">Source</a></p>
-<h3 id="Spring-Chicken-Vintage-Logo-By-Dahbi-Lahsen"><a href="#Spring-Chicken-Vintage-Logo-By-Dahbi-Lahsen" class="headerlink" title="Spring Chicken Vintage Logo By Dahbi Lahsen"></a>Spring Chicken Vintage Logo By Dahbi Lahsen</h3><p><img src="http://img2.tuicool.com/UnuiYjN.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/2593092-chicken" target="_blank" rel="external">Source</a></p>
-<h3 id="Live-Free-or-Die-by-Patrick-Moriarty"><a href="#Live-Free-or-Die-by-Patrick-Moriarty" class="headerlink" title="Live Free or Die by Patrick Moriarty"></a>Live Free or Die by Patrick Moriarty</h3><p><img src="http://img2.tuicool.com/myqeQri.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3306354-Live-Free-or-Die" target="_blank" rel="external">Source</a></p>
-<h3 id="Airplane-Hanger-by-Jordan-Blahnik"><a href="#Airplane-Hanger-by-Jordan-Blahnik" class="headerlink" title="Airplane Hanger by Jordan Blahnik"></a>Airplane Hanger by Jordan Blahnik</h3><p><img src="http://img1.tuicool.com/eQFB7rM.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3229093-Airplane-Hanger" target="_blank" rel="external">Source</a></p>
-<h3 id="Logo-for-a-brand-new-barbershop-“Nobel-Men”-By-Haykaz"><a href="#Logo-for-a-brand-new-barbershop-“Nobel-Men”-By-Haykaz" class="headerlink" title="Logo for a brand new barbershop “Nobel Men” By Haykaz"></a>Logo for a brand new barbershop “Nobel Men” By Haykaz</h3><p><img src="http://img1.tuicool.com/2iIRb2U.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3580372-Noble-Men" target="_blank" rel="external">Source</a></p>
-<h3 id="Prefect-Breakfast-Badge-by-Skilline"><a href="#Prefect-Breakfast-Badge-by-Skilline" class="headerlink" title="Prefect Breakfast Badge by Skilline"></a>Prefect Breakfast Badge by Skilline</h3><p><img src="http://img2.tuicool.com/A7BRNr6.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3577784-Prefect-Breakfast" target="_blank" rel="external">Source</a></p>
-<p><img src="http://img2.tuicool.com/UzaqQbr.jpg!web" alt=""></p>
-<p>Source</p>
-<p><img src="http://img2.tuicool.com/a6va2aV.jpg!web" alt=""></p>
-<p>Source</p>
-<p><img src="http://img1.tuicool.com/uieQRrN.jpg!web" alt=""></p>
-<p>Source</p>
-<h3 id="Jackson-Wyoming-Night-by-Patrick-Moriarty"><a href="#Jackson-Wyoming-Night-by-Patrick-Moriarty" class="headerlink" title="Jackson, Wyoming (Night) by Patrick Moriarty"></a>Jackson, Wyoming (Night) by Patrick Moriarty</h3><p><img src="http://img0.tuicool.com/viIBn27.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/2641050-Jackson-Wyoming-Night" target="_blank" rel="external">Source</a></p>
-<h3 id="Classic-Garage-Badge-by-Bangkit-Tri-Setiadi"><a href="#Classic-Garage-Badge-by-Bangkit-Tri-Setiadi" class="headerlink" title="Classic Garage Badge by Bangkit Tri Setiadi"></a>Classic Garage Badge by Bangkit Tri Setiadi</h3><p><img src="http://img0.tuicool.com/YzuYrae.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3511882-Classic-Garage" target="_blank" rel="external">Source</a></p>
-<h3 id="Rotiroll-Logo-by-Pepperweb"><a href="#Rotiroll-Logo-by-Pepperweb" class="headerlink" title="Rotiroll Logo by Pepperweb"></a>Rotiroll Logo by Pepperweb</h3><p><img src="http://img1.tuicool.com/BzMVnq2.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3498735-Rotiroll-Logo" target="_blank" rel="external">Source</a></p>
-<h3 id="Austin-City-Badge-by-Denver-Gravitt"><a href="#Austin-City-Badge-by-Denver-Gravitt" class="headerlink" title="Austin City Badge by Denver Gravitt"></a>Austin City Badge by Denver Gravitt</h3><p><img src="http://img1.tuicool.com/V3eIn2Y.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3603261-Austin-City-Badge" target="_blank" rel="external">Source</a></p>
-<h3 id="Bruce-Park-Emblem-by-Damian-Orellana"><a href="#Bruce-Park-Emblem-by-Damian-Orellana" class="headerlink" title="Bruce Park Emblem by Damian Orellana"></a>Bruce Park Emblem by Damian Orellana</h3><p><img src="http://img0.tuicool.com/Mr6zErY.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3599645-Bruce-Park" target="_blank" rel="external">Source</a></p>
-<h3 id="Rocket-Explorer-Badge-animated-by-Austin-Faure"><a href="#Rocket-Explorer-Badge-animated-by-Austin-Faure" class="headerlink" title="Rocket Explorer Badge (animated) by Austin Faure"></a>Rocket Explorer Badge (animated) by Austin Faure</h3><p><img src="http://img2.tuicool.com/byAjYbb.gif" alt=""></p>
-<p><a href="https://dribbble.com/shots/3607064-Rocket-Explorer-Badge" target="_blank" rel="external">Source</a></p>
-<h3 id="Game-For-Life-Badge-by-Adam-Ramerth"><a href="#Game-For-Life-Badge-by-Adam-Ramerth" class="headerlink" title="Game For Life Badge by Adam Ramerth"></a>Game For Life Badge by Adam Ramerth</h3><p><img src="http://img2.tuicool.com/JzqIBzr.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3608791-Game-For-Life-Badge" target="_blank" rel="external">Source</a></p>
-<h3 id="New-Generation-Swimming-Club-Emblem-by-Mooral-Monteria"><a href="#New-Generation-Swimming-Club-Emblem-by-Mooral-Monteria" class="headerlink" title="New Generation Swimming Club Emblem by Mooral Montería"></a>New Generation Swimming Club Emblem by Mooral Montería</h3><p><img src="http://img0.tuicool.com/6ZN3Efv.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3612532-New-Generation-swimming-club" target="_blank" rel="external">Source</a></p>
-<h3 id="Mt-Forbes-Canada-Sticker-by-Jordan-H-Johnson"><a href="#Mt-Forbes-Canada-Sticker-by-Jordan-H-Johnson" class="headerlink" title="Mt. Forbes Canada Sticker by Jordan H Johnson"></a>Mt. Forbes Canada Sticker by Jordan H Johnson</h3><p><img src="http://img2.tuicool.com/6zUvYbq.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3616959-Mt-Forbes-Canada-Sticker" target="_blank" rel="external">Source</a></p>
-<h3 id="30-Year-Anniversary-Badge-by-Adam-Swisher"><a href="#30-Year-Anniversary-Badge-by-Adam-Swisher" class="headerlink" title="30 Year Anniversary Badge by Adam Swisher"></a>30 Year Anniversary Badge by Adam Swisher</h3><p><img src="http://img0.tuicool.com/auq2umA.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3618209-30-Years" target="_blank" rel="external">Source</a></p>
-<h3 id="Learn-Fresh-All-Star-Teaching-Team-by-Jimmy-Nutini"><a href="#Learn-Fresh-All-Star-Teaching-Team-by-Jimmy-Nutini" class="headerlink" title="Learn Fresh All-Star Teaching Team by Jimmy Nutini"></a>Learn Fresh All-Star Teaching Team by Jimmy Nutini</h3><p><img src="http://img2.tuicool.com/ZvmEZn3.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3618941-Learn-Fresh-All-Star-Teaching-Team" target="_blank" rel="external">Source</a></p>
-<h3 id="The-Glass-Jug-Beer-Lab-logo-by-Ryan-Cuthriell"><a href="#The-Glass-Jug-Beer-Lab-logo-by-Ryan-Cuthriell" class="headerlink" title="The Glass Jug Beer Lab logo by Ryan Cuthriell"></a>The Glass Jug Beer Lab logo by Ryan Cuthriell</h3><p><img src="http://img0.tuicool.com/ZVF7viz.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3534822-The-Glass-Jug-Beer-Lab-logo" target="_blank" rel="external">Source</a></p>
-<h3 id="Buck-Inna-Truck-by-Jordan-Blahnik"><a href="#Buck-Inna-Truck-by-Jordan-Blahnik" class="headerlink" title="Buck Inna Truck by Jordan Blahnik"></a>Buck Inna Truck by Jordan Blahnik</h3><p><img src="http://img1.tuicool.com/MNNVje6.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3082881-Buck-Inna-Truck" target="_blank" rel="external">Source</a></p>
-<h3 id="Top-Gallant-Barber-Shop-Logo-By-mylito04"><a href="#Top-Gallant-Barber-Shop-Logo-By-mylito04" class="headerlink" title="Top Gallant Barber Shop Logo By mylito04"></a>Top Gallant Barber Shop Logo By mylito04</h3><p><img src="http://img0.tuicool.com/riMr6ve.jpg!web" alt=""></p>
-<p><a href="https://www.instagram.com/p/BTVXHw4jitB/" target="_blank" rel="external">Source</a></p>
-<p><img src="http://img1.tuicool.com/BrEVzuV.jpg!web" alt=""></p>
-<p>Source</p>
-<h3 id="Motivational-Poster-“Vikings-never-die”-by-Sergey-Akimov"><a href="#Motivational-Poster-“Vikings-never-die”-by-Sergey-Akimov" class="headerlink" title="Motivational Poster “Vikings never die” by Sergey Akimov"></a>Motivational Poster “Vikings never die” by Sergey Akimov</h3><p><img src="http://img1.tuicool.com/mQZZVbN.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3588533-Motivational-Poster-Vikings-never-die" target="_blank" rel="external">Source</a></p>
-<h3 id="Boutique-Woodworking-Company-by-Yavor-Lazarov"><a href="#Boutique-Woodworking-Company-by-Yavor-Lazarov" class="headerlink" title="Boutique Woodworking Company by Yavor Lazarov"></a>Boutique Woodworking Company by Yavor Lazarov</h3><p><img src="http://img1.tuicool.com/JFreMze.jpg!web" alt=""></p>
-<p><a href="https://dribbble.com/shots/3601629-Boutique-Woodworking-Company" target="_blank" rel="external">Source</a></p>
-<h3 id="Hand-Drawn-Vintage-Emblem-by-Graphic-Lovers"><a href="#Hand-Drawn-Vintage-Emblem-by-Graphic-Lovers" class="headerlink" title="Hand Drawn Vintage Emblem by Graphic Lovers"></a>Hand Drawn Vintage Emblem by Graphic Lovers</h3><p><img src="http://img0.tuicool.com/JraI3qf.jpg!web" alt=""></p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/e6VJJna" target="_blank" rel="external">http://graphicdesignjunction.com/2017/07/inspiring-badge-emblem-logo/</a></p>
+    <content type="html"><![CDATA[<p>There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first started using Illustrator and really tried to get to know the program in depth. This was one of the things that frustrated me regularly (making a perfect, equilateral triangle) until I finally figured out a simple solution. If you use Adobe Illustrator on a regular basis, chances are you might need to create an equilateral triangle every once in a while. This may seem like a simple task, and it is, but not as easy as it should be. I’ll show you how to easily make a perfect triangle path in Illustrator, and hopefully, you will have one less vector headache to deal with in the future.</p>
+<p><img src="http://img1.tuicool.com/a67fAvB.gif" alt=""></p>
+<h2 id="1-Select-the-Star-Tool"><a href="#1-Select-the-Star-Tool" class="headerlink" title="1. Select the Star Tool"></a>1. Select the Star Tool</h2><p>Yes, believe it or not, the Star Tool is what you will use to make a triangle. I know it sounds weird, but go with me here.</p>
+<p><img src="http://img0.tuicool.com/vyqM7zn.gif" alt=""></p>
+<h2 id="2-Click-Once-on-the-Artboard"><a href="#2-Click-Once-on-the-Artboard" class="headerlink" title="2. Click Once on the Artboard"></a>2. Click Once on the Artboard</h2><p>By only clicking once, you will get the Star Tool Options pane. This is where you can reduce the number of points to “3.” The trick is to set one radius 2 at your desired size for your triangle, then set the other radius at exactly half. Note: It doesn’t matter which radius is which. Radius 1 and 2 can be reversed as long as one is double/half the other. Choose the size of your triangle and click OK.</p>
+<p><img src="http://img1.tuicool.com/BJ3yMr6.gif" alt=""></p>
+<h2 id="3-Get-Rid-of-the-Extra-Anchor-Points"><a href="#3-Get-Rid-of-the-Extra-Anchor-Points" class="headerlink" title="3. Get Rid of the Extra Anchor Points"></a>3. Get Rid of the Extra Anchor Points</h2><p>Now that you have your triangle, you might want to get rid of the extra anchor points created by the Star tool.</p>
+<p><img src="http://img0.tuicool.com/63qaeuV.gif" alt=""></p>
+<p>You can select the Subtract Anchor Point tool or hit the keyboard shortcut “-” (minus) and delete the 3 points that are in between the corners of your path.</p>
+<p><img src="http://img1.tuicool.com/fuInYnV.gif" alt=""></p>
+<h2 id="Done"><a href="#Done" class="headerlink" title="Done!"></a>Done!</h2><p>There you have it. A perfect Triangle path in only a few easy steps, no pen tool necessary!</p>
+<p><img src="http://img0.tuicool.com/ayAFvmE.gif" alt=""></p>
+<p>From here you can do anything you need to with it, like maybe reflect it and make it have the wide part at the bottom, etc. Remember that the angles in every equilateral triangle are 60 degrees, so if you need something to line up with one of the sides of your equilateral triangle, rotate that object in 60 degree intervals and you should be able to perfectly align things to your T-angle! I hope this little tip saves you some time and headache. It is often-times the little things that help the most. (from my experience)</p>
+<p><img src="http://img1.tuicool.com/RFRZRrF.gif" alt=""></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/JRVna2Q" target="_blank" rel="external">http://www.bittbox.com/illustrator/make-a-perfect-triangle-path-in-illustrator</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;An another amazing examples of&lt;a href=&quot;http://graphicdesignjunction.com/2017/02/badge-emblem-logos/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;stro
+      &lt;p&gt;There is no triangle tool in Illustrator, which to this day, boggles my mind (come on, Adobe). I have memories of the times when I first 
     
     </summary>
     
@@ -501,6 +362,178 @@ $_
   </entry>
   
   <entry>
+    <title>A Nasty Instagram Bug Is Causing Lots Of People To Think Their Accounts Were Deleted</title>
+    <link href="https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/"/>
+    <id>https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/</id>
+    <published>2017-07-07T00:00:00.000Z</published>
+    <updated>2017-07-07T10:09:04.665Z</updated>
+    
+    <content type="html"><![CDATA[<p>A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.</p>
+<p>The Facebook owned-social app is being bombarded with complaints on Twitter, Facebook and its own service from people who claim their accounts have been deleted without warning or cause.</p>
+<p>Instagram says the culprit is a bug that not only logged people out of their accounts, but also hid them from view. When BuzzFeed News checked multiple account pages that users claimed were deleted, it saw a message stating that the content was unavailable, noting that the link might be broken or the page could’ve been removed.</p>
+<p><strong>“</strong>No accounts have been deleted,” a company spokesperson told BuzzFeed News. “However, the bug logged some users out of their accounts, while also locking their accounts from view. When the bug is fixed and affected users are able to log back in, their accounts will be viewable again.”</p>
+<p><img src="http://img1.tuicool.com/ZJVn2ei.png!web" alt=""></p>
+<p>Comments on Instagram’s latest post</p>
+<p>Even so, users are freaked out. “Please give me back my account@harryspinkflowers i worked so hard on it and had it for 2 years…. please give it back,” read a typical response to Instagram’slatest post. Others were less diplomatic. “Give me my fucking account back bro,” Twitter user<a href="https://go.redirectingat.com/?id=74679X1524629&amp;sref=https%3A%2F%2Fwww.buzzfeed.com%2Falexkantrowitz%2Fa-nasty-instagram-bug-is-causing-lots-of-people-to-think&amp;url=https%3A%2F%2Ftwitter.com%2F_SaucySierra_&amp;xcust=4574368%7CBFLITE&amp;xs=1" target="_blank" rel="external">@<strong>_SaucySierra_</strong></a>wrote.</p>
+<p>It’s unclear how many accounts were affected by this faux purge. Instagram says it’s a very small percentage, but the complaints serve as useful a reminder that ultimately, free social media accounts belong to the companies you register them with. And these companies can do pretty much whatever they want with them.</p>
+<p>That’s a big problem, especially for businesses and other Instagam users whose accounts have a material tie to the offline world. Chocolate company ChocZero’s business is suffering without access to its 6,500 follower account, according to its marketing director Rhea Monique. “I’m supposed to talk to wholesale distributors today and our Instagram along with our proof of sales is a big way to pitch relevancy, “ she told BuzzFeed News. “So it’s devastating this happened.”</p>
+<p><img src="http://img1.tuicool.com/jAjUryu.png!web" alt=""></p>
+<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
+<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
+<p>Got a confidential tip?Submit it here.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/AraQVfy" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/a-nasty-instagram-bug-is-causing-lots-of-people-to-think</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.&lt;/p&gt;
+&lt;p&gt;The Facebook owned-
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>35 Awe-Inspiring Badge &amp; Emblem Logo Designs</title>
+    <link href="https://gmagon.com/blog/2017/07/07/35-awe-inspiring-badge-and-emblem-logo-designs/"/>
+    <id>https://gmagon.com/blog/2017/07/07/35-awe-inspiring-badge-and-emblem-logo-designs/</id>
+    <published>2017-07-07T00:00:00.000Z</published>
+    <updated>2017-07-07T10:09:04.661Z</updated>
+    
+    <content type="html"><![CDATA[<p>An another amazing examples of<a href="http://graphicdesignjunction.com/2017/02/badge-emblem-logos/" target="_blank" rel="external"><strong>emblem and badges</strong></a>in Retro and Vintage style. These <strong>logo, badge, emblem</strong>and <strong>insignia templates</strong>design by professional graphic designers. Today’s in this gallery I’ve gathered thirty five awe-inspiring<a href="http://graphicdesignjunction.com/2016/05/badge-emblem-logo-designs/" target="_blank" rel="external"><strong>emblem and badges logo designs</strong></a>, concepts and ideas that will surely inspired you.</p>
+<h4 id="Some-Branding-and-Logo-Design-Related-Articles"><a href="#Some-Branding-and-Logo-Design-Related-Articles" class="headerlink" title="Some Branding and Logo Design Related Articles:"></a>Some Branding and Logo Design Related Articles:</h4><ul>
+<li><a href="http://graphicdesignjunction.com/2015/03/brand-strategy/" target="_blank" rel="external"><strong>Brand Strategy: What You Need To Know</strong></a></li>
+<li><a href="http://graphicdesignjunction.com/2015/01/new-and-vigorous-logo/" target="_blank" rel="external"><strong>New and Vigorous Logo – Useful Tips</strong></a></li>
+<li><a href="http://graphicdesignjunction.com/2014/12/boost-your-business-with-branding/" target="_blank" rel="external"><strong>Boost Your Business with Branding</strong></a></li>
+<li><a href="http://graphicdesignjunction.com/2014/06/why-branding-isnt-all-about-the-logo-but-much-more/" target="_blank" rel="external">Why Branding Isn’t All About the Logo but Much More</a></li>
+</ul>
+<p>Please join us &amp; follow on<a href="http://www.facebook.com/GraphicDesignJunction" target="_blank" rel="external"><strong>Facebook</strong></a>, <a href="http://twitter.com/graphicdesignju" target="_blank" rel="external"><strong>Twitter</strong></a>and <a href="https://plus.google.com/117891373249797133057/posts" target="_blank" rel="external"><strong>Google+</strong></a>for updates.</p>
+<p>Subscribe to our RSS via email, simply enter your email address &amp; click subscribe.</p>
+<h2 id="Creative-Badges-Emblem-Insignia-and-Logos-Collection"><a href="#Creative-Badges-Emblem-Insignia-and-Logos-Collection" class="headerlink" title="Creative Badges, Emblem, Insignia and Logos Collection"></a>Creative Badges, Emblem, Insignia and Logos Collection</h2><p>Here’s a great collection of Awe-Inspiring Badge &amp; Emblem Logo Designs. You may also check the full list of<a href="http://graphicdesignjunction.com/tag/business-logo-design/" target="_blank" rel="external"><strong>logo design series</strong></a>.</p>
+<h3 id="Fidget-Spinners-Emblem-by-Sergey-Akimov"><a href="#Fidget-Spinners-Emblem-by-Sergey-Akimov" class="headerlink" title="Fidget Spinners Emblem by Sergey Akimov"></a>Fidget Spinners Emblem by Sergey Akimov</h3><p><img src="http://img1.tuicool.com/eeuUFff.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3577663-Fidget-Spinners-Emblem" target="_blank" rel="external">Source</a></p>
+<h3 id="Aqua-Adventures-by-Zachary-Thomson"><a href="#Aqua-Adventures-by-Zachary-Thomson" class="headerlink" title="Aqua Adventures by Zachary Thomson"></a>Aqua Adventures by Zachary Thomson</h3><p><img src="http://img1.tuicool.com/jYZJJzf.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3629106-Aqua-Adventures" target="_blank" rel="external">Source</a></p>
+<h3 id="City-Cycling-Badge-by-Marcus-Rentsch"><a href="#City-Cycling-Badge-by-Marcus-Rentsch" class="headerlink" title="City Cycling Badge by Marcus Rentsch"></a>City Cycling Badge by Marcus Rentsch</h3><p><img src="http://img1.tuicool.com/7n6FbaE.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3626806-City-Cycling" target="_blank" rel="external">Source</a></p>
+<h3 id="Badge-by-Patrick-Moriarty"><a href="#Badge-by-Patrick-Moriarty" class="headerlink" title="Badge by Patrick Moriarty"></a>Badge by Patrick Moriarty</h3><p><img src="http://img1.tuicool.com/BvYnUz7.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/2333209-Badge" target="_blank" rel="external">Source</a></p>
+<h3 id="Moon-Valley-Badge-by-Rodrigo-Avalos"><a href="#Moon-Valley-Badge-by-Rodrigo-Avalos" class="headerlink" title="Moon Valley Badge by Rodrigo Avalos"></a>Moon Valley Badge by Rodrigo Avalos</h3><p><img src="http://img1.tuicool.com/bQfUJjQ.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3625328-Moon-Valley" target="_blank" rel="external">Source</a></p>
+<h3 id="Yellowstone-Sticker-by-Jorrien-Peterson"><a href="#Yellowstone-Sticker-by-Jorrien-Peterson" class="headerlink" title="Yellowstone Sticker by Jorrien Peterson"></a>Yellowstone Sticker by Jorrien Peterson</h3><p><img src="http://img2.tuicool.com/Y3Ir22I.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3629394-Yellowstone-Sticker" target="_blank" rel="external">Source</a></p>
+<h3 id="Battle-For-Baltimore-Badge-by-Jason-Halliburton"><a href="#Battle-For-Baltimore-Badge-by-Jason-Halliburton" class="headerlink" title="Battle For Baltimore Badge by Jason Halliburton"></a>Battle For Baltimore Badge by Jason Halliburton</h3><p><img src="http://img1.tuicool.com/R3qQBzZ.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3625012-Battle-For-Baltimore" target="_blank" rel="external">Source</a></p>
+<h3 id="Camp-Fire-Emblem-by-A-L-PENCIL"><a href="#Camp-Fire-Emblem-by-A-L-PENCIL" class="headerlink" title="Camp Fire Emblem by A.L PENCIL"></a>Camp Fire Emblem by A.L PENCIL</h3><p><img src="http://img0.tuicool.com/6rAjyyN.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3626670-Camp-Fire" target="_blank" rel="external">Source</a></p>
+<h3 id="Monteillerie-Emblem-by-CilabStudio"><a href="#Monteillerie-Emblem-by-CilabStudio" class="headerlink" title="Monteillerie Emblem by CilabStudio"></a>Monteillerie Emblem by CilabStudio</h3><p><img src="http://img1.tuicool.com/iU7vm2q.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3624155-Monteillerie-emblem-blue" target="_blank" rel="external">Source</a></p>
+<h3 id="Gri-amp-Lu-Tattoo-amp-Coffee-Emblem-by-La-Ruca"><a href="#Gri-amp-Lu-Tattoo-amp-Coffee-Emblem-by-La-Ruca" class="headerlink" title="Gri &amp; Lu | Tattoo &amp; Coffee Emblem by La Ruca"></a>Gri &amp; Lu | Tattoo &amp; Coffee Emblem by La Ruca</h3><p><img src="http://img1.tuicool.com/6nAFnqA.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3615281-Gri-Lu-Tattoo-Coffee" target="_blank" rel="external">Source</a></p>
+<h3 id="Spring-Chicken-Vintage-Logo-By-Dahbi-Lahsen"><a href="#Spring-Chicken-Vintage-Logo-By-Dahbi-Lahsen" class="headerlink" title="Spring Chicken Vintage Logo By Dahbi Lahsen"></a>Spring Chicken Vintage Logo By Dahbi Lahsen</h3><p><img src="http://img2.tuicool.com/UnuiYjN.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/2593092-chicken" target="_blank" rel="external">Source</a></p>
+<h3 id="Live-Free-or-Die-by-Patrick-Moriarty"><a href="#Live-Free-or-Die-by-Patrick-Moriarty" class="headerlink" title="Live Free or Die by Patrick Moriarty"></a>Live Free or Die by Patrick Moriarty</h3><p><img src="http://img2.tuicool.com/myqeQri.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3306354-Live-Free-or-Die" target="_blank" rel="external">Source</a></p>
+<h3 id="Airplane-Hanger-by-Jordan-Blahnik"><a href="#Airplane-Hanger-by-Jordan-Blahnik" class="headerlink" title="Airplane Hanger by Jordan Blahnik"></a>Airplane Hanger by Jordan Blahnik</h3><p><img src="http://img1.tuicool.com/eQFB7rM.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3229093-Airplane-Hanger" target="_blank" rel="external">Source</a></p>
+<h3 id="Logo-for-a-brand-new-barbershop-“Nobel-Men”-By-Haykaz"><a href="#Logo-for-a-brand-new-barbershop-“Nobel-Men”-By-Haykaz" class="headerlink" title="Logo for a brand new barbershop “Nobel Men” By Haykaz"></a>Logo for a brand new barbershop “Nobel Men” By Haykaz</h3><p><img src="http://img1.tuicool.com/2iIRb2U.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3580372-Noble-Men" target="_blank" rel="external">Source</a></p>
+<h3 id="Prefect-Breakfast-Badge-by-Skilline"><a href="#Prefect-Breakfast-Badge-by-Skilline" class="headerlink" title="Prefect Breakfast Badge by Skilline"></a>Prefect Breakfast Badge by Skilline</h3><p><img src="http://img2.tuicool.com/A7BRNr6.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3577784-Prefect-Breakfast" target="_blank" rel="external">Source</a></p>
+<p><img src="http://img2.tuicool.com/UzaqQbr.jpg!web" alt=""></p>
+<p>Source</p>
+<p><img src="http://img2.tuicool.com/a6va2aV.jpg!web" alt=""></p>
+<p>Source</p>
+<p><img src="http://img1.tuicool.com/uieQRrN.jpg!web" alt=""></p>
+<p>Source</p>
+<h3 id="Jackson-Wyoming-Night-by-Patrick-Moriarty"><a href="#Jackson-Wyoming-Night-by-Patrick-Moriarty" class="headerlink" title="Jackson, Wyoming (Night) by Patrick Moriarty"></a>Jackson, Wyoming (Night) by Patrick Moriarty</h3><p><img src="http://img0.tuicool.com/viIBn27.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/2641050-Jackson-Wyoming-Night" target="_blank" rel="external">Source</a></p>
+<h3 id="Classic-Garage-Badge-by-Bangkit-Tri-Setiadi"><a href="#Classic-Garage-Badge-by-Bangkit-Tri-Setiadi" class="headerlink" title="Classic Garage Badge by Bangkit Tri Setiadi"></a>Classic Garage Badge by Bangkit Tri Setiadi</h3><p><img src="http://img0.tuicool.com/YzuYrae.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3511882-Classic-Garage" target="_blank" rel="external">Source</a></p>
+<h3 id="Rotiroll-Logo-by-Pepperweb"><a href="#Rotiroll-Logo-by-Pepperweb" class="headerlink" title="Rotiroll Logo by Pepperweb"></a>Rotiroll Logo by Pepperweb</h3><p><img src="http://img1.tuicool.com/BzMVnq2.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3498735-Rotiroll-Logo" target="_blank" rel="external">Source</a></p>
+<h3 id="Austin-City-Badge-by-Denver-Gravitt"><a href="#Austin-City-Badge-by-Denver-Gravitt" class="headerlink" title="Austin City Badge by Denver Gravitt"></a>Austin City Badge by Denver Gravitt</h3><p><img src="http://img1.tuicool.com/V3eIn2Y.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3603261-Austin-City-Badge" target="_blank" rel="external">Source</a></p>
+<h3 id="Bruce-Park-Emblem-by-Damian-Orellana"><a href="#Bruce-Park-Emblem-by-Damian-Orellana" class="headerlink" title="Bruce Park Emblem by Damian Orellana"></a>Bruce Park Emblem by Damian Orellana</h3><p><img src="http://img0.tuicool.com/Mr6zErY.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3599645-Bruce-Park" target="_blank" rel="external">Source</a></p>
+<h3 id="Rocket-Explorer-Badge-animated-by-Austin-Faure"><a href="#Rocket-Explorer-Badge-animated-by-Austin-Faure" class="headerlink" title="Rocket Explorer Badge (animated) by Austin Faure"></a>Rocket Explorer Badge (animated) by Austin Faure</h3><p><img src="http://img2.tuicool.com/byAjYbb.gif" alt=""></p>
+<p><a href="https://dribbble.com/shots/3607064-Rocket-Explorer-Badge" target="_blank" rel="external">Source</a></p>
+<h3 id="Game-For-Life-Badge-by-Adam-Ramerth"><a href="#Game-For-Life-Badge-by-Adam-Ramerth" class="headerlink" title="Game For Life Badge by Adam Ramerth"></a>Game For Life Badge by Adam Ramerth</h3><p><img src="http://img2.tuicool.com/JzqIBzr.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3608791-Game-For-Life-Badge" target="_blank" rel="external">Source</a></p>
+<h3 id="New-Generation-Swimming-Club-Emblem-by-Mooral-Monteria"><a href="#New-Generation-Swimming-Club-Emblem-by-Mooral-Monteria" class="headerlink" title="New Generation Swimming Club Emblem by Mooral Montería"></a>New Generation Swimming Club Emblem by Mooral Montería</h3><p><img src="http://img0.tuicool.com/6ZN3Efv.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3612532-New-Generation-swimming-club" target="_blank" rel="external">Source</a></p>
+<h3 id="Mt-Forbes-Canada-Sticker-by-Jordan-H-Johnson"><a href="#Mt-Forbes-Canada-Sticker-by-Jordan-H-Johnson" class="headerlink" title="Mt. Forbes Canada Sticker by Jordan H Johnson"></a>Mt. Forbes Canada Sticker by Jordan H Johnson</h3><p><img src="http://img2.tuicool.com/6zUvYbq.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3616959-Mt-Forbes-Canada-Sticker" target="_blank" rel="external">Source</a></p>
+<h3 id="30-Year-Anniversary-Badge-by-Adam-Swisher"><a href="#30-Year-Anniversary-Badge-by-Adam-Swisher" class="headerlink" title="30 Year Anniversary Badge by Adam Swisher"></a>30 Year Anniversary Badge by Adam Swisher</h3><p><img src="http://img0.tuicool.com/auq2umA.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3618209-30-Years" target="_blank" rel="external">Source</a></p>
+<h3 id="Learn-Fresh-All-Star-Teaching-Team-by-Jimmy-Nutini"><a href="#Learn-Fresh-All-Star-Teaching-Team-by-Jimmy-Nutini" class="headerlink" title="Learn Fresh All-Star Teaching Team by Jimmy Nutini"></a>Learn Fresh All-Star Teaching Team by Jimmy Nutini</h3><p><img src="http://img2.tuicool.com/ZvmEZn3.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3618941-Learn-Fresh-All-Star-Teaching-Team" target="_blank" rel="external">Source</a></p>
+<h3 id="The-Glass-Jug-Beer-Lab-logo-by-Ryan-Cuthriell"><a href="#The-Glass-Jug-Beer-Lab-logo-by-Ryan-Cuthriell" class="headerlink" title="The Glass Jug Beer Lab logo by Ryan Cuthriell"></a>The Glass Jug Beer Lab logo by Ryan Cuthriell</h3><p><img src="http://img0.tuicool.com/ZVF7viz.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3534822-The-Glass-Jug-Beer-Lab-logo" target="_blank" rel="external">Source</a></p>
+<h3 id="Buck-Inna-Truck-by-Jordan-Blahnik"><a href="#Buck-Inna-Truck-by-Jordan-Blahnik" class="headerlink" title="Buck Inna Truck by Jordan Blahnik"></a>Buck Inna Truck by Jordan Blahnik</h3><p><img src="http://img1.tuicool.com/MNNVje6.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3082881-Buck-Inna-Truck" target="_blank" rel="external">Source</a></p>
+<h3 id="Top-Gallant-Barber-Shop-Logo-By-mylito04"><a href="#Top-Gallant-Barber-Shop-Logo-By-mylito04" class="headerlink" title="Top Gallant Barber Shop Logo By mylito04"></a>Top Gallant Barber Shop Logo By mylito04</h3><p><img src="http://img0.tuicool.com/riMr6ve.jpg!web" alt=""></p>
+<p><a href="https://www.instagram.com/p/BTVXHw4jitB/" target="_blank" rel="external">Source</a></p>
+<p><img src="http://img1.tuicool.com/BrEVzuV.jpg!web" alt=""></p>
+<p>Source</p>
+<h3 id="Motivational-Poster-“Vikings-never-die”-by-Sergey-Akimov"><a href="#Motivational-Poster-“Vikings-never-die”-by-Sergey-Akimov" class="headerlink" title="Motivational Poster “Vikings never die” by Sergey Akimov"></a>Motivational Poster “Vikings never die” by Sergey Akimov</h3><p><img src="http://img1.tuicool.com/mQZZVbN.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3588533-Motivational-Poster-Vikings-never-die" target="_blank" rel="external">Source</a></p>
+<h3 id="Boutique-Woodworking-Company-by-Yavor-Lazarov"><a href="#Boutique-Woodworking-Company-by-Yavor-Lazarov" class="headerlink" title="Boutique Woodworking Company by Yavor Lazarov"></a>Boutique Woodworking Company by Yavor Lazarov</h3><p><img src="http://img1.tuicool.com/JFreMze.jpg!web" alt=""></p>
+<p><a href="https://dribbble.com/shots/3601629-Boutique-Woodworking-Company" target="_blank" rel="external">Source</a></p>
+<h3 id="Hand-Drawn-Vintage-Emblem-by-Graphic-Lovers"><a href="#Hand-Drawn-Vintage-Emblem-by-Graphic-Lovers" class="headerlink" title="Hand Drawn Vintage Emblem by Graphic Lovers"></a>Hand Drawn Vintage Emblem by Graphic Lovers</h3><p><img src="http://img0.tuicool.com/JraI3qf.jpg!web" alt=""></p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/e6VJJna" target="_blank" rel="external">http://graphicdesignjunction.com/2017/07/inspiring-badge-emblem-logo/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;An another amazing examples of&lt;a href=&quot;http://graphicdesignjunction.com/2017/02/badge-emblem-logos/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;stro
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Why I Hate Slack and You Should Too</title>
+    <link href="https://gmagon.com/blog/2017/07/07/why-i-hate-slack-and-you-should-too/"/>
+    <id>https://gmagon.com/blog/2017/07/07/why-i-hate-slack-and-you-should-too/</id>
+    <published>2017-07-07T00:00:00.000Z</published>
+    <updated>2017-07-07T10:09:04.688Z</updated>
+    
+    <content type="html"><![CDATA[<p>Yeah, that’s right: there’s finally something I feel so negatively about that I’m unsatisfied hating it all by myself; I want_you_to hate it, too. So let’s talk about why Slack is destroying your life, piece by piece, and why you should get rid of it immediately before its trail of destruction widens any further—in other words, while you still have time to stop the deluge of mindless addiction that it’s already staple-gunned to your life.</p>
+<h3 id="1-It-encourages-use-for-both-time-sensitive-and-time-insensitive-communication"><a href="#1-It-encourages-use-for-both-time-sensitive-and-time-insensitive-communication" class="headerlink" title="1. It encourages use for both time-sensitive and time-insensitive communication"></a>1. It encourages use for both time-sensitive and time-insensitive communication</h3><p>A Long Thyme Agoe, in the Days Before Slack, I had three different ways of being contacted, and they served three very different purposes, with radically different interrupt priorities. I had emails, which could wait; I had phone calls, which couldn’t; and I had the company IRC server, which was usually where I went to waste time by sharing links to things that either made me get_very_angry or made me laugh hysterically.In this system, the important, time-sensitive thing can interrupt me, and everything else can’t. That’s great for productivity and great for my sanity, and the people were happy and things were good.</p>
+<p>Slack totally just trashed everything. It’s email and phone calls and cat pictures, all rolled into one. So_sometimes<em>Slack notifications are totally not time-sensitive</em>(<code>@here</code>Hey I need coloring books for my niece, any suggestions? also she’s afraid of animals clowns food people and dinosaurs and also allergic to paper kthxbye!)_, and_sometimes<em>they require an immediate action</em>(<code>@here</code>Dr. Poison just showed up and tl;dr maybe run for it idk?)_—and until I’ve read the message, I have<em>absolutely no idea whether it deserves my immediate attention</em>. That order’s backwards and it makes me feel bad because it_is_bad.</p>
+<p>This is actually a whole thing in psychology: if you give a mouse food every time they push a lever, they’ll eventually only push it when they’re hungry, but if you only give them food_sometimes_when they push a lever, then the “reward uncertainty” will actually cause them to push the lever<em>more often</em>.And hey! Here we are, all checking Slack 23,598 times a minute for each notification, because who knows, maybe_this_one matters. It’s all the pain of Vegas with none of the reward and somehow we’re_still_hooked.</p>
+<p>So unlike before, now I get interrupted constantly, and I_have_to break my flow to figure out whether getting interrupted was worthwhile, and for some reason this is supposed to<em>enhance business productivity</em>.</p>
+<p>Right. Sure. You go on being you, Slack.</p>
+<h3 id="2-It-cannot-be-sanely-ignored"><a href="#2-It-cannot-be-sanely-ignored" class="headerlink" title="2. It cannot be sanely ignored"></a>2. It cannot be sanely ignored</h3><p>_“Okay, pea-brain,”<em>you mutter,</em>“so just turn off Slack notifications when you need to focus for awhile, and catch up later.”_</p>
+<p>I once thought as you did, but part of the reason you end up addicted to Slack is that catching up on what you’ve missed feels very similar to when you were back in college and were a day before the final and suddenly realized that your plan of not highlighting the book or taking notes all semester may’ve been a Bad Idea™. About the only way Slack bothers grouping information is by room—and as anyone who’s been trapped in a heavily-used Slack system can tell you, the room names and descriptions are at best weak guidelines, so you can’t even necessarily prioritize what to catch up on even at_that_gross level of granularity.Nope: your only option is going to be to read<em>the entire backlog, from start to finish</em>, or else just accept that, at some distant point three months from now, you’re going to look like a complete idiot when you’re the only one didn’t know that all employee blood was now going to be collected for occult purposes.</p>
+<p>Granted, this isn’t Slack’s fault<em>per se</em>, at least insofar as_every_chat system has this problem, but Slack’s attempt to become your One True Source of Everything, from scheduling to reminders to SharePoint replacement to company directory, means that a_huge_amount of information that previously would’ve been in emails ends up in Slack, and_only_in Slack. And that’s a very deliberate decision by Slack to make themselves utterly indispensable, so I feel very comfy screaming at them until I go hoarse.</p>
+<h3 id="3-It-cannot-be-sanely-organized"><a href="#3-It-cannot-be-sanely-organized" class="headerlink" title="3. It cannot be sanely organized"></a>3. It cannot be sanely organized</h3><p>Okay fine, so you read through the whole backlog from your vacation, which took you barely even 70 hours, and have extracted the six actual to-do items from it, one of which involves something about pentagrams and goats that you’ll decipher later. Great. Mazel tov. Phase one complete.</p>
+<p>Now what? Slack has no meaningful way to organize those six messages. There aren’t folders. There isn’t a meaningful “do later” pile. (There’s<code>/remind</code>, to be fair, but, as noted previously, that just generates more notifications, which we’re trying to avoid. Theoretically.) So you’re left with…what, exactly? Right-clicking on each individual message at the end of the chain, copying the link, and pasting that into some external to-do app? Which, of course, when you click back on the link, will require you to re-read at least_some_amount of unstructured backlog, including a bunch of unrelated garbage about reconfiguring CARP on the edge servers and something about epoll and multithreading and a panda birth video that just happens to be there, just to remind yourself what everyone said?</p>
+<p>Welcome to hell. Population: all Slack users.</p>
+<h3 id="4-It’s-proprietary-and-encourages-lock-in"><a href="#4-It’s-proprietary-and-encourages-lock-in" class="headerlink" title="4. It’s proprietary and encourages lock-in"></a>4. It’s proprietary and encourages lock-in</h3><p>In an ideal world, I could circumvent a lot of these issues in any number of ways. For example, I’m still active in open-source sometimes, and the open-source equivalent of Slack is (usually) still IRC. But IRC, being a well-documentedolder system, has_tons_of different tools to extract data from it. If I want to be nerdy, I can yank individual messages from<a href="https://www.emacswiki.org/emacs/ERC" target="_blank" rel="external">ERC</a>straight into<a href="http://orgmode.org/" target="_blank" rel="external">org mode</a>, or write custom scripts for<a href="https://weechat.org/" target="_blank" rel="external">WeeChat</a>, or use any of literally dozens of clients written in Ruby and Python and Io and Java and C# and thousands of other programming languages plus also JavaScript and do really bespoke things. And even if I don’t, the plethora of macOS and Windows clients means that an off-the-shelf or trivially customizable AppleScript or WSH solution is never far away.</p>
+<p>But Slack is Slack, and Slack is Electron, and Electron is Chrome—Chrome surrounded by an unscriptable posterior that eats up 100 MB of RAM per channel, plus an extra 250 MB for each Giphy.And while I can_almost_script my way out of this hell, I really can’t. Not as a mortal end-user, anyway. To the extent I_can_do anything, I need to write directly against the<a href="https://api.slack.com/" target="_blank" rel="external">Slack API</a>, rather than using something commonplace like XMPP or IRC, so goodbye portability. And even if I’m willing and able to write against the proprietary API, a lot of the more interesting things you can do require being an organization admin, and require being enabled globally for the entire instance. So goodbye, personalized custom integration points, and hello, one-size-fits-zero webhooks. This is my life now.</p>
+<h3 id="5-Its-version-of-Markdown-is-just-broken"><a href="#5-Its-version-of-Markdown-is-just-broken" class="headerlink" title="5. Its version of Markdown is just broken"></a>5. Its version of Markdown is just broken</h3><p>I’m going to use up an entire heading purely to say that making<code>*foo*</code>be<strong>bold</strong>and<code>_foo_</code>be_italic_is covered in Leviticus 64:128 and explicitly punishable by stoning until death.</p>
+<h3 id="6-It-encourages-use-for-both-business-and-personal-applications"><a href="#6-It-encourages-use-for-both-business-and-personal-applications" class="headerlink" title="6. It encourages use for both business and personal applications"></a>6. It encourages use for both business and personal applications</h3><p>All this would be merely infuriating and drive me into a blind murderous rage if it were just something I dealt with at work, but_oh no,_now the_fun_groups I interact with are turning to Slack! That’s right: the same application and environment that makes a full-blown Dementor-style kiss with my attention span for work can now corner me in a back-alley when I just want to shoot the breeze with friends.</p>
+<p>I glance at the Slack icon. I have nine unread messages. Neat. Are they from work? I should probably actually go read those and see which ones require I do something. Are they all the ex-employees of that one company I used to work for? It’s probably a bunch of political screaming about stochastically sentient Cheetos that somehow won the presidency, and I’m honestly a bit tired of reading about that at this point.But at any rate, I can’t know until I take my phone out and read the notification—and sometimes_even then_I can’t, since of course some of the people I talk to are on multiple Slack instances and have a habit of saying things like “<code>@bmp</code>did you look at this it’s really concerning?” which requires I actually load up the freaking client and find the instance and the message and finally learn to my utter horror that I shall never be given up, let down, or run around/deserted.</p>
+<h3 id="Give-up-and-yield-untoCthulhuSlack-destroyer-of-focus"><a href="#Give-up-and-yield-untoCthulhuSlack-destroyer-of-focus" class="headerlink" title="Give up and yield untoCthulhuSlack, destroyer of focus"></a>Give up and yield unto<del>Cthulhu</del>Slack, destroyer of focus</h3><p>Stop using Slack. I hate it; you also should hate it. It’s distracting. It murders productivity. It destroys old tools. It exploits psychological needs in such a way that it kills your soul and hangs it up to dry over a lava pit, where the clothesline catches fire and your soul falls into the fire and somehow you’re not dead, just a zombie, forever, reading zombie notifications on your zombie iPhone and wondering whether “<code>@here</code>brains?” is a lunch invite or an insult until you read the backlog. Friends do not let friends use Slack. I have been utterly convincing and you should listen to me in my capacity as low-grade Internet celebrity and do what I say because mindlessly obeying authority is the right thing to do.</p>
+<p>But realistically? We’re all still using Slack, because it’s there, and we have to, and it’s the best option according to our collective judgment, which I do have point out may empirically be lacking at this point. So if we_are_stuck in Slack, then maybe, just maybe, we could start trying to restore Slack to a place where it’s genuinely for ephemeral ideas. Where it’s indeed the place for_ad hoc_conversations, but not a canonical store for their conclusions and action items. Where I_don’t_have to read the backlog when I come back from vacation, because anything actionable will at worst have been duplicated as an email or a Trello card or what have you. Where I can disable Slack notifications because I can know, with certainty, that any activity can wait until I’m back at my computer and actually_want_to spend time chatting on Slack.</p>
+<p>In the meantime I’ll be right back because either the data center just exploded or someone posted a picture of a goat fainting and The Notification God must be placated.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/IvUb6nq" target="_blank" rel="external">https://bitquabit.com/post/i-hate-slack-and-you-should-too/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Yeah, that’s right: there’s finally something I feel so negatively about that I’m unsatisfied hating it all by myself; I want_you_to hate
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Beginner’s guide : 4 linux group management commands</title>
     <link href="https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/"/>
     <id>https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/</id>
@@ -564,32 +597,59 @@ $_
   </entry>
   
   <entry>
-    <title>A Nasty Instagram Bug Is Causing Lots Of People To Think Their Accounts Were Deleted</title>
-    <link href="https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/"/>
-    <id>https://gmagon.com/blog/2017/07/07/a-nasty-instagram-bug-is-causing-lots-of-people-to-think-their-accounts-were-deleted/</id>
-    <published>2017-07-07T00:00:00.000Z</published>
-    <updated>2017-07-07T10:09:04.665Z</updated>
+    <title>Micro frontends – a microservice approach to front-end web development</title>
+    <link href="https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/"/>
+    <id>https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/</id>
+    <published>2017-07-06T00:00:00.000Z</published>
+    <updated>2017-07-06T10:09:59.031Z</updated>
     
-    <content type="html"><![CDATA[<p>A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.</p>
-<p>The Facebook owned-social app is being bombarded with complaints on Twitter, Facebook and its own service from people who claim their accounts have been deleted without warning or cause.</p>
-<p>Instagram says the culprit is a bug that not only logged people out of their accounts, but also hid them from view. When BuzzFeed News checked multiple account pages that users claimed were deleted, it saw a message stating that the content was unavailable, noting that the link might be broken or the page could’ve been removed.</p>
-<p><strong>“</strong>No accounts have been deleted,” a company spokesperson told BuzzFeed News. “However, the bug logged some users out of their accounts, while also locking their accounts from view. When the bug is fixed and affected users are able to log back in, their accounts will be viewable again.”</p>
-<p><img src="http://img1.tuicool.com/ZJVn2ei.png!web" alt=""></p>
-<p>Comments on Instagram’s latest post</p>
-<p>Even so, users are freaked out. “Please give me back my account@harryspinkflowers i worked so hard on it and had it for 2 years…. please give it back,” read a typical response to Instagram’slatest post. Others were less diplomatic. “Give me my fucking account back bro,” Twitter user<a href="https://go.redirectingat.com/?id=74679X1524629&amp;sref=https%3A%2F%2Fwww.buzzfeed.com%2Falexkantrowitz%2Fa-nasty-instagram-bug-is-causing-lots-of-people-to-think&amp;url=https%3A%2F%2Ftwitter.com%2F_SaucySierra_&amp;xcust=4574368%7CBFLITE&amp;xs=1" target="_blank" rel="external">@<strong>_SaucySierra_</strong></a>wrote.</p>
-<p>It’s unclear how many accounts were affected by this faux purge. Instagram says it’s a very small percentage, but the complaints serve as useful a reminder that ultimately, free social media accounts belong to the companies you register them with. And these companies can do pretty much whatever they want with them.</p>
-<p>That’s a big problem, especially for businesses and other Instagam users whose accounts have a material tie to the offline world. Chocolate company ChocZero’s business is suffering without access to its 6,500 follower account, according to its marketing director Rhea Monique. “I’m supposed to talk to wholesale distributors today and our Instagram along with our proof of sales is a big way to pitch relevancy, “ she told BuzzFeed News. “So it’s devastating this happened.”</p>
-<p><img src="http://img1.tuicool.com/jAjUryu.png!web" alt=""></p>
-<p>Alex Kantrowitz is a senior technology reporter for BuzzFeed News and is based in San Francisco. He reports on social and communications.</p>
-<p>Contact Alex Kantrowitz at<a href="mailto:alex.kantrowitz@buzzfeed.com" target="_blank" rel="external">alex.kantrowitz@buzzfeed.com</a>.</p>
-<p>Got a confidential tip?Submit it here.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/AraQVfy" target="_blank" rel="external">https://www.buzzfeed.com/alexkantrowitz/a-nasty-instagram-bug-is-causing-lots-of-people-to-think</a></p>
+    <content type="html"><![CDATA[<p><img src="http://img0.tuicool.com/7BFRBrz.png!web" alt=""></p>
+<p>For web apps, the front end is becoming bigger and bigger, and the back end is getting less important. Our web app at<a href="https://www.weld.io/?utm_source=medium.com&amp;utm_content=micro-frontends" target="_blank" rel="external"><strong>Weld</strong>(web/app creation tool)</a>is 90% front-end code, with a very thin back end. I can imagine that a majority of new web apps being built today are dealing with a similar situation.</p>
+<p>Web apps also change over time, as do development techniques and frameworks. This requires support for allowing different front-end frameworks to co-exist, e.g. older modules built in JQuery or AngularJS 1.x, combined with newer modules built in React or Vue.</p>
+<h3 id="The-monolithic-approach-doesn’t-work-for-larger-web-apps"><a href="#The-monolithic-approach-doesn’t-work-for-larger-web-apps" class="headerlink" title="The monolithic approach doesn’t work for larger web apps"></a>The monolithic approach doesn’t work for larger web apps</h3><p>Having a monolithic approach to a large front-end app becomes unwieldly. There needs to be a way of breaking it up into smaller modules that can act independently.</p>
+<p>Example:</p>
+<ul>
+<li><code>myapp.com/</code><ul>
+<li>landing page built with static HTML.</li>
+</ul>
+</li>
+<li><code>myapp.com/settings</code><ul>
+<li>old settings module built in AngularJS 1.x.</li>
+</ul>
+</li>
+<li><code>myapp.com/dashboard</code><ul>
+<li>new dashboard module built in React.</li>
+</ul>
+</li>
+</ul>
+<p>I would imagine the following is needed:</p>
+<ol>
+<li>A<br><strong>shared codebase</strong><br>in pure JavaScript e.g. managing routing and user sessions. Also some shared CSS. Both should be as thin as possible.</li>
+<li>A<br><strong>collection of separate modules</strong><br>, “mini-apps”, built in various frameworks. Stored in different code repositories.</li>
+<li>A deployment system that<br><strong>bundles all the modules together</strong><br>from different repositories and deploys to a server, whenever a module is updated.</li>
+</ol>
+<h3 id="The-solution-“micro-frontends”"><a href="#The-solution-“micro-frontends”" class="headerlink" title="The solution: “micro frontends”"></a>The solution: “micro frontends”</h3><p>But as it turns out, a lot of other people is thinking about the same ideas. The common term is<em>“micro frontends”</em>.</p>
+<p>Companies like<a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external">Spotify</a>,<a href="https://news.ycombinator.com/item?id=13012916" target="_blank" rel="external">Klarna</a>,<a href="https://www.mosaic9.org/" target="_blank" rel="external">Zalando</a>,<a href="https://www.upwork.com/blog/2017/05/modernizing-upwork-micro-frontends/" target="_blank" rel="external">Upwork</a>, and<a href="http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html" target="_blank" rel="external">Allegro</a>are using the micro frontends approach to build their web apps.</p>
+<h3 id="Implementing-micro-frontends"><a href="#Implementing-micro-frontends" class="headerlink" title="Implementing micro frontends"></a>Implementing micro frontends</h3><p>Here’s a few different approaches to implementing micro frontends:</p>
+<ol>
+<li>Isolating micro-apps into<br><a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external"><strong>IFrames</strong>using libraries and Window.postMessage APIs</a><br>to coordinate. IFrames share APIs exposed by their parent window.</li>
+<li><a href="https://news.ycombinator.com/item?id=13011795" target="_blank" rel="external">Multiple single-page apps that live at different URLs</a><br>. The apps use NPM/Bower components for shared functionality.</li>
+<li>Using<br><a href="http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html" target="_blank" rel="external"><strong>Varnish Cache</strong>to integrate different modules</a><br>.</li>
+<li><a href="https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/" target="_blank" rel="external"><strong>Web Components</strong>as the integration layer</a><br>.</li>
+<li><a href="https://news.ycombinator.com/item?id=13012916" target="_blank" rel="external">“Blackbox”<strong>React</strong>components</a><br>.</li>
+</ol>
+<h3 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h3><ul>
+<li><a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external">Ask Hacker News: “What do you use to build micro-front ends?”</a></li>
+<li><a href="https://www.mosaic9.org/" target="_blank" rel="external">Project Mosaic</a><br>by Zalando, a set of libraries to support a microservice style architecture for large scale websites. See also<br><a href="https://www.microservices.com/talks/mosaic-microservices-zalando-tech/" target="_blank" rel="external">this presentation from Zalando Tech</a><br>.</li>
+<li><a href="https://github.com/neuland/micro-frontends" target="_blank" rel="external">Micro Frontends (GitHub)</a><br>— will contain techniques, strategies and recipes for building a modern web app with multiple independent teams.</li>
+</ul>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/aeM3Ybf" target="_blank" rel="external">https://medium.com/@tomsoderlund/micro-frontends-a-microservice-approach-to-front-end-web-development-f325ebdadc16</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;A bug is making people think their Instagram accounts were deleted, and they are pretty steaming mad about it.&lt;/p&gt;
-&lt;p&gt;The Facebook owned-
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/7BFRBrz.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;For web apps, the front end is becoming bigger and bigger, and the back
     
     </summary>
     
@@ -687,59 +747,168 @@ $_
   </entry>
   
   <entry>
-    <title>Micro frontends – a microservice approach to front-end web development</title>
-    <link href="https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/"/>
-    <id>https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/</id>
+    <title>Tonsser, the social app for youth soccer players, partners with Nike and raises new funding</title>
+    <link href="https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/"/>
+    <id>https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</id>
     <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.031Z</updated>
+    <updated>2017-07-06T10:09:59.048Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://img0.tuicool.com/7BFRBrz.png!web" alt=""></p>
-<p>For web apps, the front end is becoming bigger and bigger, and the back end is getting less important. Our web app at<a href="https://www.weld.io/?utm_source=medium.com&amp;utm_content=micro-frontends" target="_blank" rel="external"><strong>Weld</strong>(web/app creation tool)</a>is 90% front-end code, with a very thin back end. I can imagine that a majority of new web apps being built today are dealing with a similar situation.</p>
-<p>Web apps also change over time, as do development techniques and frameworks. This requires support for allowing different front-end frameworks to co-exist, e.g. older modules built in JQuery or AngularJS 1.x, combined with newer modules built in React or Vue.</p>
-<h3 id="The-monolithic-approach-doesn’t-work-for-larger-web-apps"><a href="#The-monolithic-approach-doesn’t-work-for-larger-web-apps" class="headerlink" title="The monolithic approach doesn’t work for larger web apps"></a>The monolithic approach doesn’t work for larger web apps</h3><p>Having a monolithic approach to a large front-end app becomes unwieldly. There needs to be a way of breaking it up into smaller modules that can act independently.</p>
-<p>Example:</p>
-<ul>
-<li><code>myapp.com/</code><ul>
-<li>landing page built with static HTML.</li>
-</ul>
-</li>
-<li><code>myapp.com/settings</code><ul>
-<li>old settings module built in AngularJS 1.x.</li>
-</ul>
-</li>
-<li><code>myapp.com/dashboard</code><ul>
-<li>new dashboard module built in React.</li>
-</ul>
-</li>
-</ul>
-<p>I would imagine the following is needed:</p>
-<ol>
-<li>A<br><strong>shared codebase</strong><br>in pure JavaScript e.g. managing routing and user sessions. Also some shared CSS. Both should be as thin as possible.</li>
-<li>A<br><strong>collection of separate modules</strong><br>, “mini-apps”, built in various frameworks. Stored in different code repositories.</li>
-<li>A deployment system that<br><strong>bundles all the modules together</strong><br>from different repositories and deploys to a server, whenever a module is updated.</li>
-</ol>
-<h3 id="The-solution-“micro-frontends”"><a href="#The-solution-“micro-frontends”" class="headerlink" title="The solution: “micro frontends”"></a>The solution: “micro frontends”</h3><p>But as it turns out, a lot of other people is thinking about the same ideas. The common term is<em>“micro frontends”</em>.</p>
-<p>Companies like<a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external">Spotify</a>,<a href="https://news.ycombinator.com/item?id=13012916" target="_blank" rel="external">Klarna</a>,<a href="https://www.mosaic9.org/" target="_blank" rel="external">Zalando</a>,<a href="https://www.upwork.com/blog/2017/05/modernizing-upwork-micro-frontends/" target="_blank" rel="external">Upwork</a>, and<a href="http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html" target="_blank" rel="external">Allegro</a>are using the micro frontends approach to build their web apps.</p>
-<h3 id="Implementing-micro-frontends"><a href="#Implementing-micro-frontends" class="headerlink" title="Implementing micro frontends"></a>Implementing micro frontends</h3><p>Here’s a few different approaches to implementing micro frontends:</p>
-<ol>
-<li>Isolating micro-apps into<br><a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external"><strong>IFrames</strong>using libraries and Window.postMessage APIs</a><br>to coordinate. IFrames share APIs exposed by their parent window.</li>
-<li><a href="https://news.ycombinator.com/item?id=13011795" target="_blank" rel="external">Multiple single-page apps that live at different URLs</a><br>. The apps use NPM/Bower components for shared functionality.</li>
-<li>Using<br><a href="http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html" target="_blank" rel="external"><strong>Varnish Cache</strong>to integrate different modules</a><br>.</li>
-<li><a href="https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/" target="_blank" rel="external"><strong>Web Components</strong>as the integration layer</a><br>.</li>
-<li><a href="https://news.ycombinator.com/item?id=13012916" target="_blank" rel="external">“Blackbox”<strong>React</strong>components</a><br>.</li>
-</ol>
-<h3 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h3><ul>
-<li><a href="https://news.ycombinator.com/item?id=13009285" target="_blank" rel="external">Ask Hacker News: “What do you use to build micro-front ends?”</a></li>
-<li><a href="https://www.mosaic9.org/" target="_blank" rel="external">Project Mosaic</a><br>by Zalando, a set of libraries to support a microservice style architecture for large scale websites. See also<br><a href="https://www.microservices.com/talks/mosaic-microservices-zalando-tech/" target="_blank" rel="external">this presentation from Zalando Tech</a><br>.</li>
-<li><a href="https://github.com/neuland/micro-frontends" target="_blank" rel="external">Micro Frontends (GitHub)</a><br>— will contain techniques, strategies and recipes for building a modern web app with multiple independent teams.</li>
-</ul>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/aeM3Ybf" target="_blank" rel="external">https://medium.com/@tomsoderlund/micro-frontends-a-microservice-approach-to-front-end-web-development-f325ebdadc16</a></p>
+    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/EneaUnz.jpg!web" alt=""></p>
+<p><a href="http://tonsser.com/" target="_blank" rel="external">Tonsser</a>, the Copenhagen-based startup that offers a vertical social network aimed at youth soccer players who want to build their own online profile and potentially get discovered by a bigger club, continues to grow at a clip, both in terms of signups but also the influence it wants to have on the beautiful game. The company has signed on Nike as its first brand channel partner, and now has 380,000 youth players registered, up from 100,000 just over a year ago.</p>
+<p>The Danish startup has also raised a new round of funding as it gears up for a 2018 expansion to the U.K., home to the English Premier League and a huge potential youth football market for the startup. It is also quite a fragmented one, in terms of youth leagues, so it will be interesting to see how quickly Tonsser can grow here. The app is currently live in France, Germany, Denmark, Sweden and Norway.</p>
+<p>In a call with co-founder and CEO Peter Holm (and after we spent the first ten minutes catching up with the latest Tottenham Hotspur news, as we are inclined to do), he told me that Tonsser is evolving from a social app that was<a href="https://techcrunch.com/2016/06/08/tonsser/" target="_blank" rel="external">mainly about youth players making a profile of themselves and tracking scores and stats</a>in order to get noticed by scouts — a bit like a real life Football Manager video game — to offer even more user-generated content where players can learn skills from each other and in turn become influencers on the platform.</p>
+<p><img src="http://img1.tuicool.com/MVFbMzJ.jpg!web" alt="">“Since the internet you no longer need to go to Harvard to learn and be educated by the best. You can go to Youtube, masterclasses or see a Ted talk. We believe it should be the same in football where don’t need to be at the best or most expensive academy to learn and be inspired by the best players and coaches,” he says.</p>
+<p>This is seeing top youth players, including from PSG, Lyon, and Dortmund, and “freestylers and local heroes” create video content, such as how to take a free kick, to inspire other young soccer players in Europe.</p>
+<p>Related to this, Tonsser has signed on Nike to be the first brand to get access to the platform with their own channel, where they are posting what Holm calls “edutainment,” including drills with from players in Barcelona’s La Masia academy. This also points towards the makings of a revenue model for the free to access social app.</p>
+<p>“Next is opening [the platform up] to top clubs to show drills and practice from their academies. [We are] currently in talks with international top clubs from England, Germany, Holland and Denmark,” adds Holm.</p>
+<p>He also tells me Tonsser is working on integrations with wearable devices to “empower players to become more data-driven and compare physical data including pace, acceleration, distance covered, form, etc”.</p>
+<p>Meanwhile, I understand the startup has raised €2.5 million in new funding. Backing the round are existing investors Wellington Partners, SEED Capital, Arthur Kosten (Booking.com), and unnamed professional soccer players. The long term ambition is “to become the de facto platform for the next generation of football,” says the Tonsser CEO.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/Qr6VZjV" target="_blank" rel="external">https://techcrunch.com/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/7BFRBrz.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;For web apps, the front end is becoming bigger and bigger, and the back
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/EneaUnz.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tonsser.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tonsser&lt;/a
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Image Correction for Color Blindness</title>
+    <link href="https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/"/>
+    <id>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</id>
+    <published>2017-07-06T00:00:00.000Z</published>
+    <updated>2017-07-06T10:09:59.028Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Color-blind-image-correction"><a href="#Color-blind-image-correction" class="headerlink" title="Color blind image correction"></a>Color blind image correction</h2><p>Color blind image correction</p>
+<p><a href="http://www.vischeck.com/daltonize/runDaltonize.php" target="_blank" rel="external">(Run Daltonize online here)</a></p>
+<p>One of the most common questions that we are asked is:</p>
+<p><strong>  
+</strong></p>
+<p>Is there a way to cure color blindness?</p>
+<p>From a medical point of view, the answer is ‘not really’. There are some devices (colored contact lenses or filter spectacles) that are claimed to improve the vision of color blind people but in general, people report very mixed results with them. There is currently no effective way to recover full trichromatic vision if you are red/green colorblind.</p>
+<p>So in one sense, color blindness is ‘incurable’. But a deeper question is “what is color good for?”. Apart from its aethetic appeal, seeing many different colors allows us to distinguish things in the world. Take the example below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>How many types of fruit is this man selling?</strong> People with three different cone types (“trichromats”) can see 5 distinct piles of fruit on the ground. From back to front, they look ‘red’, ‘green’, ‘red’, ‘yellow’ and ‘light orange’. There are also some baskets on the shelf containing three piles of fruit.</th>
+<th style="text-align:left"><img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">But people with red/green color blindness usually have trouble seeing all the different fruits.They see something that can be simulated like this: Note that there now seem to be only three or four different types of fruit on the ground. It is also hard to tell how many distinct piles of fruit there are on the shelves.</td>
+<td style="text-align:left"><img src="http://img0.tuicool.com/iUNRfi7.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>In some pictures, a lot of important information is conveyed by variations in reds and greens. This is a real problem for color blind people who will miss this information. The important point to understand is that<strong>the ‘true’ color of something may be irrelevant but the fact that it is different from its surroundings is very important.</strong></p>
+<p>Here is another example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><img src="http://img2.tuicool.com/Y3MBVvr.jpg!web" alt=""></th>
+<th style="text-align:left"><img src="http://img2.tuicool.com/j6rUryi.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>1) Cells labelled with three types of fluorescent markers to show up three different structures.</strong></td>
+<td style="text-align:left"><strong>2) Red/green color blind simulation of fluorescent cell picture.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Here, a color blind scientist would be unable to tell the red and green labels apart. They would miss important information about the structure of the cells.</p>
+<p>How to fix it?</p>
+<p>We can use image processing techniques to improve this situation. There are two ways that we can make information in pictures available to color blind people.</p>
+<p><strong>1)</strong>The simplest way is simply to increase the red/green contrast in the image. Many color blind people have some residual red/green discrimination. Increasing the red/green contrast makes them more likely to see these types of color variations.</p>
+<p><strong>2)</strong>We can analyze the information conveyed by variations in the red/green direction and convert these into changes in brightness and/or blue/yellow coloration.  This allows us to map information from a color dimension that is invisible to dichromats into those that they can see.</p>
+<p>We call the combination of these two processes ‘Daltonization’ after John Dalton, the British scientist who was one of the first people to investigate color blindness.</p>
+<p>The result of applying these algorithms is shown below.:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><img src="http://img2.tuicool.com/INjiey2.jpg!web" alt=""></th>
+<th style="text-align:left"><img src="http://img1.tuicool.com/QZ7vUji.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">3) Daltonized version of three-color-labelled fluorescent cells.</td>
+<td style="text-align:left"><strong>4) Dichromat (red/green color blind) simulation of the  Daltonized image.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Here, the algorithm has mapped changes in the reds and greens into slight changes in brightness and bluishness. The result is that when viewed by someone with color blindness, the different labelled structures in the cell are clearly visible.</p>
+<p>Here are some more examples. In each case, the images are numbered 1 to 4 where<strong>1</strong>) is the original full-color image,<strong>2</strong>) is a simulation of the color-blind view of the full color image,<strong>3</strong>) is the Daltonized version of the full color image and<strong>4</strong>) is the color blind simulation of the Daltonized image showing improved red/green discrimination. To see how well the Daltonization algorithm works for someone with color blindness, compare images<strong>2</strong>) and<strong>4</strong>).</p>
+<p>Example: Gauguin painting</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img1.tuicool.com/AR3U73r.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img0.tuicool.com/rA7jqiJ.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img1.tuicool.com/INjieiZ.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/QfE7fui.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>In this case, the Daltonization transformation must be judged on a more aesthetic level. While there is more ‘information’ present in image<strong>4)</strong>compared to image<strong>2)</strong>the disruption in the color balance may be unsettling (or fascinating) to some dichromats.</p>
+<p>Here is an Ishihara plate - a common aid for diagnosing color blindness. The number ‘45’ in the center of the disk is invisible to  someone with red/green color blindness.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/quMZJbn.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img2.tuicool.com/vi6v6rA.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>There are several things to note about this example. First of all, although the enhancement of the red/green information in the Daltonized version is striking, this is not a good<strong>general</strong>test of an algorithm to modify images for color blind observers. The reason is that the Ishihara plates are (deliberately) artificial images, and do not represent the range of colors that people see in everyday life. It would be rather easy to design an algorithm to ‘improve’ Ishihara plates (for example one that replaced all reds with blues) that would nevertheless destroy other types of information in the image. One nice feature of the Daltonization algorithm is that it analyses the information content of the image beforehand and attempts to preserve existing color variations.</p>
+<p>Note also that the Daltonizing algorithm does not enable people to “pass” the Ishihara test in any way. It is a digital image processing technique that can make print or video display more salient to color blind people without distorting the color balance to an unnacceptable degree.</p>
+<p>And finally, here’s the fruit market we showed you at the start:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
+<th style="text-align:left"><strong>2</strong>)<img src="http://img1.tuicool.com/EJR73qz.jpg!web" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/qqA3y26.jpg!web" alt=""></td>
+<td style="text-align:left"><strong>4</strong>)<img src="http://img2.tuicool.com/NZRNj23.jpg!web" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>The different piles of fruit on the floor are now clearly visible in image<strong>4</strong>).</p>
+<p><strong>What is it good for?</strong>We envisage a number of applications for this algorithm. Here are some examples:</p>
+<p><strong>As part of a digital microscope</strong>(see the ‘cells’ example above): Color blind users could flick a switch to improve the visibility of red/green fluorescent labels or intrinsic color contrast…</p>
+<p><strong>In digital video recorders and display systems</strong>: Viewers could turn on the Daltonize algorithm much as they might vary the brightness or volume using a remote control. Operating on a real-time video stream, the algorithm could improve the appearence of TV for color blind viewers (for example, making sports teams playing in red strip on a green field far more visible) without significantly disturbing the color balance for other members of the audience….</p>
+<p><strong>Computer display devices</strong>: Computer users could turn on the Daltonize algorithm from as part of their computer video card controls. All output appearing on the monitor (including web-pages, videos and still images) would automatically be processed and rendered more salient to dichromats.</p>
+<p><strong>Print media</strong>: Images can be Daltonized before printing. Print applications where legibility is essential (for example, public safety documents, maps, technical instructions) can all be made more legible for color-blind users….</p>
+<p><strong>  
+</strong></p>
+<p>You can play with the algorithm onlineon this web page. Please be aware that this page is taking a lot of hits at the moment and may seem a little slow to respond. If you have any particularly interesting images that you would like us to process, send them to us by email atinfo@vischeck.com and we will run them ‘by hand’. Please keep them to a reasonable size :)</p>
+<p>We would also like to hear your feedback about this algorithm - especially if you are color blind. Let us know what you think!</p>
+<p>If you would like to license the Daltonizing algorithm for use in your own applications, please contact us at<a href="mailto://daltonize_license@vischeck.com" target="_blank" rel="external">daltonize_licence@vischeck.com</a>.</p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/6B3qMvb" target="_blank" rel="external">http://www.vischeck.com/daltonize/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Color-blind-image-correction&quot;&gt;&lt;a href=&quot;#Color-blind-image-correction&quot; class=&quot;headerlink&quot; title=&quot;Color blind image correction&quot;&gt;&lt;/a&gt;Co
     
     </summary>
     
@@ -901,168 +1070,45 @@ $_
   </entry>
   
   <entry>
-    <title>Image Correction for Color Blindness</title>
-    <link href="https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/"/>
-    <id>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</id>
-    <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.028Z</updated>
+    <title>Is Freelancing Your Next UX Career Move?</title>
+    <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
+    <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
+    <published>2017-07-05T00:00:00.000Z</published>
+    <updated>2017-07-05T09:44:47.960Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Color-blind-image-correction"><a href="#Color-blind-image-correction" class="headerlink" title="Color blind image correction"></a>Color blind image correction</h2><p>Color blind image correction</p>
-<p><a href="http://www.vischeck.com/daltonize/runDaltonize.php" target="_blank" rel="external">(Run Daltonize online here)</a></p>
-<p>One of the most common questions that we are asked is:</p>
-<p><strong>  
-</strong></p>
-<p>Is there a way to cure color blindness?</p>
-<p>From a medical point of view, the answer is ‘not really’. There are some devices (colored contact lenses or filter spectacles) that are claimed to improve the vision of color blind people but in general, people report very mixed results with them. There is currently no effective way to recover full trichromatic vision if you are red/green colorblind.</p>
-<p>So in one sense, color blindness is ‘incurable’. But a deeper question is “what is color good for?”. Apart from its aethetic appeal, seeing many different colors allows us to distinguish things in the world. Take the example below.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>How many types of fruit is this man selling?</strong> People with three different cone types (“trichromats”) can see 5 distinct piles of fruit on the ground. From back to front, they look ‘red’, ‘green’, ‘red’, ‘yellow’ and ‘light orange’. There are also some baskets on the shelf containing three piles of fruit.</th>
-<th style="text-align:left"><img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">But people with red/green color blindness usually have trouble seeing all the different fruits.They see something that can be simulated like this: Note that there now seem to be only three or four different types of fruit on the ground. It is also hard to tell how many distinct piles of fruit there are on the shelves.</td>
-<td style="text-align:left"><img src="http://img0.tuicool.com/iUNRfi7.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>In some pictures, a lot of important information is conveyed by variations in reds and greens. This is a real problem for color blind people who will miss this information. The important point to understand is that<strong>the ‘true’ color of something may be irrelevant but the fact that it is different from its surroundings is very important.</strong></p>
-<p>Here is another example:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><img src="http://img2.tuicool.com/Y3MBVvr.jpg!web" alt=""></th>
-<th style="text-align:left"><img src="http://img2.tuicool.com/j6rUryi.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>1) Cells labelled with three types of fluorescent markers to show up three different structures.</strong></td>
-<td style="text-align:left"><strong>2) Red/green color blind simulation of fluorescent cell picture.</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Here, a color blind scientist would be unable to tell the red and green labels apart. They would miss important information about the structure of the cells.</p>
-<p>How to fix it?</p>
-<p>We can use image processing techniques to improve this situation. There are two ways that we can make information in pictures available to color blind people.</p>
-<p><strong>1)</strong>The simplest way is simply to increase the red/green contrast in the image. Many color blind people have some residual red/green discrimination. Increasing the red/green contrast makes them more likely to see these types of color variations.</p>
-<p><strong>2)</strong>We can analyze the information conveyed by variations in the red/green direction and convert these into changes in brightness and/or blue/yellow coloration.  This allows us to map information from a color dimension that is invisible to dichromats into those that they can see.</p>
-<p>We call the combination of these two processes ‘Daltonization’ after John Dalton, the British scientist who was one of the first people to investigate color blindness.</p>
-<p>The result of applying these algorithms is shown below.:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><img src="http://img2.tuicool.com/INjiey2.jpg!web" alt=""></th>
-<th style="text-align:left"><img src="http://img1.tuicool.com/QZ7vUji.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">3) Daltonized version of three-color-labelled fluorescent cells.</td>
-<td style="text-align:left"><strong>4) Dichromat (red/green color blind) simulation of the  Daltonized image.</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Here, the algorithm has mapped changes in the reds and greens into slight changes in brightness and bluishness. The result is that when viewed by someone with color blindness, the different labelled structures in the cell are clearly visible.</p>
-<p>Here are some more examples. In each case, the images are numbered 1 to 4 where<strong>1</strong>) is the original full-color image,<strong>2</strong>) is a simulation of the color-blind view of the full color image,<strong>3</strong>) is the Daltonized version of the full color image and<strong>4</strong>) is the color blind simulation of the Daltonized image showing improved red/green discrimination. To see how well the Daltonization algorithm works for someone with color blindness, compare images<strong>2</strong>) and<strong>4</strong>).</p>
-<p>Example: Gauguin painting</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img1.tuicool.com/AR3U73r.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img0.tuicool.com/rA7jqiJ.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img1.tuicool.com/INjieiZ.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/QfE7fui.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>In this case, the Daltonization transformation must be judged on a more aesthetic level. While there is more ‘information’ present in image<strong>4)</strong>compared to image<strong>2)</strong>the disruption in the color balance may be unsettling (or fascinating) to some dichromats.</p>
-<p>Here is an Ishihara plate - a common aid for diagnosing color blindness. The number ‘45’ in the center of the disk is invisible to  someone with red/green color blindness.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/quMZJbn.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img2.tuicool.com/vi6v6rA.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img0.tuicool.com/A3ANFjE.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>There are several things to note about this example. First of all, although the enhancement of the red/green information in the Daltonized version is striking, this is not a good<strong>general</strong>test of an algorithm to modify images for color blind observers. The reason is that the Ishihara plates are (deliberately) artificial images, and do not represent the range of colors that people see in everyday life. It would be rather easy to design an algorithm to ‘improve’ Ishihara plates (for example one that replaced all reds with blues) that would nevertheless destroy other types of information in the image. One nice feature of the Daltonization algorithm is that it analyses the information content of the image beforehand and attempts to preserve existing color variations.</p>
-<p>Note also that the Daltonizing algorithm does not enable people to “pass” the Ishihara test in any way. It is a digital image processing technique that can make print or video display more salient to color blind people without distorting the color balance to an unnacceptable degree.</p>
-<p>And finally, here’s the fruit market we showed you at the start:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>1</strong>)<img src="http://img0.tuicool.com/ZJZFNnV.jpg!web" alt=""></th>
-<th style="text-align:left"><strong>2</strong>)<img src="http://img1.tuicool.com/EJR73qz.jpg!web" alt=""></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>3</strong>)<img src="http://img0.tuicool.com/qqA3y26.jpg!web" alt=""></td>
-<td style="text-align:left"><strong>4</strong>)<img src="http://img2.tuicool.com/NZRNj23.jpg!web" alt=""></td>
-</tr>
-</tbody>
-</table>
-<p>The different piles of fruit on the floor are now clearly visible in image<strong>4</strong>).</p>
-<p><strong>What is it good for?</strong>We envisage a number of applications for this algorithm. Here are some examples:</p>
-<p><strong>As part of a digital microscope</strong>(see the ‘cells’ example above): Color blind users could flick a switch to improve the visibility of red/green fluorescent labels or intrinsic color contrast…</p>
-<p><strong>In digital video recorders and display systems</strong>: Viewers could turn on the Daltonize algorithm much as they might vary the brightness or volume using a remote control. Operating on a real-time video stream, the algorithm could improve the appearence of TV for color blind viewers (for example, making sports teams playing in red strip on a green field far more visible) without significantly disturbing the color balance for other members of the audience….</p>
-<p><strong>Computer display devices</strong>: Computer users could turn on the Daltonize algorithm from as part of their computer video card controls. All output appearing on the monitor (including web-pages, videos and still images) would automatically be processed and rendered more salient to dichromats.</p>
-<p><strong>Print media</strong>: Images can be Daltonized before printing. Print applications where legibility is essential (for example, public safety documents, maps, technical instructions) can all be made more legible for color-blind users….</p>
-<p><strong>  
-</strong></p>
-<p>You can play with the algorithm onlineon this web page. Please be aware that this page is taking a lot of hits at the moment and may seem a little slow to respond. If you have any particularly interesting images that you would like us to process, send them to us by email atinfo@vischeck.com and we will run them ‘by hand’. Please keep them to a reasonable size :)</p>
-<p>We would also like to hear your feedback about this algorithm - especially if you are color blind. Let us know what you think!</p>
-<p>If you would like to license the Daltonizing algorithm for use in your own applications, please contact us at<a href="mailto://daltonize_license@vischeck.com" target="_blank" rel="external">daltonize_licence@vischeck.com</a>.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/6B3qMvb" target="_blank" rel="external">http://www.vischeck.com/daltonize/</a></p>
+    <content type="html"><![CDATA[<p>I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time again, abandoning the 9-5 life and making my main source of employment a series of projects from different clients.</p>
+<p>Since then, I’ve had countless conversations with other UX professionals who are considering moving to freelancing as their next career step.</p>
+<p>They usually say they’re looking for freedom, more money, the ability to work on more interesting problems or learn new things – or even just the chance to work in their pyjamas regularly. Since I started consulting, I’ve expanded my focus into more strategy and product work across a wide variety of industries, and have met all kinds of interesting, smart colleagues.</p>
+<p>While I wouldn’t change a thing about my situation, I’m always cautious about encouraging others to jump into the freelance world, because it’s definitely not for everyone. Here are some things I’ve learned along the way to consider before you quit your day job.</p>
+<h3 id="Freelancing-pros-and-cons"><a href="#Freelancing-pros-and-cons" class="headerlink" title="Freelancing pros and cons"></a>Freelancing pros and cons</h3><p>Yes, it’s true that I spend most days in yoga pants, travel frequently, and work on some pretty cool projects. But consulting isn’t all sunshine and rainbows. There are many things that are great about consulting, some things that aren’t so great, and some things that just depend on the day.</p>
+<p><img src="http://img2.tuicool.com/mqEZzeZ.png!web" alt=""></p>
+<p>Freelancing pro: setting up your own home office. Photo by<a href="http://unsplash.com/photos/RcdV8rnXSeE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Vadim Sherbakov</a>on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Unsplash</a>.</p>
+<p>Schedule: One of the things I love most about consulting is being in total control of my schedule. There’s no expectation that I’m at my desk from 9 am to 5 pm. Sometimes I get in a zone and finish an entire report in one very long day and take the next morning off to let ideas percolate. Of course I have meetings and deadlines, but I can usually finagle things to work well for my clients and myself.</p>
+<p>On the flip side, juggling your schedule can be difficult. I’m quite disciplined about getting things done, but I’ve never quite figured out a way to create a consistent schedule. Sometimes I’ve had priority work on different projects collide at the same time or I’ve said yes to a few too many things and ended up working crazy hours to get everything done. Such is a consultant’s life.</p>
+<p>Money: I absolutely find that I make more money freelancing than when I worked in-house, even in leadership roles. I’m still experimenting with how I bill, but I tend to use value-based pricing for entire projects rather than charge hourly. I often ask clients to pay me 50% of the total upfront and the rest upon project completion, which can make managing money tricky, especially when you’re used to a consistent paycheck.</p>
+<p>You also have to know that you’ll never be able to collect money as though you’re billing 40 hours a week, every week. You have to account for supplies, tool costs, benefits, and set aside time for administrative tasks like sending invoices, business development, and, of course, downtime. No one gives you sick time or vacation days when you freelance.</p>
+<p>Inevitably, I’ve also run into time periods where I don’t have anything billable booked. An open schedule can be scary, so I use this time to do things like reach out to colleagues or potential clients, write articles, research new tools, try to learn something new, or catch up on administrative work. One of the benefits of this downtime is the space to learn, exploring the vast array of available online courses or just experimenting with a new method or tool.</p>
+<p>Work environment: I mostly work from home, which means I wear what I like, can pet my dog throughout the day, don’t contend with traffic, and for better or worse, have all day access to my kitchen. All great, but it also means that sometimes the only person I see in the flesh each day is my husband.</p>
+<p>I have to make an extra concerted effort to hang out with colleagues, so I’ve become more active in my local meetups and groups (shout out to<a href="https://www.meetup.com/Ladies-that-UX-Durham/" target="_blank" rel="external">Ladies that UX Durham</a>– love yall!) I also found I need to be more social during the week, even if that means going to a fitness class instead of biking solo or talking on the phone while I shop.</p>
+<h3 id="What-services-will-you-provide"><a href="#What-services-will-you-provide" class="headerlink" title="What services will you provide?"></a>What services will you provide?</h3><p>I’ve been focused on research and strategy for most of my career. I won’t rehash the “<a href="http://community.uxmastery.com/t/forced-to-become-a-unicorn-has-that-happened-to-you/783/11" target="_blank" rel="external">Should I be a unicorn</a>?” or “<a href="http://uxmastery.com/ux-designers-do-not-need-to-code/" target="_blank" rel="external">Do designers need to code</a>?” debates, but I’ll admit that when I first starting freelancing, I was worried I wasn’t going to be able to find enough work without doing visual work. Turns out, I was totally wrong. Phew!</p>
+<p><img src="http://img1.tuicool.com/BzMjMbA.jpg!web" alt=""></p>
+<p>Don’t worry, you don’t need to be a unicorn to be a freelance UXer.</p>
+<p>You absolutely don’t need to be a unicorn or try to tackle projects that aren’t your speciality. But it helps to have a broad set of experience and at least one area of deep expertise you can market and use to define your services. You can match what you’re good at and what you like to define the kind of projects you target, the projects you’re OK with taking, and what you will certainly turn down.</p>
+<p>Clearly<a href="http://uxmastery.com/build-your-ux-personal-brand/" target="_blank" rel="external">defining your services and interests</a>are important because it tells other people what to turn to you for. if I know someone has great interaction design skills and tonnes of experience with financial products, I’ll suggest them anytime I see a project like that. If someone tells me they’ll do anything that comes their way, they probably won’t come to mind for any projects I know about.</p>
+<h3 id="How-will-you-find-clients"><a href="#How-will-you-find-clients" class="headerlink" title="How will you find clients?"></a>How will you find clients?</h3><p>This is a question that I get asked time after time, and the answer is incredibly simple in concept but hard in practice:<strong>treat your clients and colleagues as you would users and provide them with a good experience working with you</strong>.</p>
+<p>More specifically, you have to do good work and other people have to be willing to talk about it. This can either mean that your clients are pleased with your work and will re-hire you or tell other potential clients, or that your peers in UX like your work and can refer you when they need help or can’t take something on. It really is true that a huge amount of success in consulting is based on networking and who you know, but that only works to your advantage if the people you know have had a good experience working with you. Right now, every single one of my clients is someone I’ve previously worked with or have gotten a good reference.</p>
+<p>This is where, once again, it helps to have a clearly defined, slightly unique set of skills or interests. There are tonnes of researchers and tonnes of designers, but if you’re known as a researcher who loves qualitative work and medical products, people will think of you whenever they come across that kind of project. Just be sure that you don’t define yourself too narrowly.</p>
+<p>You can also use job boards to identify potential projects or try recruiting agencies, but I haven’t found either as fruitful as having my name passed on from a previous contact. More on finding freelance UX work<a href="https://www.linkedin.com/pulse/single-best-way-get-freelance-ux-work-amanda-stockwell?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWB86zkUbaQbxQN8f0Iqf%2Bw%3D%3D" target="_blank" rel="external">here</a>.</p>
+<h3 id="Are-you-really-suited-for-all-that"><a href="#Are-you-really-suited-for-all-that" class="headerlink" title="Are you really suited for all that?"></a>Are you really suited for all that?</h3><p>Even if all the potential pros sound amazing to you and you have the skills and network to pull off freelancing, take a moment to reflect on your personality and soft skills.</p>
+<p>Are you detailed, organised, and willing to juggle many different client requests and manage your own schedule? Are you a natural risk-taker who can cope well with slow periods or lack of viable work? Are you assertive enough to negotiate terms for yourself? Do you mind working by yourself a lot?</p>
+<p>There’s a lot to think about before leaving the security of a full-time job. I love freelancing, but it’s worth carefully considering the pros and cons and your skillset and personality before taking the leap. Best wishes for whichever path you choose! </p>
+<p>Do you have experience or tips on freelancing for UX professionals? Leave a comment on the blog or in the forums! </p>
+<p>Source: <a href="http://www.tuicool.com/articles/hit/3qIJryE" target="_blank" rel="external">http://uxmastery.com/freelancing-ux-career/</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Color-blind-image-correction&quot;&gt;&lt;a href=&quot;#Color-blind-image-correction&quot; class=&quot;headerlink&quot; title=&quot;Color blind image correction&quot;&gt;&lt;/a&gt;Co
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Tonsser, the social app for youth soccer players, partners with Nike and raises new funding</title>
-    <link href="https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/"/>
-    <id>https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</id>
-    <published>2017-07-06T00:00:00.000Z</published>
-    <updated>2017-07-06T10:09:59.048Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://img2.tuicool.com/EneaUnz.jpg!web" alt=""></p>
-<p><a href="http://tonsser.com/" target="_blank" rel="external">Tonsser</a>, the Copenhagen-based startup that offers a vertical social network aimed at youth soccer players who want to build their own online profile and potentially get discovered by a bigger club, continues to grow at a clip, both in terms of signups but also the influence it wants to have on the beautiful game. The company has signed on Nike as its first brand channel partner, and now has 380,000 youth players registered, up from 100,000 just over a year ago.</p>
-<p>The Danish startup has also raised a new round of funding as it gears up for a 2018 expansion to the U.K., home to the English Premier League and a huge potential youth football market for the startup. It is also quite a fragmented one, in terms of youth leagues, so it will be interesting to see how quickly Tonsser can grow here. The app is currently live in France, Germany, Denmark, Sweden and Norway.</p>
-<p>In a call with co-founder and CEO Peter Holm (and after we spent the first ten minutes catching up with the latest Tottenham Hotspur news, as we are inclined to do), he told me that Tonsser is evolving from a social app that was<a href="https://techcrunch.com/2016/06/08/tonsser/" target="_blank" rel="external">mainly about youth players making a profile of themselves and tracking scores and stats</a>in order to get noticed by scouts — a bit like a real life Football Manager video game — to offer even more user-generated content where players can learn skills from each other and in turn become influencers on the platform.</p>
-<p><img src="http://img1.tuicool.com/MVFbMzJ.jpg!web" alt="">“Since the internet you no longer need to go to Harvard to learn and be educated by the best. You can go to Youtube, masterclasses or see a Ted talk. We believe it should be the same in football where don’t need to be at the best or most expensive academy to learn and be inspired by the best players and coaches,” he says.</p>
-<p>This is seeing top youth players, including from PSG, Lyon, and Dortmund, and “freestylers and local heroes” create video content, such as how to take a free kick, to inspire other young soccer players in Europe.</p>
-<p>Related to this, Tonsser has signed on Nike to be the first brand to get access to the platform with their own channel, where they are posting what Holm calls “edutainment,” including drills with from players in Barcelona’s La Masia academy. This also points towards the makings of a revenue model for the free to access social app.</p>
-<p>“Next is opening [the platform up] to top clubs to show drills and practice from their academies. [We are] currently in talks with international top clubs from England, Germany, Holland and Denmark,” adds Holm.</p>
-<p>He also tells me Tonsser is working on integrations with wearable devices to “empower players to become more data-driven and compare physical data including pace, acceleration, distance covered, form, etc”.</p>
-<p>Meanwhile, I understand the startup has raised €2.5 million in new funding. Backing the round are existing investors Wellington Partners, SEED Capital, Arthur Kosten (Booking.com), and unnamed professional soccer players. The long term ambition is “to become the de facto platform for the next generation of football,” says the Tonsser CEO.</p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/Qr6VZjV" target="_blank" rel="external">https://techcrunch.com/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/EneaUnz.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://tonsser.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tonsser&lt;/a
+      &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
     
     </summary>
     
@@ -1352,52 +1398,6 @@ $_
     <summary type="html">
     
       &lt;h2 id=&quot;Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot;&gt;&lt;a href=&quot;#Mighty-Bear-Games-will-focus-on-developing-mobile-app-games&quot; 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Is Freelancing Your Next UX Career Move?</title>
-    <link href="https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/"/>
-    <id>https://gmagon.com/blog/2017/07/05/is-freelancing-your-next-ux-career-move/</id>
-    <published>2017-07-05T00:00:00.000Z</published>
-    <updated>2017-07-05T09:44:47.960Z</updated>
-    
-    <content type="html"><![CDATA[<p>I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time again, abandoning the 9-5 life and making my main source of employment a series of projects from different clients.</p>
-<p>Since then, I’ve had countless conversations with other UX professionals who are considering moving to freelancing as their next career step.</p>
-<p>They usually say they’re looking for freedom, more money, the ability to work on more interesting problems or learn new things – or even just the chance to work in their pyjamas regularly. Since I started consulting, I’ve expanded my focus into more strategy and product work across a wide variety of industries, and have met all kinds of interesting, smart colleagues.</p>
-<p>While I wouldn’t change a thing about my situation, I’m always cautious about encouraging others to jump into the freelance world, because it’s definitely not for everyone. Here are some things I’ve learned along the way to consider before you quit your day job.</p>
-<h3 id="Freelancing-pros-and-cons"><a href="#Freelancing-pros-and-cons" class="headerlink" title="Freelancing pros and cons"></a>Freelancing pros and cons</h3><p>Yes, it’s true that I spend most days in yoga pants, travel frequently, and work on some pretty cool projects. But consulting isn’t all sunshine and rainbows. There are many things that are great about consulting, some things that aren’t so great, and some things that just depend on the day.</p>
-<p><img src="http://img2.tuicool.com/mqEZzeZ.png!web" alt=""></p>
-<p>Freelancing pro: setting up your own home office. Photo by<a href="http://unsplash.com/photos/RcdV8rnXSeE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Vadim Sherbakov</a>on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="external">Unsplash</a>.</p>
-<p>Schedule: One of the things I love most about consulting is being in total control of my schedule. There’s no expectation that I’m at my desk from 9 am to 5 pm. Sometimes I get in a zone and finish an entire report in one very long day and take the next morning off to let ideas percolate. Of course I have meetings and deadlines, but I can usually finagle things to work well for my clients and myself.</p>
-<p>On the flip side, juggling your schedule can be difficult. I’m quite disciplined about getting things done, but I’ve never quite figured out a way to create a consistent schedule. Sometimes I’ve had priority work on different projects collide at the same time or I’ve said yes to a few too many things and ended up working crazy hours to get everything done. Such is a consultant’s life.</p>
-<p>Money: I absolutely find that I make more money freelancing than when I worked in-house, even in leadership roles. I’m still experimenting with how I bill, but I tend to use value-based pricing for entire projects rather than charge hourly. I often ask clients to pay me 50% of the total upfront and the rest upon project completion, which can make managing money tricky, especially when you’re used to a consistent paycheck.</p>
-<p>You also have to know that you’ll never be able to collect money as though you’re billing 40 hours a week, every week. You have to account for supplies, tool costs, benefits, and set aside time for administrative tasks like sending invoices, business development, and, of course, downtime. No one gives you sick time or vacation days when you freelance.</p>
-<p>Inevitably, I’ve also run into time periods where I don’t have anything billable booked. An open schedule can be scary, so I use this time to do things like reach out to colleagues or potential clients, write articles, research new tools, try to learn something new, or catch up on administrative work. One of the benefits of this downtime is the space to learn, exploring the vast array of available online courses or just experimenting with a new method or tool.</p>
-<p>Work environment: I mostly work from home, which means I wear what I like, can pet my dog throughout the day, don’t contend with traffic, and for better or worse, have all day access to my kitchen. All great, but it also means that sometimes the only person I see in the flesh each day is my husband.</p>
-<p>I have to make an extra concerted effort to hang out with colleagues, so I’ve become more active in my local meetups and groups (shout out to<a href="https://www.meetup.com/Ladies-that-UX-Durham/" target="_blank" rel="external">Ladies that UX Durham</a>– love yall!) I also found I need to be more social during the week, even if that means going to a fitness class instead of biking solo or talking on the phone while I shop.</p>
-<h3 id="What-services-will-you-provide"><a href="#What-services-will-you-provide" class="headerlink" title="What services will you provide?"></a>What services will you provide?</h3><p>I’ve been focused on research and strategy for most of my career. I won’t rehash the “<a href="http://community.uxmastery.com/t/forced-to-become-a-unicorn-has-that-happened-to-you/783/11" target="_blank" rel="external">Should I be a unicorn</a>?” or “<a href="http://uxmastery.com/ux-designers-do-not-need-to-code/" target="_blank" rel="external">Do designers need to code</a>?” debates, but I’ll admit that when I first starting freelancing, I was worried I wasn’t going to be able to find enough work without doing visual work. Turns out, I was totally wrong. Phew!</p>
-<p><img src="http://img1.tuicool.com/BzMjMbA.jpg!web" alt=""></p>
-<p>Don’t worry, you don’t need to be a unicorn to be a freelance UXer.</p>
-<p>You absolutely don’t need to be a unicorn or try to tackle projects that aren’t your speciality. But it helps to have a broad set of experience and at least one area of deep expertise you can market and use to define your services. You can match what you’re good at and what you like to define the kind of projects you target, the projects you’re OK with taking, and what you will certainly turn down.</p>
-<p>Clearly<a href="http://uxmastery.com/build-your-ux-personal-brand/" target="_blank" rel="external">defining your services and interests</a>are important because it tells other people what to turn to you for. if I know someone has great interaction design skills and tonnes of experience with financial products, I’ll suggest them anytime I see a project like that. If someone tells me they’ll do anything that comes their way, they probably won’t come to mind for any projects I know about.</p>
-<h3 id="How-will-you-find-clients"><a href="#How-will-you-find-clients" class="headerlink" title="How will you find clients?"></a>How will you find clients?</h3><p>This is a question that I get asked time after time, and the answer is incredibly simple in concept but hard in practice:<strong>treat your clients and colleagues as you would users and provide them with a good experience working with you</strong>.</p>
-<p>More specifically, you have to do good work and other people have to be willing to talk about it. This can either mean that your clients are pleased with your work and will re-hire you or tell other potential clients, or that your peers in UX like your work and can refer you when they need help or can’t take something on. It really is true that a huge amount of success in consulting is based on networking and who you know, but that only works to your advantage if the people you know have had a good experience working with you. Right now, every single one of my clients is someone I’ve previously worked with or have gotten a good reference.</p>
-<p>This is where, once again, it helps to have a clearly defined, slightly unique set of skills or interests. There are tonnes of researchers and tonnes of designers, but if you’re known as a researcher who loves qualitative work and medical products, people will think of you whenever they come across that kind of project. Just be sure that you don’t define yourself too narrowly.</p>
-<p>You can also use job boards to identify potential projects or try recruiting agencies, but I haven’t found either as fruitful as having my name passed on from a previous contact. More on finding freelance UX work<a href="https://www.linkedin.com/pulse/single-best-way-get-freelance-ux-work-amanda-stockwell?trk=v-feed&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BWB86zkUbaQbxQN8f0Iqf%2Bw%3D%3D" target="_blank" rel="external">here</a>.</p>
-<h3 id="Are-you-really-suited-for-all-that"><a href="#Are-you-really-suited-for-all-that" class="headerlink" title="Are you really suited for all that?"></a>Are you really suited for all that?</h3><p>Even if all the potential pros sound amazing to you and you have the skills and network to pull off freelancing, take a moment to reflect on your personality and soft skills.</p>
-<p>Are you detailed, organised, and willing to juggle many different client requests and manage your own schedule? Are you a natural risk-taker who can cope well with slow periods or lack of viable work? Are you assertive enough to negotiate terms for yourself? Do you mind working by yourself a lot?</p>
-<p>There’s a lot to think about before leaving the security of a full-time job. I love freelancing, but it’s worth carefully considering the pros and cons and your skillset and personality before taking the leap. Best wishes for whichever path you choose! </p>
-<p>Do you have experience or tips on freelancing for UX professionals? Leave a comment on the blog or in the forums! </p>
-<p>Source: <a href="http://www.tuicool.com/articles/hit/3qIJryE" target="_blank" rel="external">http://uxmastery.com/freelancing-ux-career/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I’ve been working in for UX for about a decade and freelanced on and off for about five years. Last year, I started consulting full time 
     
     </summary>
     

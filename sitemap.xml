@@ -4,19 +4,19 @@
   <url>
     <loc>https://gmagon.com/guide/generate-css-filter-effects.html</loc>
     
-    <lastmod>2017-08-01T02:43:18.176Z</lastmod>
+    <lastmod>2017-08-01T03:02:04.971Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/search/index.html</loc>
+    <loc>https://gmagon.com/products/store/xls2csv/docs.html</loc>
     
     <lastmod>2017-07-31T02:03:53.366Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/xls2csv/docs.html</loc>
+    <loc>https://gmagon.com/search/index.html</loc>
     
     <lastmod>2017-07-31T02:03:53.366Z</lastmod>
     
@@ -37,14 +37,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytoaac/docs.html</loc>
+    <loc>https://gmagon.com/products/store/trytoflac/docs.html</loc>
     
     <lastmod>2017-07-31T02:03:53.363Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytoflac/docs.html</loc>
+    <loc>https://gmagon.com/products/store/trytoaac/docs.html</loc>
     
     <lastmod>2017-07-31T02:03:53.363Z</lastmod>
     
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/sudokumm/docs.html</loc>
+    <loc>https://gmagon.com/products/store/networkeyes/docs.html</loc>
     
     <lastmod>2017-07-31T02:03:53.339Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/networkeyes/docs.html</loc>
+    <loc>https://gmagon.com/products/store/sudokumm/docs.html</loc>
     
     <lastmod>2017-07-31T02:03:53.339Z</lastmod>
     
@@ -93,13 +93,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/colorpicker2/docs.html</loc>
-    
-    <lastmod>2017-07-31T02:03:53.336Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/products/store/apngtogifconverter/docs.html</loc>
     
     <lastmod>2017-07-31T02:03:53.336Z</lastmod>
@@ -107,14 +100,21 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/insert-text-with-css-mac.html</loc>
+    <loc>https://gmagon.com/products/store/colorpicker2/docs.html</loc>
+    
+    <lastmod>2017-07-31T02:03:53.336Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/guide/mac-batch-convert-xls-to-csv.html</loc>
     
     <lastmod>2017-07-31T02:03:53.335Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/mac-batch-convert-xls-to-csv.html</loc>
+    <loc>https://gmagon.com/guide/insert-text-with-css-mac.html</loc>
     
     <lastmod>2017-07-31T02:03:53.335Z</lastmod>
     
@@ -1073,14 +1073,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/colorpicker2/data/news.json</loc>
+    <loc>https://gmagon.com/products/store/apngtogifconverter/data/news.json</loc>
     
     <lastmod>2017-06-22T09:19:05.087Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/apngtogifconverter/data/news.json</loc>
+    <loc>https://gmagon.com/products/store/colorpicker2/data/news.json</loc>
     
     <lastmod>2017-06-22T09:19:05.087Z</lastmod>
     
@@ -1318,14 +1318,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</loc>
     
     <lastmod>2017-06-14T03:43:53.556Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/</loc>
     
     <lastmod>2017-06-14T03:43:53.556Z</lastmod>
     
@@ -1570,21 +1570,21 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/gmagon_gif/roadmap.html</loc>
-    
-    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/easyping/roadmap.html</loc>
-    
-    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/products/store/xls2csv/roadmap.html</loc>
+    
+    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/colorpicker2/roadmap.html</loc>
+    
+    <lastmod>2017-05-26T07:04:27.281Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/gmagon_gif/roadmap.html</loc>
     
     <lastmod>2017-05-26T07:04:27.281Z</lastmod>
     
@@ -1598,7 +1598,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/gmagon_css_maker/roadmap.html</loc>
+    <loc>https://gmagon.com/products/store/easyping/roadmap.html</loc>
     
     <lastmod>2017-05-26T07:04:27.281Z</lastmod>
     
@@ -1612,7 +1612,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/colorpicker2/roadmap.html</loc>
+    <loc>https://gmagon.com/products/store/gmagon_css_maker/roadmap.html</loc>
     
     <lastmod>2017-05-26T07:04:27.281Z</lastmod>
     

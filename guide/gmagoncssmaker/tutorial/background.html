@@ -22,12 +22,12 @@
 <meta property="og:site_name" content="Gmagon Software Official Website - Fast, simple &amp; powerful solutions for everyone.">
 <meta property="og:description" content="This article will teach you most of what you&apos;ll ever need to know about styling element backgrounds in CSS.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://gmagon.com/img/css-background.png">
-<meta property="og:updated_time" content="2017-08-07T05:52:51.021Z">
+<meta property="og:image" content="https://gmagon.com/guide/gmagoncssmaker/tutorial/img/css-background.png">
+<meta property="og:updated_time" content="2017-08-07T07:23:50.313Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS Background">
 <meta name="twitter:description" content="This article will teach you most of what you&apos;ll ever need to know about styling element backgrounds in CSS.">
-<meta name="twitter:image" content="https://gmagon.com/img/css-background.png">
+<meta name="twitter:image" content="https://gmagon.com/guide/gmagoncssmaker/tutorial/img/css-background.png">
 <meta name="twitter:site" content="gmagonshare">
 <meta property="fb:admins" content="432634277117208">
 
@@ -146,31 +146,23 @@
 <p>The background property in CSS allows you to control the background of any element. It is a shorthand property, which means that it allows you to write what would be multiple CSS properties in one. Like this:</p>
 <h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line">body &#123;</div><div class="line">  background:</div><div class="line">     url(sweettexture.jpg)    /* image */</div><div class="line">     top center / 200px 200px /* position / size */</div><div class="line">     no-repeat                /* repeat */</div><div class="line">     fixed                    /* attachment */</div><div class="line">     padding-box              /* origin */</div><div class="line">     content-box              /* clip */</div><div class="line">     red;                     /* color */</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="Background-basics"><a href="#Background-basics" class="headerlink" title="Background basics"></a>Background basics</h2><p>Background is made up of eight other properties:</p>
-<ul>
-<li>background-color: sets a solid color for the background.<br>Set the background-color of different elements: </li>
-</ul>
+<p><strong>1.background-color:</strong> sets a solid color for the background.</p>
+<p>Set the background-color of different elements: </p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line">body &#123;</div><div class="line">    background-color: yellow;</div><div class="line">&#125;</div><div class="line"></div><div class="line">h1 &#123;</div><div class="line">    background-color: #00ff00;</div><div class="line">&#125;</div><div class="line"></div><div class="line">p &#123;</div><div class="line">    background-color: rgb(255,0,255);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li><p>background-image: Specifies a background image to appear in the background of the element. This can be a static file, or a generated gradient.<br>Set a background-image for the <body> element:</body></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line">body &#123;</div><div class="line">    background-image: url("paper.gif");</div><div class="line">    background-color: #cccccc;</div><div class="line">&#125;</div><div class="line"></div><div class="line">* background-repeat: specifies whether the background should be repeated (tiled) or not.</div><div class="line">Repeat a background-image only vertically:</div><div class="line">```html</div><div class="line">body &#123;</div><div class="line">    background-image: url("paper.gif");</div><div class="line">    background-repeat: repeat-y;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>background-position: Specifies the position that the background should appear inside the element background.</p>
+<p><strong>2.background-image:</strong> specifies a background image to appear in the background of the element. </p>
+<p>This can be a static file, or a generated gradient.<br>Set a background-image for the <body> element:<br><figure class="highlight html"><table><tr><td class="code"><pre><div class="line">body &#123;</div><div class="line">    background-image: url("paper.gif");</div><div class="line">    background-color: #cccccc;</div><div class="line">&#125;</div></pre></td></tr></table></figure></body></p>
+<p><strong>3.background-repeat:</strong> specifies whether the background should be repeated (tiled) or not.</p>
+<p>Repeat a background-image only vertically:<br><figure class="highlight html"><table><tr><td class="code"><pre><div class="line">body &#123;</div><div class="line">    background-image: url("paper.gif");</div><div class="line">    background-repeat: repeat-y;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>4.background-position:</strong> specifies the position that the background should appear inside the element background.</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line">body &#123; </div><div class="line">    background-image: url('smiley.gif');</div><div class="line">    background-repeat: no-repeat;</div><div class="line">    background-attachment: fixed;</div><div class="line">    background-position: center; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>background-size: allows a background image to be resized dynamically.<br>Specify the size of a background image:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line">div &#123;</div><div class="line">    background: url(img_flwr.gif);</div><div class="line">    background-size: 80px 60px;</div><div class="line">    background-repeat: no-repeat;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>background-attachment:specifies the behavior of an element’s background when its content scrolls, e.g. does it scroll with the content, or is it fixed?<br>How to specify a fixed background-image:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line">body &#123; </div><div class="line">    background-image: url('w3css.gif');</div><div class="line">    background-repeat: no-repeat;</div><div class="line">    background-attachment: fixed;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>background-origin: defines where to paint the background: across the whole element, inside the border, or inside the padding.<br>Let the background image start from the upper left corner of the content:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line">#example1 &#123;</div><div class="line">    background:url(img_flwr.gif);</div><div class="line">    background-repeat: no-repeat;</div><div class="line">    padding:35px;</div><div class="line">    background-origin: content-box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>background-clip: controls how far a background image or color extends beyond an element’s padding or content.<br>Specify the painting area of the background:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line">div &#123;</div><div class="line">    border: 10px dotted black;</div><div class="line">    padding:35px;</div><div class="line">    background: yellow;</div><div class="line">    background-clip: content-box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>For those who are feeling difficult to code CSS style manually, <a href="../../../products/store/gmagon_css_maker/" target="_blank" rel="nofollow me noopener noreferrer">Gmagon CSS Maker</a> is what you need. It helps you create a nice look web page on Mac platform without writing a code. Let’s explore how Gmagon CSS Maker works.<br><img src="/img/css-background.png" alt=""></p>
+<p><strong>5.background-size:</strong> allows a background image to be resized dynamically.</p>
+<p>Specify the size of a background image:<br><figure class="highlight html"><table><tr><td class="code"><pre><div class="line">div &#123;</div><div class="line">    background: url(img_flwr.gif);</div><div class="line">    background-size: 80px 60px;</div><div class="line">    background-repeat: no-repeat;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>6.background-attachment:</strong> specifies the behavior of an element’s background when its content scrolls, e.g. does it scroll with the content, or is it fixed?</p>
+<p>How to specify a fixed background-image:<br><figure class="highlight html"><table><tr><td class="code"><pre><div class="line">body &#123; </div><div class="line">    background-image: url('w3css.gif');</div><div class="line">    background-repeat: no-repeat;</div><div class="line">    background-attachment: fixed;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>7.background-origin:</strong> defines where to paint the background: across the whole element, inside the border, or inside the padding.</p>
+<p>Let the background image start from the upper left corner of the content:<br><figure class="highlight html"><table><tr><td class="code"><pre><div class="line">#example1 &#123;</div><div class="line">    background:url(img_flwr.gif);</div><div class="line">    background-repeat: no-repeat;</div><div class="line">    padding:35px;</div><div class="line">    background-origin: content-box;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>8.background-clip:</strong> controls how far a background image or color extends beyond an element’s padding or content.<br>Specify the painting area of the background:<br><figure class="highlight html"><table><tr><td class="code"><pre><div class="line">div &#123;</div><div class="line">    border: 10px dotted black;</div><div class="line">    padding:35px;</div><div class="line">    background: yellow;</div><div class="line">    background-clip: content-box;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>For those who are feeling difficult to code CSS style manually, <a href="../../../products/store/gmagon_css_maker/" target="_blank" rel="nofollow me noopener noreferrer">Gmagon CSS Maker</a> is what you need. It helps you create a nice look web page on Mac platform without writing a code. Let’s explore how Gmagon CSS Maker works.<br><img src="img/css-background.png" alt=""></p>
 <p><a href="../../../products/store/gmagon_css_maker/" target="_blank" class="button padding20">Try Gmagon CSS Maker</a></p>
 
 
@@ -179,7 +171,7 @@
 
                 </div>
                 <footer class="article-footer">
-                  <time class="article-footer-updated" datetime="2017-08-07T05:52:51.021Z" itemprop="dateModified">Last updated: 2017-08-07</time>
+                  <time class="article-footer-updated" datetime="2017-08-07T07:23:50.313Z" itemprop="dateModified">Last updated: 2017-08-07</time>
                   
                 </footer>
                 

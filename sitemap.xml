@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gmagon.com/index.html</loc>
+    
+    <lastmod>2017-08-10T09:19:18.077Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/xls2csv/docs.html</loc>
+    
+    <lastmod>2017-08-10T09:16:47.476Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/guide/index.html</loc>
     
     <lastmod>2017-08-10T08:14:41.298Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>https://gmagon.com/products/store/xls2csv/index.html</loc>
     
     <lastmod>2017-08-10T03:38:36.453Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/xls2csv/docs.html</loc>
-    
-    <lastmod>2017-08-10T03:37:17.959Z</lastmod>
     
   </url>
   
@@ -100,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/xls2csv/buy.html</loc>
-    
-    <lastmod>2017-08-10T00:47:23.024Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/products/store/xls2csv/data/news.json</loc>
     
     <lastmod>2017-08-10T00:47:23.024Z</lastmod>
@@ -114,14 +114,21 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytowma/old-download.html</loc>
+    <loc>https://gmagon.com/products/store/xls2csv/buy.html</loc>
+    
+    <lastmod>2017-08-10T00:47:23.024Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/trytowma/roadmap.html</loc>
     
     <lastmod>2017-08-10T00:47:23.023Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytowma/roadmap.html</loc>
+    <loc>https://gmagon.com/products/store/trytowma/old-download.html</loc>
     
     <lastmod>2017-08-10T00:47:23.023Z</lastmod>
     
@@ -226,14 +233,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytomp3/changelog.html</loc>
+    <loc>https://gmagon.com/products/store/trytomp3/buy.html</loc>
     
     <lastmod>2017-08-10T00:47:22.851Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytomp3/buy.html</loc>
+    <loc>https://gmagon.com/products/store/trytomp3/changelog.html</loc>
     
     <lastmod>2017-08-10T00:47:22.851Z</lastmod>
     
@@ -296,14 +303,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytoflac/buy.html</loc>
+    <loc>https://gmagon.com/products/store/trytoamr/roadmap.html</loc>
     
     <lastmod>2017-08-10T00:47:22.747Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytoamr/roadmap.html</loc>
+    <loc>https://gmagon.com/products/store/trytoflac/buy.html</loc>
     
     <lastmod>2017-08-10T00:47:22.747Z</lastmod>
     
@@ -401,13 +408,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytoaac/docs.html</loc>
-    
-    <lastmod>2017-08-10T00:47:22.572Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/products/store/trytoaac/download.html</loc>
     
     <lastmod>2017-08-10T00:47:22.572Z</lastmod>
@@ -415,14 +415,21 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytoaac/changelog.html</loc>
+    <loc>https://gmagon.com/products/store/trytoaac/docs.html</loc>
+    
+    <lastmod>2017-08-10T00:47:22.572Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/trytoaac/buy.html</loc>
     
     <lastmod>2017-08-10T00:47:22.571Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/trytoaac/buy.html</loc>
+    <loc>https://gmagon.com/products/store/trytoaac/changelog.html</loc>
     
     <lastmod>2017-08-10T00:47:22.571Z</lastmod>
     
@@ -513,14 +520,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/networkeyes/download.html</loc>
+    <loc>https://gmagon.com/products/store/networkeyes/docs.html</loc>
     
     <lastmod>2017-08-10T00:47:21.967Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/networkeyes/docs.html</loc>
+    <loc>https://gmagon.com/products/store/networkeyes/download.html</loc>
     
     <lastmod>2017-08-10T00:47:21.967Z</lastmod>
     
@@ -632,13 +639,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/gmagon_css_maker/docs.html</loc>
-    
-    <lastmod>2017-08-10T00:47:21.528Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/products/store/gmagon_css_maker/download.html</loc>
     
     <lastmod>2017-08-10T00:47:21.528Z</lastmod>
@@ -646,9 +646,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/gmagon_css_maker/buy.html</loc>
+    <loc>https://gmagon.com/products/store/gmagon_css_maker/docs.html</loc>
     
-    <lastmod>2017-08-10T00:47:21.527Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.528Z</lastmod>
     
   </url>
   
@@ -661,6 +661,13 @@
   
   <url>
     <loc>https://gmagon.com/products/store/gmagon_css_maker/changelog.html</loc>
+    
+    <lastmod>2017-08-10T00:47:21.527Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/products/store/gmagon_css_maker/buy.html</loc>
     
     <lastmod>2017-08-10T00:47:21.527Z</lastmod>
     
@@ -695,6 +702,13 @@
   </url>
   
   <url>
+    <loc>https://gmagon.com/products/store/easyping/faq.html</loc>
+    
+    <lastmod>2017-08-10T00:47:21.490Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/products/store/easyping/download.html</loc>
     
     <lastmod>2017-08-10T00:47:21.490Z</lastmod>
@@ -702,9 +716,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/easyping/faq.html</loc>
+    <loc>https://gmagon.com/products/store/easyping/docs.html</loc>
     
-    <lastmod>2017-08-10T00:47:21.490Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.489Z</lastmod>
     
   </url>
   
@@ -717,13 +731,6 @@
   
   <url>
     <loc>https://gmagon.com/products/store/easyping/changelog.html</loc>
-    
-    <lastmod>2017-08-10T00:47:21.489Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/products/store/easyping/docs.html</loc>
     
     <lastmod>2017-08-10T00:47:21.489Z</lastmod>
     
@@ -751,14 +758,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/colorpicker2/faq.html</loc>
+    <loc>https://gmagon.com/products/store/colorpicker2/features.html</loc>
     
     <lastmod>2017-08-10T00:47:21.428Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/colorpicker2/features.html</loc>
+    <loc>https://gmagon.com/products/store/colorpicker2/faq.html</loc>
     
     <lastmod>2017-08-10T00:47:21.428Z</lastmod>
     
@@ -772,14 +779,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/colorpicker2/docs.html</loc>
+    <loc>https://gmagon.com/products/store/colorpicker2/data/news.json</loc>
     
     <lastmod>2017-08-10T00:47:21.426Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/colorpicker2/data/news.json</loc>
+    <loc>https://gmagon.com/products/store/colorpicker2/docs.html</loc>
     
     <lastmod>2017-08-10T00:47:21.426Z</lastmod>
     
@@ -800,14 +807,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/apngtogifconverter/roadmap.html</loc>
+    <loc>https://gmagon.com/products/store/apngtogifconverter/index.html</loc>
     
     <lastmod>2017-08-10T00:47:21.424Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/apngtogifconverter/index.html</loc>
+    <loc>https://gmagon.com/products/store/apngtogifconverter/roadmap.html</loc>
     
     <lastmod>2017-08-10T00:47:21.424Z</lastmod>
     
@@ -821,7 +828,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/apngtogifconverter/faq.html</loc>
+    <loc>https://gmagon.com/products/store/apngtogifconverter/download.html</loc>
     
     <lastmod>2017-08-10T00:47:21.339Z</lastmod>
     
@@ -835,7 +842,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/store/apngtogifconverter/download.html</loc>
+    <loc>https://gmagon.com/products/store/apngtogifconverter/faq.html</loc>
     
     <lastmod>2017-08-10T00:47:21.339Z</lastmod>
     
@@ -863,13 +870,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/products/index.html</loc>
-    
-    <lastmod>2017-08-10T00:47:21.221Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/privacy.html</loc>
     
     <lastmod>2017-08-10T00:47:21.221Z</lastmod>
@@ -877,9 +877,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/index.html</loc>
+    <loc>https://gmagon.com/products/index.html</loc>
     
-    <lastmod>2017-08-10T00:47:21.219Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.221Z</lastmod>
     
   </url>
   
@@ -898,13 +898,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/what-is-css.html</loc>
-    
-    <lastmod>2017-08-10T00:47:21.190Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/why-use-css.html</loc>
     
     <lastmod>2017-08-10T00:47:21.190Z</lastmod>
@@ -912,7 +905,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/shadow.html</loc>
+    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/what-is-css.html</loc>
+    
+    <lastmod>2017-08-10T00:47:21.190Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/text.html</loc>
     
     <lastmod>2017-08-10T00:47:21.189Z</lastmod>
     
@@ -926,7 +926,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/text.html</loc>
+    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/shadow.html</loc>
     
     <lastmod>2017-08-10T00:47:21.189Z</lastmod>
     
@@ -940,14 +940,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/how-css-works.html</loc>
+    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/filter.html</loc>
     
     <lastmod>2017-08-10T00:47:21.164Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/filter.html</loc>
+    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/how-css-works.html</loc>
     
     <lastmod>2017-08-10T00:47:21.164Z</lastmod>
     
@@ -975,14 +975,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/border-radius.html</loc>
+    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/background.html</loc>
     
     <lastmod>2017-08-10T00:47:21.161Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/background.html</loc>
+    <loc>https://gmagon.com/guide/gmagoncssmaker/tutorial/border-radius.html</loc>
     
     <lastmod>2017-08-10T00:47:21.161Z</lastmod>
     
@@ -996,14 +996,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/generate-css-filter-effects.html</loc>
+    <loc>https://gmagon.com/guide/create-shadow-using-css-mac.html</loc>
     
     <lastmod>2017-08-10T00:47:21.160Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/guide/create-shadow-using-css-mac.html</loc>
+    <loc>https://gmagon.com/guide/generate-css-filter-effects.html</loc>
     
     <lastmod>2017-08-10T00:47:21.160Z</lastmod>
     
@@ -1066,14 +1066,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/09/the-game-of-thrones-hackers-are-asking-for-millions-of-dollars-worth-of-bitcoin/</loc>
+    <loc>https://gmagon.com/blog/2017/08/09/eff-files-court-brief-urging-warrants-for-digital-device-searches-at-borders/</loc>
     
     <lastmod>2017-08-10T00:47:21.139Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/09/eff-files-court-brief-urging-warrants-for-digital-device-searches-at-borders/</loc>
+    <loc>https://gmagon.com/blog/2017/08/09/the-game-of-thrones-hackers-are-asking-for-millions-of-dollars-worth-of-bitcoin/</loc>
     
     <lastmod>2017-08-10T00:47:21.139Z</lastmod>
     
@@ -1087,13 +1087,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/08/the-google-employee-who-wrote-the-anti-diversity-manifesto-was-fired-after-ceo-sundar-picha/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.138Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/blog/2017/08/08/sparklabs-launches-its-latest-accelerator-program-in-taipei/</loc>
     
     <lastmod>2017-08-10T00:47:21.138Z</lastmod>
@@ -1101,9 +1094,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/08/i-tried-turo-the-airbnb-for-car-rentals-and-im-never-going-back/</loc>
+    <loc>https://gmagon.com/blog/2017/08/08/the-google-employee-who-wrote-the-anti-diversity-manifesto-was-fired-after-ceo-sundar-picha/</loc>
     
-    <lastmod>2017-08-10T00:47:21.137Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.138Z</lastmod>
     
   </url>
   
@@ -1122,14 +1115,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/07/trampoline-start-and-stop-spring-boot-based-services/</loc>
+    <loc>https://gmagon.com/blog/2017/08/08/i-tried-turo-the-airbnb-for-car-rentals-and-im-never-going-back/</loc>
     
-    <lastmod>2017-08-10T00:47:21.136Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.137Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/07/how-to-stop-pokemon-go-or-other-apps-from-stealing-audio-focus/</loc>
+    <loc>https://gmagon.com/blog/2017/08/07/trampoline-start-and-stop-spring-boot-based-services/</loc>
     
     <lastmod>2017-08-10T00:47:21.136Z</lastmod>
     
@@ -1143,7 +1136,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/04/lenovo-ditches-vibe-pure-ui-will-ship-stock-android-on-all-future-phones/</loc>
+    <loc>https://gmagon.com/blog/2017/08/07/how-to-stop-pokemon-go-or-other-apps-from-stealing-audio-focus/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.136Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/blog/2017/08/07/donald-trump-thanked-a-black-entrepreneur-on-twitter-but-she-might-not-be-real/</loc>
     
     <lastmod>2017-08-10T00:47:21.135Z</lastmod>
     
@@ -1157,7 +1157,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/07/donald-trump-thanked-a-black-entrepreneur-on-twitter-but-she-might-not-be-real/</loc>
+    <loc>https://gmagon.com/blog/2017/08/04/lenovo-ditches-vibe-pure-ui-will-ship-stock-android-on-all-future-phones/</loc>
     
     <lastmod>2017-08-10T00:47:21.135Z</lastmod>
     
@@ -1171,14 +1171,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/04/introducing-s3-style-file-sharing-for-sia-through-the-new-minio-integration/</loc>
+    <loc>https://gmagon.com/blog/2017/08/04/homepod-firmware-iphone-8s-rear-and-front-cameras-may-record-4k-video-at-60-fps/</loc>
     
     <lastmod>2017-08-10T00:47:21.134Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/04/homepod-firmware-iphone-8s-rear-and-front-cameras-may-record-4k-video-at-60-fps/</loc>
+    <loc>https://gmagon.com/blog/2017/08/04/introducing-s3-style-file-sharing-for-sia-through-the-new-minio-integration/</loc>
     
     <lastmod>2017-08-10T00:47:21.134Z</lastmod>
     
@@ -1227,6 +1227,13 @@
   </url>
   
   <url>
+    <loc>https://gmagon.com/blog/2017/08/02/snap-hits-record-low-after-getting-rejected-from-the-sandp-500/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.131Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/blog/2017/08/03/another-black-activist-ijeoma-oluo-is-suspended-by-facebook-for-posting-about-racism/</loc>
     
     <lastmod>2017-08-10T00:47:21.131Z</lastmod>
@@ -1234,9 +1241,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/02/snap-hits-record-low-after-getting-rejected-from-the-sandp-500/</loc>
+    <loc>https://gmagon.com/blog/2017/08/02/kevm-wins-ic3-ethereum-crypto-boot-camp-2017-competition/</loc>
     
-    <lastmod>2017-08-10T00:47:21.131Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.130Z</lastmod>
     
   </url>
   
@@ -1255,20 +1262,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/08/02/kevm-wins-ic3-ethereum-crypto-boot-camp-2017-competition/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.130Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/blog/2017/08/01/julys-best-gear/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.129Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/blog/2017/08/01/snap-joins-rivals-facebook-and-youtube-to-fight-terrorism/</loc>
     
     <lastmod>2017-08-10T00:47:21.129Z</lastmod>
@@ -1283,9 +1276,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/25/women-in-nyc-tech-chau-mui-of-we-were-wanderers/</loc>
+    <loc>https://gmagon.com/blog/2017/08/01/julys-best-gear/</loc>
     
-    <lastmod>2017-08-10T00:47:21.128Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.129Z</lastmod>
     
   </url>
   
@@ -1304,9 +1297,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/25/creepy-spyware-has-infected-macs-for-years-and-were-only-just-realizing-it-now/</loc>
+    <loc>https://gmagon.com/blog/2017/07/25/women-in-nyc-tech-chau-mui-of-we-were-wanderers/</loc>
     
-    <lastmod>2017-08-10T00:47:21.127Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.128Z</lastmod>
     
   </url>
   
@@ -1325,7 +1318,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/</loc>
+    <loc>https://gmagon.com/blog/2017/07/25/creepy-spyware-has-infected-macs-for-years-and-were-only-just-realizing-it-now/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.127Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/blog/2017/07/25/10-best-cpm-ad-networks-with-high-ecpm/</loc>
     
     <lastmod>2017-08-10T00:47:21.126Z</lastmod>
     
@@ -1339,7 +1339,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/25/10-best-cpm-ad-networks-with-high-ecpm/</loc>
+    <loc>https://gmagon.com/blog/2017/07/10/news-outlets-to-seek-bargaining-rights-against-google-and-facebook/</loc>
     
     <lastmod>2017-08-10T00:47:21.126Z</lastmod>
     
@@ -1353,13 +1353,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.125Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/blog/2017/07/10/enhance-your-search-results-how-to-get-started-with-schema-markup/</loc>
     
     <lastmod>2017-08-10T00:47:21.125Z</lastmod>
@@ -1367,9 +1360,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/</loc>
+    <loc>https://gmagon.com/blog/2017/07/10/make-a-perfect-triangle-path-in-illustrator/</loc>
     
-    <lastmod>2017-08-10T00:47:21.124Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.125Z</lastmod>
     
   </url>
   
@@ -1382,6 +1375,13 @@
   
   <url>
     <loc>https://gmagon.com/blog/2017/07/07/powershell-tool-time-the-tool-framework/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.124Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/blog/2017/07/07/beginners-guide-4-linux-group-management-commands/</loc>
     
     <lastmod>2017-08-10T00:47:21.124Z</lastmod>
     
@@ -1402,14 +1402,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</loc>
+    <loc>https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/</loc>
     
     <lastmod>2017-08-10T00:47:21.122Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/06/micro-frontends-a-microservice-approach-to-front-end-web-development/</loc>
+    <loc>https://gmagon.com/blog/2017/07/06/tonsser-the-social-app-for-youth-soccer-players-partners-with-nike-and-raises-new-funding/</loc>
     
     <lastmod>2017-08-10T00:47:21.122Z</lastmod>
     
@@ -1423,14 +1423,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/06/creating-a-simple-game-with-core-ml-in-swift-4/</loc>
+    <loc>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</loc>
     
     <lastmod>2017-08-10T00:47:21.121Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/06/image-correction-for-color-blindness/</loc>
+    <loc>https://gmagon.com/blog/2017/07/06/creating-a-simple-game-with-core-ml-in-swift-4/</loc>
     
     <lastmod>2017-08-10T00:47:21.121Z</lastmod>
     
@@ -1472,7 +1472,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/04/researchers-crack-1024-bit-rsa-encryption-in-gnupg-crypto-library/</loc>
+    <loc>https://gmagon.com/blog/2017/07/04/real-world-react-apps-and-their-open-source-codebases-for-developers-to-learn-from/</loc>
     
     <lastmod>2017-08-10T00:47:21.118Z</lastmod>
     
@@ -1486,21 +1486,21 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/04/real-world-react-apps-and-their-open-source-codebases-for-developers-to-learn-from/</loc>
+    <loc>https://gmagon.com/blog/2017/07/04/researchers-crack-1024-bit-rsa-encryption-in-gnupg-crypto-library/</loc>
     
     <lastmod>2017-08-10T00:47:21.118Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/04/apple-google-and-other-nasdaq-stocks-swing-wildly-in-after-hours-trading/</loc>
+    <loc>https://gmagon.com/blog/2017/07/04/customize-color-with-styled-google-maps-in-android/</loc>
     
     <lastmod>2017-08-10T00:47:21.117Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/07/04/customize-color-with-styled-google-maps-in-android/</loc>
+    <loc>https://gmagon.com/blog/2017/07/04/apple-google-and-other-nasdaq-stocks-swing-wildly-in-after-hours-trading/</loc>
     
     <lastmod>2017-08-10T00:47:21.117Z</lastmod>
     
@@ -1542,7 +1542,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/30/issue-of-lazy-loading-property/</loc>
+    <loc>https://gmagon.com/blog/2017/06/30/the-5-minute-interview-anirban-chatterjee-and-keshav-ranganathan-ibm/</loc>
     
     <lastmod>2017-08-10T00:47:21.115Z</lastmod>
     
@@ -1556,7 +1556,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/30/the-5-minute-interview-anirban-chatterjee-and-keshav-ranganathan-ibm/</loc>
+    <loc>https://gmagon.com/blog/2017/06/30/issue-of-lazy-loading-property/</loc>
     
     <lastmod>2017-08-10T00:47:21.115Z</lastmod>
     
@@ -1584,13 +1584,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/28/pnpm-version-1-is-out/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.113Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/blog/2017/06/28/google-news-shows-off-its-minimalist-new-look/</loc>
     
     <lastmod>2017-08-10T00:47:21.113Z</lastmod>
@@ -1605,14 +1598,21 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/27/the-holy-wars-of-procrastination/</loc>
+    <loc>https://gmagon.com/blog/2017/06/28/pnpm-version-1-is-out/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.113Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/blog/2017/06/28/5-ways-type-can-define-brands/</loc>
     
     <lastmod>2017-08-10T00:47:21.112Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/28/5-ways-type-can-define-brands/</loc>
+    <loc>https://gmagon.com/blog/2017/06/27/the-holy-wars-of-procrastination/</loc>
     
     <lastmod>2017-08-10T00:47:21.112Z</lastmod>
     
@@ -1626,7 +1626,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/27/7-hot-illustration-trends-of-2017-to-make-your-project-stand-out/</loc>
+    <loc>https://gmagon.com/blog/2017/06/27/bad-ideas-are-the-key-to-creativity/</loc>
     
     <lastmod>2017-08-10T00:47:21.111Z</lastmod>
     
@@ -1640,7 +1640,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/27/bad-ideas-are-the-key-to-creativity/</loc>
+    <loc>https://gmagon.com/blog/2017/06/27/7-hot-illustration-trends-of-2017-to-make-your-project-stand-out/</loc>
     
     <lastmod>2017-08-10T00:47:21.111Z</lastmod>
     
@@ -1648,6 +1648,13 @@
   
   <url>
     <loc>https://gmagon.com/blog/2017/06/26/whats-new-in-jpa-22-java-8-date-and-time-types/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.110Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/blog/2017/06/26/the-holy-wars-of-procrastination/</loc>
     
     <lastmod>2017-08-10T00:47:21.110Z</lastmod>
     
@@ -1668,9 +1675,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/26/the-holy-wars-of-procrastination/</loc>
+    <loc>https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/</loc>
     
-    <lastmod>2017-08-10T00:47:21.110Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.109Z</lastmod>
     
   </url>
   
@@ -1682,9 +1689,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/26/an-overview-of-garbage-collection-in-java/</loc>
+    <loc>https://gmagon.com/blog/2017/06/23/search-an-element-in-an-unsorted-array-using-minimum-number-of-comparisons/</loc>
     
-    <lastmod>2017-08-10T00:47:21.109Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.108Z</lastmod>
     
   </url>
   
@@ -1710,21 +1717,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/23/search-an-element-in-an-unsorted-array-using-minimum-number-of-comparisons/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.108Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/blog/2017/06/22/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.107Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/</loc>
+    <loc>https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/</loc>
     
     <lastmod>2017-08-10T00:47:21.107Z</lastmod>
     
@@ -1738,9 +1731,23 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/22/we-get-it-facebook-you-want-us-to-post-more/</loc>
+    <loc>https://gmagon.com/blog/2017/06/22/crown-fast-and-flexible-game-engine-written-in-sane-c++/</loc>
     
     <lastmod>2017-08-10T00:47:21.107Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/blog/2017/06/22/facebook-is-testing-a-feature-to-prevent-profile-pictures-being-abused-by-other-users/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.107Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.106Z</lastmod>
     
   </url>
   
@@ -1759,20 +1766,6 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/22/10-things-in-tech-you-need-to-know-today-goog/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.106Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.105Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gmagon.com/blog/2017/06/21/ibm-supercomputers-will-power-global-weather-forecasts/</loc>
     
     <lastmod>2017-08-10T00:47:21.105Z</lastmod>
@@ -1787,7 +1780,21 @@
   </url>
   
   <url>
+    <loc>https://gmagon.com/blog/2017/06/21/ikea-plans-to-improve-ar-shopping-tools-with-help-from-apple/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.105Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gmagon.com/blog/2017/06/20/what-does-a-well-documented-css-codebase-look-like/</loc>
+    
+    <lastmod>2017-08-10T00:47:21.104Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gmagon.com/blog/2017/06/20/outlook-for-mac-adds-features-office-365-already-has/</loc>
     
     <lastmod>2017-08-10T00:47:21.104Z</lastmod>
     
@@ -1801,9 +1808,9 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/20/outlook-for-mac-adds-features-office-365-already-has/</loc>
+    <loc>https://gmagon.com/blog/2017/06/20/how-to-find-the-dominant-colors-in-an-image-macos/</loc>
     
-    <lastmod>2017-08-10T00:47:21.104Z</lastmod>
+    <lastmod>2017-08-10T00:47:21.103Z</lastmod>
     
   </url>
   
@@ -1829,21 +1836,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/20/how-to-find-the-dominant-colors-in-an-image-macos/</loc>
-    
-    <lastmod>2017-08-10T00:47:21.103Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gmagon.com/blog/2017/06/16/the-worst-volume-control-ui-in-the-world/</loc>
+    <loc>https://gmagon.com/blog/2017/06/19/creating-a-suggestion-dropdown/</loc>
     
     <lastmod>2017-08-10T00:47:21.102Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/19/creating-a-suggestion-dropdown/</loc>
+    <loc>https://gmagon.com/blog/2017/06/16/the-worst-volume-control-ui-in-the-world/</loc>
     
     <lastmod>2017-08-10T00:47:21.102Z</lastmod>
     
@@ -1885,14 +1885,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/15/how-to-open-recently-quit-apps-on-macos/</loc>
+    <loc>https://gmagon.com/blog/2017/06/15/how-to-store-or-remove-your-apple-id-password-for-free-purchases-macos/</loc>
     
     <lastmod>2017-08-10T00:47:21.099Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/15/how-to-store-or-remove-your-apple-id-password-for-free-purchases-macos/</loc>
+    <loc>https://gmagon.com/blog/2017/06/15/how-to-open-recently-quit-apps-on-macos/</loc>
     
     <lastmod>2017-08-10T00:47:21.099Z</lastmod>
     
@@ -1913,7 +1913,7 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/mobile-conversion-rates-how-does-your-site-compare/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/the-maya-principle-design-for-the-future-but-balance-it-with-your-users-present/</loc>
     
     <lastmod>2017-08-10T00:47:21.098Z</lastmod>
     
@@ -1927,21 +1927,21 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/the-maya-principle-design-for-the-future-but-balance-it-with-your-users-present/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/mobile-conversion-rates-how-does-your-site-compare/</loc>
     
     <lastmod>2017-08-10T00:47:21.098Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</loc>
     
     <lastmod>2017-08-10T00:47:21.097Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/14/10-things-you-need-to-know-for-your-company-rebrand/</loc>
+    <loc>https://gmagon.com/blog/2017/06/14/is-the-keyboard-faster-than-the-mouse/</loc>
     
     <lastmod>2017-08-10T00:47:21.097Z</lastmod>
     
@@ -1990,14 +1990,14 @@
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/</loc>
+    <loc>https://gmagon.com/blog/2017/06/12/google-chrome-might-have-broken-your-tests-without-you-even-knowing-about-it/</loc>
     
     <lastmod>2017-08-10T00:47:21.093Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gmagon.com/blog/2017/06/12/google-chrome-might-have-broken-your-tests-without-you-even-knowing-about-it/</loc>
+    <loc>https://gmagon.com/blog/2017/06/12/malware-downloader-infects-your-pc-without-a-mouse-click/</loc>
     
     <lastmod>2017-08-10T00:47:21.093Z</lastmod>
     

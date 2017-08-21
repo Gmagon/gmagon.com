@@ -14,7 +14,7 @@
 
   <!-- Custom config og:image -->
 
-  <meta property="og:image" content="https://gmagon.com/logo.png">
+  <meta property="og:image" content="http://img0.tuicool.com/YzeQF3m.png!web">
 
 
   <!-- Open Graph -->
@@ -27,8 +27,8 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://img2.tuicool.com/MfMNjeJ.png!web">
 <meta property="og:image" content="http://img2.tuicool.com/Ef6Njij.png!web">
-<meta property="og:image" content="http://img0.tuicool.com/YzeQF3m.png">
-<meta property="og:updated_time" content="2017-08-21T02:04:04.475Z">
+<meta property="og:image" content="http://img0.tuicool.com/YzeQF3m.png!web">
+<meta property="og:updated_time" content="2017-08-21T02:13:46.498Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="An Embarrassing Tale: Why my server could only handle 10 players - Gmagon Software - handy and professional Mac apps.">
 <meta name="twitter:description" content="An Embarrassing Tale: Why my server could only handle 10 players - Gmagon Software - handy and professional Mac apps.">
@@ -177,7 +177,7 @@
 <p>I scanned my code, line by line, looking for the bug (which I should have done at the very beginning). There it was.</p>
 <p>In my game, an event is an object that captures info about a death, a boost, a collision, etc… So an event is created every time one of those things happens. I have this loop that goes through each event and updates it. Its called every 16 ms. After an event fulfills its duty, it is supposed to be deleted. Keywords: “supposed to”</p>
 <p>Bingo. I had memory piling up as well as an increasing amount of unnecessary for-loop passes. I inserted a line of code and voila!</p>
-<p><img src="http://img0.tuicool.com/YzeQF3m.png" alt=""></p>
+<p><img src="http://img0.tuicool.com/YzeQF3m.png!web" alt=""></p>
 <p>well i’ll be</p>
 <p>Huge sigh of relief.</p>
 <p>My next task is to see just how many games (4 players per game) one server can smoothly support now (I know its at least 12 games, but I have not tried more yet). Now that I know the number of events makes a huge impact to CPU… what will happen in production when all players are firing off boosting, collision, and death events every second? My tests have not accounted for that. Also, after this post goes viral, and my game follows suit, I will need to quickly scale the number of servers available. I will make that the topic of a future post along with: “How knckout.io grew to millions of players.” Follow me here for updates. :)</p>

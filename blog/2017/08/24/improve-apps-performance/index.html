@@ -28,15 +28,9 @@
 <meta property="og:image" content="https://www.simform.com/wp-content/uploads/2017/08/img-1-768x384.png">
 <meta property="og:image" content="https://www.simform.com/wp-content/uploads/2017/08/android-fragmentation.png">
 <meta property="og:image" content="https://www.simform.com/wp-content/uploads/2017/08/1.1-768x384.png">
-<meta property="og:image" content="https://secure.gravatar.com/avatar/951b4be91449cd5dfc26597902dba1e7?s=90&d=mm&r=g">
-<meta property="og:image" content="https://www.simform.com/wp-content/uploads/2017/08/progress-graph.png">
-<meta property="og:image" content="http://www.simform.com/wp-content/uploads/2017/08/App-and-size-1024x512.png">
-<meta property="og:image" content="http://www.simform.com/wp-content/uploads/2017/08/img-1-1024x512.png">
-<meta property="og:image" content="http://www.simform.com/wp-content/uploads/2017/08/android-fragmentation.png">
-<meta property="og:image" content="http://www.simform.com/wp-content/uploads/2017/08/1.1-1024x512.png">
 <meta property="og:image" content="https://www.simform.com/wp-content/uploads/2017/08/1.2-768x384.png">
 <meta property="og:image" content="https://www.simform.com/wp-content/uploads/2017/08/1.3-768x384.png">
-<meta property="og:updated_time" content="2017-08-24T01:42:40.801Z">
+<meta property="og:updated_time" content="2017-08-24T01:52:56.162Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Improve your app&#39;s performance on portable devices - Gmagon Software - handy and professional Mac apps.">
 <meta name="twitter:description" content="Improve your app&apos;s performance on portable devices - Gmagon Software - handy and professional Mac apps.">
@@ -280,131 +274,6 @@
 </ul>
 <h2 id="Optimizing-your-iOS-app-for-multitasking"><a href="#Optimizing-your-iOS-app-for-multitasking" class="headerlink" title="Optimizing your iOS app for multitasking"></a>Optimizing your iOS app for multitasking</h2><p>Let’s say you have a user who is using your app, and the app is doing a great job of rendering at 60fps and gets the work done only in 9ms.  Look at the image below to see this:</p>
 <p><img src="https://www.simform.com/wp-content/uploads/2017/08/1.1-768x384.png" alt=""></p>
-<p>4</p>
-<hr>
-<h1 id="How-to-improve-your-mobile-app’s-performance"><a href="#How-to-improve-your-mobile-app’s-performance" class="headerlink" title="How to improve your mobile app’s performance?"></a>How to improve your mobile app’s performance?</h1><p><img src="https://secure.gravatar.com/avatar/951b4be91449cd5dfc26597902dba1e7?s=90&amp;d=mm&amp;r=g" alt=""></p>
-<p>Purvak Pathak</p>
-<p>in</p>
-<p><a href="https://www.simform.com/category/mobility/">Mobility</a></p>
-<p>,</p>
-<p><a href="https://www.simform.com/category/product-engineering/">Product Engineering</a></p>
-<p><a href="https://www.simform.com/mobile-app-performance/">August 18, 2017</a></p>
-<ul>
-<li>9 minutes</li>
-</ul>
-<p><a href="https://www.simform.com/mobile-app-performance/"><img src="https://www.simform.com/wp-content/uploads/2017/08/progress-graph.png" alt="" title="mobile app performance"></a></p>
-<p>Last year, I was on my flight returning back from London, I was traveling with a mobility Industry practitioner. He has worked with really big firms from last 20 years helping enterprises adopt technologies.</p>
-<p>While we had a great good 8 hours of flight together, he highlighted something that I have been thinking a lot lately. Not only he thought mobile apps and performance were just about continuous delivery, he, in fact, couldn’t audit any mobile application that significantly improves the performance.</p>
-<p>When I landed in San Francisco, I reached out to more people and learned everyone had the similar assumptions. Code quality and basic architecture were the only things that people were talking about.</p>
-<p>I immediately thought of how we approach<a href="https://www.simform.com/product-engineering-services/">building apps</a>at<a href="http://www.simform.com/">Simform</a>and saw some clearly<a href="https://www.linkedin.com/pulse/my-6-steps-formula-enhance-any-app-performance-purvak-pathak?published=t">outstanding practices</a>that we follow to build benchmark breaking apps that scale to billions.</p>
-<p>The following would drastically impact the quality of your mobile application:</p>
-<ul>
-<li>Application size</li>
-<li>Application performance</li>
-<li>Platform-specific guidelines</li>
-<li>Architecture design</li>
-</ul>
-<p>Now, let’s see how you can optimize each of them to make your application faster in simple, easy to follow steps.</p>
-<h2 id="Minimize-the-application-size-1"><a href="#Minimize-the-application-size-1" class="headerlink" title="Minimize the application size"></a>Minimize the application size</h2><p>Mobile phones aren’t powerful GPUs, yet! Also, do you know that most of the Android market share is consumed by low-end configuration mobile phones? Some of them don’t even support 2G or 3G, even downloading your huge application in a momental need would be a nightmare for the app’s users. The less your app consumes space on such constrained phones, the better.</p>
-<p><img src="http://www.simform.com/wp-content/uploads/2017/08/App-and-size-1024x512.png" alt="" title="mobile app perfomance factors"></p>
-<h2 id="Optimize-networking"><a href="#Optimize-networking" class="headerlink" title="Optimize networking"></a>Optimize networking</h2><p>Text first, image second</p>
-<p>To optimize networking, try to load textual data first. Image based content present in your application can then be loaded as the second preference, asynchronously.</p>
-<p>Avoid duplicate network requests</p>
-<p>Those who are familiar with<a href="https://developer.android.com/training/volley/index.html%20rel=">Volley</a>in Android will know a lot about this. When poorly implemented that android app using Volley can send two requests to the server at the same time, you might delete an item, it will get deleted, but your app would say, no such item exists. Not only just the functionality, but duplicated requests increase system congestion and decrease app’s performance, especially when you have a million app users. Imagine increasing the number of requests to your server increased by 2 folds when you are extremely desperate to optimize these costs.</p>
-<p>Understand and adjust based on connection quality</p>
-<p>Think about an app that adjusts everything based upon the network quality available. Your app can change the content quality delivered based upon what network conditions a user is present in to make sure that the app’s usage doesn’t fall through.</p>
-<p>Effective API design</p>
-<p>The way an API has been designed has a huge impact on how it impacts app’s performances. An incomplete or lazily designed API can be a burden on the mobile application. Workarounds on<a href="https://www.simform.com/android-app-developers-top-api/">APIs</a>usually put too much pressure on the network limitations.</p>
-<p>When designing the API payloads of your mobile app ensure that you have:</p>
-<ul>
-<li>Consistency: The developer should know that expect, leaving no space for least astonishment.</li>
-<li>Completeness: Having reduced workarounds<br><img src="http://www.simform.com/wp-content/uploads/2017/08/img-1-1024x512.png" alt="" title="mobile app network optimization"></li>
-</ul>
-<p>Starting from UI and going all the way to data can be one great way to design a consistent and complete API payload that improves your app’s performance. Just because you can send, don’t send everything from mobile to your API. Only send what’s required.</p>
-<h2 id="Optimize-images-in-your-application-1"><a href="#Optimize-images-in-your-application-1" class="headerlink" title="Optimize images in your application"></a>Optimize images in your application</h2><p>To optimize images in your application, you can:</p>
-<ul>
-<li>Use vector images</li>
-<li>Serve dynamic image sizes</li>
-<li>Apply color filters as opposed to using different sets of colored images</li>
-<li>Use image caching</li>
-<li>Use libraries like Picasso and Fresco</li>
-</ul>
-<h2 id="Cache-data-to-optimize-for-offline-1"><a href="#Cache-data-to-optimize-for-offline-1" class="headerlink" title="Cache data to optimize for offline"></a>Cache data to optimize for offline</h2><p>When your network is weak, display whatever data you have, while fetching required data. Doing so will:</p>
-<ul>
-<li>Reduce your server load</li>
-<li>Reduce the number of your mobile phone’s radio usage, improving your app’s battery life</li>
-</ul>
-<p>If you don’t have a testing team at your disposal, try switching your phone into the airplane mode and test your app for offline performance.</p>
-<h2 id="Make-sure-you-optimize-your-app-for-screen-size-as-well-1"><a href="#Make-sure-you-optimize-your-app-for-screen-size-as-well-1" class="headerlink" title="Make sure you optimize your app for screen size as well"></a>Make sure you optimize your app for screen size as well</h2><p>A lot has been spoken about the screen sizes, Android raises some really big concerns here as there are literally thousands of devices, each with their own resolution and screen size.</p>
-<p>As a rule of thumb:</p>
-<ul>
-<li>Build for small and medium screens</li>
-<li>Optimize for MDPI and HDPI</li>
-<li>Implement adaptive UI flows</li>
-</ul>
-<p><img src="http://www.simform.com/wp-content/uploads/2017/08/android-fragmentation.png" alt=""></p>
-<p>Don’t have a 100’s of devices to test the screen size and resolution? Test with emulator configurations.</p>
-<h2 id="Memory-usage-in-Android-1"><a href="#Memory-usage-in-Android-1" class="headerlink" title="Memory usage in Android"></a>Memory usage in Android</h2><p>In order to provide mobile users with the ability to multitask, Android sets limits to how much RAM is available to an application. These limits are not static and change as the mobile usage increases or decreases.</p>
-<p>Considering RAM limitations throughout app development, and apps that are running in the background can hog unnecessary resources.</p>
-<p>But, you can optimize your app by:</p>
-<ul>
-<li>Limiting the lifespan of services, consider using intent service to limit the lifespan</li>
-<li>Release UI resources when users move to a different UI</li>
-<li>Utilize memory efficient code constructs</li>
-<li>Minimize the use of external libraries</li>
-</ul>
-<h2 id="How-fast-does-your-app-launches-1"><a href="#How-fast-does-your-app-launches-1" class="headerlink" title="How fast does your app launches?"></a>How fast does your app launches?</h2><p>Do you know that for average top 25 apps on PlayStore, the launch time goes anywhere from 800ms to 4.5s.  Now, 4.5s is way too much for most use cases.</p>
-<p>Bottom line, apps need to start quickly!</p>
-<h3 id="To-optimize-your-iOS-app’s-launch-time-you-should-consider-the-following-1"><a href="#To-optimize-your-iOS-app’s-launch-time-you-should-consider-the-following-1" class="headerlink" title="To optimize your iOS app’s launch time, you should consider the following:"></a>To optimize your iOS app’s launch time, you should consider the following:</h3><ul>
-<li>Embed fewer dylibs</li>
-<li>Consolidate Objective-C classes</li>
-<li>Eliminate static initializers</li>
-<li>Use more Swift, Apple recommends</li>
-<li>Measure your efforts using DYLD_PRINT_STATISTICS</li>
-<li>Discourage the usage of dlopen()</li>
-</ul>
-<h3 id="On-Android-the-following-usually-impacts-the-app-launch-time-1"><a href="#On-Android-the-following-usually-impacts-the-app-launch-time-1" class="headerlink" title="On Android, the following usually impacts the app launch time:"></a>On Android, the following usually impacts the app launch time:</h3><ul>
-<li>Instantiation of many views</li>
-<li>Expensive content like decoding bitmaps</li>
-<li>Running layouts</li>
-</ul>
-<h3 id="To-make-your-app-launch-faster-on-Android-1"><a href="#To-make-your-app-launch-faster-on-Android-1" class="headerlink" title="To make your app launch faster on Android:"></a>To make your app launch faster on Android:</h3><ul>
-<li>Don’t inflate parts of UI that you don’t require on the first launch. Use placeholder for hierarchies that can be optionally inflated later</li>
-<li>Avoid memory churns due to allocation and garbage collections whenever possible</li>
-<li>Use tools like<br><a href="http://www.apteligent.com/">Apteligent</a><br>to monitor and optimize your app launch time</li>
-<li>Avoid initialization code in your app’s object</li>
-<li>Remember, an app that has been launched recently, and an app that is launching for the first time will behave differently</li>
-</ul>
-<h2 id="Minimize-device-wakeups-1"><a href="#Minimize-device-wakeups-1" class="headerlink" title="Minimize device wakeups"></a>Minimize device wakeups</h2><p>Waking up mobile too often drastically decreases system performance. It also drains system resources. You can restrict the intents to which your app will respond.</p>
-<h2 id="Consider-low-end-Android-Mobiles-1"><a href="#Consider-low-end-Android-Mobiles-1" class="headerlink" title="Consider low-end Android Mobiles"></a>Consider low-end Android Mobiles</h2><p>Not all Android users have the latest 2+GBs of RAM. When we look at the device available for Android, we see high division in terms of device capabilities.</p>
-<p>When most developers develop and optimize their app for performance, they make this one big mistake. They optimize the app for the wrong device, often for the high-end devices available for them.</p>
-<p>A good rule of thumb is that you should always have a variety of devices to optimize your app’s performance. That way you will be able to test across:</p>
-<ul>
-<li>Various speeds</li>
-<li>Form factors and resolutions</li>
-<li>Small RAM sizes</li>
-</ul>
-<h2 id="Smooth-frame-rate-1"><a href="#Smooth-frame-rate-1" class="headerlink" title="Smooth frame rate"></a>Smooth frame rate</h2><p>On both iOS and Android, when it comes to rendering animations and gestures the maximum frame rate is 60fps.</p>
-<p>Anything that goes below a 60fps usually will appear as a hiccup to your app’s user.</p>
-<p>In order to hit 16ms frame rate ( an equivalent of 60fps), everything within your app’s rendering code has to be executed within 16ms. This is where on Android you would start to notice how expensive a 5ms from a garbage collection becomes.</p>
-<p>Let’s evaluate how this will impact the end user. When you miss the 16ms limit, you often get a slightly lower frame rate ~ 59fps. No big deal here, right?</p>
-<p>Wrong!</p>
-<p>What actually happens is that if your app misses the 16ms limit once, it is unable to use the window for one frame and now has to wait for the next one. Though your app only took 19ms to render, it actually missed the window, which will appear to the user that now it’s taking TWICE as long. You see! Right there, you just told a user that your app is super bad.</p>
-<h2 id="Restoring-user-data-on-new-devices-1"><a href="#Restoring-user-data-on-new-devices-1" class="headerlink" title="Restoring user data on new devices"></a>Restoring user data on new devices</h2><p>App users often spend a lot of time setting up the application and make it work as they intend to on their phones. When they re-install an app, then most users expect their old settings to re-surface.</p>
-<p>Preserving settings data can help enhance the quality of your application by:</p>
-<ul>
-<li>Any setting modified by the user</li>
-<li>Push notification settings</li>
-<li>Whether the user has seen the welcome screens and introductory onboarding screens</li>
-</ul>
-<h2 id="Find-latency-killers-1"><a href="#Find-latency-killers-1" class="headerlink" title="Find latency killers"></a>Find latency killers</h2><p>It is very important to remove latency issues from your application. Latency is known to cause app errors and often crashes the entire application. Statistics have told us that if an app runs slowly, more than 50% users will uninstall your app within 24 hours.</p>
-<p>To effectively deal with latency related issues:</p>
-<ul>
-<li>You can restrict third party latency sources when your network quality is poor</li>
-<li>Reduce the need of latency killer APIs that you might be using on your mobile</li>
-</ul>
-<h2 id="Optimizing-your-iOS-app-for-multitasking-1"><a href="#Optimizing-your-iOS-app-for-multitasking-1" class="headerlink" title="Optimizing your iOS app for multitasking"></a>Optimizing your iOS app for multitasking</h2><p>Let’s say you have a user who is using your app, and the app is doing a great job of rendering at 60fps and gets the work done only in 9ms.  Look at the image below to see this:</p>
-<p><img src="http://www.simform.com/wp-content/uploads/2017/08/1.1-1024x512.png" alt="" title="mobile app perfomance improvement"></p>
 <p>Now, the user brings in a secondary app on his phone, which also takes around 7ms to get the work done. It now looks something like this:<br><img src="https://www.simform.com/wp-content/uploads/2017/08/1.2-768x384.png" alt=""></p>
 <p>Now both apps combined as we can see are using 16ms that we have in order to render at 60fps.</p>
 <p>Let’s say now the user brings in another app rendering at 60fps, taking 10ms to get the work done. Now the combined total goes up to 9 + 7 + 10 = 26ms, which also means that the rendering of these apps are now as low as approx 40fps and not 60fps.<br><img src="https://www.simform.com/wp-content/uploads/2017/08/1.3-768x384.png" alt=""></p>
@@ -473,7 +342,7 @@
           <aside id="article-toc" role="navigation">
                 <div id="article-toc-inner">
                   <strong class="sidebar-title">Contents</strong>
-                  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Minimize-the-application-size"><span class="toc-text">Minimize the application size</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Optimize-images-in-your-application"><span class="toc-text">Optimize images in your application</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cache-data-to-optimize-for-offline"><span class="toc-text">Cache data to optimize for offline</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-sure-you-optimize-your-app-for-screen-size-as-well"><span class="toc-text">Make sure you optimize your app for screen size as well</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Memory-usage-in-Android"><span class="toc-text">Memory usage in Android</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-fast-does-your-app-launches"><span class="toc-text">How fast does your app launches?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#To-optimize-your-iOS-app’s-launch-time-you-should-consider-the-following"><span class="toc-text">To optimize your iOS app’s launch time, you should consider the following:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#On-Android-the-following-usually-impacts-the-app-launch-time"><span class="toc-text">On Android, the following usually impacts the app launch time:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#To-make-your-app-launch-faster-on-Android"><span class="toc-text">To make your app launch faster on Android:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Minimize-device-wakeups"><span class="toc-text">Minimize device wakeups</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Consider-low-end-Android-Mobiles"><span class="toc-text">Consider low-end Android Mobiles</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Smooth-frame-rate"><span class="toc-text">Smooth frame rate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Restoring-user-data-on-new-devices"><span class="toc-text">Restoring user data on new devices</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-latency-killers"><span class="toc-text">Find latency killers</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Optimizing-your-iOS-app-for-multitasking"><span class="toc-text">Optimizing your iOS app for multitasking</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#How-to-improve-your-mobile-app’s-performance"><span class="toc-text">How to improve your mobile app’s performance?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Minimize-the-application-size-1"><span class="toc-text">Minimize the application size</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Optimize-networking"><span class="toc-text">Optimize networking</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Optimize-images-in-your-application-1"><span class="toc-text">Optimize images in your application</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cache-data-to-optimize-for-offline-1"><span class="toc-text">Cache data to optimize for offline</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-sure-you-optimize-your-app-for-screen-size-as-well-1"><span class="toc-text">Make sure you optimize your app for screen size as well</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Memory-usage-in-Android-1"><span class="toc-text">Memory usage in Android</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-fast-does-your-app-launches-1"><span class="toc-text">How fast does your app launches?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#To-optimize-your-iOS-app’s-launch-time-you-should-consider-the-following-1"><span class="toc-text">To optimize your iOS app’s launch time, you should consider the following:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#On-Android-the-following-usually-impacts-the-app-launch-time-1"><span class="toc-text">On Android, the following usually impacts the app launch time:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#To-make-your-app-launch-faster-on-Android-1"><span class="toc-text">To make your app launch faster on Android:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Minimize-device-wakeups-1"><span class="toc-text">Minimize device wakeups</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Consider-low-end-Android-Mobiles-1"><span class="toc-text">Consider low-end Android Mobiles</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Smooth-frame-rate-1"><span class="toc-text">Smooth frame rate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Restoring-user-data-on-new-devices-1"><span class="toc-text">Restoring user data on new devices</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-latency-killers-1"><span class="toc-text">Find latency killers</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Optimizing-your-iOS-app-for-multitasking-1"><span class="toc-text">Optimizing your iOS app for multitasking</span></a></li></ol>
+                  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Minimize-the-application-size"><span class="toc-text">Minimize the application size</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Optimize-images-in-your-application"><span class="toc-text">Optimize images in your application</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cache-data-to-optimize-for-offline"><span class="toc-text">Cache data to optimize for offline</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-sure-you-optimize-your-app-for-screen-size-as-well"><span class="toc-text">Make sure you optimize your app for screen size as well</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Memory-usage-in-Android"><span class="toc-text">Memory usage in Android</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-fast-does-your-app-launches"><span class="toc-text">How fast does your app launches?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#To-optimize-your-iOS-app’s-launch-time-you-should-consider-the-following"><span class="toc-text">To optimize your iOS app’s launch time, you should consider the following:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#On-Android-the-following-usually-impacts-the-app-launch-time"><span class="toc-text">On Android, the following usually impacts the app launch time:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#To-make-your-app-launch-faster-on-Android"><span class="toc-text">To make your app launch faster on Android:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Minimize-device-wakeups"><span class="toc-text">Minimize device wakeups</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Consider-low-end-Android-Mobiles"><span class="toc-text">Consider low-end Android Mobiles</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Smooth-frame-rate"><span class="toc-text">Smooth frame rate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Restoring-user-data-on-new-devices"><span class="toc-text">Restoring user data on new devices</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-latency-killers"><span class="toc-text">Find latency killers</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Optimizing-your-iOS-app-for-multitasking"><span class="toc-text">Optimizing your iOS app for multitasking</span></a></li></ol>
                   <a href="#" id="article-toc-top">Back to Top</a>
                 </div>
           </aside>

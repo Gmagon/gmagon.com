@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gmagon.com/"/>
-  <updated>2017-09-07T05:15:26.502Z</updated>
+  <updated>2017-09-07T05:15:26.496Z</updated>
   <id>https://gmagon.com/</id>
   
   <author>
@@ -14,22 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Why we think package managers (PMs) need hooks?</title>
-    <link href="https://gmagon.com/blog/2017/09/07/why-package-managers-need-hooks/"/>
-    <id>https://gmagon.com/blog/2017/09/07/why-package-managers-need-hooks/</id>
-    <published>2017-09-07T00:00:00.000Z</published>
-    <updated>2017-09-07T05:15:26.502Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;We introduced hooks to pnpm in &lt;a href=&quot;https://github.com/pnpm/pnpm/releases/tag/v1.12.0&quot;&gt;version 1.12&lt;/a&gt;. In this article I want to wr
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>State of the art in CSS</title>
@@ -48,6 +32,38 @@
   </entry>
   
   <entry>
+    <title>Why we think package managers (PMs) need hooks?</title>
+    <link href="https://gmagon.com/blog/2017/09/07/why-package-managers-need-hooks/"/>
+    <id>https://gmagon.com/blog/2017/09/07/why-package-managers-need-hooks/</id>
+    <published>2017-09-07T00:00:00.000Z</published>
+    <updated>2017-09-07T05:15:26.502Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;We introduced hooks to pnpm in &lt;a href=&quot;https://github.com/pnpm/pnpm/releases/tag/v1.12.0&quot;&gt;version 1.12&lt;/a&gt;. In this article I want to wr
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The Incredible Growth of Python</title>
+    <link href="https://gmagon.com/blog/2017/09/07/growth-of-python/"/>
+    <id>https://gmagon.com/blog/2017/09/07/growth-of-python/</id>
+    <published>2017-09-07T00:00:00.000Z</published>
+    <updated>2017-09-07T05:15:26.479Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;We &lt;a href=&quot;https://stackoverflow.blog/2017/08/29/tale-two-industries-programming-languages-differ-wealthy-developing-countries/?utm_sour
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Query Minio datastore with Apache Drill</title>
     <link href="https://gmagon.com/blog/2017/09/07/query-minio-datastore-with-apache-drill/"/>
     <id>https://gmagon.com/blog/2017/09/07/query-minio-datastore-with-apache-drill/</id>
@@ -57,6 +73,22 @@
     <summary type="html">
     
       &lt;p&gt;Minio object storage server is perfect home for all your unstructured data. However, historically, one of the major pain points of unstru
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Building your SPA in ELM</title>
+    <link href="https://gmagon.com/blog/2017/09/07/building-your-spa-in-elm/"/>
+    <id>https://gmagon.com/blog/2017/09/07/building-your-spa-in-elm/</id>
+    <published>2017-09-07T00:00:00.000Z</published>
+    <updated>2017-09-07T05:15:26.474Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://dailydrip-assets.s3.amazonaws.com/DailyDrip/blog_posts/elm-for-js-developers-ep-1/elmJS.png&quot; alt=&quot;&quot;&gt;This is the sixth p
     
     </summary>
     
@@ -81,54 +113,6 @@
   </entry>
   
   <entry>
-    <title>Building your SPA in ELM</title>
-    <link href="https://gmagon.com/blog/2017/09/07/building-your-spa-in-elm/"/>
-    <id>https://gmagon.com/blog/2017/09/07/building-your-spa-in-elm/</id>
-    <published>2017-09-07T00:00:00.000Z</published>
-    <updated>2017-09-07T05:15:26.474Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://dailydrip-assets.s3.amazonaws.com/DailyDrip/blog_posts/elm-for-js-developers-ep-1/elmJS.png&quot; alt=&quot;&quot;&gt;This is the sixth p
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>The Incredible Growth of Python</title>
-    <link href="https://gmagon.com/blog/2017/09/07/growth-of-python/"/>
-    <id>https://gmagon.com/blog/2017/09/07/growth-of-python/</id>
-    <published>2017-09-07T00:00:00.000Z</published>
-    <updated>2017-09-07T05:15:26.479Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;We &lt;a href=&quot;https://stackoverflow.blog/2017/08/29/tale-two-industries-programming-languages-differ-wealthy-developing-countries/?utm_sour
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Handwritten Hash Codes are Faster in Java 9</title>
-    <link href="https://gmagon.com/blog/2017/09/06/handwritten-hash-codes-are-faster-in-java-9/"/>
-    <id>https://gmagon.com/blog/2017/09/06/handwritten-hash-codes-are-faster-in-java-9/</id>
-    <published>2017-09-06T00:00:00.000Z</published>
-    <updated>2017-09-06T05:55:49.485Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Update 05/09/2017: I have recently discovered that this phenomenon was first described by Alexey Shipilev on an&lt;a href=&quot;https://bugs.open
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>The Mi A1 is the priciest budget handset</title>
     <link href="https://gmagon.com/blog/2017/09/06/the-mi-a1-is-the-priciest-budget-handset/"/>
     <id>https://gmagon.com/blog/2017/09/06/the-mi-a1-is-the-priciest-budget-handset/</id>
@@ -138,6 +122,22 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F9f9e74c7e8f05b92
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Solaris to Linux Migration 2017</title>
+    <link href="https://gmagon.com/blog/2017/09/06/solaris-to-linux-2017/"/>
+    <id>https://gmagon.com/blog/2017/09/06/solaris-to-linux-2017/</id>
+    <published>2017-09-06T00:00:00.000Z</published>
+    <updated>2017-09-06T05:55:49.490Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Many people have contacted me recently about switching from Solaris (or illumos) to Linux, especially since most of the Solaris kernel te
     
     </summary>
     
@@ -179,15 +179,16 @@
   </entry>
   
   <entry>
-    <title>Every Programmer Should Know</title>
-    <link href="https://gmagon.com/blog/2017/09/06/every-programmer-should-know/"/>
-    <id>https://gmagon.com/blog/2017/09/06/every-programmer-should-know/</id>
+    <title>Man Accidentally Makes $1.3 Million Buying a House With Bitcoin</title>
+    <link href="https://gmagon.com/blog/2017/09/06/buying-a-house-with-bitcoin/"/>
+    <id>https://gmagon.com/blog/2017/09/06/buying-a-house-with-bitcoin/</id>
     <published>2017-09-06T00:00:00.000Z</published>
-    <updated>2017-09-06T05:55:49.475Z</updated>
+    <updated>2017-09-06T08:29:25.897Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://www.javacodegeeks.com/wp-content/uploads/2014/05/Must-read-articles-for-Programmers-and-Software-Developers.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;p&gt;&lt;img src=&quot;https://fs.bitcoinmagazine.com/img/images/house.width-800.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;One of the main issues with bitcoin from a mainst
     
     </summary>
     
@@ -211,6 +212,22 @@
   </entry>
   
   <entry>
+    <title>Every Programmer Should Know</title>
+    <link href="https://gmagon.com/blog/2017/09/06/every-programmer-should-know/"/>
+    <id>https://gmagon.com/blog/2017/09/06/every-programmer-should-know/</id>
+    <published>2017-09-06T00:00:00.000Z</published>
+    <updated>2017-09-06T05:55:49.475Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://www.javacodegeeks.com/wp-content/uploads/2014/05/Must-read-articles-for-Programmers-and-Software-Developers.jpg&quot; alt=&quot;&quot;&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Microsoft is giving switchers three extra months to choose full Windows 10</title>
     <link href="https://gmagon.com/blog/2017/09/06/choose-full-windows-10/"/>
     <id>https://gmagon.com/blog/2017/09/06/choose-full-windows-10/</id>
@@ -220,55 +237,6 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F812a97a987849500
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>The safest way to lock your smartphone</title>
-    <link href="https://gmagon.com/blog/2017/09/06/the-safest-way-to-lock-your-smartphone/"/>
-    <id>https://gmagon.com/blog/2017/09/06/the-safest-way-to-lock-your-smartphone/</id>
-    <published>2017-09-06T00:00:00.000Z</published>
-    <updated>2017-09-06T02:07:29.838Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://cdn01.androidauthority.net/wp-content/uploads/2017/04/Google-Pixel-fingerprint-scanner-840x472.jpeg&quot; alt=&quot;&quot;&gt;Based on the
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Man Accidentally Makes $1.3 Million Buying a House With Bitcoin</title>
-    <link href="https://gmagon.com/blog/2017/09/06/buying-a-house-with-bitcoin/"/>
-    <id>https://gmagon.com/blog/2017/09/06/buying-a-house-with-bitcoin/</id>
-    <published>2017-09-06T00:00:00.000Z</published>
-    <updated>2017-09-06T08:29:25.897Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://fs.bitcoinmagazine.com/img/images/house.width-800.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;One of the main issues with bitcoin from a mainst
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Becoming a 10x Data Scientist</title>
-    <link href="https://gmagon.com/blog/2017/09/06/becoming-a-10x-data-scientist/"/>
-    <id>https://gmagon.com/blog/2017/09/06/becoming-a-10x-data-scientist/</id>
-    <published>2017-09-06T00:00:00.000Z</published>
-    <updated>2017-09-06T05:55:49.453Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Recently I gave a talk at &lt;a href=&quot;https://pydata.org/seattle2017/&quot;&gt;PyData Seattle&lt;/a&gt; about how to ramp up your data science skills by b
     
     </summary>
     
@@ -292,15 +260,15 @@
   </entry>
   
   <entry>
-    <title>Solaris to Linux Migration 2017</title>
-    <link href="https://gmagon.com/blog/2017/09/06/solaris-to-linux-2017/"/>
-    <id>https://gmagon.com/blog/2017/09/06/solaris-to-linux-2017/</id>
+    <title>Becoming a 10x Data Scientist</title>
+    <link href="https://gmagon.com/blog/2017/09/06/becoming-a-10x-data-scientist/"/>
+    <id>https://gmagon.com/blog/2017/09/06/becoming-a-10x-data-scientist/</id>
     <published>2017-09-06T00:00:00.000Z</published>
-    <updated>2017-09-06T05:55:49.490Z</updated>
+    <updated>2017-09-06T05:55:49.453Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Many people have contacted me recently about switching from Solaris (or illumos) to Linux, especially since most of the Solaris kernel te
+      &lt;p&gt;Recently I gave a talk at &lt;a href=&quot;https://pydata.org/seattle2017/&quot;&gt;PyData Seattle&lt;/a&gt; about how to ramp up your data science skills by b
     
     </summary>
     
@@ -308,16 +276,48 @@
   </entry>
   
   <entry>
-    <title>Functional Programming Is Definitely Worth Learning.</title>
-    <link href="https://gmagon.com/blog/2017/09/05/functional-programming-is-definitely-worth-learning/"/>
-    <id>https://gmagon.com/blog/2017/09/05/functional-programming-is-definitely-worth-learning/</id>
-    <published>2017-09-05T00:00:00.000Z</published>
-    <updated>2017-09-05T03:03:11.192Z</updated>
+    <title>The safest way to lock your smartphone</title>
+    <link href="https://gmagon.com/blog/2017/09/06/the-safest-way-to-lock-your-smartphone/"/>
+    <id>https://gmagon.com/blog/2017/09/06/the-safest-way-to-lock-your-smartphone/</id>
+    <published>2017-09-06T00:00:00.000Z</published>
+    <updated>2017-09-06T02:07:29.838Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;I absolutely love functional programming_. It does help in a lot of ways, but you should keep in mind thatyou can still end 
+      &lt;p&gt;&lt;img src=&quot;http://cdn01.androidauthority.net/wp-content/uploads/2017/04/Google-Pixel-fingerprint-scanner-840x472.jpeg&quot; alt=&quot;&quot;&gt;Based on the
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Handwritten Hash Codes are Faster in Java 9</title>
+    <link href="https://gmagon.com/blog/2017/09/06/handwritten-hash-codes-are-faster-in-java-9/"/>
+    <id>https://gmagon.com/blog/2017/09/06/handwritten-hash-codes-are-faster-in-java-9/</id>
+    <published>2017-09-06T00:00:00.000Z</published>
+    <updated>2017-09-06T05:55:49.485Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Update 05/09/2017: I have recently discovered that this phenomenon was first described by Alexey Shipilev on an&lt;a href=&quot;https://bugs.open
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How to Access iCloud Settings in iOS</title>
+    <link href="https://gmagon.com/blog/2017/09/05/how-to-access-icloud-settings-in-ios/"/>
+    <id>https://gmagon.com/blog/2017/09/05/how-to-access-icloud-settings-in-ios/</id>
+    <published>2017-09-05T00:00:00.000Z</published>
+    <updated>2017-09-05T02:03:15.796Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/qeeYRr3.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;iOS Settings used to be easily accessed by going to the Settings app an
     
     </summary>
     
@@ -359,15 +359,15 @@
   </entry>
   
   <entry>
-    <title>Review of Android 8.0 Oreo</title>
-    <link href="https://gmagon.com/blog/2017/09/05/review-of-android-80-oreo/"/>
-    <id>https://gmagon.com/blog/2017/09/05/review-of-android-80-oreo/</id>
+    <title>Quick Tips and Tools for Working Remotely</title>
+    <link href="https://gmagon.com/blog/2017/09/05/quick-tips-and-tools-for-working-remotely/"/>
+    <id>https://gmagon.com/blog/2017/09/05/quick-tips-and-tools-for-working-remotely/</id>
     <published>2017-09-05T00:00:00.000Z</published>
-    <updated>2017-09-05T02:24:01.638Z</updated>
+    <updated>2017-09-05T05:57:24.055Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;Twelve months have passed sinc
+      &lt;p&gt;We’ve all been there, a pile of work to get through and too many meetings and distractions to get it done. The office can be a great plac
     
     </summary>
     
@@ -407,22 +407,6 @@
   </entry>
   
   <entry>
-    <title>Islands is a new messaging app aimed at college students.</title>
-    <link href="https://gmagon.com/blog/2017/09/05/islands-is-a-new-messaging-app-aimed-at-college-students/"/>
-    <id>https://gmagon.com/blog/2017/09/05/islands-is-a-new-messaging-app-aimed-at-college-students/</id>
-    <published>2017-09-05T00:00:00.000Z</published>
-    <updated>2017-09-05T05:29:43.608Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/E3yI3aj.jpg!web&quot; alt=&quot;&quot;&gt;&lt;br&gt;Islands founder Greg Isenberg (second from right) with members of his team.
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>How To Adjust Your Creatives For Search Ad Conversions</title>
     <link href="https://gmagon.com/blog/2017/09/05/how-to-adjust-your-creatives-for-search-ad-conversions/"/>
     <id>https://gmagon.com/blog/2017/09/05/how-to-adjust-your-creatives-for-search-ad-conversions/</id>
@@ -440,16 +424,15 @@
   </entry>
   
   <entry>
-    <title>Twitter’s new random notifications are awful</title>
-    <link href="https://gmagon.com/blog/2017/09/05/twitters-new-random-notifications-are-awful/"/>
-    <id>https://gmagon.com/blog/2017/09/05/twitters-new-random-notifications-are-awful/</id>
+    <title>Islands is a new messaging app aimed at college students.</title>
+    <link href="https://gmagon.com/blog/2017/09/05/islands-is-a-new-messaging-app-aimed-at-college-students/"/>
+    <id>https://gmagon.com/blog/2017/09/05/islands-is-a-new-messaging-app-aimed-at-college-students/</id>
     <published>2017-09-05T00:00:00.000Z</published>
-    <updated>2017-09-05T06:55:11.042Z</updated>
+    <updated>2017-09-05T05:29:43.608Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/JN36naq.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;About a month ago, Twitter&lt;a href=&quot;https://techcrunch.com/2017/07/26/tw
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/E3yI3aj.jpg!web&quot; alt=&quot;&quot;&gt;&lt;br&gt;Islands founder Greg Isenberg (second from right) with members of his team.
     
     </summary>
     
@@ -457,16 +440,15 @@
   </entry>
   
   <entry>
-    <title>How to Access iCloud Settings in iOS</title>
-    <link href="https://gmagon.com/blog/2017/09/05/how-to-access-icloud-settings-in-ios/"/>
-    <id>https://gmagon.com/blog/2017/09/05/how-to-access-icloud-settings-in-ios/</id>
+    <title>Review of Android 8.0 Oreo</title>
+    <link href="https://gmagon.com/blog/2017/09/05/review-of-android-80-oreo/"/>
+    <id>https://gmagon.com/blog/2017/09/05/review-of-android-80-oreo/</id>
     <published>2017-09-05T00:00:00.000Z</published>
-    <updated>2017-09-05T02:03:15.796Z</updated>
+    <updated>2017-09-05T02:24:01.638Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/qeeYRr3.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;iOS Settings used to be easily accessed by going to the Settings app an
+      &lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;Twelve months have passed sinc
     
     </summary>
     
@@ -474,16 +456,16 @@
   </entry>
   
   <entry>
-    <title>A Young Dropout Just Launched A Cheaper Rival to Uber in London</title>
-    <link href="https://gmagon.com/blog/2017/09/05/a-young-dropout-just-launched-a-cheaper-rival-to-uber-in-london/"/>
-    <id>https://gmagon.com/blog/2017/09/05/a-young-dropout-just-launched-a-cheaper-rival-to-uber-in-london/</id>
+    <title>Functional Programming Is Definitely Worth Learning.</title>
+    <link href="https://gmagon.com/blog/2017/09/05/functional-programming-is-definitely-worth-learning/"/>
+    <id>https://gmagon.com/blog/2017/09/05/functional-programming-is-definitely-worth-learning/</id>
     <published>2017-09-05T00:00:00.000Z</published>
-    <updated>2017-09-05T09:18:54.798Z</updated>
+    <updated>2017-09-05T03:03:11.192Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/RbEZbyM.png!web&quot; alt=&quot;&quot;&gt;&lt;br&gt;Taxify CEO Markus VilligTaxify&lt;/p&gt;
-&lt;p&gt;Ordering a taxi by app has just becom
+      &lt;blockquote&gt;
+&lt;p&gt;I absolutely love functional programming_. It does help in a lot of ways, but you should keep in mind thatyou can still end 
     
     </summary>
     
@@ -500,6 +482,22 @@
     <summary type="html">
     
       &lt;p&gt;This post was first published on&lt;a href=&quot;https://coderhood.com/&quot;&gt;CoderHood&lt;/a&gt;as&lt;a href=&quot;https://www.coderhood.com/from-coding-to-managem
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Bitcoin Price Drops $200 Because of Chinese New Ruling</title>
+    <link href="https://gmagon.com/blog/2017/09/05/bitcoin-price-drops-200-because-of-chinese-new-ruling/"/>
+    <id>https://gmagon.com/blog/2017/09/05/bitcoin-price-drops-200-because-of-chinese-new-ruling/</id>
+    <published>2017-09-05T00:00:00.000Z</published>
+    <updated>2017-09-05T07:52:11.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The price of bitcoin fell sharply after Chinese regulators announced a ban on organizations from raising funds using initial coin offerin
     
     </summary>
     
@@ -540,15 +538,16 @@
   </entry>
   
   <entry>
-    <title>Bitcoin Price Drops $200 Because of Chinese New Ruling</title>
-    <link href="https://gmagon.com/blog/2017/09/05/bitcoin-price-drops-200-because-of-chinese-new-ruling/"/>
-    <id>https://gmagon.com/blog/2017/09/05/bitcoin-price-drops-200-because-of-chinese-new-ruling/</id>
+    <title>A Young Dropout Just Launched A Cheaper Rival to Uber in London</title>
+    <link href="https://gmagon.com/blog/2017/09/05/a-young-dropout-just-launched-a-cheaper-rival-to-uber-in-london/"/>
+    <id>https://gmagon.com/blog/2017/09/05/a-young-dropout-just-launched-a-cheaper-rival-to-uber-in-london/</id>
     <published>2017-09-05T00:00:00.000Z</published>
-    <updated>2017-09-05T07:52:11.398Z</updated>
+    <updated>2017-09-05T09:18:54.798Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;The price of bitcoin fell sharply after Chinese regulators announced a ban on organizations from raising funds using initial coin offerin
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/RbEZbyM.png!web&quot; alt=&quot;&quot;&gt;&lt;br&gt;Taxify CEO Markus VilligTaxify&lt;/p&gt;
+&lt;p&gt;Ordering a taxi by app has just becom
     
     </summary>
     
@@ -573,15 +572,16 @@
   </entry>
   
   <entry>
-    <title>Quick Tips and Tools for Working Remotely</title>
-    <link href="https://gmagon.com/blog/2017/09/05/quick-tips-and-tools-for-working-remotely/"/>
-    <id>https://gmagon.com/blog/2017/09/05/quick-tips-and-tools-for-working-remotely/</id>
+    <title>Twitter’s new random notifications are awful</title>
+    <link href="https://gmagon.com/blog/2017/09/05/twitters-new-random-notifications-are-awful/"/>
+    <id>https://gmagon.com/blog/2017/09/05/twitters-new-random-notifications-are-awful/</id>
     <published>2017-09-05T00:00:00.000Z</published>
-    <updated>2017-09-05T05:57:24.055Z</updated>
+    <updated>2017-09-05T06:55:11.042Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;We’ve all been there, a pile of work to get through and too many meetings and distractions to get it done. The office can be a great plac
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/JN36naq.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;About a month ago, Twitter&lt;a href=&quot;https://techcrunch.com/2017/07/26/tw
     
     </summary>
     
@@ -623,40 +623,6 @@
   </entry>
   
   <entry>
-    <title>Linux&#39;s Five Myths That Scares Away New Users</title>
-    <link href="https://gmagon.com/blog/2017/09/04/linuxs-five-myths-that-scares-away-new-users/"/>
-    <id>https://gmagon.com/blog/2017/09/04/linuxs-five-myths-that-scares-away-new-users/</id>
-    <published>2017-09-04T00:00:00.000Z</published>
-    <updated>2017-09-04T05:12:17.461Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/AFFBBna.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Brief: While Google Drive is not officially available for Linux, here a
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Main Source Code of Reddit Was Turned Off</title>
-    <link href="https://gmagon.com/blog/2017/09/04/main-source-code-of-reddit-was-turned-off/"/>
-    <id>https://gmagon.com/blog/2017/09/04/main-source-code-of-reddit-was-turned-off/</id>
-    <published>2017-09-04T00:00:00.000Z</published>
-    <updated>2017-09-04T06:20:24.924Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/aueyamU.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Reddit has made its website source code available since 2008 in a bid t
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Screenshot Tool ‘Shutter’ Was Last Updated</title>
     <link href="https://gmagon.com/blog/2017/09/04/screenshot-tool-shutter-was-last-updated/"/>
     <id>https://gmagon.com/blog/2017/09/04/screenshot-tool-shutter-was-last-updated/</id>
@@ -691,6 +657,23 @@
   </entry>
   
   <entry>
+    <title>Main Source Code of Reddit Was Turned Off</title>
+    <link href="https://gmagon.com/blog/2017/09/04/main-source-code-of-reddit-was-turned-off/"/>
+    <id>https://gmagon.com/blog/2017/09/04/main-source-code-of-reddit-was-turned-off/</id>
+    <published>2017-09-04T00:00:00.000Z</published>
+    <updated>2017-09-04T06:20:24.924Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/aueyamU.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Reddit has made its website source code available since 2008 in a bid t
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Huawei unveils faster phone chip to rival Apple and Samsung</title>
     <link href="https://gmagon.com/blog/2017/09/04/huawei-unveils-faster-chip-to-rival-apple-samsung/"/>
     <id>https://gmagon.com/blog/2017/09/04/huawei-unveils-faster-chip-to-rival-apple-samsung/</id>
@@ -700,6 +683,23 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://gmagon.com/guide/img/huawei.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;FILE PHOTO: Visitors are seen at HUAWEI stand during the 2017 Mobile World 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux&#39;s Five Myths That Scares Away New Users</title>
+    <link href="https://gmagon.com/blog/2017/09/04/linuxs-five-myths-that-scares-away-new-users/"/>
+    <id>https://gmagon.com/blog/2017/09/04/linuxs-five-myths-that-scares-away-new-users/</id>
+    <published>2017-09-04T00:00:00.000Z</published>
+    <updated>2017-09-04T05:12:17.461Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/AFFBBna.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Brief: While Google Drive is not officially available for Linux, here a
     
     </summary>
     
@@ -790,6 +790,24 @@
   </entry>
   
   <entry>
+    <title>Buzzfeed just sent out a message to the digital publishing business</title>
+    <link href="https://gmagon.com/blog/2017/09/04/buzzfeed-just-sent-out-a-message-to-the-digital-publishing-business/"/>
+    <id>https://gmagon.com/blog/2017/09/04/buzzfeed-just-sent-out-a-message-to-the-digital-publishing-business/</id>
+    <published>2017-09-04T00:00:00.000Z</published>
+    <updated>2017-09-04T05:11:44.874Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/ZzMzYbN.jpg!web&quot; alt=&quot;&quot;&gt;Business Insider&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;BuzzFeed has decided to run banner ads —the ub
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>A Beginners&#39; Guide to Django (1)</title>
     <link href="https://gmagon.com/blog/2017/09/04/a-beginners-guide-to-django-1/"/>
     <id>https://gmagon.com/blog/2017/09/04/a-beginners-guide-to-django-1/</id>
@@ -823,24 +841,6 @@
   </entry>
   
   <entry>
-    <title>Buzzfeed just sent out a message to the digital publishing business</title>
-    <link href="https://gmagon.com/blog/2017/09/04/buzzfeed-just-sent-out-a-message-to-the-digital-publishing-business/"/>
-    <id>https://gmagon.com/blog/2017/09/04/buzzfeed-just-sent-out-a-message-to-the-digital-publishing-business/</id>
-    <published>2017-09-04T00:00:00.000Z</published>
-    <updated>2017-09-04T05:11:44.874Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/ZzMzYbN.jpg!web&quot; alt=&quot;&quot;&gt;Business Insider&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;BuzzFeed has decided to run banner ads —the ub
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>How the Saga Pattern manages failures with AWS Lambda and Step Functions</title>
     <link href="https://gmagon.com/blog/2017/09/04/how-the-saga-pattern-manages-failures-with-aws-lambda-and-step-functions/"/>
     <id>https://gmagon.com/blog/2017/09/04/how-the-saga-pattern-manages-failures-with-aws-lambda-and-step-functions/</id>
@@ -857,16 +857,16 @@
   </entry>
   
   <entry>
-    <title>What the smartphone of the future might look like?</title>
-    <link href="https://gmagon.com/blog/2017/09/01/what-the-smartphone-of-the-future-might-look-like/"/>
-    <id>https://gmagon.com/blog/2017/09/01/what-the-smartphone-of-the-future-might-look-like/</id>
+    <title>YouTube is undergoing a series of changes</title>
+    <link href="https://gmagon.com/blog/2017/09/01/youtube-is-undergoing-changes/"/>
+    <id>https://gmagon.com/blog/2017/09/01/youtube-is-undergoing-changes/</id>
     <published>2017-09-01T00:00:00.000Z</published>
-    <updated>2017-09-01T06:43:27.388Z</updated>
+    <updated>2017-09-04T00:28:43.098Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://static01.nyt.com/images/2017/08/31/business/31techfix/31techfix-master768.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Minh Uong/The New York Ti
+      &lt;p&gt;&lt;img src=&quot;https://cdn.searchenginejournal.com/wp-content/uploads/2017/08/8DFFA3FA-157C-4CA2-A0CD-D3FDEDEA4F5A-760x400.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;
     
     </summary>
     
@@ -901,6 +901,22 @@
     
       &lt;p&gt;&lt;img src=&quot;https://www.rittmanmead.com/blog/content/images/2017/06/Unify-3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;This article is useful for those who use th
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Open Java EE: What to Expect</title>
+    <link href="https://gmagon.com/blog/2017/09/01/open-java-ee-what-to-expect/"/>
+    <id>https://gmagon.com/blog/2017/09/01/open-java-ee-what-to-expect/</id>
+    <published>2017-09-01T00:00:00.000Z</published>
+    <updated>2017-09-01T06:43:27.381Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;A-MicroProfile-contributor-explains-what’s-happening-with-Java-EE’s-pending-move-to-an-open-source-foundation-and-what-will-likely-c
     
     </summary>
     
@@ -967,22 +983,6 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://tctechcrunch2011.files.wordpress.com/2017/07/google-feed1.png&quot; alt=&quot;&quot;&gt;Machine learning has turned out to be a very usef
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Open Java EE: What to Expect</title>
-    <link href="https://gmagon.com/blog/2017/09/01/open-java-ee-what-to-expect/"/>
-    <id>https://gmagon.com/blog/2017/09/01/open-java-ee-what-to-expect/</id>
-    <published>2017-09-01T00:00:00.000Z</published>
-    <updated>2017-09-01T06:43:27.381Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;A-MicroProfile-contributor-explains-what’s-happening-with-Java-EE’s-pending-move-to-an-open-source-foundation-and-what-will-likely-c
     
     </summary>
     
@@ -1071,16 +1071,129 @@
   </entry>
   
   <entry>
-    <title>YouTube is undergoing a series of changes</title>
-    <link href="https://gmagon.com/blog/2017/09/01/youtube-is-undergoing-changes/"/>
-    <id>https://gmagon.com/blog/2017/09/01/youtube-is-undergoing-changes/</id>
+    <title>What the smartphone of the future might look like?</title>
+    <link href="https://gmagon.com/blog/2017/09/01/what-the-smartphone-of-the-future-might-look-like/"/>
+    <id>https://gmagon.com/blog/2017/09/01/what-the-smartphone-of-the-future-might-look-like/</id>
     <published>2017-09-01T00:00:00.000Z</published>
-    <updated>2017-09-04T00:28:43.098Z</updated>
+    <updated>2017-09-01T06:43:27.388Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://cdn.searchenginejournal.com/wp-content/uploads/2017/08/8DFFA3FA-157C-4CA2-A0CD-D3FDEDEA4F5A-760x400.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;
+      &lt;p&gt;&lt;img src=&quot;https://static01.nyt.com/images/2017/08/31/business/31techfix/31techfix-master768.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Minh Uong/The New York Ti
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Probably More Likely Than Probable</title>
+    <link href="https://gmagon.com/blog/2017/08/31/probably-more-likely-than-probable/"/>
+    <id>https://gmagon.com/blog/2017/08/31/probably-more-likely-than-probable/</id>
+    <published>2017-08-31T00:00:00.000Z</published>
+    <updated>2017-08-31T08:03:14.015Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What kind of probability are people talking about when they say something is “highly likely” or has “almost no chance”? The chart below,&lt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>What Worked And What Didn’t of Repetitive Strain Injury(RSI)</title>
+    <link href="https://gmagon.com/blog/2017/08/31/what-worked-and-what-didnt-of-repetitive-strain-injury-rsi/"/>
+    <id>https://gmagon.com/blog/2017/08/31/what-worked-and-what-didnt-of-repetitive-strain-injury-rsi/</id>
+    <published>2017-08-31T00:00:00.000Z</published>
+    <updated>2017-08-31T09:05:29.957Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;About a year ago I started having pain in my left pinky. At the time I was a student, and had just helped start&lt;a href=&quot;https://bambuu.dk
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Top 5 Skills You Need Before Transitioning To Applied AI</title>
+    <link href="https://gmagon.com/blog/2017/08/31/top-5-skills-you-need-before-transitioning-to-applied-ai/"/>
+    <id>https://gmagon.com/blog/2017/08/31/top-5-skills-you-need-before-transitioning-to-applied-ai/</id>
+    <published>2017-08-31T00:00:00.000Z</published>
+    <updated>2017-08-31T05:49:08.224Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/AfUjA3Y.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Transitioning-from-Academic-Machine-Learning-to-AI-in-Industry&quot;&gt;&lt;a
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>This Futuristic Doctor’s Office Is Reinvited</title>
+    <link href="https://gmagon.com/blog/2017/08/31/this-futuristic-doctors-office-is-reinvited/"/>
+    <id>https://gmagon.com/blog/2017/08/31/this-futuristic-doctors-office-is-reinvited/</id>
+    <published>2017-08-31T00:00:00.000Z</published>
+    <updated>2017-08-31T06:49:06.030Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The Google and Uber veterans behindForward, a new San Francisco health care startup, want to bring their vision for reinventing the docto
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The most impressive fake iPhone we’ve seen</title>
+    <link href="https://gmagon.com/blog/2017/08/31/the-most-impressive-fake-iphone-weve-seen/"/>
+    <id>https://gmagon.com/blog/2017/08/31/the-most-impressive-fake-iphone-weve-seen/</id>
+    <published>2017-08-31T00:00:00.000Z</published>
+    <updated>2017-08-31T02:15:22.190Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This fake iPhone looks so impressive that it fooled us for a hot minute. A rose gold iPhone 7 Plus clone, it shines just like the real th
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The Best Sites to Read Manga Online</title>
+    <link href="https://gmagon.com/blog/2017/08/31/the-best-sites-to-read-manga-online/"/>
+    <id>https://gmagon.com/blog/2017/08/31/the-best-sites-to-read-manga-online/</id>
+    <published>2017-08-31T00:00:00.000Z</published>
+    <updated>2017-08-31T02:38:04.435Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Manga is a Japanese style of comic books that has proven to be a big hit around the world. But it’s difficult to distinguish official Eng
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Introduction of WhiteBear</title>
+    <link href="https://gmagon.com/blog/2017/08/31/introduction-of-whitebear/"/>
+    <id>https://gmagon.com/blog/2017/08/31/introduction-of-whitebear/</id>
+    <published>2017-08-31T00:00:00.000Z</published>
+    <updated>2017-08-31T07:25:54.338Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;As a part of our Kaspersky APT Intelligence Reporting subscription, customers received an update in mid-February 2017 on some interesting
     
     </summary>
     
@@ -1105,129 +1218,17 @@
   </entry>
   
   <entry>
-    <title>Zork Deep Reading</title>
-    <link href="https://gmagon.com/blog/2017/08/31/zork-deep-reading/"/>
-    <id>https://gmagon.com/blog/2017/08/31/zork-deep-reading/</id>
+    <title>Yelp Open Dataset and Dataset Challenge Round 10</title>
+    <link href="https://gmagon.com/blog/2017/08/31/yelp-open-dataset-and-dataset-challenge-round-10/"/>
+    <id>https://gmagon.com/blog/2017/08/31/yelp-open-dataset-and-dataset-challenge-round-10/</id>
     <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T07:49:43.358Z</updated>
+    <updated>2017-08-31T06:24:53.882Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;This past weekend a screenshot went around Twitter (my part of Twitter at least!)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/biUJ3qF.jpg!we
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>What Worked And What Didn’t of Repetitive Strain Injury(RSI)</title>
-    <link href="https://gmagon.com/blog/2017/08/31/what-worked-and-what-didnt-of-repetitive-strain-injury-rsi/"/>
-    <id>https://gmagon.com/blog/2017/08/31/what-worked-and-what-didnt-of-repetitive-strain-injury-rsi/</id>
-    <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T09:05:29.957Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;About a year ago I started having pain in my left pinky. At the time I was a student, and had just helped start&lt;a href=&quot;https://bambuu.dk
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>This Futuristic Doctor’s Office Is Reinvited</title>
-    <link href="https://gmagon.com/blog/2017/08/31/this-futuristic-doctors-office-is-reinvited/"/>
-    <id>https://gmagon.com/blog/2017/08/31/this-futuristic-doctors-office-is-reinvited/</id>
-    <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T06:49:06.030Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;The Google and Uber veterans behindForward, a new San Francisco health care startup, want to bring their vision for reinventing the docto
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Probably More Likely Than Probable</title>
-    <link href="https://gmagon.com/blog/2017/08/31/probably-more-likely-than-probable/"/>
-    <id>https://gmagon.com/blog/2017/08/31/probably-more-likely-than-probable/</id>
-    <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T08:03:14.015Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What kind of probability are people talking about when they say something is “highly likely” or has “almost no chance”? The chart below,&lt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>The most impressive fake iPhone we’ve seen</title>
-    <link href="https://gmagon.com/blog/2017/08/31/the-most-impressive-fake-iphone-weve-seen/"/>
-    <id>https://gmagon.com/blog/2017/08/31/the-most-impressive-fake-iphone-weve-seen/</id>
-    <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T02:15:22.190Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;This fake iPhone looks so impressive that it fooled us for a hot minute. A rose gold iPhone 7 Plus clone, it shines just like the real th
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Introduction of WhiteBear</title>
-    <link href="https://gmagon.com/blog/2017/08/31/introduction-of-whitebear/"/>
-    <id>https://gmagon.com/blog/2017/08/31/introduction-of-whitebear/</id>
-    <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T07:25:54.338Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;As a part of our Kaspersky APT Intelligence Reporting subscription, customers received an update in mid-February 2017 on some interesting
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>The Best Sites to Read Manga Online</title>
-    <link href="https://gmagon.com/blog/2017/08/31/the-best-sites-to-read-manga-online/"/>
-    <id>https://gmagon.com/blog/2017/08/31/the-best-sites-to-read-manga-online/</id>
-    <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T02:38:04.435Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Manga is a Japanese style of comic books that has proven to be a big hit around the world. But it’s difficult to distinguish official Eng
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Top 5 Skills You Need Before Transitioning To Applied AI</title>
-    <link href="https://gmagon.com/blog/2017/08/31/top-5-skills-you-need-before-transitioning-to-applied-ai/"/>
-    <id>https://gmagon.com/blog/2017/08/31/top-5-skills-you-need-before-transitioning-to-applied-ai/</id>
-    <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T05:49:08.224Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/AfUjA3Y.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Transitioning-from-Academic-Machine-Learning-to-AI-in-Industry&quot;&gt;&lt;a
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/vmiEreQ.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Introducing The Yelp Open Dataset&lt;/p&gt;
+&lt;p&gt;About five years ago, we annou
     
     </summary>
     
@@ -1267,22 +1268,6 @@
   </entry>
   
   <entry>
-    <title>A virtual supercar is cooler than a real car</title>
-    <link href="https://gmagon.com/blog/2017/08/31/a-virtual-supercar/"/>
-    <id>https://gmagon.com/blog/2017/08/31/a-virtual-supercar/</id>
-    <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T09:05:38.863Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://s.aolcdn.com/hss/storage/midas/76a56df7b1300d1c9b1dcee140fa9999/205617161/bge2P83004671600-ed.jpg&quot; alt=&quot;&quot;&gt;To paraphrase
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Final Cut Pro 7 is killed on the latest macOS</title>
     <link href="https://gmagon.com/blog/2017/08/31/final-cut-pro-7-is-killed-on-the-latest-macos/"/>
     <id>https://gmagon.com/blog/2017/08/31/final-cut-pro-7-is-killed-on-the-latest-macos/</id>
@@ -1299,15 +1284,15 @@
   </entry>
   
   <entry>
-    <title>A Case Study in Sports Analytics-Beyond Deep Learning</title>
-    <link href="https://gmagon.com/blog/2017/08/31/a-case-study-in-sports-analytics-beyond-deep-learning/"/>
-    <id>https://gmagon.com/blog/2017/08/31/a-case-study-in-sports-analytics-beyond-deep-learning/</id>
+    <title>A virtual supercar is cooler than a real car</title>
+    <link href="https://gmagon.com/blog/2017/08/31/a-virtual-supercar/"/>
+    <id>https://gmagon.com/blog/2017/08/31/a-virtual-supercar/</id>
     <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T08:00:33.138Z</updated>
+    <updated>2017-08-31T09:05:38.863Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;When it comes to televised sporting events, the ability of the cameras to follow the action — both smoothly and accurately — can make or 
+      &lt;p&gt;&lt;img src=&quot;https://s.aolcdn.com/hss/storage/midas/76a56df7b1300d1c9b1dcee140fa9999/205617161/bge2P83004671600-ed.jpg&quot; alt=&quot;&quot;&gt;To paraphrase
     
     </summary>
     
@@ -1332,17 +1317,32 @@
   </entry>
   
   <entry>
-    <title>Yelp Open Dataset and Dataset Challenge Round 10</title>
-    <link href="https://gmagon.com/blog/2017/08/31/yelp-open-dataset-and-dataset-challenge-round-10/"/>
-    <id>https://gmagon.com/blog/2017/08/31/yelp-open-dataset-and-dataset-challenge-round-10/</id>
+    <title>A Case Study in Sports Analytics-Beyond Deep Learning</title>
+    <link href="https://gmagon.com/blog/2017/08/31/a-case-study-in-sports-analytics-beyond-deep-learning/"/>
+    <id>https://gmagon.com/blog/2017/08/31/a-case-study-in-sports-analytics-beyond-deep-learning/</id>
     <published>2017-08-31T00:00:00.000Z</published>
-    <updated>2017-08-31T06:24:53.882Z</updated>
+    <updated>2017-08-31T08:00:33.138Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/vmiEreQ.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Introducing The Yelp Open Dataset&lt;/p&gt;
-&lt;p&gt;About five years ago, we annou
+      &lt;p&gt;When it comes to televised sporting events, the ability of the cameras to follow the action — both smoothly and accurately — can make or 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Zork Deep Reading</title>
+    <link href="https://gmagon.com/blog/2017/08/31/zork-deep-reading/"/>
+    <id>https://gmagon.com/blog/2017/08/31/zork-deep-reading/</id>
+    <published>2017-08-31T00:00:00.000Z</published>
+    <updated>2017-08-31T07:49:43.358Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This past weekend a screenshot went around Twitter (my part of Twitter at least!)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/biUJ3qF.jpg!we
     
     </summary>
     
@@ -1368,22 +1368,6 @@
   </entry>
   
   <entry>
-    <title>Ultimate Solution to Python Virtual Environments</title>
-    <link href="https://gmagon.com/blog/2017/08/30/ultimate-solution-to-python-virtual-environments/"/>
-    <id>https://gmagon.com/blog/2017/08/30/ultimate-solution-to-python-virtual-environments/</id>
-    <published>2017-08-30T00:00:00.000Z</published>
-    <updated>2017-08-30T01:32:07.223Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I&lt;br&gt;love using the Command Line; it’s my favourite part of programming. It wasn’t always this way. I used to worry that the commands I e
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>VMware Cloud on AWS service launched yesterday</title>
     <link href="https://gmagon.com/blog/2017/08/30/vmware-cloud-on-aws-service-launched-yesterday/"/>
     <id>https://gmagon.com/blog/2017/08/30/vmware-cloud-on-aws-service-launched-yesterday/</id>
@@ -1393,6 +1377,22 @@
     <summary type="html">
     
       &lt;p&gt;Yesterday we launched the VMware Cloud on AWS service. VMware Cloud on AWS allows you to run your applications across private, public, an
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ultimate Solution to Python Virtual Environments</title>
+    <link href="https://gmagon.com/blog/2017/08/30/ultimate-solution-to-python-virtual-environments/"/>
+    <id>https://gmagon.com/blog/2017/08/30/ultimate-solution-to-python-virtual-environments/</id>
+    <published>2017-08-30T00:00:00.000Z</published>
+    <updated>2017-08-30T01:32:07.223Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I&lt;br&gt;love using the Command Line; it’s my favourite part of programming. It wasn’t always this way. I used to worry that the commands I e
     
     </summary>
     
@@ -1416,22 +1416,6 @@
   </entry>
   
   <entry>
-    <title>There&#39;s a VR game to go with Netflix&#39;s new &#39;Voltron&#39; series</title>
-    <link href="https://gmagon.com/blog/2017/08/30/theres-a-vr-game-to-go-with-netflixs-new-voltron-series/"/>
-    <id>https://gmagon.com/blog/2017/08/30/theres-a-vr-game-to-go-with-netflixs-new-voltron-series/</id>
-    <published>2017-08-30T00:00:00.000Z</published>
-    <updated>2017-08-30T08:54:27.130Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F32f068bd8026da0e
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>The Most Important Guidelines of Automation Testing</title>
     <link href="https://gmagon.com/blog/2017/08/30/the-most-important-guidelines-of-automation-testing/"/>
     <id>https://gmagon.com/blog/2017/08/30/the-most-important-guidelines-of-automation-testing/</id>
@@ -1442,6 +1426,22 @@
     
       &lt;p&gt;#&lt;/p&gt;
 &lt;h1 id=&quot;Overview&quot;&gt;&lt;a href=&quot;#Overview&quot; class=&quot;headerlink&quot; title=&quot;Overview&quot;&gt;&lt;/a&gt;Overview&lt;/h1&gt;&lt;p&gt;There is no doubt about the importanc
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>There&#39;s a VR game to go with Netflix&#39;s new &#39;Voltron&#39; series</title>
+    <link href="https://gmagon.com/blog/2017/08/30/theres-a-vr-game-to-go-with-netflixs-new-voltron-series/"/>
+    <id>https://gmagon.com/blog/2017/08/30/theres-a-vr-game-to-go-with-netflixs-new-voltron-series/</id>
+    <published>2017-08-30T00:00:00.000Z</published>
+    <updated>2017-08-30T08:54:27.130Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://o.aolcdn.com/images/dims?quality=100&amp;amp;image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F32f068bd8026da0e
     
     </summary>
     
@@ -1482,15 +1482,16 @@
   </entry>
   
   <entry>
-    <title>Fully 3D-Printed Rubik’s Cube Solving Robot</title>
-    <link href="https://gmagon.com/blog/2017/08/30/fully-3d-printed-rubiks-cube-solving-robot/"/>
-    <id>https://gmagon.com/blog/2017/08/30/fully-3d-printed-rubiks-cube-solving-robot/</id>
+    <title>GNOME Shell search results are looking much improved</title>
+    <link href="https://gmagon.com/blog/2017/08/30/gnome-shell-search-results-are-looking-much-improved/"/>
+    <id>https://gmagon.com/blog/2017/08/30/gnome-shell-search-results-are-looking-much-improved/</id>
     <published>2017-08-30T00:00:00.000Z</published>
-    <updated>2017-08-30T05:51:50.992Z</updated>
+    <updated>2017-08-30T06:28:51.290Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;W&lt;br&gt;hy use logic and your hands to solve a Rubik’s Cube, when you could 3D print your own Rubik’s Cube Solver and thus avoid overexertin
+      &lt;p&gt;GNOME Shell search results are looking much improved in GNOME 3.26, which is due for release in early September.&lt;/p&gt;
+&lt;p&gt;GNOME developer_R
     
     </summary>
     
@@ -1515,23 +1516,6 @@
   </entry>
   
   <entry>
-    <title>GNOME Shell search results are looking much improved</title>
-    <link href="https://gmagon.com/blog/2017/08/30/gnome-shell-search-results-are-looking-much-improved/"/>
-    <id>https://gmagon.com/blog/2017/08/30/gnome-shell-search-results-are-looking-much-improved/</id>
-    <published>2017-08-30T00:00:00.000Z</published>
-    <updated>2017-08-30T06:28:51.290Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;GNOME Shell search results are looking much improved in GNOME 3.26, which is due for release in early September.&lt;/p&gt;
-&lt;p&gt;GNOME developer_R
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Control Thy LED</title>
     <link href="https://gmagon.com/blog/2017/08/30/control-thy-led/"/>
     <id>https://gmagon.com/blog/2017/08/30/control-thy-led/</id>
@@ -1542,6 +1526,22 @@
     
       &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/6JRjye2.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;In aprevious article, I discussed LEDs in general and their properties.
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Fully 3D-Printed Rubik’s Cube Solving Robot</title>
+    <link href="https://gmagon.com/blog/2017/08/30/fully-3d-printed-rubiks-cube-solving-robot/"/>
+    <id>https://gmagon.com/blog/2017/08/30/fully-3d-printed-rubiks-cube-solving-robot/</id>
+    <published>2017-08-30T00:00:00.000Z</published>
+    <updated>2017-08-30T05:51:50.992Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;W&lt;br&gt;hy use logic and your hands to solve a Rubik’s Cube, when you could 3D print your own Rubik’s Cube Solver and thus avoid overexertin
     
     </summary>
     
@@ -1630,31 +1630,15 @@
   </entry>
   
   <entry>
-    <title>Mark Zuckerberg&#39;s second daughter is here and named August</title>
-    <link href="https://gmagon.com/blog/2017/08/29/mark-zuckerbergs-second-daughter-august/"/>
-    <id>https://gmagon.com/blog/2017/08/29/mark-zuckerbergs-second-daughter-august/</id>
+    <title>Toad Edge: simplify MySQL development and administration</title>
+    <link href="https://gmagon.com/blog/2017/08/29/toad-edge-simplify-mysql/"/>
+    <id>https://gmagon.com/blog/2017/08/29/toad-edge-simplify-mysql/</id>
     <published>2017-08-29T00:00:00.000Z</published>
-    <updated>2017-08-29T09:03:43.053Z</updated>
+    <updated>2017-08-29T07:18:11.492Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/VzyYFzQ.png&quot; alt=&quot;&quot;&gt;&lt;em&gt;Priscilla Chan and Mark Zuckerberg with their children, August (left) and Max.&lt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Open Source Streaming SQL for Apache Kafka</title>
-    <link href="https://gmagon.com/blog/2017/08/29/sql-for-apache-kafka/"/>
-    <id>https://gmagon.com/blog/2017/08/29/sql-for-apache-kafka/</id>
-    <published>2017-08-29T00:00:00.000Z</published>
-    <updated>2017-08-29T07:18:11.487Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;SQL, a streaming SQL engine for Apache KafkaTM. KSQL lowers the entry bar to the world of stream processing, providing a simple and compl
+      &lt;p&gt;Open Source database management systems are increasing their market share dramatically over the last couple of years. Market Experts like
     
     </summary>
     
@@ -1678,22 +1662,6 @@
   </entry>
   
   <entry>
-    <title>Experimental HTML to Sketch export solution</title>
-    <link href="https://gmagon.com/blog/2017/08/29/html-to-sketch-export-solution/"/>
-    <id>https://gmagon.com/blog/2017/08/29/html-to-sketch-export-solution/</id>
-    <published>2017-08-29T00:00:00.000Z</published>
-    <updated>2017-08-29T09:03:43.046Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;html-sketchapp&quot;&gt;&lt;a href=&quot;#html-sketchapp&quot; class=&quot;headerlink&quot; title=&quot;html-sketchapp&quot;&gt;&lt;/a&gt;html-sketchapp&lt;/h1&gt;&lt;p&gt;_Experimental_HTML to 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>How do you feel learning JavaScript in 2017?</title>
     <link href="https://gmagon.com/blog/2017/08/29/learn-javascript-in-2017/"/>
     <id>https://gmagon.com/blog/2017/08/29/learn-javascript-in-2017/</id>
@@ -1710,6 +1678,22 @@
   </entry>
   
   <entry>
+    <title>Mark Zuckerberg&#39;s second daughter is here and named August</title>
+    <link href="https://gmagon.com/blog/2017/08/29/mark-zuckerbergs-second-daughter-august/"/>
+    <id>https://gmagon.com/blog/2017/08/29/mark-zuckerbergs-second-daughter-august/</id>
+    <published>2017-08-29T00:00:00.000Z</published>
+    <updated>2017-08-29T09:03:43.053Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img2.tuicool.com/VzyYFzQ.png&quot; alt=&quot;&quot;&gt;&lt;em&gt;Priscilla Chan and Mark Zuckerberg with their children, August (left) and Max.&lt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>It’s said iPhone 8 will be unveiled on September 12</title>
     <link href="https://gmagon.com/blog/2017/08/29/iphone-8-unveil-on-september-12/"/>
     <id>https://gmagon.com/blog/2017/08/29/iphone-8-unveil-on-september-12/</id>
@@ -1719,6 +1703,22 @@
     <summary type="html">
     
       &lt;p&gt;The Wall Street Journal is reporting that three new iPhones will be unveiled that Wednesday. &lt;img src=&quot;http://img0.tuicool.com/InayArB.jp
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Experimental HTML to Sketch export solution</title>
+    <link href="https://gmagon.com/blog/2017/08/29/html-to-sketch-export-solution/"/>
+    <id>https://gmagon.com/blog/2017/08/29/html-to-sketch-export-solution/</id>
+    <published>2017-08-29T00:00:00.000Z</published>
+    <updated>2017-08-29T09:03:43.046Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;html-sketchapp&quot;&gt;&lt;a href=&quot;#html-sketchapp&quot; class=&quot;headerlink&quot; title=&quot;html-sketchapp&quot;&gt;&lt;/a&gt;html-sketchapp&lt;/h1&gt;&lt;p&gt;_Experimental_HTML to 
     
     </summary>
     
@@ -1808,22 +1808,6 @@
   </entry>
   
   <entry>
-    <title>51-qubit quantum computer successfully tested</title>
-    <link href="https://gmagon.com/blog/2017/08/29/51-qubit-quantum-computer-successfully-tested/"/>
-    <id>https://gmagon.com/blog/2017/08/29/51-qubit-quantum-computer-successfully-tested/</id>
-    <published>2017-08-29T00:00:00.000Z</published>
-    <updated>2017-08-29T07:18:11.466Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://3bonlp1aiidtbao4s10xacvn-wpengine.netdna-ssl.com/wp-content/uploads/2017/08/quantumcomputersakkmesterke-696x522.jpg&quot; al
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>CleanMyMac keeps your Mac running in peak form</title>
     <link href="https://gmagon.com/blog/2017/08/29/cleanmymac-keeps-your-mac-running-in-peak/"/>
     <id>https://gmagon.com/blog/2017/08/29/cleanmymac-keeps-your-mac-running-in-peak/</id>
@@ -1841,15 +1825,145 @@
   </entry>
   
   <entry>
-    <title>Toad Edge: simplify MySQL development and administration</title>
-    <link href="https://gmagon.com/blog/2017/08/29/toad-edge-simplify-mysql/"/>
-    <id>https://gmagon.com/blog/2017/08/29/toad-edge-simplify-mysql/</id>
+    <title>51-qubit quantum computer successfully tested</title>
+    <link href="https://gmagon.com/blog/2017/08/29/51-qubit-quantum-computer-successfully-tested/"/>
+    <id>https://gmagon.com/blog/2017/08/29/51-qubit-quantum-computer-successfully-tested/</id>
     <published>2017-08-29T00:00:00.000Z</published>
-    <updated>2017-08-29T07:18:11.492Z</updated>
+    <updated>2017-08-29T07:18:11.466Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Open Source database management systems are increasing their market share dramatically over the last couple of years. Market Experts like
+      &lt;p&gt;&lt;img src=&quot;https://3bonlp1aiidtbao4s10xacvn-wpengine.netdna-ssl.com/wp-content/uploads/2017/08/quantumcomputersakkmesterke-696x522.jpg&quot; al
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Open Source Streaming SQL for Apache Kafka</title>
+    <link href="https://gmagon.com/blog/2017/08/29/sql-for-apache-kafka/"/>
+    <id>https://gmagon.com/blog/2017/08/29/sql-for-apache-kafka/</id>
+    <published>2017-08-29T00:00:00.000Z</published>
+    <updated>2017-08-29T07:18:11.487Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SQL, a streaming SQL engine for Apache KafkaTM. KSQL lowers the entry bar to the world of stream processing, providing a simple and compl
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Microsoft is no longer selling its original Xbox One in the US</title>
+    <link href="https://gmagon.com/blog/2017/08/28/microsoft-stops-selling-original-xbox-one/"/>
+    <id>https://gmagon.com/blog/2017/08/28/microsoft-stops-selling-original-xbox-one/</id>
+    <published>2017-08-28T00:00:00.000Z</published>
+    <updated>2017-08-28T09:21:25.829Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://cdn.vox-cdn.com/thumbor/y8aVCVWyJNXNevucO4o-xsJOy-w=/0x0:1100x733/920x613/filters:focal%28462x279:638x455%29:format%28w
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vim Turing Machine: A Turing machine implemented using only normal mode vim commands</title>
+    <link href="https://gmagon.com/blog/2017/08/28/vim-turing-machin/"/>
+    <id>https://gmagon.com/blog/2017/08/28/vim-turing-machin/</id>
+    <published>2017-08-28T00:00:00.000Z</published>
+    <updated>2017-08-28T09:21:25.843Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;img src=&quot;https://s3.amazonaws.com/fullstackfeed/images/vim-2.jpg&quot; alt=&quot;&quot;&gt;&lt;/h1&gt;&lt;h1 id=
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu, SUSE Linux, and Fedora will all be available on the Windows Store</title>
+    <link href="https://gmagon.com/blog/2017/08/28/ubuntu-suse-linux-and-fedora-on-windows-store/"/>
+    <id>https://gmagon.com/blog/2017/08/28/ubuntu-suse-linux-and-fedora-on-windows-store/</id>
+    <published>2017-08-28T00:00:00.000Z</published>
+    <updated>2017-08-28T09:21:25.840Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://cdn.vox-cdn.com/thumbor/lVkdxG29tyIBxNvtapi8ezCKWeo=/0x0:3360x1890/920x613/filters:focal%28143x206:679x742%29:format%28
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The new Google tool helps developers create and share color palettes</title>
+    <link href="https://gmagon.com/blog/2017/08/28/the-new-google-tool-helps-developers-pick-colors/"/>
+    <id>https://gmagon.com/blog/2017/08/28/the-new-google-tool-helps-developers-pick-colors/</id>
+    <published>2017-08-28T00:00:00.000Z</published>
+    <updated>2017-08-28T09:21:25.836Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://tctechcrunch2011.files.wordpress.com/2017/04/gettyimages-158318188.jpg?w=738&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;With its &lt;a href=&quot;https://
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Stencil: a compiler that generates Web Components</title>
+    <link href="https://gmagon.com/blog/2017/08/28/stencil-a-compiler/"/>
+    <id>https://gmagon.com/blog/2017/08/28/stencil-a-compiler/</id>
+    <published>2017-08-28T00:00:00.000Z</published>
+    <updated>2017-08-28T06:59:18.477Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://content-static.upwork.com/blog/uploads/sites/3/2017/05/29234906/Introduction-to-Web-Components-feature-940x400.jpg&quot; alt
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The loyalty of iPhone users shows no sign of receding</title>
+    <link href="https://gmagon.com/blog/2017/08/28/the-loyalty-of-iphone-users/"/>
+    <id>https://gmagon.com/blog/2017/08/28/the-loyalty-of-iphone-users/</id>
+    <published>2017-08-28T00:00:00.000Z</published>
+    <updated>2017-08-28T05:37:59.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Commentary: In a new survey, the loyalty of Apple users shows no sign of receding. Which indicates the hard task ahead for competitors.&lt;/
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>seven things I have learned about writing software</title>
+    <link href="https://gmagon.com/blog/2017/08/28/seven-things-i-have-learned-about-writing-software/"/>
+    <id>https://gmagon.com/blog/2017/08/28/seven-things-i-have-learned-about-writing-software/</id>
+    <published>2017-08-28T00:00:00.000Z</published>
+    <updated>2017-08-29T07:18:11.455Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://tctechcrunch2011.files.wordpress.com/2017/08/the-graduate.jpg?w=738&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;It’s happening. Bit by bit, little 
     
     </summary>
     
@@ -1889,113 +2003,16 @@
   </entry>
   
   <entry>
-    <title>Top 50 Sketch plugins</title>
-    <link href="https://gmagon.com/blog/2017/08/28/top-50-sketch-plugins/"/>
-    <id>https://gmagon.com/blog/2017/08/28/top-50-sketch-plugins/</id>
+    <title>List of some of the largest cryptocurrency hacks so far</title>
+    <link href="https://gmagon.com/blog/2017/08/28/list-of-cryptocurrency-hacks/"/>
+    <id>https://gmagon.com/blog/2017/08/28/list-of-cryptocurrency-hacks/</id>
     <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-28T05:37:59.402Z</updated>
+    <updated>2017-08-29T07:18:11.431Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Sketch has taken the design market by storm. They don’t release any official numbers, but it’s pretty obvious that almost any design team
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>The loyalty of iPhone users shows no sign of receding</title>
-    <link href="https://gmagon.com/blog/2017/08/28/the-loyalty-of-iphone-users/"/>
-    <id>https://gmagon.com/blog/2017/08/28/the-loyalty-of-iphone-users/</id>
-    <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-28T05:37:59.398Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Commentary: In a new survey, the loyalty of Apple users shows no sign of receding. Which indicates the hard task ahead for competitors.&lt;/
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>The new Google tool helps developers create and share color palettes</title>
-    <link href="https://gmagon.com/blog/2017/08/28/the-new-google-tool-helps-developers-pick-colors/"/>
-    <id>https://gmagon.com/blog/2017/08/28/the-new-google-tool-helps-developers-pick-colors/</id>
-    <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-28T09:21:25.836Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://tctechcrunch2011.files.wordpress.com/2017/04/gettyimages-158318188.jpg?w=738&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;With its &lt;a href=&quot;https://
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Microsoft is no longer selling its original Xbox One in the US</title>
-    <link href="https://gmagon.com/blog/2017/08/28/microsoft-stops-selling-original-xbox-one/"/>
-    <id>https://gmagon.com/blog/2017/08/28/microsoft-stops-selling-original-xbox-one/</id>
-    <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-28T09:21:25.829Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://cdn.vox-cdn.com/thumbor/y8aVCVWyJNXNevucO4o-xsJOy-w=/0x0:1100x733/920x613/filters:focal%28462x279:638x455%29:format%28w
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Stencil: a compiler that generates Web Components</title>
-    <link href="https://gmagon.com/blog/2017/08/28/stencil-a-compiler/"/>
-    <id>https://gmagon.com/blog/2017/08/28/stencil-a-compiler/</id>
-    <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-28T06:59:18.477Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://content-static.upwork.com/blog/uploads/sites/3/2017/05/29234906/Introduction-to-Web-Components-feature-940x400.jpg&quot; alt
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>seven things I have learned about writing software</title>
-    <link href="https://gmagon.com/blog/2017/08/28/seven-things-i-have-learned-about-writing-software/"/>
-    <id>https://gmagon.com/blog/2017/08/28/seven-things-i-have-learned-about-writing-software/</id>
-    <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-29T07:18:11.455Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://tctechcrunch2011.files.wordpress.com/2017/08/the-graduate.jpg?w=738&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;It’s happening. Bit by bit, little 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Vim Turing Machine: A Turing machine implemented using only normal mode vim commands</title>
-    <link href="https://gmagon.com/blog/2017/08/28/vim-turing-machin/"/>
-    <id>https://gmagon.com/blog/2017/08/28/vim-turing-machin/</id>
-    <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-28T09:21:25.843Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;img src=&quot;https://s3.amazonaws.com/fullstackfeed/images/vim-2.jpg&quot; alt=&quot;&quot;&gt;&lt;/h1&gt;&lt;h1 id=
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3qvCwHS.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;There’s been quite a few large, high profile cryptocurrency hacks over the past
     
     </summary>
     
@@ -2019,39 +2036,6 @@
   </entry>
   
   <entry>
-    <title>List of some of the largest cryptocurrency hacks so far</title>
-    <link href="https://gmagon.com/blog/2017/08/28/list-of-cryptocurrency-hacks/"/>
-    <id>https://gmagon.com/blog/2017/08/28/list-of-cryptocurrency-hacks/</id>
-    <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-29T07:18:11.431Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3qvCwHS.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;There’s been quite a few large, high profile cryptocurrency hacks over the past
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Depression test from Google</title>
-    <link href="https://gmagon.com/blog/2017/08/28/depression-test-from-google/"/>
-    <id>https://gmagon.com/blog/2017/08/28/depression-test-from-google/</id>
-    <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-28T09:21:25.819Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Google-has-a-new-feature-designed-to-help-people-suffering-from-depression&quot;&gt;&lt;a href=&quot;#Google-has-a-new-feature-designed-to-help-peop
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Google Home lets you watch the latest CBS and CW episodes</title>
     <link href="https://gmagon.com/blog/2017/08/28/google-home-watch-episodes/"/>
     <id>https://gmagon.com/blog/2017/08/28/google-home-watch-episodes/</id>
@@ -2061,22 +2045,6 @@
     <summary type="html">
     
       &lt;p&gt;With &lt;a href=&quot;http://www.androidauthority.com/?q=google+home&amp;amp;q-submit=Submit&quot;&gt;Google Home&lt;/a&gt; already &lt;a href=&quot;http://www.androidauth
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>All the computer science knowledge topology in the world</title>
-    <link href="https://gmagon.com/blog/2017/08/28/computer-science-topology/"/>
-    <id>https://gmagon.com/blog/2017/08/28/computer-science-topology/</id>
-    <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-28T05:37:59.386Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;img src=&quot;http://guide.berkeley.edu/gallery/ugprogramelectricalengineeringandcomputers
     
     </summary>
     
@@ -2100,6 +2068,22 @@
   </entry>
   
   <entry>
+    <title>All the computer science knowledge topology in the world</title>
+    <link href="https://gmagon.com/blog/2017/08/28/computer-science-topology/"/>
+    <id>https://gmagon.com/blog/2017/08/28/computer-science-topology/</id>
+    <published>2017-08-28T00:00:00.000Z</published>
+    <updated>2017-08-28T05:37:59.386Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;img src=&quot;http://guide.berkeley.edu/gallery/ugprogramelectricalengineeringandcomputers
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>People want to use Apple Pay Cash in iOS 11 may have to scan a photo ID</title>
     <link href="https://gmagon.com/blog/2017/08/28/apple-pay-cash-in-ios-11/"/>
     <id>https://gmagon.com/blog/2017/08/28/apple-pay-cash-in-ios-11/</id>
@@ -2116,15 +2100,15 @@
   </entry>
   
   <entry>
-    <title>Ubuntu, SUSE Linux, and Fedora will all be available on the Windows Store</title>
-    <link href="https://gmagon.com/blog/2017/08/28/ubuntu-suse-linux-and-fedora-on-windows-store/"/>
-    <id>https://gmagon.com/blog/2017/08/28/ubuntu-suse-linux-and-fedora-on-windows-store/</id>
+    <title>Depression test from Google</title>
+    <link href="https://gmagon.com/blog/2017/08/28/depression-test-from-google/"/>
+    <id>https://gmagon.com/blog/2017/08/28/depression-test-from-google/</id>
     <published>2017-08-28T00:00:00.000Z</published>
-    <updated>2017-08-28T09:21:25.840Z</updated>
+    <updated>2017-08-28T09:21:25.819Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://cdn.vox-cdn.com/thumbor/lVkdxG29tyIBxNvtapi8ezCKWeo=/0x0:3360x1890/920x613/filters:focal%28143x206:679x742%29:format%28
+      &lt;h2 id=&quot;Google-has-a-new-feature-designed-to-help-people-suffering-from-depression&quot;&gt;&lt;a href=&quot;#Google-has-a-new-feature-designed-to-help-peop
     
     </summary>
     
@@ -2132,32 +2116,15 @@
   </entry>
   
   <entry>
-    <title>The Performance of NGINX and NGINX Plus Web Servers</title>
-    <link href="https://gmagon.com/blog/2017/08/25/the-performance-of-nginx-and-nginx-plus-web-servers/"/>
-    <id>https://gmagon.com/blog/2017/08/25/the-performance-of-nginx-and-nginx-plus-web-servers/</id>
-    <published>2017-08-25T00:00:00.000Z</published>
-    <updated>2017-08-25T06:18:00.568Z</updated>
+    <title>Top 50 Sketch plugins</title>
+    <link href="https://gmagon.com/blog/2017/08/28/top-50-sketch-plugins/"/>
+    <id>https://gmagon.com/blog/2017/08/28/top-50-sketch-plugins/</id>
+    <published>2017-08-28T00:00:00.000Z</published>
+    <updated>2017-08-28T05:37:59.402Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;We all know that performance is critical to a website’s success. No one wants to use a slow website.&lt;/p&gt;
-&lt;p&gt;Since its initial open source
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Why Developing A Conversational Alexa Skill Is So Hard?</title>
-    <link href="https://gmagon.com/blog/2017/08/25/why-developing-a-conversational-alexa-skill-is-so-hard/"/>
-    <id>https://gmagon.com/blog/2017/08/25/why-developing-a-conversational-alexa-skill-is-so-hard/</id>
-    <published>2017-08-25T00:00:00.000Z</published>
-    <updated>2017-08-29T07:18:11.424Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Developing an Alexa skill that executes simple commands is pretty straightforward. But when you want to engage the user in a conversation
+      &lt;p&gt;Sketch has taken the design market by storm. They don’t release any official numbers, but it’s pretty obvious that almost any design team
     
     </summary>
     
@@ -2181,16 +2148,15 @@
   </entry>
   
   <entry>
-    <title>Highlights of Canonical Distribution of Kubernetes</title>
-    <link href="https://gmagon.com/blog/2017/08/25/highlights-of-canonical-distribution-of-kubernetes/"/>
-    <id>https://gmagon.com/blog/2017/08/25/highlights-of-canonical-distribution-of-kubernetes/</id>
+    <title>Why Developing A Conversational Alexa Skill Is So Hard?</title>
+    <link href="https://gmagon.com/blog/2017/08/25/why-developing-a-conversational-alexa-skill-is-so-hard/"/>
+    <id>https://gmagon.com/blog/2017/08/25/why-developing-a-conversational-alexa-skill-is-so-hard/</id>
     <published>2017-08-25T00:00:00.000Z</published>
-    <updated>2017-08-25T06:18:00.564Z</updated>
+    <updated>2017-08-29T07:18:11.424Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/a2iUFbf.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;This article originally appeared on&lt;a href=&quot;https://medium.com/@tvanste
+      &lt;p&gt;Developing an Alexa skill that executes simple commands is pretty straightforward. But when you want to engage the user in a conversation
     
     </summary>
     
@@ -2207,6 +2173,23 @@
     <summary type="html">
     
       &lt;p&gt;This weekend I dug into the Github API to build&lt;a href=&quot;https://github.com/tedivm/GitConsensus&quot;&gt;gitconsensus&lt;/a&gt;, which lets communities 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The Performance of NGINX and NGINX Plus Web Servers</title>
+    <link href="https://gmagon.com/blog/2017/08/25/the-performance-of-nginx-and-nginx-plus-web-servers/"/>
+    <id>https://gmagon.com/blog/2017/08/25/the-performance-of-nginx-and-nginx-plus-web-servers/</id>
+    <published>2017-08-25T00:00:00.000Z</published>
+    <updated>2017-08-25T06:18:00.568Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;We all know that performance is critical to a website’s success. No one wants to use a slow website.&lt;/p&gt;
+&lt;p&gt;Since its initial open source
     
     </summary>
     
@@ -2248,6 +2231,22 @@
   </entry>
   
   <entry>
+    <title>How Establish A Hardware Root of Trust-Titan</title>
+    <link href="https://gmagon.com/blog/2017/08/25/how-establish-a-hardware-root-of-trust-by-titan/"/>
+    <id>https://gmagon.com/blog/2017/08/25/how-establish-a-hardware-root-of-trust-by-titan/</id>
+    <published>2017-08-25T00:00:00.000Z</published>
+    <updated>2017-08-25T05:45:08.816Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;By Uday Savagaonkar, Technical Lead Manager, Nelly Porter, Senior Product Manager, Nadim Taha, Software Lead, Benjamin Serebrin, Tech Lea
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Off main thread HTML parsing in Servo</title>
     <link href="https://gmagon.com/blog/2017/08/25/off-main-thread-html-parsing-in-servo/"/>
     <id>https://gmagon.com/blog/2017/08/25/off-main-thread-html-parsing-in-servo/</id>
@@ -2281,32 +2280,16 @@
   </entry>
   
   <entry>
-    <title>Fat, Thin, Hollow, and Uber</title>
-    <link href="https://gmagon.com/blog/2017/08/25/fat-thin-hollow-and-uber/"/>
-    <id>https://gmagon.com/blog/2017/08/25/fat-thin-hollow-and-uber/</id>
+    <title>Highlights of Canonical Distribution of Kubernetes</title>
+    <link href="https://gmagon.com/blog/2017/08/25/highlights-of-canonical-distribution-of-kubernetes/"/>
+    <id>https://gmagon.com/blog/2017/08/25/highlights-of-canonical-distribution-of-kubernetes/</id>
     <published>2017-08-25T00:00:00.000Z</published>
-    <updated>2017-08-25T04:03:43.657Z</updated>
+    <updated>2017-08-25T06:18:00.564Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/YfmMFja.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;“I used &lt;a href=&quot;http://wildfly-swarm.io/&quot;&gt;WildFly Swarm&lt;/a&gt;to shrink m
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>How Establish A Hardware Root of Trust-Titan</title>
-    <link href="https://gmagon.com/blog/2017/08/25/how-establish-a-hardware-root-of-trust-by-titan/"/>
-    <id>https://gmagon.com/blog/2017/08/25/how-establish-a-hardware-root-of-trust-by-titan/</id>
-    <published>2017-08-25T00:00:00.000Z</published>
-    <updated>2017-08-25T05:45:08.816Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;By Uday Savagaonkar, Technical Lead Manager, Nelly Porter, Senior Product Manager, Nadim Taha, Software Lead, Benjamin Serebrin, Tech Lea
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/a2iUFbf.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This article originally appeared on&lt;a href=&quot;https://medium.com/@tvanste
     
     </summary>
     
@@ -2331,6 +2314,23 @@
   </entry>
   
   <entry>
+    <title>Fat, Thin, Hollow, and Uber</title>
+    <link href="https://gmagon.com/blog/2017/08/25/fat-thin-hollow-and-uber/"/>
+    <id>https://gmagon.com/blog/2017/08/25/fat-thin-hollow-and-uber/</id>
+    <published>2017-08-25T00:00:00.000Z</published>
+    <updated>2017-08-25T04:03:43.657Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/YfmMFja.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;“I used &lt;a href=&quot;http://wildfly-swarm.io/&quot;&gt;WildFly Swarm&lt;/a&gt;to shrink m
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Automated Testing Ensures Your Code in our Android App</title>
     <link href="https://gmagon.com/blog/2017/08/25/automated-testing-ensures-your-code-in-our-android-app/"/>
     <id>https://gmagon.com/blog/2017/08/25/automated-testing-ensures-your-code-in-our-android-app/</id>
@@ -2340,22 +2340,6 @@
     <summary type="html">
     
       &lt;p&gt;Automated testing is really important for ensuring your code is bug-free and works as expected, but UI tests are particularly challenging
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Advice of Technical Writing</title>
-    <link href="https://gmagon.com/blog/2017/08/25/advice-of-technical-writing/"/>
-    <id>https://gmagon.com/blog/2017/08/25/advice-of-technical-writing/</id>
-    <published>2017-08-25T00:00:00.000Z</published>
-    <updated>2017-08-25T09:25:11.793Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I recently received a request from a reader for technical writing advice. As I sat down to respond, I thought back to something I heard&lt;a
     
     </summary>
     
@@ -2379,31 +2363,15 @@
   </entry>
   
   <entry>
-    <title>7 Great Disk Usage Viewing Tool in Linux</title>
-    <link href="https://gmagon.com/blog/2017/08/25/7-great-disk-usage-viewing-tool-in-linux/"/>
-    <id>https://gmagon.com/blog/2017/08/25/7-great-disk-usage-viewing-tool-in-linux/</id>
+    <title>Advice of Technical Writing</title>
+    <link href="https://gmagon.com/blog/2017/08/25/advice-of-technical-writing/"/>
+    <id>https://gmagon.com/blog/2017/08/25/advice-of-technical-writing/</id>
     <published>2017-08-25T00:00:00.000Z</published>
-    <updated>2017-08-25T07:34:34.352Z</updated>
+    <updated>2017-08-25T09:25:11.793Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Where does the space go? How has your two-terabyte hard disk drive filled up so quickly? There’s only one way to find out: with a disk us
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>A Brief Overview of Web App Architectures</title>
-    <link href="https://gmagon.com/blog/2017/08/25/a-brief-overview-of-web-app-architectures/"/>
-    <id>https://gmagon.com/blog/2017/08/25/a-brief-overview-of-web-app-architectures/</id>
-    <published>2017-08-25T00:00:00.000Z</published>
-    <updated>2017-08-25T09:25:11.786Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;In the modern world of web app architecture it’s truly _too easy_to become lost in the variety of options available to us. When it comes 
+      &lt;p&gt;I recently received a request from a reader for technical writing advice. As I sat down to respond, I thought back to something I heard&lt;a
     
     </summary>
     
@@ -2427,6 +2395,22 @@
   </entry>
   
   <entry>
+    <title>A Brief Overview of Web App Architectures</title>
+    <link href="https://gmagon.com/blog/2017/08/25/a-brief-overview-of-web-app-architectures/"/>
+    <id>https://gmagon.com/blog/2017/08/25/a-brief-overview-of-web-app-architectures/</id>
+    <published>2017-08-25T00:00:00.000Z</published>
+    <updated>2017-08-25T09:25:11.786Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In the modern world of web app architecture it’s truly _too easy_to become lost in the variety of options available to us. When it comes 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>8 Ways To Avoid Swamping Origin Maps </title>
     <link href="https://gmagon.com/blog/2017/08/25/8-ways-to-avoid-swamping-origin-maps/"/>
     <id>https://gmagon.com/blog/2017/08/25/8-ways-to-avoid-swamping-origin-maps/</id>
@@ -2443,15 +2427,15 @@
   </entry>
   
   <entry>
-    <title>Description of a Software Developer&#39;s Job - Now and Then</title>
-    <link href="https://gmagon.com/blog/2017/08/24/description-of-a-software-developers-job/"/>
-    <id>https://gmagon.com/blog/2017/08/24/description-of-a-software-developers-job/</id>
-    <published>2017-08-24T00:00:00.000Z</published>
-    <updated>2017-08-24T05:19:30.803Z</updated>
+    <title>7 Great Disk Usage Viewing Tool in Linux</title>
+    <link href="https://gmagon.com/blog/2017/08/25/7-great-disk-usage-viewing-tool-in-linux/"/>
+    <id>https://gmagon.com/blog/2017/08/25/7-great-disk-usage-viewing-tool-in-linux/</id>
+    <published>2017-08-25T00:00:00.000Z</published>
+    <updated>2017-08-25T07:34:34.352Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://www.rainerhahnekamp.com/wp-content/uploads/2017/08/On-Modern-Software-Development.jpg&quot; alt=&quot;&quot;&gt;&lt;em&gt;Classical and Modern S
+      &lt;p&gt;Where does the space go? How has your two-terabyte hard disk drive filled up so quickly? There’s only one way to find out: with a disk us
     
     </summary>
     
@@ -2459,15 +2443,33 @@
   </entry>
   
   <entry>
-    <title>Web App Architectures Overview</title>
-    <link href="https://gmagon.com/blog/2017/08/24/web-app-architectures/"/>
-    <id>https://gmagon.com/blog/2017/08/24/web-app-architectures/</id>
+    <title>Samsung unveils its iPhone 8 competitor: the Galaxy Note 8</title>
+    <link href="https://gmagon.com/blog/2017/08/24/samsung-unveils-galaxy-note-8/"/>
+    <id>https://gmagon.com/blog/2017/08/24/samsung-unveils-galaxy-note-8/</id>
     <published>2017-08-24T00:00:00.000Z</published>
-    <updated>2017-08-24T05:19:30.835Z</updated>
+    <updated>2017-08-24T09:16:24.999Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;In the modern world of web app architecture it’s truly _too easy_to become lost in the variety of options available to us. When it comes 
+      &lt;p&gt;Samsung today unveiled its iPhone 8 competitor: the Galaxy Note 8. Samsung’s flagship device for the second half of 2017 is based on the 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Top 17 Social Media Management Tools</title>
+    <link href="https://gmagon.com/blog/2017/08/24/top-17-social-media-tools/"/>
+    <id>https://gmagon.com/blog/2017/08/24/top-17-social-media-tools/</id>
+    <published>2017-08-24T00:00:00.000Z</published>
+    <updated>2017-08-24T09:16:24.999Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/RnEbIzY.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Social media can be pretty overwhelming sometimes.&lt;/p&gt;
+&lt;p&gt;Especially if you
     
     </summary>
     
@@ -2508,22 +2510,6 @@
   </entry>
   
   <entry>
-    <title>Samsung unveils its iPhone 8 competitor: the Galaxy Note 8</title>
-    <link href="https://gmagon.com/blog/2017/08/24/samsung-unveils-galaxy-note-8/"/>
-    <id>https://gmagon.com/blog/2017/08/24/samsung-unveils-galaxy-note-8/</id>
-    <published>2017-08-24T00:00:00.000Z</published>
-    <updated>2017-08-24T09:16:24.999Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Samsung today unveiled its iPhone 8 competitor: the Galaxy Note 8. Samsung’s flagship device for the second half of 2017 is based on the 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Node.js has forked into Ayo</title>
     <link href="https://gmagon.com/blog/2017/08/24/nodejs-has-forked-into-ayo/"/>
     <id>https://gmagon.com/blog/2017/08/24/nodejs-has-forked-into-ayo/</id>
@@ -2541,24 +2527,6 @@
   </entry>
   
   <entry>
-    <title>Top 17 Social Media Management Tools</title>
-    <link href="https://gmagon.com/blog/2017/08/24/top-17-social-media-tools/"/>
-    <id>https://gmagon.com/blog/2017/08/24/top-17-social-media-tools/</id>
-    <published>2017-08-24T00:00:00.000Z</published>
-    <updated>2017-08-24T09:16:24.999Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/RnEbIzY.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Social media can be pretty overwhelming sometimes.&lt;/p&gt;
-&lt;p&gt;Especially if you
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>It’s never been easier to maintain high-quality software</title>
     <link href="https://gmagon.com/blog/2017/08/24/maintain-high-quality-software/"/>
     <id>https://gmagon.com/blog/2017/08/24/maintain-high-quality-software/</id>
@@ -2568,6 +2536,22 @@
     <summary type="html">
     
       &lt;p&gt;If you were to visit Facebook’s Menlo Park campus just a few years ago, you’d see the company’s famous motto – “Move fast and break thing
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How to write better code? Learn 10 tips!</title>
+    <link href="https://gmagon.com/blog/2017/08/24/write-better-code-tips/"/>
+    <id>https://gmagon.com/blog/2017/08/24/write-better-code-tips/</id>
+    <published>2017-08-24T00:00:00.000Z</published>
+    <updated>2017-08-24T05:56:10.770Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://cdn.wpclipboard.com/wp-content/uploads/2015/06/image-the-developers-guide-to-the-wordpress-database-and-writing-better-
     
     </summary>
     
@@ -2625,6 +2609,22 @@
   </entry>
   
   <entry>
+    <title>Description of a Software Developer&#39;s Job - Now and Then</title>
+    <link href="https://gmagon.com/blog/2017/08/24/description-of-a-software-developers-job/"/>
+    <id>https://gmagon.com/blog/2017/08/24/description-of-a-software-developers-job/</id>
+    <published>2017-08-24T00:00:00.000Z</published>
+    <updated>2017-08-24T05:19:30.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://www.rainerhahnekamp.com/wp-content/uploads/2017/08/On-Modern-Software-Development.jpg&quot; alt=&quot;&quot;&gt;&lt;em&gt;Classical and Modern S
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Chaos caused by Facebook Patents Grant License</title>
     <link href="https://gmagon.com/blog/2017/08/24/chaos-facebook-patents/"/>
     <id>https://gmagon.com/blog/2017/08/24/chaos-facebook-patents/</id>
@@ -2641,15 +2641,32 @@
   </entry>
   
   <entry>
-    <title>How to write better code? Learn 10 tips!</title>
-    <link href="https://gmagon.com/blog/2017/08/24/write-better-code-tips/"/>
-    <id>https://gmagon.com/blog/2017/08/24/write-better-code-tips/</id>
+    <title>Web App Architectures Overview</title>
+    <link href="https://gmagon.com/blog/2017/08/24/web-app-architectures/"/>
+    <id>https://gmagon.com/blog/2017/08/24/web-app-architectures/</id>
     <published>2017-08-24T00:00:00.000Z</published>
-    <updated>2017-08-24T05:56:10.770Z</updated>
+    <updated>2017-08-24T05:19:30.835Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://cdn.wpclipboard.com/wp-content/uploads/2015/06/image-the-developers-guide-to-the-wordpress-database-and-writing-better-
+      &lt;p&gt;In the modern world of web app architecture it’s truly _too easy_to become lost in the variety of options available to us. When it comes 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Apple’s hidden advert has been found on its website</title>
+    <link href="https://gmagon.com/blog/2017/08/23/apples-hidden-advert-has-been-found/"/>
+    <id>https://gmagon.com/blog/2017/08/23/apples-hidden-advert-has-been-found/</id>
+    <published>2017-08-23T00:00:00.000Z</published>
+    <updated>2017-08-23T07:27:03.566Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;An advert for an engineer at Apple has been found hidden in the tech giant’s website.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ichef.bbci.co.uk/news/660/
     
     </summary>
     
@@ -2673,15 +2690,15 @@
   </entry>
   
   <entry>
-    <title>World&#39;s fastest train is set once again in China</title>
-    <link href="https://gmagon.com/blog/2017/08/23/worlds-fastest-train-in-china/"/>
-    <id>https://gmagon.com/blog/2017/08/23/worlds-fastest-train-in-china/</id>
+    <title>WhatsApp tries to stop spread of fake news</title>
+    <link href="https://gmagon.com/blog/2017/08/23/whatsapp-stops-fake-news/"/>
+    <id>https://gmagon.com/blog/2017/08/23/whatsapp-stops-fake-news/</id>
     <published>2017-08-23T00:00:00.000Z</published>
-    <updated>2017-08-23T07:27:03.614Z</updated>
+    <updated>2017-08-23T09:26:20.606Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://ichef-1.bbci.co.uk/news/660/media/images/78300000/jpg/_78300859_119795097.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;A high-speed train crash led 
+      &lt;p&gt;Facebook-owned messaging app WhatsApp said it is exploring ways to check spread off ake news through its platform.&lt;br&gt;&lt;img src=&quot;http://ww
     
     </summary>
     
@@ -2706,22 +2723,6 @@
   </entry>
   
   <entry>
-    <title>WhatsApp tries to stop spread of fake news</title>
-    <link href="https://gmagon.com/blog/2017/08/23/whatsapp-stops-fake-news/"/>
-    <id>https://gmagon.com/blog/2017/08/23/whatsapp-stops-fake-news/</id>
-    <published>2017-08-23T00:00:00.000Z</published>
-    <updated>2017-08-23T09:26:20.606Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Facebook-owned messaging app WhatsApp said it is exploring ways to check spread off ake news through its platform.&lt;br&gt;&lt;img src=&quot;http://ww
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Samsung&#39;s voice-controlled Bixby rolled out in 200 countries</title>
     <link href="https://gmagon.com/blog/2017/08/23/samsungs-bixby-rolled-out/"/>
     <id>https://gmagon.com/blog/2017/08/23/samsungs-bixby-rolled-out/</id>
@@ -2732,6 +2733,22 @@
     
       &lt;p&gt;Samsung’s voice-controlled digital assistant Bixby is being rolled out in 200 countries from today.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://ichef.bbci.c
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Microsoft announced full support for Linux in SQL Server 2017</title>
+    <link href="https://gmagon.com/blog/2017/08/23/microsoft-announced-full-support-for-linux-in-sql-server-2017/"/>
+    <id>https://gmagon.com/blog/2017/08/23/microsoft-announced-full-support-for-linux-in-sql-server-2017/</id>
+    <published>2017-08-23T00:00:00.000Z</published>
+    <updated>2017-08-23T07:27:03.586Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Microsoft on Monday announced the availability of its first public release candidate for SQL Server 2017, which includes full support for
     
     </summary>
     
@@ -2773,15 +2790,15 @@
   </entry>
   
   <entry>
-    <title>Microsoft announced full support for Linux in SQL Server 2017</title>
-    <link href="https://gmagon.com/blog/2017/08/23/microsoft-announced-full-support-for-linux-in-sql-server-2017/"/>
-    <id>https://gmagon.com/blog/2017/08/23/microsoft-announced-full-support-for-linux-in-sql-server-2017/</id>
+    <title>Android Oreo speeds up everything on your phone</title>
+    <link href="https://gmagon.com/blog/2017/08/23/android-oreo-speeds-up-everything-on-your-phone/"/>
+    <id>https://gmagon.com/blog/2017/08/23/android-oreo-speeds-up-everything-on-your-phone/</id>
     <published>2017-08-23T00:00:00.000Z</published>
-    <updated>2017-08-23T07:27:03.586Z</updated>
+    <updated>2017-08-23T07:27:03.560Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Microsoft on Monday announced the availability of its first public release candidate for SQL Server 2017, which includes full support for
+      &lt;p&gt;The latest chapter of the mobile war is in full swing. In conjunction with Monday’s 2017 solar eclipse, Google revealed the official name
     
     </summary>
     
@@ -2798,6 +2815,22 @@
     <summary type="html">
     
       &lt;p&gt;SAN FRANCISCO (Reuters) - Alphabet Inc’s (&lt;a href=&quot;https://www.reuters.com/finance/stocks/overview?symbol=GOOGL.O&quot;&gt;GOOGL.O&lt;/a&gt;) Google th
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CoreOS Tectonic 1.7 brings freedom and portability to the cloud.</title>
+    <link href="https://gmagon.com/blog/2017/08/23/coreos-tectonic-brings-to-cloud/"/>
+    <id>https://gmagon.com/blog/2017/08/23/coreos-tectonic-brings-to-cloud/</id>
+    <published>2017-08-23T00:00:00.000Z</published>
+    <updated>2017-08-23T07:27:03.574Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CoreOS on Thursday announced the general availability of the Kubernetes container management Tectonic platform on Microsoft’s Azure cloud
     
     </summary>
     
@@ -2822,15 +2855,15 @@
   </entry>
   
   <entry>
-    <title>CoreOS Tectonic 1.7 brings freedom and portability to the cloud.</title>
-    <link href="https://gmagon.com/blog/2017/08/23/coreos-tectonic-brings-to-cloud/"/>
-    <id>https://gmagon.com/blog/2017/08/23/coreos-tectonic-brings-to-cloud/</id>
+    <title>World&#39;s fastest train is set once again in China</title>
+    <link href="https://gmagon.com/blog/2017/08/23/worlds-fastest-train-in-china/"/>
+    <id>https://gmagon.com/blog/2017/08/23/worlds-fastest-train-in-china/</id>
     <published>2017-08-23T00:00:00.000Z</published>
-    <updated>2017-08-23T07:27:03.574Z</updated>
+    <updated>2017-08-23T07:27:03.614Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;CoreOS on Thursday announced the general availability of the Kubernetes container management Tectonic platform on Microsoft’s Azure cloud
+      &lt;p&gt;&lt;img src=&quot;https://ichef-1.bbci.co.uk/news/660/media/images/78300000/jpg/_78300859_119795097.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;A high-speed train crash led 
     
     </summary>
     
@@ -2838,16 +2871,15 @@
   </entry>
   
   <entry>
-    <title>Apple’s hidden advert has been found on its website</title>
-    <link href="https://gmagon.com/blog/2017/08/23/apples-hidden-advert-has-been-found/"/>
-    <id>https://gmagon.com/blog/2017/08/23/apples-hidden-advert-has-been-found/</id>
-    <published>2017-08-23T00:00:00.000Z</published>
-    <updated>2017-08-23T07:27:03.566Z</updated>
+    <title>A Brief Overview of What NPM Is.</title>
+    <link href="https://gmagon.com/blog/2017/08/22/a-brief-overview-of-what-npm-is/"/>
+    <id>https://gmagon.com/blog/2017/08/22/a-brief-overview-of-what-npm-is/</id>
+    <published>2017-08-22T00:00:00.000Z</published>
+    <updated>2017-08-23T01:59:11.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;An advert for an engineer at Apple has been found hidden in the tech giant’s website.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://ichef.bbci.co.uk/news/660/
+      &lt;h2 id=&quot;Introduction-to-NPM&quot;&gt;&lt;a href=&quot;#Introduction-to-NPM&quot; class=&quot;headerlink&quot; title=&quot;Introduction to NPM&quot;&gt;&lt;/a&gt;Introduction to NPM&lt;/h2&gt;&lt;p&gt;&lt;i
     
     </summary>
     
@@ -2855,31 +2887,15 @@
   </entry>
   
   <entry>
-    <title>Android Oreo speeds up everything on your phone</title>
-    <link href="https://gmagon.com/blog/2017/08/23/android-oreo-speeds-up-everything-on-your-phone/"/>
-    <id>https://gmagon.com/blog/2017/08/23/android-oreo-speeds-up-everything-on-your-phone/</id>
-    <published>2017-08-23T00:00:00.000Z</published>
-    <updated>2017-08-23T07:27:03.560Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;The latest chapter of the mobile war is in full swing. In conjunction with Monday’s 2017 solar eclipse, Google revealed the official name
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Computer Age Statistical Inference: Algorithms, Evidence and Data Science</title>
-    <link href="https://gmagon.com/blog/2017/08/22/computer-age-statistical-inference-algorithms-evidence-and-data-science/"/>
-    <id>https://gmagon.com/blog/2017/08/22/computer-age-statistical-inference-algorithms-evidence-and-data-science/</id>
+    <title>New Job, New Codebase</title>
+    <link href="https://gmagon.com/blog/2017/08/22/new-job-new-codebase/"/>
+    <id>https://gmagon.com/blog/2017/08/22/new-job-new-codebase/</id>
     <published>2017-08-22T00:00:00.000Z</published>
     <updated>2017-08-23T02:03:14.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Computer-Age-Statistical-Inference&quot;&gt;&lt;a href=&quot;#Computer-Age-Statistical-Inference&quot; class=&quot;headerlink&quot; title=&quot;Computer Age Statistical
+      &lt;p&gt;I recently started a new job. With every new job comes a new codebase. This is probably my twentieth job. So I’ve seen a lot of codebases
     
     </summary>
     
@@ -2904,6 +2920,22 @@
   </entry>
   
   <entry>
+    <title>What In the World Is Redux and Why Do I Need It?</title>
+    <link href="https://gmagon.com/blog/2017/08/22/what-in-the-world-is-redux-and-why-do-i-need-it/"/>
+    <id>https://gmagon.com/blog/2017/08/22/what-in-the-world-is-redux-and-why-do-i-need-it/</id>
+    <published>2017-08-22T00:00:00.000Z</published>
+    <updated>2017-08-23T01:59:11.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This was originally published on&lt;a href=&quot;https://blog.pusher.com/the-what-and-why-of-redux/&quot;&gt;Pusher&lt;/a&gt;under the Pusher Guest Writer prog
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Reddit Top Books</title>
     <link href="https://gmagon.com/blog/2017/08/22/reddit-top-books/"/>
     <id>https://gmagon.com/blog/2017/08/22/reddit-top-books/</id>
@@ -2920,15 +2952,16 @@
   </entry>
   
   <entry>
-    <title>A Brief Overview of What NPM Is.</title>
-    <link href="https://gmagon.com/blog/2017/08/22/a-brief-overview-of-what-npm-is/"/>
-    <id>https://gmagon.com/blog/2017/08/22/a-brief-overview-of-what-npm-is/</id>
+    <title> Possibly Unhandled Rejection Errors of Angular 1.6</title>
+    <link href="https://gmagon.com/blog/2017/08/22/possibly-unhandled-rejection-errors-of-angular-16/"/>
+    <id>https://gmagon.com/blog/2017/08/22/possibly-unhandled-rejection-errors-of-angular-16/</id>
     <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T01:59:11.000Z</updated>
+    <updated>2017-08-23T02:03:14.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Introduction-to-NPM&quot;&gt;&lt;a href=&quot;#Introduction-to-NPM&quot; class=&quot;headerlink&quot; title=&quot;Introduction to NPM&quot;&gt;&lt;/a&gt;Introduction to NPM&lt;/h2&gt;&lt;p&gt;&lt;i
+      &lt;p&gt;If you’ve updated to AngularJS 1.6.x, kudos! There’s not much that’s needed to get an app running with 1.5 to work with 1.6.&lt;/p&gt;
+&lt;p&gt;But, 
     
     </summary>
     
@@ -2936,16 +2969,129 @@
   </entry>
   
   <entry>
-    <title>A Students Helped Design A Rocket Avionics System</title>
-    <link href="https://gmagon.com/blog/2017/08/22/a-students-helped-design-a-rocket-avionics-system/"/>
-    <id>https://gmagon.com/blog/2017/08/22/a-students-helped-design-a-rocket-avionics-system/</id>
+    <title>OpenCV 3.3 Supports Several Deep Learning Frameworks</title>
+    <link href="https://gmagon.com/blog/2017/08/22/opencv-33-supports-several-deep-learning-frameworks/"/>
+    <id>https://gmagon.com/blog/2017/08/22/opencv-33-supports-several-deep-learning-frameworks/</id>
     <published>2017-08-22T00:00:00.000Z</published>
     <updated>2017-08-23T01:59:11.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/emmYN3j.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Cambridge postgraduate student [Adam Greig] helped design a rocket avio
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/jaMFjyR.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Two weeks ago OpenCV 3.3 was officially released, bringing with it a hi
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Life Expectancy of Programming Language</title>
+    <link href="https://gmagon.com/blog/2017/08/22/life-expectancy-of-programming-language/"/>
+    <id>https://gmagon.com/blog/2017/08/22/life-expectancy-of-programming-language/</id>
+    <published>2017-08-22T00:00:00.000Z</published>
+    <updated>2017-08-23T02:03:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The Lindy effect says that what’s been around the longest is likely to remain around the longest. It applies to creative artifacts, not l
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Microsoft Researchers Achieve Speech Recognition Milestone</title>
+    <link href="https://gmagon.com/blog/2017/08/22/microsoft-researchers-achieve-speech-recognition-milestone/"/>
+    <id>https://gmagon.com/blog/2017/08/22/microsoft-researchers-achieve-speech-recognition-milestone/</id>
+    <published>2017-08-22T00:00:00.000Z</published>
+    <updated>2017-08-23T02:03:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;By&lt;/em&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/research/people/xdh/&quot;&gt;&lt;em&gt;Xuedong Huang&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, Technical Fellow, Microsoft&lt;/em
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How to Achieve Sustainable Growth for A Tech Team</title>
+    <link href="https://gmagon.com/blog/2017/08/22/how-to-achieve-sustainable-growth-for-a-tech-team/"/>
+    <id>https://gmagon.com/blog/2017/08/22/how-to-achieve-sustainable-growth-for-a-tech-team/</id>
+    <published>2017-08-22T00:00:00.000Z</published>
+    <updated>2017-08-23T02:03:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;The-impact-of-growing-a-Tech-Team&quot;&gt;&lt;a href=&quot;#The-impact-of-growing-a-Tech-Team&quot; class=&quot;headerlink&quot; title=&quot;The impact of growing a Te
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Git Workflow Tooling In Ubuntu</title>
+    <link href="https://gmagon.com/blog/2017/08/22/git-workflow-tooling-in-ubuntu/"/>
+    <id>https://gmagon.com/blog/2017/08/22/git-workflow-tooling-in-ubuntu/</id>
+    <published>2017-08-22T00:00:00.000Z</published>
+    <updated>2017-08-23T01:59:11.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/V7zaAnn.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This is the third post in our series on our git workflow tooling in Ubu
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Developer blames Visual Studio Code for  permanent deletion 3 months of work files; </title>
+    <link href="https://gmagon.com/blog/2017/08/22/developer-blames-visual-studio-code-for-permanent-deletion-3-months-of-work-files/"/>
+    <id>https://gmagon.com/blog/2017/08/22/developer-blames-visual-studio-code-for-permanent-deletion-3-months-of-work-files/</id>
+    <published>2017-08-22T00:00:00.000Z</published>
+    <updated>2017-08-23T02:03:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In our professional lives, stuff happens like &lt;a href=&quot;https://www.hackread.com/man-accidentally-destroyed-production-database-on-first-d
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Computer Age Statistical Inference: Algorithms, Evidence and Data Science</title>
+    <link href="https://gmagon.com/blog/2017/08/22/computer-age-statistical-inference-algorithms-evidence-and-data-science/"/>
+    <id>https://gmagon.com/blog/2017/08/22/computer-age-statistical-inference-algorithms-evidence-and-data-science/</id>
+    <published>2017-08-22T00:00:00.000Z</published>
+    <updated>2017-08-23T02:03:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Computer-Age-Statistical-Inference&quot;&gt;&lt;a href=&quot;#Computer-Age-Statistical-Inference&quot; class=&quot;headerlink&quot; title=&quot;Computer Age Statistical
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Are you serious?</title>
+    <link href="https://gmagon.com/blog/2017/08/22/are-you-serious/"/>
+    <id>https://gmagon.com/blog/2017/08/22/are-you-serious/</id>
+    <published>2017-08-22T00:00:00.000Z</published>
+    <updated>2017-08-23T02:03:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;First and foremost advantage for me is that I&lt;em&gt;don’t need to define it&lt;/em&gt;; 😊! Almost everyone, who have written any kind of program,
     
     </summary>
     
@@ -2987,178 +3133,16 @@
   </entry>
   
   <entry>
-    <title>Are you serious?</title>
-    <link href="https://gmagon.com/blog/2017/08/22/are-you-serious/"/>
-    <id>https://gmagon.com/blog/2017/08/22/are-you-serious/</id>
-    <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T02:03:14.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;First and foremost advantage for me is that I&lt;em&gt;don’t need to define it&lt;/em&gt;; 😊! Almost everyone, who have written any kind of program,
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>What In the World Is Redux and Why Do I Need It?</title>
-    <link href="https://gmagon.com/blog/2017/08/22/what-in-the-world-is-redux-and-why-do-i-need-it/"/>
-    <id>https://gmagon.com/blog/2017/08/22/what-in-the-world-is-redux-and-why-do-i-need-it/</id>
+    <title>A Students Helped Design A Rocket Avionics System</title>
+    <link href="https://gmagon.com/blog/2017/08/22/a-students-helped-design-a-rocket-avionics-system/"/>
+    <id>https://gmagon.com/blog/2017/08/22/a-students-helped-design-a-rocket-avionics-system/</id>
     <published>2017-08-22T00:00:00.000Z</published>
     <updated>2017-08-23T01:59:11.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;This was originally published on&lt;a href=&quot;https://blog.pusher.com/the-what-and-why-of-redux/&quot;&gt;Pusher&lt;/a&gt;under the Pusher Guest Writer prog
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Developer blames Visual Studio Code for  permanent deletion 3 months of work files; </title>
-    <link href="https://gmagon.com/blog/2017/08/22/developer-blames-visual-studio-code-for-permanent-deletion-3-months-of-work-files/"/>
-    <id>https://gmagon.com/blog/2017/08/22/developer-blames-visual-studio-code-for-permanent-deletion-3-months-of-work-files/</id>
-    <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T02:03:14.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;In our professional lives, stuff happens like &lt;a href=&quot;https://www.hackread.com/man-accidentally-destroyed-production-database-on-first-d
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Git Workflow Tooling In Ubuntu</title>
-    <link href="https://gmagon.com/blog/2017/08/22/git-workflow-tooling-in-ubuntu/"/>
-    <id>https://gmagon.com/blog/2017/08/22/git-workflow-tooling-in-ubuntu/</id>
-    <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T01:59:11.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/V7zaAnn.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;This is the third post in our series on our git workflow tooling in Ubu
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Life Expectancy of Programming Language</title>
-    <link href="https://gmagon.com/blog/2017/08/22/life-expectancy-of-programming-language/"/>
-    <id>https://gmagon.com/blog/2017/08/22/life-expectancy-of-programming-language/</id>
-    <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T02:03:14.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;The Lindy effect says that what’s been around the longest is likely to remain around the longest. It applies to creative artifacts, not l
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>How to Achieve Sustainable Growth for A Tech Team</title>
-    <link href="https://gmagon.com/blog/2017/08/22/how-to-achieve-sustainable-growth-for-a-tech-team/"/>
-    <id>https://gmagon.com/blog/2017/08/22/how-to-achieve-sustainable-growth-for-a-tech-team/</id>
-    <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T02:03:14.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;The-impact-of-growing-a-Tech-Team&quot;&gt;&lt;a href=&quot;#The-impact-of-growing-a-Tech-Team&quot; class=&quot;headerlink&quot; title=&quot;The impact of growing a Te
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Microsoft Researchers Achieve Speech Recognition Milestone</title>
-    <link href="https://gmagon.com/blog/2017/08/22/microsoft-researchers-achieve-speech-recognition-milestone/"/>
-    <id>https://gmagon.com/blog/2017/08/22/microsoft-researchers-achieve-speech-recognition-milestone/</id>
-    <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T02:03:14.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;By&lt;/em&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/research/people/xdh/&quot;&gt;&lt;em&gt;Xuedong Huang&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, Technical Fellow, Microsoft&lt;/em
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>OpenCV 3.3 Supports Several Deep Learning Frameworks</title>
-    <link href="https://gmagon.com/blog/2017/08/22/opencv-33-supports-several-deep-learning-frameworks/"/>
-    <id>https://gmagon.com/blog/2017/08/22/opencv-33-supports-several-deep-learning-frameworks/</id>
-    <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T01:59:11.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/jaMFjyR.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Two weeks ago OpenCV 3.3 was officially released, bringing with it a hi
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>New Job, New Codebase</title>
-    <link href="https://gmagon.com/blog/2017/08/22/new-job-new-codebase/"/>
-    <id>https://gmagon.com/blog/2017/08/22/new-job-new-codebase/</id>
-    <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T02:03:14.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I recently started a new job. With every new job comes a new codebase. This is probably my twentieth job. So I’ve seen a lot of codebases
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title> Possibly Unhandled Rejection Errors of Angular 1.6</title>
-    <link href="https://gmagon.com/blog/2017/08/22/possibly-unhandled-rejection-errors-of-angular-16/"/>
-    <id>https://gmagon.com/blog/2017/08/22/possibly-unhandled-rejection-errors-of-angular-16/</id>
-    <published>2017-08-22T00:00:00.000Z</published>
-    <updated>2017-08-23T02:03:14.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;If you’ve updated to AngularJS 1.6.x, kudos! There’s not much that’s needed to get an app running with 1.5 to work with 1.6.&lt;/p&gt;
-&lt;p&gt;But, 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Security leadership is essential for A Company</title>
-    <link href="https://gmagon.com/blog/2017/08/21/security-leadership-is-essential-for-a-company/"/>
-    <id>https://gmagon.com/blog/2017/08/21/security-leadership-is-essential-for-a-company/</id>
-    <published>2017-08-21T00:00:00.000Z</published>
-    <updated>2017-08-23T01:59:11.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Nobody needs to be told how the internet’s growth is giving way to new opportunities and opening new doors — but what exactly are these n
+      &lt;p&gt;&lt;img src=&quot;http://img1.tuicool.com/emmYN3j.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Cambridge postgraduate student [Adam Greig] helped design a rocket avio
     
     </summary>
     
@@ -3182,15 +3166,15 @@
   </entry>
   
   <entry>
-    <title>5 Great Tools for Creating Mobile Prototypes</title>
-    <link href="https://gmagon.com/blog/2017/08/21/5-great-tools-for-creating-mobile-prototypes/"/>
-    <id>https://gmagon.com/blog/2017/08/21/5-great-tools-for-creating-mobile-prototypes/</id>
+    <title>Software Engineers and Emotional Intelligence</title>
+    <link href="https://gmagon.com/blog/2017/08/21/software-engineers-and-emotional-intelligence/"/>
+    <id>https://gmagon.com/blog/2017/08/21/software-engineers-and-emotional-intelligence/</id>
     <published>2017-08-21T00:00:00.000Z</published>
     <updated>2017-08-23T01:59:11.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;The design phase for mobile applications should include aprototyping stage. It is at this point that users can “play” with your ideas and
+      &lt;p&gt;This post was&lt;a href=&quot;https://coderhood.com/11-best-ways-to-improve-your-emotional-intelligence/&quot;&gt;first published here&lt;/a&gt;on&lt;a href=&quot;http
     
     </summary>
     
@@ -3198,16 +3182,16 @@
   </entry>
   
   <entry>
-    <title>An Embarrassing Tale: Why my server could only handle 10 players</title>
-    <link href="https://gmagon.com/blog/2017/08/21/an-embarrassing-tale-why-my-server-could-only-handle-10-players/"/>
-    <id>https://gmagon.com/blog/2017/08/21/an-embarrassing-tale-why-my-server-could-only-handle-10-players/</id>
+    <title> Resource Manager on the command line</title>
+    <link href="https://gmagon.com/blog/2017/08/21/resource-manager-on-the-command-line/"/>
+    <id>https://gmagon.com/blog/2017/08/21/resource-manager-on-the-command-line/</id>
     <published>2017-08-21T00:00:00.000Z</published>
-    <updated>2017-08-23T07:27:03.554Z</updated>
+    <updated>2017-08-23T01:59:11.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What might be even more embarrassing is that at one point I had convinced myself that 10 players per server was normal.&lt;/p&gt;
-&lt;p&gt;It all sta
+      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/J36RFv6.png!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This article contains a complete working example for the Resource Manag
     
     </summary>
     
@@ -3215,15 +3199,15 @@
   </entry>
   
   <entry>
-    <title>Discover the CNN Long Short-Term Memory Networks</title>
-    <link href="https://gmagon.com/blog/2017/08/21/discover-the-cnn-long-short-term-memory-networks/"/>
-    <id>https://gmagon.com/blog/2017/08/21/discover-the-cnn-long-short-term-memory-networks/</id>
+    <title>Spring WebFlux with Kotlin – Reactive Web</title>
+    <link href="https://gmagon.com/blog/2017/08/21/spring-webflux-with-kotlin-reactive-web/"/>
+    <id>https://gmagon.com/blog/2017/08/21/spring-webflux-with-kotlin-reactive-web/</id>
     <published>2017-08-21T00:00:00.000Z</published>
     <updated>2017-08-23T01:59:11.000Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Gentle-introduction-to-CNN-LSTM-recurrent-neural-networkswith-example-Python-code&quot;&gt;&lt;a href=&quot;#Gentle-introduction-to-CNN-LSTM-recurre
+      &lt;h2 id=&quot;Spring-–-even-more-fancy&quot;&gt;&lt;a href=&quot;#Spring-–-even-more-fancy&quot; class=&quot;headerlink&quot; title=&quot;Spring – even more fancy&quot;&gt;&lt;/a&gt;Spring – even 
     
     </summary>
     
@@ -3231,16 +3215,15 @@
   </entry>
   
   <entry>
-    <title>How Designers Shop vs. How Normal People Shop</title>
-    <link href="https://gmagon.com/blog/2017/08/21/how-designers-shop-vs-how-normal-people-shop/"/>
-    <id>https://gmagon.com/blog/2017/08/21/how-designers-shop-vs-how-normal-people-shop/</id>
+    <title> please do not keep your database on a drive</title>
+    <link href="https://gmagon.com/blog/2017/08/21/please-do-not-keep-your-database-on-a-drive/"/>
+    <id>https://gmagon.com/blog/2017/08/21/please-do-not-keep-your-database-on-a-drive/</id>
     <published>2017-08-21T00:00:00.000Z</published>
     <updated>2017-08-23T01:59:11.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;You don’t want to go shopping with me.&lt;/p&gt;
-&lt;p&gt;I don’t say that because I’m a shopaholic or anything, or because I have some kind of addic
+      &lt;h4 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h4&gt;&lt;p&gt;If you are a SQL Server developer who thinks about
     
     </summary>
     
@@ -3248,16 +3231,15 @@
   </entry>
   
   <entry>
-    <title>Elon Musk Worries the Use of Autonomous Weapons</title>
-    <link href="https://gmagon.com/blog/2017/08/21/elon-musk-worries-the-use-of-autonomous-weapons/"/>
-    <id>https://gmagon.com/blog/2017/08/21/elon-musk-worries-the-use-of-autonomous-weapons/</id>
+    <title>May your Makefiles be portable</title>
+    <link href="https://gmagon.com/blog/2017/08/21/may-your-makefiles-be-portable/"/>
+    <id>https://gmagon.com/blog/2017/08/21/may-your-makefiles-be-portable/</id>
     <published>2017-08-21T00:00:00.000Z</published>
     <updated>2017-08-23T01:59:11.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://img0.tuicool.com/iMV3qy6.jpg!web&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Elon Musk, along with a group of prominent robotics and AI experts, wor
+      &lt;p&gt;In my first decade writing Makefiles, I developed the bad habit of liberally using GNU Make’s extensions. I didn’t know the line between 
     
     </summary>
     
@@ -3265,15 +3247,31 @@
   </entry>
   
   <entry>
-    <title>Fate of JVM languages</title>
-    <link href="https://gmagon.com/blog/2017/08/21/fate-of-jvm-languages/"/>
-    <id>https://gmagon.com/blog/2017/08/21/fate-of-jvm-languages/</id>
+    <title>Logo Design Principles to Create an Effective Face for your Company</title>
+    <link href="https://gmagon.com/blog/2017/08/21/logo-design-principles-for-your-company/"/>
+    <id>https://gmagon.com/blog/2017/08/21/logo-design-principles-for-your-company/</id>
     <published>2017-08-21T00:00:00.000Z</published>
     <updated>2017-08-23T01:59:11.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Every now and then, there’s a post predicting the death of the Java language. The funny thing is that none of them writes about a date. B
+      &lt;p&gt;When somebody mentions a famous brand to you, does your mind easily find its logo that is stored in your memory? If your answer is yes, t
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Learn where you can and can’t use trailing commas in JavaScript</title>
+    <link href="https://gmagon.com/blog/2017/08/21/learn-where-you-can-and-cant-use-trailing-commas-in-javascript/"/>
+    <id>https://gmagon.com/blog/2017/08/21/learn-where-you-can-and-cant-use-trailing-commas-in-javascript/</id>
+    <published>2017-08-21T00:00:00.000Z</published>
+    <updated>2017-08-23T01:59:11.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Learn-where-you-can-and-can’t-use-trailing-commas-in-JavaScript&quot;&gt;&lt;a href=&quot;#Learn-where-you-can-and-can’t-use-trailing-commas-in-Java
     
     </summary>
     

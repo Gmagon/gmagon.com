@@ -3,30 +3,32 @@
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
 
-  <title>Gmagon Software - handy and professional Mac apps.</title>
+  <title>Building your SPA in ELM - Gmagon Software - handy and professional Mac apps.</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=8; IE=9; IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="robots" content="noodp" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
+  <meta name="keywords" content="Building your SPA in ELM" />
+  <meta name="description" content="Building your SPA in ELM" />
 
   <!-- Custom config og:image -->
 
 
   <!-- Open Graph -->
-<meta name="description" content="- Gmagon Software - handy and professional Mac apps.">
+<meta name="description" content="Building your SPA in ELM - Gmagon Software - handy and professional Mac apps.">
 <meta property="og:type" content="apps">
-<meta property="og:title" content=" - Gmagon Software - handy and professional Mac apps.">
+<meta property="og:title" content="Building your SPA in ELM - Gmagon Software - handy and professional Mac apps.">
 <meta property="og:url" content="https://gmagon.com/blog/2017/09/07/building-your-spa-in-elm/index.html">
-<meta property="og:site_name" content=" - Gmagon Software - handy and professional Mac apps.">
-<meta property="og:description" content="- Gmagon Software - handy and professional Mac apps.">
+<meta property="og:site_name" content="Building your SPA in ELM - Gmagon Software - handy and professional Mac apps.">
+<meta property="og:description" content="Building your SPA in ELM - Gmagon Software - handy and professional Mac apps.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-07T02:51:47.287Z">
+<meta property="og:image" content="https://dailydrip-assets.s3.amazonaws.com/DailyDrip/blog_posts/elm-for-js-developers-ep-1/elmJS.png">
+<meta property="og:updated_time" content="2017-09-07T03:12:48.262Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content=" - Gmagon Software - handy and professional Mac apps.">
-<meta name="twitter:description" content="- Gmagon Software - handy and professional Mac apps.">
+<meta name="twitter:title" content="Building your SPA in ELM - Gmagon Software - handy and professional Mac apps.">
+<meta name="twitter:description" content="Building your SPA in ELM - Gmagon Software - handy and professional Mac apps.">
+<meta name="twitter:image" content="https://dailydrip-assets.s3.amazonaws.com/DailyDrip/blog_posts/elm-for-js-developers-ep-1/elmJS.png">
 <meta name="twitter:site" content="gmagonshare">
 <meta property="fb:admins" content="432634277117208">
 <meat name="twitter:url" content="https://gmagon.com/blog/2017/09/07/building-your-spa-in-elm/index.html">
@@ -127,7 +129,7 @@
     <div class="class-content-wrap">
   <div class="inner">
     <div class="inner-wrap fill-bunting font-e3">
-      <h2 id="banner-title">  </h2>
+      <h2 id="banner-title"> Building your SPA in ELM </h2>
       <div id="banner-start">
         <a class="btn btn-static-secondary btn-shadow" href="https://gitter.im/Gmagon/support" ttarget="_blank" rel="nofollow me noopener noreferrer" >Need help?</a>
       </div>
@@ -145,12 +147,51 @@
 <article class="article post" itemscope itemtype="http://schema.org/Article">
   <header class="article-header">
     
-      <h1 class="article-title" itemprop="name"></h1>
+      <h1 class="article-title" itemprop="name">Building your SPA in ELM</h1>
     
     <a href="/blog/2017/09/07/building-your-spa-in-elm/" class="article-date"><time datetime="2017-09-07T00:00:00.000Z">2017-09-07</time></a>
   </header>
   <div class="article-content" itemprop="articleBody">
-    
+    <p><img src="https://dailydrip-assets.s3.amazonaws.com/DailyDrip/blog_posts/elm-for-js-developers-ep-1/elmJS.png" alt="">This is the sixth post in a series of posts about Elm for JavaScript developers. If you’re a JavaScript developer, and you want to know more about Elm, stay tuned to this series of posts or sign up for DailyDrip and check out all the episodes we have in our room topic.</p>
+<p>Here is what we already see:</p>
+<ul>
+<li><a href="https://www.dailydrip.com/blog/general-aspects-between-elm-and-js">General Aspects between Elm and JS</a></li>
+<li><a href="https://www.dailydrip.com/blog/creating-html-elements-and-using-libraries-in-elm">Creating HTML elements and using libraries in Elm</a></li>
+<li><a href="https://www.dailydrip.com/blog/understanding-the-elm-architecture">Understanding the Elm Architecture</a></li>
+<li><a href="https://www.dailydrip.com/blog/how-to-get-data-from-apis-using-elm">How to get data from APIs using Elm</a></li>
+<li><a href="https://www.dailydrip.com/blog/what-are-subscriptions-and-commands-in-elm">What are Subscriptions and Commands in Elm</a></li>
+</ul>
+<p>And this blog post talking about the <a href="https://www.dailydrip.com/blog/the-power-of-elm-in-javascript">Power of Elm in JavaScript</a></p>
+<hr>
+<p>You are a JavaScript developer and you know Single-Page Apps (SPAs) are pretty common nowadays. How can you build one in Elm ? We will see in a few episodes how to build a SPA in Elm.</p>
+<p>There is a really good <a href="https://github.com/rtfeldman/elm-spa-example">Elm SPA Example</a>, which is probably the most complete Elm SPA on the web. But I feel, this is too hard for someone who is starting in Elm.</p>
+<p>My idea is to have a few posts walking through building an Elm SPA.</p>
+<p>Our SPA will be called <a href="https://learn-programming.today/">Learn-Programming.today</a>. This is an idea we have for gathering programming tutorials, and the front-end will be written in Elm.</p>
+<h3 id="Creating-our-project"><a href="#Creating-our-project" class="headerlink" title="Creating our project"></a>Creating our project</h3><p>We will start our project with <a href="https://github.com/halfzebra/create-elm-app">Create Elm App</a>. If you use React, and you know Create React App, this is very similar. It produces a boilerplate Elm project to be used as a starting point. This helps us get started quickly.</p>
+<p>I suppose you already have installed create-elm-app. It’s an npm package, so it’s easy to install.</p>
+<p>Let’s create our project and see the file structure it creates:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">.</div><div class="line">├── README.md</div><div class="line">├── elm-package.json</div><div class="line">├── elm-stuff</div><div class="line">│ ├── exact-dependencies.json</div><div class="line">│ └── packages</div><div class="line">├── public</div><div class="line"></div><div class="line">├── src</div><div class="line">│ ├── Main.elm</div><div class="line">│ ├── index.js</div><div class="line">│ └── main.css</div><div class="line">└── tests</div><div class="line">├── Tests.elm</div><div class="line">└── elm-package.json</div></pre></td></tr></table></figure>
+<p>We will divide our project into a few modules: View, Model, Update and App. To get an overview of how the code can be structured, you can check the <a href="https://github.com/dailydrip/firestorm_elm">Elm Firestorm Client</a>.</p>
+<p>Let’s start with our App.</p>
+<h3 id="Main"><a href="#Main" class="headerlink" title="Main"></a>Main</h3><p>Create Elm App gave us a<code>Main.elm</code>file. Let’s tweak that to have a View, Msg, and Model file.</p>
+<p>As you saw, an Elm App has view, init, update and subscriptions. We will not worry about subscriptions for the moment.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">module Main exposing (main)</div><div class="line"></div><div class="line">import App</div><div class="line">import View</div><div class="line">import Update</div><div class="line">import Model</div><div class="line">import Navigation</div><div class="line">import Msg exposing (Msg(UrlChange))</div><div class="line"></div><div class="line"></div><div class="line">main : Program Never Model.Model Msg</div><div class="line">main =</div><div class="line">Navigation.program UrlChange</div><div class="line">&#123; view = View.view</div><div class="line">, init = App.init</div><div class="line">, update = Update.update</div><div class="line">, subscriptions = (\_ -&gt; Sub.none)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="App"><a href="#App" class="headerlink" title="App"></a>App</h3><p>Here we have our update function and we have our init function.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">module App exposing (..)</div><div class="line"></div><div class="line">import Model</div><div class="line">import Msg exposing (Msg(..))</div><div class="line">import Navigation</div><div class="line"></div><div class="line"></div><div class="line">init : Navigation.Location -&gt; ( Model.Model, Cmd msg )</div><div class="line">init location =</div><div class="line">( Model.Model [ location ]</div><div class="line">, Cmd.none</div><div class="line">)</div><div class="line"></div><div class="line"></div><div class="line">update : Msg -&gt; Model.Model -&gt; ( Model.Model, Cmd Msg )</div><div class="line">update msg model =</div><div class="line">case msg of</div><div class="line">UrlChange location -&gt;</div><div class="line">( &#123; model | history = location :: model.history &#125;</div><div class="line">, Cmd.none</div><div class="line">)</div><div class="line"></div><div class="line">Msg.NoOp -&gt;</div><div class="line">( model, Cmd.none )</div></pre></td></tr></table></figure>
+<h3 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h3><p>Our model will have an attribute called<code>history</code>. It will be a list of<code>Navigation.Location</code>. We will just add in the list the elements of our history. In the future we will parse this location and show the appropriate page.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">module Model exposing (Model)</div><div class="line"></div><div class="line">import Navigation</div><div class="line"></div><div class="line"></div><div class="line">type alias Model =</div><div class="line">&#123; history : List Navigation.Location</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Msg"><a href="#Msg" class="headerlink" title="Msg"></a>Msg</h3><p>Our Messages are actions. We have two actions:<code>NoOp</code>and<code>UrlChange</code>.<code>NoOp</code>represents nothing, any action.<code>UrlChange</code>represents the act of changing our Url. It will fire the update function and push the location into our model.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">module Msg exposing (Msg(..))</div><div class="line"></div><div class="line">import Navigation</div><div class="line"></div><div class="line"></div><div class="line">type Msg</div><div class="line">= NoOp</div><div class="line">| UrlChange Navigation.Location</div></pre></td></tr></table></figure>
+<h3 id="View"><a href="#View" class="headerlink" title="View"></a>View</h3><p>Our view takes in our model and produces the HTML to render the page. Here we are going to show the elements inside our models.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">module View exposing (..)</div><div class="line"></div><div class="line">import Html exposing (..)</div><div class="line">import Html.Attributes exposing (..)</div><div class="line">import Navigation</div><div class="line">import Model</div><div class="line"></div><div class="line"></div><div class="line">view : Model.Model -&gt; Html msg</div><div class="line">view model =</div><div class="line">div []</div><div class="line">[ h1 [] [ text &quot;Pages&quot; ]</div><div class="line">, ul [] (List.map viewLink [ &quot;bears&quot;, &quot;cats&quot;, &quot;dogs&quot;, &quot;elephants&quot;, &quot;fish&quot; ])</div><div class="line">, h1 [] [ text &quot;History&quot; ]</div><div class="line">, ul [] (List.map viewLocation model.history)</div><div class="line">]</div><div class="line"></div><div class="line"></div><div class="line">viewLink : String -&gt; Html msg</div><div class="line">viewLink name =</div><div class="line">li [] [ a [ href (&quot;#&quot; ++ name) ] [ text name ] ]</div><div class="line"></div><div class="line"></div><div class="line">viewLocation : Navigation.Location -&gt; Html msg</div><div class="line">viewLocation location =</div><div class="line">li [] [ text (location.pathname ++ location.hash) ]</div></pre></td></tr></table></figure>
+<h2 id="Deploying"><a href="#Deploying" class="headerlink" title="Deploying"></a>Deploying</h2><p>When you build your app, you’ll get some HTML and JavaScript output. Let’s deploy this using<a href="https://zeit.co/now">now</a>.</p>
+<p>To do that, we can compile<code>Main.elm</code>and output<code>index.html</code>.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">elm make src/Main.elm --output index.html</div></pre></td></tr></table></figure>
+<p>To deploy that, it just uses<code>now index.html</code>and it’s done! You can do this if you’re starting with Elm and would like to show to someone or just put in the internet. It’s really easy!</p>
+<p><a href="https://output-ltgpvdfexp.now.sh/">Here you can see the project deployed</a>.</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Today, we saw how to have a better structure of our project and how to code with Elm using different files. In the next posts, we will keep doing this project and build our SPA.</p>
+<p>Source: <a href="https://www.dailydrip.com/blog/building-your-spa-in-elm-part-1">https://www.dailydrip.com/blog/building-your-spa-in-elm-part-1</a></p>
+
   </div>
   
 
@@ -178,7 +219,7 @@
 <script>
   var disqus_shortname = 'gmagon';
   var disqus_url = 'https://gmagon.com/blog/2017/09/07/building-your-spa-in-elm/index.html';
-  var disqus_title = "";
+  var disqus_title = "Building your SPA in ELM";
   var disqus_config = function(){
     this.language = 'en';
   };
@@ -197,7 +238,7 @@
           <aside id="article-toc" role="navigation">
                 <div id="article-toc-inner">
                   <strong class="sidebar-title">Contents</strong>
-                  
+                  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Creating-our-project"><span class="toc-text">Creating our project</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Main"><span class="toc-text">Main</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#App"><span class="toc-text">App</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Model"><span class="toc-text">Model</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Msg"><span class="toc-text">Msg</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#View"><span class="toc-text">View</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Deploying"><span class="toc-text">Deploying</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary"><span class="toc-text">Summary</span></a>
                   <a href="#" id="article-toc-top">Back to Top</a>
                 </div>
           </aside>

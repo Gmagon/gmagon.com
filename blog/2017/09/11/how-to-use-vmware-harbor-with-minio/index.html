@@ -23,12 +23,13 @@
 <meta property="og:site_name" content="How to use VMware Harbor with Minio? - Gmagon Software - handy and professional Mac apps.">
 <meta property="og:description" content="How to use VMware Harbor with Minio? - Gmagon Software - handy and professional Mac apps.">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://vmware.github.io/harbor/images/harbor.png">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*qfPvTURQvCwaWKKZ.">
-<meta property="og:updated_time" content="2017-09-11T07:45:17.185Z">
+<meta property="og:updated_time" content="2017-09-11T07:49:37.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to use VMware Harbor with Minio? - Gmagon Software - handy and professional Mac apps.">
 <meta name="twitter:description" content="How to use VMware Harbor with Minio? - Gmagon Software - handy and professional Mac apps.">
-<meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/0*qfPvTURQvCwaWKKZ.">
+<meta name="twitter:image" content="https://vmware.github.io/harbor/images/harbor.png">
 <meta name="twitter:site" content="gmagonshare">
 <meta property="fb:admins" content="432634277117208">
 <meat name="twitter:url" content="https://gmagon.com/blog/2017/09/11/how-to-use-vmware-harbor-with-minio/index.html">
@@ -152,9 +153,10 @@
     <a href="/blog/2017/09/11/how-to-use-vmware-harbor-with-minio/" class="article-date"><time datetime="2017-09-11T00:00:00.000Z">2017-09-11</time></a>
   </header>
   <div class="article-content" itemprop="articleBody">
-    <p><a href="https://github.com/vmware/harbor">Harbor</a>is an enterprise-class docker registry server to store and distribute container images. Follow this document to use Minio object storage server as a storage backend for Harbor container registry.</p>
+    <p><img src="https://vmware.github.io/harbor/images/harbor.png" alt=""></p>
+<p><a href="https://github.com/vmware/harbor">Harbor</a> is an enterprise-class docker registry server to store and distribute container images. Follow this document to use Minio object storage server as a storage backend for Harbor container registry.</p>
 <h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h3><h4 id="Install-and-run-Minio-server"><a href="#Install-and-run-Minio-server" class="headerlink" title="Install and run Minio server"></a>Install and run <a href="https://github.com/minio/minio#docker-container">Minio</a> server</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">docker run -p 9000:9000 --name minio \</div><div class="line">-e &quot;MINIO_ACCESS_KEY=minio&quot; \</div><div class="line">-e &quot;MINIO_SECRET_KEY=minio123&quot; \</div><div class="line">-v /mnt/minio/export:/export \</div><div class="line">-v /mnt/minio/config:/root/.minio \</div><div class="line">minio/minio:RELEASE.2017-02-16T01-47-30Z server /export</div></pre></td></tr></table></figure>
-<h4 id="Install-Harbor-registry"><a href="#Install-Harbor-registry" class="headerlink" title="Install Harbor registry"></a>Install Harbor registry</h4><p>The binary of the installer can be downloaded from the<a href="https://github.com/vmware/harbor/releases">release</a>page. Follow<a href="https://github.com/vmware/harbor/blob/master/docs/installation_guide.md">harbor installation and configuration guide</a>for further instructions.</p>
+<h4 id="Install-Harbor-registry"><a href="#Install-Harbor-registry" class="headerlink" title="Install Harbor registry"></a>Install Harbor registry</h4><p>The binary of the installer can be downloaded from the <a href="https://github.com/vmware/harbor/releases">release</a> page. Follow <a href="https://github.com/vmware/harbor/blob/master/docs/installation_guide.md">harbor installation and configuration guide</a> for further instructions.</p>
 <h3 id="Edit-‘config-yml-39"><a href="#Edit-‘config-yml-39" class="headerlink" title="Edit ‘config.yml&#39;"></a>Edit ‘<code>config.yml&#39;</code></h3><p>Add the<code>s3</code>configuration to the storage section in your<code>common/templates/registry/config.yml</code>(right below the cache configuration). Here is a complete example<a href="https://github.com/harshavardhana/harbor-minio/blob/master/config.yml"><code>config.yml</code></a>for your reference.</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">storage:</div><div class="line">S3:</div><div class="line">accesskey: minio</div><div class="line">secretkey: minio123</div><div class="line">region: us-east-1</div><div class="line">regionendpoint: http://YOUR-MINIO-IP:9000</div><div class="line">bucket: docker-registry</div><div class="line">encrypt: false</div><div class="line">secure: false</div><div class="line">v4auth: true</div><div class="line">chunksize: 5242880</div><div class="line">rootdirectory: /</div></pre></td></tr></table></figure>
 <h3 id="Start-Harbor-registry"><a href="#Start-Harbor-registry" class="headerlink" title="Start Harbor registry"></a>Start Harbor registry</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">./install.sh</div><div class="line">[Step 1]: preparing environment ...</div><div class="line">loaded secret key</div><div class="line">...</div><div class="line">...</div><div class="line">✔ ----Harbor has been installed and started successfully.----</div><div class="line">Now you should be able to visit the admin portal at https://172.23.0.7.</div><div class="line">For more details, please visit https://github.com/vmware/harbor .</div></pre></td></tr></table></figure>
@@ -166,7 +168,7 @@
 <p>Proceed to push your first image to the harbor registry.</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">docker tag ubuntu 172.23.0.7/myproject/myrepo</div><div class="line">docker push 172.23.0.7/myproject/myrepo</div><div class="line">The push refers to a repository [172.23.0.7/myproject/myrepo]</div><div class="line">5eb5bd4c5014: Pushed</div><div class="line">d195a7a18c70: Pushed</div><div class="line">...</div></pre></td></tr></table></figure>
 <p>To check if image has been successfully uploaded login from Minio browser console through</p>
-<p><a href="http://your-minio-ip:9000/">http://YOUR-MINIO-IP:9000</a> with username<code>minio</code>and password<code>minio123.</code></p>
+<p><a href="http://your-minio-ip:9000/">http://YOUR-MINIO-IP:9000</a> with username <code>minio</code> and password <code>minio123</code>.</p>
 <p>Source: <a href="https://blog.minio.io/how-to-use-vmware-harbor-with-minio-c07a5c4ae31b">https://blog.minio.io/how-to-use-vmware-harbor-with-minio-c07a5c4ae31b</a></p>
 
   </div>

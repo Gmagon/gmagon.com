@@ -323,8 +323,13 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-99314951-1', 'auto');
-  ga('send', 'pageview');
+  try{
+    ga('create', 'UA-99314951-1', 'auto');
+    ga('send', 'pageview');
+    ga('send', 'https://gmagon.com/blog/2017/09/12/alternative-to-twitter-mastodon/index.html');
+    ga('send', 'An open source alternative to Twitter - Mastodon')
+  }catch(e){}
+
 </script>
 
 
